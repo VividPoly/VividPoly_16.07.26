@@ -2482,7 +2482,7 @@ html[data-vp-layout="fit"] .vp-header--fixed.vp-header--hidden {
 .vp-value-props-inner {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 var(--vp-container-x) 40px;
+  padding: 40px var(--vp-container-x) 40px;
 }
 
 .vp-value-props-eyebrow {
@@ -2493,6 +2493,7 @@ html[data-vp-layout="fit"] .vp-header--fixed.vp-header--hidden {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--vp-ink-muted);
+  text-align: center;
 }
 
 .vp-value-props {
@@ -2572,19 +2573,17 @@ html[data-vp-layout="fit"] .vp-header--fixed.vp-header--hidden {
 
 @media (max-width: 1024px) {
   .vp-value-props-section {
-    padding-top: 36px;
+    padding-top: 0;
     border-bottom: 0;
     margin-top: 4px;
   }
 
   .vp-value-props-section .vp-value-props-eyebrow {
-    text-align: center;
     margin-bottom: 20px;
-    padding-top: 12px;
   }
 
   .vp-value-props-inner {
-    padding-bottom: 12px;
+    padding: 32px var(--vp-container-x) 12px;
   }
 
   .vp-value-prop--loop-clone {
