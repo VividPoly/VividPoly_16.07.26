@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VividPoly Website (Next.js)
 
-## Getting Started
+Production Next.js port of the VividPoly marketing site and product catalogue.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+On Windows, `START-PREVIEW.bat` installs dependencies (if needed), starts the dev server, and opens the browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production build
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Import this repository in [Vercel](https://vercel.com).
+2. Framework preset: **Next.js** (auto-detected).
+3. No environment variables are required for the static marketing site. See `.env.example` for optional local overrides.
+4. Deploy. Vercel runs `npm run build` by default.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No `vercel.json` or middleware is required for this App Router project.
+
+## Re-sync from design HTML
+
+When the source `VividPoly.dc.html` prototype changes:
+
+```bash
+npm run convert
+```
+
+This regenerates:
+
+- `src/components/vividpoly/VividPolyView.tsx` (UI)
+- `src/hooks/useVividPoly.ts` (state and interactions)
+- `src/data/vividpoly-data.ts` (static content)
+
+## Architecture
+
+| Path | Purpose |
+|------|---------|
+| `src/components/vividpoly/` | Page UI, forms, icons |
+| `src/hooks/useVividPoly.ts` | SPA state and hash routing |
+| `src/data/vividpoly-data.ts` | Products, FAQs, blog content |
+| `src/data/ui-copy.json` | Nav, footer, and UI chrome strings |
+| `src/app/globals.css` | Design tokens, layout, responsive CSS |
+| `scripts/convert-vividpoly.mjs` | HTML to Next.js converter |
+| `scripts/snap-to-4px-grid.mjs` | Spacing audit helper (4px grid) |
+
+Design fidelity is preserved by keeping original inline styles and a dedicated stylesheet rather than rewriting to Tailwind.
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `npm run convert` | Regenerate from HTML prototype |
+| `npm run audit:responsive` | Playwright responsive audit (dev server required) |
+
+## Environment
+
+Copy `.env.example` to `.env.local` for optional overrides. Never commit real secrets.

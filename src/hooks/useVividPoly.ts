@@ -1,0 +1,1240 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// @ts-nocheck
+'use client';
+
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import uiCopy from '@/data/ui-copy.json';
+import { getVividPolyData, type VividPolyMessages } from '@/lib/get-vividpoly-data';
+import { VP } from '@/lib/vividpoly-tokens';
+import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOptions, catSortFromUseTitle, filtersForUseSort, filterProductsByUseSort, CAPACITY_STOPS, filterProductsByCapacity, isCapacityFilterActive, getCapacityCustomNotice, type CatSort } from '@/lib/vividpoly-product-filters';
+import { getInitialQuoteStep } from '@/lib/vividpoly-quote';
+import { captureQuoteLead } from '@/lib/vividpoly-lead-capture';
+import {
+  isNavTransition,
+  navPayload,
+  navUrl,
+  readNavState,
+  scrollPageToTop,
+  enableManualScrollRestoration,
+  splitBreadcrumbTrail,
+  withHomeBreadcrumb,
+} from '@/lib/vividpoly-navigation';
+
+export type Screen =
+  | 'home' | 'catalogue' | 'pdp' | 'faqs'
+  | 'blog' | 'about' | 'contact' | 'quote' | 'sample';
+
+export interface VividPolyState {
+  screen: Screen;
+  menu: 'products' | 'resources' | null;
+  prodTab: 'type' | 'use';
+  pid: string;
+  gallery: number;
+  openFaq: number | null;
+  activeUse: number | null;
+  usePinned: boolean;
+  activeBuyer: number;
+  buyerPinned: boolean;
+  searchOpen: boolean;
+  searchVal: string;
+  quoteStep: number;
+  quoteLeadOnly: boolean;
+  quoteBagSpecPrompt: boolean;
+  quoteContactOpen: boolean;
+  quote: Record<string, any>;
+  cat: 'type' | 'use';
+  catGuide: 'product-type' | 'use-sort' | null;
+  catFiltersOpen: boolean;
+  filters: Record<string, Record<string, boolean>>;
+  catSort: CatSort;
+  capacityMinIdx: number;
+  capacityMaxIdx: number;
+  capacityCustomKg: string;
+  sampleStep: number;
+  samplePid: string;
+  sampleFrom: 'home' | 'catalogue' | 'pdp';
+  sampleCapacity: string;
+  sampleRef: string;
+  samplePaymentAccountId: string;
+  bankPickerOpen: boolean;
+  bankPickerMode: 'bank' | 'branch' | null;
+  bankPickerQuery: string;
+  pdpFrom: 'home' | 'catalogue';
+}
+
+const initialState: VividPolyState = {
+  screen: 'home', menu: null, prodTab: 'type',
+  pid: 'open-mouth', gallery: 0, openFaq: null,
+  activeUse: 0, usePinned: false,
+  activeBuyer: 0, buyerPinned: false,
+  searchOpen: false, searchVal: '',
+  quoteStep: 0, quoteLeadOnly: false, quoteBagSpecPrompt: false, quoteContactOpen: false, quote: {}, cat: 'type', catGuide: null, catFiltersOpen: false, filters: {},
+  catSort: 'recommended', capacityMinIdx: 0, capacityMaxIdx: CAPACITY_STOPS.length - 1, capacityCustomKg: '',
+  sampleStep: 0, samplePid: 'open-mouth', sampleFrom: 'catalogue', sampleCapacity: '', sampleRef: '',
+  samplePaymentAccountId: 'hdfc-bopal', bankPickerOpen: false, bankPickerMode: null, bankPickerQuery: '',
+  pdpFrom: 'catalogue',
+};
+
+const SCROLL_ENQUIRY_MS = 30_000;
+const SCROLL_IDLE_MS = 200;
+const SCROLL_TICK_MS = 100;
+
+export function useVividPoly() {
+  const ui = uiCopy as VividPolyMessages;
+  const vividPolyData = useMemo(() => getVividPolyData(ui), []);
+  const [s, setState] = useState<VividPolyState>(initialState);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const prodAutoScrollStoppedRef = useRef(false);
+  const rafRef = useRef<number>(0);
+  const skipHistoryPushRef = useRef(false);
+  const pendingHistoryRef = useRef<VividPolyState | null>(null);
+  const scrollEnquiryShownRef = useRef(false);
+  const scrollTimeMsRef = useRef(0);
+  const lastScrollAtRef = useRef(0);
+
+  const pushNavHistory = useCallback((next: VividPolyState) => {
+    if (typeof window === 'undefined' || skipHistoryPushRef.current) {
+      skipHistoryPushRef.current = false;
+      return;
+    }
+    window.history.pushState(navPayload(next), '', navUrl(next));
+    scrollPageToTop('auto');
+    requestAnimationFrame(() => scrollPageToTop('auto'));
+  }, []);
+
+  const navigate = useCallback((updater: (st: VividPolyState) => VividPolyState) => {
+    setState((prev) => {
+      const next = updater(prev);
+      if (isNavTransition(prev, next)) {
+        pendingHistoryRef.current = next;
+      }
+      return next;
+    });
+  }, []);
+
+  useEffect(() => {
+    const next = pendingHistoryRef.current;
+    if (!next) return;
+    pendingHistoryRef.current = null;
+    pushNavHistory(next);
+  }, [s, pushNavHistory]);
+
+  const goBack = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      window.history.back();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    enableManualScrollRestoration();
+    window.history.replaceState(navPayload(initialState), '', navUrl(initialState));
+    scrollPageToTop('auto');
+    requestAnimationFrame(() => scrollPageToTop('auto'));
+
+    const onPopState = (event: PopStateEvent) => {
+      const restored = readNavState(event.state);
+      if (!restored) return;
+      skipHistoryPushRef.current = true;
+      setState(restored);
+      scrollPageToTop('auto');
+    };
+
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  const go = useCallback((screen: Screen) => {
+    navigate((st) => ({ ...st, screen, menu: null, searchOpen: false, catGuide: null }));
+  }, [navigate]);
+
+  const goHome = useCallback(() => {
+    if (s.screen === 'home') {
+      scrollPageToTop('smooth');
+      setState((st) => ({ ...st, menu: null, searchOpen: false, catGuide: null }));
+      return;
+    }
+    go('home');
+  }, [s.screen, go]);
+
+  const clearCatGuide = useCallback(() => {
+    setState((st) => (st.catGuide ? { ...st, catGuide: null } : st));
+  }, []);
+
+  const toggleMenu = useCallback((m: 'products' | 'resources') => {
+    setState((st) => ({ ...st, menu: st.menu === m ? null : m, searchOpen: false }));
+  }, []);
+
+  useEffect(() => {
+    const tick = () => {
+      const el = scrollRef.current;
+      const isNarrow = typeof window !== 'undefined' && window.innerWidth < 1367;
+      if (el && !prodAutoScrollStoppedRef.current && !isNarrow && s.screen === 'home') {
+        const half = el.scrollWidth / 2;
+        if (half > 0) {
+          el.scrollLeft += 0.5;
+          if (el.scrollLeft >= half - 1) {
+            el.scrollLeft -= half;
+          }
+        }
+      }
+      rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [s.screen]);
+
+  useEffect(() => {
+    if (s.screen !== 'home') return;
+    const el = scrollRef.current;
+    if (!el) return;
+    const stop = () => {
+      prodAutoScrollStoppedRef.current = true;
+    };
+    el.addEventListener('touchstart', stop, { passive: true });
+    el.addEventListener('pointerdown', stop, { passive: true });
+    return () => {
+      el.removeEventListener('touchstart', stop);
+      el.removeEventListener('pointerdown', stop);
+    };
+  }, [s.screen]);
+
+  const prodScrollBy = useCallback((dx: number) => {
+    prodAutoScrollStoppedRef.current = true;
+    scrollRef.current?.scrollBy({ left: dx, behavior: 'smooth' });
+  }, []);
+
+  const openContactEnquiry = useCallback(() => {
+    scrollEnquiryShownRef.current = true;
+    setState((st) => ({
+      ...st,
+      quoteContactOpen: true,
+      menu: null,
+      searchOpen: false,
+    }));
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const tryOpenScrollEnquiry = () => {
+      if (scrollEnquiryShownRef.current) return;
+      if (scrollTimeMsRef.current < SCROLL_ENQUIRY_MS) return;
+      scrollEnquiryShownRef.current = true;
+      setState((st) => {
+        if (st.quoteContactOpen || st.quoteStep >= 4 || st.screen === 'sample') return st;
+        return {
+          ...st,
+          quoteContactOpen: true,
+          menu: null,
+          searchOpen: false,
+        };
+      });
+    };
+
+    const onScroll = () => {
+      lastScrollAtRef.current = Date.now();
+    };
+
+    const tick = () => {
+      if (!scrollEnquiryShownRef.current && Date.now() - lastScrollAtRef.current < SCROLL_IDLE_MS) {
+        scrollTimeMsRef.current += SCROLL_TICK_MS;
+        tryOpenScrollEnquiry();
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    const intervalId = window.setInterval(tick, SCROLL_TICK_MS);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.clearInterval(intervalId);
+    };
+  }, []);
+
+  const openCatalogueForUse = useCallback((useTitle: string) => {
+    navigate((st) => {
+      const catSort = catSortFromUseTitle(useTitle);
+      const filters = catSort === 'recommended' ? {} : filtersForUseSort(catSort);
+      return {
+        ...st,
+        screen: 'catalogue',
+        cat: 'use',
+        prodTab: 'use',
+        menu: null,
+        searchOpen: false,
+        catSort,
+        filters,
+        catFiltersOpen: false,
+      };
+    });
+  }, [navigate]);
+
+  const openPdp = useCallback((id: string, from: 'home' | 'catalogue') => {
+    navigate((st) => ({ ...st, screen: 'pdp', pid: id, pdpFrom: from, gallery: 0, menu: null }));
+  }, [navigate]);
+
+  const openSampleOrder = useCallback((opts?: { capacity?: string; from?: VividPolyState['sampleFrom'] }) => {
+    navigate((st) => {
+      const from = opts?.from
+        ?? (st.screen === 'pdp' ? 'pdp' : st.screen === 'home' ? 'home' : 'catalogue');
+      return {
+        ...st,
+        screen: 'sample',
+        sampleStep: 0,
+        samplePid: st.pid,
+        sampleFrom: from,
+        sampleCapacity: opts?.capacity ?? (typeof st.quote.capacity === 'string' ? st.quote.capacity : '') ?? '',
+        sampleRef: '',
+        menu: null,
+      };
+    });
+  }, [navigate]);
+
+  const v = useMemo(() => {
+    const data = vividPolyData;
+    const prod = (id: string) => data.products.find((p) => p.id === id);
+    const accent = VP.accent;
+    const mkProd = (p: (typeof data.products)[0], from: 'home' | 'catalogue' = 'catalogue') => ({
+      ...p,
+      open: () => openPdp(p.id, from),
+    });
+    const products = data.products.map((p) => mkProd(p, 'home'));
+
+    const q = (s.searchVal || '').toLowerCase();
+    let searchResults: any[];
+    let searchHeading: string;
+    const allItems = [
+      ...data.products.map((p) => ({
+        label: p.name, icon: '▦', kind: 'product',
+        go: () => {
+          const from = s.screen === 'home' ? 'home' : 'catalogue';
+          navigate((st) => ({
+            ...st,
+            screen: 'pdp',
+            pid: p.id,
+            pdpFrom: from,
+            gallery: 0,
+            menu: null,
+            searchOpen: false,
+            searchVal: '',
+          }));
+        },
+      })),
+      ...data.useGroups.flatMap((g) => g.items).map((u) => ({
+        label: u, icon: '◈', kind: 'industry',
+        go: () => openCatalogueForUse(u),
+      })),
+      ...data.blogList.map((b) => ({
+        label: b[0], icon: '❡', kind: 'article',
+        go: () => navigate((st) => ({ ...st, screen: 'blog', searchOpen: false, searchVal: '' })),
+      })),
+    ];
+    if (!q) {
+      searchHeading = ui.search.recentHeading;
+      searchResults = ui.search.recentTerms.map((t) => ({
+        label: t, icon: '↺', kind: 'recent', open: () => setState((st) => ({ ...st, searchVal: t })),
+      }));
+    } else {
+      searchHeading = ui.search.suggestionsHeading;
+      searchResults = allItems.filter((i) => i.label.toLowerCase().includes(q)).slice(0, 7).map((i) => ({ ...i, open: i.go }));
+      if (!searchResults.length) {
+        searchResults = [{ label: ui.search.noMatches, icon: '⌕', kind: '', open: () => {} }];
+      }
+    }
+
+    const megaIsType = s.prodTab === 'type';
+    const megaTypeGroups = data.typeGroups.map((g) => ({
+      title: g.title,
+      items: g.ids.map((id) => {
+        const p = prod(id)!;
+        return { label: p.name, open: mkProd(p).open };
+      }),
+    }));
+    const megaUseGroups = data.useGroups.map((g) => ({
+      title: g.title,
+      items: g.items.map((u) => ({
+        label: u,
+        open: () => openCatalogueForUse(u),
+      })),
+    }));
+    const megaGroups = megaIsType ? megaTypeGroups : megaUseGroups;
+
+    const footLink = (label: string, fn: () => void) => ({ label, open: fn });
+
+    const catUse = s.cat === 'use';
+    const filterSecs = ui.filterSections
+      .filter((section) => section.key !== 'Capacity')
+      .map((section, i_sec) => ({
+      key: section.key,
+      title: section.title,
+      defaultOpen: i_sec < 2,
+      opts: section.options.map((o) => ({
+        label: o.label,
+        checked: !!(s.filters[section.key] || {})[o.id],
+        toggle: () =>
+          setState((st) => {
+            const sec = { ...(st.filters[section.key] || {}) };
+            sec[o.id] = !sec[o.id];
+            return {
+              ...st,
+              filters: { ...st.filters, [section.key]: sec },
+              catGuide: st.catGuide === 'product-type' ? null : st.catGuide,
+            };
+          }),
+      })),
+    }));
+    const capacityFilterActive = isCapacityFilterActive(
+      s.capacityMinIdx,
+      s.capacityMaxIdx,
+      s.capacityCustomKg,
+    );
+    const capacityCustomNotice = getCapacityCustomNotice(s.capacityCustomKg, ui.filters.capacityCustomNotice);
+    const activeFilterCount = Object.values(s.filters).reduce(
+      (n, sec) => n + Object.values(sec || {}).filter(Boolean).length,
+      0,
+    ) + (capacityFilterActive ? 1 : 0);
+    const filtersActive = activeFilterCount > 0;
+    const capacityMinKg = CAPACITY_STOPS[s.capacityMinIdx];
+    const capacityMaxKg = CAPACITY_STOPS[s.capacityMaxIdx];
+    let catalogueList = filterProducts(data.products, s.filters);
+    catalogueList = filterProductsByCapacity(
+      catalogueList,
+      s.capacityMinIdx,
+      s.capacityMaxIdx,
+      s.capacityCustomKg,
+    );
+    catalogueList = filterProductsByUseSort(catalogueList, s.catSort);
+    catalogueList = sortProducts(catalogueList, s.catSort);
+    const filteredCount = catalogueList.length;
+    const catalogueProducts = catalogueList.map((p) => ({
+      ...mkProd(p, 'catalogue'),
+      recommended: s.catSort !== 'recommended' && productRecommendedForSort(p, s.catSort),
+    }));
+
+    const sp = prod(s.pid) || data.products[0];
+    const sampleProduct = prod(s.samplePid) || sp;
+    const sampleSpec = sampleProduct.spec.find((r) => r[0] === 'Capacity');
+    const sampleCapacityLabel = s.sampleCapacity || sampleSpec?.[1]?.split(' to ')?.[0] || '25 kg';
+    const sampleSubtotal = data.sampleOrderDefaults.unitPriceUsd * data.sampleOrderDefaults.qty;
+    const sampleTotal = sampleSubtotal + data.sampleOrderDefaults.shippingUsd;
+    const br = ui.sample.billRows;
+    const sampleBillRows = [
+      { k: br.productType, v: sampleProduct.name },
+      { k: br.sampleQuantity, v: data.sampleOrderDefaults.qtyLabel },
+      { k: br.capacity, v: sampleCapacityLabel },
+      { k: br.printing, v: data.sampleOrderDefaults.printing },
+      { k: br.packing, v: data.sampleOrderDefaults.packing },
+      { k: br.leadTime, v: data.sampleOrderDefaults.leadTime },
+      { k: br.unitPrice, v: `$${data.sampleOrderDefaults.unitPriceUsd} ${data.sampleOrderDefaults.currency}` },
+      { k: br.exportPacking, v: `$${data.sampleOrderDefaults.shippingUsd} ${data.sampleOrderDefaults.currency}` },
+      { k: br.total, v: `$${sampleTotal} ${data.sampleOrderDefaults.currency}`, bold: true },
+    ];
+    const sampleBankAccount = data.paymentBankAccounts.find((a) => a.id === s.samplePaymentAccountId)
+      || data.paymentBankAccounts[0];
+    const bkr = ui.sample.bankRows;
+    const sampleBankRows = [
+      { k: bkr.beneficiary, v: sampleBankAccount.beneficiary },
+      { k: bkr.bank, v: sampleBankAccount.bankName, picker: 'bank' as const },
+      { k: bkr.branch, v: `${sampleBankAccount.branch}, ${sampleBankAccount.location}`, picker: 'branch' as const },
+      { k: bkr.accountNumber, v: sampleBankAccount.accountNumber },
+      { k: bkr.ifsc, v: sampleBankAccount.ifsc },
+      { k: bkr.swift, v: sampleBankAccount.swift },
+      { k: bkr.accountType, v: sampleBankAccount.accountType },
+      { k: bkr.amount, v: `$${sampleTotal} ${data.sampleOrderDefaults.currency}`, bold: true },
+      { k: bkr.paymentReference, v: s.sampleRef || '-', bold: true },
+    ];
+    const uniqueBanks = [...new Set(data.paymentBankAccounts.map((a) => a.bankName))];
+    const bankPickerItems = s.bankPickerMode === 'bank'
+      ? uniqueBanks
+        .filter((name) => {
+          const q = s.bankPickerQuery.trim().toLowerCase();
+          return !q || name.toLowerCase().includes(q);
+        })
+        .map((name) => ({ id: name, label: name }))
+      : data.paymentBankAccounts
+        .filter((acct) => {
+          const q = s.bankPickerQuery.trim().toLowerCase();
+          const matchesBank = acct.bankName === sampleBankAccount.bankName;
+          const matchesQuery = !q
+            || acct.branch.toLowerCase().includes(q)
+            || acct.location.toLowerCase().includes(q)
+            || acct.bankName.toLowerCase().includes(q);
+          return matchesBank && matchesQuery;
+        })
+        .map((acct) => ({
+          id: acct.id,
+          label: acct.branch,
+          sublabel: `${acct.bankName} · ${acct.location}`,
+        }));
+    const pdpFeatures = sp.features.map((f) => ({ f: f[0], d: f[1] }));
+    const pdpSpec = sp.spec.map((r) => ({ p: r[0], o: r[1] }));
+    const galleryThumbs = [0, 1, 2, 3].map((i) => ({
+      i, sel: () => setState((st) => ({ ...st, gallery: i })), bd: s.gallery === i ? accent : VP.border,
+    }));
+    const trustBadges = ui.pdp.trustBadges.map((t) => ({ t }));
+    const relatedProducts = data.products
+      .filter((p) => p.id !== sp.id)
+      .slice(0, 4)
+      .map((p) => mkProd(p, s.pdpFrom));
+
+    const faqs = data.faqList.map((f, i) => ({
+      q: f[0],
+      a: f[1],
+      open: s.openFaq === i,
+      toggle: () => setState((st) => ({ ...st, openFaq: st.openFaq === i ? null : i })),
+    }));
+
+    const setBuyer = (i: number) =>
+      setState((st) => ({
+        ...st,
+        activeBuyer: ((i % data.buyerRows.length) + data.buyerRows.length) % data.buyerRows.length,
+      }));
+
+    const buyerCards = data.buyerRows.map((r, i) => {
+      const m = data.buyerMeta[i];
+      const active = s.activeBuyer === i;
+      return {
+        num: m.num, label: m.label, short: m.short,
+        requirement: r[0],
+        response: r[1],
+        active,
+        cardBg: active ? VP.accentSubtle : VP.bgElevated,
+        cardBd: active ? VP.accentBorder : VP.border,
+        cardShadow: active ? '0 4px 16px rgba(10, 30, 51, 0.08)' : 'none',
+        iconBg: active ? VP.bgElevated : VP.bgMuted,
+        iconCol: active ? VP.accent : VP.textSecondary,
+        titleCol: active ? VP.accent : VP.textPrimary,
+        subCol: VP.textSecondary,
+        preview: () => { if (!s.buyerPinned) setBuyer(i); },
+        select: () => setState((st) => ({
+          ...st,
+          activeBuyer: i,
+          buyerPinned: !(st.activeBuyer === i && st.buyerPinned),
+        })),
+      };
+    });
+
+    const b = data.buyerRows[s.activeBuyer] || data.buyerRows[0];
+    const bm = data.buyerMeta[s.activeBuyer] || data.buyerMeta[0];
+    const buyerDetailTags = (b[2] || []).map((label) => ({ label }));
+
+    const useRows = data.useRows.map((r, i) => {
+      const active = s.activeUse === i;
+      return {
+        use: r[0], bags: r[1], active,
+        rowBg: active ? VP.accentSubtle : 'transparent',
+        rowColor: active ? VP.accent : VP.textPrimary,
+        rowAccent: active ? VP.accent : VP.borderStrong,
+        arrowOpacity: active ? '1' : '0.35',
+        preview: () => { if (!s.usePinned) setState((st) => ({ ...st, activeUse: i })); },
+        pick: () => setState((st) => ({ ...st, activeUse: i })),
+        select: () => setState((st) => ({
+          ...st,
+          activeUse: i,
+          usePinned: !(st.activeUse === i && st.usePinned),
+        })),
+      };
+    });
+
+    const useDetailVisible = s.activeUse !== null && s.activeUse >= 0;
+    const blogRows = data.blogList.map((b) => ({
+      title: b[0],
+      purpose: b[1],
+      excerpt: b[2] || ui.blog.fallbackExcerpt,
+      category: b[3] || ui.blog.fallbackCategory,
+      readTime: b[4] || ui.blog.fallbackReadTime,
+      open: () => go('blog'),
+    }));
+
+    const companyRows = ui.contact.companyRows.map((r) => ({ k: r[0], v: r[1] }));
+    const whyRows = ui.about.whyItems.map((r) => ({ k: r[0], v: r[1] }));
+    const contactQuick = [
+      { label: ui.contact.emailLabel, value: 'info@vividpoly.com', href: 'mailto:info@vividpoly.com' },
+      { label: ui.contact.websiteLabel, value: 'vividpoly.com', href: 'https://www.vividpoly.com' },
+      { label: ui.contact.indiaPhoneLabel, value: '+91 9998014994', href: 'tel:+919998014994' },
+      { label: ui.contact.internationalLabel, value: '+61 426712534', href: 'tel:+61426712534' },
+    ];
+    const contactAddresses = [
+      {
+        label: ui.contact.corporateOffice,
+        value: 'Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058',
+      },
+      {
+        label: ui.contact.factory,
+        value: 'Vivid Poly, Sherpura Gam, Halol Savli Road, Savli, Vadodara',
+      },
+    ];
+
+    const setQ = (k: string, val: unknown) =>
+      setState((st) => ({ ...st, quote: { ...st.quote, [k]: val } }));
+    const qv = s.quote;
+    const capacityRangeNotice = getCapacityCustomNotice(typeof qv.capacity === 'string' ? qv.capacity : '');
+    const capacityRangeAccepted = Boolean(qv.capacityRangeAccepted);
+    const qo = ui.quoteOptions;
+    const packedOptions = data.packedProductOptions.map((label) => ({ value: label, label }));
+    const capacityOptions = qo.capacity.map((label) => ({ value: label, label: label === 'Custom' ? ui.common.custom : label }));
+    const printOptions = qo.printing.map((label) => ({ value: label, label }));
+    const addonOptions = [{ value: '', label: ui.common.none }, ...qo.addons.map((label) => ({ value: label, label }))];
+    const packingOptions = [{ value: '', label: ui.quote.reviewLabels.empty }, ...qo.packing.map((label) => ({ value: label, label }))];
+    const selectedAddon = Object.keys(qv.addons || {}).find((k) => (qv.addons as Record<string, boolean>)[k]) || '';
+
+    const qf = ui.quote.fields;
+    const ql = ui.quote.reviewLabels;
+    const reviewFields = [
+      {
+        id: 'product',
+        label: qf.bagType,
+        kind: 'select' as const,
+        value: (qv.product as string) || '',
+        empty: !qv.product,
+        options: data.products.map((p) => ({ value: p.name, label: p.name })),
+        placeholder: ui.common.select,
+        onSelect: (val: string) => {
+          const p = data.products.find((x) => x.name === val);
+          setState((st) => ({
+            ...st,
+            quote: { ...st.quote, product: val, productId: p?.id },
+          }));
+        },
+      },
+      {
+        id: 'packed',
+        label: qf.product,
+        kind: 'select' as const,
+        value: (qv.packed as string) || '',
+        empty: !qv.packed,
+        options: packedOptions,
+        placeholder: ui.common.select,
+        onSelect: (val: string) => setQ('packed', val),
+      },
+      {
+        id: 'capacity',
+        label: qf.capacity,
+        kind: 'select' as const,
+        value: (qv.capacity as string) || '',
+        empty: !qv.capacity,
+        options: capacityOptions,
+        placeholder: ui.common.select,
+        customPlaceholder: ui.filters.capacityExample,
+        customRangeNotice: capacityRangeNotice,
+        customRangeAccepted: capacityRangeAccepted,
+        onAcceptCustomRange: () => setQ('capacityRangeAccepted', true),
+        onSelect: (val: string) => {
+          const notice = getCapacityCustomNotice(val);
+          setState((st) => ({
+            ...st,
+            quote: {
+              ...st.quote,
+              capacity: val,
+              capacityRangeAccepted: notice ? false : true,
+            },
+          }));
+        },
+      },
+      {
+        id: 'size',
+        label: qf.size,
+        kind: 'text' as const,
+        value: (qv.size as string) || '',
+        empty: !qv.size,
+        fullWidth: true,
+        placeholder: '45 × 75 × 12 cm',
+        suggestions: ['45 × 75 × 12 cm', '50 × 80 cm', '55 × 90 cm'],
+        onSuggestion: (val: string) => setQ('size', val),
+        onTextChange: (e: React.ChangeEvent<HTMLInputElement>) => setQ('size', e.target.value),
+      },
+      {
+        id: 'printing',
+        label: qf.printing,
+        kind: 'select' as const,
+        value: (qv.printing as string) || '',
+        empty: !qv.printing,
+        options: printOptions,
+        placeholder: ui.common.select,
+        onSelect: (val: string) => setQ('printing', val),
+      },
+      {
+        id: 'addons',
+        label: qf.addons,
+        kind: 'select' as const,
+        value: selectedAddon,
+        empty: false,
+        optional: true,
+        options: addonOptions,
+        placeholder: ui.common.none,
+        onSelect: (val: string) => setQ('addons', val ? { [val]: true } : {}),
+      },
+      {
+        id: 'packing',
+        label: qf.packing,
+        kind: 'select' as const,
+        value: (qv.packing as string) || '',
+        empty: false,
+        optional: true,
+        options: packingOptions,
+        placeholder: ui.common.select,
+        onSelect: (val: string) => setQ('packing', val),
+      },
+      {
+        id: 'quantity',
+        label: qf.quantity,
+        kind: 'text' as const,
+        value: (qv.quantity as string) || '',
+        empty: !qv.quantity,
+        placeholder: '50,000 pcs',
+        suggestions: ['10,000 pcs', '50,000 pcs', '100,000 pcs'],
+        onSuggestion: (val: string) => setQ('quantity', val),
+        onTextChange: (e: React.ChangeEvent<HTMLInputElement>) => setQ('quantity', e.target.value),
+      },
+      {
+        id: 'destination',
+        label: qf.destination,
+        kind: 'select' as const,
+        value: (qv.country as string) || '',
+        empty: !qv.country,
+        fullWidth: true,
+        options: data.markets.map((m) => ({ value: m, label: m })),
+        placeholder: ui.common.selectCountry,
+        suggestions: ['USA', 'UK', 'Australia', 'Europe'],
+        onSuggestion: (val: string) => setQ('country', val),
+        onSelect: (val: string) => setQ('country', val),
+      },
+    ];
+
+    const reviewFieldSteps = [
+      {
+        id: 'packing',
+        title: ui.quote.reviewSteps.product,
+        fieldIds: ['product', 'packed', 'capacity'],
+      },
+      {
+        id: 'size-print',
+        title: ui.quote.reviewSteps.sizePrint,
+        fieldIds: ['size', 'printing', 'addons'],
+      },
+      {
+        id: 'order',
+        title: ui.quote.reviewSteps.order,
+        fieldIds: ['packing', 'quantity', 'destination'],
+      },
+    ];
+
+    const quoteBagSpecCanSubmit = reviewFields
+      .filter((field) => !field.optional)
+      .every((field) => {
+        if (field.empty) return false;
+        if (field.customRangeNotice && !field.customRangeAccepted) return false;
+        return true;
+      });
+
+    return {
+      accent,
+      goHome,
+      goContact: () => go('contact'),
+      submitContactEnquiry: () => {
+        const name = String(qv.name || '').trim();
+        const email = String(qv.email || '').trim();
+        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
+        navigate((st) => ({
+          ...st,
+          screen: 'quote',
+          quoteStep: 6,
+          quoteLeadOnly: true,
+          quoteBagSpecPrompt: false,
+          quoteContactOpen: false,
+          menu: null,
+        }));
+      },
+      contactEnquiryCanSubmit: Boolean(
+        String(qv.name || '').trim()
+          && String(qv.email || '').trim()
+          && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(qv.email || '').trim()),
+      ),
+      goQuote: () => {
+        navigate((st) => ({
+          ...st,
+          screen: 'quote',
+          quoteStep: getInitialQuoteStep(st.quote),
+          menu: null,
+        }));
+      },
+      goAbout: () => go('about'),
+      goBlog: () => go('blog'),
+      goCatalogueType: () => navigate((st) => ({
+        ...st,
+        screen: 'catalogue',
+        cat: 'type',
+        menu: null,
+        catGuide: 'product-type',
+        catFiltersOpen: false,
+      })),
+      goCatalogueUse: () => navigate((st) => ({
+        ...st,
+        screen: 'catalogue',
+        cat: 'use',
+        prodTab: 'use',
+        menu: null,
+        catSort: 'recommended',
+        filters: {},
+        catGuide: 'use-sort',
+        catFiltersOpen: false,
+      })),
+      goBack,
+      breadcrumbsFor: (trail: string) =>
+        withHomeBreadcrumb(splitBreadcrumbTrail(trail, goBack), goHome, ui.breadcrumbs.home),
+      toggleProducts: () => toggleMenu('products'),
+      toggleResources: () => toggleMenu('resources'),
+      closeAll: () => setState((st) => ({ ...st, menu: null, searchOpen: false })),
+      menuProducts: s.menu === 'products',
+      menuResources: s.menu === 'resources',
+      overlayOpen: !!s.menu || s.searchOpen,
+      navHomeColor: s.screen === 'home' ? VP.navActive : VP.navIdle,
+      navProductsColor: s.screen === 'catalogue' || s.screen === 'pdp' || s.menu === 'products' ? VP.navActive : VP.navIdle,
+      navAboutColor: s.screen === 'about' ? VP.navActive : VP.navIdle,
+      navResourcesColor: s.screen === 'faqs' || s.screen === 'blog' || s.menu === 'resources' ? VP.navActive : VP.navIdle,
+      navContactColor: s.screen === 'contact' ? VP.navActive : VP.navIdle,
+      prodScrollRef: scrollRef,
+      prodPrev: () => prodScrollBy(-340),
+      prodNext: () => prodScrollBy(340),
+      setTabType: () => setState((st) => ({ ...st, prodTab: 'type' })),
+      setTabUse: () => setState((st) => ({ ...st, prodTab: 'use' })),
+      megaGroups,
+      megaTypeGroups,
+      megaUseGroups,
+      megaCols: megaIsType ? 3 : 4,
+      tabTypeColor: megaIsType ? accent : VP.textSecondary,
+      tabTypeBorder: megaIsType ? `2px solid ${accent}` : '2px solid transparent',
+      tabUseColor: !megaIsType ? accent : VP.textSecondary,
+      tabUseBorder: !megaIsType ? `2px solid ${accent}` : '2px solid transparent',
+      megaFooterLabel: megaIsType ? ui.nav.viewAllByType : ui.nav.viewAllByIndustry,
+      megaFooterAction: megaIsType
+        ? () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'type', menu: null, catFiltersOpen: false }))
+        : () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'use', menu: null, catFiltersOpen: false })),
+      megaTypeFooterAction: () =>
+        navigate((st) => ({ ...st, screen: 'catalogue', cat: 'type', menu: null, catFiltersOpen: false })),
+      megaUseFooterAction: () =>
+        navigate((st) => ({ ...st, screen: 'catalogue', cat: 'use', menu: null, catFiltersOpen: false })),
+      resourceLinks: [
+        {
+          title: ui.nav.blogTitle,
+          desc: ui.nav.blogDesc,
+          icon: 'blog' as const,
+          open: () => go('blog'),
+        },
+        {
+          title: ui.nav.faqsTitle,
+          desc: ui.nav.faqsDesc,
+          icon: 'faqs' as const,
+          open: () => go('faqs'),
+        },
+      ],
+      ui,
+      quoteContactLabels: {
+        name: ui.contact.formName,
+        company: ui.contact.formCompany,
+        email: ui.contact.formEmail,
+        phone: ui.contact.formPhone,
+        country: ui.contact.formCountry,
+        selectCountry: ui.common.selectCountry,
+        emailInvalid: ui.quote.emailInvalid,
+      },
+      quoteStepLabels: {
+        aria: ui.quote.stepLabel.replace('{current}', '1').replace('{total}', '2'),
+        stepContact: ui.quote.stepContact,
+        stepBagSpec: ui.quote.stepBagSpec,
+        howReachYou: ui.quote.howReachYou,
+        registerLead: ui.quote.registerLead,
+        closeForm: ui.quote.closeForm,
+        stepKicker: (n: number) => ui.quote.stepLabel.replace('{current}', String(n)).replace('{total}', '2'),
+      },
+      searchPlaceholder: data.siteCopy.searchPlaceholder,
+      siteCopy: data.siteCopy,
+      searchVal: s.searchVal,
+      searchOpen: s.searchOpen,
+      searchResults,
+      searchHeading,
+      onSearchFocus: () => setState((st) => ({ ...st, searchOpen: true, menu: null })),
+      openSearch: () => setState((st) => ({ ...st, searchOpen: true, menu: null })),
+      onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) =>
+        setState((st) => ({ ...st, searchVal: e.target.value, searchOpen: true })),
+      markets: data.markets,
+      products,
+      buyerCards,
+      buyerDetailReq: b[0],
+      buyerDetailRes: b[1],
+      buyerDetailTags,
+      buyerDetailHasTags: buyerDetailTags.length > 0,
+      buyerDetailNum: bm.num,
+      activeBuyer: s.activeBuyer,
+      buyerDots: data.buyerRows.map((_, i) => ({
+        pick: () => setBuyer(i),
+        bg: s.activeBuyer === i ? VP.accent : VP.borderStrong,
+      })),
+      buyerPrev: () => setBuyer(s.activeBuyer - 1),
+      buyerNext: () => setBuyer(s.activeBuyer + 1),
+      useRows,
+      useDetailVisible: s.activeUse !== null && s.activeUse >= 0,
+      useDetailHidden: !(s.activeUse !== null && s.activeUse >= 0),
+      useDetailTitle: s.activeUse !== null && s.activeUse >= 0 ? data.useRows[s.activeUse][0] : '',
+      useDetailBags: s.activeUse !== null && s.activeUse >= 0 ? data.useRows[s.activeUse][1] : '',
+      clearUsePreview: () => { if (!s.usePinned) setState((st) => ({ ...st, activeUse: null })); },
+      showHome: s.screen === 'home',
+      showCatalogue: s.screen === 'catalogue',
+      catTitle: catUse ? ui.catalogue.titleByUse : ui.catalogue.titleByType,
+      catCrumb: catUse ? ui.catalogue.breadcrumbUse : ui.catalogue.breadcrumbType,
+      catBreadcrumbs: [
+        { label: ui.breadcrumbs.home, onClick: goHome },
+        { label: catUse ? ui.catalogue.titleByUse : ui.catalogue.titleByType },
+      ],
+      catSub: catUse ? data.siteCopy.catalogueUseSub : data.siteCopy.catalogueTypeSub,
+      catCount: filteredCount,
+      filtersActive,
+      catalogueProducts,
+      filteredCount,
+      filterSecs,
+      capacityFilter: {
+        stops: CAPACITY_STOPS,
+        minIdx: s.capacityMinIdx,
+        maxIdx: s.capacityMaxIdx,
+        customKg: s.capacityCustomKg,
+        customNotice: capacityCustomNotice,
+        setMinIdx: (idx: number) => setState((st) => ({
+          ...st,
+          capacityMinIdx: Math.min(Math.max(0, idx), st.capacityMaxIdx),
+        })),
+        setMaxIdx: (idx: number) => setState((st) => ({
+          ...st,
+          capacityMaxIdx: Math.max(Math.min(CAPACITY_STOPS.length - 1, idx), st.capacityMinIdx),
+        })),
+        setCustomKg: (e: React.ChangeEvent<HTMLInputElement>) => setState((st) => ({
+          ...st,
+          capacityCustomKg: e.target.value,
+        })),
+      },
+      activeFilterCount,
+      clearFilters: () => setState((st) => ({
+        ...st,
+        filters: {},
+        catSort: 'recommended',
+        capacityMinIdx: 0,
+        capacityMaxIdx: CAPACITY_STOPS.length - 1,
+        capacityCustomKg: '',
+      })),
+      catSort: s.catSort,
+      catSortOptions: buildCatSortOptions(data.useGuidance, ui.catalogue.sortAllProducts),
+      catGuide: s.catGuide,
+      clearCatGuide,
+      catFiltersOpen: s.catFiltersOpen,
+      toggleCatFilters: () => setState((st) => ({ ...st, catFiltersOpen: !st.catFiltersOpen })),
+      catByUse: catUse,
+      setCatSort: (catSort: CatSort) => setState((st) => {
+        const clearGuide = st.catGuide === 'use-sort' ? { catGuide: null as const } : {};
+        if (catSort === 'recommended') {
+          return { ...st, catSort, filters: {}, ...clearGuide };
+        }
+        return {
+          ...st,
+          catSort,
+          filters: filtersForUseSort(catSort),
+          ...clearGuide,
+        };
+      }),
+      onCatSortChange: (e: React.ChangeEvent<HTMLSelectElement>) =>
+        setState((st) => ({ ...st, catSort: e.target.value as CatSort })),
+      showPdp: s.screen === 'pdp',
+      pdpFrom: s.pdpFrom,
+      pdpCrumb: `Home / Products / ${sp.name}`,
+      pdpBreadcrumbs: [
+        { label: ui.breadcrumbs.home, onClick: goHome },
+        {
+          label: ui.breadcrumbs.products,
+          onClick: () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'type', menu: null, catFiltersOpen: false })),
+        },
+        { label: sp.name },
+      ],
+      product: sp,
+      pdpFeatures,
+      pdpSpec,
+      galleryThumbs,
+      trustBadges,
+      relatedProducts,
+      pdpQuoteLabel: ui.pdp.getQuoteFor.replace('{productName}', sp.name),
+      pdpGetQuote: () => {
+        navigate((st) => {
+          const quote = { ...st.quote, product: sp.name, productId: sp.id };
+          return { ...st, screen: 'quote', quoteStep: getInitialQuoteStep(quote), quote };
+        });
+      },
+      pdpOrderSample: () => openSampleOrder({ from: 'pdp' }),
+      showSample: s.screen === 'sample',
+      sampleStep: s.sampleStep,
+      sampleProduct,
+      sampleBillRows,
+      sampleBankRows,
+      samplePaymentAccount: sampleBankAccount,
+      sampleCart: {
+        productName: sampleProduct.name,
+        productMeta: `${sampleCapacityLabel} · ${data.sampleOrderDefaults.printing}`,
+        qtyLabel: data.sampleOrderDefaults.qtyLabel,
+        unitPriceUsd: data.sampleOrderDefaults.unitPriceUsd,
+        shippingUsd: data.sampleOrderDefaults.shippingUsd,
+        subtotalUsd: sampleSubtotal,
+        totalUsd: sampleTotal,
+        currency: data.sampleOrderDefaults.currency,
+      },
+      sampleTotal,
+      sampleRef: s.sampleRef,
+      bankPaymentNote: data.bankDetails.paymentNote,
+      samplePaymentCanSubmit: Boolean(qv.name && qv.email),
+      bankPickerOpen: s.bankPickerOpen,
+      bankPickerMode: s.bankPickerMode,
+      bankPickerQuery: s.bankPickerQuery,
+      bankPickerItems,
+      openBankPicker: () => setState((st) => ({
+        ...st,
+        bankPickerOpen: true,
+        bankPickerMode: 'bank',
+        bankPickerQuery: '',
+      })),
+      openBranchPicker: () => setState((st) => ({
+        ...st,
+        bankPickerOpen: true,
+        bankPickerMode: 'branch',
+        bankPickerQuery: '',
+      })),
+      closeBankPicker: () => setState((st) => ({
+        ...st,
+        bankPickerOpen: false,
+        bankPickerMode: null,
+        bankPickerQuery: '',
+      })),
+      setBankPickerQuery: (query: string) => setState((st) => ({ ...st, bankPickerQuery: query })),
+      selectBankPickerItem: (id: string) => {
+        setState((st) => {
+          if (st.bankPickerMode === 'bank') {
+            const match = data.paymentBankAccounts.find((a) => a.bankName === id);
+            return {
+              ...st,
+              samplePaymentAccountId: match?.id ?? st.samplePaymentAccountId,
+              bankPickerOpen: false,
+              bankPickerMode: null,
+              bankPickerQuery: '',
+            };
+          }
+          return {
+            ...st,
+            samplePaymentAccountId: id,
+            bankPickerOpen: false,
+            bankPickerMode: null,
+            bankPickerQuery: '',
+          };
+        });
+      },
+      sampleBuyNow: () => {
+        const ref = `VP-SMP-${Date.now().toString(36).toUpperCase().slice(-6)}`;
+        navigate((st) => ({ ...st, sampleStep: 1, sampleRef: ref }));
+      },
+      sampleConfirmPayment: () => {
+        navigate((st) => ({ ...st, sampleStep: 2 }));
+      },
+      sampleBack: goBack,
+      sampleRestart: () => navigate((st) => ({
+        ...st,
+        screen: 'home',
+        sampleStep: 0,
+        sampleRef: '',
+        samplePaymentAccountId: 'hdfc-bopal',
+        bankPickerOpen: false,
+        bankPickerMode: null,
+        bankPickerQuery: '',
+      })),
+      showFaqs: s.screen === 'faqs',
+      faqs,
+      showBlog: s.screen === 'blog',
+      blogBreadcrumbs: [
+        { label: ui.breadcrumbs.home, onClick: goHome },
+        { label: ui.breadcrumbs.blog },
+      ],
+      blogRows,
+      showAbout: s.screen === 'about',
+      companyRows,
+      whyRows,
+      showContact: s.screen === 'contact',
+      contactQuick,
+      contactAddresses,
+      showQuote: s.screen === 'quote',
+      quoteBreadcrumbs: [
+        { label: ui.breadcrumbs.home, onClick: goHome },
+        { label: ui.breadcrumbs.getQuote },
+      ],
+      quoteStepNum: s.quoteStep,
+      reviewFields,
+      reviewFieldSteps,
+      quoteBagSpecCanSubmit,
+      quoteLeadOnly: s.quoteLeadOnly,
+      quoteBagSpecPrompt: s.quoteBagSpecPrompt,
+      quoteContactOpen: s.quoteContactOpen,
+      openQuoteContact: openContactEnquiry,
+      closeQuoteContact: () => setState((st) => ({ ...st, quoteContactOpen: false })),
+      quoteContactCanSubmit: Boolean(qv.name && qv.email),
+      quoteProductChips: data.products.map((p) => ({
+        label: p.name, sel: qv.product === p.name,
+        bg: qv.product === p.name ? VP.accentSubtle : VP.bgElevated,
+        bd: qv.product === p.name ? VP.accent : VP.border,
+        col: qv.product === p.name ? VP.accent : VP.textSecondary,
+        pick: () => setQ('product', p.name),
+      })),
+      capChips: ['5 kg', '10 kg', '15 kg', '20 kg', '25 kg', '30 kg', '40 kg', '50 kg', '60 kg', '75 kg', 'Custom'].map((c) => ({
+        label: c, bg: qv.capacity === c ? VP.accentSubtle : VP.bgElevated, bd: qv.capacity === c ? VP.accent : VP.border,
+        col: qv.capacity === c ? VP.accent : VP.textSecondary, pick: () => setQ('capacity', c),
+      })),
+      printChips: ['Plain', 'Flexo printed', 'Printed laminated', 'Multi-color'].map((c) => ({
+        label: c, bg: qv.printing === c ? VP.accentSubtle : VP.bgElevated, bd: qv.printing === c ? VP.accent : VP.border,
+        col: qv.printing === c ? VP.accent : VP.textSecondary, pick: () => setQ('printing', c),
+      })),
+      addonChips: ['Liner', 'Gusset', 'Handle', 'Window', 'Perforation', 'Valve', 'Pinch', 'Block bottom'].map((c) => ({
+        label: c, on: !!(qv.addons || {})[c],
+        bg: (qv.addons || {})[c] ? VP.accentSubtle : VP.bgElevated,
+        bd: (qv.addons || {})[c] ? VP.accent : VP.border,
+        col: (qv.addons || {})[c] ? VP.accent : VP.textSecondary,
+        pick: () => setQ('addons', { ...(qv.addons || {}), [c]: !(qv.addons || {})[c] }),
+      })),
+      reviewRows: reviewFields.map((f) => ({ k: f.label, v: f.value || '-' })),
+      qStep3: s.quoteStep === 3,
+      qStep4: s.quoteStep === 4,
+      qStep5: s.quoteStep === 5,
+      qStep6: s.quoteStep === 6,
+      quoteForm: s.quoteStep < 6,
+      quoteProductPrefilled: Boolean(qv.product),
+      quotePageBack: () => {
+        if (s.quoteStep === 5) {
+          setState((st) => ({ ...st, quoteStep: 4 }));
+          return;
+        }
+        if (s.quoteStep === 3) {
+          goBack();
+        }
+      },
+      quoteContinueFromContact: (contact?: {
+        name: string;
+        company?: string;
+        email: string;
+        whatsapp?: string;
+        country?: string;
+      }) => {
+        const name = String(contact?.name ?? qv.name ?? '').trim();
+        const email = String(contact?.email ?? qv.email ?? '').trim();
+        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
+
+        captureQuoteLead({
+          name,
+          company: contact?.company ?? qv.company,
+          email,
+          whatsapp: contact?.whatsapp ?? qv.whatsapp,
+          country: contact?.country ?? qv.country,
+        });
+
+        navigate((st) => ({
+          ...st,
+          screen: 'quote',
+          quoteStep: 5,
+          quoteLeadOnly: false,
+          quoteBagSpecPrompt: true,
+          quoteContactOpen: false,
+          quote: {
+            ...st.quote,
+            name,
+            company: contact?.company ?? st.quote.company,
+            email,
+            whatsapp: contact?.whatsapp ?? st.quote.whatsapp,
+            country: contact?.country ?? st.quote.country,
+            leadCapturedAt: new Date().toISOString(),
+          },
+        }));
+      },
+      quoteContinueToBagSpec: () => {
+        setState((st) => ({ ...st, quoteStep: 5, quoteLeadOnly: false, quoteBagSpecPrompt: false }));
+      },
+      quoteLeadDone: () => navigate((st) => ({
+        ...st,
+        screen: 'quote',
+        quoteStep: 6,
+        quoteLeadOnly: true,
+        quoteBagSpecPrompt: false,
+        quoteContactOpen: false,
+      })),
+      quoteFinalSubmit: () => navigate((st) => ({
+        ...st,
+        screen: 'quote',
+        quoteStep: 6,
+        quoteLeadOnly: false,
+        quoteBagSpecPrompt: false,
+        quoteContactOpen: false,
+      })),
+      quoteSubmit: () => {
+        navigate((st) => ({
+          ...st,
+          screen: 'quote',
+          quoteStep: 6,
+          quoteLeadOnly: false,
+          quoteBagSpecPrompt: false,
+          quoteContactOpen: false,
+        }));
+      },
+      quoteRestart: () => navigate((st) => ({
+        ...st,
+        screen: 'home',
+        quoteStep: 3,
+        quoteLeadOnly: false,
+        quoteBagSpecPrompt: false,
+        quoteContactOpen: false,
+        quote: {},
+      })),
+      qSet: {
+        name: (e: React.ChangeEvent<HTMLInputElement>) => setQ('name', e.target.value),
+        company: (e: React.ChangeEvent<HTMLInputElement>) => setQ('company', e.target.value),
+        email: (e: React.ChangeEvent<HTMLInputElement>) => setQ('email', e.target.value),
+        whatsapp: (e: React.ChangeEvent<HTMLInputElement>) => setQ('whatsapp', e.target.value),
+        country: (e: React.ChangeEvent<HTMLInputElement>) => setQ('country', e.target.value),
+        packed: (e: React.ChangeEvent<HTMLInputElement>) => setQ('packed', e.target.value),
+        size: (e: React.ChangeEvent<HTMLInputElement>) => setQ('size', e.target.value),
+        quantity: (e: React.ChangeEvent<HTMLInputElement>) => setQ('quantity', e.target.value),
+        packing: (e: React.ChangeEvent<HTMLInputElement>) => setQ('packing', e.target.value),
+        message: (e: React.ChangeEvent<HTMLTextAreaElement>) => setQ('message', e.target.value),
+      },
+      qv,
+      footCompany: [
+        footLink(ui.footer.links.home, goHome),
+        footLink(ui.footer.links.about, () => go('about')),
+        footLink(ui.footer.links.contact, () => go('contact')),
+      ],
+      footProducts: data.footerProductLinks.map((p) => footLink(p.label, () => openPdp(p.id, 'catalogue'))),
+      footProductsLeft: data.footerProductLinks.filter((_, i) => i % 2 === 0).map((p) => footLink(p.label, () => openPdp(p.id, 'catalogue'))),
+      footProductsRight: data.footerProductLinks.filter((_, i) => i % 2 === 1).map((p) => footLink(p.label, () => openPdp(p.id, 'catalogue'))),
+      footHelp: [
+        footLink(ui.footer.links.productUses, () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'use', catFiltersOpen: false }))),
+        footLink(ui.footer.links.blog, () => go('blog')),
+        footLink(ui.footer.links.faqs, () => go('faqs')),
+        footLink(ui.footer.links.getQuote, () => go('quote')),
+      ],
+      contactProductOptions: data.footerProductLinks,
+      contactCountries: data.contactCountriesList,
+      selectCountry: (country: string) => setQ('country', country),
+      selectContactProduct: (label: string) => {
+        const link = data.footerProductLinks.find((p) => p.label === label);
+        setState((st) => ({
+          ...st,
+          quote: {
+            ...st.quote,
+            product: label,
+            productId: link?.id ?? st.quote.productId,
+          },
+        }));
+      },
+      openContactEnquiry,
+    };
+  }, [s, vividPolyData, go, goHome, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide]);
+
+  return v;
+}
