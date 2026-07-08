@@ -5,23 +5,18 @@
     "loading": "Loading VIVIDPOLY…",
     "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · PP Bags Exporter from India"
   },
-  "locale": {
-    "switcherLabel": "Language",
-    "bannerMessage": "We've set your language to {language} based on your location.",
-    "bannerKeep": "Keep this",
-    "bannerSwitchEnglish": "Switch to English",
-    "bannerDismiss": "Dismiss"
-  },
   "nav": {
     "home": "Home",
-    "products": "Products",
-    "about": "About",
-    "resources": "Resources",
-    "contact": "Contact",
+    "products": "Product",
+    "about": "About Us",
+    "industryServed": "Industry Served",
+    "resources": "News and Update",
+    "career": "Career",
+    "contact": "Contact Us",
     "byProductType": "By Product Type",
     "byIndustryUse": "By Industry / Use",
-    "buyerResourcesEyebrow": "Buyer resources",
-    "buyerResourcesLead": "Tools and guides to help you spec the right PP bag before enquiry.",
+    "buyerResourcesEyebrow": "News and updates",
+    "buyerResourcesLead": "Buyer guides, FAQs, and the latest from VIVIDPOLY.",
     "viewAllByType": "View all products by type →",
     "viewAllByIndustry": "View all products by industry →",
     "getQuoteShort": "Get quote",
@@ -33,10 +28,113 @@
     "closeMenu": "Close menu",
     "logoHome": "VIVIDPOLY, go to homepage",
     "mainNav": "Main navigation",
-    "productsMenu": "Products menu",
+    "productsMenu": "Product menu",
+    "resourcesMenu": "News and Update menu",
+    "industryMenu": "Industry Served menu",
     "mobileNav": "Mobile navigation",
     "mobileByProductType": "By product type",
     "mobileByIndustry": "By industry / use"
+  },
+  "fab": {
+    "label": "Enquiry",
+    "ariaLabel": "Open enquiry form"
+  },
+  "enquiryModal": {
+    "title": "Enquiry Form",
+    "close": "Close enquiry form"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "General Query",
+      "id": "general"
+    },
+    {
+      "label": "Open Mouth Bags - OMB",
+      "id": "open-mouth"
+    },
+    {
+      "label": "Top & Bottom Stitched Bags - TBS",
+      "id": "stitched"
+    },
+    {
+      "label": "D-Cut PP Woven Bags - DCB",
+      "id": "d-cut"
+    },
+    {
+      "label": "Valve Bags - VB",
+      "id": "valve"
+    },
+    {
+      "label": "Carry Bags - CB",
+      "id": "carry"
+    },
+    {
+      "label": "Printed Laminated Woven PP Bags - LWB",
+      "id": "laminated"
+    },
+    {
+      "label": "Pinch Bottom Bags - PBB",
+      "id": "pinch-bottom"
+    },
+    {
+      "label": "Block Bottom Bags - BBB",
+      "id": "block-bottom"
+    },
+    {
+      "label": "Block Bottom Gusset Bags - BGB",
+      "id": "gusset"
+    },
+    {
+      "label": "Woven Shopping Bags - WSB",
+      "id": "shopping"
+    },
+    {
+      "label": "PP Woven Fabric",
+      "id": "fabric"
+    },
+    {
+      "label": "Tape",
+      "id": "tape"
+    },
+    {
+      "label": "Weed Barrier",
+      "id": "weed-barrier"
+    }
+  ],
+  "topBar": {
+    "selectLanguage": "Select Language",
+    "phone": "(+91) 92136-26740",
+    "phoneHref": "tel:+919213626740",
+    "email": "info@vividpoly.com",
+    "emailHref": "https://mail.google.com/mail/?view=cm&fs=1&to=info@vividpoly.com",
+    "whatsappLabel": "(+91) 92136-26740",
+    "whatsappHref": "https://wa.me/919213626740",
+    "career": "Career",
+    "careerHref": "mailto:info@vividpoly.com",
+    "languages": [
+      {
+        "code": "en",
+        "label": "English"
+      }
+    ]
+  },
+  "emailCompose": {
+    "title": "Email VIVIDPOLY",
+    "toLabel": "To",
+    "fromLabel": "Your email",
+    "nameLabel": "Your name",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "close": "Close compose panel",
+    "defaultSubject": "Export enquiry from vividpoly.com",
+    "hint": "Your message is sent directly to our export team. We will reply to the email address you enter above.",
+    "emailInvalid": "Enter a valid email address.",
+    "messageRequired": "Add a short message before sending.",
+    "sendSuccess": "Message sent. Our team will get back to you soon.",
+    "sendError": "We could not send your message. Please try again or call us directly.",
+    "sendUnavailable": "Email sending is not configured yet. Please use phone or WhatsApp to reach us."
   },
   "common": {
     "back": "Back",
@@ -45,6 +143,7 @@
     "select": "Select",
     "selectCountry": "Select country",
     "selectBagType": "Select bag type",
+    "selectEnquiryType": "Select enquiry type",
     "optional": "optional",
     "custom": "Custom",
     "none": "None",
@@ -152,24 +251,32 @@
         "The website helps buyers share product type, capacity, size, printing, add-ons, packing, quantity, and destination before quotation."
       ]
     ],
-    "contactTeam": "Contact VIVIDPOLY Export Team",
-    "requestCustomQuote": "Request a Custom PP Bag Quote"
+    "contactTeam": "Send an enquiry",
+    "requestCustomQuote": "Send an enquiry"
   },
   "contact": {
     "title": "Contact Us",
     "reachUs": "Reach us directly",
-    "sendRequirement": "Send your requirement",
+    "sendRequirement": "Send an enquiry",
+    "sendRequirementLead": "Tell us what you need. Choose a product type or send a general query and we will respond with practical guidance.",
     "formName": "Name",
-    "formCompany": "Company Name",
+    "formCompany": "Company name",
     "formEmail": "Email",
-    "formPhone": "WhatsApp / Phone",
+    "formPhone": "WhatsApp / phone",
     "formCountry": "Country",
-    "formProductType": "Product Type",
+    "formEnquiryType": "Enquiry type",
     "formMessage": "Message",
+    "submitEnquiry": "Submit enquiry",
+    "sending": "Sending…",
+    "submitSuccess": "Enquiry sent. Our team will get back to you soon.",
+    "submitError": "We could not send your enquiry. Please try again or call us directly.",
+    "submitUnavailable": "Online enquiry is not configured yet. Please email or call us using the details on this page.",
+    "emailInvalid": "Enter a valid email address.",
+    "messageRequired": "Add a short message before submitting.",
+    "phoneRequired": "Add a WhatsApp or phone number so we can reach you.",
     "emailLabel": "Email",
     "websiteLabel": "Website",
-    "indiaPhoneLabel": "India phone",
-    "internationalLabel": "International",
+    "phoneLabel": "WhatsApp / Phone",
     "corporateOffice": "Corporate office",
     "factory": "Factory",
     "companyRows": [
@@ -186,12 +293,8 @@
         "INFO@VIVIDPOLY.COM"
       ],
       [
-        "India Phone",
-        "+91 9998014994"
-      ],
-      [
-        "International Phone",
-        "+61 426712534"
+        "Phone",
+        "+91 92136 26740"
       ],
       [
         "Corporate Address",
@@ -301,6 +404,58 @@
     "fallbackReadTime": "5 min read",
     "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor."
   },
+  "careers": {
+    "eyebrow": "Careers at VividPoly",
+    "title": "Sourced from India. Trusted Worldwide.",
+    "lead": "We look for people who care about quality, clear communication, and reliable delivery. Roles span office, factory, and export operations across Ahmedabad and Vadodara.",
+    "applyNow": "Apply Now",
+    "applyHref": "https://docs.google.com/forms/d/e/1FAIpQLScdHClo1CkNedEHXsUrl5LNPqRc0xG50r-OCxIuQsVnmbZnoA/viewform",
+    "seeHowWeWork": "See how we work",
+    "whyHeading": "Why VividPoly",
+    "whyLead": "A practical place to build skills in manufacturing and global trade.",
+    "reasons": [
+      {
+        "title": "Global Exposure",
+        "body": "Work tied to buyers across 70+ export markets."
+      },
+      {
+        "title": "Room to Grow",
+        "body": "New responsibility comes fast in a growing business."
+      },
+      {
+        "title": "Job Security",
+        "body": "Backed by a stable, established export operation."
+      },
+      {
+        "title": "Learning on the Job",
+        "body": "Hands-on exposure to manufacturing and global trade."
+      }
+    ],
+    "positionsEyebrow": "Open Positions",
+    "positionsHeading": "Find Us Where You're Already Looking",
+    "positionsLead": "Current openings are posted and updated on these platforms.",
+    "positionsNote": "Use Apply Now below to submit your application.",
+    "platforms": [
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/company/vividpoly/jobs/"
+      },
+      {
+        "id": "indeed",
+        "label": "Indeed",
+        "href": "https://in.indeed.com/cmp/Vividpoly"
+      },
+      {
+        "id": "naukri",
+        "label": "Naukri.com",
+        "href": "https://www.naukri.com/"
+      }
+    ],
+    "ctaEyebrow": "Apply Now",
+    "ctaHeading": "Your Next Career Move Starts Here",
+    "ctaLead": "Share your role interest, experience, and preferred location. Our team will review applications as openings become available."
+  },
   "footer": {
     "aboutBlurb": "VIVIDPOLY exports PP bags from India for global buyers who need customizable capacity, printing, liners, and export-ready packing.",
     "company": "Company",
@@ -344,7 +499,9 @@
     "blog": "Blog",
     "faqs": "FAQs",
     "about": "About",
-    "contact": "Contact Us"
+    "careers": "Career",
+    "contact": "Contact Us",
+    "requestExportQuote": "Request Export Quote"
   },
   "validation": {
     "emailInvalid": "Enter a valid email address."
@@ -354,9 +511,9 @@
     "heroHeadline": "PP Bags Exporter from India for Global Packaging Buyers",
     "heroIecLabel": "IEC certified",
     "heroLead": "PP bags, woven bags, valve bags, and custom export packaging from India, built for importers, distributors, and industrial buyers worldwide.",
-    "heroCtaPrimary": "Request Export Quote",
+    "heroCtaPrimary": "WhatsApp",
     "heroCtaSecondary": "View Product Types",
-    "heroCtaWhatsApp": "Chat with Export Team",
+    "heroCtaWhatsApp": "WhatsApp",
     "headerQuoteLabel": "Quote",
     "brandTagline": "Quality Packaging Solutions",
     "marketsStrip": "Primary Export Markets: America/USA, Canada, Australia, Europe, United Kingdom, Africa, Thailand, Saudi Arabia, Latin America, New Zealand, and other global import markets.",
@@ -386,19 +543,19 @@
     "buyerResponseLabel": "VIVIDPOLY Response",
     "productUsesIntro": "VIVIDPOLY PP bags are suitable for a wide range of product categories. The right bag should be selected based on product weight, density, filling process, moisture sensitivity, branding requirement, handling condition, and export packing standard.",
     "productUsesEmptyHint": "Hover or select a product use to see recommended bag types.",
-    "productUsesLearnMore": "Request Export Quote",
+    "productUsesLearnMore": "Send an enquiry",
     "productUseCol": "Product Use",
     "recommendedBagsCol": "Recommended Bag Types",
-    "finalCtaTitle": "Ready to source PP bags from India?",
-    "finalCtaBody": "Share your bag type, capacity, size, packed product, printing requirement, lamination, liner, gusset, handle, packing type, quantity, and destination country. VIVIDPOLY will review your enquiry and respond with suitable export packaging options.",
-    "finalCtaButton": "Request Export Quote",
+    "finalCtaTitle": "Ready to discuss your packaging requirement?",
+    "finalCtaBody": "Share your bag type, capacity, printing needs, quantity, and destination. VIVIDPOLY will review your enquiry and follow up with practical options.",
+    "finalCtaButton": "Send an enquiry",
     "faqSectionTitle": "Frequently asked questions",
     "catalogueTypeSub": "VIVIDPOLY exports PP bags from India for businesses that need strong, customizable, and export-ready packaging. Our PP bags can be developed for 5 kg to 75 kg capacities depending on product density, bag size, construction, fabric strength, lamination, liner, stitching, gusset, and filling requirement.",
     "catalogueUseSub": "VIVIDPOLY PP bags are suitable for a wide range of product categories. The right bag should be selected based on product weight, density, filling process, moisture sensitivity, branding requirement, handling condition, and export packing standard.",
     "shopByUseLabel": "I'm packing…",
     "catalogueGuideProductType": "Choose from here",
     "catalogueGuideUseSort": "Sort by industry here",
-    "contactIntro": "If you are looking for PP bags, PP woven bags, printed and laminated woven PP bags, valve bags, pinch bottom bags, block bottom bags, block bottom gusset bags, D-cut bags, carry bags, or woven shopping bags from India, contact VIVIDPOLY with your requirement.",
+    "contactIntro": "Use this page to send a product enquiry or a general question. Select the bag type you are interested in, or choose General Query if you are still exploring options.",
     "quoteIntro1": "Please share your PP bag requirement so the VIVIDPOLY export team can recommend the right product type, construction, size, capacity, printing, add-on features, and export packing format.",
     "quoteIntro2": "Answer a few questions at a time. We'll guide you through bag type, size, printing, and shipping details.",
     "quotePageEyebrow": "Export enquiry",
@@ -424,10 +581,31 @@
     "quoteSuccessTitle": "Enquiry received",
     "quoteSuccessBody": "We will get back to you by phone or WhatsApp within 12 hours.",
     "blogIntro": "Written for international buyers comparing PP bag suppliers, learning about bag types, checking specifications, and preparing export enquiries.",
-    "blogLeadTitle": "Planning an export order?",
-    "blogLeadBody": "Share your product, bag type, capacity, and destination market. Our export team will review your requirement and follow up with practical guidance and a quotation.",
-    "blogLeadCta": "Enquire Now",
-    "blogReadArticle": "Read article"
+    "blogLeadTitle": "Have a packaging question?",
+    "blogLeadBody": "Send a product enquiry or general query on our contact page. Our team will review your requirement and follow up with practical guidance.",
+    "blogLeadCta": "Send an enquiry",
+    "blogReadArticle": "Read article",
+    "heroWhatsAppHref": "https://wa.me/919213626740",
+    "heroIsoLabel": "ISO certified",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Export Markets"
+      },
+      {
+        "value": "9+",
+        "label": "Countries Served"
+      },
+      {
+        "value": "750",
+        "label": "MT / Year Capacity"
+      },
+      {
+        "value": "100%",
+        "label": "Export Grade"
+      }
+    ],
+    "homeCertsHeading": "Certifications"
   },
   "markets": [
     "USA",
@@ -630,28 +808,36 @@
   ],
   "typeGroups": [
     {
-      "title": "Everyday & Functional Bags",
+      "title": "Woven Bag",
       "ids": [
         "open-mouth",
         "stitched",
-        "valve"
-      ]
-    },
-    {
-      "title": "Carry & Retail Bags",
-      "ids": [
         "d-cut",
+        "valve",
         "carry",
+        "laminated",
+        "pinch-bottom",
+        "block-bottom",
+        "gusset",
         "shopping"
       ]
     },
     {
-      "title": "Premium Printed & Laminated Range",
+      "title": "Fabric",
       "ids": [
-        "laminated",
-        "pinch-bottom",
-        "block-bottom",
-        "gusset"
+        "fabric"
+      ]
+    },
+    {
+      "title": "Tape",
+      "ids": [
+        "tape"
+      ]
+    },
+    {
+      "title": "Weed Barrier",
+      "ids": [
+        "weed-barrier"
       ]
     }
   ],
@@ -780,6 +966,18 @@
         {
           "id": "Woven shopping",
           "label": "Woven shopping"
+        },
+        {
+          "id": "PP woven fabric",
+          "label": "PP woven fabric"
+        },
+        {
+          "id": "Tape",
+          "label": "Tape"
+        },
+        {
+          "id": "Weed barrier",
+          "label": "Weed barrier"
         }
       ]
     }
@@ -1055,13 +1253,25 @@
     {
       "label": "Woven Shopping Bags",
       "id": "shopping"
+    },
+    {
+      "label": "PP Woven Fabric",
+      "id": "fabric"
+    },
+    {
+      "label": "Tape",
+      "id": "tape"
+    },
+    {
+      "label": "Weed Barrier",
+      "id": "weed-barrier"
     }
   ],
   "products": {
     "open-mouth": {
       "name": "Open Mouth Bags",
       "cta": "Explore Open Mouth Bags",
-      "group": "Everyday & Functional",
+      "group": "Woven Bag",
       "short": "Easy-filling PP woven bags for dry bulk products such as grains, flour, feed, fertilizer, salt, sugar, seeds, and minerals.",
       "intro": "Open Mouth Bags are one of the most practical PP bag styles for dry bulk packaging. VIVIDPOLY exports open mouth PP bags for buyers who need easy filling, flexible closing, and customization for agricultural, food, fertilizer, feed, chemical, mineral, salt, sugar, and industrial applications.",
       "features": [
@@ -1117,7 +1327,7 @@
     "stitched": {
       "name": "Top and Bottom Stitched Bags",
       "cta": "Explore Stitched Bags",
-      "group": "Everyday & Functional",
+      "group": "Woven Bag",
       "short": "Secure stitched PP bags for transport, storage, and export packing of agricultural and industrial products.",
       "intro": "Top and Bottom Stitched Bags are designed for buyers who need secure closure and dependable handling during storage and transport. VIVIDPOLY exports stitched PP bags for agricultural, food, fertilizer, animal feed, chemical, mineral, and industrial packaging.",
       "features": [
@@ -1165,7 +1375,7 @@
     "d-cut": {
       "name": "D-Cut PP Woven Bags",
       "cta": "Explore D-Cut Bags",
-      "group": "Carry & Retail",
+      "group": "Woven Bag",
       "short": "Carry-style PP woven bags with integrated handle cut for retail, promotion, and reusable-style packaging.",
       "intro": "D-Cut PP Woven Bags include an integrated handle cut that makes the bag easier to carry. VIVIDPOLY exports D-cut bags for retail, shopping, promotional, exhibition, and reusable-style packaging requirements.",
       "features": [
@@ -1213,7 +1423,7 @@
     "valve": {
       "name": "Valve Bags",
       "cta": "Explore Valve Bags",
-      "group": "Everyday & Functional",
+      "group": "Woven Bag",
       "short": "Valve-filling PP bags for cement-style products, chemicals, minerals, powders, and construction materials.",
       "intro": "Valve Bags are developed for products that require filling through a valve opening. VIVIDPOLY exports valve bags for cement-style products, chemicals, minerals, powders, construction materials, and industrial goods.",
       "features": [
@@ -1257,7 +1467,7 @@
     "carry": {
       "name": "Carry Bags",
       "cta": "Explore Carry Bags",
-      "group": "Carry & Retail",
+      "group": "Woven Bag",
       "short": "Strong and brandable woven carry bags for retail, trade, and promotional applications.",
       "intro": "Carry Bags made with PP woven material are suitable for buyers who require strong, brandable, and practical carrying bags. VIVIDPOLY exports carry bags for retail, trade, shopping, events, and promotional packaging.",
       "features": [
@@ -1299,9 +1509,9 @@
       "material": "PP woven fabric, laminated film, printing ink, stitching thread, handle material if required."
     },
     "laminated": {
-      "name": "Printed and Laminated Woven PP Bags",
+      "name": "Printed & Laminated Woven PP Bags",
       "cta": "Explore Laminated PP Bags",
-      "group": "Premium Printed & Laminated",
+      "group": "Woven Bag",
       "short": "Premium printed packaging for rice, flour, feed, pet food, fertilizer, seeds, and retail commodities.",
       "intro": "Printed and Laminated Woven PP Bags combine woven strength with attractive brand presentation. VIVIDPOLY exports these bags for buyers who need premium printed packaging for food commodities, fertilizer, feed, pet food, seeds, salt, sugar, and retail products.",
       "features": [
@@ -1345,7 +1555,7 @@
     "pinch-bottom": {
       "name": "Pinch Bottom Bags",
       "cta": "Explore Pinch Bottom Bags",
-      "group": "Premium Printed & Laminated",
+      "group": "Woven Bag",
       "short": "Premium printed laminated PP bags with clean closure presentation for retail-ready packaging.",
       "intro": "Printed and Laminated Woven PP Pinch Bottom Bags are designed for premium packaging where clean closure presentation and brand appearance are important. VIVIDPOLY exports pinch bottom bags for food grains, pet food, animal feed, seeds, and retail products.",
       "features": [
@@ -1385,7 +1595,7 @@
     "block-bottom": {
       "name": "Block Bottom Bags",
       "cta": "Explore Block Bottom Bags",
-      "group": "Premium Printed & Laminated",
+      "group": "Woven Bag",
       "short": "Stable-shape printed laminated PP bags for better stacking, display, and export presentation.",
       "intro": "Printed and Laminated Woven PP Block Bottom Bags provide a more stable filled shape and improved stacking appearance. VIVIDPOLY exports block bottom bags for fertilizer, pet food, animal feed, grains, minerals, chemicals, and retail packaging.",
       "features": [
@@ -1429,7 +1639,7 @@
     "gusset": {
       "name": "Block Bottom Gusset Bags",
       "cta": "Explore Gusset Bags",
-      "group": "Premium Printed & Laminated",
+      "group": "Woven Bag",
       "short": "High-volume printed laminated PP bags with gusset support and strong branding area.",
       "intro": "Printed and Laminated Woven PP Block Bottom Gusset Bags combine stable block bottom construction with gusset-supported volume. VIVIDPOLY exports these bags for animal feed, pet food, fertilizer, grains, seeds, and high-volume retail or industrial products.",
       "features": [
@@ -1469,7 +1679,7 @@
     "shopping": {
       "name": "Shopping Bags (Woven)",
       "cta": "Explore Shopping Bags",
-      "group": "Carry & Retail",
+      "group": "Woven Bag",
       "short": "Woven shopping bags for retail chains, supermarkets, exhibitions, and promotional campaigns.",
       "intro": "Woven Shopping Bags are PP woven carry bags used for retail, supermarket, event, trade show, and promotional packaging. VIVIDPOLY exports woven shopping bags for buyers who need strong, reusable-style, and brandable carry packaging.",
       "features": [
@@ -1509,6 +1719,126 @@
       "speciality": "Custom brand presentation for retail and promotional export buyers.",
       "mfg": "Fabric preparation, printing/lamination, cutting, handle forming/attachment, stitching, inspection, packing.",
       "material": "PP woven fabric, laminated printed film, stitching thread, handle material, printing inks."
+    },
+    "fabric": {
+      "name": "PP Woven Fabric",
+      "cta": "Explore PP Woven Fabric",
+      "group": "Fabric",
+      "short": "PP woven fabric rolls and cut lengths for industrial, agricultural, and conversion use.",
+      "intro": "PP woven fabric rolls and cut lengths for industrial, agricultural, and conversion use.",
+      "features": [
+        {
+          "title": "Export ready",
+          "body": "Supplied for international buyers with custom sizing and packing options."
+        },
+        {
+          "title": "Custom specification",
+          "body": "Width, GSM, colour, and roll or cut length can be planned to order."
+        },
+        {
+          "title": "Quality focus",
+          "body": "Consistent weave and finish for industrial and agricultural use."
+        }
+      ],
+      "benefits": "PP woven fabric rolls and cut lengths for industrial, agricultural, and conversion use.",
+      "details": "Share your required width, GSM, colour, quantity, and destination for a quotation.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Custom to enquiry"
+        },
+        {
+          "key": "Material",
+          "value": "PP woven"
+        },
+        {
+          "key": "Packing",
+          "value": "Export packing"
+        }
+      ],
+      "speciality": "PP Woven Fabric from VIVIDPOLY for global buyers.",
+      "mfg": "Weaving, finishing, inspection, and export packing.",
+      "material": "PP woven material and buyer-specific additives where required."
+    },
+    "tape": {
+      "name": "Tape",
+      "cta": "Explore Tape",
+      "group": "Tape",
+      "short": "PP tape for weaving and packaging applications, supplied to export specifications.",
+      "intro": "PP tape for weaving and packaging applications, supplied to export specifications.",
+      "features": [
+        {
+          "title": "Export ready",
+          "body": "Supplied for international buyers with custom sizing and packing options."
+        },
+        {
+          "title": "Custom specification",
+          "body": "Width, GSM, colour, and roll or cut length can be planned to order."
+        },
+        {
+          "title": "Quality focus",
+          "body": "Consistent weave and finish for industrial and agricultural use."
+        }
+      ],
+      "benefits": "PP tape for weaving and packaging applications, supplied to export specifications.",
+      "details": "Share your required width, GSM, colour, quantity, and destination for a quotation.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Custom to enquiry"
+        },
+        {
+          "key": "Material",
+          "value": "PP woven"
+        },
+        {
+          "key": "Packing",
+          "value": "Export packing"
+        }
+      ],
+      "speciality": "Tape from VIVIDPOLY for global buyers.",
+      "mfg": "Weaving, finishing, inspection, and export packing.",
+      "material": "PP woven material and buyer-specific additives where required."
+    },
+    "weed-barrier": {
+      "name": "Weed Barrier",
+      "cta": "Explore Weed Barrier",
+      "group": "Weed Barrier",
+      "short": "PP woven weed barrier fabric for landscaping, agriculture, and ground-cover applications.",
+      "intro": "PP woven weed barrier fabric for landscaping, agriculture, and ground-cover applications.",
+      "features": [
+        {
+          "title": "Export ready",
+          "body": "Supplied for international buyers with custom sizing and packing options."
+        },
+        {
+          "title": "Custom specification",
+          "body": "Width, GSM, colour, and roll or cut length can be planned to order."
+        },
+        {
+          "title": "Quality focus",
+          "body": "Consistent weave and finish for industrial and agricultural use."
+        }
+      ],
+      "benefits": "PP woven weed barrier fabric for landscaping, agriculture, and ground-cover applications.",
+      "details": "Share your required width, GSM, colour, quantity, and destination for a quotation.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Custom to enquiry"
+        },
+        {
+          "key": "Material",
+          "value": "PP woven"
+        },
+        {
+          "key": "Packing",
+          "value": "Export packing"
+        }
+      ],
+      "speciality": "Weed Barrier from VIVIDPOLY for global buyers.",
+      "mfg": "Weaving, finishing, inspection, and export packing.",
+      "material": "PP woven material and buyer-specific additives where required."
     }
   },
   "quoteOptions": {

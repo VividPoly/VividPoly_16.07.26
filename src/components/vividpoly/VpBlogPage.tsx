@@ -36,7 +36,7 @@ export default function VpBlogPage({
   onEnquire,
 }: VpBlogPageProps) {
   return (
-    <div data-screen-label="Blog" className="vp-blog-page">
+    <div data-screen-label="Blog" className="vp-blog-page vp-page-shell">
       <VpSubpageTop
         breadcrumbs={breadcrumbs}
         onHomeClick={onHomeClick}
@@ -66,25 +66,31 @@ export default function VpBlogPage({
                 <div className="vp-blog-card-media vp-ph" aria-hidden="true" />
                 <div className="vp-blog-card-body">
                   <div className="vp-blog-card-meta">
-                    <span className="vp-blog-card-category">{post.category}</span>
                     <span className="vp-blog-card-read">{post.readTime}</span>
                   </div>
                   <h2 className="vp-blog-card-title">{post.title}</h2>
                   <p className="vp-blog-card-excerpt">{post.excerpt}</p>
-                  <span className="vp-blog-card-cta">
-                    {siteCopy.blogReadArticle}
-                    <span aria-hidden="true"> →</span>
-                  </span>
+                  <div className="vp-blog-card-footer">
+                    <span className="vp-blog-card-tags">
+                      <span className="vp-blog-card-tag">{post.category}</span>
+                    </span>
+                    <span className="vp-blog-card-cta">
+                      {siteCopy.blogReadArticle}
+                      <span aria-hidden="true"> →</span>
+                    </span>
+                  </div>
                 </div>
               </article>
             ))}
           </div>
         </div>
 
-        <aside className="vp-blog-lead" aria-label="Export enquiry">
+        <aside className="vp-blog-lead" aria-label="Product enquiry">
           <div className="vp-blog-lead-card">
-            <h2 className="vp-blog-lead-title">{siteCopy.blogLeadTitle}</h2>
-            <p className="vp-blog-lead-text">{siteCopy.blogLeadBody}</p>
+            <div className="vp-blog-lead-copy">
+              <h2 className="vp-blog-lead-title">{siteCopy.blogLeadTitle}</h2>
+              <p className="vp-blog-lead-text">{siteCopy.blogLeadBody}</p>
+            </div>
             <button type="button" className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--block" onClick={onEnquire}>
               {siteCopy.blogLeadCta}
             </button>

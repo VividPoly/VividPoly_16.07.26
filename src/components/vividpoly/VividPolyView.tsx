@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type MutableRefObject, type RefObject } from 'react';
+import { useCallback, useEffect, useRef, useState, type MutableRefObject, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import { useVividPoly } from '@/hooks/useVividPoly';
 import { bindAllHovers } from '@/lib/vividpoly-style';
@@ -8,23 +8,47 @@ import VpQuoteSuccess from '@/components/vividpoly/VpQuoteSuccess';
 import VpQuoteLeadCaptured from '@/components/vividpoly/VpQuoteLeadCaptured';
 import VpBagSpecForm from '@/components/vividpoly/VpBagSpecForm';
 import VpQuoteContactForm, { quoteContactFromQuote } from '@/components/vividpoly/VpQuoteContactForm';
-import VpQuoteContactSheet from '@/components/vividpoly/VpQuoteContactSheet';
 import VpCustomSelect from '@/components/vividpoly/VpCustomSelect';
 import VpPdpDetails from '@/components/vividpoly/VpPdpDetails';
 import VpSampleCheckout from '@/components/vividpoly/VpSampleCheckout';
 import VpBlogPage from '@/components/vividpoly/VpBlogPage';
+import VpCareersPage from '@/components/vividpoly/VpCareersPage';
 import VpFaqAccordion from '@/components/vividpoly/VpFaqAccordion';
 import VpSubpageTop from '@/components/vividpoly/VpSubpageTop';
 import VpLogo from '@/components/vividpoly/VpLogo';
+import VpTopUtilityBar from '@/components/vividpoly/VpTopUtilityBar';
+import VpEnquiryFab from '@/components/vividpoly/VpEnquiryFab';
+import VpEnquiryModal from '@/components/vividpoly/VpEnquiryModal';
+import VpContactEnquiryForm from '@/components/vividpoly/VpContactEnquiryForm';
+import VpPhotoSlot from '@/components/vividpoly/VpPhotoSlot';
+import VpHeroCarousel, { type HeroSlide } from '@/components/vividpoly/VpHeroCarousel';
+import VpCertBadge from '@/components/vividpoly/VpCertBadge';
+import { WhatsAppIcon } from '@/components/vividpoly/VividPolyIcons';
+import { useEnquiryPopup } from '@/hooks/useEnquiryPopup';
+import { markEnquiryDismissed, markEnquirySubmitted } from '@/lib/enquiry-popup-session';
 import VpCapacityFilter from '@/components/vividpoly/VpCapacityFilter';
 import VpSortSelect from '@/components/vividpoly/VpSortSelect';
 import VpCatalogueGuideTooltip from '@/components/vividpoly/VpCatalogueGuideTooltip';
 import {
   jumpChildIntoHorizontalView,
+  requestSkipNextScrollToTop,
   scrollChildIntoHorizontalView,
   scrollPageToTop,
+  scrollToAnchorWithHeaderOffset,
 } from '@/lib/vividpoly-navigation';
-import { WhatsAppIcon } from '@/components/vividpoly/VividPolyIcons';
+// Only posters that share the same 3:4 (0.75) ratio are used in the hero so the
+// frame stays one fixed size and no image is cropped. Wider posters (0.80 to
+// 0.84) are intentionally excluded to avoid cropping and frame resizing.
+const HERO_CAROUSEL_SLIDES: HeroSlide[] = [
+  { id: 'open-mouth', label: 'PP Woven Sack', ratio: 0.75 },
+  { id: 'stitched', label: 'Double Stitch PP Woven Sack', ratio: 0.75 },
+  { id: 'block-bottom', label: 'Block Bottom Bag', ratio: 0.75 },
+  { id: 'pinch-bottom', label: 'Pinch Bottom Bag', ratio: 0.75 },
+].map((slide) => ({
+  src: `/images/products/${slide.id}.jpg`,
+  alt: `VIVIDPOLY ${slide.label}`,
+  ratio: slide.ratio,
+}));
 
 const BUYER_SWIPE_MAX_WIDTH = 1366;
 const VALUE_PROPS_LOOP_GUARD_MS = 80;
@@ -335,8 +359,32 @@ export default function VividPolyView() {
   const [headerBlend, setHeaderBlend] = useState(false);
   const [headerMounted, setHeaderMounted] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const [mobileNavExpanded, setMobileNavExpanded] = useState<null | 'products' | 'resources'>(null);
+  const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
+  const [mobileNavExpanded, setMobileNavExpanded] = useState<null | 'products' | 'industry' | 'resources'>(null);
+  const [catalogueIntroExpanded, setCatalogueIntroExpanded] = useState(false);
+  const navHoverCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastScrollYRef = useRef(0);
+
+  const canHoverNav = () =>
+    typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  const openNavMenuHover = (menu: 'products' | 'industry' | 'resources') => {
+    if (!canHoverNav()) return;
+    if (navHoverCloseTimer.current) {
+      clearTimeout(navHoverCloseTimer.current);
+      navHoverCloseTimer.current = null;
+    }
+    v.setMenu(menu);
+  };
+
+  const scheduleCloseNavMenuHover = () => {
+    if (!canHoverNav()) return;
+    if (navHoverCloseTimer.current) clearTimeout(navHoverCloseTimer.current);
+    navHoverCloseTimer.current = setTimeout(() => {
+      v.setMenu(null);
+      navHoverCloseTimer.current = null;
+    }, 160);
+  };
   const showHomeRef = useRef(v.showHome);
   showHomeRef.current = v.showHome;
   const activeBuyerRef = useRef(v.activeBuyer);
@@ -348,10 +396,14 @@ export default function VividPolyView() {
 
   useEffect(() => {
     bindAllHovers(rootRef.current);
-  }, [v.screen, v.menu, v.showHome, v.showCatalogue, v.showPdp, v.quoteContactOpen]);
+  }, [v.screen, v.menu, v.showHome, v.showCatalogue, v.showPdp]);
 
   useEffect(() => {
-    window.dispatchEvent(new Event('resize'));
+    setCatalogueIntroExpanded(false);
+  }, [v.catTitle]);
+
+  useEffect(() => {
+    window.dispatchEvent(new Event('vp:layout'));
   }, [v.screen, v.showPdp, v.product?.id]);
 
   useEffect(() => {
@@ -374,6 +426,42 @@ export default function VividPolyView() {
     setMobileNavOpen(false);
     setMobileNavExpanded(null);
   };
+
+  const openEnquiryModal = useCallback(() => {
+    v.resetEnquiryDefaults();
+    setEnquiryModalOpen(true);
+  }, [v.resetEnquiryDefaults]);
+
+  const closeEnquiryModal = useCallback(() => {
+    setEnquiryModalOpen(false);
+    markEnquiryDismissed();
+  }, []);
+
+  useEnquiryPopup({ onAutoOpen: openEnquiryModal });
+
+  const pendingContactScrollRef = useRef(false);
+
+  const goToContactForm = useCallback(() => {
+    setEnquiryModalOpen(false);
+    setMobileNavOpen(false);
+    setMobileNavExpanded(null);
+    if (v.showContact) {
+      scrollToAnchorWithHeaderOffset('vp-contact-enquiry', 'smooth', 12);
+      return;
+    }
+    pendingContactScrollRef.current = true;
+    requestSkipNextScrollToTop();
+    v.goContact();
+  }, [v.showContact, v.goContact]);
+
+  useEffect(() => {
+    if (!v.showContact || !pendingContactScrollRef.current) return;
+    pendingContactScrollRef.current = false;
+    const id = window.setTimeout(() => {
+      scrollToAnchorWithHeaderOffset('vp-contact-enquiry', 'smooth', 12);
+    }, 50);
+    return () => window.clearTimeout(id);
+  }, [v.showContact]);
 
   useBuyerSwipeCarousel(
     buyerCarouselRef,
@@ -447,8 +535,14 @@ export default function VividPolyView() {
     let touchLastY = 0;
     const scrollRoots: HTMLElement[] = [];
 
-    const syncHeaderBlend = () => {
-      setHeaderBlend(false);
+    const syncHeaderBlend = (y = getScrollY()) => {
+      const hero = document.querySelector('.vp-hero') as HTMLElement | null;
+      if (!hero || !showHomeRef.current) {
+        setHeaderBlend(false);
+        return;
+      }
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      setHeaderBlend(heroBottom > 120);
     };
 
     const updateHeaderFromScroll = (y: number) => {
@@ -458,16 +552,11 @@ export default function VividPolyView() {
         setHeaderHidden(false);
       } else if (delta > 4) {
         setHeaderHidden(true);
-        setHeaderBlend(false);
       } else if (delta < -2) {
         setHeaderHidden(false);
-        setHeaderBlend(false);
       }
 
-      if (y <= 8) {
-        syncHeaderBlend();
-      }
-
+      syncHeaderBlend(y);
       lastScrollYRef.current = y;
     };
 
@@ -487,15 +576,13 @@ export default function VividPolyView() {
       const y = getScrollY();
       if (y <= 8) {
         setHeaderHidden(false);
-        syncHeaderBlend();
       } else if (event.deltaY > 1) {
         setHeaderHidden(true);
-        setHeaderBlend(false);
       } else if (event.deltaY < -1) {
         setHeaderHidden(false);
-        setHeaderBlend(false);
       }
 
+      syncHeaderBlend(y);
       lastScrollYRef.current = y;
     };
 
@@ -512,15 +599,13 @@ export default function VividPolyView() {
 
       if (y <= 8) {
         setHeaderHidden(false);
-        syncHeaderBlend();
       } else if (dy < -6) {
         setHeaderHidden(true);
-        setHeaderBlend(false);
       } else if (dy > 6) {
         setHeaderHidden(false);
-        setHeaderBlend(false);
       }
 
+      syncHeaderBlend(y);
       touchLastY = touchY;
       lastScrollYRef.current = y;
     };
@@ -592,8 +677,8 @@ export default function VividPolyView() {
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return;
-      if (v.quoteContactOpen) {
-        v.closeQuoteContact();
+      if (enquiryModalOpen) {
+        closeEnquiryModal();
         return;
       }
       if (mobileNavOpen) {
@@ -604,7 +689,7 @@ export default function VividPolyView() {
     };
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
-  }, [v.quoteContactOpen, v.menu, v.closeQuoteContact, v.closeAll, mobileNavOpen]);
+  }, [v.menu, v.closeAll, mobileNavOpen, enquiryModalOpen, closeEnquiryModal]);
 
   const nav = v.ui.nav;
   const common = v.ui.common;
@@ -616,19 +701,117 @@ export default function VividPolyView() {
   const breadcrumbs = v.ui.breadcrumbs;
   const quoteContactLabels = v.quoteContactLabels;
 
+  const topBar = v.ui.topBar;
+  const fab = v.ui.fab;
+  const enquiryModal = v.ui.enquiryModal;
+
+  const enquiryFormProps = {
+    copy: contact,
+    commonSelectCountry: common.selectCountry,
+    commonSelectEnquiryType: common.selectEnquiryType,
+    enquiryProductTypes: v.enquiryProductTypes,
+    contactCountries: v.contactCountries,
+    values: {
+      name: v.qv.name ?? '',
+      company: v.qv.company ?? '',
+      email: v.qv.email ?? '',
+      phone: v.qv.whatsapp ?? '',
+      country: v.qv.country ?? '',
+      enquiryType: v.enquiryProductTypes.some((item) => item.label === v.qv.product)
+        ? (v.qv.product as string)
+        : v.generalEnquiryType,
+      message: v.qv.message ?? '',
+    },
+    onChange: {
+      name: v.contactFieldSet.name,
+      company: v.contactFieldSet.company,
+      email: v.contactFieldSet.email,
+      phone: v.contactFieldSet.phone,
+      country: v.contactFieldSet.country,
+      enquiryType: v.selectContactProduct,
+      message: v.contactFieldSet.message,
+    },
+  };
+
   const siteHeader = (
-    <header ref={headerRef} className={`vp-header vp-header--fixed${headerVisible ? '' : ' vp-header--hidden'}${headerBlend ? ' vp-header--blend' : ''}${mobileNavOpen ? ' vp-header--mobile-nav-open' : ''}`}>
+    <div ref={headerRef} className={`vp-site-chrome vp-site-chrome--fixed${headerVisible ? '' : ' vp-site-chrome--hidden'}${headerBlend ? ' vp-site-chrome--blend' : ''}${mobileNavOpen ? ' vp-site-chrome--mobile-nav-open' : ''}`}>
+      <VpTopUtilityBar topBar={topBar} />
+      <header className={`vp-header${headerBlend ? ' vp-header--blend' : ''}`}>
       <div className="vp-header-shell">
         <div className="vp-header-start">
           <button type="button" onClick={v.goHome} className="vp-header-logo" aria-label={nav.logoHome}>
-            <VpLogo variant="inverse" className="vp-wordmark--nav" />
+            <VpLogo variant="light" className="vp-wordmark--nav" />
           </button>
           <nav className="vp-header-nav vp-header-nav--desktop" aria-label={nav.mainNav}>
-            <button onClick={v.goHome} type="button" className="vp-header-nav-btn" style={{ color: v.navHomeColor }}>{nav.home}</button>
-            <button onClick={v.toggleProducts} type="button" className="vp-header-nav-btn" style={{ color: v.navProductsColor }} aria-expanded={v.menuProducts} aria-controls="vp-nav-products-panel">{nav.products}<span className="vp-header-nav-caret" aria-hidden="true">▾</span></button>
-            <button onClick={v.goAbout} type="button" className="vp-header-nav-btn" style={{ color: v.navAboutColor }}>{nav.about}</button>
-            <button onClick={v.toggleResources} type="button" className="vp-header-nav-btn" style={{ color: v.navResourcesColor }} aria-expanded={v.menuResources} aria-controls="vp-nav-resources-panel">{nav.resources}<span className="vp-header-nav-caret" aria-hidden="true">▾</span></button>
-            <button onClick={v.goContact} type="button" className="vp-header-nav-btn" style={{ color: v.navContactColor }}>{nav.contact}</button>
+            <button
+              onClick={v.goAbout}
+              type="button"
+              className={`vp-header-nav-btn${v.showAbout ? ' vp-header-nav-btn--active' : ''}`}
+            >
+              {nav.about}
+            </button>
+            <button
+              onClick={() => {
+                if (navHoverCloseTimer.current) {
+                  clearTimeout(navHoverCloseTimer.current);
+                  navHoverCloseTimer.current = null;
+                }
+                // Touch devices have no hover, so tapping should reveal the
+                // dropdown instead of jumping straight to the catalogue.
+                if (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches) {
+                  v.toggleProducts();
+                  return;
+                }
+                v.goCatalogueType();
+              }}
+              onMouseEnter={() => openNavMenuHover('products')}
+              onMouseLeave={scheduleCloseNavMenuHover}
+              type="button"
+              className={`vp-header-nav-btn${v.menuProducts || (v.showCatalogue && !v.catByUse) || v.showPdp ? ' vp-header-nav-btn--active' : ''}`}
+              aria-expanded={v.menuProducts}
+              aria-controls="vp-nav-products-panel"
+            >
+              {nav.products}
+              <span className="vp-header-nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <button
+              onClick={v.toggleIndustry}
+              onMouseEnter={() => openNavMenuHover('industry')}
+              onMouseLeave={scheduleCloseNavMenuHover}
+              type="button"
+              className={`vp-header-nav-btn${v.menuIndustry || (v.showCatalogue && v.catByUse) ? ' vp-header-nav-btn--active' : ''}`}
+              aria-expanded={v.menuIndustry}
+              aria-controls="vp-nav-industry-panel"
+            >
+              {nav.industryServed}
+              <span className="vp-header-nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <button
+              onClick={v.toggleResources}
+              onMouseEnter={() => openNavMenuHover('resources')}
+              onMouseLeave={scheduleCloseNavMenuHover}
+              type="button"
+              className={`vp-header-nav-btn${v.menuResources || v.showFaqs || v.showBlog ? ' vp-header-nav-btn--active' : ''}`}
+              aria-expanded={v.menuResources}
+              aria-controls="vp-nav-resources-panel"
+            >
+              {nav.resources}
+              <span className="vp-header-nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <button
+              onClick={v.goCareers}
+              type="button"
+              className={`vp-header-nav-btn${v.showCareers ? ' vp-header-nav-btn--active' : ''}`}
+            >
+              {nav.career}
+            </button>
+            <button
+              onClick={v.goContact}
+              type="button"
+              className={`vp-header-nav-btn${v.showContact ? ' vp-header-nav-btn--active' : ''}`}
+            >
+              {nav.contact}
+            </button>
           </nav>
         </div>
 
@@ -643,22 +826,21 @@ export default function VividPolyView() {
           >
             <span className="vp-header-menu-icon" aria-hidden="true">{mobileNavOpen ? '✕' : '☰'}</span>
           </button>
-          <button onClick={v.openContactEnquiry} className="vp-cta-primary vp-cta-primary--on-dark vp-header-quote-cta" type="button">
-            <span className="vp-header-cta-label--long">{v.siteCopy.heroCtaPrimary}</span>
-            <span className="vp-header-cta-label--short">{nav.getQuoteShort}</span>
-          </button>
         </div>
       </div>
 
       {v.menuProducts && (
-        <div id="vp-nav-products-panel" className="vp-nav-dropdown" role="region" aria-label={nav.productsMenu}>
+        <div
+          id="vp-nav-products-panel"
+          className="vp-nav-dropdown"
+          role="region"
+          aria-label={nav.productsMenu}
+          onMouseEnter={() => openNavMenuHover('products')}
+          onMouseLeave={scheduleCloseNavMenuHover}
+        >
           <div className="vp-nav-dropdown-inner">
-            <div className="vp-nav-dropdown-tabs">
-              <button onClick={v.setTabType} type="button" className="vp-nav-dropdown-tab" style={{ borderBottom: v.tabTypeBorder, color: v.tabTypeColor }}>{nav.byProductType}</button>
-              <button onClick={v.setTabUse} type="button" className="vp-nav-dropdown-tab" style={{ borderBottom: v.tabUseBorder, color: v.tabUseColor }}>{nav.byIndustryUse}</button>
-            </div>
-            <div className={`vp-nav-dropdown-grid ${v.megaCols === 4 ? 'vp-nav-dropdown-grid--products-4' : 'vp-nav-dropdown-grid--products-3'}`}>
-              {v.megaGroups.map((g, i_g) => (
+            <div className="vp-nav-dropdown-grid vp-nav-dropdown-grid--products-4">
+              {v.megaTypeGroups.map((g, i_g) => (
                 <div key={i_g} className="vp-nav-dropdown-card">
                   <div className="vp-nav-dropdown-card-title">{g.title}</div>
                   <ul className="vp-nav-dropdown-links">
@@ -672,14 +854,52 @@ export default function VividPolyView() {
               ))}
             </div>
             <div className="vp-nav-dropdown-footer">
-              <button type="button" onClick={v.megaFooterAction} className="vp-nav-dropdown-footer-btn">{v.megaFooterLabel}</button>
+              <button type="button" onClick={v.megaTypeFooterAction} className="vp-nav-dropdown-footer-btn">{nav.viewAllByType}</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {v.menuIndustry && (
+        <div
+          id="vp-nav-industry-panel"
+          className="vp-nav-dropdown"
+          role="region"
+          aria-label={nav.industryMenu}
+          onMouseEnter={() => openNavMenuHover('industry')}
+          onMouseLeave={scheduleCloseNavMenuHover}
+        >
+          <div className="vp-nav-dropdown-inner">
+            <div className="vp-nav-dropdown-grid vp-nav-dropdown-grid--products-4">
+              {v.megaUseGroups.map((g, i_g) => (
+                <div key={i_g} className="vp-nav-dropdown-card">
+                  <div className="vp-nav-dropdown-card-title">{g.title}</div>
+                  <ul className="vp-nav-dropdown-links">
+                    {g.items.map((it, i_it) => (
+                      <li key={i_it}>
+                        <button type="button" onClick={it.open} className="vp-nav-dropdown-link">{it.label}</button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <div className="vp-nav-dropdown-footer">
+              <button type="button" onClick={v.megaUseFooterAction} className="vp-nav-dropdown-footer-btn">{nav.viewAllByIndustry}</button>
             </div>
           </div>
         </div>
       )}
 
       {v.menuResources && (
-        <div id="vp-nav-resources-panel" className="vp-nav-dropdown vp-nav-dropdown--resources" role="region" aria-label={nav.resourcesMenu}>
+        <div
+          id="vp-nav-resources-panel"
+          className="vp-nav-dropdown vp-nav-dropdown--resources"
+          role="region"
+          aria-label={nav.resourcesMenu}
+          onMouseEnter={() => openNavMenuHover('resources')}
+          onMouseLeave={scheduleCloseNavMenuHover}
+        >
           <div className="vp-nav-dropdown-inner">
             <div className="vp-nav-resources-head">
               <p className="vp-nav-resources-eyebrow">{nav.buyerResourcesEyebrow}</p>
@@ -702,7 +922,8 @@ export default function VividPolyView() {
           </div>
         </div>
       )}
-    </header>
+      </header>
+    </div>
   );
 
   return (
@@ -727,7 +948,7 @@ export default function VividPolyView() {
               aria-hidden={!mobileNavOpen}
             >
               <div className="vp-mobile-drawer-scroll">
-                <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goHome(); closeMobileNav(); }}>{nav.home}</button>
+                <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goAbout(); closeMobileNav(); }}>{nav.about}</button>
 
                 <div className="vp-mobile-drawer-section">
                   <button
@@ -767,9 +988,22 @@ export default function VividPolyView() {
                       >
                         {nav.viewAllByType}
                       </button>
+                    </div>
+                  )}
+                </div>
 
-                      <div className="vp-mobile-drawer-divider" aria-hidden="true" />
-
+                <div className="vp-mobile-drawer-section">
+                  <button
+                    type="button"
+                    className={`vp-mobile-drawer-link vp-mobile-drawer-link--expand${mobileNavExpanded === 'industry' ? ' vp-mobile-drawer-link--expanded' : ''}`}
+                    aria-expanded={mobileNavExpanded === 'industry'}
+                    onClick={() => setMobileNavExpanded((section) => (section === 'industry' ? null : 'industry'))}
+                  >
+                    {nav.industryServed}
+                    <span className="vp-mobile-drawer-chevron" aria-hidden="true" />
+                  </button>
+                  {mobileNavExpanded === 'industry' && (
+                    <div className="vp-mobile-drawer-panel">
                       <p className="vp-mobile-drawer-section-heading">{nav.mobileByIndustry}</p>
                       {v.megaUseGroups.map((g, i_g) => (
                         <div key={`use-${i_g}`} className="vp-mobile-drawer-group">
@@ -800,8 +1034,6 @@ export default function VividPolyView() {
                   )}
                 </div>
 
-                <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goAbout(); closeMobileNav(); }}>{nav.about}</button>
-
                 <div className="vp-mobile-drawer-section">
                   <button
                     type="button"
@@ -830,6 +1062,8 @@ export default function VividPolyView() {
                     </div>
                   )}
                 </div>
+
+                <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goCareers(); closeMobileNav(); }}>{nav.career}</button>
 
                 <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goContact(); closeMobileNav(); }}>{nav.contact}</button>
               </div>
@@ -865,25 +1099,70 @@ export default function VividPolyView() {
                   </div>
                   <h1 className="vp-hero-title vp-hero-rise">{v.siteCopy.heroHeadline}</h1>
                   <p className="vp-hero-lead vp-hero-rise">{v.siteCopy.heroLead}</p>
+                  <div className="vp-hero-trust vp-hero-rise" aria-label="Credentials">
+                    <ul className="vp-hero-trust-col vp-hero-trust-col--certs">
+                      <li>
+                        <VpCertBadge kind="iso" size="sm" className="vp-hero-cert-badge" />
+                        <span className="vp-hero-trust-label">{v.siteCopy.heroIsoLabel || 'ISO certified'}</span>
+                      </li>
+                      <li>
+                        <VpCertBadge kind="iec" size="sm" className="vp-hero-cert-badge" />
+                        <span className="vp-hero-trust-label">{v.siteCopy.heroIecLabel || 'IEC certified'}</span>
+                      </li>
+                    </ul>
+                    <ul className="vp-hero-trust-col">
+                      {(v.siteCopy.homeStats || []).slice(0, 2).map((stat: { value: string; label: string }, index: number) => (
+                        <li key={stat.label}>
+                          <span className="vp-hero-trust-icon" aria-hidden="true">
+                            <HeroStatIcon index={index} />
+                          </span>
+                          <span className="vp-hero-trust-stat-copy">
+                            <strong>{stat.value}</strong>
+                            <span>{stat.label}</span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className="vp-hero-trust-col">
+                      {(v.siteCopy.homeStats || []).slice(2, 4).map((stat: { value: string; label: string }, index: number) => (
+                        <li key={stat.label}>
+                          <span className="vp-hero-trust-icon" aria-hidden="true">
+                            <HeroStatIcon index={index + 2} />
+                          </span>
+                          <span className="vp-hero-trust-stat-copy">
+                            <strong>{stat.value}</strong>
+                            <span>{stat.label}</span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <div className="vp-hero-rise vp-hero-ctas">
-                    <button onClick={v.openContactEnquiry} className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--on-dark" type="button">{v.siteCopy.heroCtaPrimary}</button>
+                    <a
+                      href={v.siteCopy.heroWhatsAppHref || topBar.whatsappHref}
+                      className="vp-cta-primary vp-cta-primary--lg vp-cta-whatsapp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <WhatsAppIcon size={20} />
+                      <span>{v.siteCopy.heroCtaWhatsApp || 'WhatsApp'}</span>
+                    </a>
                     <button onClick={v.goCatalogueType} className="vp-cta-secondary vp-cta-secondary--lg" type="button">{v.siteCopy.heroCtaSecondary}</button>
-                    <button onClick={v.openContactEnquiry} className="vp-cta-ghost vp-cta-ghost--lg" type="button"><span className="vp-wa-icon-badge vp-wa-icon-badge--lg"><WhatsAppIcon size={14} /></span>{v.siteCopy.heroCtaWhatsApp}</button>
                   </div>
                 </div>
-                <div className="vp-hero-visual vp-hero-rise" aria-hidden="true">
-                  <div className="vp-hero-visual-ph" />
+                <div className="vp-hero-visual vp-hero-rise">
+                  <VpHeroCarousel slides={HERO_CAROUSEL_SLIDES} />
                 </div>
               </div>
 
-              <div className="vp-hero-markets">
+              <div className="vp-hero-markets" aria-label="Product range">
                 <div className="vp-hero-markets-track">
                   <div className="vp-marquee">
-                    {v.markets.map((m, i_m) => (
-                      <span key={`m1-${i_m}`}>{m}</span>
+                    {v.products.map((product: { id: string; name: string }) => (
+                      <span key={`p1-${product.id}`}>{product.name}</span>
                     ))}
-                    {v.markets.map((m, i_m) => (
-                      <span key={`m2-${i_m}`}>{m}</span>
+                    {v.products.map((product: { id: string; name: string }) => (
+                      <span key={`p2-${product.id}`}>{product.name}</span>
                     ))}
                   </div>
                 </div>
@@ -946,18 +1225,18 @@ export default function VividPolyView() {
             
             <section className="vp-section vp-start-section">
               <div className="vp-start-grid">
-                <button type="button" onClick={v.goCatalogueType} className="vp-start-card" style={{ padding: "24px", cursor: "pointer", display: "flex", gap: "24px", alignItems: "center", width: "100%", textAlign: "left" }}>
-                  <div className="vp-ph" style={{ width: "88px", height: "88px", borderRadius: "8px", flex: "none" }} aria-hidden="true"></div>
-                  <div>
-                    <div style={{ fontWeight: "700", fontSize: "20px", marginBottom: "8px" }}>{home.shopByProductType}</div>
-                    <div style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.55" }}>{home.shopByProductTypeDesc}</div>
+                <button type="button" onClick={v.goCatalogueType} className="vp-start-card">
+                  <VpPhotoSlot src="/images/shop-product-type.jpg" alt="" variant="card" className="vp-start-card-media" />
+                  <div className="vp-start-card-copy">
+                    <div className="vp-start-card-title">{home.shopByProductType}</div>
+                    <div className="vp-start-card-desc">{home.shopByProductTypeDesc}</div>
                   </div>
                 </button>
-                <button type="button" onClick={v.goCatalogueUse} className="vp-start-card" style={{ padding: "24px", cursor: "pointer", display: "flex", gap: "24px", alignItems: "center", width: "100%", textAlign: "left" }}>
-                  <div className="vp-ph" style={{ width: "88px", height: "88px", borderRadius: "8px", flex: "none" }} aria-hidden="true"></div>
-                  <div>
-                    <div style={{ fontWeight: "700", fontSize: "20px", marginBottom: "8px" }}>{home.shopByIndustry}</div>
-                    <div style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.55" }}>{home.shopByIndustryDesc}</div>
+                <button type="button" onClick={v.goCatalogueUse} className="vp-start-card">
+                  <VpPhotoSlot src="/images/shop-industry.jpg" alt="" variant="card" className="vp-start-card-media" />
+                  <div className="vp-start-card-copy">
+                    <div className="vp-start-card-title">{home.shopByIndustry}</div>
+                    <div className="vp-start-card-desc">{home.shopByIndustryDesc}</div>
                   </div>
                 </button>
               </div>
@@ -1120,33 +1399,33 @@ export default function VividPolyView() {
                 <h2 className="vp-h2 vp-prod-title">Product types</h2>
                 <button type="button" onClick={v.goCatalogueType} className="vp-prod-view-all">View all →</button>
               </div>
-              <div className="vp-prod-carousel">
-                <button type="button" onClick={v.prodPrev} className="vp-prod-arrow" aria-label={home.previousProducts}>‹</button>
-                <div className="vp-prod-carousel-track">
-                  <div ref={v.prodScrollRef} className="vp-prodscroll">
-                    {v.products.map((p, i_p) => (
-                      <button key={`p1-${i_p}`} type="button" onClick={p.open} className="vp-prod-card" aria-label={`View ${p.name}`}>
-                        <div className="vp-ph vp-prod-card-img"></div>
-                        <div className="vp-prod-card-body">
-                          <div className="vp-prod-card-title">{p.name}</div>
-                          <div className="vp-prod-card-desc">{p.short}</div>
-                          <div className="vp-prod-card-cta">{p.cta} →</div>
+              <div className="vp-prod-marquee-viewport">
+                <div className="vp-prod-marquee">
+                  {v.products.map((p, i_p) => (
+                    <button key={`p1-${i_p}`} type="button" onClick={p.open} className="vp-prod-card" aria-label={`View ${p.name}`}>
+                      <VpPhotoSlot src={`/images/products/${p.id}.jpg`} alt="" variant="thumb" className="vp-prod-card-img" />
+                      <div className="vp-prod-card-body">
+                        <div className="vp-prod-card-title">{p.name}</div>
+                        <p className="vp-prod-card-desc">{p.short}</p>
+                        <div className="vp-prod-card-footer">
+                          <span className="vp-prod-card-cta">View Details →</span>
                         </div>
-                      </button>
-                    ))}
-                    {v.products.map((p, i_p) => (
-                      <button key={`p2-${i_p}`} type="button" onClick={p.open} className="vp-prod-card vp-prod-card--loop-clone" aria-label={`View ${p.name}`} tabIndex={-1} aria-hidden="true">
-                        <div className="vp-ph vp-prod-card-img"></div>
-                        <div className="vp-prod-card-body">
-                          <div className="vp-prod-card-title">{p.name}</div>
-                          <div className="vp-prod-card-desc">{p.short}</div>
-                          <div className="vp-prod-card-cta">{p.cta} →</div>
+                      </div>
+                    </button>
+                  ))}
+                  {v.products.map((p, i_p) => (
+                    <button key={`p2-${i_p}`} type="button" onClick={p.open} className="vp-prod-card" aria-hidden="true" tabIndex={-1}>
+                      <VpPhotoSlot src={`/images/products/${p.id}.jpg`} alt="" variant="thumb" className="vp-prod-card-img" />
+                      <div className="vp-prod-card-body">
+                        <div className="vp-prod-card-title">{p.name}</div>
+                        <p className="vp-prod-card-desc">{p.short}</p>
+                        <div className="vp-prod-card-footer">
+                          <span className="vp-prod-card-cta">View Details →</span>
                         </div>
-                      </button>
-                    ))}
-                  </div>
+                      </div>
+                    </button>
+                  ))}
                 </div>
-                <button type="button" onClick={v.prodNext} className="vp-prod-arrow" aria-label={home.nextProducts}>›</button>
               </div>
             </section>
       
@@ -1199,9 +1478,6 @@ export default function VividPolyView() {
                   {v.useDetailHidden && (<>
                     <div className="vp-use-empty">
                       <p className="vp-use-empty-hint">{v.siteCopy.productUsesEmptyHint}</p>
-                      <button type="button" className="vp-cta-primary vp-cta-primary--lg" onClick={v.openContactEnquiry}>
-                        {v.siteCopy.productUsesLearnMore}
-                      </button>
                     </div>
                   </>)}
                 </div>
@@ -1209,7 +1485,7 @@ export default function VividPolyView() {
             </section>
       
             
-            <section className="vp-faq-section">
+            <section id="vp-home-faq" className="vp-faq-section">
               <div className="vp-faq-section-inner">
                 <div className="vp-faq-section-head">
                   <p className="vp-faq-section-eyebrow">FAQs</p>
@@ -1220,11 +1496,11 @@ export default function VividPolyView() {
             </section>
       
             
-            <section style={{ background: "var(--vp-navy-deep)", color: "var(--vp-white)" }}>
-              <div style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 32px", textAlign: "center" }}>
-                <h2 className="vp-h2" style={{ margin: "0 0 16px", color: "var(--vp-white)" }}>{v.siteCopy.finalCtaTitle}</h2>
-                <p style={{ fontSize: "16px", lineHeight: "1.7", color: "var(--vp-mist)", margin: "0 auto 28px", maxWidth: "680px" }}>{v.siteCopy.finalCtaBody}</p>
-                <button onClick={v.openContactEnquiry} className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--on-dark" type="button">{v.siteCopy.finalCtaButton}</button>
+            <section className="vp-final-cta-band" style={{ background: "var(--vp-navy-deep)", color: "var(--vp-white)" }}>
+              <div className="vp-final-cta-inner">
+                <h2 className="vp-h2 vp-final-cta-head">{v.siteCopy.finalCtaTitle}</h2>
+                <p className="vp-body-text vp-body-text--on-dark vp-body-text--centered vp-final-cta-body-wrap">{v.siteCopy.finalCtaBody}</p>
+                <button onClick={v.goContact} className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--on-dark" type="button">{v.siteCopy.finalCtaButton}</button>
               </div>
             </section>
       
@@ -1234,9 +1510,21 @@ export default function VividPolyView() {
           
           {v.showCatalogue && (<>
           <div data-screen-label="Catalogue">
-            <VpSubpageTop breadcrumbs={v.catBreadcrumbs} onHomeClick={v.goHome} style={{ maxWidth: "1240px", margin: "0 auto", padding: "28px 28px 8px" }}>
-              <h1 className="vp-h1" style={{ margin: "0 0 8px" }}>{v.catTitle}</h1>
-              <p style={{ fontSize: "16px", color: "var(--vp-ink)", margin: "0", maxWidth: "760px", lineHeight: "1.55" }}>{v.catSub}</p>
+            <VpSubpageTop breadcrumbs={v.catBreadcrumbs} onHomeClick={v.goHome} className="vp-subpage-top-shell">
+              <h1 className="vp-h1 vp-catalogue-page-title">{v.catTitle}</h1>
+              <div
+                className={`vp-catalogue-intro${catalogueIntroExpanded ? ' vp-catalogue-intro--expanded' : ''}`}
+              >
+                <p className="vp-catalogue-intro-text">{v.catSub}</p>
+                <button
+                  type="button"
+                  className="vp-catalogue-intro-toggle"
+                  aria-expanded={catalogueIntroExpanded}
+                  onClick={() => setCatalogueIntroExpanded((expanded) => !expanded)}
+                >
+                  {catalogueIntroExpanded ? 'Show less' : 'Read more'}
+                </button>
+              </div>
             </VpSubpageTop>
             <div className={`vp-catalogue-layout${v.catFiltersOpen ? ' vp-catalogue-layout--filters-open' : ''}`}>
               <div className="vp-filter-column">
@@ -1324,6 +1612,21 @@ export default function VividPolyView() {
                           className="vp-catalogue-filter-toggle"
                           aria-expanded={v.catFiltersOpen}
                         >
+                          <svg
+                            className="vp-catalogue-filter-icon"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2 4h12M4.5 8h7M6.5 12h3"
+                              stroke="currentColor"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                            />
+                          </svg>
                           Filters
                           {v.activeFilterCount > 0 && (
                             <span className="vp-filter-count">{v.activeFilterCount}</span>
@@ -1342,12 +1645,12 @@ export default function VividPolyView() {
                       </div>
                     </div>
                     <span className="vp-catalogue-count">
-                      <b>{v.filteredCount}</b> products
+                      <b>{v.filteredCount}</b> <span className="vp-catalogue-count-label">products</span>
                       {v.filtersActive && <span className="vp-catalogue-count-muted"> (filtered)</span>}
                     </span>
                   </div>
                   <div className={`vp-sort-label${v.catGuide === 'use-sort' && v.catByUse ? ' vp-sort-label--guided' : ''}`}>
-                    <span>{v.siteCopy.shopByUseLabel}</span>
+                    <span className="vp-sort-label-text">{v.siteCopy.shopByUseLabel}</span>
                     {v.catGuide === 'use-sort' && v.catByUse && (
                       <VpCatalogueGuideTooltip
                         message={v.siteCopy.catalogueGuideUseSort}
@@ -1359,6 +1662,8 @@ export default function VividPolyView() {
                       value={v.catSort}
                       options={v.catSortOptions}
                       onChange={v.setCatSort}
+                      className="vp-sort--catalogue-toolbar"
+                      ariaLabel={v.siteCopy.shopByUseLabel}
                     />
                   </div>
                 </div>
@@ -1371,22 +1676,32 @@ export default function VividPolyView() {
                     </div>
                   )}
                   {v.catalogueProducts.map((p, i_p) => (
-                    <div key={i_p} className={`vp-catalogue-card${p.recommended ? ' vp-catalogue-card--recommended' : ''}`}>
-                      <div style={{ position: "relative" }}>
+                    <article
+                      key={i_p}
+                      className={`vp-catalogue-card${p.recommended ? ' vp-catalogue-card--recommended' : ''}`}
+                      onClick={p.open}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          event.preventDefault();
+                          p.open();
+                        }
+                      }}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <div className="vp-catalogue-card-media-wrap">
                         {p.recommended && <span className="vp-prod-rec-badge">Recommended</span>}
-                        <button type="button" onClick={p.open} className="vp-catalogue-card-hit" aria-label={`View ${p.name}`}>
-                          <span className="vp-ph vp-catalogue-card-media" aria-hidden="true" />
-                          <span className="vp-catalogue-card-name">{p.name}</span>
-                        </button>
+                        <VpPhotoSlot src={`/images/products/${p.id}.jpg`} alt="" variant="thumb" className="vp-catalogue-card-media" />
                       </div>
                       <div className="vp-catalogue-card-body">
+                        <span className="vp-catalogue-card-name">{p.name}</span>
                         <p className="vp-catalogue-card-desc">{p.short}</p>
                         <div className="vp-catalogue-card-actions">
-                          <button onClick={p.open} className="vp-catalogue-card-btn--ghost" type="button">View Details</button>
-                          <button onClick={v.goQuote} className="vp-catalogue-card-btn--primary" type="button">Get Quote</button>
+                          <button onClick={(e) => { e.stopPropagation(); p.open(); }} className="vp-catalogue-card-btn--ghost" type="button">{common.viewDetails}</button>
+                          <button onClick={(e) => { e.stopPropagation(); p.quote(); }} className="vp-catalogue-card-btn--primary" type="button">{common.getQuote}</button>
                         </div>
                       </div>
-                    </div>
+                    </article>
                   ))}
                 </div>
               </div>
@@ -1397,35 +1712,46 @@ export default function VividPolyView() {
           
           {v.showPdp && (<>
           <div data-screen-label="Product detail">
-            <VpSubpageTop breadcrumbs={v.pdpBreadcrumbs} onHomeClick={v.goHome} style={{ maxWidth: "1240px", margin: "0 auto", padding: "24px 28px 0" }} />
+            <VpSubpageTop breadcrumbs={v.pdpBreadcrumbs} onHomeClick={v.goHome} className="vp-subpage-top-shell vp-subpage-top-shell--pdp" />
             <div className="vp-pdp-layout">
               <div className="vp-pdp-gallery">
-                <div className="vp-pdp-gallery-main vp-ph" aria-hidden="true" />
+                <VpPhotoSlot
+                  key={v.pdpGalleryMainSrc}
+                  src={v.pdpGalleryMainSrc}
+                  alt={v.product?.name || 'Product'}
+                  variant="thumb"
+                  className="vp-pdp-gallery-main"
+                />
                 <div className="vp-pdp-gallery-thumbs">
                   {v.galleryThumbs.map((t, i_t) => (
-                    <button key={i_t} type="button" onClick={t.sel} className="vp-gallery-thumb vp-ph" style={{ border: t.bd }} aria-label={`Product image ${i_t + 1}`} />
+                    <button key={i_t} type="button" onClick={t.sel} className="vp-gallery-thumb" style={{ border: t.bd }} aria-label={`Product image ${i_t + 1}`}>
+                      <VpPhotoSlot
+                        src={t.src}
+                        alt=""
+                        variant="thumb"
+                      />
+                    </button>
                   ))}
                 </div>
               </div>
               
               <div className="vp-pdp-summary">
-                <h1 className="vp-h1" style={{ margin: "0 0 16px", lineHeight: "1.1" }}>{v.product.name}</h1>
-                <p style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.65", margin: "0 0 24px", textWrap: "pretty" }}>{v.product.intro}</p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "28px" }}>
+                <h1 className="vp-h1 vp-pdp-summary-title">{v.product.name}</h1>
+                <p className="vp-body-text vp-body-text--mb-md">{v.product.intro}</p>
+                <div className="vp-pdp-trust-badges">
                   {v.trustBadges.map((b, i_b) => (
-                    <span key={i_b} style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "12px", fontWeight: "500", color: "var(--vp-ink)", background: "var(--vp-fog)", border: "1px solid var(--vp-fog)", borderRadius: "20px", padding: "8px 12px", whiteSpace: "nowrap" }}><span style={{ color: "var(--vp-ink)", fontWeight: "700" }}>✓</span>{b.t}</span>
+                    <span key={i_b} className="vp-pdp-trust-badge"><span className="vp-pdp-trust-badge-icon">✓</span>{b.t}</span>
                   ))}
                 </div>
-                <div style={{ border: "1px solid var(--vp-fog)", borderRadius: "8px", overflow: "hidden", marginBottom: "24px" }}>
-                  <div style={{ background: "var(--vp-fog)", padding: "12px 16px", fontSize: "12px", fontWeight: "700", textTransform: "uppercase", letterSpacing: ".05em" }}>Specification</div>
+                <div className="vp-spec-panel">
+                  <div className="vp-spec-panel-head">Specification</div>
                   {v.pdpSpec.map((r, i_r) => (
                     <div key={i_r} className="vp-kv-row">
-                      <div style={{ padding: "12px 16px", fontSize: "12px", fontWeight: "600" }}>{r.p}</div>
-                      <div style={{ padding: "12px 16px", fontSize: "12px", color: "var(--vp-ink)", lineHeight: "1.5" }}>{r.o}</div>
+                      <div className="vp-kv-cell vp-kv-cell--key">{r.p}</div>
+                      <div className="vp-kv-cell vp-kv-cell--value vp-body-text">{r.o}</div>
                     </div>
                   ))}
                 </div>
-                <button onClick={v.pdpGetQuote} className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--block" type="button">{v.pdpQuoteLabel}</button>
               </div>
             </div>
 
@@ -1435,9 +1761,12 @@ export default function VividPolyView() {
               <h3 className="vp-related-heading">Related products</h3>
               <div className="vp-related-scroll">
                 {v.relatedProducts.map((p, i_p) => (
-                  <button key={i_p} type="button" onClick={p.open} className="vp-related-product" data-vp-hover="border-color:var(--vp-mist)" aria-label={`View ${p.name}`}>
-                    <div className="vp-ph vp-related-product-img" aria-hidden="true" />
-                    <span className="vp-related-product-title">{p.name}</span>
+                  <button key={i_p} type="button" onClick={p.open} className="vp-related-product" aria-label={`View ${p.name}`}>
+                    <VpPhotoSlot src={p.imageSrc} alt="" variant="thumb" className="vp-related-product-img" />
+                    <span className="vp-related-product-body">
+                      <span className="vp-related-product-title">{p.name}</span>
+                      <span className="vp-related-product-cta">View Details →</span>
+                    </span>
                   </button>
                 ))}
               </div>
@@ -1447,9 +1776,9 @@ export default function VividPolyView() {
       
           
           {v.showFaqs && (<>
-          <div data-screen-label="FAQs" style={{ maxWidth: "820px", margin: "0 auto", padding: "0 28px 72px" }}>
-            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.faqs)} style={{ padding: "40px 0 0" }}>
-              <h1 className="vp-h1" style={{ margin: "0 0 32px" }}>{v.siteCopy.faqSectionTitle}</h1>
+          <div data-screen-label="FAQs" className="vp-page-shell">
+            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.faqs)} className="vp-subpage-top--page">
+              <h1 className="vp-h1 vp-subpage-h1 vp-subpage-h1--spacious">{v.siteCopy.faqSectionTitle}</h1>
             </VpSubpageTop>
             <VpFaqAccordion items={v.faqs} className="vp-faq-accordion--page" />
           </div>
@@ -1462,39 +1791,47 @@ export default function VividPolyView() {
               breadcrumbs={v.blogBreadcrumbs}
               onHomeClick={v.goHome}
               siteCopy={v.siteCopy}
-              onEnquire={v.openContactEnquiry}
+              onEnquire={v.goContact}
             />
           )}
       
           
+          {v.showCareers && (
+            <VpCareersPage
+              copy={v.careersCopy}
+              breadcrumbs={v.careersBreadcrumbs}
+              onHomeClick={v.goHome}
+            />
+          )}
+
           {v.showAbout && (<>
-          <div data-screen-label="About" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 28px 72px" }}>
-            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.about)} style={{ padding: "40px 0 0" }}>
-              <h1 className="vp-h1" style={{ margin: "0 0 24px" }}>{about.title}</h1>
+          <div data-screen-label="About" className="vp-page-shell">
+            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.about)} className="vp-subpage-top--page">
+              <h1 className="vp-h1 vp-subpage-h1">{about.title}</h1>
             </VpSubpageTop>
-            <p style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.7", margin: "0 0 16px", textWrap: "pretty" }}>{about.p1}</p>
-            <p style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.7", margin: "0 0 16px", textWrap: "pretty" }}>{about.p2}</p>
-            <div style={{ background: "var(--vp-fog)", borderInlineStart: "4px solid var(--vp-navy)", borderRadius: "0 8px 8px 0", padding: "20px 24px", margin: "24px 0 32px" }}>
-              <div style={{ fontSize: "12px", fontWeight: "700", textTransform: "uppercase", letterSpacing: ".05em", color: "var(--vp-ink)", marginBottom: "8px" }}>{about.exportVisionEyebrow}</div>
-              <p style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.7", margin: "0", textWrap: "pretty" }}>{about.exportVisionBody}</p>
+            <p className="vp-body-text vp-body-text--mb-sm">{about.p1}</p>
+            <p className="vp-body-text vp-body-text--mb-sm">{about.p2}</p>
+            <div className="vp-about-callout">
+              <div className="vp-about-callout-eyebrow">{about.exportVisionEyebrow}</div>
+              <p className="vp-about-callout-body">{about.exportVisionBody}</p>
             </div>
-            <div style={{ border: "1px solid var(--vp-fog)", borderRadius: "8px", overflow: "hidden", marginBottom: "20px" }}>
+            <div className="vp-about-company-table">
               {v.companyRows.map((r, i_r) => (
                 <div key={i_r} className="vp-kv-row vp-kv-row--wide-key">
-                  <div style={{ padding: "12px 20px", fontSize: "12px", fontWeight: "600", background: "var(--vp-fog)" }}>{r.k}</div>
-                  <div style={{ padding: "12px 20px", fontSize: "12px", color: "var(--vp-ink)", lineHeight: "1.5" }}>{r.v}</div>
+                  <div className="vp-kv-cell vp-kv-cell--key">{r.k}</div>
+                  <div className="vp-kv-cell vp-kv-cell--value vp-body-text">{r.v}</div>
                 </div>
               ))}
             </div>
             <button onClick={v.goContact} className="vp-cta-primary vp-cta-primary--lg" type="button">{about.contactTeam}</button>
       
             
-            <div id="why-choose-vividpoly" style={{ height: "1px", background: "var(--vp-fog)", margin: "52px 0" }}></div>
+            <div id="why-choose-vividpoly" className="vp-about-section-divider" aria-hidden="true" />
       
             
-            <div style={{ fontSize: "12px", fontWeight: "700", letterSpacing: ".1em", textTransform: "uppercase", color: "var(--vp-ink)", marginBottom: "12px" }}>{about.whyEyebrow}</div>
-            <h2 className="vp-h2" style={{ margin: "0 0 20px" }}>{about.whyHeading}</h2>
-            <p style={{ fontSize: "16px", color: "var(--vp-ink)", lineHeight: "1.7", margin: "0 0 28px", textWrap: "pretty" }}>{about.whyLead}</p>
+            <div className="vp-section-eyebrow">{about.whyEyebrow}</div>
+            <h2 className="vp-h2 vp-about-section-h2">{about.whyHeading}</h2>
+            <p className="vp-body-text vp-body-text--mb-lg">{about.whyLead}</p>
             <div className="vp-why-choose">
               <ul className="vp-why-choose-list">
                 {v.whyRows.map((r, i_r) => (
@@ -1505,16 +1842,15 @@ export default function VividPolyView() {
                 ))}
               </ul>
             </div>
-            <button onClick={v.goQuote} className="vp-cta-primary vp-cta-primary--lg" style={{ marginTop: "28px" }} type="button">{about.requestCustomQuote}</button>
           </div>
           </>)}
       
           
           {v.showContact && (<>
-          <div data-screen-label="Contact" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 28px 72px" }}>
-            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.contact)} style={{ padding: "40px 0 0" }}>
-              <h1 className="vp-h1" style={{ margin: "0 0 8px" }}>{contact.title}</h1>
-              <p style={{ fontSize: "16px", color: "var(--vp-ink)", margin: "0 0 32px", lineHeight: "1.6", maxWidth: "760px" }}>{v.siteCopy.contactIntro}</p>
+          <div data-screen-label="Contact" className="vp-page-shell">
+            <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.contact)} className="vp-subpage-top--page">
+              <h1 className="vp-h1 vp-subpage-title">{contact.title}</h1>
+              <p className="vp-subpage-intro">{v.siteCopy.contactIntro}</p>
             </VpSubpageTop>
             <div className="vp-contact-layout">
               <aside className="vp-contact-details" aria-label={contact.title}>
@@ -1536,47 +1872,7 @@ export default function VividPolyView() {
                   ))}
                 </div>
               </aside>
-              <div className="vp-contact-form-card">
-                <div style={{ fontWeight: "700", fontSize: "16px", marginBottom: "20px" }}>{contact.sendRequirement}</div>
-                <div className="vp-contact-form-grid">
-                  <div><div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formName}</div><input value={v.qv.name ?? ''} onChange={v.qSet.name} className="vp-quote-contact-input" /></div>
-                  <div><div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formCompany}</div><input value={v.qv.company ?? ''} onChange={v.qSet.company} className="vp-quote-contact-input" /></div>
-                  <div><div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formEmail}</div><input type="email" value={v.qv.email ?? ''} onChange={v.qSet.email} className="vp-quote-contact-input" /></div>
-                  <div><div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formPhone}</div><input value={v.qv.whatsapp ?? ''} onChange={v.qSet.whatsapp} className="vp-quote-contact-input" /></div>
-                  <div>
-                    <div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formCountry}</div>
-                    <VpCustomSelect
-                      value={v.qv.country ?? ''}
-                      onChange={v.selectCountry}
-                      options={v.contactCountries}
-                      placeholder={common.selectCountry}
-                      ariaLabel={contact.formCountry}
-                      searchable
-                      menuClassName="vp-sort-menu--contact"
-                    />
-                  </div>
-                  <div>
-                    <div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>{contact.formProductType}</div>
-                    <VpCustomSelect
-                      value={(v.qv.product as string) ?? ''}
-                      onChange={v.selectContactProduct}
-                      options={v.contactProductOptions.map((p) => p.label)}
-                      placeholder={common.selectBagType}
-                      ariaLabel={contact.formProductType}
-                    />
-                  </div>
-                  <div style={{ gridColumn: "1 / -1" }}><div style={{ fontSize: "12px", fontWeight: "600", color: "var(--vp-ink)", marginBottom: "4px" }}>Message</div><textarea value={v.qv.message ?? ''} onChange={v.qSet.message} className="vp-quote-contact-input vp-quote-contact-input--textarea" /></div>
-                </div>
-                <button
-                  onClick={v.submitContactEnquiry}
-                  disabled={!v.contactEnquiryCanSubmit}
-                  className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--block"
-                  style={{ marginTop: "20px" }}
-                  type="button"
-                >
-                  Submit Enquiry
-                </button>
-              </div>
+              <VpContactEnquiryForm {...enquiryFormProps} />
             </div>
           </div>
           </>)}
@@ -1746,7 +2042,33 @@ export default function VividPolyView() {
                 </p>
               </div>
 
-              <div className="vp-footer-col">
+              <div className="vp-footer-col vp-footer-col--products">
+                <div className="vp-footer-products-desktop">
+                  <h3 className="vp-footer-heading">{footer.productTypes}</h3>
+                  <div className="vp-footer-product-cols">
+                    <div className="vp-footer-link-list">
+                      {v.footProductsLeft.map((l, i_l) => (
+                        <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                      ))}
+                    </div>
+                    <div className="vp-footer-link-list">
+                      {v.footProductsRight.map((l, i_l) => (
+                        <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <details className="vp-footer-disclosure vp-footer-products-mobile">
+                  <summary className="vp-footer-heading">{footer.productTypes}</summary>
+                  <div className="vp-footer-link-list vp-footer-link-list--products">
+                    {v.footProducts.map((l, i_l) => (
+                      <button key={`m-${i_l}`} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                    ))}
+                  </div>
+                </details>
+              </div>
+
+              <div className="vp-footer-col vp-footer-col--links">
                 <h3 className="vp-footer-heading">{footer.company}</h3>
                 <div className="vp-footer-link-list">
                   {v.footCompany.map((l, i_l) => (
@@ -1755,23 +2077,7 @@ export default function VividPolyView() {
                 </div>
               </div>
 
-              <div className="vp-footer-col vp-footer-col--products">
-                <h3 className="vp-footer-heading">{footer.productTypes}</h3>
-                <div className="vp-footer-product-cols">
-                  <div className="vp-footer-link-list">
-                    {v.footProductsLeft.map((l, i_l) => (
-                      <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
-                    ))}
-                  </div>
-                  <div className="vp-footer-link-list">
-                    {v.footProductsRight.map((l, i_l) => (
-                      <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="vp-footer-col">
+              <div className="vp-footer-col vp-footer-col--links">
                 <h3 className="vp-footer-heading">{footer.buyerHelp}</h3>
                 <div className="vp-footer-link-list">
                   {v.footHelp.map((l, i_l) => (
@@ -1780,12 +2086,11 @@ export default function VividPolyView() {
                 </div>
               </div>
 
-              <div className="vp-footer-col">
+              <div className="vp-footer-col vp-footer-col--contact">
                 <h3 className="vp-footer-heading">{footer.contact}</h3>
                 <div className="vp-footer-link-list">
                   <span className="vp-footer-contact-item">INFO@VIVIDPOLY.COM</span>
-                  <span className="vp-footer-contact-item">+91 9998014994</span>
-                  <span className="vp-footer-contact-item">+61 426712534</span>
+                  <span className="vp-footer-contact-item">+91 92136 26740</span>
                 </div>
               </div>
             </div>
@@ -1796,8 +2101,61 @@ export default function VividPolyView() {
           </div>
         </footer>
 
-        {v.quoteContactOpen && <VpQuoteContactSheet v={v} />}
+        <VpEnquiryModal
+          open={enquiryModalOpen}
+          title={enquiryModal?.title || 'Enquiry Form'}
+          closeLabel={enquiryModal?.close || 'Close enquiry form'}
+          onClose={closeEnquiryModal}
+          onSubmitSuccess={() => {
+            markEnquirySubmitted();
+            setEnquiryModalOpen(false);
+          }}
+          formProps={enquiryFormProps}
+        />
+        {typeof document !== 'undefined'
+          && createPortal(
+            <VpEnquiryFab
+              label={fab?.label || 'Enquiry'}
+              ariaLabel={fab?.ariaLabel || 'Go to contact enquiry form'}
+              onClick={goToContactForm}
+              hidden={mobileNavOpen || enquiryModalOpen || v.showContact || v.showCareers}
+              active
+            />,
+            document.body,
+          )}
       </div>
+  );
+}
+
+function HeroStatIcon({ index }: { index: number }) {
+  if (index === 0) {
+    return (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M3 12h18M12 3c2.5 2.8 3.8 5.8 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-5.8-3.8-9S9.5 5.8 12 3z" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    );
+  }
+  if (index === 1) {
+    return (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z" stroke="currentColor" strokeWidth="1.8" />
+        <circle cx="12" cy="10" r="2.4" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    );
+  }
+  if (index === 2) {
+    return (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 19V9l8-5 8 5v10" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M9 19v-6h6v6" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 3l2.4 6.2L21 10l-5 4.2L17.5 21 12 17.5 6.5 21 8 14.2 3 10l6.6-.8L12 3z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+    </svg>
   );
 }
 

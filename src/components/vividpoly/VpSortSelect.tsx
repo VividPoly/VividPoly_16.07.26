@@ -11,9 +11,11 @@ type VpSortSelectProps = {
   value: CatSort;
   options: SortOption[];
   onChange: (value: CatSort) => void;
+  className?: string;
+  ariaLabel?: string;
 };
 
-export default function VpSortSelect({ value, options, onChange }: VpSortSelectProps) {
+export default function VpSortSelect({ value, options, onChange, className, ariaLabel }: VpSortSelectProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const { mounted, position } = useVpSortMenuPortal(open, rootRef);
@@ -41,12 +43,13 @@ export default function VpSortSelect({ value, options, onChange }: VpSortSelectP
   }, [open]);
 
   return (
-    <div className="vp-sort" ref={rootRef}>
+    <div className={`vp-sort${className ? ` ${className}` : ''}`} ref={rootRef}>
       <button
         type="button"
         className={`vp-sort-trigger${open ? ' vp-sort-trigger--open' : ''}`}
         aria-haspopup="listbox"
         aria-expanded={open}
+        aria-label={ariaLabel}
         onClick={() => setOpen((isOpen) => !isOpen)}
       >
         <span className="vp-sort-trigger-label">{selected?.label}</span>

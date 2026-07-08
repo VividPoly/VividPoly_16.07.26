@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="VIVIDPOLY PP woven packaging">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6a4a"/>
+      <stop offset="55%" stop-color="#d9cfc0"/>
+      <stop offset="100%" stop-color="#f6f1e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect x="220" y="90" width="360" height="320" rx="18" fill="#ffffff" opacity="0.92"/>
+  <rect x="260" y="140" width="280" height="180" rx="8" fill="#ece4d8"/>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#5c1014" letter-spacing="0.08em">VIVIDPOLY</text>
+  <text x="400" y="412" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1c1a19">PP Woven Export Packaging</text>
+</svg>

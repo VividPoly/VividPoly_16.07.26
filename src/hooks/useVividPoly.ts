@@ -8,25 +8,30 @@ import { getVividPolyData, type VividPolyMessages } from '@/lib/get-vividpoly-da
 import { VP } from '@/lib/vividpoly-tokens';
 import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOptions, catSortFromUseTitle, filtersForUseSort, filterProductsByUseSort, CAPACITY_STOPS, filterProductsByCapacity, isCapacityFilterActive, getCapacityCustomNotice, type CatSort } from '@/lib/vividpoly-product-filters';
 import { getInitialQuoteStep } from '@/lib/vividpoly-quote';
+import { productGallerySrcs, productImageSrc } from '@/lib/product-images';
 import { captureQuoteLead } from '@/lib/vividpoly-lead-capture';
 import {
   isNavTransition,
   navPayload,
   navUrl,
+  parseHash,
   readNavState,
   scrollPageToTop,
+  consumeSkipNextScrollToTop,
   enableManualScrollRestoration,
+  requestSkipNextScrollToTop,
+  scrollToAnchorWithHeaderOffset,
   splitBreadcrumbTrail,
   withHomeBreadcrumb,
 } from '@/lib/vividpoly-navigation';
 
 export type Screen =
   | 'home' | 'catalogue' | 'pdp' | 'faqs'
-  | 'blog' | 'about' | 'contact' | 'quote' | 'sample';
+  | 'blog' | 'about' | 'careers' | 'contact' | 'quote' | 'sample';
 
 export interface VividPolyState {
   screen: Screen;
-  menu: 'products' | 'resources' | null;
+  menu: 'products' | 'resources' | 'industry' | null;
   prodTab: 'type' | 'use';
   pid: string;
   gallery: number;
@@ -68,19 +73,18 @@ const initialState: VividPolyState = {
   activeUse: 0, usePinned: false,
   activeBuyer: 0, buyerPinned: false,
   searchOpen: false, searchVal: '',
-  quoteStep: 0, quoteLeadOnly: false, quoteBagSpecPrompt: false, quoteContactOpen: false, quote: {}, cat: 'type', catGuide: null, catFiltersOpen: false, filters: {},
+  quoteStep: 0, quoteLeadOnly: false, quoteBagSpecPrompt: false, quoteContactOpen: false,
+  quote: { product: 'General Query' }, cat: 'type', catGuide: null, catFiltersOpen: false, filters: {},
   catSort: 'recommended', capacityMinIdx: 0, capacityMaxIdx: CAPACITY_STOPS.length - 1, capacityCustomKg: '',
   sampleStep: 0, samplePid: 'open-mouth', sampleFrom: 'catalogue', sampleCapacity: '', sampleRef: '',
   samplePaymentAccountId: 'hdfc-bopal', bankPickerOpen: false, bankPickerMode: null, bankPickerQuery: '',
   pdpFrom: 'catalogue',
 };
 
-const SCROLL_ENQUIRY_MS = 30_000;
-const SCROLL_IDLE_MS = 200;
-const SCROLL_TICK_MS = 100;
 
 export function useVividPoly() {
   const ui = uiCopy as VividPolyMessages;
+  const generalEnquiryType = ui.enquiryProductTypes[0]?.label ?? 'General Query';
   const vividPolyData = useMemo(() => getVividPolyData(ui), []);
   const [s, setState] = useState<VividPolyState>(initialState);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -88,9 +92,6 @@ export function useVividPoly() {
   const rafRef = useRef<number>(0);
   const skipHistoryPushRef = useRef(false);
   const pendingHistoryRef = useRef<VividPolyState | null>(null);
-  const scrollEnquiryShownRef = useRef(false);
-  const scrollTimeMsRef = useRef(0);
-  const lastScrollAtRef = useRef(0);
 
   const pushNavHistory = useCallback((next: VividPolyState) => {
     if (typeof window === 'undefined' || skipHistoryPushRef.current) {
@@ -98,8 +99,10 @@ export function useVividPoly() {
       return;
     }
     window.history.pushState(navPayload(next), '', navUrl(next));
-    scrollPageToTop('auto');
-    requestAnimationFrame(() => scrollPageToTop('auto'));
+    if (!consumeSkipNextScrollToTop()) {
+      scrollPageToTop('auto');
+      requestAnimationFrame(() => scrollPageToTop('auto'));
+    }
   }, []);
 
   const navigate = useCallback((updater: (st: VividPolyState) => VividPolyState) => {
@@ -128,7 +131,13 @@ export function useVividPoly() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     enableManualScrollRestoration();
-    window.history.replaceState(navPayload(initialState), '', navUrl(initialState));
+
+    // Restore the screen from the URL hash so a refresh keeps the current page
+    // instead of resetting to home.
+    const parsed = parseHash(window.location.hash);
+    const restored: VividPolyState = parsed ? { ...initialState, ...parsed } : initialState;
+    if (parsed) setState(restored);
+    window.history.replaceState(navPayload(restored), '', navUrl(restored));
     scrollPageToTop('auto');
     requestAnimationFrame(() => scrollPageToTop('auto'));
 
@@ -157,11 +166,34 @@ export function useVividPoly() {
     go('home');
   }, [s.screen, go]);
 
+  const goHomeFaqs = useCallback(() => {
+    const scrollToFaq = () => {
+      scrollToAnchorWithHeaderOffset('vp-home-faq', 'smooth', 12);
+    };
+
+    setState((st) => ({ ...st, menu: null, searchOpen: false, catGuide: null }));
+
+    if (s.screen === 'home') {
+      scrollToFaq();
+      return;
+    }
+
+    requestSkipNextScrollToTop();
+    navigate((st) => ({
+      ...st,
+      screen: 'home',
+      menu: null,
+      searchOpen: false,
+      catGuide: null,
+    }));
+    window.setTimeout(scrollToFaq, 80);
+  }, [s.screen, navigate]);
+
   const clearCatGuide = useCallback(() => {
     setState((st) => (st.catGuide ? { ...st, catGuide: null } : st));
   }, []);
 
-  const toggleMenu = useCallback((m: 'products' | 'resources') => {
+  const toggleMenu = useCallback((m: 'products' | 'resources' | 'industry') => {
     setState((st) => ({ ...st, menu: st.menu === m ? null : m, searchOpen: false }));
   }, []);
 
@@ -205,52 +237,30 @@ export function useVividPoly() {
   }, []);
 
   const openContactEnquiry = useCallback(() => {
-    scrollEnquiryShownRef.current = true;
-    setState((st) => ({
+    navigate((st) => ({
       ...st,
-      quoteContactOpen: true,
+      screen: 'contact',
       menu: null,
       searchOpen: false,
+      quoteContactOpen: false,
+      quote: {
+        ...st.quote,
+        product: generalEnquiryType,
+        productId: 'general',
+      },
     }));
-  }, []);
+  }, [navigate, generalEnquiryType]);
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const tryOpenScrollEnquiry = () => {
-      if (scrollEnquiryShownRef.current) return;
-      if (scrollTimeMsRef.current < SCROLL_ENQUIRY_MS) return;
-      scrollEnquiryShownRef.current = true;
-      setState((st) => {
-        if (st.quoteContactOpen || st.quoteStep >= 4 || st.screen === 'sample') return st;
-        return {
-          ...st,
-          quoteContactOpen: true,
-          menu: null,
-          searchOpen: false,
-        };
-      });
-    };
-
-    const onScroll = () => {
-      lastScrollAtRef.current = Date.now();
-    };
-
-    const tick = () => {
-      if (!scrollEnquiryShownRef.current && Date.now() - lastScrollAtRef.current < SCROLL_IDLE_MS) {
-        scrollTimeMsRef.current += SCROLL_TICK_MS;
-        tryOpenScrollEnquiry();
-      }
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    const intervalId = window.setInterval(tick, SCROLL_TICK_MS);
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.clearInterval(intervalId);
-    };
-  }, []);
+  const resetEnquiryDefaults = useCallback(() => {
+    setState((st) => ({
+      ...st,
+      quote: {
+        ...st.quote,
+        product: generalEnquiryType,
+        productId: 'general',
+      },
+    }));
+  }, [generalEnquiryType]);
 
   const openCatalogueForUse = useCallback((useTitle: string) => {
     navigate((st) => {
@@ -410,6 +420,20 @@ export function useVividPoly() {
     const catalogueProducts = catalogueList.map((p) => ({
       ...mkProd(p, 'catalogue'),
       recommended: s.catSort !== 'recommended' && productRecommendedForSort(p, s.catSort),
+      quote: () => {
+        navigate((st) => ({
+          ...st,
+          screen: 'contact',
+          menu: null,
+          searchOpen: false,
+          quoteContactOpen: false,
+          quote: {
+            ...st.quote,
+            product: generalEnquiryType,
+            productId: 'general',
+          },
+        }));
+      },
     }));
 
     const sp = prod(s.pid) || data.products[0];
@@ -469,14 +493,19 @@ export function useVividPoly() {
         }));
     const pdpFeatures = sp.features.map((f) => ({ f: f[0], d: f[1] }));
     const pdpSpec = sp.spec.map((r) => ({ p: r[0], o: r[1] }));
-    const galleryThumbs = [0, 1, 2, 3].map((i) => ({
-      i, sel: () => setState((st) => ({ ...st, gallery: i })), bd: s.gallery === i ? accent : VP.border,
+    const pdpGalleryImages = productGallerySrcs(sp.id);
+    const galleryIndex = Math.min(s.gallery, Math.max(0, pdpGalleryImages.length - 1));
+    const galleryThumbs = pdpGalleryImages.map((src, i) => ({
+      i,
+      src,
+      sel: () => setState((st) => ({ ...st, gallery: i })),
+      bd: galleryIndex === i ? accent : VP.border,
     }));
     const trustBadges = ui.pdp.trustBadges.map((t) => ({ t }));
     const relatedProducts = data.products
       .filter((p) => p.id !== sp.id)
       .slice(0, 4)
-      .map((p) => mkProd(p, s.pdpFrom));
+      .map((p) => ({ ...mkProd(p, s.pdpFrom), imageSrc: productImageSrc(p.id) }));
 
     const faqs = data.faqList.map((f, i) => ({
       q: f[0],
@@ -551,9 +580,7 @@ export function useVividPoly() {
     const whyRows = ui.about.whyItems.map((r) => ({ k: r[0], v: r[1] }));
     const contactQuick = [
       { label: ui.contact.emailLabel, value: 'info@vividpoly.com', href: 'mailto:info@vividpoly.com' },
-      { label: ui.contact.websiteLabel, value: 'vividpoly.com', href: 'https://www.vividpoly.com' },
-      { label: ui.contact.indiaPhoneLabel, value: '+91 9998014994', href: 'tel:+919998014994' },
-      { label: ui.contact.internationalLabel, value: '+61 426712534', href: 'tel:+61426712534' },
+      { label: ui.contact.phoneLabel, value: '+91 92136 26740', href: 'tel:+919213626740' },
     ];
     const contactAddresses = [
       {
@@ -731,26 +758,18 @@ export function useVividPoly() {
     return {
       accent,
       goHome,
-      goContact: () => go('contact'),
-      submitContactEnquiry: () => {
-        const name = String(qv.name || '').trim();
-        const email = String(qv.email || '').trim();
-        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
-        navigate((st) => ({
-          ...st,
-          screen: 'quote',
-          quoteStep: 6,
-          quoteLeadOnly: true,
-          quoteBagSpecPrompt: false,
-          quoteContactOpen: false,
-          menu: null,
-        }));
-      },
-      contactEnquiryCanSubmit: Boolean(
-        String(qv.name || '').trim()
-          && String(qv.email || '').trim()
-          && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(qv.email || '').trim()),
-      ),
+      goContact: () => navigate((st) => ({
+        ...st,
+        screen: 'contact',
+        menu: null,
+        searchOpen: false,
+        quoteContactOpen: false,
+        quote: {
+          ...st.quote,
+          product: generalEnquiryType,
+          productId: 'general',
+        },
+      })),
       goQuote: () => {
         navigate((st) => ({
           ...st,
@@ -760,6 +779,7 @@ export function useVividPoly() {
         }));
       },
       goAbout: () => go('about'),
+      goCareers: () => go('careers'),
       goBlog: () => go('blog'),
       goCatalogueType: () => navigate((st) => ({
         ...st,
@@ -783,15 +803,40 @@ export function useVividPoly() {
       goBack,
       breadcrumbsFor: (trail: string) =>
         withHomeBreadcrumb(splitBreadcrumbTrail(trail, goBack), goHome, ui.breadcrumbs.home),
-      toggleProducts: () => toggleMenu('products'),
+      toggleProducts: () => setState((st) => ({
+        ...st,
+        prodTab: 'type',
+        menu: st.menu === 'products' ? null : 'products',
+        searchOpen: false,
+      })),
+      toggleIndustry: () => setState((st) => ({
+        ...st,
+        prodTab: 'use',
+        menu: st.menu === 'industry' ? null : 'industry',
+        searchOpen: false,
+      })),
       toggleResources: () => toggleMenu('resources'),
+      setMenu: (menu: 'products' | 'resources' | 'industry' | null) => setState((st) => ({
+        ...st,
+        menu,
+        prodTab: menu === 'industry' ? 'use' : menu === 'products' ? 'type' : st.prodTab,
+        searchOpen: false,
+      })),
       closeAll: () => setState((st) => ({ ...st, menu: null, searchOpen: false })),
+      menu: s.menu,
       menuProducts: s.menu === 'products',
+      menuIndustry: s.menu === 'industry',
       menuResources: s.menu === 'resources',
       overlayOpen: !!s.menu || s.searchOpen,
-      navHomeColor: s.screen === 'home' ? VP.navActive : VP.navIdle,
-      navProductsColor: s.screen === 'catalogue' || s.screen === 'pdp' || s.menu === 'products' ? VP.navActive : VP.navIdle,
+      navProductsColor:
+        s.screen === 'pdp'
+        || s.menu === 'products'
+        || (s.screen === 'catalogue' && s.cat === 'type')
+          ? VP.navActive
+          : VP.navIdle,
       navAboutColor: s.screen === 'about' ? VP.navActive : VP.navIdle,
+      navIndustryColor:
+        s.menu === 'industry' || (s.screen === 'catalogue' && s.cat === 'use') ? VP.navActive : VP.navIdle,
       navResourcesColor: s.screen === 'faqs' || s.screen === 'blog' || s.menu === 'resources' ? VP.navActive : VP.navIdle,
       navContactColor: s.screen === 'contact' ? VP.navActive : VP.navIdle,
       prodScrollRef: scrollRef,
@@ -826,7 +871,7 @@ export function useVividPoly() {
           title: ui.nav.faqsTitle,
           desc: ui.nav.faqsDesc,
           icon: 'faqs' as const,
-          open: () => go('faqs'),
+          open: goHomeFaqs,
         },
       ],
       ui,
@@ -956,15 +1001,24 @@ export function useVividPoly() {
       product: sp,
       pdpFeatures,
       pdpSpec,
+      pdpGalleryMainSrc: pdpGalleryImages[galleryIndex] || productImageSrc(sp.id),
       galleryThumbs,
       trustBadges,
       relatedProducts,
       pdpQuoteLabel: ui.pdp.getQuoteFor.replace('{productName}', sp.name),
       pdpGetQuote: () => {
-        navigate((st) => {
-          const quote = { ...st.quote, product: sp.name, productId: sp.id };
-          return { ...st, screen: 'quote', quoteStep: getInitialQuoteStep(quote), quote };
-        });
+        navigate((st) => ({
+          ...st,
+          screen: 'contact',
+          menu: null,
+          searchOpen: false,
+          quoteContactOpen: false,
+          quote: {
+            ...st.quote,
+            product: generalEnquiryType,
+            productId: 'general',
+          },
+        }));
       },
       pdpOrderSample: () => openSampleOrder({ from: 'pdp' }),
       showSample: s.screen === 'sample',
@@ -1060,6 +1114,12 @@ export function useVividPoly() {
       showAbout: s.screen === 'about',
       companyRows,
       whyRows,
+      showCareers: s.screen === 'careers',
+      careersCopy: ui.careers,
+      careersBreadcrumbs: [
+        { label: ui.breadcrumbs.home, onClick: goHome },
+        { label: ui.breadcrumbs.careers },
+      ],
       showContact: s.screen === 'contact',
       contactQuick,
       contactAddresses,
@@ -1215,14 +1275,23 @@ export function useVividPoly() {
       footHelp: [
         footLink(ui.footer.links.productUses, () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'use', catFiltersOpen: false }))),
         footLink(ui.footer.links.blog, () => go('blog')),
-        footLink(ui.footer.links.faqs, () => go('faqs')),
-        footLink(ui.footer.links.getQuote, () => go('quote')),
+        footLink(ui.footer.links.faqs, goHomeFaqs),
       ],
-      contactProductOptions: data.footerProductLinks,
+      contactProductOptions: ui.enquiryProductTypes,
+      enquiryProductTypes: ui.enquiryProductTypes,
+      generalEnquiryType,
       contactCountries: data.contactCountriesList,
       selectCountry: (country: string) => setQ('country', country),
+      contactFieldSet: {
+        name: (value: string) => setQ('name', value),
+        company: (value: string) => setQ('company', value),
+        email: (value: string) => setQ('email', value),
+        phone: (value: string) => setQ('whatsapp', value),
+        country: (value: string) => setQ('country', value),
+        message: (value: string) => setQ('message', value),
+      },
       selectContactProduct: (label: string) => {
-        const link = data.footerProductLinks.find((p) => p.label === label);
+        const link = ui.enquiryProductTypes.find((p) => p.label === label);
         setState((st) => ({
           ...st,
           quote: {
@@ -1233,8 +1302,9 @@ export function useVividPoly() {
         }));
       },
       openContactEnquiry,
+      resetEnquiryDefaults,
     };
-  }, [s, vividPolyData, go, goHome, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide]);
+  }, [s, vividPolyData, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
 
   return v;
 }

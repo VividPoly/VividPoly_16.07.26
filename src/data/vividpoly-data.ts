@@ -58,7 +58,7 @@ spec:[['Material','PP woven or laminated PP material'],['Printing','Flexo or lam
 speciality:'Strong carry packaging with brand communication.',
 mfg:'Weaving, printing/lamination, cutting, handle creation or attachment, stitching, inspection, packing.',
 material:'PP woven fabric, laminated film, printing ink, stitching thread, handle material if required.' },
-{ id:'laminated', name:'Printed and Laminated Woven PP Bags', cta:'Explore Laminated PP Bags', group:'Premium Printed & Laminated',
+{ id:'laminated', name:'Printed & Laminated Woven PP Bags', cta:'Explore Laminated PP Bags', group:'Premium Printed & Laminated',
 short:'Premium printed packaging for rice, flour, feed, pet food, fertilizer, seeds, and retail commodities.',
 intro:'Printed and Laminated Woven PP Bags combine woven strength with attractive brand presentation. VIVIDPOLY exports these bags for buyers who need premium printed packaging for food commodities, fertilizer, feed, pet food, seeds, salt, sugar, and retail products.',
 features:[['Features','Printed laminated surface, woven PP base, layer options, gusset, liner, window, perforation, handles.'],['Benefits','Improved branding, better shelf appeal, product identity, and strong packaging structure.'],['Details','Suitable for 5 kg to 75 kg depending on construction and product density.']],
@@ -149,9 +149,10 @@ export const useGuidance: UseGuidanceEntry[] = [
 { title:'Shopping and Reusable-Style Packaging', bags:'Woven shopping bags, carry bags, D-cut PP woven bags.', tips:'Loop handles, D-cut handles, side gusset, bottom gusset, multi-color printing.', groupIdx:3 },
 ];
 export const typeGroups = [
-{ title:'Everyday & Functional Bags', ids:['open-mouth','stitched','valve'] },
-{ title:'Carry & Retail Bags', ids:['d-cut','carry','shopping'] },
-{ title:'Premium Printed & Laminated Range', ids:['laminated','pinch-bottom','block-bottom','gusset'] }
+{ title:'Woven Bag', ids:['open-mouth','stitched','d-cut','valve','carry','laminated','pinch-bottom','block-bottom','gusset','shopping'] },
+{ title:'Fabric', ids:['fabric'] },
+{ title:'Tape', ids:['tape'] },
+{ title:'Weed Barrier', ids:['weed-barrier'] }
 ];
 export const useGroups = [
 { title:'Agriculture & Food Commodities', items:['Rice, Wheat, Grains and Pulses','Flour and Food Commodities','Salt and Sugar'] },

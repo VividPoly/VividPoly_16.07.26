@@ -25,6 +25,49 @@ export function navUrl(state: VividPolyState): string {
   return `${base}${buildHash(state)}`;
 }
 
+/** Reconstruct the screen state from a URL hash so a refresh keeps the current
+    page instead of resetting to home. Returns null for the home hash so callers
+    fall back to the default initial state. */
+export function parseHash(hash: string): Partial<VividPolyState> | null {
+  if (typeof hash !== 'string') return null;
+  const raw = hash.replace(/^#/, '').trim();
+  if (!raw) return null;
+
+  const parts = raw.split('/').filter(Boolean);
+  const head = parts[0];
+
+  switch (head) {
+    case 'catalogue':
+      return { screen: 'catalogue', cat: parts[1] === 'use' ? 'use' : 'type' };
+    case 'product': {
+      const out: Partial<VividPolyState> = { screen: 'pdp' };
+      if (parts[1]) out.pid = parts[1];
+      return out;
+    }
+    case 'sample': {
+      const out: Partial<VividPolyState> = { screen: 'sample' };
+      if (parts[1]) out.samplePid = parts[1];
+      const step = Number.parseInt(parts[2] ?? '', 10);
+      if (Number.isFinite(step)) out.sampleStep = step;
+      return out;
+    }
+    case 'quote':
+      return { screen: 'quote' };
+    case 'about':
+      return { screen: 'about' };
+    case 'careers':
+      return { screen: 'careers' };
+    case 'contact':
+      return { screen: 'contact' };
+    case 'blog':
+      return { screen: 'blog' };
+    case 'faqs':
+      return { screen: 'faqs' };
+    default:
+      return null;
+  }
+}
+
 function buildHash(state: VividPolyState): string {
   switch (state.screen) {
     case 'home':
@@ -39,6 +82,8 @@ function buildHash(state: VividPolyState): string {
       return '#quote';
     case 'about':
       return '#about';
+    case 'careers':
+      return '#careers';
     case 'contact':
       return '#contact';
     case 'blog':
@@ -79,6 +124,18 @@ export function withHomeBreadcrumb(
 }
 
 /** Scroll window and any scrollable ancestors back to the top. */
+let skipNextScrollToTop = false;
+
+export function requestSkipNextScrollToTop() {
+  skipNextScrollToTop = true;
+}
+
+export function consumeSkipNextScrollToTop() {
+  const shouldSkip = skipNextScrollToTop;
+  skipNextScrollToTop = false;
+  return shouldSkip;
+}
+
 export function scrollPageToTop(behavior: ScrollBehavior = 'auto') {
   if (typeof window === 'undefined') return;
 
@@ -141,4 +198,27 @@ export function jumpChildIntoHorizontalView(container: HTMLElement, child: HTMLE
   const childCenter = childRect.left + childRect.width / 2;
   const containerCenter = containerRect.left + containerRect.width / 2;
   container.scrollLeft = container.scrollLeft + (childCenter - containerCenter);
+}
+
+function getHeaderScrollOffset(extra = 16) {
+  if (typeof window === 'undefined') return extra;
+  const raw = getComputedStyle(document.documentElement).getPropertyValue('--vp-header-offset').trim();
+  const headerOffset = Number.parseFloat(raw) || 100;
+  return headerOffset + extra;
+}
+
+/** Scroll so an in-page anchor sits just below the fixed site header. */
+export function scrollToAnchorWithHeaderOffset(
+  id: string,
+  behavior: ScrollBehavior = 'smooth',
+  extraOffset = 16,
+) {
+  if (typeof window === 'undefined') return false;
+
+  const el = document.getElementById(id);
+  if (!el) return false;
+
+  const top = el.getBoundingClientRect().top + window.scrollY - getHeaderScrollOffset(extraOffset);
+  window.scrollTo({ top: Math.max(0, top), behavior });
+  return true;
 }
