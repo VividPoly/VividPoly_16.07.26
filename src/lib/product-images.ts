@@ -10,6 +10,10 @@ const PRODUCT_GALLERY: Record<string, string[]> = {
   'block-bottom': ['block-bottom', 'block-bottom-2'],
   gusset: ['gusset'],
   shopping: ['shopping'],
+  fabric: ['fabric'],
+  valve: ['valve', 'valve-2'],
+  'weed-barrier': ['weed-barrier'],
+  tape: ['tape'],
 };
 
 export function productImageSrc(id: string, index = 0): string {

@@ -36,14 +36,12 @@ import {
   scrollPageToTop,
   scrollToAnchorWithHeaderOffset,
 } from '@/lib/vividpoly-navigation';
-// Only posters that share the same 3:4 (0.75) ratio are used in the hero so the
-// frame stays one fixed size and no image is cropped. Wider posters (0.80 to
-// 0.84) are intentionally excluded to avoid cropping and frame resizing.
+// Square hero posters (1:1) use object-fit: contain in the carousel so nothing crops.
 const HERO_CAROUSEL_SLIDES: HeroSlide[] = [
-  { id: 'open-mouth', label: 'PP Woven Sack', ratio: 0.75 },
-  { id: 'stitched', label: 'Double Stitch PP Woven Sack', ratio: 0.75 },
-  { id: 'block-bottom', label: 'Block Bottom Bag', ratio: 0.75 },
-  { id: 'pinch-bottom', label: 'Pinch Bottom Bag', ratio: 0.75 },
+  { id: 'fabric', label: 'PP Woven Fabric Roll', ratio: 1 },
+  { id: 'valve', label: 'Gusseted Valve Bag', ratio: 1 },
+  { id: 'weed-barrier', label: 'Weed Barrier Fabric', ratio: 1 },
+  { id: 'block-bottom', label: 'Block Bottom Bag', ratio: 1 },
 ].map((slide) => ({
   src: `/images/products/${slide.id}.jpg`,
   alt: `VIVIDPOLY ${slide.label}`,
@@ -737,7 +735,7 @@ export default function VividPolyView() {
     <div ref={headerRef} className={`vp-site-chrome vp-site-chrome--fixed${headerVisible ? '' : ' vp-site-chrome--hidden'}${headerBlend ? ' vp-site-chrome--blend' : ''}${mobileNavOpen ? ' vp-site-chrome--mobile-nav-open' : ''}`}>
       <VpTopUtilityBar topBar={topBar} />
       <header className={`vp-header${headerBlend ? ' vp-header--blend' : ''}`}>
-      <div className="vp-header-shell">
+      <div className="vp-chrome-container vp-header-shell">
         <div className="vp-header-start">
           <button type="button" onClick={v.goHome} className="vp-header-logo" aria-label={nav.logoHome}>
             <VpLogo variant="light" className="vp-wordmark--nav" />
@@ -1087,7 +1085,7 @@ export default function VividPolyView() {
       
           
           {v.showHome && (<>
-          <div data-screen-label="Home">
+          <div data-screen-label="Home" className="vp-home">
       
             
             <section className="vp-hero">
@@ -1742,6 +1740,18 @@ export default function VividPolyView() {
                   {v.trustBadges.map((b, i_b) => (
                     <span key={i_b} className="vp-pdp-trust-badge"><span className="vp-pdp-trust-badge-icon">✓</span>{b.t}</span>
                   ))}
+                </div>
+                <div className="vp-pdp-cta-row">
+                  <button onClick={v.pdpGetQuote} className="vp-cta-primary vp-cta-primary--lg vp-pdp-cta-quote" type="button" aria-label={v.pdpQuoteLabel}>{common.getQuote}</button>
+                  <a
+                    href={v.siteCopy.heroWhatsAppHref || topBar.whatsappHref}
+                    className="vp-cta-primary vp-cta-primary--lg vp-cta-whatsapp vp-pdp-cta-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <WhatsAppIcon size={20} />
+                    <span>{v.siteCopy.heroCtaWhatsApp || 'WhatsApp'}</span>
+                  </a>
                 </div>
                 <div className="vp-spec-panel">
                   <div className="vp-spec-panel-head">Specification</div>

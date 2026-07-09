@@ -32,7 +32,7 @@ function WhatsAppIconSmall() {
 export default function VpTopUtilityBar({ topBar }: { topBar: TopBarCopy }) {
   return (
     <div className="vp-top-utility-bar">
-      <div className="vp-top-utility-bar-inner">
+      <div className="vp-chrome-container vp-top-utility-bar-inner">
         <label className="vp-top-utility-lang">
           <span className="vp-top-utility-lang-icon" aria-hidden="true">G</span>
           <select className="vp-top-utility-lang-select" defaultValue={topBar.languages[0]?.code ?? 'en'} aria-label={topBar.selectLanguage}>
@@ -43,13 +43,25 @@ export default function VpTopUtilityBar({ topBar }: { topBar: TopBarCopy }) {
         </label>
 
         <div className="vp-top-utility-links">
-          <a href={topBar.emailHref} className="vp-top-utility-link" target="_blank" rel="noopener noreferrer">
+          <a
+            href={topBar.emailHref}
+            className="vp-top-utility-link vp-top-utility-link--email"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={topBar.email}
+          >
             <span className="vp-top-utility-link-icon"><MailIcon /></span>
-            <span>{topBar.email}</span>
+            <span className="vp-top-utility-link-text">{topBar.email}</span>
           </a>
-          <a href={topBar.whatsappHref} className="vp-top-utility-link vp-top-utility-link--whatsapp" target="_blank" rel="noopener noreferrer">
+          <a
+            href={topBar.whatsappHref}
+            className="vp-top-utility-link vp-top-utility-link--whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={topBar.whatsappLabel}
+          >
             <span className="vp-top-utility-link-icon"><WhatsAppIconSmall /></span>
-            <span>{topBar.whatsappLabel}</span>
+            <span className="vp-top-utility-link-text">{topBar.whatsappLabel}</span>
           </a>
         </div>
       </div>

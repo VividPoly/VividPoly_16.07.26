@@ -249,7 +249,7 @@
 }
 
 html {
-  scrollbar-gutter: auto;
+  scrollbar-gutter: stable;
   font-family: var(--vp-font-body);
 }
 
@@ -852,6 +852,57 @@ h6,
   font-weight: var(--vp-weight-bold);
 }
 
+/* Primary action row on the product detail page: Get Quote plus WhatsApp, placed
+   between the trust badges and the specification panel. */
+.vp-pdp-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vp-space-3);
+  margin-bottom: var(--vp-space-5);
+}
+
+.vp-pdp-cta-row .vp-cta-primary--lg {
+  padding: 14px 28px;
+}
+
+.vp-pdp-cta-quote,
+.vp-pdp-cta-row .vp-pdp-cta-whatsapp {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.vp-pdp-cta-row .vp-pdp-cta-whatsapp {
+  border-color: var(--vp-sand) !important;
+}
+
+@media (max-width: 1024px) {
+  .vp-pdp-cta-row {
+    flex-direction: column;
+  }
+
+  .vp-pdp-cta-quote,
+  .vp-pdp-cta-row .vp-pdp-cta-whatsapp {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .vp-pdp-cta-row {
+    gap: var(--vp-space-2);
+  }
+
+  .vp-pdp-cta-row .vp-cta-primary--lg {
+    padding: 13px 20px;
+    font-size: var(--vp-text-body-sm);
+  }
+}
+
 .vp-spec-panel {
   border: 1px solid var(--vp-fog);
   border-radius: var(--vp-radius-lg);
@@ -982,6 +1033,7 @@ button {
 
 /* One content column: shared max-width + horizontal inset */
 .vp-hero-inner--split,
+.vp-hero-inner,
 .vp-home-intro-inner,
 .vp-value-props-inner,
 .vp-home-browse-head,
@@ -992,8 +1044,7 @@ button {
 .vp-product-use-bridge,
 .vp-product-use-section,
 .vp-trust-message,
-.vp-header-shell,
-.vp-top-utility-bar-inner,
+.vp-chrome-container,
 .vp-footer-shell,
 .vp-catalogue-layout,
 .vp-pdp-layout,
@@ -2037,7 +2088,9 @@ button {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--vp-block-gap);
+  gap: 16px;
+  row-gap: 16px;
+  column-gap: 16px;
 }
 
 .vp-why-choose-item {
@@ -2075,7 +2128,16 @@ button {
 @media (max-width: 1024px) {
   .vp-why-choose-list {
     grid-template-columns: 1fr;
+    gap: 12px;
+    row-gap: 12px;
+    column-gap: 12px;
+  }
+
+  .vp-careers-page .vp-careers-why-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
   }
 
   .vp-why-choose-item {
@@ -2084,16 +2146,21 @@ button {
     background: var(--vp-paper);
   }
 
+  .vp-careers-page .vp-careers-why-list .vp-why-choose-item {
+    padding: 12px;
+  }
+
   .vp-why-choose-item-title {
     margin-bottom: 4px;
   }
 }
 
-/* Tablet: the 44px block gap leaves the cards too far apart in the narrower
-   two-column grid, so tighten it to a balanced rhythm. */
+/* Tablet: keep the two-column grid gap balanced on narrower desktops. */
 @media (min-width: 1025px) and (max-width: 1366px) {
   .vp-why-choose-list {
-    gap: var(--vp-space-5);
+    gap: 14px;
+    row-gap: 14px;
+    column-gap: 14px;
   }
 }
 
@@ -2314,11 +2381,29 @@ details > summary::-webkit-details-marker {
    -50% translate lands exactly on the second copy for a seamless loop. */
 .vp-prod-marquee-viewport {
   width: 100%;
+  max-width: var(--vp-content-max);
+  margin-inline: auto;
   overflow: hidden;
+  box-sizing: border-box;
+  padding-inline: var(--vp-pad-x-start) var(--vp-pad-x-end);
   /* Vertical breathing room so the card hover shadow is not clipped; the
      negative margin keeps the section's outer spacing unchanged. */
   padding-block: 24px;
   margin-block: -24px;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 28px,
+    #000 calc(100% - 28px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 28px,
+    #000 calc(100% - 28px),
+    transparent 100%
+  );
 }
 
 .vp-prod-marquee {
@@ -2448,6 +2533,7 @@ html[data-vp-layout="fit"] .vp-site-chrome--fixed.vp-site-chrome--hidden {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  min-width: 0;
 }
 
 .vp-top-utility-lang {
@@ -2493,6 +2579,8 @@ html[data-vp-layout="fit"] .vp-site-chrome--fixed.vp-site-chrome--hidden {
   flex-wrap: wrap;
   gap: 8px 20px;
   min-width: 0;
+  flex: 1 1 auto;
+  max-width: 100%;
 }
 
 .vp-top-utility-link {
@@ -2799,6 +2887,7 @@ html[data-vp-layout="fit"] .vp-header--fixed.vp-header--hidden {
 }
 
 .vp-header-shell {
+  position: relative;
   padding-block: 14px;
   display: flex;
   align-items: center;
@@ -2824,6 +2913,47 @@ html[data-vp-layout="fit"] .vp-header--fixed.vp-header--hidden {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+}
+
+/* Desktop: Knack-style header. Logo stays left; nav links sit centered in the
+   bar. The third grid column balances the logo width so the nav stays true
+   center. Both chrome rows use the same container gutters as the page body. */
+@media (min-width: 1025px) {
+  .vp-header-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: var(--vp-space-4);
+    justify-content: stretch;
+  }
+
+  .vp-header-start {
+    display: contents;
+  }
+
+  .vp-header-logo {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .vp-header-nav--desktop {
+    grid-column: 2;
+    justify-self: center;
+    margin-left: 0;
+    flex: none;
+  }
+
+  .vp-header-shell > .vp-header-end {
+    display: flex;
+    grid-column: 3;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .vp-header-shell > .vp-header-end .vp-header-menu-btn {
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .vp-header-nav::-webkit-scrollbar {
@@ -4399,8 +4529,8 @@ a.vp-mobile-drawer-link {
 
 .vp-hero-inner--split {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
-  gap: var(--vp-space-8);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 52px);
   align-items: center;
   align-content: center;
   padding-block: var(--vp-space-8);
@@ -4422,20 +4552,31 @@ a.vp-mobile-drawer-link {
   }
 }
 
-/* Home hero: tighten internal rhythm so the centered content block ends higher
-   and leaves a comfortable band of negative space above and below the CTAs. */
+/* Home hero: balanced two-column fold like the earlier blue reference. Copy and
+   visual share equal weight; the product panel is a fixed portrait inset frame
+   that never stretches to full column height or crops the posters. */
 @media (min-width: 1025px) {
-  /* Fill the full fold (viewport minus the sticky header) so the split row and
-     its negative space occupy the first screen and the markets marquee is pushed
-     just below the fold line instead of sitting at the bottom edge. */
+  .vp-hero:not(.vp-careers-hero) {
+    background: linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--vp-oxblood) 72%, #1c2840) 0%,
+      var(--vp-oxblood) 44%,
+      color-mix(in srgb, var(--vp-oxblood) 88%, #141820) 100%
+    );
+  }
+
   .vp-hero:not(.vp-careers-hero) .vp-hero-inner--split {
-    padding-block: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(32px, 4.5vw, 56px);
+    align-items: center;
+    align-content: center;
+    padding-block: var(--vp-space-6);
     min-height: calc(100svh - var(--vp-header-offset));
   }
 
-  /* Keep the copy breathing while the image fills the fold edge to edge. */
   .vp-hero:not(.vp-careers-hero) .vp-hero-copy {
-    padding-block: var(--vp-space-6);
+    padding-block: var(--vp-space-5);
+    justify-content: center;
   }
 
   .vp-hero:not(.vp-careers-hero) .vp-hero-brand {
@@ -4452,6 +4593,39 @@ a.vp-mobile-drawer-link {
 
   .vp-hero:not(.vp-careers-hero) .vp-hero-trust {
     margin-bottom: var(--vp-space-5);
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-visual {
+    align-self: stretch;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-block: var(--vp-space-4);
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel-shell {
+    width: 100%;
+    max-width: min(100%, 380px);
+    margin-inline: 0;
+    margin-left: auto;
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: var(--vp-hero-carousel-ratio, 1);
+    height: auto;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: var(--vp-radius-lg);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22);
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel .vp-photo-slot {
+    object-fit: contain;
+    object-position: center center;
+    box-sizing: border-box;
   }
 }
 
@@ -4482,88 +4656,128 @@ a.vp-mobile-drawer-link {
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* Hero flagship-product carousel: layered cross-fading slides. The frame adopts
-   the active poster aspect ratio so the border hugs the artwork with no crop and
-   no letterbox padding. On mobile width drives the size; on desktop the height is
-   capped to the fold so the hero never overflows the first viewport. */
+/* Hero flagship-product carousel: fixed square frame with a horizontal track so
+   the shell never resizes between slides. Posters use contain so nothing crops. */
+.vp-hero-carousel-shell {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
+  --vp-hero-carousel-ratio: 1;
+}
+
 .vp-hero-carousel {
   position: relative;
   width: 100%;
-  aspect-ratio: var(--vp-hero-slide-ratio, 0.78);
+  max-width: 100%;
+  aspect-ratio: var(--vp-hero-carousel-ratio);
+  height: auto;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--vp-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--vp-radius-lg);
   background: transparent;
-  margin-inline: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.vp-hero-carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 680ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 .vp-hero-carousel-slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 900ms ease;
-  pointer-events: none;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  overflow: hidden;
 }
 
-.vp-hero-carousel-slide--active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.vp-hero-visual .vp-hero-carousel .vp-photo-slot {
-  position: absolute;
-  inset: 0;
+.vp-hero-visual .vp-hero-carousel .vp-photo-slot,
+.vp-hero-carousel-img {
+  display: block;
   width: 100%;
   height: 100%;
   min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
   aspect-ratio: auto;
   border: 0;
   border-radius: 0;
   object-fit: contain;
-  object-position: center;
+  object-position: center center;
 }
 
-@media (min-width: 1025px) {
-  /* Home hero first fold only: the frame keeps the poster 3:4 ratio and fills as
-     much fold height as the column allows, so the image is never cropped. It
-     reaches the full height when the column is wide enough, otherwise it centers
-     with a little horizontal room rather than cutting the artwork. */
-  .vp-hero:not(.vp-careers-hero) .vp-hero-inner--split {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-    align-content: stretch;
-    align-items: stretch;
-  }
-
-  .vp-hero:not(.vp-careers-hero) .vp-hero-visual {
-    align-self: stretch;
-    align-items: center;
-    height: 100%;
-  }
-
-  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
-    aspect-ratio: 3 / 4;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    margin-inline: auto;
-  }
-
-  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel .vp-photo-slot {
-    object-fit: cover;
-  }
+.vp-hero-carousel .vp-photo-slot--hero {
+  aspect-ratio: auto;
+  border: 0;
+  min-height: 0;
 }
 
-/* Tablet landscape and short desktop viewports: the desktop fold rules crop the
-   3:4 cover image and push the CTAs past the short viewport height. Show the full
-   uncropped poster and compact the copy so the entire fold stays visible. */
+.vp-hero-carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 12px;
+  padding-bottom: 0;
+}
+
+.vp-hero-carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--vp-radius-pill);
+  border: 0;
+  background: rgba(255, 255, 255, 0.42);
+  padding: 0;
+  cursor: pointer;
+  flex: none;
+  transition:
+    width 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 280ms ease;
+}
+
+.vp-hero-carousel-dot:hover,
+.vp-hero-carousel-dot:focus-visible {
+  background: rgba(255, 255, 255, 0.72);
+  outline: none;
+}
+
+.vp-hero-carousel-dot--active {
+  width: 18px;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.vp-hero-carousel-dot--active:hover,
+.vp-hero-carousel-dot--active:focus-visible {
+  background: var(--vp-white);
+}
+
+/* Tablet landscape and short desktop viewports: keep the balanced inset panel and
+   compact the copy so the entire fold stays visible without cropping posters. */
 @media (min-width: 1025px) and (max-height: 900px) {
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel-shell {
+    max-width: min(100%, 360px);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
   .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
-    aspect-ratio: 3 / 4;
-    height: 100%;
-    width: auto;
+    width: 100%;
     max-width: 100%;
-    max-height: calc(100svh - var(--vp-header-offset) - 2 * var(--vp-space-6));
-    margin-inline: auto;
+    max-height: calc(100svh - var(--vp-header-offset) - 200px);
+    aspect-ratio: var(--vp-hero-carousel-ratio, 1);
+    height: auto;
   }
 
   .vp-hero:not(.vp-careers-hero) .vp-hero-carousel .vp-photo-slot {
@@ -4593,7 +4807,11 @@ a.vp-mobile-drawer-link {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .vp-hero-carousel-slide {
+  .vp-hero-carousel-track {
+    transition: none;
+  }
+
+  .vp-hero-carousel-dot {
     transition: none;
   }
 }
@@ -6965,7 +7183,7 @@ img.vp-wordmark--footer {
 
 @media (min-width: 1024px) {
   .vp-hero-inner--split {
-    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
     align-content: center;
   }
@@ -7122,16 +7340,62 @@ img.vp-wordmark--footer {
     color: var(--vp-charcoal);
   }
 
-  .vp-top-utility-links {
-    gap: 8px 12px;
-    overflow-x: auto;
+  .vp-top-utility-bar-inner {
     flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    gap: 6px;
+    padding-block: 6px;
+    overflow-x: visible;
   }
 
-  .vp-top-utility-links::-webkit-scrollbar {
-    display: none;
+  .vp-top-utility-lang {
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: 42%;
+  }
+
+  .vp-top-utility-lang-select {
+    font-size: 11px;
+    padding-right: 16px;
+    max-width: 100%;
+  }
+
+  .vp-top-utility-links {
+    gap: 4px 6px;
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 10px;
+  }
+
+  .vp-top-utility-link {
+    gap: 4px;
+    min-width: 0;
+    flex-shrink: 0;
+  }
+
+  .vp-top-utility-link-text {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: nowrap;
+  }
+
+  .vp-top-utility-link--email .vp-top-utility-link-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .vp-top-utility-link--whatsapp .vp-top-utility-link-text {
+    max-width: none;
+    font-size: clamp(9px, 2.65vw, 11px);
   }
 
   .vp-header-shell {
@@ -7179,8 +7443,8 @@ img.vp-wordmark--footer {
   .vp-hero-inner--split {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    padding-block: 16px 14px;
+    gap: 12px;
+    padding-block: 20px 10px;
     padding-inline: var(--vp-pad-x-start) var(--vp-pad-x-end);
   }
 
@@ -7194,30 +7458,60 @@ img.vp-wordmark--footer {
 
   .vp-hero-lead {
     order: 2;
-    margin: 0 0 14px;
+    margin: 0 0 10px;
+  }
+
+  .vp-hero-visual {
+    order: 3;
+    display: flex !important;
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .vp-hero-trust {
+    order: 4;
+    margin: 0 0 10px;
   }
 
   .vp-hero-ctas {
-    order: 3;
+    order: 5;
     width: 100%;
     align-self: stretch;
     box-sizing: border-box;
   }
 
-  .vp-hero-trust {
-    order: 4;
-    margin: 0 0 14px;
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel-shell {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
   }
 
-  .vp-hero-visual {
-    order: 5;
-    display: flex !important;
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
     width: 100%;
-    margin: 0;
+    max-width: 100%;
+    aspect-ratio: var(--vp-hero-carousel-ratio, 1);
+  }
+
+  .vp-hero-visual .vp-hero-carousel .vp-photo-slot {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .vp-hero-carousel-dots {
+    margin-top: 10px;
+    gap: 5px;
   }
 
   .vp-hero-visual-ph,
-  .vp-hero-visual .vp-photo-slot--hero {
+  .vp-hero-visual .vp-photo-slot--hero:not(.vp-hero-carousel-img) {
     width: 100%;
     aspect-ratio: 1 / 1;
     height: auto;
@@ -7231,11 +7525,11 @@ img.vp-wordmark--footer {
 
   .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
     padding-bottom: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
 
   .vp-hero:not(.vp-careers-hero) .vp-hero-inner--split {
-    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: 12px;
   }
 
   .vp-hero:not(.vp-careers-hero) {
@@ -7311,36 +7605,52 @@ img.vp-wordmark--footer {
     display: inline-flex;
   }
 
-  .vp-hero-ctas {
-    flex-direction: column;
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch;
     gap: 8px;
     width: 100%;
     align-self: stretch;
   }
 
-  .vp-hero-ctas .vp-cta-primary,
-  .vp-hero-ctas .vp-cta-secondary,
-  .vp-hero-ctas .vp-cta-whatsapp {
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary,
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary,
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-whatsapp {
     display: flex;
-    width: 100%;
-    max-width: 100%;
+    flex: 1 1 calc(50% - 4px);
+    width: auto;
+    min-width: 0;
+    max-width: none;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    min-height: 44px;
+    min-height: 42px;
     max-height: none;
-    padding: 10px 16px;
-    font-size: var(--vp-text-body);
+    padding: 9px 12px;
+    font-size: 13px;
   }
 
-  .vp-hero-ctas .vp-cta-primary--lg,
-  .vp-hero-ctas .vp-cta-secondary--lg {
-    padding: 10px 16px;
-    font-size: var(--vp-text-body);
-    min-height: 44px;
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary--lg,
+  .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary--lg {
+    padding: 9px 12px;
+    font-size: 13px;
+    min-height: 42px;
     max-height: none;
+    width: auto;
+    flex: 1 1 calc(50% - 4px);
+  }
+
+  .vp-careers-hero .vp-hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .vp-careers-hero .vp-hero-ctas .vp-cta-primary,
+  .vp-careers-hero .vp-hero-ctas .vp-cta-secondary {
     width: 100%;
+    flex: none;
   }
 
   .vp-page-shell {
@@ -7455,7 +7765,7 @@ img.vp-wordmark--footer {
   }
 
   .vp-hero-title {
-    font-size: clamp(24px, 7vw, 34px);
+    font-size: clamp(26px, 7.2vw, 35px);
     line-height: 1.12;
     margin: 0 0 12px;
   }
@@ -7468,12 +7778,25 @@ img.vp-wordmark--footer {
   }
 
   .vp-hero-trust {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px 10px;
-    margin: 0 0 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 8px;
+    margin: 0 0 10px;
     max-width: none;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--vp-gutter-start);
+    margin-inline: calc(-1 * var(--vp-gutter-start)) calc(-1 * var(--vp-gutter-end));
+    padding-inline: var(--vp-gutter-start) var(--vp-gutter-end);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .vp-hero-trust::-webkit-scrollbar {
+    display: none;
   }
 
   .vp-hero-trust-col {
@@ -7486,10 +7809,13 @@ img.vp-wordmark--footer {
     gap: 8px;
     min-height: 0;
     min-width: 0;
-    padding: 8px 10px;
-    border-radius: var(--vp-radius-md);
-    background: rgba(255, 255, 255, 0.08);
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 6px 10px;
+    border-radius: var(--vp-radius-pill);
+    background: rgba(255, 255, 255, 0.1);
     max-width: none;
+    white-space: nowrap;
   }
 
   .vp-hero-trust-icon {
@@ -7767,11 +8093,26 @@ img.vp-wordmark--footer {
 
   .vp-top-utility-bar-inner {
     padding-block: 6px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 6px;
+    overflow-x: visible;
   }
 
   .vp-top-utility-links {
-    gap: 6px 10px;
-    font-size: 11px;
+    gap: 4px 6px;
+    font-size: 10px;
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .vp-top-utility-link--whatsapp .vp-top-utility-link-text {
+    max-width: none;
+    font-size: clamp(9px, 2.65vw, 10px);
   }
 
   .vp-enquiry-fab {
@@ -7834,8 +8175,9 @@ img.vp-wordmark--footer {
     top: 60px !important;
   }
 
-  .vp-hero h1 {
-    font-size: clamp(28px, 8.2vw, 40px) !important;
+  .vp-hero:not(.vp-careers-hero) h1 {
+    font-size: clamp(24px, 7vw, 32px) !important;
+    line-height: 1.12 !important;
   }
 
   .vp-start-grid,
@@ -8188,10 +8530,29 @@ img.vp-wordmark--footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .vp-hero-inner--split:not(.vp-careers-hero-inner) {
-    grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
     align-content: center;
     padding-block: var(--vp-space-8);
+    gap: clamp(24px, 3vw, 40px);
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel-shell {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: var(--vp-hero-carousel-ratio, 1);
+    height: auto;
+  }
+
+  .vp-hero:not(.vp-careers-hero) .vp-hero-visual {
+    justify-content: flex-start;
+    align-items: stretch;
   }
 
   .vp-hero-visual {
@@ -8268,7 +8629,7 @@ img.vp-wordmark--footer {
   }
 
   .vp-hero-title {
-    font-size: clamp(24px, 7.5vw, 32px) !important;
+    font-size: clamp(26px, 7.6vw, 33px) !important;
   }
 }
 
@@ -10637,5 +10998,339 @@ img.vp-wordmark--footer {
   width: 100%;
   height: 100%;
   scroll-snap-align: none;
+}
+
+/* Mobile home: calmer fold, tighter rhythm, less repeated chrome. */
+@media (max-width: 1024px) {
+  .vp-home .vp-hero-markets {
+    display: none;
+  }
+
+  /* Mobile home hero: spacious copy, simple CTAs, light trust row, then carousel. */
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-inner--split {
+    gap: 22px;
+    padding-block: 32px 16px;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) {
+    padding-bottom: 0;
+    min-height: 0;
+  }
+
+  .vp-home .vp-hero-title {
+    order: 1;
+    font-family: var(--vp-font-heading);
+    font-size: clamp(1.875rem, 7.6vw, 2.25rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0;
+    text-wrap: balance;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .vp-home .vp-hero-lead {
+    order: 2;
+    font-size: 15px;
+    font-weight: var(--vp-weight-regular);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  .vp-home .vp-hero-ctas {
+    order: 3;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-whatsapp,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary--lg,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary--lg {
+    flex: none;
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: var(--vp-weight-bold);
+  }
+
+  .vp-home .vp-hero-trust {
+    order: 4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    gap: 10px;
+    margin: 0;
+    overflow: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+    max-width: none;
+  }
+
+  .vp-home .vp-hero-trust-col {
+    display: contents;
+  }
+
+  .vp-home .vp-hero-trust-col li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 4px;
+    padding: 12px;
+    min-height: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    white-space: normal;
+    min-width: 0;
+  }
+
+  .vp-home .vp-hero-trust-icon,
+  .vp-home .vp-hero-cert-badge {
+    width: 20px;
+    height: 20px;
+    flex: none;
+  }
+
+  .vp-home .vp-hero-trust-label,
+  .vp-home .vp-hero-trust-stat-copy strong {
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .vp-home .vp-hero-trust-stat-copy {
+    align-items: flex-start;
+    text-align: left;
+    gap: 2px;
+  }
+
+  .vp-home .vp-hero-trust-stat-copy span {
+    font-size: 11px;
+    line-height: 1.35;
+    display: block;
+  }
+
+  .vp-home .vp-hero-visual {
+    order: 5;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    margin-top: 4px;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-carousel-shell {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    box-sizing: border-box;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-carousel {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: var(--vp-hero-carousel-ratio, 1);
+    min-height: 0;
+    border-radius: var(--vp-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+  }
+
+  .vp-home .vp-hero-visual .vp-hero-carousel .vp-photo-slot {
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 0;
+  }
+
+  .vp-home .vp-hero-carousel-dots {
+    margin-top: 8px;
+    padding-bottom: 0;
+  }
+
+  .vp-home .vp-home-intro-inner {
+    padding-block: 16px 20px;
+  }
+
+  .vp-home .vp-home-intro-inner p + p {
+    margin-top: 10px;
+    color: color-mix(in srgb, var(--vp-ink) 78%, var(--vp-mist));
+  }
+
+  .vp-home .vp-value-props-section {
+    margin-top: 0;
+  }
+
+  .vp-home .vp-value-props-inner {
+    padding-block: 20px 6px;
+  }
+
+  .vp-home .vp-value-props-section .vp-value-props-eyebrow {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .vp-home .vp-value-props--3 .vp-value-prop {
+    padding: 16px 16px;
+  }
+
+  .vp-home .vp-value-props-mobile-meta {
+    margin-top: 10px;
+    margin-bottom: 0;
+    gap: 8px;
+  }
+
+  .vp-home .vp-value-props-status {
+    display: none;
+  }
+
+  .vp-home .vp-home-browse-head {
+    display: none;
+  }
+
+  .vp-home .vp-start-section {
+    padding-top: 16px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .vp-home .vp-start-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .vp-home .vp-start-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .vp-home .vp-start-card .vp-photo-slot--card,
+  .vp-home .vp-start-card-media.vp-photo-slot--card {
+    aspect-ratio: 5 / 4;
+  }
+
+  .vp-home .vp-start-card-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+    line-height: 1.25;
+  }
+
+  .vp-home .vp-start-card-desc {
+    font-size: 12px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .vp-home .vp-trust-message {
+    padding-block: 14px 12px;
+    text-align: center;
+  }
+
+  .vp-home .vp-trust-message p {
+    font-size: 12px;
+    line-height: 1.45;
+    max-width: 28rem;
+    margin-inline: auto;
+  }
+
+  .vp-home .vp-buyer-section .vp-buyer-shell {
+    padding-block: 24px;
+  }
+
+  .vp-home .vp-buyer-mobile-head {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .vp-home .vp-buyer-mobile-title {
+    font-size: clamp(20px, 5.5vw, 24px);
+  }
+
+  .vp-home .vp-buyer-mobile-hint {
+    font-size: 11px;
+  }
+
+  .vp-home .vp-prod-section {
+    padding-block: 20px 0;
+  }
+
+  .vp-home .vp-prod-header {
+    margin-bottom: 10px;
+  }
+
+  .vp-home .vp-prod-title {
+    font-size: clamp(20px, 5.5vw, 24px);
+  }
+
+  .vp-home .vp-prod-marquee-viewport {
+    padding-block: 12px;
+    margin-block: -12px;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 20px,
+      #000 calc(100% - 20px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 20px,
+      #000 calc(100% - 20px),
+      transparent 100%
+    );
+  }
+
+  .vp-home .vp-prod-marquee .vp-prod-card {
+    width: min(68vw, 220px);
+    margin-right: 12px;
+  }
+
+  .vp-home .vp-product-use-bridge {
+    padding-block: 14px;
+  }
+
+  .vp-home .vp-product-use-section {
+    padding-bottom: 20px;
+  }
+
+  .vp-home .vp-product-use-hint {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .vp-home .vp-faq-section-inner {
+    padding-block: 24px;
+  }
+
+  .vp-home .vp-final-cta-inner {
+    padding-block: 28px;
+  }
+
+  .vp-home .vp-final-cta-head {
+    font-size: clamp(22px, 6vw, 28px);
+    margin-bottom: 10px;
+  }
+
+  .vp-home .vp-final-cta-body-wrap {
+    margin-bottom: 16px;
+  }
 }
 
