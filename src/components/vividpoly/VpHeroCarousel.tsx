@@ -14,24 +14,35 @@ type VpHeroCarouselProps = {
   slides: HeroSlide[];
   intervalMs?: number;
   className?: string;
+  /** Lock the frame ratio so the shell never resizes between slides. */
+  frameRatio?: number;
+  /** Pagination dots below the frame. Off for the home hero fold. */
+  showDots?: boolean;
 };
 
 /**
- * Auto-advancing hero product showcase. Uses a fixed square frame and a
+ * Auto-advancing hero product showcase. Uses a fixed portrait frame and a
  * horizontal slide track so the shell never resizes between cards. Images use
- * object-fit: contain so posters are never cropped. Dots below the frame are clickable.
+ * object-fit: contain so posters are never cropped. Optional dots below the frame.
  */
 export default function VpHeroCarousel({
   slides,
   intervalMs = 4200,
   className = '',
+  frameRatio: fixedFrameRatio,
+  showDots = true,
 }: VpHeroCarouselProps) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(false);
-  const [frameRatio, setFrameRatio] = useState(slides[0]?.ratio ?? 1);
+  const [frameRatio, setFrameRatio] = useState(fixedFrameRatio ?? slides[0]?.ratio ?? 3 / 4);
 
   useEffect(() => {
+    if (fixedFrameRatio != null) {
+      setFrameRatio(fixedFrameRatio);
+      return;
+    }
+
     if (typeof window === 'undefined' || !slides.length) return;
 
     let cancelled = false;
@@ -45,17 +56,15 @@ export default function VpHeroCarousel({
               resolve(img.naturalWidth / img.naturalHeight);
               return;
             }
-            resolve(slide.ratio ?? 1);
+            resolve(slide.ratio ?? 3 / 4);
           };
-          img.onerror = () => resolve(slide.ratio ?? 1);
+          img.onerror = () => resolve(slide.ratio ?? 3 / 4);
           img.src = slide.src;
         })),
       );
 
       if (cancelled || !ratios.length) return;
 
-      // One shared frame for every slide: use the widest measured ratio so
-      // portrait posters fill the width without side gutters inside the frame.
       setFrameRatio(Math.max(...ratios));
     };
 
@@ -64,7 +73,7 @@ export default function VpHeroCarousel({
     return () => {
       cancelled = true;
     };
-  }, [slides]);
+  }, [slides, fixedFrameRatio]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -127,7 +136,7 @@ export default function VpHeroCarousel({
         </div>
       </div>
 
-      {slides.length > 1 && (
+      {showDots && slides.length > 1 && (
         <div className="vp-hero-carousel-dots" role="tablist" aria-label="Choose product slide">
           {slides.map((slide, index) => (
             <button

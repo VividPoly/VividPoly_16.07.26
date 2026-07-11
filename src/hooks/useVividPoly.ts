@@ -5,7 +5,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import uiCopy from '@/data/ui-copy.json';
 import { getVividPolyData, type VividPolyMessages } from '@/lib/get-vividpoly-data';
-import { VP } from '@/lib/vividpoly-tokens';
+import { enquiryQuoteSelectionForProductId, resolveContactEnquiryType } from '@/lib/enquiry-product';
+import { readVpTokens, VP as VP_FALLBACK } from '@/lib/vividpoly-tokens';
 import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOptions, catSortFromUseTitle, filtersForUseSort, filterProductsByUseSort, CAPACITY_STOPS, filterProductsByCapacity, isCapacityFilterActive, getCapacityCustomNotice, type CatSort } from '@/lib/vividpoly-product-filters';
 import { getInitialQuoteStep } from '@/lib/vividpoly-quote';
 import { productGallerySrcs, productImageSrc } from '@/lib/product-images';
@@ -17,13 +18,13 @@ import {
   parseHash,
   readNavState,
   scrollPageToTop,
-  consumeSkipNextScrollToTop,
   enableManualScrollRestoration,
-  requestSkipNextScrollToTop,
-  scrollToAnchorWithHeaderOffset,
+  armHomeFaqScroll,
+  scrollToHomeFaqWhenReady,
   splitBreadcrumbTrail,
   withHomeBreadcrumb,
 } from '@/lib/vividpoly-navigation';
+import { getPageTransitionKey } from '@/lib/vp-page-transition';
 
 export type Screen =
   | 'home' | 'catalogue' | 'pdp' | 'faqs'
@@ -36,10 +37,6 @@ export interface VividPolyState {
   pid: string;
   gallery: number;
   openFaq: number | null;
-  activeUse: number | null;
-  usePinned: boolean;
-  activeBuyer: number;
-  buyerPinned: boolean;
   searchOpen: boolean;
   searchVal: string;
   quoteStep: number;
@@ -70,8 +67,6 @@ export interface VividPolyState {
 const initialState: VividPolyState = {
   screen: 'home', menu: null, prodTab: 'type',
   pid: 'open-mouth', gallery: 0, openFaq: null,
-  activeUse: 0, usePinned: false,
-  activeBuyer: 0, buyerPinned: false,
   searchOpen: false, searchVal: '',
   quoteStep: 0, quoteLeadOnly: false, quoteBagSpecPrompt: false, quoteContactOpen: false,
   quote: { product: 'General Query' }, cat: 'type', catGuide: null, catFiltersOpen: false, filters: {},
@@ -87,6 +82,14 @@ export function useVividPoly() {
   const generalEnquiryType = ui.enquiryProductTypes[0]?.label ?? 'General Query';
   const vividPolyData = useMemo(() => getVividPolyData(ui), []);
   const [s, setState] = useState<VividPolyState>(initialState);
+  const [vpTokens, setVpTokens] = useState(VP_FALLBACK);
+
+  useEffect(() => {
+    const sync = () => setVpTokens(readVpTokens());
+    sync();
+    window.addEventListener('vp:theme-change', sync);
+    return () => window.removeEventListener('vp:theme-change', sync);
+  }, []);
   const scrollRef = useRef<HTMLDivElement>(null);
   const prodAutoScrollStoppedRef = useRef(false);
   const rafRef = useRef<number>(0);
@@ -99,10 +102,6 @@ export function useVividPoly() {
       return;
     }
     window.history.pushState(navPayload(next), '', navUrl(next));
-    if (!consumeSkipNextScrollToTop()) {
-      scrollPageToTop('auto');
-      requestAnimationFrame(() => scrollPageToTop('auto'));
-    }
   }, []);
 
   const navigate = useCallback((updater: (st: VividPolyState) => VividPolyState) => {
@@ -134,12 +133,18 @@ export function useVividPoly() {
 
     // Restore the screen from the URL hash so a refresh keeps the current page
     // instead of resetting to home.
+    const hashRaw = window.location.hash.replace(/^#/, '').trim();
     const parsed = parseHash(window.location.hash);
     const restored: VividPolyState = parsed ? { ...initialState, ...parsed } : initialState;
     if (parsed) setState(restored);
     window.history.replaceState(navPayload(restored), '', navUrl(restored));
-    scrollPageToTop('auto');
-    requestAnimationFrame(() => scrollPageToTop('auto'));
+
+    if (hashRaw === 'faqs') {
+      requestAnimationFrame(() => scrollToHomeFaqWhenReady('auto', 12, 60, 50));
+    } else {
+      scrollPageToTop('auto');
+      requestAnimationFrame(() => scrollPageToTop('auto'));
+    }
 
     const onPopState = (event: PopStateEvent) => {
       const restored = readNavState(event.state);
@@ -167,18 +172,13 @@ export function useVividPoly() {
   }, [s.screen, go]);
 
   const goHomeFaqs = useCallback(() => {
-    const scrollToFaq = () => {
-      scrollToAnchorWithHeaderOffset('vp-home-faq', 'smooth', 12);
-    };
-
-    setState((st) => ({ ...st, menu: null, searchOpen: false, catGuide: null }));
-
     if (s.screen === 'home') {
-      scrollToFaq();
+      setState((st) => ({ ...st, menu: null, searchOpen: false, catGuide: null }));
+      scrollToHomeFaqWhenReady('smooth', 12);
       return;
     }
 
-    requestSkipNextScrollToTop();
+    armHomeFaqScroll('auto');
     navigate((st) => ({
       ...st,
       screen: 'home',
@@ -186,7 +186,6 @@ export function useVividPoly() {
       searchOpen: false,
       catGuide: null,
     }));
-    window.setTimeout(scrollToFaq, 80);
   }, [s.screen, navigate]);
 
   const clearCatGuide = useCallback(() => {
@@ -196,6 +195,12 @@ export function useVividPoly() {
   const toggleMenu = useCallback((m: 'products' | 'resources' | 'industry') => {
     setState((st) => ({ ...st, menu: st.menu === m ? null : m, searchOpen: false }));
   }, []);
+
+  useEffect(() => {
+    if (s.screen !== 'faqs') return;
+    armHomeFaqScroll('auto');
+    setState((st) => ({ ...st, screen: 'home', menu: null, searchOpen: false, catGuide: null }));
+  }, [s.screen]);
 
   useEffect(() => {
     const tick = () => {
@@ -235,6 +240,25 @@ export function useVividPoly() {
     prodAutoScrollStoppedRef.current = true;
     scrollRef.current?.scrollBy({ left: dx, behavior: 'smooth' });
   }, []);
+
+  const openContactWithProduct = useCallback((productId: string) => {
+    const selection = enquiryQuoteSelectionForProductId(
+      productId,
+      ui.enquiryProductTypes,
+      generalEnquiryType,
+    );
+    navigate((st) => ({
+      ...st,
+      screen: 'contact',
+      menu: null,
+      searchOpen: false,
+      quoteContactOpen: false,
+      quote: {
+        ...st.quote,
+        ...selection,
+      },
+    }));
+  }, [navigate, ui.enquiryProductTypes, generalEnquiryType]);
 
   const openContactEnquiry = useCallback(() => {
     navigate((st) => ({
@@ -302,6 +326,7 @@ export function useVividPoly() {
   }, [navigate]);
 
   const v = useMemo(() => {
+    const VP = vpTokens;
     const data = vividPolyData;
     const prod = (id: string) => data.products.find((p) => p.id === id);
     const accent = VP.accent;
@@ -370,7 +395,16 @@ export function useVividPoly() {
     }));
     const megaGroups = megaIsType ? megaTypeGroups : megaUseGroups;
 
-    const footLink = (label: string, fn: () => void) => ({ label, open: fn });
+    const footLink = (label: string, fn: () => void, options?: { skipScroll?: boolean }) => ({
+      label,
+      open: () => {
+        fn();
+        if (options?.skipScroll) return;
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => scrollPageToTop('smooth'));
+        });
+      },
+    });
 
     const catUse = s.cat === 'use';
     const filterSecs = ui.filterSections
@@ -420,20 +454,7 @@ export function useVividPoly() {
     const catalogueProducts = catalogueList.map((p) => ({
       ...mkProd(p, 'catalogue'),
       recommended: s.catSort !== 'recommended' && productRecommendedForSort(p, s.catSort),
-      quote: () => {
-        navigate((st) => ({
-          ...st,
-          screen: 'contact',
-          menu: null,
-          searchOpen: false,
-          quoteContactOpen: false,
-          quote: {
-            ...st.quote,
-            product: generalEnquiryType,
-            productId: 'general',
-          },
-        }));
-      },
+      quote: () => openContactWithProduct(p.id),
     }));
 
     const sp = prod(s.pid) || data.products[0];
@@ -498,8 +519,8 @@ export function useVividPoly() {
     const galleryThumbs = pdpGalleryImages.map((src, i) => ({
       i,
       src,
+      active: galleryIndex === i,
       sel: () => setState((st) => ({ ...st, gallery: i })),
-      bd: galleryIndex === i ? accent : VP.border,
     }));
     const trustBadges = ui.pdp.trustBadges.map((t) => ({ t }));
     const relatedProducts = data.products
@@ -514,59 +535,13 @@ export function useVividPoly() {
       toggle: () => setState((st) => ({ ...st, openFaq: st.openFaq === i ? null : i })),
     }));
 
-    const setBuyer = (i: number) =>
-      setState((st) => ({
-        ...st,
-        activeBuyer: ((i % data.buyerRows.length) + data.buyerRows.length) % data.buyerRows.length,
-      }));
+    const productUseCards = data.useRows.map((row) => ({
+      id: row.id,
+      cardTitle: row.cardTitle,
+      bags: row.bags,
+      tips: row.tips,
+    }));
 
-    const buyerCards = data.buyerRows.map((r, i) => {
-      const m = data.buyerMeta[i];
-      const active = s.activeBuyer === i;
-      return {
-        num: m.num, label: m.label, short: m.short,
-        requirement: r[0],
-        response: r[1],
-        active,
-        cardBg: active ? VP.accentSubtle : VP.bgElevated,
-        cardBd: active ? VP.accentBorder : VP.border,
-        cardShadow: active ? '0 4px 16px rgba(10, 30, 51, 0.08)' : 'none',
-        iconBg: active ? VP.bgElevated : VP.bgMuted,
-        iconCol: active ? VP.accent : VP.textSecondary,
-        titleCol: active ? VP.accent : VP.textPrimary,
-        subCol: VP.textSecondary,
-        preview: () => { if (!s.buyerPinned) setBuyer(i); },
-        select: () => setState((st) => ({
-          ...st,
-          activeBuyer: i,
-          buyerPinned: !(st.activeBuyer === i && st.buyerPinned),
-        })),
-      };
-    });
-
-    const b = data.buyerRows[s.activeBuyer] || data.buyerRows[0];
-    const bm = data.buyerMeta[s.activeBuyer] || data.buyerMeta[0];
-    const buyerDetailTags = (b[2] || []).map((label) => ({ label }));
-
-    const useRows = data.useRows.map((r, i) => {
-      const active = s.activeUse === i;
-      return {
-        use: r[0], bags: r[1], active,
-        rowBg: active ? VP.accentSubtle : 'transparent',
-        rowColor: active ? VP.accent : VP.textPrimary,
-        rowAccent: active ? VP.accent : VP.borderStrong,
-        arrowOpacity: active ? '1' : '0.35',
-        preview: () => { if (!s.usePinned) setState((st) => ({ ...st, activeUse: i })); },
-        pick: () => setState((st) => ({ ...st, activeUse: i })),
-        select: () => setState((st) => ({
-          ...st,
-          activeUse: i,
-          usePinned: !(st.activeUse === i && st.usePinned),
-        })),
-      };
-    });
-
-    const useDetailVisible = s.activeUse !== null && s.activeUse >= 0;
     const blogRows = data.blogList.map((b) => ({
       title: b[0],
       purpose: b[1],
@@ -586,10 +561,6 @@ export function useVividPoly() {
       {
         label: ui.contact.corporateOffice,
         value: 'Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058',
-      },
-      {
-        label: ui.contact.factory,
-        value: 'Vivid Poly, Sherpura Gam, Halol Savli Road, Savli, Vadodara',
       },
     ];
 
@@ -864,13 +835,11 @@ export function useVividPoly() {
         {
           title: ui.nav.blogTitle,
           desc: ui.nav.blogDesc,
-          icon: 'blog' as const,
           open: () => go('blog'),
         },
         {
           title: ui.nav.faqsTitle,
           desc: ui.nav.faqsDesc,
-          icon: 'faqs' as const,
           open: goHomeFaqs,
         },
       ],
@@ -905,26 +874,9 @@ export function useVividPoly() {
         setState((st) => ({ ...st, searchVal: e.target.value, searchOpen: true })),
       markets: data.markets,
       products,
-      buyerCards,
-      buyerDetailReq: b[0],
-      buyerDetailRes: b[1],
-      buyerDetailTags,
-      buyerDetailHasTags: buyerDetailTags.length > 0,
-      buyerDetailNum: bm.num,
-      activeBuyer: s.activeBuyer,
-      buyerDots: data.buyerRows.map((_, i) => ({
-        pick: () => setBuyer(i),
-        bg: s.activeBuyer === i ? VP.accent : VP.borderStrong,
-      })),
-      buyerPrev: () => setBuyer(s.activeBuyer - 1),
-      buyerNext: () => setBuyer(s.activeBuyer + 1),
-      useRows,
-      useDetailVisible: s.activeUse !== null && s.activeUse >= 0,
-      useDetailHidden: !(s.activeUse !== null && s.activeUse >= 0),
-      useDetailTitle: s.activeUse !== null && s.activeUse >= 0 ? data.useRows[s.activeUse][0] : '',
-      useDetailBags: s.activeUse !== null && s.activeUse >= 0 ? data.useRows[s.activeUse][1] : '',
-      clearUsePreview: () => { if (!s.usePinned) setState((st) => ({ ...st, activeUse: null })); },
+      productUseCards,
       showHome: s.screen === 'home',
+      pageTransitionKey: getPageTransitionKey(s),
       showCatalogue: s.screen === 'catalogue',
       catTitle: catUse ? ui.catalogue.titleByUse : ui.catalogue.titleByType,
       catCrumb: catUse ? ui.catalogue.breadcrumbUse : ui.catalogue.breadcrumbType,
@@ -1006,20 +958,7 @@ export function useVividPoly() {
       trustBadges,
       relatedProducts,
       pdpQuoteLabel: ui.pdp.getQuoteFor.replace('{productName}', sp.name),
-      pdpGetQuote: () => {
-        navigate((st) => ({
-          ...st,
-          screen: 'contact',
-          menu: null,
-          searchOpen: false,
-          quoteContactOpen: false,
-          quote: {
-            ...st.quote,
-            product: generalEnquiryType,
-            productId: 'general',
-          },
-        }));
-      },
+      pdpGetQuote: () => openContactWithProduct(sp.id),
       pdpOrderSample: () => openSampleOrder({ from: 'pdp' }),
       showSample: s.screen === 'sample',
       sampleStep: s.sampleStep,
@@ -1275,10 +1214,11 @@ export function useVividPoly() {
       footHelp: [
         footLink(ui.footer.links.productUses, () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'use', catFiltersOpen: false }))),
         footLink(ui.footer.links.blog, () => go('blog')),
-        footLink(ui.footer.links.faqs, goHomeFaqs),
+        footLink(ui.footer.links.faqs, goHomeFaqs, { skipScroll: true }),
       ],
       contactProductOptions: ui.enquiryProductTypes,
       enquiryProductTypes: ui.enquiryProductTypes,
+      contactEnquiryType: resolveContactEnquiryType(qv, ui.enquiryProductTypes, generalEnquiryType),
       generalEnquiryType,
       contactCountries: data.contactCountriesList,
       selectCountry: (country: string) => setQ('country', country),
@@ -1304,7 +1244,7 @@ export function useVividPoly() {
       openContactEnquiry,
       resetEnquiryDefaults,
     };
-  }, [s, vividPolyData, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
+  }, [s, vividPolyData, vpTokens, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openContactWithProduct, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
 
   return v;
 }

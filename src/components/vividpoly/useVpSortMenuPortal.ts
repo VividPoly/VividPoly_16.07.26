@@ -2,10 +2,15 @@
 
 import { useEffect, useLayoutEffect, useState, type RefObject } from 'react';
 
+const MENU_GAP_PX = 4;
+const MENU_MIN_SPACE_PX = 120;
+const MENU_DEFAULT_MAX_HEIGHT_PX = 240;
+
 export type VpSortMenuPosition = {
   top: number;
   left: number;
   width: number;
+  maxHeight: number;
 };
 
 function getTriggerElement(root: HTMLElement | null) {
@@ -31,10 +36,18 @@ export function useVpSortMenuPortal(open: boolean, rootRef: RefObject<HTMLElemen
       const trigger = getTriggerElement(rootRef.current);
       if (!trigger) return;
       const rect = trigger.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const spaceBelow = viewportHeight - rect.bottom - MENU_GAP_PX;
+      const maxHeight = Math.max(
+        MENU_MIN_SPACE_PX,
+        Math.min(MENU_DEFAULT_MAX_HEIGHT_PX, spaceBelow),
+      );
+
       setPosition({
-        top: rect.bottom + 4,
+        top: rect.bottom + MENU_GAP_PX,
         left: rect.left,
         width: rect.width,
+        maxHeight,
       });
     };
 

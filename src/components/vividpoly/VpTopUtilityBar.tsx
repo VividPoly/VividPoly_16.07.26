@@ -1,5 +1,8 @@
 'use client';
 
+import { useState } from 'react';
+import VpCustomSelect from '@/components/vividpoly/VpCustomSelect';
+
 type TopBarCopy = {
   selectLanguage: string;
   phone?: string;
@@ -30,16 +33,23 @@ function WhatsAppIconSmall() {
 }
 
 export default function VpTopUtilityBar({ topBar }: { topBar: TopBarCopy }) {
+  const defaultLang = topBar.languages[0]?.code ?? 'en';
+  const [lang, setLang] = useState(defaultLang);
+  const langOptions = topBar.languages.map((item) => ({ value: item.code, label: item.label }));
+
   return (
     <div className="vp-top-utility-bar">
       <div className="vp-chrome-container vp-top-utility-bar-inner">
         <label className="vp-top-utility-lang">
           <span className="vp-top-utility-lang-icon" aria-hidden="true">G</span>
-          <select className="vp-top-utility-lang-select" defaultValue={topBar.languages[0]?.code ?? 'en'} aria-label={topBar.selectLanguage}>
-            {topBar.languages.map((lang) => (
-              <option key={lang.code} value={lang.code}>{lang.label}</option>
-            ))}
-          </select>
+          <VpCustomSelect
+            value={lang}
+            onChange={setLang}
+            options={langOptions}
+            placeholder={topBar.selectLanguage}
+            ariaLabel={topBar.selectLanguage}
+            className="vp-sort--inline vp-top-utility-lang-sort"
+          />
         </label>
 
         <div className="vp-top-utility-links">

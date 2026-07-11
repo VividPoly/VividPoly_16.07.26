@@ -22,7 +22,13 @@ export function getVividPolyData(messages: VividPolyMessages) {
   }));
 
   const buyerRows = m.buyerRows.map((r) => [r.requirement, r.response, [] as string[]] as [string, string, string[]]);
-  const useRows = m.useRows.map((r) => [r.use, r.bags, r.tips] as [string, string, string]);
+  const useRows = m.useRows.map((r) => ({
+    id: r.id,
+    cardTitle: r.cardTitle,
+    use: r.use,
+    bags: r.bags,
+    tips: r.tips,
+  }));
   const faqList = m.faqList.map((f) => [f.q, f.a] as [string, string]);
   const blogList = m.blogList.map((b) => [b.title, b.purpose, b.excerpt, b.category, b.readTime] as [string, string, string, string, string]);
   const filterSections = m.filterSections.map((s) => [

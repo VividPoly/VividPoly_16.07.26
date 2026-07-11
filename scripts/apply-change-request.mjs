@@ -17,7 +17,7 @@ data.siteCopy.heroIecLabel = 'IEC certified';
 data.siteCopy.homeStats = [
   { value: '70+', label: 'Export Markets' },
   { value: '9+', label: 'Countries Served' },
-  { value: '750', label: 'MT / Year Capacity' },
+  { value: '750', label: 'MT/ monthly capacity' },
   { value: '100%', label: 'Export Grade' },
 ];
 data.siteCopy.homeCertsHeading = 'Certifications';

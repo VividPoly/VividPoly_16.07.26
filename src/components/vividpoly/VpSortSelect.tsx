@@ -64,6 +64,7 @@ export default function VpSortSelect({ value, options, onChange, className, aria
             top: position.top,
             left: position.left,
             width: position.width,
+            maxHeight: position.maxHeight,
           }}
           onWheel={(event) => event.stopPropagation()}
           onTouchMove={(event) => event.stopPropagation()}

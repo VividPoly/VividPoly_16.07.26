@@ -1,6 +1,7 @@
 'use client';
 
 import VpSubpageTop from '@/components/vividpoly/VpSubpageTop';
+import { ChevronRightIcon } from '@/components/vividpoly/VividPolyIcons';
 import type { VpBreadcrumb } from '@/lib/vividpoly-navigation';
 
 type BlogRow = {
@@ -14,9 +15,6 @@ type BlogRow = {
 
 type SiteCopy = {
   blogIntro: string;
-  blogLeadTitle: string;
-  blogLeadBody: string;
-  blogLeadCta: string;
   blogReadArticle: string;
 };
 
@@ -25,7 +23,6 @@ type VpBlogPageProps = {
   breadcrumbs: VpBreadcrumb[];
   onHomeClick?: () => void;
   siteCopy: SiteCopy;
-  onEnquire: () => void;
 };
 
 export default function VpBlogPage({
@@ -33,7 +30,6 @@ export default function VpBlogPage({
   breadcrumbs,
   onHomeClick,
   siteCopy,
-  onEnquire,
 }: VpBlogPageProps) {
   return (
     <div data-screen-label="Blog" className="vp-blog-page vp-page-shell">
@@ -46,7 +42,7 @@ export default function VpBlogPage({
         <p className="vp-blog-intro">{siteCopy.blogIntro}</p>
       </VpSubpageTop>
 
-      <div className="vp-blog-layout">
+      <div className="vp-blog-layout vp-blog-layout--single">
         <div className="vp-blog-main">
           <div className="vp-blog-grid">
             {blogRows.map((post, index) => (
@@ -65,18 +61,14 @@ export default function VpBlogPage({
               >
                 <div className="vp-blog-card-media vp-ph" aria-hidden="true" />
                 <div className="vp-blog-card-body">
-                  <div className="vp-blog-card-meta">
-                    <span className="vp-blog-card-read">{post.readTime}</span>
-                  </div>
                   <h2 className="vp-blog-card-title">{post.title}</h2>
-                  <p className="vp-blog-card-excerpt">{post.excerpt}</p>
                   <div className="vp-blog-card-footer">
                     <span className="vp-blog-card-tags">
                       <span className="vp-blog-card-tag">{post.category}</span>
                     </span>
                     <span className="vp-blog-card-cta">
                       {siteCopy.blogReadArticle}
-                      <span aria-hidden="true"> →</span>
+                      <ChevronRightIcon size={14} />
                     </span>
                   </div>
                 </div>
@@ -84,18 +76,6 @@ export default function VpBlogPage({
             ))}
           </div>
         </div>
-
-        <aside className="vp-blog-lead" aria-label="Product enquiry">
-          <div className="vp-blog-lead-card">
-            <div className="vp-blog-lead-copy">
-              <h2 className="vp-blog-lead-title">{siteCopy.blogLeadTitle}</h2>
-              <p className="vp-blog-lead-text">{siteCopy.blogLeadBody}</p>
-            </div>
-            <button type="button" className="vp-cta-primary vp-cta-primary--lg vp-cta-primary--block" onClick={onEnquire}>
-              {siteCopy.blogLeadCta}
-            </button>
-          </div>
-        </aside>
       </div>
     </div>
   );

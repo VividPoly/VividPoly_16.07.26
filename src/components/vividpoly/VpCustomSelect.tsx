@@ -75,6 +75,7 @@ export default function VpCustomSelect({
   const [query, setQuery] = useState('');
   const [hasTyped, setHasTyped] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLUListElement>(null);
   const customInputRef = useRef<HTMLInputElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { mounted, position } = useVpSortMenuPortal(open, rootRef);
@@ -108,20 +109,21 @@ export default function VpCustomSelect({
   useEffect(() => {
     if (!open) return;
 
-    const onDocumentClick = (event: MouseEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) {
-        closeMenu();
-      }
+    const onDocumentPointerDown = (event: PointerEvent) => {
+      const target = event.target as Node;
+      if (rootRef.current?.contains(target)) return;
+      if (menuRef.current?.contains(target)) return;
+      closeMenu();
     };
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') closeMenu();
     };
 
-    document.addEventListener('mousedown', onDocumentClick);
+    document.addEventListener('pointerdown', onDocumentPointerDown);
     document.addEventListener('keydown', onKeyDown);
     return () => {
-      document.removeEventListener('mousedown', onDocumentClick);
+      document.removeEventListener('pointerdown', onDocumentPointerDown);
       document.removeEventListener('keydown', onKeyDown);
     };
   }, [open]);
@@ -146,6 +148,7 @@ export default function VpCustomSelect({
 
   const menuNode = open && !disabled && position ? (
     <ul
+      ref={menuRef}
       id={listboxId}
       className={`vp-sort-menu vp-sort-menu--subtle vp-sort-menu--portaled${searchable ? ' vp-sort-menu--searchable' : ''}${menuClassName ? ` ${menuClassName}` : ''}`}
       role="listbox"
@@ -154,6 +157,7 @@ export default function VpCustomSelect({
         top: position.top,
         left: position.left,
         width: position.width,
+        maxHeight: position.maxHeight,
       }}
       onWheel={(event) => event.stopPropagation()}
       onTouchMove={(event) => event.stopPropagation()}

@@ -4,32 +4,47 @@ import { useEffect, useRef } from 'react';
 import {
   canAutoOpenEnquiryPopup,
   ENQUIRY_AUTO_OPEN_MS,
-  resetEnquiryPopupSession,
+  ensureEnquiryVisitClock,
+  getEnquiryVisitElapsedMs,
+  markEnquiryAutoOpened,
 } from '@/lib/enquiry-popup-session';
 
 type UseEnquiryPopupOptions = {
+  pageKey: string;
   onAutoOpen: () => void;
+  /** Checked when the timer fires; return false to skip auto-open on that screen. */
+  getShouldAutoOpen: () => boolean;
 };
 
-/** Survives React Strict Mode double-mount in dev (cleanup must not cancel it). */
-let pageTimerId: ReturnType<typeof setTimeout> | null = null;
-
 /**
- * Opens the enquiry modal once, ENQUIRY_AUTO_OPEN_MS after first mount.
+ * Opens the enquiry modal once after ENQUIRY_AUTO_OPEN_MS of site dwell time.
+ * Closing or submitting suppresses auto-open permanently (localStorage).
  */
-export function useEnquiryPopup({ onAutoOpen }: UseEnquiryPopupOptions) {
+export function useEnquiryPopup({ pageKey, onAutoOpen, getShouldAutoOpen }: UseEnquiryPopupOptions) {
   const onAutoOpenRef = useRef(onAutoOpen);
+  const getShouldAutoOpenRef = useRef(getShouldAutoOpen);
   onAutoOpenRef.current = onAutoOpen;
+  getShouldAutoOpenRef.current = getShouldAutoOpen;
 
   useEffect(() => {
-    resetEnquiryPopupSession();
-
-    if (pageTimerId != null) return;
-
-    pageTimerId = setTimeout(() => {
-      pageTimerId = null;
-      if (!canAutoOpenEnquiryPopup()) return;
-      onAutoOpenRef.current();
-    }, ENQUIRY_AUTO_OPEN_MS);
+    ensureEnquiryVisitClock();
   }, []);
+
+  useEffect(() => {
+    if (!pageKey || !canAutoOpenEnquiryPopup(pageKey)) return;
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 991px)').matches) return;
+
+    const remaining = Math.max(0, ENQUIRY_AUTO_OPEN_MS - getEnquiryVisitElapsedMs());
+
+    const timerId = window.setTimeout(() => {
+      if (!canAutoOpenEnquiryPopup(pageKey)) return;
+      if (!getShouldAutoOpenRef.current()) return;
+      markEnquiryAutoOpened(pageKey);
+      onAutoOpenRef.current();
+    }, remaining);
+
+    return () => {
+      window.clearTimeout(timerId);
+    };
+  }, [pageKey]);
 }

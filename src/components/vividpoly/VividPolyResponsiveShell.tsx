@@ -4,9 +4,9 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 /**
  * True CSS reflow below REFLOW_BREAKPOINT.
- * No scaled 1440px canvas. Real responsive layout on phones, fold, and tablets.
+ * Matches Knack Packaging Navigation.js mobileBreakpoint (1000).
  */
-const REFLOW_BREAKPOINT = 1024;
+const REFLOW_BREAKPOINT = 1000;
 
 export default function VividPolyResponsiveShell({ children }: { children: ReactNode }) {
   const outerRef = useRef<HTMLDivElement>(null);

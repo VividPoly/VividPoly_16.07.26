@@ -62,7 +62,7 @@ export function parseHash(hash: string): Partial<VividPolyState> | null {
     case 'blog':
       return { screen: 'blog' };
     case 'faqs':
-      return { screen: 'faqs' };
+      return { screen: 'home' };
     default:
       return null;
   }
@@ -88,8 +88,6 @@ function buildHash(state: VividPolyState): string {
       return '#contact';
     case 'blog':
       return '#blog';
-    case 'faqs':
-      return '#faqs';
     default:
       return '#';
   }
@@ -136,6 +134,21 @@ export function consumeSkipNextScrollToTop() {
   return shouldSkip;
 }
 
+let pendingHomeFaqScroll: ScrollBehavior | null = null;
+
+/** Arm a deferred scroll to the home FAQ section after the next route transition. */
+export function armHomeFaqScroll(behavior: ScrollBehavior = 'smooth') {
+  pendingHomeFaqScroll = behavior;
+}
+
+export function peekHomeFaqScroll(): ScrollBehavior | null {
+  return pendingHomeFaqScroll;
+}
+
+export function clearHomeFaqScroll() {
+  pendingHomeFaqScroll = null;
+}
+
 export function scrollPageToTop(behavior: ScrollBehavior = 'auto') {
   if (typeof window === 'undefined') return;
 
@@ -144,6 +157,18 @@ export function scrollPageToTop(behavior: ScrollBehavior = 'auto') {
   document.body.scrollTop = 0;
 
   const root = document.querySelector('.vp-root');
+  if (root instanceof HTMLElement) {
+    const resetScrollable = (node: HTMLElement) => {
+      const { overflowY } = getComputedStyle(node);
+      if (overflowY === 'auto' || overflowY === 'scroll' || overflowY === 'overlay') {
+        node.scrollTop = 0;
+      }
+    };
+
+    resetScrollable(root);
+    root.querySelectorAll<HTMLElement>('*').forEach(resetScrollable);
+  }
+
   let el = root?.parentElement ?? null;
   while (el) {
     const { overflowY } = getComputedStyle(el);
@@ -221,4 +246,26 @@ export function scrollToAnchorWithHeaderOffset(
   const top = el.getBoundingClientRect().top + window.scrollY - getHeaderScrollOffset(extraOffset);
   window.scrollTo({ top: Math.max(0, top), behavior });
   return true;
+}
+
+export const HOME_FAQ_SECTION_ID = 'vp-home-faq';
+
+/** Retry scroll until the home FAQ section is mounted (after route transitions). */
+export function scrollToHomeFaqWhenReady(
+  behavior: ScrollBehavior = 'smooth',
+  extraOffset = 12,
+  maxAttempts = 30,
+  intervalMs = 50,
+) {
+  if (typeof window === 'undefined') return;
+
+  let attempts = 0;
+  const tryScroll = () => {
+    if (scrollToAnchorWithHeaderOffset(HOME_FAQ_SECTION_ID, behavior, extraOffset)) return;
+    attempts += 1;
+    if (attempts >= maxAttempts) return;
+    window.setTimeout(tryScroll, intervalMs);
+  };
+
+  tryScroll();
 }

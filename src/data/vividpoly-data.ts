@@ -192,18 +192,33 @@ export const packedProductOptions = ['Rice', 'Fertilizer', 'Animal feed', 'Cemen
 
 export const siteCopy = {
   searchPlaceholder: 'Search bag type, product, or industry (e.g. rice bags, cement bags)',
-  heroHeadline: 'PP Bags Exporter from India for Global Packaging Buyers',
+  heroHeadline: 'PP Bags for Global Buyers',
+  heroHeadlineLine1: 'PP Bags for',
+  heroHeadlineLine2: 'Global Buyers',
   heroIecLabel: 'IEC certified',
   heroLead: 'PP bags, woven bags, valve bags, and custom export packaging from India, built for importers, distributors, and industrial buyers worldwide.',
-  heroCtaPrimary: 'Request Export Quote',
+  heroRail: 'INDIA · GLOBAL EXPORT',
+  heroCtaPrimary: 'WhatsApp',
   heroCtaSecondary: 'View Product Types',
-  heroCtaWhatsApp: 'Chat with Export Team',
+  heroCtaEnquiry: 'Enquiry',
+  heroCtaWhatsApp: 'WhatsApp',
   headerQuoteLabel: 'Quote',
   brandTagline: 'Quality Packaging Solutions',
   marketsStrip: 'Primary Export Markets: America/USA, Canada, Australia, Europe, United Kingdom, Africa, Thailand, Saudi Arabia, Latin America, New Zealand, and other global import markets.',
+  introEyebrow: 'What we export',
+  introTitle: 'PP bags for global buyers',
   intro1: 'VIVIDPOLY exports PP Bags, PP woven bags, printed and laminated woven PP bags, pinch bottom bags, block bottom bags, gusset bags, valve bags, carry bags, D-cut bags, and woven shopping bags from India to global markets. Our packaging solutions are designed for importers, distributors, food grain processors, fertilizer companies, animal feed brands, chemical suppliers, construction-material businesses, retail chains, and promotional packaging buyers.',
   intro2: 'From 5 kg retail packs to 75 kg heavy-duty industrial bags, VIVIDPOLY helps buyers select the right bag construction, printing method, liner, handle, gusset, stitching, cutting style, and export packing format according to product use and destination market.',
+  introHighlights: [
+    { label: 'Capacity', value: '5 to 75 kg' },
+    { label: 'Origin', value: 'India export' },
+    { label: 'Focus', value: 'Custom print & packing' },
+  ],
   homeValuePropsEyebrow: 'Why buyers choose VIVIDPOLY',
+  homeProductsEyebrow: 'Our Products',
+  homeProductsTitle: 'What We Offer',
+  homeProductsLead:
+    'Printed and laminated woven PP bags, valve bags, open mouth bags, and custom export packaging from India for agricultural, industrial, and retail buyers worldwide.',
   homeBrowseHeading: 'Browse PP bags by category',
   homeValueProps: [
     {

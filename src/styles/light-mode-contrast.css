@@ -1,0 +1,83 @@
+/* Light mode contrast: readable text on warm/tinted surfaces. */
+
+/* Product use sidebar: dark labels on paper background */
+:root[data-theme='light'] .vp-use-list,
+:root:not([data-theme]) .vp-use-list {
+  background: var(--vp-paper);
+}
+
+:root[data-theme='light'] .vp-use-row-label,
+:root:not([data-theme]) .vp-use-row-label {
+  color: var(--vp-text-primary);
+}
+
+:root[data-theme='light'] .vp-use-row--active .vp-use-row-label,
+:root:not([data-theme]) .vp-use-row--active .vp-use-row-label {
+  color: var(--vp-accent-on-subtle);
+}
+
+:root[data-theme='light'] .vp-use-row-arrow,
+:root:not([data-theme]) .vp-use-row-arrow {
+  color: var(--vp-text-muted);
+}
+
+/* Buyer workflow tabs: keep subtitle readable on active tint */
+:root[data-theme='light'] .vp-buyer-card--active .vp-buyer-card-title,
+:root:not([data-theme]) .vp-buyer-card--active .vp-buyer-card-title {
+  color: var(--vp-accent-on-subtle);
+}
+
+:root[data-theme='light'] .vp-buyer-card--active .vp-buyer-card-short,
+:root:not([data-theme]) .vp-buyer-card--active .vp-buyer-card-short {
+  color: var(--vp-text-secondary);
+}
+
+:root[data-theme='light'] .vp-buyer-card:not(.vp-buyer-card--active),
+:root:not([data-theme]) .vp-buyer-card:not(.vp-buyer-card--active) {
+  background: var(--vp-bg-elevated);
+  border-color: var(--vp-border);
+}
+
+/* Contact page and form dropdown chevrons: solid stroke for mask rendering in light mode. */
+:root[data-theme='light'] .vp-contact-form-card .vp-sort-chevron,
+:root:not([data-theme]) .vp-contact-form-card .vp-sort-chevron {
+  color: var(--vp-charcoal);
+  opacity: 0.78;
+}
+
+:root[data-theme='light'] .vp-quote-contact-input--native-select,
+:root:not([data-theme]) .vp-quote-contact-input--native-select {
+  background-color: var(--vp-field-fill);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%231c1a19' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px 14px;
+}
+/* Filter and toolbar actions */
+.vp-filter-clear,
+.vp-catalogue-filter-clear {
+  color: var(--vp-text-secondary);
+}
+
+.vp-filter-clear:hover,
+.vp-catalogue-filter-clear:hover {
+  color: var(--vp-text-primary);
+}
+
+.vp-filter-clear--stacked {
+  margin-top: 12px;
+}
+
+/* Enquiry FAB: light pill on dark bands, dark pill on light sections */
+:root[data-theme='light'] .vp-enquiry-fab--on-dark:not(.vp-enquiry-fab--circle),
+:root:not([data-theme]) .vp-enquiry-fab--on-dark:not(.vp-enquiry-fab--circle) {
+  background: var(--vp-white);
+  color: var(--vp-charcoal);
+  border-color: color-mix(in srgb, var(--vp-charcoal) 12%, transparent);
+}
+
+:root[data-theme='light'] .vp-enquiry-fab--on-light:not(.vp-enquiry-fab--circle),
+:root:not([data-theme]) .vp-enquiry-fab--on-light:not(.vp-enquiry-fab--circle) {
+  background: var(--knack-brand, var(--vp-oxblood));
+  color: var(--vp-white);
+}

@@ -3,6 +3,7 @@
 import VpBankSearchOverlay from '@/components/vividpoly/VpBankSearchOverlay';
 import VpSuccessCard from '@/components/vividpoly/VpSuccessCard';
 import VpCustomSelect from '@/components/vividpoly/VpCustomSelect';
+import { ChevronLeftIcon } from '@/components/vividpoly/VividPolyIcons';
 
 type CheckoutView = Record<string, any>;
 
@@ -33,7 +34,7 @@ function FieldPicker({
       </span>
       <button type="button" className="vp-checkout-field-picker" onClick={onClick}>
         <span>{value || `Select ${label.toLowerCase()}`}</span>
-        <span className="vp-filter-chevron" aria-hidden="true">▾</span>
+        <span className="vp-filter-chevron" aria-hidden="true" />
       </button>
     </div>
   );
@@ -150,12 +151,12 @@ export default function VpSampleCheckout({ v }: { v: CheckoutView }) {
   return (
     <div className="vp-checkout">
       <div className="vp-checkout-top">
-        <button type="button" onClick={v.sampleBack} className="vp-checkout-back">← Back</button>
+        <button type="button" onClick={v.sampleBack} className="vp-checkout-back vp-with-chevron"><ChevronLeftIcon size={14} /> Back</button>
         <div className="vp-checkout-progress" aria-label="Checkout progress">
           <ProgressStep label="Review" state={stepState(0)} />
-          <span className="vp-checkout-progress-sep">›</span>
+          <span className="vp-checkout-progress-sep" aria-hidden="true" />
           <ProgressStep label="Payment" state={stepState(1)} />
-          <span className="vp-checkout-progress-sep">›</span>
+          <span className="vp-checkout-progress-sep" aria-hidden="true" />
           <ProgressStep label="Confirmed" state={stepState(2)} />
         </div>
       </div>

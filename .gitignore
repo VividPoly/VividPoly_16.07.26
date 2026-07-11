@@ -46,3 +46,8 @@ next-env.d.ts
 .tmp-*
 audit-screenshots/
 *.tmp.png
+
+test-results/
+.tmp-*/
+audit-screenshots/
+

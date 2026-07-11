@@ -17,9 +17,11 @@
     "byIndustryUse": "By Industry / Use",
     "buyerResourcesEyebrow": "News and updates",
     "buyerResourcesLead": "Buyer guides, FAQs, and the latest from VIVIDPOLY.",
-    "viewAllByType": "View all products by type →",
-    "viewAllByIndustry": "View all products by industry →",
+    "viewAllByType": "View all products by type",
+    "viewAllByIndustry": "View all products by industry",
     "getQuoteShort": "Get quote",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode",
     "blogTitle": "Blog",
     "blogDesc": "Buyer guides on PP bag types, sizing, and export enquiries.",
     "faqsTitle": "FAQs",
@@ -37,6 +39,7 @@
   },
   "fab": {
     "label": "Enquiry",
+    "mobileLabel": "Inquire",
     "ariaLabel": "Open enquiry form"
   },
   "enquiryModal": {
@@ -154,7 +157,7 @@
     "submitEnquiry": "Submit Enquiry",
     "backToHome": "Back to Home",
     "chatExportTeam": "Chat with Export Team",
-    "viewAll": "View all →",
+    "viewAll": "View all",
     "filters": "Filters",
     "recommended": "Recommended",
     "specification": "Specification",
@@ -213,14 +216,46 @@
     "productImage": "Product image {index}"
   },
   "about": {
-    "title": "About VIVIDPOLY",
-    "p1": "VIVIDPOLY is an India-based exporter of PP bags, woven bags, printed and laminated woven PP bags, valve bags, pinch bottom bags, block bottom bags, gusset bags, carry bags, D-cut bags, and woven shopping bags.",
-    "p2": "We work with importers, distributors, food grain processors, fertilizer companies, animal feed brands, chemical suppliers, construction-material businesses, retail chains, and promotional packaging buyers across global markets.",
+    "title": "About Us",
+    "pageEyebrow": "ABOUT US",
+    "pageTitle": "India's Export Packaging\u00a0Partner",
+    "p1": "VIVIDPOLY serves global import buyers with professional communication, clear product specifications, custom packaging options, and responsive export support. Capacity, construction, printing, and packing are tailored to your product and destination market so every order matches your filling process, branding need, and shipping condition.",
+    "p2": "Request samples before committing to full quantities. Bale, pallet, and carton packing are planned for safe international shipment across ten woven PP constructions, from open mouth to premium laminated formats, matched to rice, fertilizer, cement, feed, and retail uses.",
+    "image": "/images/home-about.jpg",
+    "ctaPrimary": "Send an enquiry",
+    "ctaSecondary": "Shop by Product Type",
     "exportVisionEyebrow": "Our Export Vision",
+    "exportVisionHeading": "Leading towards a bright future",
     "exportVisionBody": "VIVIDPOLY aims to become a trusted Indian export partner for global businesses that require strong, customizable, and brand-ready PP bags. We understand that international buyers need more than general product descriptions. They need accurate specifications, product-use guidance, artwork and printing support, suitable packing options, and responsive communication throughout the enquiry process.",
-    "whyEyebrow": "Why choose VIVIDPOLY",
-    "whyHeading": "Built around how global buyers actually buy",
+    "pillarsEyebrow": "STRENGTHS",
+    "pillarsHeading": "Carrying a buyer-first export legacy",
+    "pillarsLead": "From international standards to practical enquiry support, VIVIDPOLY is structured around how global packaging buyers actually source.",
+    "pillarsBody": "From international standards to practical enquiry support, VIVIDPOLY is structured around how global packaging buyers actually source. Specifications, packing, and communication are planned for destination markets and buyer compliance needs. Capacity runs from 5 kg retail packs to 75 kg industrial bags, with lamination, liner, gusset, valve, and print options. Dedicated export support covers product type, artwork, packing format, quantity, and destination before quotation, with structured product-use guidance and a complete enquiry path.",
+    "pillars": [
+      {
+        "title": "We ensure international export standards",
+        "body": "Specifications, packing, and communication are planned for destination markets and buyer compliance needs."
+      },
+      {
+        "title": "Export-ready capacity and construction",
+        "body": "From 5 kg retail packs to 75 kg industrial bags, with lamination, liner, gusset, valve, and print options."
+      },
+      {
+        "title": "Dedicated export support team",
+        "body": "Responsive guidance on product type, artwork, packing format, quantity, and destination before quotation."
+      },
+      {
+        "title": "Practical experience with clear process",
+        "body": "Buyers get structured product-use guidance and a complete enquiry path instead of vague catalogue copy."
+      }
+    ],
+    "factsEyebrow": "Company details",
+    "factsHeading": "VIVIDPOLY at a glance",
+    "whyEyebrow": "SERVICES",
+    "whyHeading": "Export packaging support at its best",
     "whyLead": "From product variety and capacity planning to printing, liners, and export packing, VIVIDPOLY is structured to support practical sourcing decisions.",
+    "whyBody": "From product variety and capacity planning to printing, liners, and export packing, VIVIDPOLY is structured to support practical sourcing decisions. Buyers can source PP bags from India for USA, Canada, Australia, Europe, UK, Africa, Thailand, Saudi Arabia, and other markets across a clear range of industrial, agricultural, retail, and promotional bag types. Capacity planning covers 5 kg to 75 kg, with custom construction, printing and branding support, product-use guidance, and a buyer-friendly quote process that captures the details needed before quotation.",
+    "whyMoreLabel": "MORE DETAILS",
     "whyItems": [
       [
         "India-based exporter positioning",
@@ -252,12 +287,15 @@
       ]
     ],
     "contactTeam": "Send an enquiry",
-    "requestCustomQuote": "Send an enquiry"
+    "requestCustomQuote": "Send an enquiry",
+    "ctaBandTitle": "Looking for a professional export packaging partner?",
+    "ctaBandBody": "Share your bag type, capacity, printing needs, quantity, and destination. VIVIDPOLY will review your enquiry and follow up with practical options.",
+    "ctaBandButton": "Send an enquiry"
   },
   "contact": {
     "title": "Contact Us",
     "reachUs": "Reach us directly",
-    "sendRequirement": "Send an enquiry",
+    "sendRequirement": "Enquiry Form",
     "sendRequirementLead": "Tell us what you need. Choose a product type or send a general query and we will respond with practical guidance.",
     "formName": "Name",
     "formCompany": "Company name",
@@ -278,7 +316,6 @@
     "websiteLabel": "Website",
     "phoneLabel": "WhatsApp / Phone",
     "corporateOffice": "Corporate office",
-    "factory": "Factory",
     "companyRows": [
       [
         "Company / Brand",
@@ -299,10 +336,6 @@
       [
         "Corporate Address",
         "Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
-      ],
-      [
-        "Factory Address",
-        "Vivid Poly, Sherpura Gam, Halol Savli Road, Savli, Vadodara"
       ]
     ]
   },
@@ -413,6 +446,7 @@
     "seeHowWeWork": "See how we work",
     "whyHeading": "Why VividPoly",
     "whyLead": "A practical place to build skills in manufacturing and global trade.",
+    "whyBody": "A practical place to build skills in manufacturing and global trade. Work is tied to buyers across 70+ export markets, new responsibility comes fast in a growing business, and roles are backed by a stable, established export operation with hands-on exposure to manufacturing and global trade.",
     "reasons": [
       {
         "title": "Global Exposure",
@@ -431,29 +465,33 @@
         "body": "Hands-on exposure to manufacturing and global trade."
       }
     ],
-    "positionsEyebrow": "Open Positions",
-    "positionsHeading": "Find Us Where You're Already Looking",
-    "positionsLead": "Current openings are posted and updated on these platforms.",
-    "positionsNote": "Use Apply Now below to submit your application.",
+    "positionsEyebrow": "OPEN POSITIONS",
+    "positionsHeading": "Find us where you're already looking",
+    "positionsLead": "Current openings are posted and updated on these platforms. Browse live roles, then apply through the form below.",
+    "positionsNote": "Prefer a direct application? Use Apply Now below.",
+    "positionsMoreLabel": "VIEW OPENINGS",
     "platforms": [
       {
         "id": "linkedin",
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/company/vividpoly/jobs/"
+        "href": "https://www.linkedin.com/company/vividpoly/jobs/",
+        "blurb": "Company updates and open roles for export, operations, and packaging careers."
       },
       {
         "id": "indeed",
         "label": "Indeed",
-        "href": "https://in.indeed.com/cmp/Vividpoly"
+        "href": "https://in.indeed.com/cmp/Vividpoly",
+        "blurb": "Search VIVIDPOLY listings by role, location, and experience level."
       },
       {
         "id": "naukri",
-        "label": "Naukri.com",
-        "href": "https://www.naukri.com/"
+        "label": "Naukri",
+        "href": "https://www.naukri.com/",
+        "blurb": "India-focused openings across manufacturing, sales, and support teams."
       }
     ],
-    "ctaEyebrow": "Apply Now",
-    "ctaHeading": "Your Next Career Move Starts Here",
+    "ctaEyebrow": "APPLY NOW",
+    "ctaHeading": "Your next career move starts here",
     "ctaLead": "Share your role interest, experience, and preferred location. Our team will review applications as openings become available."
   },
   "footer": {
@@ -462,6 +500,8 @@
     "productTypes": "Product Types",
     "buyerHelp": "Buyer Help",
     "contact": "Contact",
+    "backToTop": "Back to top",
+    "backToTopAria": "Back to top of page",
     "links": {
       "home": "Home",
       "about": "About",
@@ -508,18 +548,49 @@
   },
   "siteCopy": {
     "searchPlaceholder": "Search bag type, product, or industry (e.g. rice bags, cement bags)",
-    "heroHeadline": "PP Bags Exporter from India for Global Packaging Buyers",
+    "heroHeadline": "PP Bags for Global Buyers",
+    "heroHeadlineLine1": "PP Bags for",
+    "heroHeadlineLine2": "Global Buyers",
+    "heroHeadlinePrefix": "PP Bags for",
+    "heroHeadlineAccent": "Global Buyers",
     "heroIecLabel": "IEC certified",
+    "heroIecLabelShort": "IEC",
     "heroLead": "PP bags, woven bags, valve bags, and custom export packaging from India, built for importers, distributors, and industrial buyers worldwide.",
+    "heroLeadShort": "Export packaging built for global buyers.",
+    "heroRail": "INDIA · GLOBAL EXPORT",
     "heroCtaPrimary": "WhatsApp",
     "heroCtaSecondary": "View Product Types",
+    "heroCtaSecondaryShort": "Products",
+    "heroCtaEnquiry": "Enquiry",
     "heroCtaWhatsApp": "WhatsApp",
     "headerQuoteLabel": "Quote",
     "brandTagline": "Quality Packaging Solutions",
+    "heroIsoLabel": "ISO certified",
+    "heroIsoLabelShort": "ISO",
     "marketsStrip": "Primary Export Markets: America/USA, Canada, Australia, Europe, United Kingdom, Africa, Thailand, Saudi Arabia, Latin America, New Zealand, and other global import markets.",
+    "introEyebrow": "What we export",
+    "introTitle": "PP bags for global buyers",
     "intro1": "VIVIDPOLY exports PP Bags, PP woven bags, printed and laminated woven PP bags, pinch bottom bags, block bottom bags, gusset bags, valve bags, carry bags, D-cut bags, and woven shopping bags from India to global markets. Our packaging solutions are designed for importers, distributors, food grain processors, fertilizer companies, animal feed brands, chemical suppliers, construction-material businesses, retail chains, and promotional packaging buyers.",
     "intro2": "From 5 kg retail packs to 75 kg heavy-duty industrial bags, VIVIDPOLY helps buyers select the right bag construction, printing method, liner, handle, gusset, stitching, cutting style, and export packing format according to product use and destination market.",
+    "introHighlights": [
+      { "label": "Capacity", "value": "5 to 75 kg" },
+      { "label": "Origin", "value": "India export" },
+      { "label": "Focus", "value": "Custom print & packing" }
+    ],
+    "homeAboutEyebrow": "About us",
+    "homeAboutTitle": "India's Export Packaging\u00a0Partner",
+    "homeAboutSubtitle": "",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY serves global import buyers with professional communication, clear product specifications, custom packaging options, and responsive export support. Capacity, construction, printing, and packing are tailored to your product and destination market so every order matches your filling process, branding need, and shipping condition.",
+      "Request samples before committing to full quantities. Bale, pallet, and carton packing are planned for safe international shipment across ten woven PP constructions, from open mouth to premium laminated formats, matched to rice, fertilizer, cement, feed, and retail uses."
+    ],
+    "homeAboutImage": "/images/home-about.jpg",
+    "homeAboutCtaType": "Shop by Product Type",
+    "homeAboutCtaIndustry": "Shop by Industry",
     "homeValuePropsEyebrow": "Why buyers choose VIVIDPOLY",
+    "homeProductsEyebrow": "Our Products",
+    "homeProductsTitle": "What We Offer",
+    "homeProductsLead": "Printed and laminated woven PP bags, valve bags, open mouth bags, and custom export packaging from India for agricultural, industrial, and retail buyers worldwide.",
     "homeBrowseHeading": "Browse PP bags by category",
     "homeValueProps": [
       {
@@ -541,6 +612,10 @@
     "trustMessage": "VIVIDPOLY is built for global import buyers who need professional communication, clear product specifications, custom packaging options, and responsive export support from India. Our PP bag content is structured to help buyers compare bag types, understand product uses, review add-on features, and submit complete quotation requirements.",
     "buyerRequirementLabel": "Buyer Requirement",
     "buyerResponseLabel": "VIVIDPOLY Response",
+    "buyerSectionTitle": "Export Packaging, Built for Global Buyers",
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY is an India-based PP bag exporter serving global importers who need professional communication, clear product specifications, and reliable export support. We supply open mouth, stitched, D-cut, valve, carry, laminated, pinch bottom, block bottom, gusset, and shopping bags from 5 kg to 75 kg, with flexo or laminated print options for brand presentation. Product type, size, capacity, print, lamination, liner, gusset, handle, and packing details are all captured upfront before any quotation is issued."
+    ],
     "productUsesIntro": "VIVIDPOLY PP bags are suitable for a wide range of product categories. The right bag should be selected based on product weight, density, filling process, moisture sensitivity, branding requirement, handling condition, and export packing standard.",
     "productUsesEmptyHint": "Hover or select a product use to see recommended bag types.",
     "productUsesLearnMore": "Send an enquiry",
@@ -586,7 +661,6 @@
     "blogLeadCta": "Send an enquiry",
     "blogReadArticle": "Read article",
     "heroWhatsAppHref": "https://wa.me/919213626740",
-    "heroIsoLabel": "ISO certified",
     "homeStats": [
       {
         "value": "70+",
@@ -597,8 +671,8 @@
         "label": "Countries Served"
       },
       {
-        "value": "750",
-        "label": "MT / Year Capacity"
+        "value": "750 MT",
+        "label": "Monthly Capacity"
       },
       {
         "value": "100%",
@@ -643,26 +717,31 @@
   ],
   "buyerMeta": [
     {
+      "id": "india-sourcing",
       "num": "01",
       "label": "India sourcing",
       "short": "India-based exporter"
     },
     {
+      "id": "product-range",
       "num": "02",
       "label": "Product range",
       "short": "10 bag types"
     },
     {
+      "id": "custom-capacity",
       "num": "03",
       "label": "Custom capacity",
       "short": "5 kg to 75 kg"
     },
     {
+      "id": "brand-printing",
       "num": "04",
       "label": "Brand printing",
       "short": "Print & laminate"
     },
     {
+      "id": "quote-workflow",
       "num": "05",
       "label": "Quote workflow",
       "short": "Quote-ready details"
@@ -670,31 +749,43 @@
   ],
   "useRows": [
     {
+      "id": "grains",
+      "cardTitle": "Grains & Pulses",
       "use": "Rice, wheat, grains, pulses, flour",
       "bags": "Open mouth bags, top and bottom stitched bags, printed laminated woven PP bags, pinch bottom bags",
       "tips": "Flexo printing, laminated print, window, gusset, liner, handle, export bale packing."
     },
     {
+      "id": "fertilizer",
+      "cardTitle": "Fertilizer & Seeds",
       "use": "Fertilizer and seeds",
       "bags": "Stitched bags, laminated woven PP bags, block bottom bags, block bottom gusset bags",
       "tips": "Liner, gusset, flexo printing, laminated print, perforation, pallet packing."
     },
     {
+      "id": "animal-feed",
+      "cardTitle": "Animal Feed & Pet Food",
       "use": "Animal feed and pet food",
       "bags": "Printed laminated woven PP bags, block bottom gusset bags, carry bags, pinch bottom bags",
       "tips": "Multi-layer construction, window, gusset, handle, premium printing, optional perforation."
     },
     {
+      "id": "industrial",
+      "cardTitle": "Cement & Industrial Powders",
       "use": "Cement, chemicals, minerals, powders",
       "bags": "Valve bags, block bottom bags, top and bottom stitched bags, liner-supported bags",
       "tips": "Valve construction, liner, perforation, strong stitching, heavy-duty packing."
     },
     {
+      "id": "commodities",
+      "cardTitle": "Salt, Sugar & Commodities",
       "use": "Salt, sugar, consumer commodities",
       "bags": "Open mouth bags, stitched bags, laminated bags, liner-supported bags",
       "tips": "Liner, laminated surface, flexo printing, clean stitching, moisture-support options."
     },
     {
+      "id": "retail",
+      "cardTitle": "Retail & Promotional",
       "use": "Retail, shopping, promotion",
       "bags": "D-cut bags, carry bags, woven shopping bags, printed laminated woven PP bags",
       "tips": "Handle options, laminated printing, gusset, carton packing, brand artwork."

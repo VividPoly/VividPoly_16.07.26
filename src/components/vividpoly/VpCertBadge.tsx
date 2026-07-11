@@ -43,7 +43,7 @@ export default function VpCertBadge({ kind, className = '', size = 'md' }: VpCer
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" strokeWidth="2.5" />
-      <circle cx="40" cy="40" r="30" fill="none" stroke="#B4934A" strokeWidth="1.75" />
+      <circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" strokeWidth="1.75" className="vp-cert-badge-ring" />
       <text
         x="40"
         y="46"

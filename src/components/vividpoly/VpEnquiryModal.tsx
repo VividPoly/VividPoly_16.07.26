@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import VpContactEnquiryForm, { type ContactEnquiryFormProps } from '@/components/vividpoly/VpContactEnquiryForm';
+import { CloseIcon } from '@/components/vividpoly/VividPolyIcons';
 
 type VpEnquiryModalProps = {
   open: boolean;
@@ -75,11 +76,11 @@ export default function VpEnquiryModal({
           <h2 id={titleId} className="vp-enquiry-modal-title">{title}</h2>
           <button
             type="button"
-            className="vp-enquiry-modal-close"
+            className="vp-icon-close-btn vp-enquiry-modal-close"
             onClick={onClose}
             aria-label={closeLabel}
           >
-            <span aria-hidden="true">×</span>
+            <CloseIcon size={18} />
           </button>
         </header>
 

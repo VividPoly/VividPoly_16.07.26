@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VividPoly device preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ececec;
+      --ink: #111;
+      --muted: #666;
+      --frame: #111;
+      --chrome: #2a2a2a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Geist, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    h1 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 4px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    a.secondary {
+      background: #fff;
+      color: #111;
+      border: 1px solid #ccc;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      padding: 28px 20px 48px;
+      align-items: start;
+      justify-items: center;
+    }
+    .device {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      scroll-margin-top: 72px;
+    }
+    .label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+    }
+    .shell {
+      background: var(--chrome);
+      border-radius: 28px;
+      padding: 14px 12px 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    }
+    .shell--tablet {
+      border-radius: 18px;
+      padding: 12px;
+    }
+    .shell--desktop {
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .notch {
+      width: 96px;
+      height: 8px;
+      margin: 0 auto 10px;
+      border-radius: 999px;
+      background: #444;
+    }
+    .shell--tablet .notch,
+    .shell--desktop .notch {
+      display: none;
+    }
+    iframe {
+      display: block;
+      border: 0;
+      background: #fff;
+      border-radius: 4px;
+    }
+    .shell--phone iframe {
+      width: 390px;
+      height: 844px;
+      max-width: calc(100vw - 64px);
+    }
+    .shell--tablet iframe {
+      width: 768px;
+      height: 1024px;
+      max-width: calc(100vw - 64px);
+    }
+    .shell--desktop iframe {
+      width: 1280px;
+      height: 800px;
+      max-width: calc(100vw - 64px);
+    }
+    @media (max-width: 900px) {
+      .shell--tablet iframe,
+      .shell--desktop iframe {
+        width: min(100%, 100vw - 64px);
+        height: 70vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VividPoly device preview</h1>
+    <nav>
+      <a href="#phone">Phone 390</a>
+      <a href="#tablet">Tablet 768</a>
+      <a href="#desktop">Desktop 1280</a>
+      <a class="secondary" href="/" target="_blank" rel="noopener">Open site</a>
+    </nav>
+  </header>
+  <main>
+    <section id="phone" class="device">
+      <div class="label">Phone · 390 × 844</div>
+      <div class="shell shell--phone">
+        <div class="notch" aria-hidden="true"></div>
+        <iframe src="/" title="Phone preview" loading="eager"></iframe>
+      </div>
+    </section>
+    <section id="tablet" class="device">
+      <div class="label">Tablet · 768 × 1024</div>
+      <div class="shell shell--tablet">
+        <iframe src="/" title="Tablet preview" loading="lazy"></iframe>
+      </div>
+    </section>
+    <section id="desktop" class="device">
+      <div class="label">Desktop · 1280 × 800</div>
+      <div class="shell shell--desktop">
+        <iframe src="/" title="Desktop preview" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

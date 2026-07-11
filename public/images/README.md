@@ -4,14 +4,16 @@ Real product and marketing photos live here. `VpPhotoSlot` falls back to a brand
 
 | Path | Used for |
 | --- | --- |
-| `hero.jpg` | Homepage hero visual |
-| `careers-hero.jpg` | Careers page hero visual |
-| `shop-product-type.jpg` | Shop by product type card |
-| `shop-industry.jpg` | Shop by industry card |
+| `home-hero.jpg` | Homepage hero diagonal visual (export warehouse) |
+| `home-about.jpg` | Home About section + About page intro |
+| `about-vision.jpg` | About "Leading towards a bright future" |
+| `about-company.jpg` | About "Company details / at a glance" |
+| `shop-product-type.jpg` | Legacy shop-by-type card |
+| `shop-industry.jpg` | Legacy shop-by-industry card |
 | `products/{id}.jpg` | Product cards, catalogue, PDP primary |
 | `products/{id}-2.jpg` (etc.) | PDP gallery variants |
-| `industry/*.jpg` | Industry / use marketing visuals |
+| `industry/{useId}.jpg` | Product-use cards (`grains`, `fertilizer`, `animal-feed`, `industrial`, `commodities`, `retail`) |
 
 Product ids: `open-mouth`, `stitched`, `d-cut`, `valve`, `carry`, `laminated`, `pinch-bottom`, `block-bottom`, `gusset`, `shopping`, `fabric`, `tape`, `weed-barrier`.
 
-The homepage hero carousel reuses the primary product photos for these ids: `open-mouth`, `stitched`, `laminated`, `block-bottom`, `pinch-bottom`, `valve`, `fabric`, `weed-barrier`.
+Stock section photos are Unsplash / Pexels licensed for commercial use. Product photos remain client-owned.

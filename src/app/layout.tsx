@@ -1,20 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import Script from 'next/script';
+import { GeistSans } from 'geist/font/sans';
+import { THEME_BOOT_SCRIPT } from '@/lib/theme';
+import VpSystemThemeSync from '@/components/vividpoly/VpSystemThemeSync';
 import './globals.css';
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-plus-jakarta',
-  display: 'swap',
-});
+import '../styles/modern-surfaces.css';
+import '../styles/light-mode-contrast.css';
+import '../styles/radius-system.css';
+import '../styles/knack-tokens.css';
+import '../styles/knack-components.css';
 
 export const metadata: Metadata = {
   title: 'VIVIDPOLY: PP Bags Exporter from India',
@@ -34,8 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" className={`${inter.variable} ${plusJakarta.variable}`}>
-      <body className={inter.className} style={{ width: '100%', minWidth: 0, margin: 0 }}>
+    <html lang="en" dir="ltr" data-theme="light" suppressHydrationWarning className={GeistSans.variable}>
+      <head>
+        <Script id="vp-theme-boot" strategy="beforeInteractive">
+          {THEME_BOOT_SCRIPT}
+        </Script>
+      </head>
+      <body className={GeistSans.className} style={{ width: '100%', minWidth: 0, margin: 0 }}>
+        <VpSystemThemeSync />
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { CheckIcon } from '@/components/vividpoly/VividPolyIcons';
 
 export type VpSuccessCardOptional = {
   title: string;
@@ -37,7 +38,9 @@ export default function VpSuccessCard({
       aria-labelledby={titleId}
     >
       <div className="vp-success-card">
-        <div className="vp-success-card-icon" aria-hidden="true">✓</div>
+        <div className="vp-success-card-icon" aria-hidden="true">
+          <CheckIcon size={24} />
+        </div>
         <h2 id={titleId} className="vp-success-card-title">{title}</h2>
         <div className="vp-success-card-text">{body}</div>
 

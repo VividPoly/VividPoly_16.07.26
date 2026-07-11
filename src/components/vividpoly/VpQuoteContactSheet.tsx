@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import VpQuoteContactForm, { quoteContactFromQuote } from '@/components/vividpoly/VpQuoteContactForm';
+import { CloseIcon } from '@/components/vividpoly/VividPolyIcons';
 import type { QuoteContactFormData } from '@/components/vividpoly/VpQuoteContactForm';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 
@@ -56,11 +57,11 @@ export default function VpQuoteContactSheet({ v }: { v: QuoteContactView }) {
       >
         <button
           type="button"
-          className="vp-quote-contact-close"
+          className="vp-icon-close-btn vp-quote-contact-close"
           onClick={v.closeQuoteContact}
           aria-label={v.quoteStepLabels.closeForm}
         >
-          <span aria-hidden="true">×</span>
+          <CloseIcon size={18} />
         </button>
         <h2 id="vp-quote-contact-title" className="vp-quote-contact-title">{v.quoteStepLabels.howReachYou}</h2>
         <p className="vp-quote-contact-sub">{v.siteCopy.quoteContactStepLead}</p>

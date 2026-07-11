@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { CloseIcon } from '@/components/vividpoly/VividPolyIcons';
 
 type EmailComposeCopy = {
   title: string;
@@ -160,11 +161,11 @@ export default function VpEmailComposePanel({
         <h2 id="vp-email-compose-title" className="vp-email-compose-title">{copy.title}</h2>
         <button
           type="button"
-          className="vp-email-compose-close"
+          className="vp-icon-close-btn vp-email-compose-close"
           onClick={onClose}
           aria-label={copy.close}
         >
-          <span aria-hidden="true">×</span>
+          <CloseIcon size={18} />
         </button>
       </div>
 

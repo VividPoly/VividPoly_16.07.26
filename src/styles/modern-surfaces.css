@@ -1,0 +1,303 @@
+/* Modern surface system: soft elevation over heavy strokes (2026 UI patterns). */
+
+/* ── Forms & inputs ── */
+.vp-quote-contact-input,
+.vp-sort--field .vp-sort-trigger {
+  border: 1px solid var(--vp-field-border);
+  border-radius: var(--vp-radius-control);
+  background-color: var(--vp-field-fill);
+  box-shadow: none;
+}
+
+.vp-quote-contact-input:hover,
+.vp-sort--field .vp-sort-trigger:hover {
+  border-color: var(--vp-field-border-hover);
+  background-color: color-mix(in srgb, var(--vp-field-fill) 88%, var(--vp-bg-elevated));
+}
+
+.vp-quote-contact-input:focus,
+.vp-sort--field .vp-sort-trigger:focus-visible,
+.vp-sort--field .vp-sort-trigger--open {
+  border-color: var(--vp-field-border-focus);
+  box-shadow: var(--vp-focus-ring);
+  background-color: var(--vp-bg-elevated);
+}
+
+.vp-sort-trigger {
+  border: 1px solid var(--vp-border-subtle);
+  border-radius: var(--vp-radius-control);
+  background-color: var(--vp-bg-elevated);
+}
+
+.vp-sort-trigger:hover {
+  border-color: var(--vp-border);
+}
+
+.vp-sort-trigger:focus-visible,
+.vp-sort-trigger--open {
+  border-color: var(--vp-field-border-focus);
+  box-shadow: var(--vp-focus-ring);
+}
+
+.vp-quote-contact-label,
+.vp-contact-form-label {
+  color: var(--vp-text-secondary);
+  font-weight: var(--vp-weight-semibold);
+  letter-spacing: 0.01em;
+}
+
+/* ── Enquiry modal ── */
+.vp-enquiry-modal-overlay {
+  backdrop-filter: blur(12px) saturate(130%);
+}
+
+.vp-enquiry-modal {
+  border: 1px solid var(--vp-border-subtle);
+  border-radius: var(--vp-radius-surface);
+  box-shadow: 0 24px 80px var(--vp-modal-shadow);
+}
+
+.vp-enquiry-modal-head {
+  border-bottom: none;
+  padding: 20px 28px 0;
+}
+
+.vp-enquiry-modal-body {
+  padding: 12px 28px 24px;
+}
+
+/* ── Shared icon close buttons ── */
+.vp-icon-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: var(--vp-radius-control);
+  background: transparent;
+  color: var(--vp-text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    background var(--vp-duration-fast) ease,
+    color var(--vp-duration-fast) ease;
+}
+
+.vp-icon-close-btn:hover {
+  background: var(--vp-surface-hover);
+  color: var(--vp-text-primary);
+}
+
+.vp-icon-close-btn:focus-visible {
+  outline: 2px solid var(--vp-accent);
+  outline-offset: 2px;
+}
+
+.vp-icon-close-btn svg {
+  display: block;
+  flex: none;
+}
+
+.vp-enquiry-modal-close {
+  width: 36px;
+  height: 36px;
+}
+
+.vp-enquiry-modal-close:hover {
+  background: var(--vp-surface-hover);
+  color: var(--vp-text-primary);
+}
+
+.vp-contact-form-card--modal .vp-quote-contact-input,
+.vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger {
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: var(--vp-radius-control);
+  border: 1px solid var(--vp-border-subtle);
+  color: var(--vp-text-primary);
+  background-color: var(--vp-field-fill);
+}
+
+.vp-contact-form-card--modal .vp-quote-contact-input::placeholder {
+  color: var(--vp-text-muted);
+  opacity: 1;
+}
+
+.vp-contact-form-card--modal .vp-quote-contact-input--textarea {
+  min-height: 72px;
+  padding: 10px 14px;
+  resize: none;
+}
+
+.vp-contact-form-card--modal .vp-contact-form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--vp-text-secondary);
+}
+
+.vp-contact-form-card--modal .vp-contact-form-grid--modal {
+  gap: 10px 16px;
+}
+
+.vp-contact-form-submit--modal {
+  margin-top: 8px;
+  padding: 12px 24px;
+  min-height: 44px;
+  border-radius: var(--vp-radius-control);
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .vp-enquiry-modal-head {
+    padding: 16px 20px 0;
+  }
+
+  .vp-enquiry-modal-body {
+    padding: 10px 20px 20px;
+  }
+
+  .vp-contact-form-card--modal .vp-contact-form-grid--modal {
+    gap: 10px;
+  }
+}
+
+/* ── Contact page cards ── */
+.vp-contact-form-card:not(.vp-contact-form-card--modal),
+.vp-contact-details {
+  border: 1px solid var(--vp-border-subtle);
+  box-shadow: var(--vp-shadow-sm);
+}
+
+/* ── FAQ accordion ── */
+.vp-faq-accordion {
+  border: 1px solid var(--vp-border-subtle);
+  box-shadow: var(--vp-shadow-sm);
+}
+
+.vp-faq-item {
+  border-top-color: var(--vp-divider);
+}
+
+.vp-faq-item--open .vp-faq-trigger {
+  border-bottom-color: var(--vp-divider);
+}
+
+/* ── Universal cards: shadow-first, hairline border ── */
+.vp-prod-card,
+.vp-catalogue-card,
+.vp-related-product,
+.vp-blog-card,
+.vp-value-prop,
+.vp-why-choose-item,
+.vp-nav-resources-card,
+.vp-pdp-panel,
+.vp-spec-panel,
+.vp-start-card,
+.vp-buyer-card,
+.vp-resource-card {
+  border: 1px solid var(--vp-border-subtle);
+  box-shadow: var(--vp-shadow-sm);
+}
+
+.vp-prod-card:hover,
+.vp-catalogue-card:hover,
+.vp-related-product:hover,
+.vp-blog-card:hover,
+.vp-value-prop:hover,
+.vp-why-choose-item:hover,
+.vp-nav-resources-card:hover,
+.vp-nav-resources-card:focus-visible {
+  border-color: color-mix(in srgb, var(--vp-oxblood) 18%, var(--vp-border-subtle));
+}
+
+/* ── Nav dropdown ── */
+.vp-nav-dropdown {
+  border-bottom: 1px solid var(--vp-border-subtle);
+  box-shadow: 0 16px 40px var(--vp-dropdown-shadow-lift);
+}
+
+.vp-nav-dropdown-tabs {
+  border-bottom-color: var(--vp-divider);
+}
+
+/* ── Quote / email sheets ── */
+.vp-quote-contact-sheet {
+  border: 1px solid var(--vp-border-subtle);
+  border-radius: var(--vp-radius-surface);
+  box-shadow: var(--vp-email-panel-shadow);
+}
+
+/* ── Dividers in data tables ── */
+.vp-kv-row {
+  border-top-color: var(--vp-divider);
+}
+
+.vp-kv-cell--key {
+  background: color-mix(in srgb, var(--vp-field-fill) 65%, transparent);
+}
+
+/* ── Ghost / secondary outline buttons: shared medium stroke ── */
+.vp-catalogue-card-btn--ghost {
+  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  background: var(--knack-white, #fff);
+  color: var(--knack-secondary-ink, #555);
+}
+
+.vp-catalogue-card-btn--ghost:hover {
+  border-color: color-mix(in srgb, var(--vp-gold, #b4934a) 55%, var(--knack-secondary-border, #6a6a6a));
+  background: var(--knack-white, #fff);
+}
+
+/* ── Filters & chips ── */
+.vp-filter-section {
+  border-top-color: var(--vp-divider);
+}
+
+.vp-filter-option {
+  border-radius: var(--vp-radius-control);
+}
+
+.vp-filter-option:hover {
+  background: var(--vp-surface-hover);
+}
+
+.vp-bag-spec-chip {
+  border: 1px solid var(--vp-border-subtle);
+  background: var(--vp-field-fill);
+}
+
+.vp-bag-spec-chip:hover {
+  border-color: var(--vp-border);
+  background: var(--vp-surface-hover);
+}
+
+.vp-bag-spec-chip--active {
+  border-color: color-mix(in srgb, var(--vp-oxblood) 24%, var(--vp-border-subtle));
+  background: var(--vp-surface-accent-hover);
+}
+
+/* ── All action buttons share control radius ── */
+.vp-cta-primary,
+.vp-cta-primary--lg,
+.vp-cta-secondary,
+.vp-cta-secondary--lg,
+.vp-cta-whatsapp,
+.vp-cta-ghost,
+.vp-cta-ghost--lg,
+.vp-quote-btn-primary,
+.vp-quote-btn-secondary,
+.vp-catalogue-card-btn--primary,
+.vp-catalogue-card-btn--ghost,
+.vp-blog-lead-submit,
+.vp-quote-contact-submit,
+.vp-contact-form-submit--modal {
+  border-radius: var(--vp-radius-pill);
+}
