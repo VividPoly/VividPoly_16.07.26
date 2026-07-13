@@ -765,9 +765,9 @@
     width: 100%;
     flex: none !important;
     /* Short cropped band; taller for mobile first fold. */
-    height: clamp(185px, 49vw, 218px) !important;
-    min-height: 185px !important;
-    max-height: 218px !important;
+    height: clamp(200px, 53vw, 236px) !important;
+    min-height: 200px !important;
+    max-height: 236px !important;
     clip-path: none !important;
     pointer-events: none;
     margin: 0 !important;
@@ -819,7 +819,7 @@
     width: 100%;
     min-height: 0;
     /* Clear fixed chrome, then breathing room to the headline. */
-    padding-top: calc(var(--vp-header-offset) + 40px) !important;
+    padding-top: calc(var(--vp-header-offset) + 36px) !important;
     padding-bottom: 16px;
     padding-left: var(--vp-pad-x-start);
     padding-right: var(--vp-pad-x-end);
