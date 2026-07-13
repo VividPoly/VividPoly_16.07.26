@@ -8501,7 +8501,7 @@ img.vp-wordmark--footer {
     gap: 5px;
   }
 
-  .vp-hero-visual-ph,
+  .vp-hero:not(.vp-hero--fold) .vp-hero-visual-ph,
   .vp-hero-visual .vp-photo-slot--hero:not(.vp-hero-carousel-img) {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -8523,7 +8523,7 @@ img.vp-wordmark--footer {
     padding-bottom: 12px;
   }
 
-  .vp-hero:not(.vp-careers-hero) {
+  .vp-hero:not(.vp-careers-hero):not(.vp-hero--fold) {
     padding-top: var(--vp-header-offset);
   }
 
@@ -12364,7 +12364,7 @@ img.vp-wordmark--footer {
 
   .vp-home .vp-hero:not(.vp-careers-hero) {
     padding-bottom: 0;
-    /* First-fold lock lives in knack-components (100svh). Do not shrink to content. */
+    /* Mobile: content-height hero + short photo band; next section may peek. */
   }
 
   .vp-home .vp-hero-title {
@@ -12390,6 +12390,10 @@ img.vp-wordmark--footer {
     width: 100%;
   }
 
+  .vp-home .vp-hero-trust {
+    order: 3;
+  }
+
   .vp-home .vp-hero-ctas {
     order: 4;
     flex-direction: column;
@@ -12413,11 +12417,7 @@ img.vp-wordmark--footer {
     box-sizing: border-box;
   }
 
-  .vp-home .vp-hero-trust {
-    order: 3;
-  }
-
-  .vp-home .vp-hero-visual {
+  .vp-home .vp-hero:not(.vp-hero--fold) .vp-hero-visual {
     order: 4;
     width: 100%;
     max-width: 100%;
@@ -12428,7 +12428,7 @@ img.vp-wordmark--footer {
     box-sizing: border-box;
   }
 
-  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-visual-placeholder {
+  .vp-home .vp-hero:not(.vp-careers-hero):not(.vp-hero--fold) .vp-hero-visual-placeholder {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -12437,7 +12437,7 @@ img.vp-wordmark--footer {
     margin-inline: 0;
   }
 
-  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-visual-placeholder-img {
+  .vp-home .vp-hero:not(.vp-careers-hero):not(.vp-hero--fold) .vp-hero-visual-placeholder-img {
     object-fit: cover;
   }
 

@@ -690,77 +690,83 @@
 }
 
 @media (max-width: 991px) {
-  /* Mobile first fold: hero fills the stable viewport; image takes remaining space. */
-  .vp-home > .vp-hero:not(.vp-careers-hero) {
-    height: 100svh !important;
-    min-height: 100svh !important;
-    max-height: 100svh !important;
-    overflow: hidden !important;
-    display: flex;
-    flex-direction: column;
+  /* Mobile home hero: copy band + short cropped photo; next section may peek. */
+  .vp-home > .vp-hero:not(.vp-careers-hero),
+  .vp-home > .vp-hero.vp-hero--fold {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
+    background: var(--knack-brand) !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
-    position: relative;
-    inset: auto;
+    position: relative !important;
+    inset: auto !important;
     order: 3;
     z-index: 0;
     width: 100%;
-    /* Fill remaining first-fold height under the copy. */
-    flex: 1 1 0;
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    clip-path: none;
+    flex: none !important;
+    /* Short cropped band; taller for mobile first fold. */
+    height: clamp(185px, 49vw, 218px) !important;
+    min-height: 185px !important;
+    max-height: 218px !important;
+    clip-path: none !important;
     pointer-events: none;
-    margin: 0;
-    margin-top: -1px;
-    border: 0;
-    border-top: 0;
+    margin: 0 !important;
+    margin-top: -1px !important;
+    border: 0 !important;
+    border-top: 0 !important;
     line-height: 0;
-    background-color: #d8d8d8;
-    overflow: hidden;
+    background-color: #d8d8d8 !important;
+    overflow: hidden !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-ph {
-    position: absolute;
-    inset: 0;
-    padding: 0;
-    margin: 0;
+    position: absolute !important;
+    inset: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
     border: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    aspect-ratio: auto;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    background: transparent;
-    overflow: hidden;
+    aspect-ratio: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    background: transparent !important;
+    overflow: hidden !important;
     line-height: 0;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
     vertical-align: top;
-    object-fit: cover;
-    object-position: center center;
-    transform: none;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
   }
 
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner,
   .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
     order: 1;
     grid-template-columns: 1fr;
     align-items: start;
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     width: 100%;
     min-height: 0;
-    padding-top: calc(var(--vp-header-offset) + 16px);
+    /* Clear fixed chrome, then breathing room to the headline. */
+    padding-top: calc(var(--vp-header-offset) + 40px) !important;
     padding-bottom: 16px;
     padding-left: var(--vp-pad-x-start);
     padding-right: var(--vp-pad-x-end);
@@ -797,14 +803,11 @@
     overflow: hidden;
   }
 
+  /* Mobile: cert badges above CTAs. */
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-trust--certs-only {
     order: 3;
     margin-top: 2px;
     margin-bottom: 14px;
-  }
-
-  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-trust-col--certs {
-    gap: 8px;
   }
 
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
@@ -815,6 +818,10 @@
     gap: 8px;
     width: 100%;
     margin: 0;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-trust-col--certs {
+    gap: 8px;
   }
 
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary,
