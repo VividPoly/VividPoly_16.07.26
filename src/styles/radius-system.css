@@ -87,6 +87,7 @@ button.vp-gallery-thumb,
 /* ── Chips & pills: tags, FABs, filter chips, dots ── */
 .vp-pdp-trust-badge,
 .vp-enquiry-fab:not(.vp-enquiry-fab--circle),
+.vp-toast,
 .vp-filter-count,
 .vp-catalogue-count,
 .vp-buyer-slide-chip,
@@ -95,6 +96,10 @@ button.vp-gallery-thumb,
 .vp-buyer-dot,
 .vp-hero-carousel-dot {
   border-radius: var(--vp-radius-chip);
+}
+
+.vp-toast-dismiss {
+  border-radius: var(--vp-radius-full);
 }
 
 /* ── Circles: avatars, step markers, icon wells ── */

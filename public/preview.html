@@ -10,12 +10,12 @@
       --bg: #ececec;
       --ink: #111;
       --muted: #666;
-      --frame: #111;
       --chrome: #2a2a2a;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
+      min-height: 100vh;
       font-family: Geist, system-ui, sans-serif;
       background: var(--bg);
       color: var(--ink);
@@ -39,21 +39,32 @@
       font-weight: 700;
       letter-spacing: 0.02em;
     }
-    nav {
+    .controls {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      align-items: center;
     }
-    a {
+    button,
+    a.secondary {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       padding: 8px 12px;
       border-radius: 4px;
+      border: 0;
       background: #111;
       color: #fff;
       text-decoration: none;
+      font: inherit;
       font-size: 12px;
       font-weight: 600;
+      cursor: pointer;
+    }
+    button[aria-pressed="true"] {
+      outline: 2px solid #111;
+      outline-offset: 2px;
+      background: #c8102e;
     }
     a.secondary {
       background: #fff;
@@ -61,18 +72,11 @@
       border: 1px solid #ccc;
     }
     main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-      padding: 28px 20px 48px;
-      align-items: start;
-      justify-items: center;
-    }
-    .device {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      scroll-margin-top: 72px;
+      align-items: center;
+      gap: 14px;
+      padding: 28px 20px 48px;
     }
     .label {
       font-size: 12px;
@@ -82,19 +86,25 @@
       color: var(--muted);
       text-align: center;
     }
+    .hint {
+      margin: 0;
+      max-width: 36rem;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--muted);
+      text-align: center;
+    }
     .shell {
       background: var(--chrome);
       border-radius: 28px;
       padding: 14px 12px 18px;
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+      max-width: calc(100vw - 32px);
     }
-    .shell--tablet {
-      border-radius: 18px;
+    .shell[data-device="tablet"],
+    .shell[data-device="desktop"] {
+      border-radius: 12px;
       padding: 12px;
-    }
-    .shell--desktop {
-      border-radius: 10px;
-      padding: 10px;
     }
     .notch {
       width: 96px;
@@ -103,8 +113,8 @@
       border-radius: 999px;
       background: #444;
     }
-    .shell--tablet .notch,
-    .shell--desktop .notch {
+    .shell[data-device="tablet"] .notch,
+    .shell[data-device="desktop"] .notch {
       display: none;
     }
     iframe {
@@ -112,61 +122,102 @@
       border: 0;
       background: #fff;
       border-radius: 4px;
+      width: var(--frame-w);
+      height: var(--frame-h);
+      max-width: calc(100vw - 56px);
     }
-    .shell--phone iframe {
-      width: 390px;
-      height: 844px;
-      max-width: calc(100vw - 64px);
+    .status {
+      min-height: 1.2em;
+      font-size: 12px;
+      color: var(--muted);
     }
-    .shell--tablet iframe {
-      width: 768px;
-      height: 1024px;
-      max-width: calc(100vw - 64px);
-    }
-    .shell--desktop iframe {
-      width: 1280px;
-      height: 800px;
-      max-width: calc(100vw - 64px);
-    }
-    @media (max-width: 900px) {
-      .shell--tablet iframe,
-      .shell--desktop iframe {
-        width: min(100%, 100vw - 64px);
-        height: 70vh;
-      }
+    .status[data-state="error"] {
+      color: #b00020;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>VividPoly device preview</h1>
-    <nav>
-      <a href="#phone">Phone 390</a>
-      <a href="#tablet">Tablet 768</a>
-      <a href="#desktop">Desktop 1280</a>
+    <div class="controls">
+      <button type="button" data-device="phone" aria-pressed="true">Phone 390</button>
+      <button type="button" data-device="tablet" aria-pressed="false">Tablet 768</button>
+      <button type="button" data-device="desktop" aria-pressed="false">Desktop 1280</button>
       <a class="secondary" href="/" target="_blank" rel="noopener">Open site</a>
-    </nav>
+    </div>
   </header>
   <main>
-    <section id="phone" class="device">
-      <div class="label">Phone · 390 × 844</div>
-      <div class="shell shell--phone">
-        <div class="notch" aria-hidden="true"></div>
-        <iframe src="/" title="Phone preview" loading="eager"></iframe>
-      </div>
-    </section>
-    <section id="tablet" class="device">
-      <div class="label">Tablet · 768 × 1024</div>
-      <div class="shell shell--tablet">
-        <iframe src="/" title="Tablet preview" loading="lazy"></iframe>
-      </div>
-    </section>
-    <section id="desktop" class="device">
-      <div class="label">Desktop · 1280 × 800</div>
-      <div class="shell shell--desktop">
-        <iframe src="/" title="Desktop preview" loading="lazy"></iframe>
-      </div>
-    </section>
+    <div class="label" id="label">Phone · 390 × 844</div>
+    <p class="hint">
+      One frame at a time so mobile and tablet actually load. On a real phone or tablet, open the site URL on the same Wi-Fi instead of this page.
+    </p>
+    <div class="shell" id="shell" data-device="phone" style="--frame-w: 390px; --frame-h: 844px;">
+      <div class="notch" aria-hidden="true"></div>
+      <iframe id="frame" title="Device preview" src="/"></iframe>
+    </div>
+    <p class="status" id="status" data-state="loading">Loading phone preview…</p>
   </main>
+  <script>
+    (function () {
+      var devices = {
+        phone: { label: 'Phone · 390 × 844', w: 390, h: 844 },
+        tablet: { label: 'Tablet · 768 × 1024', w: 768, h: 1024 },
+        desktop: { label: 'Desktop · 1280 × 800', w: 1280, h: 800 },
+      };
+
+      var shell = document.getElementById('shell');
+      var frame = document.getElementById('frame');
+      var label = document.getElementById('label');
+      var status = document.getElementById('status');
+      var buttons = document.querySelectorAll('button[data-device]');
+      var active = 'phone';
+      var loadTimer = 0;
+
+      function setStatus(text, state) {
+        status.textContent = text;
+        status.dataset.state = state || 'ok';
+      }
+
+      function applyDevice(name, reload) {
+        var device = devices[name];
+        if (!device) return;
+        active = name;
+        shell.dataset.device = name;
+        shell.style.setProperty('--frame-w', device.w + 'px');
+        shell.style.setProperty('--frame-h', device.h + 'px');
+        label.textContent = device.label;
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', btn.dataset.device === name ? 'true' : 'false');
+        });
+        if (reload) {
+          setStatus('Loading ' + name + ' preview…', 'loading');
+          window.clearTimeout(loadTimer);
+          loadTimer = window.setTimeout(function () {
+            if (status.dataset.state === 'loading') {
+              setStatus('Still loading. If this stays blank, hard-refresh or open the site directly.', 'error');
+            }
+          }, 12000);
+          frame.src = '/?vp-preview=' + name + '&t=' + Date.now();
+        } else {
+          setStatus(device.label + ' frame ready', 'ok');
+        }
+      }
+
+      frame.addEventListener('load', function () {
+        window.clearTimeout(loadTimer);
+        setStatus(devices[active].label + ' loaded', 'ok');
+      });
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          applyDevice(btn.dataset.device, true);
+        });
+      });
+
+      var hash = (location.hash || '').replace('#', '');
+      if (devices[hash]) applyDevice(hash, true);
+      else applyDevice('phone', false);
+    })();
+  </script>
 </body>
 </html>

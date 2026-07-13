@@ -1,7 +1,7 @@
 'use client';
 
 import VpKnackReveal from '@/components/vividpoly/VpKnackReveal';
-import VpKnackProductCard from '@/components/vividpoly/VpKnackProductCard';
+import VpKnackProductCarousel from '@/components/vividpoly/VpKnackProductCarousel';
 import { ChevronRightIcon } from '@/components/vividpoly/VividPolyIcons';
 
 export type KnackProductUseCard = {
@@ -18,6 +18,8 @@ type VpKnackProductUseSectionProps = {
   onCardClick: () => void;
   viewAllLabel?: string;
   onViewAll?: () => void;
+  previousLabel?: string;
+  nextLabel?: string;
 };
 
 export default function VpKnackProductUseSection({
@@ -27,7 +29,17 @@ export default function VpKnackProductUseSection({
   onCardClick,
   viewAllLabel = 'View all',
   onViewAll,
+  previousLabel = 'Previous product uses',
+  nextLabel = 'Next product uses',
 }: VpKnackProductUseSectionProps) {
+  const carouselItems = cards.map((card) => ({
+    id: card.id,
+    name: card.cardTitle,
+    short: card.bags,
+    imageSrc: `/images/industry/${card.id}.jpg`,
+    open: onCardClick,
+  }));
+
   return (
     <section className="vp-use-section--knack" aria-labelledby="vp-product-use-title">
       <div className="vp-use-section-inner">
@@ -38,27 +50,25 @@ export default function VpKnackProductUseSection({
           <p className="vp-use-section-lead">{lead}</p>
         </VpKnackReveal>
 
-        <VpKnackReveal stagger className="vp-use-cards-grid">
-          {cards.slice(0, 4).map((card) => (
-            <VpKnackProductCard
-              key={card.id}
-              id={card.id}
-              name={card.cardTitle}
-              short={card.bags}
-              imageSrc={`/images/industry/${card.id}.jpg`}
-              onClick={onCardClick}
+        <div className="vp-use-section-body">
+          <VpKnackReveal>
+            <VpKnackProductCarousel
+              products={carouselItems}
+              previousLabel={previousLabel}
+              nextLabel={nextLabel}
+              ariaLabel="Product uses"
             />
-          ))}
-        </VpKnackReveal>
+          </VpKnackReveal>
 
-        {onViewAll ? (
-          <div className="vp-use-section-footer">
-            <button type="button" className="vp-use-section-view-all" onClick={onViewAll}>
-              {viewAllLabel}
-              <ChevronRightIcon size={14} />
-            </button>
-          </div>
-        ) : null}
+          {onViewAll ? (
+            <div className="vp-use-section-footer">
+              <button type="button" className="vp-use-section-view-all" onClick={onViewAll}>
+                {viewAllLabel}
+                <ChevronRightIcon size={14} />
+              </button>
+            </div>
+          ) : null}
+        </div>
       </div>
     </section>
   );

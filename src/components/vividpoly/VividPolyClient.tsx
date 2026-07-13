@@ -6,7 +6,8 @@ import VividPolyResponsiveShell from "@/components/vividpoly/VividPolyResponsive
 const VividPolyView = dynamic(
   () => import("@/components/vividpoly/VividPolyView"),
   {
-    ssr: false,
+    // Keep SSR so phone/tablet see real markup instead of an endless spinner
+    // when the client chunk is slow or blocked inside device frames.
     loading: () => (
       <div className="vp-app-loading" role="status" aria-live="polite">
         <div className="vp-app-loading-spinner" aria-hidden="true" />

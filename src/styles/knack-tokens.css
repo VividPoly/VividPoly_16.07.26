@@ -2,7 +2,8 @@
 
 :root,
 :root[data-theme='light'] {
-  /* Canonical Knack tokens */
+  /* Keep Knack surfaces on light even if the OS is dark. */
+  color-scheme: light only;
   --knack-brand: #d21e2b;
   --knack-brand-rgb: 210, 30, 43;
   /* Deeper brand red on hover (not black); gold glow handles lift. */
@@ -242,7 +243,7 @@
   --vp-radius-chip: 50px;
 }
 
-:root[data-theme='dark'] {
+:root[data-theme='dark'][data-vp-allow-dark='true'] {
   --knack-brand: #d21e2b;
   --knack-brand-rgb: 210, 30, 43;
   --knack-accent: #c9a85e;
@@ -301,7 +302,7 @@
 @media (max-width: 991px) {
   :root,
   :root[data-theme='light'],
-  :root[data-theme='dark'] {
+  :root[data-theme='dark'][data-vp-allow-dark='true'] {
     --vp-container-x: 20px;
     --vp-pad-x-start: max(20px, env(safe-area-inset-left, 0px));
     --vp-pad-x-end: max(20px, env(safe-area-inset-right, 0px));

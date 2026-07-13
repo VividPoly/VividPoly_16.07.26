@@ -157,7 +157,7 @@
     "submitEnquiry": "Submit Enquiry",
     "backToHome": "Back to Home",
     "chatExportTeam": "Chat with Export Team",
-    "viewAll": "View all",
+    "viewAll": "View All",
     "filters": "Filters",
     "recommended": "Recommended",
     "specification": "Specification",
@@ -218,7 +218,7 @@
   "about": {
     "title": "About Us",
     "pageEyebrow": "ABOUT US",
-    "pageTitle": "India's Export Packaging\u00a0Partner",
+    "pageTitle": "Global Export Packaging\u00a0Partner",
     "p1": "VIVIDPOLY serves global import buyers with professional communication, clear product specifications, custom packaging options, and responsive export support. Capacity, construction, printing, and packing are tailored to your product and destination market so every order matches your filling process, branding need, and shipping condition.",
     "p2": "Request samples before committing to full quantities. Bale, pallet, and carton packing are planned for safe international shipment across ten woven PP constructions, from open mouth to premium laminated formats, matched to rice, fertilizer, cement, feed, and retail uses.",
     "image": "/images/home-about.jpg",
@@ -578,7 +578,7 @@
       { "label": "Focus", "value": "Custom print & packing" }
     ],
     "homeAboutEyebrow": "About us",
-    "homeAboutTitle": "India's Export Packaging\u00a0Partner",
+    "homeAboutTitle": "Global Export Packaging\u00a0Partner",
     "homeAboutSubtitle": "",
     "homeAboutParagraphs": [
       "VIVIDPOLY serves global import buyers with professional communication, clear product specifications, custom packaging options, and responsive export support. Capacity, construction, printing, and packing are tailored to your product and destination market so every order matches your filling process, branding need, and shipping condition.",

@@ -19,7 +19,9 @@ export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  viewportFit: 'cover',
+  viewportFit: 'cover' as const,
+  colorScheme: 'light' as const,
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({
@@ -28,13 +30,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" data-theme="light" suppressHydrationWarning className={GeistSans.variable}>
+    <html
+      lang="en"
+      dir="ltr"
+      data-theme="light"
+      style={{ colorScheme: 'light' }}
+      suppressHydrationWarning
+      className={GeistSans.variable}
+    >
       <head>
+        <meta name="color-scheme" content="light only" />
+        <meta name="supported-color-schemes" content="light" />
         <Script id="vp-theme-boot" strategy="beforeInteractive">
           {THEME_BOOT_SCRIPT}
         </Script>
       </head>
-      <body className={GeistSans.className} style={{ width: '100%', minWidth: 0, margin: 0 }}>
+      <body
+        className={GeistSans.className}
+        style={{ width: '100%', minWidth: 0, margin: 0, colorScheme: 'light' }}
+      >
         <VpSystemThemeSync />
         {children}
       </body>

@@ -4,7 +4,7 @@ Real product and marketing photos live here. `VpPhotoSlot` falls back to a brand
 
 | Path | Used for |
 | --- | --- |
-| `home-hero.jpg` | Homepage hero diagonal visual (export warehouse) |
+| `home-hero.jpg` | Homepage hero diagonal visual (export warehouse stock) |
 | `home-about.jpg` | Home About section + About page intro |
 | `about-vision.jpg` | About "Leading towards a bright future" |
 | `about-company.jpg` | About "Company details / at a glance" |

@@ -57,7 +57,7 @@ export default function VpSortSelect({ value, options, onChange, className, aria
       </button>
       {mounted && open && position && createPortal(
         <ul
-          className="vp-sort-menu vp-sort-menu--subtle vp-sort-menu--portaled"
+          className={`vp-sort-menu vp-sort-menu--subtle vp-sort-menu--portaled${className?.includes('vp-sort--catalogue-toolbar') ? ' vp-sort-menu--catalogue' : ''}`}
           role="listbox"
           aria-label="Product use options"
           style={{

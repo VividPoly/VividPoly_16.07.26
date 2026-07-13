@@ -65,11 +65,11 @@
   color: var(--vp-accent-text);
 }
 
-:root[data-theme='dark'] .vp-catalogue-intro-toggle {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-catalogue-intro-toggle {
   color: var(--vp-accent-text);
 }
 
-:root[data-theme='dark'] .vp-spec-panel-head {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-spec-panel-head {
   color: var(--vp-accent-text);
 }
 
@@ -105,13 +105,13 @@
 }
 
 /* Platform logos keep original brand colors on light cards in all themes. */
-:root[data-theme='dark'] .vp-careers-platform-card {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-careers-platform-card {
   background: var(--vp-white);
   border-color: color-mix(in srgb, var(--vp-white) 88%, var(--vp-border-subtle));
   box-shadow: var(--vp-shadow-md);
 }
 
-:root[data-theme='dark'] .vp-careers-platform-logo {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-careers-platform-logo {
   filter: none;
   opacity: 1;
 }
@@ -159,11 +159,11 @@
 }
 
 /* ── Use rows and related product CTAs ── */
-:root[data-theme='dark'] .vp-use-row {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-use-row {
   border-top-color: var(--vp-divider);
 }
 
-:root[data-theme='dark'] .vp-use-row--active .vp-use-row-label {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-use-row--active .vp-use-row-label {
   color: var(--vp-accent-on-subtle);
 }
 
@@ -176,13 +176,13 @@
   color: var(--vp-text-secondary);
 }
 
-:root[data-theme='dark'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-slide-chip,
-:root[data-theme='dark'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-slide-num,
-:root[data-theme='dark'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-detail-response-label {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-slide-chip,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-slide-num,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-buyer-slide:not(.vp-buyer-slide--active) .vp-buyer-detail-response-label {
   color: var(--vp-text-primary);
 }
 
-:root[data-theme='dark'] .vp-quote-contact-input--native-select {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-quote-contact-input--native-select {
   background-color: color-mix(in srgb, var(--vp-text-primary) 7%, var(--vp-bg-subtle));
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%23d4cdc2' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -192,68 +192,68 @@
 
 /* Mobile product-use pills force a white chip surface in dark mode. */
 @media (max-width: 767px) {
-  :root[data-theme='dark'] .vp-use-row .vp-use-row-label {
+  :root[data-theme='dark'][data-vp-allow-dark='true'] .vp-use-row .vp-use-row-label {
     color: var(--vp-charcoal);
   }
 
-  :root[data-theme='dark'] .vp-use-row--active .vp-use-row-label {
+  :root[data-theme='dark'][data-vp-allow-dark='true'] .vp-use-row--active .vp-use-row-label {
     color: var(--vp-accent-on-subtle);
   }
 }
 
 /* ── Enquiry modal form (dark) ── */
-:root[data-theme='dark'] .vp-enquiry-modal {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-enquiry-modal {
   background: var(--vp-bg-elevated);
   border-color: var(--vp-border);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-contact-form-label,
-:root[data-theme='dark'] .vp-contact-form-card .vp-contact-form-label {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-contact-form-label,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-contact-form-label {
   color: var(--vp-text-primary);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input,
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input,
-:root[data-theme='dark'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger {
   color: var(--vp-text-primary);
   background-color: color-mix(in srgb, var(--vp-text-primary) 7%, var(--vp-bg-subtle));
   border: 1px solid color-mix(in srgb, var(--vp-text-primary) 14%, transparent);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input::placeholder,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input::placeholder,
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-select-custom-input--inline::placeholder {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input::placeholder,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input::placeholder,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-select-custom-input--inline::placeholder {
   color: var(--vp-text-muted);
   opacity: 1;
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input:hover,
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger:hover,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input:hover,
-:root[data-theme='dark'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger:hover {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input:hover,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger:hover,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input:hover,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger:hover {
   background-color: color-mix(in srgb, var(--vp-text-primary) 9%, var(--vp-bg-subtle));
   border-color: color-mix(in srgb, var(--vp-text-primary) 20%, transparent);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input:focus,
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger:focus-visible,
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger--open,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input:focus,
-:root[data-theme='dark'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger:focus-visible,
-:root[data-theme='dark'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger--open {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input:focus,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger:focus-visible,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger--open,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input:focus,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger:focus-visible,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger--open {
   background-color: color-mix(in srgb, var(--vp-text-primary) 5%, var(--vp-bg-elevated));
   border-color: color-mix(in srgb, var(--vp-gold) 48%, transparent);
   box-shadow: var(--vp-focus-ring);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger-label--placeholder,
-:root[data-theme='dark'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger-label--placeholder {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-sort--field .vp-sort-trigger-label--placeholder,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-sort--field .vp-sort-trigger-label--placeholder {
   color: var(--vp-text-muted);
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input--native-select {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input--native-select {
   background-color: color-mix(in srgb, var(--vp-text-primary) 7%, var(--vp-bg-subtle));
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%23d4cdc2' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -261,30 +261,30 @@
   background-size: 14px 14px;
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select:hover,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input--native-select:hover {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select:hover,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input--native-select:hover {
   background-color: color-mix(in srgb, var(--vp-text-primary) 9%, var(--vp-bg-subtle));
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select:focus,
-:root[data-theme='dark'] .vp-contact-form-card .vp-quote-contact-input--native-select:focus {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select:focus,
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card .vp-quote-contact-input--native-select:focus {
   background-color: color-mix(in srgb, var(--vp-text-primary) 5%, var(--vp-bg-elevated));
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select {
   color-scheme: dark;
 }
 
-:root[data-theme='dark'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select option {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-contact-form-card--modal .vp-quote-contact-input--native-select option {
   color: var(--vp-text-primary);
   background: var(--vp-bg-elevated);
 }
 
-:root[data-theme='dark'] .vp-icon-close-btn {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-icon-close-btn {
   color: var(--vp-text-secondary);
 }
 
-:root[data-theme='dark'] .vp-icon-close-btn:hover {
+:root[data-theme='dark'][data-vp-allow-dark='true'] .vp-icon-close-btn:hover {
   color: var(--vp-text-primary);
   background: var(--vp-surface-hover);
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
 import { useVividPoly } from '@/hooks/useVividPoly';
 import { bindAllHovers } from '@/lib/vividpoly-style';
 import VpQuoteSuccess from '@/components/vividpoly/VpQuoteSuccess';
@@ -20,6 +19,7 @@ import VpTopUtilityBar from '@/components/vividpoly/VpTopUtilityBar';
 import VpEnquiryFab from '@/components/vividpoly/VpEnquiryFab';
 import VpBackToTop from '@/components/vividpoly/VpBackToTop';
 import VpEnquiryModal from '@/components/vividpoly/VpEnquiryModal';
+import VpToast from '@/components/vividpoly/VpToast';
 import VpContactEnquiryForm from '@/components/vividpoly/VpContactEnquiryForm';
 import VpKnackReveal from '@/components/vividpoly/VpKnackReveal';
 import VpKnackProductCard from '@/components/vividpoly/VpKnackProductCard';
@@ -34,7 +34,7 @@ import VpRouteOutlet from '@/components/vividpoly/VpRouteOutlet';
 import { WhatsAppIcon, ChevronRightIcon, ChevronLeftIcon, CloseIcon, CheckIcon } from '@/components/vividpoly/VividPolyIcons';
 import { useEnquiryPopup } from '@/hooks/useEnquiryPopup';
 import { markEnquiryDismissed, markEnquirySubmitted } from '@/lib/enquiry-popup-session';
-import VpCapacityFilter from '@/components/vividpoly/VpCapacityFilter';
+import VpCatalogueFilters from '@/components/vividpoly/VpCatalogueFilters';
 import VpSortSelect from '@/components/vividpoly/VpSortSelect';
 import VpCatalogueGuideTooltip from '@/components/vividpoly/VpCatalogueGuideTooltip';
 import {
@@ -52,12 +52,12 @@ import {
 export default function VividPolyView() {
   const v = useVividPoly() as Record<string, any>;
   const rootRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
   const [headerHidden, setHeaderHidden] = useState(false);
   const [headerBlend, setHeaderBlend] = useState(false);
-  const [headerMounted, setHeaderMounted] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
+  const [enquiryToast, setEnquiryToast] = useState<string | null>(null);
   const [mobileNavExpanded, setMobileNavExpanded] = useState<null | 'products' | 'industry' | 'resources'>(null);
   const [mobileNavGroupKey, setMobileNavGroupKey] = useState<string | null>(null);
   const [catalogueIntroExpanded, setCatalogueIntroExpanded] = useState(false);
@@ -90,12 +90,8 @@ export default function VividPolyView() {
   showHomeRef.current = v.showHome;
 
   useEffect(() => {
-    setHeaderMounted(true);
-  }, []);
-
-  useEffect(() => {
     const header = headerRef.current;
-    if (!header || !headerMounted) return;
+    if (!header) return;
 
     const syncHeaderOffset = () => {
       const height = Math.ceil(header.getBoundingClientRect().height);
@@ -114,7 +110,7 @@ export default function VividPolyView() {
       window.removeEventListener('resize', syncHeaderOffset);
       document.documentElement.style.removeProperty('--vp-header-offset');
     };
-  }, [headerMounted, headerBlend, mobileNavOpen, v.menu]);
+  }, [headerBlend, mobileNavOpen, v.menu]);
 
   useEffect(() => {
     bindAllHovers(rootRef.current);
@@ -178,6 +174,16 @@ export default function VividPolyView() {
   const closeEnquiryModal = useCallback(() => {
     setEnquiryModalOpen(false);
     markEnquiryDismissed(v.pageTransitionKey);
+  }, [v.pageTransitionKey]);
+
+  const dismissEnquiryToast = useCallback(() => {
+    setEnquiryToast(null);
+  }, []);
+
+  const handleEnquirySubmitSuccess = useCallback((message: string) => {
+    markEnquirySubmitted(v.pageTransitionKey);
+    setEnquiryModalOpen(false);
+    setEnquiryToast(message);
   }, [v.pageTransitionKey]);
 
   const shouldAutoOpenEnquiryPopup = useCallback(() => {
@@ -396,7 +402,7 @@ export default function VividPolyView() {
       header.removeAttribute('inert');
       header.removeAttribute('aria-hidden');
     }
-  }, [headerVisible, headerMounted]);
+  }, [headerVisible]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -409,11 +415,15 @@ export default function VividPolyView() {
         closeMobileNav();
         return;
       }
+      if (v.catFiltersOpen) {
+        v.toggleCatFilters();
+        return;
+      }
       if (v.menu) v.closeAll();
     };
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
-  }, [v.menu, v.closeAll, mobileNavOpen, enquiryModalOpen, closeEnquiryModal]);
+  }, [v.menu, v.closeAll, v.catFiltersOpen, v.toggleCatFilters, mobileNavOpen, enquiryModalOpen, closeEnquiryModal]);
 
   const nav = v.ui.nav;
   const common = v.ui.common;
@@ -651,9 +661,8 @@ export default function VividPolyView() {
 
   return (
       <div ref={rootRef} className="vp-root">
-        {headerMounted && createPortal(siteHeader, document.body)}
-        {headerMounted && createPortal(
-          <div
+        {siteHeader}
+        <div
             className={`vp-mobile-nav-layer${mobileNavOpen ? ' vp-mobile-nav-layer--open' : ''}`}
             aria-hidden={!mobileNavOpen}
           >
@@ -837,9 +846,7 @@ export default function VividPolyView() {
                 <button type="button" className="vp-mobile-drawer-link" onClick={() => { v.goContact(); closeMobileNav(); }}>{nav.contact}</button>
               </div>
             </nav>
-          </div>,
-          document.body,
-        )}
+          </div>
         {v.overlayOpen && (
           <button
             type="button"
@@ -865,7 +872,7 @@ export default function VividPolyView() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="vp-hero-visual-img"
-                    src="/images/home-hero.jpg"
+                    src="/images/home-hero.jpg?v=warehouse"
                     alt=""
                     decoding="async"
                     fetchPriority="high"
@@ -873,9 +880,6 @@ export default function VividPolyView() {
                 </div>
               </div>
               <div className="vp-hero-inner">
-                <p className="vp-hero-rail" aria-hidden="true">
-                  {v.siteCopy.heroRail || 'INDIA · GLOBAL EXPORT'}
-                </p>
                 <div className="vp-hero-copy">
                   <div className="vp-hero-brand vp-hero-rise">
                     <VpLogo variant="inverse" className="vp-wordmark--hero" />
@@ -946,13 +950,25 @@ export default function VividPolyView() {
                   </h2>
                   <p className="vp-prod-section-lead">{v.siteCopy.homeProductsLead}</p>
                 </VpKnackReveal>
-                <VpKnackReveal>
-                  <VpKnackProductCarousel
-                    products={v.products}
-                    previousLabel={home.previousProducts}
-                    nextLabel={home.nextProducts}
-                  />
-                </VpKnackReveal>
+                <div className="vp-prod-section-body">
+                  <VpKnackReveal>
+                    <VpKnackProductCarousel
+                      products={v.products}
+                      previousLabel={home.previousProducts}
+                      nextLabel={home.nextProducts}
+                    />
+                  </VpKnackReveal>
+                  <div className="vp-prod-section-footer">
+                    <button
+                      type="button"
+                      className="vp-prod-section-view-all"
+                      onClick={v.goCatalogueType}
+                    >
+                      View All
+                      <ChevronRightIcon size={14} />
+                    </button>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -1009,7 +1025,9 @@ export default function VividPolyView() {
               cards={v.productUseCards}
               onCardClick={v.goCatalogueUse}
               viewAllLabel={common.viewAll || 'View all'}
-              onViewAll={v.goCatalogueType}
+              onViewAll={v.goCatalogueUse}
+              previousLabel={home.previousProducts}
+              nextLabel={home.nextProducts}
             />
       
             
@@ -1055,75 +1073,19 @@ export default function VividPolyView() {
               </div>
             </VpSubpageTop>
             <div className={`vp-catalogue-layout${v.catFiltersOpen ? ' vp-catalogue-layout--filters-open' : ''}`}>
-              <div className="vp-filter-column">
-                <aside className="vp-filter-sidebar">
-                  <div className="vp-filter-header">
-                    <div className="vp-filter-title-row">
-                      <span className="vp-filter-title">Filters</span>
-                      {v.activeFilterCount > 0 && (
-                        <span className="vp-filter-count">{v.activeFilterCount}</span>
-                      )}
-                    </div>
-                    {v.activeFilterCount > 0 && (
-                      <button type="button" onClick={v.clearFilters} className="vp-filter-clear">Clear filters</button>
-                    )}
-                  </div>
-                  <div className="vp-filter-scroll">
-                    <details className="vp-filter-section" open>
-                      <summary>
-                        Capacity
-                        <span className="vp-filter-chevron" aria-hidden="true" />
-                      </summary>
-                      <VpCapacityFilter
-                        stops={v.capacityFilter.stops}
-                        minIdx={v.capacityFilter.minIdx}
-                        maxIdx={v.capacityFilter.maxIdx}
-                        customKg={v.capacityFilter.customKg}
-                        customNotice={v.capacityFilter.customNotice}
-                        onMinChange={v.capacityFilter.setMinIdx}
-                        onMaxChange={v.capacityFilter.setMaxIdx}
-                        onCustomChange={v.capacityFilter.setCustomKg}
-                      />
-                    </details>
-                    {v.filterSecs.map((sec, i_sec) => (
-                      <details
-                        key={i_sec}
-                        className={`vp-filter-section${v.catGuide === 'product-type' && !v.catByUse && sec.key === 'Product Type' ? ' vp-filter-section--guided' : ''}`}
-                        open={sec.defaultOpen}
-                      >
-                        <summary>
-                          {sec.title}
-                          <span className="vp-filter-chevron" aria-hidden="true" />
-                        </summary>
-                        {v.catGuide === 'product-type' && !v.catByUse && sec.key === 'Product Type' && (
-                          <VpCatalogueGuideTooltip
-                            message={v.siteCopy.catalogueGuideProductType}
-                            placement="filter"
-                            onDismiss={v.clearCatGuide}
-                          />
-                        )}
-                        <div className="vp-filter-options">
-                          {sec.opts.map((o, i_o) => (
-                            <label key={i_o} className="vp-filter-option">
-                              <input
-                                type="checkbox"
-                                className="vp-filter-input"
-                                checked={o.checked}
-                                onChange={o.toggle}
-                              />
-                              <span
-                                className={`vp-filter-checkbox${o.checked ? ' vp-filter-checkbox--checked' : ''}`}
-                                aria-hidden="true"
-                              />
-                              {o.label}
-                            </label>
-                          ))}
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </aside>
-              </div>
+              <VpCatalogueFilters
+                open={v.catFiltersOpen}
+                onClose={v.toggleCatFilters}
+                onClear={v.clearFilters}
+                activeFilterCount={v.activeFilterCount}
+                filteredCount={v.filteredCount}
+                filterSecs={v.filterSecs}
+                capacityFilter={v.capacityFilter}
+                catGuide={v.catGuide}
+                catByUse={v.catByUse}
+                guideMessage={v.siteCopy.catalogueGuideProductType}
+                onDismissGuide={v.clearCatGuide}
+              />
 
               <div className="vp-catalogue-main">
                 <div className="vp-catalogue-toolbar">
@@ -1560,28 +1522,52 @@ export default function VividPolyView() {
               </div>
 
               <div className="vp-footer-col vp-footer-col--links">
-                <h3 className="vp-footer-heading">{footer.company}</h3>
-                <div className="vp-footer-link-list">
-                  {v.footCompany.map((l, i_l) => (
-                    <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
-                  ))}
+                <div className="vp-footer-links-desktop">
+                  <h3 className="vp-footer-heading">{footer.company}</h3>
+                  <div className="vp-footer-link-list">
+                    {v.footCompany.map((l, i_l) => (
+                      <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                    ))}
+                  </div>
                 </div>
+                <details className="vp-footer-disclosure vp-footer-links-mobile">
+                  <summary className="vp-footer-heading">{footer.company}</summary>
+                  <div className="vp-footer-link-list">
+                    {v.footCompany.map((l, i_l) => (
+                      <button key={`m-co-${i_l}`} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                    ))}
+                  </div>
+                </details>
               </div>
 
               <div className="vp-footer-col vp-footer-col--links">
-                <h3 className="vp-footer-heading">{footer.buyerHelp}</h3>
-                <div className="vp-footer-link-list">
-                  {v.footHelp.map((l, i_l) => (
-                    <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
-                  ))}
+                <div className="vp-footer-links-desktop">
+                  <h3 className="vp-footer-heading">{footer.buyerHelp}</h3>
+                  <div className="vp-footer-link-list">
+                    {v.footHelp.map((l, i_l) => (
+                      <button key={i_l} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                    ))}
+                  </div>
                 </div>
+                <details className="vp-footer-disclosure vp-footer-links-mobile">
+                  <summary className="vp-footer-heading">{footer.buyerHelp}</summary>
+                  <div className="vp-footer-link-list">
+                    {v.footHelp.map((l, i_l) => (
+                      <button key={`m-help-${i_l}`} type="button" onClick={l.open} className="vp-footer-link">{l.label}</button>
+                    ))}
+                  </div>
+                </details>
               </div>
 
               <div className="vp-footer-col vp-footer-col--contact">
                 <h3 className="vp-footer-heading">{footer.contact}</h3>
-                <div className="vp-footer-link-list">
-                  <span className="vp-footer-contact-item">INFO@VIVIDPOLY.COM</span>
-                  <span className="vp-footer-contact-item">+91 92136 26740</span>
+                <div className="vp-footer-link-list vp-footer-contact-list">
+                  <a href="mailto:info@vividpoly.com" className="vp-footer-link vp-footer-contact-item">
+                    info@vividpoly.com
+                  </a>
+                  <a href="tel:+919213626740" className="vp-footer-link vp-footer-contact-item">
+                    +91 92136 26740
+                  </a>
                 </div>
               </div>
             </div>
@@ -1599,30 +1585,29 @@ export default function VividPolyView() {
           title={enquiryModal?.title || 'Enquiry Form'}
           closeLabel={enquiryModal?.close || 'Close enquiry form'}
           onClose={closeEnquiryModal}
-          onSubmitSuccess={() => {
-            markEnquirySubmitted(v.pageTransitionKey);
-            setEnquiryModalOpen(false);
-          }}
+          onSubmitSuccess={handleEnquirySubmitSuccess}
           formProps={enquiryFormProps}
         />
-        {typeof document !== 'undefined'
-          && createPortal(
-            <VpEnquiryFab
-              label={fab?.label || 'Enquiry'}
-              mobileLabel={fab?.mobileLabel || 'Inquire'}
-              ariaLabel={fab?.ariaLabel || 'Open enquiry form'}
-              onClick={handleEnquiryFabClick}
-              hidden={
-                mobileNavOpen
-                || enquiryModalOpen
-                || v.showContact
-                || v.showCareers
-                || v.showAbout
-              }
-              active
-            />,
-            document.body,
-          )}
+        <VpToast
+          open={Boolean(enquiryToast)}
+          message={enquiryToast || ''}
+          onClose={dismissEnquiryToast}
+          tone="success"
+        />
+        <VpEnquiryFab
+          label={fab?.label || 'Enquiry'}
+          mobileLabel={fab?.mobileLabel || 'Inquire'}
+          ariaLabel={fab?.ariaLabel || 'Open enquiry form'}
+          onClick={handleEnquiryFabClick}
+          hidden={
+            mobileNavOpen
+            || enquiryModalOpen
+            || v.showContact
+            || v.showCareers
+            || v.showAbout
+          }
+          active
+        />
       </div>
   );
 }

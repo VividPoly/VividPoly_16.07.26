@@ -3,39 +3,23 @@
 import { useCallback, useEffect, useState } from 'react';
 import {
   applyTheme,
-  applyThemeWithTransition,
-  getSystemTheme,
-  persistTheme,
-  readStoredTheme,
   resolveTheme,
   type ThemeMode,
 } from '@/lib/theme';
 
+/** Theme API is light-only; toggle is a no-op that re-asserts light. */
 export function useTheme() {
   const [theme, setTheme] = useState<ThemeMode>('light');
 
   useEffect(() => {
+    applyTheme('light');
     setTheme(resolveTheme());
-
-    const media = window.matchMedia('(prefers-color-scheme: dark)');
-    const onChange = () => {
-      if (readStoredTheme()) return;
-      const next = getSystemTheme();
-      applyTheme(next);
-      setTheme(next);
-    };
-    media.addEventListener('change', onChange);
-    return () => media.removeEventListener('change', onChange);
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme((prev) => {
-      const next: ThemeMode = prev === 'dark' ? 'light' : 'dark';
-      persistTheme(next);
-      applyThemeWithTransition(next);
-      return next;
-    });
+    applyTheme('light');
+    setTheme('light');
   }, []);
 
-  return { theme, isDark: theme === 'dark', toggleTheme };
+  return { theme, isDark: false, toggleTheme };
 }

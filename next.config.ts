@@ -1,19 +1,20 @@
 import type { NextConfig } from "next";
 import os from "os";
 
-/** LAN IPs so phones on the same Wi‑Fi can load the dev preview. */
+/** LAN IPs so phones/tablets on the same Wi‑Fi can load the dev preview. */
 function getLanOrigins(): string[] {
-  const origins: string[] = [];
+  const origins = new Set<string>(["localhost", "127.0.0.1"]);
   const nets = os.networkInterfaces();
   for (const iface of Object.values(nets)) {
     if (!iface) continue;
     for (const cfg of iface) {
-      if (cfg.family === "IPv4" && !cfg.internal) {
-        origins.push(cfg.address);
+      const isV4 = cfg.family === "IPv4" || cfg.family === 4;
+      if (isV4 && !cfg.internal) {
+        origins.add(cfg.address);
       }
     }
   }
-  return origins;
+  return [...origins];
 }
 
 const nextConfig: NextConfig = {

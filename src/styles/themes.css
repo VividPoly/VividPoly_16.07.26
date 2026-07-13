@@ -2,7 +2,7 @@
 
 :root,
 :root[data-theme='light'] {
-  color-scheme: light;
+  color-scheme: light only;
   /* Brand palette */
   --vp-oxblood: #5c1014;
   --vp-crimson: #9e1b26;
@@ -191,8 +191,8 @@
   --vp-utility-icon-text: var(--vp-charcoal);
 }
 
-:root[data-theme='dark'] {
-  color-scheme: dark;
+:root[data-theme='dark'][data-vp-allow-dark='true'] {
+  color-scheme: light only;
   /* Brand literals stay fixed; only accent hues brighten slightly on dark UI. */
   --vp-oxblood: #8f1923;
   --vp-crimson: #c42e3a;

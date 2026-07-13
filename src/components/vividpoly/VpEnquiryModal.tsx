@@ -10,7 +10,7 @@ type VpEnquiryModalProps = {
   title: string;
   closeLabel: string;
   onClose: () => void;
-  onSubmitSuccess: () => void;
+  onSubmitSuccess: (message: string) => void;
   formProps: Omit<ContactEnquiryFormProps, 'variant' | 'onSubmitSuccess'>;
 };
 

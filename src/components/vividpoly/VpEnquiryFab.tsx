@@ -28,12 +28,10 @@ export default function VpEnquiryFab({
   const buttonRef = useRef<HTMLButtonElement>(null);
   const toneRef = useRef<FabTone>('on-light');
   const liftedRef = useRef(false);
-  const mobileRef = useRef(
-    typeof window !== 'undefined' && window.matchMedia(MOBILE_FAB_MQ).matches,
-  );
+  const mobileRef = useRef(false);
   const [tone, setTone] = useState<FabTone>('on-light');
   const [lifted, setLifted] = useState(false);
-  const [isMobile, setIsMobile] = useState(mobileRef.current);
+  const [isMobile, setIsMobile] = useState(false);
 
   const refreshFab = useCallback(() => {
     const button = buttonRef.current;

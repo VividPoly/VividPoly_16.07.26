@@ -63,7 +63,7 @@ export type ContactEnquiryFormProps = {
     message: (value: string) => void;
   };
   variant?: 'page' | 'modal';
-  onSubmitSuccess?: () => void;
+  onSubmitSuccess?: (message: string) => void;
 };
 
 type SubmitStatus = 'idle' | 'sending' | 'success' | 'error' | 'unavailable';
@@ -156,7 +156,6 @@ export default function VpContactEnquiryForm({
       }
 
       setSubmitStatus('success');
-      setStatusMessage(copy.submitSuccess);
       markEnquirySubmitted();
       onChange.name('');
       onChange.company('');
@@ -167,11 +166,12 @@ export default function VpContactEnquiryForm({
       onChange.enquiryType(enquiryProductTypes[0]?.label || 'General Query');
 
       if (isModal) {
-        window.setTimeout(() => {
-          onSubmitSuccess?.();
-        }, 1600);
+        // Modal success is shown as a toast after the overlay closes.
+        setStatusMessage('');
+        onSubmitSuccess?.(copy.submitSuccess);
       } else {
-        onSubmitSuccess?.();
+        setStatusMessage(copy.submitSuccess);
+        onSubmitSuccess?.(copy.submitSuccess);
       }
     } catch {
       setSubmitStatus('error');
@@ -282,7 +282,7 @@ export default function VpContactEnquiryForm({
           value={values.message}
           onChange={(event) => onChange.message(event.target.value)}
           className="vp-quote-contact-input vp-quote-contact-input--textarea"
-          rows={5}
+          rows={isModal ? 3 : 5}
           disabled={isSending}
         />
       </div>
