@@ -12354,9 +12354,9 @@ img.vp-wordmark--footer {
   scroll-snap-align: none;
 }
 
-/* Mobile home: calmer fold, tighter rhythm, less repeated chrome. */
-@media (max-width: 991px) {
-  /* Mobile home hero: copy + full-width CTAs, then intentional photo band. */
+/* Phone home: calmer fold, tighter rhythm, less repeated chrome. */
+@media (max-width: 767px) {
+  /* Phone home hero: copy + full-width CTAs, then intentional photo band. */
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-inner--split {
     gap: 22px;
     padding-block: 16px 16px;
@@ -12364,7 +12364,7 @@ img.vp-wordmark--footer {
 
   .vp-home .vp-hero:not(.vp-careers-hero) {
     padding-bottom: 0;
-    /* Mobile: content-height hero + short photo band; next section may peek. */
+    /* Phone: content-height hero + short photo band; next section may peek. */
   }
 
   .vp-home .vp-hero-title {
@@ -12440,7 +12440,10 @@ img.vp-wordmark--footer {
   .vp-home .vp-hero:not(.vp-careers-hero):not(.vp-hero--fold) .vp-hero-visual-placeholder-img {
     object-fit: cover;
   }
+}
 
+/* Tablet + phone home: shared section rhythm below the hero. */
+@media (max-width: 991px) {
   .vp-home .vp-home-intro-inner {
     padding-block: 0;
   }

@@ -675,22 +675,75 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18) !important;
 }
 
-/* Neutralize legacy split-fold padding that stacked on top of the compact band. */
-@media (min-width: 992px) {
+/* Full-fold diagonal hero for tablet and desktop. */
+@media (min-width: 768px) {
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-copy {
     padding-block: 0;
   }
 
-  .vp-home > .vp-hero:not(.vp-careers-hero) {
+  .vp-home > .vp-hero:not(.vp-careers-hero),
+  .vp-home > .vp-hero.vp-hero--fold {
     height: 100svh !important;
     max-height: 100svh !important;
     min-height: 100svh !important;
     overflow: hidden !important;
   }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
+    position: absolute !important;
+    inset: 0 !important;
+    flex: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    clip-path: polygon(54% 0, 100% 0, 100% 100%, 64% 100%) !important;
+    background-color: #d8d8d8 !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
+    padding-top: calc(var(--vp-header-offset) + clamp(12px, 2.4vh, 28px)) !important;
+    padding-bottom: clamp(28px, 5vh, 56px);
+    padding-left: max(
+      var(--vp-pad-x-start),
+      calc((100vw - var(--vp-container-max, 1140px)) / 2 + var(--vp-pad-x-start))
+    );
+    padding-right: clamp(20px, 42vw, 46vw);
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-brand {
+    display: block;
+    margin-bottom: clamp(14px, 2.2vh, 22px);
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-trust--certs-only {
+    order: unset;
+    margin-top: 0;
+    margin-bottom: clamp(18px, 2.6vh, 28px);
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
+    order: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    gap: 12px 14px;
+    margin: 0;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-whatsapp,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary--lg,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary--lg {
+    width: auto;
+  }
 }
 
-@media (max-width: 991px) {
-  /* Mobile home hero: copy band + short cropped photo; next section may peek. */
+@media (max-width: 767px) {
+  /* Phone-only: copy band + short cropped photo; next section may peek. */
   .vp-home > .vp-hero:not(.vp-careers-hero),
   .vp-home > .vp-hero.vp-hero--fold {
     height: auto !important;
