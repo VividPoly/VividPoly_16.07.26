@@ -7,60 +7,60 @@
   --vp-oxblood: #5c1014;
   --vp-crimson: #9e1b26;
   --vp-ember: #c0392e;
-  --vp-charcoal: #1c1a19;
-  --vp-sand: #d9cfc0;
-  --vp-cream: #f6f1e8;
-  --vp-gold: #b4934a;
+  --vp-charcoal: #111111;
+  --vp-sand: #ffffff;
+  --vp-cream: #ffffff;
+  --vp-gold: #d21e2b;
   --vp-white: #ffffff;
 
-  /* Neutrals and surfaces */
-  --vp-slate: #1c1a19;
-  --vp-mist: #b8a99a;
-  --vp-fog: #d9cfc0;
-  --vp-paper: #f6f1e8;
-  --vp-ink: #1c1a19;
-  --vp-ink-muted: #1c1a19;
-  --vp-black: #1c1a19;
+  /* Neutrals and surfaces: black / white / red only (no grey or gold). */
+  --vp-slate: #111111;
+  --vp-mist: #111111;
+  --vp-fog: color-mix(in srgb, #111111 12%, #ffffff);
+  --vp-paper: #ffffff;
+  --vp-ink: #111111;
+  --vp-ink-muted: #111111;
+  --vp-black: #111111;
   --vp-pure-black: #000000;
   --vp-mask-opaque: #000000;
 
-  --vp-grey-900: #1c1a19;
-  --vp-grey-800: #1c1a19;
-  --vp-grey-700: #1c1a19;
-  --vp-grey-600: #1c1a19;
-  --vp-grey-500: #1c1a19;
-  --vp-grey-400: var(--vp-mist);
-  --vp-grey-300: var(--vp-sand);
-  --vp-grey-200: var(--vp-sand);
-  --vp-grey-100: var(--vp-sand);
-  --vp-grey-50: var(--vp-cream);
+  --vp-grey-900: #111111;
+  --vp-grey-800: #111111;
+  --vp-grey-700: #111111;
+  --vp-grey-600: #111111;
+  --vp-grey-500: #111111;
+  --vp-grey-400: #111111;
+  --vp-grey-300: color-mix(in srgb, #111111 12%, #ffffff);
+  --vp-grey-200: color-mix(in srgb, #111111 8%, #ffffff);
+  --vp-grey-100: #ffffff;
+  --vp-grey-50: #ffffff;
 
-  --vp-bg: #f6f1e8;
-  --vp-bg-subtle: #d9cfc0;
-  --vp-bg-muted: #d9cfc0;
+  --vp-bg: #ffffff;
+  --vp-bg-subtle: #ffffff;
+  --vp-bg-muted: #ffffff;
   --vp-bg-elevated: var(--vp-white);
-  --vp-bg-dark: #1c1a19;
+  --vp-bg-dark: #000000;
 
-  --vp-text-primary: #1c1a19;
-  --vp-text-secondary: color-mix(in srgb, var(--vp-charcoal) 78%, transparent);
-  --vp-text-muted: color-mix(in srgb, var(--vp-charcoal) 68%, transparent);
+  --vp-text-primary: #111111;
+  --vp-text-secondary: #111111;
+  --vp-text-muted: #111111;
   --vp-accent-on-subtle: var(--vp-oxblood);
   --vp-text-inverse: var(--vp-white);
   --vp-text-on-dark: var(--vp-white);
-  --vp-text-on-dark-muted: var(--vp-sand);
+  --vp-text-on-dark-muted: rgba(255, 255, 255, 0.92);
 
   --vp-nav-bar-bg: #000000;
-  --vp-utility-bar-bg: var(--vp-white);
-  --vp-utility-bar-text: var(--vp-charcoal);
-  --vp-utility-bar-text-muted: color-mix(in srgb, var(--vp-charcoal) 72%, var(--vp-mist));
-  --vp-utility-bar-border: var(--vp-border-subtle);
+  --vp-utility-bar-bg: #000000;
+  --vp-utility-bar-text: var(--vp-white);
+  --vp-utility-bar-text-muted: rgba(255, 255, 255, 0.92);
+  --vp-utility-bar-border: rgba(255, 255, 255, 0.14);
 
   --vp-accent: var(--vp-oxblood);
   --vp-accent-hover: var(--vp-ember);
   --vp-accent-secondary: var(--vp-crimson);
   --vp-accent-text: var(--vp-oxblood);
   --vp-accent-subtle: color-mix(in srgb, var(--vp-gold) 10%, transparent);
-  --vp-accent-border: color-mix(in srgb, var(--vp-gold) 22%, var(--vp-fog));
+  --vp-accent-border: color-mix(in srgb, var(--vp-gold) 22%, #ffffff);
   --vp-accent-on-subtle: var(--vp-oxblood);
 
   --vp-border: color-mix(in srgb, var(--vp-charcoal) 8%, transparent);
@@ -83,9 +83,9 @@
   --vp-success-surface: #ecfdf3;
 
   --vp-footer-bg: var(--vp-oxblood);
-  --vp-footer-text: #f0e8dc;
-  --vp-footer-muted: #e4d8c8;
-  --vp-footer-about-text: #f5efe6;
+  --vp-footer-text: #ffffff;
+  --vp-footer-muted: rgba(255, 255, 255, 0.92);
+  --vp-footer-about-text: #ffffff;
   --vp-footer-divider: var(--vp-crimson);
 
   --vp-chrome-band-gradient: linear-gradient(
@@ -152,10 +152,10 @@
   --vp-dropdown-shadow-lift: rgba(0, 0, 0, 0.08);
   --vp-card-shadow-soft: rgba(14, 42, 71, 0.06);
   --vp-card-shadow-lift: rgba(28, 26, 25, 0.12);
-  --vp-cta-shadow: rgba(180, 147, 74, 0.16);
-  --vp-cta-shadow-hover: rgba(180, 147, 74, 0.3);
-  --vp-cta-shadow-secondary: rgba(180, 147, 74, 0.32);
-  --vp-cta-shadow-ghost: rgba(180, 147, 74, 0.24);
+  --vp-cta-shadow: rgba(210, 30, 43, 0.16);
+  --vp-cta-shadow-hover: rgba(210, 30, 43, 0.3);
+  --vp-cta-shadow-secondary: rgba(210, 30, 43, 0.28);
+  --vp-cta-shadow-ghost: rgba(210, 30, 43, 0.22);
   --vp-hero-visual-shadow: rgba(0, 0, 0, 0.22);
   --vp-hero-visual-shadow-soft: rgba(0, 0, 0, 0.2);
   --vp-accent-tint-shadow: rgba(92, 16, 20, 0.08);
@@ -197,47 +197,47 @@
   --vp-oxblood: #8f1923;
   --vp-crimson: #c42e3a;
   --vp-ember: #e04a3d;
-  --vp-charcoal: #1c1a19;
-  --vp-sand: #4a433c;
-  --vp-cream: #f6f1e8;
-  --vp-gold: #c9a85e;
+  --vp-charcoal: #000000;
+  --vp-sand: #111111;
+  --vp-cream: #ffffff;
+  --vp-gold: #d21e2b;
   --vp-white: #ffffff;
 
   /* Neutrals and surfaces */
-  --vp-slate: #e8e2d8;
-  --vp-mist: #9a8f82;
-  --vp-fog: #3a3530;
-  --vp-paper: #1a1816;
-  --vp-ink: #e8e2d8;
-  --vp-ink-muted: #b8a99a;
-  --vp-black: #0a0908;
+  --vp-slate: #ffffff;
+  --vp-mist: #ffffff;
+  --vp-fog: #111111;
+  --vp-paper: #000000;
+  --vp-ink: #ffffff;
+  --vp-ink-muted: #ffffff;
+  --vp-black: #000000;
   --vp-pure-black: #000000;
   --vp-mask-opaque: #000000;
 
-  --vp-grey-900: #e8e2d8;
-  --vp-grey-800: #d4cdc2;
-  --vp-grey-700: #b8a99a;
-  --vp-grey-600: #9a8f82;
-  --vp-grey-500: #7a7168;
-  --vp-grey-400: var(--vp-mist);
-  --vp-grey-300: var(--vp-sand);
-  --vp-grey-200: var(--vp-sand);
-  --vp-grey-100: #2a2622;
-  --vp-grey-50: #1a1816;
+  --vp-grey-900: #ffffff;
+  --vp-grey-800: #ffffff;
+  --vp-grey-700: #ffffff;
+  --vp-grey-600: #ffffff;
+  --vp-grey-500: #ffffff;
+  --vp-grey-400: #ffffff;
+  --vp-grey-300: #111111;
+  --vp-grey-200: #111111;
+  --vp-grey-100: #111111;
+  --vp-grey-50: #000000;
 
-  --vp-bg: #121110;
-  --vp-bg-subtle: #1a1816;
-  --vp-bg-muted: #242018;
-  --vp-bg-elevated: #1e1c1a;
-  --vp-bg-dark: #0a0908;
+  --vp-bg: #000000;
+  --vp-bg-subtle: #111111;
+  --vp-bg-muted: #111111;
+  --vp-bg-elevated: #111111;
+  --vp-bg-dark: #000000;
 
-  --vp-text-primary: #e8e2d8;
-  --vp-text-secondary: #d4cdc2;
-  --vp-text-muted: #c4bcb0;
-  --vp-accent-on-subtle: #f5c4bc;
-  --vp-text-inverse: #121110;
-  --vp-text-on-dark: #f6f1e8;
-  --vp-text-on-dark-muted: #b8a99a;
+  --vp-text-primary: #ffffff;
+  --vp-text-secondary: #ffffff;
+  --vp-text-muted: #ffffff;
+  --vp-accent-on-subtle: #ffffff;
+  --vp-text-inverse: #000000;
+  --vp-text-on-dark: #ffffff;
+  --vp-text-on-dark-muted: rgba(255, 255, 255, 0.92);
 
   --vp-nav-bar-bg: #000000;
   --vp-utility-bar-bg: #1a1816;

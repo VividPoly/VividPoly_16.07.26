@@ -6,16 +6,16 @@
   color-scheme: light only;
   --knack-brand: #d21e2b;
   --knack-brand-rgb: 210, 30, 43;
-  /* Deeper brand red on hover (not black); gold glow handles lift. */
+  /* Deeper brand red on hover; red lift shadow (no gold). */
   --knack-brand-hover: #b51824;
   --knack-brand-10: rgba(210, 30, 43, 0.1);
   --knack-brand-60: rgba(210, 30, 43, 0.6);
   --knack-brand-90: rgba(210, 30, 43, 0.9);
-  /* Soft style accent for eyebrows, text links, tags, and hovers. */
-  --knack-accent: #b4934a;
-  --knack-accent-rgb: 180, 147, 74;
-  --knack-accent-soft: rgba(180, 147, 74, 0.1);
-  --knack-accent-hover: #9a7c3e;
+  /* Accents use brand red only (no gold / warm grey). */
+  --knack-accent: #d21e2b;
+  --knack-accent-rgb: 210, 30, 43;
+  --knack-accent-soft: rgba(210, 30, 43, 0.1);
+  --knack-accent-hover: #b51824;
   --knack-heading: #111111;
   --knack-text: #111111;
   --knack-body: #111111;
@@ -23,16 +23,16 @@
   --knack-nav-muted: #111111;
   --knack-white: #ffffff;
   --knack-black: #111111;
-  --knack-charcoal: #222222;
-  --knack-topbar: #2a2a2a;
+  --knack-charcoal: #111111;
+  --knack-topbar: #000000;
   --knack-surface-page: #ffffff;
-  --knack-surface-section: #f9f9f9;
-  --knack-surface-alt: #f7f7f7;
-  --knack-border: #ececec;
-  --knack-border-light: #eeeeee;
-  /* Neutral outline secondary: medium ink, clearly visible on white. */
-  --knack-secondary-ink: #555555;
-  --knack-secondary-border: #6a6a6a;
+  --knack-surface-section: #ffffff;
+  --knack-surface-alt: #ffffff;
+  --knack-border: color-mix(in srgb, var(--knack-brand) 16%, #ffffff);
+  --knack-border-light: color-mix(in srgb, var(--knack-brand) 10%, #ffffff);
+  /* Outline secondary: black on white (no mid greys). */
+  --knack-secondary-ink: #111111;
+  --knack-secondary-border: #111111;
   --knack-radius-card: 5px;
   --knack-radius-pill: 4px;
   --knack-radius-nav-cta: 4px;
@@ -97,14 +97,14 @@
   --vp-accent: var(--knack-brand);
   --vp-accent-hover: var(--knack-brand-hover);
   --vp-accent-secondary: var(--knack-brand);
-  /* Text accents stay brand; gold is for strokes, focus rings, and select fills. */
+  /* Text accents and strokes stay brand red. */
   --vp-accent-text: var(--knack-brand);
   --vp-accent-subtle: var(--knack-accent-soft);
-  --vp-accent-border: color-mix(in srgb, var(--knack-accent) 28%, var(--knack-border-light));
+  --vp-accent-border: color-mix(in srgb, var(--knack-brand) 28%, var(--knack-white));
   --vp-accent-on-subtle: var(--knack-brand);
-  --vp-surface-accent-hover: color-mix(in srgb, var(--knack-accent) 8%, var(--knack-white));
-  --vp-sort-menu-border: color-mix(in srgb, var(--knack-accent) 28%, transparent);
-  --vp-sort-menu-focus: color-mix(in srgb, var(--knack-accent) 40%, transparent);
+  --vp-surface-accent-hover: color-mix(in srgb, var(--knack-brand) 8%, var(--knack-white));
+  --vp-sort-menu-border: color-mix(in srgb, var(--knack-brand) 28%, transparent);
+  --vp-sort-menu-focus: color-mix(in srgb, var(--knack-brand) 40%, transparent);
 
   --vp-border: var(--knack-border);
   --vp-border-strong: var(--knack-border-light);
@@ -116,11 +116,11 @@
   --vp-field-fill: var(--knack-white);
   --vp-focus-ring: 0 0 0 3px rgba(var(--knack-accent-rgb), 0.16);
 
-  --vp-footer-bg: var(--knack-black);
+  --vp-footer-bg: var(--knack-brand);
   --vp-footer-text: var(--knack-white);
-  --vp-footer-muted: rgba(255, 255, 255, 0.72);
-  --vp-footer-about-text: rgba(255, 255, 255, 0.85);
-  --vp-footer-divider: rgba(255, 255, 255, 0.1);
+  --vp-footer-muted: rgba(255, 255, 255, 0.92);
+  --vp-footer-about-text: rgba(255, 255, 255, 0.92);
+  --vp-footer-divider: rgba(255, 255, 255, 0.22);
 
   --vp-chrome-band-gradient: var(--knack-surface-section);
   --vp-hero-gradient: var(--knack-white);
@@ -139,14 +139,14 @@
   --vp-shadow-md: var(--knack-shadow-card);
   --vp-shadow-lg: var(--knack-shadow-card-hover);
   --vp-shadow-accent: var(--knack-shadow-card);
-  --vp-card-hover-border: color-mix(in srgb, var(--knack-accent) 32%, var(--knack-border));
+  --vp-card-hover-border: color-mix(in srgb, var(--knack-brand) 32%, var(--knack-white));
   --vp-card-hover-shadow: var(--knack-shadow-card-hover);
-  /* Soft gold lift for CTA / secondary button hovers. */
-  --knack-cta-shadow-gold: 0 12px 32px rgba(var(--knack-accent-rgb), 0.38);
-  --vp-cta-shadow: rgba(var(--knack-accent-rgb), 0.16);
-  --vp-cta-shadow-hover: rgba(var(--knack-accent-rgb), 0.3);
-  --vp-cta-shadow-secondary: rgba(var(--knack-accent-rgb), 0.32);
-  --vp-cta-shadow-ghost: rgba(var(--knack-accent-rgb), 0.24);
+  /* Soft red lift for CTA / secondary button hovers. */
+  --knack-cta-shadow-gold: 0 12px 32px rgba(var(--knack-brand-rgb), 0.28);
+  --vp-cta-shadow: rgba(var(--knack-brand-rgb), 0.16);
+  --vp-cta-shadow-hover: rgba(var(--knack-brand-rgb), 0.3);
+  --vp-cta-shadow-secondary: rgba(var(--knack-brand-rgb), 0.28);
+  --vp-cta-shadow-ghost: rgba(var(--knack-brand-rgb), 0.22);
 
   --vp-nav-text: var(--knack-text);
   --vp-nav-text-muted: var(--knack-nav-muted);
@@ -156,7 +156,7 @@
   --vp-nav-surface: var(--knack-white);
   --vp-nav-chrome-shadow: var(--knack-shadow-nav);
 
-  --vp-link-hover-accent: var(--knack-accent);
+  --vp-link-hover-accent: var(--knack-brand);
   --vp-placeholder-gradient-end: var(--knack-surface-section);
 
   /* Typography */
@@ -246,22 +246,22 @@
 :root[data-theme='dark'][data-vp-allow-dark='true'] {
   --knack-brand: #d21e2b;
   --knack-brand-rgb: 210, 30, 43;
-  --knack-accent: #c9a85e;
-  --knack-accent-rgb: 201, 168, 94;
-  --knack-accent-soft: rgba(201, 168, 94, 0.12);
-  --knack-accent-hover: #d4b56e;
-  --knack-heading: #f5f5f5;
-  --knack-text: #e8e8e8;
-  --knack-body: #aaaaaa;
-  --knack-muted: #888888;
-  --knack-surface-page: #1a1a1a;
-  --knack-surface-section: #222222;
-  --knack-surface-alt: #2a2a2a;
-  --knack-border: #333333;
-  --knack-border-light: #3a3a3a;
-  --knack-secondary-ink: #d0d0d0;
-  --knack-secondary-border: #8a8a8a;
-  --knack-topbar: #111111;
+  --knack-accent: #d21e2b;
+  --knack-accent-rgb: 210, 30, 43;
+  --knack-accent-soft: rgba(210, 30, 43, 0.16);
+  --knack-accent-hover: #ff4d5a;
+  --knack-heading: #ffffff;
+  --knack-text: #ffffff;
+  --knack-body: #ffffff;
+  --knack-muted: #ffffff;
+  --knack-surface-page: #000000;
+  --knack-surface-section: #111111;
+  --knack-surface-alt: #111111;
+  --knack-border: #ffffff;
+  --knack-border-light: color-mix(in srgb, #ffffff 18%, #000000);
+  --knack-secondary-ink: #ffffff;
+  --knack-secondary-border: #ffffff;
+  --knack-topbar: #000000;
 
   --vp-oxblood: var(--knack-brand);
   --vp-crimson: var(--knack-brand);
@@ -285,14 +285,14 @@
   --vp-text-inverse: #111111;
   --vp-nav-bar-bg: #1e1e1e;
   --vp-utility-bar-bg: var(--knack-topbar);
-  --vp-footer-bg: #111111;
-  --vp-chrome-band-gradient: #111111;
+  --vp-footer-bg: var(--knack-brand);
+  --vp-chrome-band-gradient: var(--knack-brand);
   --vp-hero-gradient: #111111;
   --vp-border: var(--knack-border);
   --vp-border-subtle: var(--knack-border-light);
   --vp-nav-text: var(--knack-text);
   --vp-nav-border: var(--knack-border-light);
-  --vp-field-fill: #2a2a2a;
+  --vp-field-fill: #111111;
   --vp-shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.35);
   --vp-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45);
   --vp-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.55);

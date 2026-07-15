@@ -343,9 +343,9 @@ button.vp-related-product {
   width: 100%;
   max-width: none;
   box-sizing: border-box;
-  background: var(--vp-chrome-band-gradient);
+  background: var(--vp-footer-bg, var(--knack-brand));
   color: var(--vp-footer-text);
-  border-top: 1px solid var(--vp-chrome-border);
+  border-top: 1px solid var(--vp-footer-divider, rgba(255, 255, 255, 0.22));
 }
 
 /* Crimson bands (hero, pre-footer CTA, footer) share one gradient language. */
@@ -355,8 +355,8 @@ button.vp-related-product {
 }
 
 .vp-final-cta-band {
-  background: var(--vp-paper);
-  color: var(--vp-text-primary);
+  background: var(--knack-white, #ffffff);
+  color: var(--knack-heading, #111111);
 }
 
 .vp-main:has(.vp-final-cta-band) + .vp-site-footer {
@@ -1415,7 +1415,7 @@ button {
 
 /* Open positions: Kaixiang SERVICES centered head + equal cards */
 .vp-careers-platforms {
-  background: var(--knack-surface-section, #f9f9f9);
+  background: var(--knack-surface-section, #ffffff);
   border-block: 1px solid var(--knack-border-light, #eee);
   padding-block: var(--knack-section-y, 90px);
 }
@@ -1477,7 +1477,7 @@ button {
   color: var(--knack-heading, #111);
   font-size: 14px;
   line-height: 1.65;
-  opacity: 0.78;
+  opacity: 1;
   text-wrap: pretty;
 }
 
@@ -1663,7 +1663,7 @@ button {
   border-color: var(--knack-brand, #d21e2b);
   color: var(--knack-white, #fff);
   transform: translateY(-3px);
-  box-shadow: var(--knack-cta-shadow-gold, 0 12px 32px rgba(180, 147, 74, 0.38));
+  box-shadow: var(--knack-cta-shadow-gold, 0 12px 32px rgba(210, 30, 43, 0.28));
 }
 
 .vp-careers-cta .vp-cta-primary {
@@ -2320,7 +2320,7 @@ button {
   }
 
   .vp-enquiry-fab--circle:focus-visible {
-    outline: 2px solid color-mix(in srgb, var(--knack-accent, #b4934a) 70%, transparent);
+    outline: 2px solid color-mix(in srgb, var(--knack-accent, #d21e2b) 70%, transparent);
     outline-offset: 3px;
   }
 }
@@ -3123,7 +3123,7 @@ button.vp-top-utility-link {
   justify-content: center;
   width: 16px;
   height: 16px;
-  color: var(--vp-gold);
+  color: var(--vp-white);
   flex: none;
 }
 
@@ -3140,7 +3140,7 @@ button.vp-top-utility-link {
 }
 
 .vp-top-utility-link--whatsapp .vp-top-utility-link-icon {
-  color: var(--vp-gold);
+  color: var(--vp-white);
 }
 
 /* Email compose split pane */
@@ -3591,7 +3591,7 @@ a.vp-header-nav-link:focus-visible {
 }
 
 .vp-cert-badge-ring {
-  color: var(--vp-gold);
+  color: var(--knack-brand, var(--vp-oxblood));
 }
 
 .vp-header-menu-icon {
@@ -4819,17 +4819,17 @@ a.vp-mobile-drawer-link {
 }
 
 .vp-buyer-nav-btn--ghost {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
   width: 112px;
   justify-self: start;
 }
 
 .vp-buyer-nav-btn--ghost:hover {
   background: var(--knack-white, #fff);
-  border-color: color-mix(in srgb, var(--vp-gold) 55%, var(--knack-secondary-border, #6a6a6a));
-  color: var(--knack-secondary-ink, #555);
+  border-color: color-mix(in srgb, var(--vp-gold) 55%, var(--knack-secondary-border, #111111));
+  color: var(--knack-secondary-ink, #111);
   transform: translateY(-2px);
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--vp-gold) 14%, transparent),
@@ -6043,9 +6043,9 @@ img.vp-wordmark--footer {
 
 /* Secondary CTA: medium outline, consistent sitewide */
 .vp-cta-secondary {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
   font-family: var(--vp-font-body);
   font-weight: var(--vp-weight-bold);
   font-size: var(--vp-text-button);
@@ -6059,8 +6059,8 @@ img.vp-wordmark--footer {
 
 .vp-cta-secondary:hover:not(:disabled) {
   background: var(--knack-white, #fff);
-  border-color: color-mix(in srgb, var(--vp-gold, #b4934a) 55%, var(--knack-secondary-border, #6a6a6a));
-  color: var(--knack-secondary-ink, #555);
+  border-color: color-mix(in srgb, var(--vp-gold, #d21e2b) 55%, var(--knack-secondary-border, #111111));
+  color: var(--knack-secondary-ink, #111);
   transform: translateY(-3px);
   box-shadow: 0 12px 32px var(--vp-cta-shadow-ghost);
 }
@@ -6662,15 +6662,15 @@ img.vp-wordmark--footer {
 }
 
 .vp-catalogue-card-btn--ghost {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
 }
 
 .vp-catalogue-card-btn--ghost:hover {
   background: var(--knack-white, #fff);
-  border-color: color-mix(in srgb, var(--vp-gold) 55%, var(--knack-secondary-border, #6a6a6a));
-  color: var(--knack-secondary-ink, #555);
+  border-color: color-mix(in srgb, var(--vp-gold) 55%, var(--knack-secondary-border, #111111));
+  color: var(--knack-secondary-ink, #111);
   transform: translateY(-3px);
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--vp-gold) 14%, transparent),
@@ -7337,7 +7337,7 @@ img.vp-wordmark--footer {
 }
 
 .vp-sort-menu--catalogue.vp-sort-menu--subtle::-webkit-scrollbar-thumb:hover {
-  background: color-mix(in srgb, var(--vp-scrollbar-thumb-hover, #888) 70%, transparent);
+  background: color-mix(in srgb, var(--vp-scrollbar-thumb-hover, #111) 70%, transparent);
 }
 
 .vp-sort-label--guided {
@@ -8418,7 +8418,7 @@ img.vp-wordmark--footer {
 }
 
 .vp-cert-badge-ring {
-  color: var(--vp-gold);
+  color: var(--knack-brand, var(--vp-oxblood));
 }
 
   .vp-logo--nav,
@@ -10271,9 +10271,9 @@ img.vp-wordmark--footer {
 }
 
 .vp-checkout-btn-secondary {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
 }
 
 .vp-checkout-success-icon {
@@ -11489,15 +11489,15 @@ img.vp-wordmark--footer {
 }
 
 .vp-quote-btn-secondary {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
 }
 
 .vp-quote-btn-secondary:hover {
   background: var(--knack-white, #fff);
-  border-color: color-mix(in srgb, var(--vp-gold, #b4934a) 55%, var(--knack-secondary-border, #6a6a6a));
-  color: var(--knack-secondary-ink, #555);
+  border-color: color-mix(in srgb, var(--vp-gold, #d21e2b) 55%, var(--knack-secondary-border, #111111));
+  color: var(--knack-secondary-ink, #111);
   transform: translateY(-3px);
   box-shadow: 0 12px 32px var(--vp-cta-shadow-ghost);
 }

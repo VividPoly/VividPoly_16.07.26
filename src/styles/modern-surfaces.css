@@ -246,13 +246,13 @@
 
 /* ── Ghost / secondary outline buttons: shared medium stroke ── */
 .vp-catalogue-card-btn--ghost {
-  border: 1.5px solid var(--knack-secondary-border, #6a6a6a);
+  border: 1.5px solid var(--knack-secondary-border, #111111);
   background: var(--knack-white, #fff);
-  color: var(--knack-secondary-ink, #555);
+  color: var(--knack-secondary-ink, #111);
 }
 
 .vp-catalogue-card-btn--ghost:hover {
-  border-color: color-mix(in srgb, var(--vp-gold, #b4934a) 55%, var(--knack-secondary-border, #6a6a6a));
+  border-color: color-mix(in srgb, var(--vp-gold, #d21e2b) 55%, var(--knack-secondary-border, #111111));
   background: var(--knack-white, #fff);
 }
 

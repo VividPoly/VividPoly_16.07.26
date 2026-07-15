@@ -385,7 +385,7 @@
 .vp-header-nav-btn--active,
 .vp-header-nav-btn[aria-expanded='true'] {
   color: var(--knack-brand);
-  border-bottom-color: var(--knack-accent);
+  border-bottom-color: var(--knack-brand);
 }
 
 .vp-header-nav-btn .vp-header-nav-caret,
@@ -474,7 +474,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-color: #d8d8d8;
+  background-color: #111111;
   clip-path: polygon(54% 0, 100% 0, 100% 100%, 64% 100%);
   overflow: hidden;
 }
@@ -698,7 +698,7 @@
     max-height: none !important;
     margin: 0 !important;
     clip-path: polygon(54% 0, 100% 0, 100% 100%, 64% 100%) !important;
-    background-color: #d8d8d8 !important;
+    background-color: #111111 !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner,
@@ -775,7 +775,7 @@
     border: 0 !important;
     border-top: 0 !important;
     line-height: 0;
-    background-color: #d8d8d8 !important;
+    background-color: #111111 !important;
     overflow: hidden !important;
   }
 
@@ -921,7 +921,7 @@
 
 .vp-final-cta-band,
 .vp-chrome-band {
-  background: var(--knack-surface-section);
+  background: var(--knack-white) !important;
   color: var(--knack-heading);
   border-top: 1px solid var(--knack-border-light);
   border-bottom: 1px solid var(--knack-border-light);
@@ -1157,10 +1157,10 @@
   line-height: 1.7;
 }
 
-/* ── Footer (#111, light copy on dark) ── */
+/* ── Footer (brand red, white copy) ── */
 .vp-site-footer {
-  background: var(--knack-black);
-  color: rgba(255, 255, 255, 0.72);
+  background: var(--knack-brand);
+  color: rgba(255, 255, 255, 0.92);
   padding: 60px 0 20px;
 }
 
@@ -1195,19 +1195,20 @@
 }
 
 .vp-site-footer a:hover {
-  color: var(--knack-brand);
+  color: var(--knack-white);
 }
 
 .vp-footer-social-link {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: #333333;
+  background: rgba(255, 255, 255, 0.16);
   transition: background 0.3s ease;
 }
 
 .vp-footer-social-link:hover {
-  background: var(--knack-brand);
+  background: var(--knack-white);
+  color: var(--knack-brand);
 }
 
 /* ── Forms ── */
@@ -1565,7 +1566,7 @@ a:hover {
 }
 
 .vp-home-intro-highlight-label {
-  color: var(--knack-muted, #888);
+  color: var(--knack-muted, #111111);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -2113,7 +2114,7 @@ a:hover {
 }
 
 .vp-use-section-view-all:hover {
-  color: var(--knack-accent, #b4934a);
+  color: var(--knack-accent, #d21e2b);
 }
 
 @media (max-width: 991px) {
@@ -2333,7 +2334,7 @@ a:hover {
 }
 
 .vp-prod-carousel--knack-arrow:focus-visible {
-  outline: 2px solid color-mix(in srgb, var(--knack-accent, #b4934a) 70%, transparent);
+  outline: 2px solid color-mix(in srgb, var(--knack-accent, #d21e2b) 70%, transparent);
   outline-offset: 2px;
 }
 
@@ -2388,7 +2389,7 @@ a:hover {
 }
 
 .vp-prod-carousel--knack-dot:focus-visible {
-  outline: 2px solid color-mix(in srgb, var(--knack-accent, #b4934a) 70%, transparent);
+  outline: 2px solid color-mix(in srgb, var(--knack-accent, #d21e2b) 70%, transparent);
   outline-offset: 2px;
 }
 
@@ -2439,7 +2440,7 @@ a:hover {
 }
 
 .vp-prod-section-view-all:hover {
-  color: var(--knack-accent, #b4934a);
+  color: var(--knack-accent, #d21e2b);
 }
 
 .vp-prod-card--knack {
@@ -3571,11 +3572,11 @@ a:hover {
   text-wrap: pretty;
 }
 
-/* ── About enquire: Knack-style centered dark CTA band ── */
+/* ── About enquire: centered light CTA band ── */
 .vp-about-enquire {
-  background: var(--knack-black);
+  background: var(--knack-white);
   padding-block: var(--knack-section-y);
-  border-top: 0;
+  border-top: 1px solid var(--knack-border-light);
 }
 
 .vp-about-enquire-inner {
@@ -3593,7 +3594,7 @@ a:hover {
 
 .vp-about-enquire-eyebrow {
   margin: 0 0 var(--vp-type-label-gap, 8px);
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--knack-brand);
   font-family: var(--knack-font);
   font-size: 13px;
   font-weight: 600;
@@ -3604,7 +3605,7 @@ a:hover {
 .vp-about-enquire-title {
   margin: 0 0 var(--vp-type-heading-gap, 16px);
   max-width: min(100%, 38rem);
-  color: var(--knack-white) !important;
+  color: var(--knack-heading) !important;
   font-family: var(--knack-font);
   font-size: clamp(28px, 3.4vw, 42px);
   font-weight: 600;
@@ -3615,7 +3616,7 @@ a:hover {
 .vp-about-enquire-body {
   margin: 0;
   max-width: min(100%, 36rem);
-  color: rgba(255, 255, 255, 0.82) !important;
+  color: var(--knack-heading) !important;
   font-family: var(--knack-font);
   font-size: 15px;
   line-height: 1.7;
@@ -3645,7 +3646,7 @@ a:hover {
   box-shadow: var(--knack-cta-shadow-gold);
 }
 
-/* Dark CTA already separates About from the footer */
+/* Light CTA separates About from the footer */
 .vp-about-page + .vp-site-footer,
 .vp-main:has(.vp-about-page) + .vp-site-footer {
   border-top: 0;
@@ -3780,7 +3781,7 @@ a:hover {
     border-radius: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
-    color: #70798b;
+    color: #111111;
     overflow: visible;
   }
 
@@ -3840,7 +3841,7 @@ a:hover {
   .vp-site-chrome--blend .vp-header-menu-btn {
     border: 0 !important;
     background: transparent !important;
-    color: #70798b;
+    color: #111111;
   }
 
   .vp-site-chrome--fixed.vp-site-chrome--hidden {
@@ -3891,7 +3892,7 @@ a:hover {
     padding: 0;
     border: 0;
     background: transparent;
-    color: #70798b;
+    color: #111111;
     font-size: 22px;
     line-height: 1;
     cursor: pointer;
@@ -3940,8 +3941,8 @@ a:hover {
   .vp-mobile-drawer-chevron {
     width: 8px;
     height: 8px;
-    border-right: 2px solid #70798b;
-    border-bottom: 2px solid #70798b;
+    border-right: 2px solid #111111;
+    border-bottom: 2px solid #111111;
     transform: rotate(45deg);
     transition: transform 0.25s ease;
     opacity: 1;
@@ -4020,7 +4021,7 @@ a:hover {
     border: 0 !important;
     border-radius: 0 !important;
     background: transparent !important;
-    color: #444444 !important;
+    color: #111111 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
     line-height: 1.4;
