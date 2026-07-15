@@ -86,22 +86,18 @@
 
 /* ── Careers ── */
 .vp-careers-cta {
-  background: var(--knack-black, #111);
-  border-top: 0;
+  background: var(--knack-white, #ffffff);
+  border-top: 1px solid var(--knack-border-light, #e8e8e8);
+  color: var(--knack-heading, #111111);
 }
 
 .vp-careers-cta-title,
-.vp-careers-cta-lead,
-.vp-careers-cta-eyebrow {
-  color: var(--knack-white, #fff);
-}
-
 .vp-careers-cta-lead {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--knack-heading, #111111);
 }
 
 .vp-careers-cta-eyebrow {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--knack-brand, #d21e2b);
 }
 
 /* Platform logos keep original brand colors on light cards in all themes. */

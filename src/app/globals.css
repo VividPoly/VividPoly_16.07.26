@@ -1600,10 +1600,11 @@ button {
 }
 
 .vp-careers-cta {
-  background: var(--knack-black, #111);
-  border-top: 0;
+  background: var(--knack-white, #ffffff);
+  border-top: 1px solid var(--knack-border-light, #e8e8e8);
   padding-block: var(--knack-section-y, 90px);
   padding-inline: var(--vp-pad-x-start) var(--vp-pad-x-end);
+  color: var(--knack-heading, #111111);
 }
 
 .vp-careers-cta-inner {
@@ -1618,7 +1619,7 @@ button {
 
 .vp-careers-cta-eyebrow {
   margin: 0 0 var(--vp-type-label-gap, 8px);
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--knack-brand, #d21e2b);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -1628,7 +1629,7 @@ button {
 .vp-careers-cta-title {
   margin: 0 0 var(--knack-stack-title-to-lead, 16px);
   max-width: min(100%, 38rem);
-  color: var(--knack-white, #fff) !important;
+  color: var(--knack-heading, #111111) !important;
   text-wrap: pretty;
 }
 
@@ -1637,7 +1638,7 @@ button {
   max-width: var(--knack-measure-lead, min(100%, 52rem));
   font-size: var(--vp-text-body);
   line-height: var(--vp-leading-body);
-  color: rgba(255, 255, 255, 0.82) !important;
+  color: var(--knack-heading, #111111) !important;
   text-wrap: pretty;
 }
 
