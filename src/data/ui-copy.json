@@ -96,10 +96,6 @@
       "id": "fabric"
     },
     {
-      "label": "Tape",
-      "id": "tape"
-    },
-    {
       "label": "Weed Barrier",
       "id": "weed-barrier"
     }
@@ -920,12 +916,6 @@
       ]
     },
     {
-      "title": "Tape",
-      "ids": [
-        "tape"
-      ]
-    },
-    {
       "title": "Weed Barrier",
       "ids": [
         "weed-barrier"
@@ -1061,10 +1051,6 @@
         {
           "id": "PP woven fabric",
           "label": "PP woven fabric"
-        },
-        {
-          "id": "Tape",
-          "label": "Tape"
         },
         {
           "id": "Weed barrier",
@@ -1348,10 +1334,6 @@
     {
       "label": "PP Woven Fabric",
       "id": "fabric"
-    },
-    {
-      "label": "Tape",
-      "id": "tape"
     },
     {
       "label": "Weed Barrier",
@@ -1848,46 +1830,6 @@
         }
       ],
       "speciality": "PP Woven Fabric from VIVIDPOLY for global buyers.",
-      "mfg": "Weaving, finishing, inspection, and export packing.",
-      "material": "PP woven material and buyer-specific additives where required."
-    },
-    "tape": {
-      "name": "Tape",
-      "cta": "Explore Tape",
-      "group": "Tape",
-      "short": "PP tape for weaving and packaging applications, supplied to export specifications.",
-      "intro": "PP tape for weaving and packaging applications, supplied to export specifications.",
-      "features": [
-        {
-          "title": "Export ready",
-          "body": "Supplied for international buyers with custom sizing and packing options."
-        },
-        {
-          "title": "Custom specification",
-          "body": "Width, GSM, colour, and roll or cut length can be planned to order."
-        },
-        {
-          "title": "Quality focus",
-          "body": "Consistent weave and finish for industrial and agricultural use."
-        }
-      ],
-      "benefits": "PP tape for weaving and packaging applications, supplied to export specifications.",
-      "details": "Share your required width, GSM, colour, quantity, and destination for a quotation.",
-      "spec": [
-        {
-          "key": "Format",
-          "value": "Custom to enquiry"
-        },
-        {
-          "key": "Material",
-          "value": "PP woven"
-        },
-        {
-          "key": "Packing",
-          "value": "Export packing"
-        }
-      ],
-      "speciality": "Tape from VIVIDPOLY for global buyers.",
       "mfg": "Weaving, finishing, inspection, and export packing.",
       "material": "PP woven material and buyer-specific additives where required."
     },

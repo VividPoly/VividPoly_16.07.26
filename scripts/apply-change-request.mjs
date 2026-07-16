@@ -39,12 +39,11 @@ data.typeGroups = [
     ],
   },
   { title: 'Fabric', ids: ['fabric'] },
-  { title: 'Tape', ids: ['tape'] },
   { title: 'Weed Barrier', ids: ['weed-barrier'] },
 ];
 
 for (const id of Object.keys(data.products)) {
-  if (!['fabric', 'tape', 'weed-barrier'].includes(id)) {
+  if (!['fabric', 'weed-barrier'].includes(id)) {
     data.products[id].group = 'Woven Bag';
   }
 }
@@ -89,12 +88,6 @@ data.products.fabric = minimalProduct(
   'Fabric',
   'PP woven fabric rolls and cut lengths for industrial, agricultural, and conversion use.',
 );
-data.products.tape = minimalProduct(
-  'Tape',
-  'Explore Tape',
-  'Tape',
-  'PP tape for weaving and packaging applications, supplied to export specifications.',
-);
 data.products['weed-barrier'] = minimalProduct(
   'Weed Barrier',
   'Explore Weed Barrier',
@@ -104,7 +97,6 @@ data.products['weed-barrier'] = minimalProduct(
 
 const extraEnquiry = [
   { label: 'PP Woven Fabric', id: 'fabric' },
-  { label: 'Tape', id: 'tape' },
   { label: 'Weed Barrier', id: 'weed-barrier' },
 ];
 for (const item of extraEnquiry) {
@@ -123,7 +115,6 @@ const productTypeSection = data.filterSections.find((s) => s.key === 'Product Ty
 if (productTypeSection) {
   for (const opt of [
     { id: 'PP woven fabric', label: 'PP woven fabric' },
-    { id: 'Tape', label: 'Tape' },
     { id: 'Weed barrier', label: 'Weed barrier' },
   ]) {
     if (!productTypeSection.options.some((o) => o.id === opt.id)) {

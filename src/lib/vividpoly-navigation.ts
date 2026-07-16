@@ -134,6 +134,86 @@ export function consumeSkipNextScrollToTop() {
   return shouldSkip;
 }
 
+/** One-shot list scroll restore after leaving a PDP (not a general history map). */
+type ArmedListScroll = { key: string; productId: string; y: number };
+let armedListScroll: ArmedListScroll | null = null;
+
+function readWindowScrollY(): number {
+  if (typeof window === 'undefined') return 0;
+  return (
+    window.scrollY ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0
+  );
+}
+
+export function writeWindowScrollY(y: number) {
+  if (typeof window === 'undefined') return;
+  const top = Math.max(0, y);
+  window.scrollTo({ top, left: 0, behavior: 'auto' });
+  document.documentElement.scrollTop = top;
+  document.body.scrollTop = top;
+}
+
+/** Key used by page transitions for catalogue / home list screens. */
+export function scrollRestoreKeyForState(
+  state: Pick<VividPolyState, 'screen' | 'cat'>,
+): string | null {
+  if (state.screen === 'catalogue') return `catalogue:${state.cat}`;
+  if (state.screen === 'home') return 'home';
+  return null;
+}
+
+/** Arm restore once when leaving a list screen for a product detail. */
+export function armListScrollRestore(key: string, productId: string) {
+  if (typeof window === 'undefined' || !key) return;
+  armedListScroll = {
+    key,
+    productId,
+    y: Math.max(0, Math.round(readWindowScrollY())),
+  };
+}
+
+export function clearListScrollRestore() {
+  armedListScroll = null;
+}
+
+export function hasArmedListScrollRestore(key: string): boolean {
+  return Boolean(armedListScroll && armedListScroll.key === key);
+}
+
+export type ConsumedListScrollRestore = { y: number; productId: string };
+
+/** Returns restore data and clears the arm only when the key matches. */
+export function consumeArmedListScrollRestore(key: string): ConsumedListScrollRestore | null {
+  if (!armedListScroll || armedListScroll.key !== key) return null;
+  const { y, productId } = armedListScroll;
+  armedListScroll = null;
+  return { y, productId };
+}
+
+/** Scroll the opened product card into view, falling back to the saved Y. */
+export function applyListScrollRestore(data: ConsumedListScrollRestore) {
+  if (typeof window === 'undefined') return;
+
+  const apply = () => {
+    if (data.productId) {
+      const el = document.querySelector<HTMLElement>(
+        `[data-vp-product-id="${data.productId}"]`,
+      );
+      if (el) {
+        el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'auto' });
+        return;
+      }
+    }
+    writeWindowScrollY(data.y);
+  };
+
+  apply();
+  requestAnimationFrame(apply);
+}
+
 let pendingHomeFaqScroll: ScrollBehavior | null = null;
 
 /** Arm a deferred scroll to the home FAQ section after the next route transition. */

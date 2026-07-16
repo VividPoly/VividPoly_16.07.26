@@ -151,7 +151,6 @@ export const useGuidance: UseGuidanceEntry[] = [
 export const typeGroups = [
 { title:'Woven Bag', ids:['open-mouth','stitched','d-cut','valve','carry','laminated','pinch-bottom','block-bottom','gusset','shopping'] },
 { title:'Fabric', ids:['fabric'] },
-{ title:'Tape', ids:['tape'] },
 { title:'Weed Barrier', ids:['weed-barrier'] }
 ];
 export const useGroups = [

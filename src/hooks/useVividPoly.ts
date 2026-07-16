@@ -23,6 +23,11 @@ import {
   scrollToHomeFaqWhenReady,
   splitBreadcrumbTrail,
   withHomeBreadcrumb,
+  armListScrollRestore,
+  clearListScrollRestore,
+  hasArmedListScrollRestore,
+  scrollRestoreKeyForState,
+  requestSkipNextScrollToTop,
 } from '@/lib/vividpoly-navigation';
 import { getPageTransitionKey } from '@/lib/vp-page-transition';
 
@@ -95,6 +100,8 @@ export function useVividPoly() {
   const rafRef = useRef<number>(0);
   const skipHistoryPushRef = useRef(false);
   const pendingHistoryRef = useRef<VividPolyState | null>(null);
+  const stateRef = useRef(s);
+  stateRef.current = s;
 
   const pushNavHistory = useCallback((next: VividPolyState) => {
     if (typeof window === 'undefined' || skipHistoryPushRef.current) {
@@ -151,6 +158,13 @@ export function useVividPoly() {
       if (!restored) return;
       skipHistoryPushRef.current = true;
       setState(restored);
+      const restoreKey = scrollRestoreKeyForState(restored);
+      if (restoreKey && hasArmedListScrollRestore(restoreKey)) {
+        // View route effect restores once after the page enter animation.
+        requestSkipNextScrollToTop();
+        return;
+      }
+      clearListScrollRestore();
       scrollPageToTop('auto');
     };
 
@@ -163,6 +177,7 @@ export function useVividPoly() {
   }, [navigate]);
 
   const goHome = useCallback(() => {
+    clearListScrollRestore();
     if (s.screen === 'home') {
       scrollPageToTop('smooth');
       setState((st) => ({ ...st, menu: null, searchOpen: false, catGuide: null }));
@@ -305,6 +320,13 @@ export function useVividPoly() {
   }, [navigate]);
 
   const openPdp = useCallback((id: string, from: 'home' | 'catalogue') => {
+    const current = stateRef.current;
+    // Only arm when leaving the list itself (not when swapping PDP related products).
+    if (from === 'catalogue' && current.screen === 'catalogue') {
+      armListScrollRestore(`catalogue:${current.cat}`, id);
+    } else if (from === 'home' && current.screen === 'home') {
+      armListScrollRestore('home', id);
+    }
     navigate((st) => ({ ...st, screen: 'pdp', pid: id, pdpFrom: from, gallery: 0, menu: null }));
   }, [navigate]);
 
@@ -343,7 +365,13 @@ export function useVividPoly() {
       ...data.products.map((p) => ({
         label: p.name, icon: '▦', kind: 'product',
         go: () => {
-          const from = s.screen === 'home' ? 'home' : 'catalogue';
+          const current = stateRef.current;
+          const from = current.screen === 'home' ? 'home' : 'catalogue';
+          if (from === 'catalogue' && current.screen === 'catalogue') {
+            armListScrollRestore(`catalogue:${current.cat}`, p.id);
+          } else if (from === 'home' && current.screen === 'home') {
+            armListScrollRestore('home', p.id);
+          }
           navigate((st) => ({
             ...st,
             screen: 'pdp',
@@ -752,25 +780,31 @@ export function useVividPoly() {
       goAbout: () => go('about'),
       goCareers: () => go('careers'),
       goBlog: () => go('blog'),
-      goCatalogueType: () => navigate((st) => ({
-        ...st,
-        screen: 'catalogue',
-        cat: 'type',
-        menu: null,
-        catGuide: 'product-type',
-        catFiltersOpen: false,
-      })),
-      goCatalogueUse: () => navigate((st) => ({
-        ...st,
-        screen: 'catalogue',
-        cat: 'use',
-        prodTab: 'use',
-        menu: null,
-        catSort: 'recommended',
-        filters: {},
-        catGuide: 'use-sort',
-        catFiltersOpen: false,
-      })),
+      goCatalogueType: () => {
+        clearListScrollRestore();
+        navigate((st) => ({
+          ...st,
+          screen: 'catalogue',
+          cat: 'type',
+          menu: null,
+          catGuide: 'product-type',
+          catFiltersOpen: false,
+        }));
+      },
+      goCatalogueUse: () => {
+        clearListScrollRestore();
+        navigate((st) => ({
+          ...st,
+          screen: 'catalogue',
+          cat: 'use',
+          prodTab: 'use',
+          menu: null,
+          catSort: 'recommended',
+          filters: {},
+          catGuide: 'use-sort',
+          catFiltersOpen: false,
+        }));
+      },
       goBack,
       breadcrumbsFor: (trail: string) =>
         withHomeBreadcrumb(splitBreadcrumbTrail(trail, goBack), goHome, ui.breadcrumbs.home),
@@ -946,7 +980,23 @@ export function useVividPoly() {
         { label: ui.breadcrumbs.home, onClick: goHome },
         {
           label: ui.breadcrumbs.products,
-          onClick: () => navigate((st) => ({ ...st, screen: 'catalogue', cat: 'type', menu: null, catFiltersOpen: false })),
+          onClick: () => {
+            const current = stateRef.current;
+            const cat = current.cat === 'use' ? 'use' : 'type';
+            const key = `catalogue:${cat}`;
+            if (hasArmedListScrollRestore(key)) {
+              requestSkipNextScrollToTop();
+            } else {
+              clearListScrollRestore();
+            }
+            navigate((st) => ({
+              ...st,
+              screen: 'catalogue',
+              cat,
+              menu: null,
+              catFiltersOpen: false,
+            }));
+          },
         },
         { label: sp.name },
       ],

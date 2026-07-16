@@ -12119,20 +12119,33 @@ img.vp-wordmark--footer {
   min-width: 0;
 }
 
-/* Full square (or native) image on product details only */
+/* Fixed square frame so gallery swaps never shift page height. */
+.vp-pdp-gallery-main-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--vp-radius-md);
+  border: 1px solid var(--vp-fog);
+  background: var(--vp-cream);
+}
+
 .vp-pdp-gallery-main,
 .vp-pdp-gallery .vp-pdp-gallery-main.vp-photo-slot,
-.vp-pdp-gallery .vp-pdp-gallery-main.vp-photo-slot--thumb {
+.vp-pdp-gallery .vp-pdp-gallery-main.vp-photo-slot--thumb,
+.vp-pdp-gallery-main-frame .vp-photo-slot--fallback {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: auto;
   max-height: none;
   object-fit: contain;
   object-position: center;
-  border-radius: var(--vp-radius-md);
-  border: 1px solid var(--vp-fog);
-  background: var(--vp-cream);
+  border-radius: 0;
+  border: 0;
+  background: transparent;
 }
 
 .vp-pdp-gallery-thumbs {

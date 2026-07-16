@@ -4,7 +4,7 @@ Real product and marketing photos live here. `VpPhotoSlot` falls back to a brand
 
 | Path | Used for |
 | --- | --- |
-| `home-hero.jpg` | Homepage hero diagonal visual (export warehouse stock) |
+| `home-hero.jpg` | Homepage hero diagonal visual (woven PP bags studio shot) |
 | `home-about.jpg` | Home About section + About page intro |
 | `about-vision.jpg` | About "Leading towards a bright future" |
 | `about-company.jpg` | About "Company details / at a glance" |
@@ -14,6 +14,9 @@ Real product and marketing photos live here. `VpPhotoSlot` falls back to a brand
 | `products/{id}-2.jpg` (etc.) | PDP gallery variants |
 | `industry/{useId}.jpg` | Product-use cards (`grains`, `fertilizer`, `animal-feed`, `industrial`, `commodities`, `retail`) |
 
-Product ids: `open-mouth`, `stitched`, `d-cut`, `valve`, `carry`, `laminated`, `pinch-bottom`, `block-bottom`, `gusset`, `shopping`, `fabric`, `tape`, `weed-barrier`.
+Product photo sources (recent product shoots only; old marketing posters removed):
 
-Stock section photos are Unsplash / Pexels licensed for commercial use. Product photos remain client-owned.
+- Carry / pinch / D-cut set: `carry`, `d-cut`, `pinch-bottom` (plus `-2` through `-5`)
+- Final 20 set: `block-bottom`, `laminated` (BOPP), `gusset`, `fabric` / `laminated-rolls` (rolls)
+- Studio product shots: `open-mouth`, `stitched`, `valve`
+- Previous assets retained for products without new shoots: `shopping`, `weed-barrier`

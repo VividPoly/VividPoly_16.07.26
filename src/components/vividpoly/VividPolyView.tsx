@@ -39,6 +39,9 @@ import VpSortSelect from '@/components/vividpoly/VpSortSelect';
 import VpCatalogueGuideTooltip from '@/components/vividpoly/VpCatalogueGuideTooltip';
 import {
   clearHomeFaqScroll,
+  clearListScrollRestore,
+  applyListScrollRestore,
+  consumeArmedListScrollRestore,
   consumeSkipNextScrollToTop,
   peekHomeFaqScroll,
   scrollPageToTop,
@@ -138,8 +141,22 @@ export default function VividPolyView() {
       return;
     }
 
-    if (consumeSkipNextScrollToTop()) return;
+    if (consumeSkipNextScrollToTop()) {
+      const restore = consumeArmedListScrollRestore(v.pageTransitionKey);
+      if (restore == null) {
+        clearListScrollRestore();
+        scrollPageToTop('auto');
+        return;
+      }
+      // Wait until page-enter transform finishes so the Y offset does not skew position.
+      const restoreId = window.setTimeout(
+        () => applyListScrollRestore(restore),
+        VP_PAGE_ENTER_DELAY_MS + VP_PAGE_ENTER_MS + 32,
+      );
+      return () => window.clearTimeout(restoreId);
+    }
 
+    clearListScrollRestore();
     const scrollTop = () => scrollPageToTop('auto');
     scrollTop();
     const rafId = requestAnimationFrame(scrollTop);
@@ -867,18 +884,21 @@ export default function VividPolyView() {
       
             
             <section className="vp-hero vp-hero--fold" aria-label="Home hero">
+              {/* Layer 1: full-bleed hero photo (placement first). */}
               <div className="vp-hero-panel vp-hero-panel--visual" aria-hidden="true">
                 <div className="vp-hero-visual-ph">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="vp-hero-visual-img"
-                    src="/images/home-hero.jpg?v=warehouse"
+                    src="/images/home-hero.jpg?v=bags-22"
                     alt=""
                     decoding="async"
                     fetchPriority="high"
                   />
                 </div>
               </div>
+              {/* Layer 2: red diagonal shape on top of the photo. */}
+              <div className="vp-hero-panel vp-hero-panel--red" aria-hidden="true" />
               <div className="vp-hero-inner">
                 <div className="vp-hero-copy">
                   <div className="vp-hero-brand vp-hero-rise">
@@ -1185,13 +1205,15 @@ export default function VividPolyView() {
             <VpSubpageTop breadcrumbs={v.pdpBreadcrumbs} onHomeClick={v.goHome} className="vp-subpage-top-shell vp-subpage-top-shell--pdp" />
             <div className="vp-pdp-layout">
               <div className="vp-pdp-gallery">
-                <VpPhotoSlot
-                  key={v.pdpGalleryMainSrc}
-                  src={v.pdpGalleryMainSrc}
-                  alt={v.product?.name || 'Product'}
-                  variant="thumb"
-                  className="vp-pdp-gallery-main"
-                />
+                <div className="vp-pdp-gallery-main-frame">
+                  <VpPhotoSlot
+                    key={v.pdpGalleryMainSrc}
+                    src={v.pdpGalleryMainSrc}
+                    alt={v.product?.name || 'Product'}
+                    variant="thumb"
+                    className="vp-pdp-gallery-main"
+                  />
+                </div>
                 <div className="vp-pdp-gallery-thumbs">
                   {v.galleryThumbs.map((t, i_t) => (
                     <button key={i_t} type="button" onClick={t.sel} className={`vp-gallery-thumb${t.active ? ' vp-gallery-thumb--active' : ''}`} aria-label={`Product image ${i_t + 1}`}>

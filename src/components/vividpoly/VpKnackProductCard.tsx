@@ -25,6 +25,7 @@ export default function VpKnackProductCard({
       onClick={onClick}
       className={`vp-prod-card vp-prod-card--knack${className ? ` ${className}` : ''}`}
       aria-label={`View ${name}`}
+      data-vp-product-id={id}
     >
       <div className="vp-prod-card-media">
         {recommended && <span className="vp-prod-rec-badge">Recommended</span>}

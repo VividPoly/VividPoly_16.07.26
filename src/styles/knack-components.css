@@ -442,7 +442,7 @@
   color: var(--knack-white);
 }
 
-/* ── Home hero: full first-fold diagonal split ── */
+/* ── Home hero: full studio photo + red diagonal overlay ── */
 .vp-hero {
   background: var(--knack-white);
   color: var(--knack-heading);
@@ -454,14 +454,13 @@
   flex-direction: column;
   justify-content: stretch;
   box-sizing: border-box;
-  /* svh only: dvh resizes with mobile browser chrome and scales the hero image. */
   height: 100svh;
   min-height: 100svh;
   max-height: 100svh;
   overflow: hidden;
   isolation: isolate;
   padding-top: 0;
-  background: var(--knack-brand);
+  background: #8f8f8f;
   color: var(--knack-white);
 }
 
@@ -469,13 +468,14 @@
   display: none;
 }
 
+/* Full-bleed studio photo (empty left + bag right, as composed). */
 .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-color: #111111;
-  clip-path: polygon(54% 0, 100% 0, 100% 100%, 64% 100%);
+  background-color: #8f8f8f;
+  clip-path: none;
   overflow: hidden;
 }
 
@@ -484,9 +484,16 @@
   inset: 0;
   display: block;
   padding: 0;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
+  /* Defeat globals .vp-hero-visual-ph square frame (aspect-ratio 1/1) that clips the fold. */
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   background: transparent;
   overflow: hidden;
 }
@@ -495,13 +502,29 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  /* Scale 1.46; stronger upward shift so the bag base clears the fold. */
+  --vp-hero-img-scale: 1.46;
+  --vp-hero-img-shift-y: -16%;
+  object-fit: contain;
+  object-position: right top;
+  transform-origin: right top;
+  transform: scale(var(--vp-hero-img-scale)) translateY(var(--vp-hero-img-shift-y));
+}
+
+/* Red diagonal covers the empty left of the studio photo. */
+.vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: var(--knack-brand, #d21e2b);
+  clip-path: polygon(0 0, 52% 0, 62% 100%, 0 100%);
 }
 
 .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   align-items: center;
@@ -511,7 +534,6 @@
   margin: 0;
   padding-top: calc(var(--vp-header-offset) + clamp(12px, 2.4vh, 28px));
   padding-bottom: clamp(28px, 5vh, 56px);
-  /* Match the shared content column: centered 1140 + --vp-container-x. */
   padding-left: max(
     var(--vp-pad-x-start),
     calc((100vw - var(--vp-container-max, 1140px)) / 2 + var(--vp-pad-x-start))
@@ -675,7 +697,7 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18) !important;
 }
 
-/* Full-fold diagonal hero for tablet and desktop. */
+/* Full-fold hero for tablet and desktop. */
 @media (min-width: 768px) {
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-copy {
     padding-block: 0;
@@ -687,6 +709,18 @@
     max-height: 100svh !important;
     min-height: 100svh !important;
     overflow: hidden !important;
+    background: #8f8f8f !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
+    display: block !important;
+    z-index: 1;
+    clip-path: polygon(0 0, 52% 0, 62% 100%, 0 100%);
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
@@ -697,12 +731,50 @@
     min-height: 0 !important;
     max-height: none !important;
     margin: 0 !important;
-    clip-path: polygon(54% 0, 100% 0, 100% 100%, 64% 100%) !important;
-    background-color: #111111 !important;
+    clip-path: none !important;
+    background-color: #8f8f8f !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-ph {
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: hidden !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: right top !important;
+    transform-origin: right top !important;
+    transform: scale(var(--vp-hero-img-scale, 1.46))
+      translateY(var(--vp-hero-img-shift-y, -16%)) !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner,
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
+    z-index: 2;
     padding-top: calc(var(--vp-header-offset) + clamp(12px, 2.4vh, 28px)) !important;
     padding-bottom: clamp(28px, 5vh, 56px);
     padding-left: max(
@@ -757,6 +829,15 @@
     background: var(--knack-brand) !important;
   }
 
+  .vp-home > .vp-hero.vp-hero--fold::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
+    display: none !important;
+  }
+
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
     position: relative !important;
     inset: auto !important;
@@ -764,24 +845,29 @@
     z-index: 0;
     width: 100%;
     flex: none !important;
-    /* Short cropped band; taller for mobile first fold. */
-    height: clamp(200px, 53vw, 236px) !important;
-    min-height: 200px !important;
-    max-height: 236px !important;
+    /* Match hero photo ratio so the full group shot fits on phone. */
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: 1024 / 682;
     clip-path: none !important;
     pointer-events: none;
     margin: 0 !important;
-    margin-top: -1px !important;
+    margin-top: 0 !important;
     border: 0 !important;
     border-top: 0 !important;
     line-height: 0;
-    background-color: #111111 !important;
+    background-color: #8f8f8f !important;
     overflow: hidden !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-ph {
     position: absolute !important;
     inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
     border: 0 !important;
@@ -795,18 +881,27 @@
     background: transparent !important;
     overflow: hidden !important;
     line-height: 0;
+    display: block !important;
+    align-items: unset !important;
+    justify-content: unset !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-img {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
     margin: 0 !important;
     padding: 0 !important;
     border: 0 !important;
     vertical-align: top;
-    object-fit: cover !important;
+    /* Phone: full group shot, no desktop zoom/shift. */
+    --vp-hero-img-scale: 1;
+    --vp-hero-img-shift-y: 0%;
+    object-fit: contain !important;
     object-position: center center !important;
+    transform-origin: center center !important;
     transform: none !important;
   }
 
