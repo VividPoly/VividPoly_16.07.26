@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { isGmailConfigured } from '@/lib/gmail-config';
 import { sendContactEmailViaGmail } from '@/lib/gmail-send';
+import { createOdooLead, isOdooConfigured, type OdooDetail } from '@/lib/odoo';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_NAME = 120;
@@ -28,10 +29,6 @@ function jsonError(message: string, status: number) {
 }
 
 export async function POST(request: Request) {
-  if (!isGmailConfigured()) {
-    return jsonError('Email service is not configured on the server.', 503);
-  }
-
   let body: ContactEmailBody;
   try {
     body = await request.json();
@@ -72,21 +69,66 @@ export async function POST(request: Request) {
     return jsonError('Message is too long.', 400);
   }
 
-  try {
-    const result = await sendContactEmailViaGmail({
-      name,
-      company,
-      phone,
-      country,
-      enquiryType,
-      fromEmail,
-      subject: subject || (enquiryType ? `Website enquiry: ${enquiryType}` : 'Website enquiry from vividpoly.com'),
-      message,
-    });
+  const resolvedSubject =
+    subject || (enquiryType ? `Website enquiry: ${enquiryType}` : 'Website enquiry from vividpoly.com');
 
-    return NextResponse.json({ ok: true, to: result.to });
-  } catch (error) {
-    console.error('[contact-email]', error);
-    return jsonError('We could not send your message. Please try again or call us directly.', 500);
+  // If nothing is configured we can't do anything useful. Kept as 503 so the
+  // existing frontend (which treats 503 as "accepted") is unaffected.
+  if (!isOdooConfigured() && !isGmailConfigured()) {
+    return jsonError('Lead service is not configured on the server.', 503);
   }
+
+  let delivered = false;
+
+  // 1) Odoo CRM lead — the primary destination. Best-effort: a failure here is
+  //    logged but does not block, as long as the email still gets through.
+  if (isOdooConfigured()) {
+    const details: OdooDetail[] = [{ label: 'Enquiry type', value: enquiryType }];
+    try {
+      const leadId = await createOdooLead({
+        name: enquiryType
+          ? `Website enquiry: ${enquiryType}${name ? ` — ${name}` : ''}`
+          : resolvedSubject,
+        contactName: name,
+        emailFrom: fromEmail,
+        phone,
+        company,
+        country,
+        message,
+        details,
+      });
+      console.info('[contact-email] Odoo lead created', leadId);
+      delivered = true;
+    } catch (error) {
+      console.error('[contact-email] Odoo lead failed', error);
+    }
+  }
+
+  // 2) Email notification — unchanged behaviour, still sent when configured.
+  if (isGmailConfigured()) {
+    try {
+      await sendContactEmailViaGmail({
+        name,
+        company,
+        phone,
+        country,
+        enquiryType,
+        fromEmail,
+        subject: resolvedSubject,
+        message,
+      });
+      delivered = true;
+    } catch (error) {
+      console.error('[contact-email] email failed', error);
+    }
+  }
+
+  if (!delivered) {
+    return jsonError(
+      'We could not submit your enquiry. Please try again or contact us directly.',
+      502,
+    );
+  }
+
+  return NextResponse.json({ ok: true });
 }

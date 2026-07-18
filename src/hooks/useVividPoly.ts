@@ -11,6 +11,7 @@ import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOp
 import { getInitialQuoteStep } from '@/lib/vividpoly-quote';
 import { productGallerySrcs, productImageSrc } from '@/lib/product-images';
 import { captureQuoteLead } from '@/lib/vividpoly-lead-capture';
+import { submitQuoteLead } from '@/lib/vividpoly-quote-lead';
 import {
   isNavTransition,
   navPayload,
@@ -754,6 +755,30 @@ export function useVividPoly() {
         return true;
       });
 
+    // Enrich the quote's Odoo lead with the full bag specification when the
+    // visitor submits. Reuses the lead id captured at the contact step so we
+    // update that same lead rather than creating a duplicate.
+    const enrichQuoteLeadWithSpecs = () => {
+      const specs = reviewFields
+        .map((field) => ({ label: String(field.label ?? ''), value: String(field.value ?? '') }))
+        .filter((s) => s.label && s.value);
+      void submitQuoteLead({
+        name: String(qv.name ?? '') || undefined,
+        company: String(qv.company ?? '') || undefined,
+        email: String(qv.email ?? ''),
+        whatsapp: String(qv.whatsapp ?? '') || undefined,
+        country: String(qv.country ?? '') || undefined,
+        product: String(qv.product ?? '') || undefined,
+        message: String(qv.message ?? '') || undefined,
+        specs,
+        leadId: typeof qv.odooLeadId === 'number' ? qv.odooLeadId : undefined,
+      }).then((leadId) => {
+        if (leadId != null && leadId !== qv.odooLeadId) {
+          setState((st) => ({ ...st, quote: { ...st.quote, odooLeadId: leadId } }));
+        }
+      });
+    };
+
     return {
       accent,
       goHome,
@@ -1079,6 +1104,24 @@ export function useVividPoly() {
         navigate((st) => ({ ...st, sampleStep: 1, sampleRef: ref }));
       },
       sampleConfirmPayment: () => {
+        // A confirmed sample order is a strong buying signal — record it as its
+        // own Odoo lead (separate from any quote lead, so no leadId reuse).
+        void submitQuoteLead({
+          kind: 'sample',
+          name: String(qv.name ?? '') || undefined,
+          company: String(qv.company ?? '') || undefined,
+          email: String(qv.email ?? ''),
+          whatsapp: String(qv.whatsapp ?? '') || undefined,
+          country: String(qv.country ?? '') || undefined,
+          product: sampleProduct.name,
+          specs: [
+            { label: 'Order type', value: 'Sample order' },
+            { label: 'Reference', value: String(s.sampleRef ?? '') },
+            { label: 'Capacity', value: String(sampleCapacityLabel ?? '') },
+            { label: 'Printing', value: String(data.sampleOrderDefaults.printing ?? '') },
+            { label: 'Quantity', value: String(data.sampleOrderDefaults.qtyLabel ?? '') },
+          ].filter((sp) => sp.value),
+        });
         navigate((st) => ({ ...st, sampleStep: 2 }));
       },
       sampleBack: goBack,
@@ -1184,6 +1227,22 @@ export function useVividPoly() {
           country: contact?.country ?? qv.country,
         });
 
+        // Create the Odoo CRM lead as soon as we have contact details, so a
+        // visitor who abandons the bag-spec wizard is still captured. Store the
+        // returned id so the final submit enriches this same lead.
+        void submitQuoteLead({
+          name,
+          company: String(contact?.company ?? qv.company ?? '') || undefined,
+          email,
+          whatsapp: String(contact?.whatsapp ?? qv.whatsapp ?? '') || undefined,
+          country: String(contact?.country ?? qv.country ?? '') || undefined,
+          product: String(qv.product ?? '') || undefined,
+        }).then((leadId) => {
+          if (leadId != null) {
+            setState((st) => ({ ...st, quote: { ...st.quote, odooLeadId: leadId } }));
+          }
+        });
+
         navigate((st) => ({
           ...st,
           screen: 'quote',
@@ -1213,15 +1272,19 @@ export function useVividPoly() {
         quoteBagSpecPrompt: false,
         quoteContactOpen: false,
       })),
-      quoteFinalSubmit: () => navigate((st) => ({
-        ...st,
-        screen: 'quote',
-        quoteStep: 6,
-        quoteLeadOnly: false,
-        quoteBagSpecPrompt: false,
-        quoteContactOpen: false,
-      })),
+      quoteFinalSubmit: () => {
+        enrichQuoteLeadWithSpecs();
+        navigate((st) => ({
+          ...st,
+          screen: 'quote',
+          quoteStep: 6,
+          quoteLeadOnly: false,
+          quoteBagSpecPrompt: false,
+          quoteContactOpen: false,
+        }));
+      },
       quoteSubmit: () => {
+        enrichQuoteLeadWithSpecs();
         navigate((st) => ({
           ...st,
           screen: 'quote',
