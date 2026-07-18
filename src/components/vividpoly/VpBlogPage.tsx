@@ -1,8 +1,11 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import VpSubpageTop from '@/components/vividpoly/VpSubpageTop';
 import { ChevronRightIcon } from '@/components/vividpoly/VividPolyIcons';
 import type { VpBreadcrumb } from '@/lib/vividpoly-navigation';
+import { fetchPublishedBlogs } from '@/lib/supabase';
+import type { Blog } from '@/lib/blog';
 
 type BlogRow = {
   title: string;
@@ -31,6 +34,98 @@ export default function VpBlogPage({
   onHomeClick,
   siteCopy,
 }: VpBlogPageProps) {
+  // Blogs published from the admin app. `null` while loading, then the live
+  // list (empty state shown when there are none).
+  const [posts, setPosts] = useState<Blog[] | null>(null);
+  const [activePost, setActivePost] = useState<Blog | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchPublishedBlogs()
+      .then((data) => {
+        if (!cancelled) setPosts(data);
+      })
+      .catch(() => {
+        if (!cancelled) setPosts([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // --- Full article view -------------------------------------------------
+  if (activePost) {
+    const metaParts = [
+      ...(activePost.tags ?? []).map((t) => `#${t}`),
+      activePost.readTime,
+    ].filter(Boolean);
+    return (
+      <div data-screen-label="Blog" className="vp-blog-page vp-page-shell">
+        <VpSubpageTop
+          breadcrumbs={breadcrumbs}
+          onHomeClick={onHomeClick}
+          className="vp-blog-top"
+        >
+          <button
+            type="button"
+            className="vp-blog-back"
+            onClick={() => setActivePost(null)}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              cursor: 'pointer',
+              color: 'inherit',
+              font: 'inherit',
+              marginBottom: 12,
+              opacity: 0.75,
+            }}
+          >
+            <span style={{ transform: 'rotate(180deg)', display: 'inline-flex' }}>
+              <ChevronRightIcon size={14} />
+            </span>
+            Back to all articles
+          </button>
+          <h1 className="vp-h1 vp-blog-title">{activePost.title}</h1>
+          {metaParts.length > 0 && (
+            <p className="vp-blog-intro">{metaParts.join('  ·  ')}</p>
+          )}
+        </VpSubpageTop>
+
+        <div className="vp-blog-layout vp-blog-layout--single">
+          <div className="vp-blog-main">
+            <article
+              className="vp-blog-article"
+              style={{ maxWidth: 760, margin: '0 auto' }}
+            >
+              {activePost.coverImageUrl && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={activePost.coverImageUrl}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    borderRadius: 14,
+                    marginBottom: 24,
+                    display: 'block',
+                  }}
+                />
+              )}
+              <div
+                className="vp-blog-article-body"
+                dangerouslySetInnerHTML={{ __html: activePost.body }}
+              />
+            </article>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // --- Blog list ---------------------------------------------------------
   return (
     <div data-screen-label="Blog" className="vp-blog-page vp-page-shell">
       <VpSubpageTop
@@ -44,37 +139,105 @@ export default function VpBlogPage({
 
       <div className="vp-blog-layout vp-blog-layout--single">
         <div className="vp-blog-main">
-          <div className="vp-blog-grid">
-            {blogRows.map((post, index) => (
-              <article
-                key={index}
-                className="vp-blog-card"
-                onClick={post.open}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    post.open();
-                  }
-                }}
-                role="button"
-                tabIndex={0}
-              >
-                <div className="vp-blog-card-media vp-ph" aria-hidden="true" />
-                <div className="vp-blog-card-body">
-                  <h2 className="vp-blog-card-title">{post.title}</h2>
-                  <div className="vp-blog-card-footer">
-                    <span className="vp-blog-card-tags">
-                      <span className="vp-blog-card-tag">{post.category}</span>
-                    </span>
-                    <span className="vp-blog-card-cta">
-                      {siteCopy.blogReadArticle}
-                      <ChevronRightIcon size={14} />
-                    </span>
+          {posts === null ? (
+            <p
+              className="vp-blog-intro"
+              style={{ textAlign: 'center', padding: '32px 0' }}
+            >
+              Loading articles…
+            </p>
+          ) : posts.length === 0 && blogRows.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '48px 16px' }}>
+              <h2 className="vp-blog-card-title" style={{ marginBottom: 8 }}>
+                No articles yet
+              </h2>
+              <p className="vp-blog-intro">
+                New buyer guides and insights are on the way — check back soon.
+              </p>
+            </div>
+          ) : (
+            <div className="vp-blog-grid">
+              {/* Admin-published posts (from the admin app / Supabase) */}
+              {posts.map((post) => (
+                  <article
+                    key={post.id}
+                    className="vp-blog-card"
+                    onClick={() => setActivePost(post)}
+                    onKeyDown={(event) => {
+                      if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        setActivePost(post);
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    {post.coverImageUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        className="vp-blog-card-media"
+                        src={post.coverImageUrl}
+                        alt=""
+                        style={{ objectFit: 'cover', width: '100%' }}
+                      />
+                    ) : (
+                      <div className="vp-blog-card-media vp-ph" aria-hidden="true" />
+                    )}
+                    <div className="vp-blog-card-body">
+                      <h2 className="vp-blog-card-title">{post.title}</h2>
+                      <div className="vp-blog-card-footer">
+                        <span className="vp-blog-card-tags">
+                          {(post.tags ?? []).slice(0, 2).map((tag) => (
+                            <span className="vp-blog-card-tag" key={tag}>
+                              {tag}
+                            </span>
+                          ))}
+                        </span>
+                        <span className="vp-blog-card-cta">
+                          {siteCopy.blogReadArticle}
+                          <ChevronRightIcon size={14} />
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+              ))}
+              {/* Original sample cards built into the site */}
+              {blogRows.map((row, index) => (
+                <article
+                  key={`static-${index}-${row.title}`}
+                  className="vp-blog-card"
+                  onClick={() => row.open()}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      event.preventDefault();
+                      row.open();
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <div className="vp-blog-card-media vp-ph" aria-hidden="true" />
+                  <div className="vp-blog-card-body">
+                    <h2 className="vp-blog-card-title">{row.title}</h2>
+                    <div className="vp-blog-card-footer">
+                      <span className="vp-blog-card-tags">
+                        {row.category && (
+                          <span className="vp-blog-card-tag">{row.category}</span>
+                        )}
+                        {row.readTime && (
+                          <span className="vp-blog-card-tag">{row.readTime}</span>
+                        )}
+                      </span>
+                      <span className="vp-blog-card-cta">
+                        {siteCopy.blogReadArticle}
+                        <ChevronRightIcon size={14} />
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </article>
-            ))}
-          </div>
+                </article>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
