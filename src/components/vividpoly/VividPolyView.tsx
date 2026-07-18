@@ -60,6 +60,9 @@ export default function VividPolyView() {
   const [headerBlend, setHeaderBlend] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
+  // True only while a full blog article is open (not the blog list), so the
+  // enquiry popup can be hidden there (the article has its own sticky form).
+  const [blogArticleOpen, setBlogArticleOpen] = useState(false);
   const [enquiryToast, setEnquiryToast] = useState<string | null>(null);
   const [mobileNavExpanded, setMobileNavExpanded] = useState<null | 'products' | 'industry' | 'resources'>(null);
   const [mobileNavGroupKey, setMobileNavGroupKey] = useState<string | null>(null);
@@ -1295,6 +1298,8 @@ export default function VividPolyView() {
               breadcrumbs={v.blogBreadcrumbs}
               onHomeClick={v.goHome}
               siteCopy={v.siteCopy}
+              enquiryForm={enquiryFormProps}
+              onArticleOpenChange={setBlogArticleOpen}
             />
           )}
       
@@ -1627,6 +1632,7 @@ export default function VividPolyView() {
             || v.showContact
             || v.showCareers
             || v.showAbout
+            || blogArticleOpen
           }
           active
         />

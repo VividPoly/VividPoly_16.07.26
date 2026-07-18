@@ -6,6 +6,9 @@ import { ChevronRightIcon } from '@/components/vividpoly/VividPolyIcons';
 import type { VpBreadcrumb } from '@/lib/vividpoly-navigation';
 import { fetchPublishedBlogs } from '@/lib/supabase';
 import type { Blog } from '@/lib/blog';
+import VpContactEnquiryForm, {
+  type ContactEnquiryFormProps,
+} from '@/components/vividpoly/VpContactEnquiryForm';
 
 type BlogRow = {
   title: string;
@@ -26,6 +29,12 @@ type VpBlogPageProps = {
   breadcrumbs: VpBreadcrumb[];
   onHomeClick?: () => void;
   siteCopy: SiteCopy;
+  // Same enquiry form used elsewhere on the site; rendered as a sticky card
+  // beside the article when provided.
+  enquiryForm?: Omit<ContactEnquiryFormProps, 'variant' | 'onSubmitSuccess'>;
+  // Lets the parent know when a full article is open (vs. the list) so it can,
+  // e.g., hide the floating enquiry popup only on the article view.
+  onArticleOpenChange?: (open: boolean) => void;
 };
 
 export default function VpBlogPage({
@@ -33,6 +42,8 @@ export default function VpBlogPage({
   breadcrumbs,
   onHomeClick,
   siteCopy,
+  enquiryForm,
+  onArticleOpenChange,
 }: VpBlogPageProps) {
   // Blogs published from the admin app. `null` while loading, then the live
   // list (empty state shown when there are none).
@@ -53,6 +64,15 @@ export default function VpBlogPage({
     };
   }, []);
 
+  // Report article-open state up to the parent (used to hide the enquiry popup
+  // only while reading an article). Reset to false when leaving the blog.
+  useEffect(() => {
+    onArticleOpenChange?.(Boolean(activePost));
+  }, [activePost, onArticleOpenChange]);
+  useEffect(() => {
+    return () => onArticleOpenChange?.(false);
+  }, [onArticleOpenChange]);
+
   // --- Full article view -------------------------------------------------
   if (activePost) {
     const metaParts = [
@@ -60,47 +80,46 @@ export default function VpBlogPage({
       activePost.readTime,
     ].filter(Boolean);
     return (
-      <div data-screen-label="Blog" className="vp-blog-page vp-page-shell">
+      <div
+        data-screen-label="Blog"
+        className="vp-blog-page vp-page-shell vp-blog-article-view"
+      >
         <VpSubpageTop
           breadcrumbs={breadcrumbs}
           onHomeClick={onHomeClick}
           className="vp-blog-top"
-        >
-          <button
-            type="button"
-            className="vp-blog-back"
-            onClick={() => setActivePost(null)}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 6,
-              background: 'none',
-              border: 'none',
-              padding: 0,
-              cursor: 'pointer',
-              color: 'inherit',
-              font: 'inherit',
-              marginBottom: 12,
-              opacity: 0.75,
-            }}
-          >
-            <span style={{ transform: 'rotate(180deg)', display: 'inline-flex' }}>
-              <ChevronRightIcon size={14} />
-            </span>
-            Back to all articles
-          </button>
-          <h1 className="vp-h1 vp-blog-title">{activePost.title}</h1>
-          {metaParts.length > 0 && (
-            <p className="vp-blog-intro">{metaParts.join('  ·  ')}</p>
-          )}
-        </VpSubpageTop>
+        />
 
-        <div className="vp-blog-layout vp-blog-layout--single">
+        <div className="vp-blog-layout vp-blog-layout--article">
           <div className="vp-blog-main">
-            <article
-              className="vp-blog-article"
-              style={{ maxWidth: 760, margin: '0 auto' }}
+            <button
+              type="button"
+              className="vp-blog-back"
+              onClick={() => setActivePost(null)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                color: 'inherit',
+                font: 'inherit',
+                marginBottom: 12,
+                opacity: 0.75,
+              }}
             >
+              <span style={{ transform: 'rotate(180deg)', display: 'inline-flex' }}>
+                <ChevronRightIcon size={14} />
+              </span>
+              Back to all articles
+            </button>
+            <h1 className="vp-h1 vp-blog-title">{activePost.title}</h1>
+            {metaParts.length > 0 && (
+              <p className="vp-blog-intro">{metaParts.join('  ·  ')}</p>
+            )}
+            <article className="vp-blog-article" style={{ maxWidth: 760 }}>
               {activePost.coverImageUrl && (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
@@ -120,6 +139,21 @@ export default function VpBlogPage({
               />
             </article>
           </div>
+
+          {enquiryForm && (
+            <aside className="vp-blog-enquiry-col">
+              <div className="vp-blog-enquiry-card">
+                <div className="vp-blog-enquiry-head">
+                  <h2 className="vp-blog-enquiry-title">
+                    {enquiryForm.copy.sendRequirement || 'Send an enquiry'}
+                  </h2>
+                </div>
+                <div className="vp-blog-enquiry-body">
+                  <VpContactEnquiryForm {...enquiryForm} variant="modal" />
+                </div>
+              </div>
+            </aside>
+          )}
         </div>
       </div>
     );
