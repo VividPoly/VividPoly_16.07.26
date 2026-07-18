@@ -204,7 +204,10 @@ body {
   min-width: 0;
   max-width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
+  /* `clip` (not `hidden`) prevents horizontal scroll WITHOUT making the body a
+     scroll container — otherwise it would break `position: sticky` (e.g. the
+     blog article's sticky enquiry card). */
+  overflow-x: clip;
   background: var(--vp-bg);
   color: var(--vp-text-primary);
 }
@@ -11591,6 +11594,124 @@ img.vp-wordmark--footer {
   margin: 0 0 8px;
 }
 
+/* ---- Single blog article: two-column layout with a sticky enquiry card ----
+   The blog index (.vp-blog-layout--single) is untouched; these rules only apply
+   inside the article view. */
+.vp-blog-article-view .vp-blog-title {
+  font-size: clamp(26px, 3.2vw, 34px);
+}
+
+/* Widen the article view beyond the standard 1140px container so it uses the
+   empty space on the right: the form sits further right and the article→form
+   gap has room to breathe. The article body itself stays ~760px for
+   readability, so the extra width becomes the gap. */
+.vp-blog-page.vp-blog-article-view {
+  max-width: min(1480px, 94vw);
+}
+
+.vp-blog-layout.vp-blog-layout--article {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+}
+
+/* Enquiry card */
+.vp-blog-enquiry-card {
+  border-radius: 16px;
+  background: var(--vp-bg-elevated);
+  border: 1px solid var(--vp-border);
+  box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+  overflow: hidden;
+}
+
+.vp-blog-enquiry-head {
+  background: var(--vp-accent);
+  color: var(--vp-text-on-dark);
+  padding: 12px 18px;
+}
+
+.vp-blog-enquiry-title {
+  margin: 0;
+  font-family: var(--vp-font-heading);
+  font-size: 18px;
+  font-weight: var(--vp-weight-extrabold);
+  color: var(--vp-text-on-dark);
+  text-align: center;
+}
+
+.vp-blog-enquiry-sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--vp-text-on-dark-muted);
+}
+
+.vp-blog-enquiry-body {
+  padding: 14px 16px 16px;
+}
+
+/* Neutralise the modal form's own card so it sits cleanly inside our card.
+   The form keeps its natural two-column field layout so it stays compact. */
+.vp-blog-enquiry-body .vp-contact-form-card--modal {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Keep every enquiry field, but shrink the fields, labels, gaps and message
+   box so the whole card — including the Submit button — fits on screen
+   without scrolling. */
+.vp-blog-enquiry-body .vp-contact-form-grid {
+  gap: 8px 14px;
+}
+
+.vp-blog-enquiry-body .vp-contact-form-label {
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.vp-blog-enquiry-body .vp-quote-contact-input {
+  min-height: 32px;
+}
+
+.vp-blog-enquiry-body .vp-quote-contact-input--textarea {
+  min-height: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.vp-blog-enquiry-body .vp-contact-form-submit {
+  margin-top: 2px;
+  min-height: 38px;
+  padding: 8px 20px;
+}
+
+/* Two columns from desktop up; the enquiry card sticks while the article
+   scrolls. Below this width it stacks under the article (not sticky). */
+@media (min-width: 992px) {
+  .vp-blog-layout.vp-blog-layout--article {
+    grid-template-columns: minmax(0, 1fr) 400px;
+    align-items: start;
+    gap: 72px;
+  }
+
+  .vp-blog-enquiry-col {
+    position: sticky;
+    /* Pins just below the nav. Transition smooths the offset change as the nav
+       auto-hides/shows on scroll. */
+    top: calc(var(--vp-header-offset) + 16px);
+    margin-top: 0;
+    transition: top 0.25s ease;
+  }
+
+  /* When the nav auto-hides on scroll-down it slides away but --vp-header-offset
+     stays the same, leaving an empty gap above the form. Detect the hidden nav
+     and drop the reserved height so the form hugs the top instead. */
+  .vp-root:has(.vp-site-chrome--hidden) .vp-blog-enquiry-col {
+    top: 16px;
+  }
+}
+
 .vp-blog-intro {
   margin: 0 0 32px;
   max-width: 760px;
@@ -11872,7 +11993,7 @@ img.vp-wordmark--footer {
 
 @media (min-width: 992px) {
   /* Two-column layout when the enquiry aside is present. */
-  .vp-blog-layout:not(.vp-blog-layout--single) {
+  .vp-blog-layout:not(.vp-blog-layout--single):not(.vp-blog-layout--article) {
     grid-template-columns: minmax(0, 1fr) 272px;
   }
 
