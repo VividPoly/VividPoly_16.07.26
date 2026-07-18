@@ -3,8 +3,8 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import uiCopy from '@/data/ui-copy.json';
 import { getVividPolyData, type VividPolyMessages } from '@/lib/get-vividpoly-data';
+import { useLocaleMessages } from '@/lib/i18n/LocaleProvider';
 import { enquiryQuoteSelectionForProductId, resolveContactEnquiryType } from '@/lib/enquiry-product';
 import { readVpTokens, VP as VP_FALLBACK } from '@/lib/vividpoly-tokens';
 import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOptions, catSortFromUseTitle, filtersForUseSort, filterProductsByUseSort, CAPACITY_STOPS, filterProductsByCapacity, isCapacityFilterActive, getCapacityCustomNotice, type CatSort } from '@/lib/vividpoly-product-filters';
@@ -84,9 +84,11 @@ const initialState: VividPolyState = {
 
 
 export function useVividPoly() {
-  const ui = uiCopy as VividPolyMessages;
+  // Copy for the active language (English base deep-merged with the locale's
+  // overrides). Changes when the user switches language, re-deriving all data.
+  const ui = useLocaleMessages();
   const generalEnquiryType = ui.enquiryProductTypes[0]?.label ?? 'General Query';
-  const vividPolyData = useMemo(() => getVividPolyData(ui), []);
+  const vividPolyData = useMemo(() => getVividPolyData(ui), [ui]);
   const [s, setState] = useState<VividPolyState>(initialState);
   const [vpTokens, setVpTokens] = useState(VP_FALLBACK);
 
@@ -589,7 +591,7 @@ export function useVividPoly() {
     const contactAddresses = [
       {
         label: ui.contact.corporateOffice,
-        value: 'Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058',
+        value: ui.contact.corporateAddress,
       },
     ];
 
@@ -1357,7 +1359,7 @@ export function useVividPoly() {
       openContactEnquiry,
       resetEnquiryDefaults,
     };
-  }, [s, vividPolyData, vpTokens, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openContactWithProduct, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
+  }, [ui, s, vividPolyData, vpTokens, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openContactWithProduct, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
 
   return v;
 }

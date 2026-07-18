@@ -3008,6 +3008,14 @@ html[data-vp-layout="fit"] .vp-site-chrome--fixed.vp-site-chrome--hidden {
   height: 28px;
 }
 
+/* The language switcher is a searchable select (text input). Hide the blinking
+   text caret so it reads as a picker, not an editable field — typing still
+   filters the list. */
+.vp-top-utility-lang-sort .vp-select-custom-input--inline {
+  caret-color: transparent;
+  cursor: pointer;
+}
+
 .vp-top-utility-lang-icon {
   display: inline-flex;
   align-items: center;

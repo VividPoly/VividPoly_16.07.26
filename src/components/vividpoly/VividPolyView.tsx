@@ -1138,7 +1138,7 @@ export default function VividPolyView() {
                               strokeLinecap="round"
                             />
                           </svg>
-                          Filters
+                          {common.filters}
                           {v.activeFilterCount > 0 && (
                             <span className="vp-filter-count">{v.activeFilterCount}</span>
                           )}
@@ -1156,8 +1156,21 @@ export default function VividPolyView() {
                       </div>
                     </div>
                     <span className="vp-catalogue-count">
-                      <b>{v.filteredCount}</b> <span className="vp-catalogue-count-label">products</span>
-                      {v.filtersActive && <span className="vp-catalogue-count-muted"> (filtered)</span>}
+                      {(() => {
+                        // Localized "{count} products" — keep the number bold and
+                        // let each language place it via the {count} placeholder.
+                        const [before, after = ''] = common.productsCount.split('{count}');
+                        return (
+                          <>
+                            {before}
+                            <b>{v.filteredCount}</b>
+                            <span className="vp-catalogue-count-label">{after}</span>
+                          </>
+                        );
+                      })()}
+                      {v.filtersActive && (
+                        <span className="vp-catalogue-count-muted"> {common.filtered}</span>
+                      )}
                     </span>
                   </div>
                   <div className={`vp-sort-label${v.catGuide === 'use-sort' && v.catByUse ? ' vp-sort-label--guided' : ''}`}>

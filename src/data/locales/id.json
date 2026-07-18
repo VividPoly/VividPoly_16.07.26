@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Pilih bahasa",
+    "career": "Karier"
+  },
+  "nav": {
+    "home": "Beranda",
+    "products": "Produk",
+    "about": "Tentang Kami",
+    "industryServed": "Industri yang Dilayani",
+    "resources": "Berita dan Pembaruan",
+    "career": "Karier",
+    "contact": "Hubungi Kami",
+    "byProductType": "Berdasarkan Jenis Produk",
+    "byIndustryUse": "Berdasarkan Industri / Penggunaan",
+    "viewAllByType": "Lihat semua produk berdasarkan jenisnya",
+    "getQuoteShort": "Dapatkan penawaran",
+    "blogTitle": "blog",
+    "viewAllByIndustry": "Lihat semua produk berdasarkan industri",
+    "buyerResourcesLead": "Panduan pembeli, FAQ, dan yang terbaru dari VIVIDPOLY.",
+    "faqsTitle": "FAQ",
+    "buyerResourcesEyebrow": "Berita dan pembaruan",
+    "themeLight": "Beralih ke mode terang",
+    "themeDark": "Beralih ke mode gelap",
+    "closeMenu": "Tutup menunya",
+    "mainNav": "Navigasi utama",
+    "blogDesc": "Panduan pembeli tentang jenis tas PP, ukuran, dan pertanyaan ekspor.",
+    "faqsDesc": "Jawaban tentang kapasitas, pencetakan, liner, dan detail kutipan.",
+    "openMenu": "Buka menunya",
+    "resourcesMenu": "Menu Berita dan Pembaruan",
+    "logoHome": "VIVIDPOLY, buka beranda",
+    "productsMenu": "menu produk",
+    "mobileByIndustry": "Berdasarkan industri/penggunaan",
+    "mobileNav": "Navigasi seluler",
+    "mobileByProductType": "Berdasarkan jenis produk",
+    "industryMenu": "Menu yang Disajikan Industri"
+  },
+  "fab": {
+    "label": "Permintaan",
+    "mobileLabel": "Menanyakan",
+    "ariaLabel": "Buka formulir pertanyaan"
+  },
+  "common": {
+    "getQuote": "Dapatkan Penawaran",
+    "submitEnquiry": "Kirim Permintaan",
+    "viewAll": "Lihat Semua",
+    "backToHome": "Kembali ke Beranda",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "previous": "Sebelumnya",
+    "select": "Memilih",
+    "selectCountry": "Pilih negara",
+    "optional": "opsional",
+    "custom": "Kebiasaan",
+    "none": "Tidak ada",
+    "clearFilters": "Hapus filter",
+    "clearAllFilters": "Hapus semua filter",
+    "viewDetails": "Lihat Detail",
+    "specification": "Spesifikasi",
+    "filters": "Filter",
+    "recommended": "Direkomendasikan",
+    "relatedProducts": "Produk terkait",
+    "of": "dari",
+    "filtered": "(tersaring)",
+    "close": "Menutup",
+    "selectEnquiryType": "Pilih jenis pertanyaan",
+    "productsCount": "0 produk",
+    "selectBagType": "Pilih jenis tas",
+    "chatExportTeam": "Ngobrol dengan Tim Ekspor",
+    "noProductsMatch": "Tidak ada produk yang cocok dengan filter Anda."
+  },
+  "siteCopy": {
+    "heroHeadline": "Karung PP untuk Pembeli Global",
+    "heroLead": "Karung PP, karung tenun, karung katup, dan kemasan ekspor khusus dari India, dibuat untuk importir, distributor, dan pembeli industri di seluruh dunia.",
+    "heroIsoLabel": "Bersertifikat ISO",
+    "heroIecLabel": "Bersertifikat IEC",
+    "heroCtaSecondary": "Lihat Jenis Produk",
+    "heroHeadlineLine1": "Tas PP untuk",
+    "heroHeadlinePrefix": "Tas PP untuk",
+    "heroIecLabelShort": "IEC",
+    "searchPlaceholder": "Cari jenis tas, produk, atau industri (misalnya tas beras, tas semen)",
+    "heroCtaSecondaryShort": "Produk",
+    "heroCtaPrimary": "Ada apa",
+    "heroCtaWhatsApp": "Ada apa",
+    "heroCtaEnquiry": "Pertanyaan",
+    "headerQuoteLabel": "Mengutip",
+    "heroRail": "INDIA · EKSPOR GLOBAL",
+    "heroHeadlineLine2": "Pembeli Global",
+    "heroIsoLabelShort": "ISO",
+    "heroHeadlineAccent": "Pembeli Global",
+    "introTitle": "Tas PP untuk pembeli global",
+    "brandTagline": "Solusi Pengemasan Berkualitas",
+    "introHighlights": [
+      {
+        "label": "Kapasitas",
+        "value": "5 hingga 75kg"
+      },
+      {
+        "label": "Asal",
+        "value": "Ekspor India"
+      },
+      {
+        "label": "Fokus",
+        "value": "Cetak & pengepakan khusus"
+      }
+    ],
+    "heroLeadShort": "Kemasan ekspor dibuat untuk pembeli global.",
+    "introEyebrow": "Apa yang kami ekspor",
+    "homeAboutTitle": "Mitra Pengemasan Ekspor Global",
+    "homeAboutCtaType": "Belanja berdasarkan Jenis Produk",
+    "homeAboutCtaIndustry": "Belanja berdasarkan Industri",
+    "homeAboutEyebrow": "Tentang kami",
+    "homeProductsEyebrow": "Produk Kami",
+    "homeProductsTitle": "Apa yang Kami Tawarkan",
+    "intro2": "Mulai dari kemasan ritel 5 kg hingga tas industri tugas berat 75 kg, VIVIDPOLY membantu pembeli memilih konstruksi tas, metode pencetakan, liner, pegangan, gusset, jahitan, gaya pemotongan, dan format kemasan ekspor yang tepat sesuai dengan penggunaan produk dan pasar tujuan.",
+    "intro1": "VIVIDPOLY mengekspor Tas PP, tas anyaman PP, tas anyaman PP yang dicetak dan dilaminasi, tas cubit bawah, tas bawah blok, tas gusset, tas katup, tas jinjing, tas D-cut, dan tas belanja anyaman dari India ke pasar global. Solusi pengemasan kami dirancang untuk importir, distributor, pengolah biji-bijian makanan, perusahaan pupuk, merek pakan ternak, pemasok bahan kimia, bisnis bahan konstruksi, jaringan ritel, dan pembeli kemasan promosi.",
+    "marketsStrip": "Pasar Ekspor Utama: Amerika/AS, Kanada, Australia, Eropa, Inggris, Afrika, Thailand, Arab Saudi, Amerika Latin, Selandia Baru, dan pasar impor global lainnya.",
+    "homeValueProps": [
+      {
+        "title": "Spesifikasi yang Dapat Disesuaikan",
+        "description": "Kapasitas, konstruksi, percetakan, dan packing disesuaikan dengan produk dan pasar tujuan Anda."
+      },
+      {
+        "title": "Sampel Sebelum Pesanan Massal",
+        "description": "Tinjau kualitas, ukuran, dan penyelesaian tas sebelum mengonfirmasi jumlah ekspor penuh."
+      },
+      {
+        "description": "Pengepakan bale, palet, dan karton direncanakan untuk pengiriman internasional yang aman.",
+        "title": "Termasuk Pengepakan Ekspor"
+      }
+    ],
+    "homeBrowseHeading": "Telusuri tas PP berdasarkan kategori",
+    "homeValuePropsEyebrow": "Mengapa pembeli memilih VIVIDPOLY",
+    "buyerRequirementLabel": "Persyaratan Pembeli",
+    "homeProductsLead": "Tas anyaman PP yang dicetak dan dilaminasi, tas katup, tas mulut terbuka, dan kemasan ekspor khusus dari India untuk pembeli pertanian, industri, dan ritel di seluruh dunia.",
+    "trustMessage": "VIVIDPOLY dibuat untuk pembeli impor global yang membutuhkan komunikasi profesional, spesifikasi produk yang jelas, opsi pengemasan khusus, dan dukungan ekspor responsif dari India. Konten tas PP kami disusun untuk membantu pembeli membandingkan jenis tas, memahami penggunaan produk, meninjau fitur tambahan, dan mengirimkan persyaratan penawaran harga secara lengkap.",
+    "productUsesLearnMore": "Kirim pertanyaan",
+    "productUseCol": "Penggunaan Produk",
+    "buyerResponseLabel": "Respon VIVIDPOLY",
+    "finalCtaBody": "Bagikan jenis tas Anda, kapasitas, kebutuhan pencetakan, jumlah, dan tujuan. VIVIDPOLY akan meninjau pertanyaan Anda dan menindaklanjuti dengan pilihan praktis.",
+    "finalCtaButton": "Kirim pertanyaan",
+    "faqSectionTitle": "Pertanyaan yang sering diajukan",
+    "finalCtaTitle": "Siap mendiskusikan kebutuhan pengemasan Anda?",
+    "productUsesEmptyHint": "Arahkan kursor atau pilih penggunaan produk untuk melihat jenis tas yang direkomendasikan.",
+    "recommendedBagsCol": "Jenis Tas yang Direkomendasikan",
+    "productUsesIntro": "Tas VIVIDPOLY PP cocok untuk berbagai kategori produk. Kantong yang tepat harus dipilih berdasarkan berat produk, kepadatan, proses pengisian, sensitivitas kelembapan, persyaratan merek, kondisi penanganan, dan standar pengepakan ekspor.",
+    "buyerSectionTitle": "Kemasan Ekspor, Dibuat untuk Pembeli Global",
+    "catalogueUseSub": "Tas VIVIDPOLY PP cocok untuk berbagai kategori produk. Kantong yang tepat harus dipilih berdasarkan berat produk, kepadatan, proses pengisian, sensitivitas kelembapan, persyaratan merek, kondisi penanganan, dan standar pengepakan ekspor.",
+    "catalogueTypeSub": "VIVIDPOLY mengekspor tas PP dari India untuk bisnis yang membutuhkan kemasan yang kuat, dapat disesuaikan, dan siap ekspor. Tas PP kami dapat dikembangkan untuk kapasitas 5 kg hingga 75 kg tergantung pada kepadatan produk, ukuran tas, konstruksi, kekuatan kain, laminasi, liner, jahitan, gusset, dan kebutuhan pengisian.",
+    "contactIntro": "Gunakan halaman ini untuk mengirimkan pertanyaan produk atau pertanyaan umum. Pilih jenis tas yang Anda minati, atau pilih Pertanyaan Umum jika Anda masih mencari opsi.",
+    "catalogueGuideUseSort": "Urutkan berdasarkan industri di sini",
+    "shopByUseLabel": "aku sedang berkemas…",
+    "catalogueGuideProductType": "Pilih dari sini",
+    "quoteContactStepTitle": "Detail kontak Anda",
+    "quoteIntro1": "Silakan bagikan persyaratan tas PP Anda sehingga tim ekspor VIVIDPOLY dapat merekomendasikan jenis produk, konstruksi, ukuran, kapasitas, pencetakan, fitur tambahan, dan format kemasan ekspor yang tepat.",
+    "quoteIntro2": "Jawab beberapa pertanyaan sekaligus. Kami akan memandu Anda melalui jenis tas, ukuran, pencetakan, dan detail pengiriman.",
+    "quotePageEyebrow": "Permintaan ekspor",
+    "quoteLeadCapturedTitle": "Permintaan terdaftar",
+    "quoteContactSubmitLabel": "Daftarkan pertanyaan saya",
+    "quoteContactStepLead": "Bagikan bagaimana kami dapat menghubungi Anda. Kami segera mendaftarkan pertanyaan Anda dan menindaklanjutinya melalui WhatsApp.",
+    "quotePageTitle": "Bagikan kebutuhan tas Anda",
+    "quoteLeadCapturedSkipCta": "Saya sudah selesai untuk saat ini",
+    "quoteLeadCapturedOptionalTitle": "Ingin kutipan yang lebih cepat dan akurat?",
+    "quoteLeadCapturedContinueCta": "Tambahkan spesifikasi tas",
+    "quoteLeadCapturedLead": "Spesialis ekspor VIVIDPOLY akan segera menghubungi Anda melalui WhatsApp, biasanya dalam beberapa jam.",
+    "quoteLeadOnlySuccessBody": "Kami akan segera menghubungi Anda melalui WhatsApp. Anda dapat membagikan detail tas saat kami menghubungi Anda, atau kembali kapan saja untuk melengkapi spesifikasi Anda.",
+    "quoteLeadCapturedOptionalBody": "Jika Anda punya waktu sebentar, tambahkan spesifikasi tas Anda sekarang. Ini membantu kami merekomendasikan jenis, ukuran, dan pencetakan tas PP yang tepat sebelum kami menelepon, sehingga percakapan pertama Anda sudah berguna.",
+    "samplePaymentTitle": "Detail transfer bank",
+    "sampleBillTitle": "Contoh tagihan pesanan",
+    "sampleBillIntro": "Tinjau spesifikasi sampel dan biaya di bawah ini. Sampel dikirim setelah konfirmasi pembayaran.",
+    "samplePaymentIntro": "Transfer jumlah sampel menggunakan detail di bawah ini. Gunakan referensi tersebut agar kami dapat mencocokkan pembayaran Anda.",
+    "quoteSubmitNote": "Jika Anda puas dengan detail di atas, kirimkan. Tim ekspor kami akan meninjau semuanya dan menindaklanjutinya melalui WhatsApp.",
+    "sampleSuccessBody": "Terima kasih. Kami akan memverifikasi pembayaran Anda dan mengonfirmasi jadwal produksi dan pengiriman sampel melalui email.",
+    "samplePaymentConfirmCta": "Konfirmasikan transfer bank",
+    "sampleSuccessTitle": "Pesanan sampel diterima",
+    "blogLeadCta": "Kirim pertanyaan",
+    "blogReadArticle": "Baca artikel",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Pasar Ekspor"
+      },
+      {
+        "value": "9+",
+        "label": "Negara yang Dilayani"
+      },
+      {
+        "value": "750 MT",
+        "label": "Kapasitas Bulanan"
+      },
+      {
+        "label": "Nilai Ekspor"
+      }
+    ],
+    "quoteSuccessTitle": "Permintaan diterima",
+    "blogIntro": "Ditulis untuk pembeli internasional yang membandingkan pemasok tas PP, mempelajari jenis tas, memeriksa spesifikasi, dan menyiapkan pertanyaan ekspor.",
+    "quoteSuccessBody": "Kami akan menghubungi Anda kembali melalui telepon atau WhatsApp dalam waktu 12 jam.",
+    "blogLeadBody": "Kirim pertanyaan produk atau pertanyaan umum di halaman kontak kami. Tim kami akan meninjau kebutuhan Anda dan menindaklanjuti dengan panduan praktis.",
+    "blogLeadTitle": "Punya pertanyaan tentang kemasan?",
+    "homeCertsHeading": "Sertifikasi",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY melayani pembeli impor global dengan komunikasi profesional, spesifikasi produk yang jelas, opsi pengemasan khusus, dan dukungan ekspor yang responsif. Kapasitas, konstruksi, pencetakan, dan pengepakan disesuaikan dengan produk dan pasar tujuan Anda sehingga setiap pesanan sesuai dengan proses pengisian, kebutuhan branding, dan kondisi pengiriman Anda.",
+      "Minta sampel sebelum berkomitmen pada jumlah penuh. Pengepakan bale, palet, dan karton direncanakan untuk pengiriman internasional yang aman melalui sepuluh konstruksi anyaman PP, mulai dari format mulut terbuka hingga laminasi premium, disesuaikan dengan penggunaan beras, pupuk, semen, pakan, dan ritel."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY adalah eksportir tas PP yang berbasis di India yang melayani importir global yang membutuhkan komunikasi profesional, spesifikasi produk yang jelas, dan dukungan ekspor yang andal. Kami menyediakan tas mulut terbuka, jahitan, potongan D, katup, carry, laminasi, pinch bottom, block bottom, gusset, dan tas belanja mulai dari 5 kg hingga 75 kg, dengan opsi cetak flexo atau laminasi untuk presentasi merek. Jenis produk, ukuran, kapasitas, cetakan, laminasi, liner, buhul, pegangan, dan detail pengepakan semuanya diambil terlebih dahulu sebelum penawaran apa pun dikeluarkan."
+    ]
+  },
+  "footer": {
+    "company": "Perusahaan",
+    "productTypes": "Jenis Produk",
+    "buyerHelp": "Bantuan Pembeli",
+    "contact": "Kontak",
+    "backToTop": "Kembali ke atas",
+    "links": {
+      "contact": "Hubungi kami",
+      "home": "Rumah",
+      "about": "Tentang",
+      "productUses": "Kegunaan Produk",
+      "getQuote": "Dapatkan Penawaran"
+    },
+    "aboutBlurb": "VIVIDPOLY mengekspor tas PP dari India untuk pembeli global yang membutuhkan kapasitas, pencetakan, pelapis, dan kemasan siap ekspor yang dapat disesuaikan.",
+    "backToTopAria": "Kembali ke atas halaman"
+  },
+  "meta": {
+    "description": "VIVIDPOLY mengekspor tas PP dari India untuk pembeli global.",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Eksportir Tas PP dari India",
+    "loading": "Memuat VIVIDPOLY…",
+    "title": "VIVIDPOLY: Eksportir Tas PP dari India"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Pertanyaan Umum"
+    },
+    {
+      "label": "Kantong Mulut Terbuka - OMB"
+    },
+    {
+      "label": "Tas Jahitan Atas & Bawah - TBS"
+    },
+    {
+      "label": "Tas Anyaman PP D-Cut - DCB"
+    },
+    {
+      "label": "Kantong Katup - VB"
+    },
+    {
+      "label": "Tas Jinjing - CB"
+    },
+    {
+      "label": "Tas PP Tenun Laminasi Cetak - LWB"
+    },
+    {
+      "label": "Jepit Kantong Bawah - PBB"
+    },
+    {
+      "label": "Blokir Tas Bawah - BBB"
+    },
+    {
+      "label": "Blokir Tas Gusset Bawah - BGB"
+    },
+    {
+      "label": "Tas Belanja Tenun - WSB"
+    },
+    {
+      "label": "Kain Tenun PP"
+    },
+    {
+      "label": "Penghalang Gulma"
+    }
+  ],
+  "enquiryModal": {
+    "close": "Tutup formulir pertanyaan",
+    "title": "Formulir Permintaan"
+  },
+  "emailCompose": {
+    "toLabel": "Ke",
+    "fromLabel": "email Anda",
+    "nameLabel": "Namamu",
+    "subjectLabel": "Subjek",
+    "messageLabel": "Pesan",
+    "send": "Kirim pesan",
+    "sending": "Mengirim…",
+    "emailInvalid": "Masukkan alamat email yang valid.",
+    "defaultSubject": "Ekspor pertanyaan dari Vividpoly.com",
+    "title": "Email VIVIDPOLY",
+    "close": "Tutup panel tulis",
+    "messageRequired": "Tambahkan pesan singkat sebelum mengirim.",
+    "sendSuccess": "Pesan terkirim. Tim kami akan segera menghubungi Anda kembali.",
+    "hint": "Pesan Anda dikirim langsung ke tim ekspor kami. Kami akan membalas alamat email yang Anda masukkan di atas.",
+    "sendError": "Kami tidak dapat mengirimkan pesan Anda. Silakan coba lagi atau hubungi kami langsung.",
+    "sendUnavailable": "Pengiriman email belum dikonfigurasi. Silakan gunakan telepon atau WhatsApp untuk menghubungi kami."
+  },
+  "home": {
+    "shopByProductType": "Belanja berdasarkan Jenis Produk",
+    "shopByIndustry": "Belanja berdasarkan Industri",
+    "productTypes": "Jenis produk",
+    "faqsEyebrow": "FAQ",
+    "shopByProductTypeDesc": "Sepuluh konstruksi anyaman PP dari mulut terbuka hingga format laminasi premium.",
+    "shopByIndustryDesc": "Cocokkan jenis kantong dengan beras, pupuk, semen, pakan, dan penggunaan eceran.",
+    "swipeCards": "Gesek kartunya",
+    "howWeHelpBuyers": "Bagaimana kami membantu pembeli",
+    "swipeIndustries": "Gesek untuk menelusuri industri",
+    "buyerNeed": "Pembeli membutuhkan {index}",
+    "buyerPagination": "Pembeli membutuhkan penomoran halaman",
+    "slideOf": "0 dari {total}",
+    "buyerRequirements": "Persyaratan pembeli",
+    "valuePropsSlides": "Mengapa pembeli memilih slide VIVIDPOLY",
+    "buyerCarousel": "Korsel persyaratan pembeli",
+    "productUses": "Kegunaan produk",
+    "previousProducts": "Produk sebelumnya",
+    "nextProducts": "Produk selanjutnya"
+  },
+  "catalogue": {
+    "titleByType": "Belanja berdasarkan Jenis Produk",
+    "titleByUse": "Belanja berdasarkan Industri / Penggunaan",
+    "capacity": "Kapasitas",
+    "productType": "Jenis Produk",
+    "sortAllProducts": "Semua produk",
+    "breadcrumbUse": "Produk / Berdasarkan Industri & Penggunaan",
+    "breadcrumbType": "Produk / Berdasarkan Jenis Produk"
+  },
+  "pdp": {
+    "keyFeatures": "Fitur utama",
+    "benefits": "Manfaat",
+    "speciality": "Khusus",
+    "customization": "Detail penyesuaian",
+    "getQuoteFor": "Dapatkan Penawaran seharga {productName}",
+    "whyBuyersChoose": "Mengapa pembeli memilih tas ini",
+    "productionMaterials": "Produksi & bahan",
+    "materialCombination": "Kombinasi bahan",
+    "manufacturingProcess": "Proses manufaktur",
+    "trustBadges": [
+      "Spesifikasi yang Dapat Disesuaikan",
+      "Sampel Tersedia Sebelum Pesanan Massal",
+      "Termasuk Pengepakan Ekspor",
+      "Tim Ekspor Responsif"
+    ],
+    "productImage": "Gambar produk {index}"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "pageEyebrow": "TENTANG KAMI",
+    "pageTitle": "Mitra Pengemasan Ekspor Global",
+    "ctaSecondary": "Belanja berdasarkan Jenis Produk",
+    "p2": "Minta sampel sebelum berkomitmen pada jumlah penuh. Pengepakan bale, palet, dan karton direncanakan untuk pengiriman internasional yang aman melalui sepuluh konstruksi anyaman PP, mulai dari format mulut terbuka hingga laminasi premium, disesuaikan dengan penggunaan beras, pupuk, semen, pakan, dan ritel.",
+    "pillarsEyebrow": "KEKUATAN",
+    "p1": "VIVIDPOLY melayani pembeli impor global dengan komunikasi profesional, spesifikasi produk yang jelas, opsi pengemasan khusus, dan dukungan ekspor yang responsif. Kapasitas, konstruksi, pencetakan, dan pengepakan disesuaikan dengan produk dan pasar tujuan Anda sehingga setiap pesanan sesuai dengan proses pengisian, kebutuhan branding, dan kondisi pengiriman Anda.",
+    "exportVisionHeading": "Menuju masa depan yang cerah",
+    "pillarsHeading": "Membawa warisan ekspor yang mengutamakan pembeli",
+    "exportVisionEyebrow": "Visi Ekspor Kami",
+    "ctaPrimary": "Kirim pertanyaan",
+    "pillars": [
+      {
+        "body": "Spesifikasi, pengepakan, dan komunikasi direncanakan untuk pasar tujuan dan kebutuhan kepatuhan pembeli.",
+        "title": "Kami memastikan standar ekspor internasional"
+      },
+      {
+        "title": "Kapasitas dan konstruksi siap ekspor",
+        "body": "Dari kemasan retail 5 kg hingga tas industri 75 kg, dengan opsi laminasi, liner, gusset, katup, dan pencetakan."
+      },
+      {
+        "title": "Tim dukungan ekspor khusus",
+        "body": "Panduan responsif tentang jenis produk, karya seni, format pengepakan, kuantitas, dan tujuan sebelum penawaran."
+      },
+      {
+        "title": "Pengalaman praktis dengan proses yang jelas",
+        "body": "Pembeli mendapatkan panduan penggunaan produk terstruktur dan jalur pertanyaan lengkap, bukan salinan katalog yang tidak jelas."
+      }
+    ],
+    "pillarsLead": "Mulai dari standar internasional hingga dukungan penyelidikan praktis, VIVIDPOLY disusun berdasarkan bagaimana sebenarnya pembeli kemasan global mendapatkan pasokan.",
+    "exportVisionBody": "VIVIDPOLY bertujuan untuk menjadi mitra ekspor India yang tepercaya untuk bisnis global yang membutuhkan tas PP yang kuat, dapat disesuaikan, dan siap pakai merek. Kami memahami bahwa pembeli internasional membutuhkan lebih dari sekadar deskripsi produk secara umum. Mereka memerlukan spesifikasi yang akurat, panduan penggunaan produk, dukungan karya seni dan pencetakan, opsi pengemasan yang sesuai, dan komunikasi yang responsif selama proses penyelidikan.",
+    "whyEyebrow": "LAYANAN",
+    "pillarsBody": "Mulai dari standar internasional hingga dukungan penyelidikan praktis, VIVIDPOLY disusun berdasarkan bagaimana sebenarnya pembeli kemasan global mendapatkan pasokan. Spesifikasi, pengepakan, dan komunikasi direncanakan untuk pasar tujuan dan kebutuhan kepatuhan pembeli. Kapasitas berkisar dari kemasan ritel 5 kg hingga tas industri 75 kg, dengan opsi laminasi, liner, gusset, katup, dan pencetakan. Dukungan ekspor khusus mencakup jenis produk, karya seni, format pengepakan, kuantitas, dan tujuan sebelum penawaran, dengan panduan penggunaan produk terstruktur dan jalur penyelidikan yang lengkap.",
+    "whyHeading": "Ekspor dukungan pengemasan yang terbaik",
+    "contactTeam": "Kirim pertanyaan",
+    "requestCustomQuote": "Kirim pertanyaan",
+    "factsEyebrow": "Detail perusahaan",
+    "factsHeading": "Sekilas tentang VIVIDPOLY",
+    "ctaBandButton": "Kirim pertanyaan",
+    "ctaBandTitle": "Mencari mitra pengemasan ekspor profesional?",
+    "whyLead": "Mulai dari variasi produk dan perencanaan kapasitas hingga pencetakan, pelapis, dan pengepakan ekspor, VIVIDPOLY disusun untuk mendukung keputusan pengadaan yang praktis.",
+    "whyBody": "Mulai dari variasi produk dan perencanaan kapasitas hingga pencetakan, pelapis, dan pengepakan ekspor, VIVIDPOLY disusun untuk mendukung keputusan pengadaan yang praktis. Pembeli dapat memperoleh tas PP dari India untuk AS, Kanada, Australia, Eropa, Inggris, Afrika, Thailand, Arab Saudi, dan pasar lainnya di berbagai jenis tas industri, pertanian, ritel, dan promosi. Perencanaan kapasitas mencakup 5 kg hingga 75 kg, dengan konstruksi khusus, dukungan pencetakan dan branding, panduan penggunaan produk, dan proses penawaran harga ramah pembeli yang mencakup detail yang diperlukan sebelum penawaran harga.",
+    "whyMoreLabel": "DETAIL LEBIH LANJUT",
+    "ctaBandBody": "Bagikan jenis tas Anda, kapasitas, kebutuhan pencetakan, jumlah, dan tujuan. VIVIDPOLY akan meninjau pertanyaan Anda dan menindaklanjuti dengan pilihan praktis.",
+    "whyItems": [
+      [
+        "Penentuan posisi eksportir yang berbasis di India",
+        "Pembeli dapat memperoleh tas PP dari India untuk Amerika Serikat, Kanada, Australia, Eropa, Inggris, Afrika, Thailand, Arab Saudi, dan pasar lainnya."
+      ],
+      [
+        "Rangkaian produk Tas PP yang terfokus",
+        "Penawaran produknya jelas dan praktis, mencakup jenis tas industri, pertanian, ritel, dan promosi umum."
+      ],
+      [
+        "Perencanaan kapasitas 5 kg hingga 75 kg",
+        "Pembeli dapat mendiskusikan paket ritel kecil, tas komoditas ukuran sedang, dan tas industri tugas berat."
+      ],
+      [
+        "Opsi konstruksi khusus",
+        "Opsi lapisan, laminasi, buhul, liner, perforasi, jendela, pegangan, katup, bagian bawah penjepit, dan bagian bawah blok dapat direncanakan."
+      ],
+      [
+        "Dukungan pencetakan dan branding",
+        "Opsi pencetakan Flexo dan PP anyaman laminasi cetak membantu mendukung visibilitas merek dan presentasi pasar."
+      ],
+      [
+        "Panduan penggunaan produk",
+        "Pembeli dapat memilih tas berdasarkan aplikasinya, seperti beras, pupuk, pakan ternak, bahan kimia, semen, garam, gula, eceran, dan belanja."
+      ],
+      [
+        "Proses penawaran harga yang ramah pembeli",
+        "Situs web ini membantu pembeli berbagi jenis produk, kapasitas, ukuran, pencetakan, tambahan, pengepakan, jumlah, dan tujuan sebelum penawaran."
+      ]
+    ],
+    "ctaBandEyebrow": "Hubungi kami"
+  },
+  "contact": {
+    "title": "Hubungi kami",
+    "sendRequirement": "Formulir Permintaan",
+    "formCompany": "Nama perusahaan",
+    "formName": "Nama",
+    "sendRequirementLead": "Beritahu kami apa yang Anda butuhkan. Pilih jenis produk atau kirimkan pertanyaan umum dan kami akan merespons dengan panduan praktis.",
+    "formMessage": "Pesan",
+    "formEmail": "E-mail",
+    "sending": "Mengirim…",
+    "reachUs": "Hubungi kami secara langsung",
+    "formCountry": "Negara",
+    "formPhone": "WhatsApp / telepon",
+    "emailInvalid": "Masukkan alamat email yang valid.",
+    "formEnquiryType": "Jenis pertanyaan",
+    "submitEnquiry": "Kirim pertanyaan",
+    "emailLabel": "E-mail",
+    "submitSuccess": "Pertanyaan terkirim. Tim kami akan segera menghubungi Anda kembali.",
+    "submitUnavailable": "Permintaan online belum dikonfigurasi. Silakan kirim email atau hubungi kami menggunakan rincian di halaman ini.",
+    "submitError": "Kami tidak dapat mengirimkan pertanyaan Anda. Silakan coba lagi atau hubungi kami langsung.",
+    "phoneLabel": "WhatsApp / Telepon",
+    "websiteLabel": "Situs web",
+    "corporateOffice": "Kantor perusahaan",
+    "messageRequired": "Tambahkan pesan singkat sebelum mengirimkan.",
+    "phoneRequired": "Tambahkan WhatsApp atau nomor telepon agar kami dapat menghubungi Anda.",
+    "companyRows": [
+      [
+        "Perusahaan / Merek"
+      ],
+      [
+        "Situs web",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mail"
+      ],
+      [
+        "Telepon"
+      ],
+      [
+        "Alamat Perusahaan",
+        "Sankalp Square, A 1601, Sindhu Bhavan Marg, dekat Taj Hotel, opp. Permainan Tembak, Koloni PRL, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, dekat Taj Hotel, opp. Permainan Tembak, Koloni PRL, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Detail kontak",
+    "submitEnquiry": "Kirim pertanyaan",
+    "registerLead": "Kami akan mendaftarkan pertanyaan Anda dan menindaklanjutinya melalui WhatsApp.",
+    "bagSpec": "Spesifikasi tas",
+    "stepBagSpec": "Spesifikasi tas",
+    "howReachYou": "Bagaimana kami dapat menghubungi Anda?",
+    "fields": {
+      "capacity": "Kapasitas",
+      "product": "Produk",
+      "size": "Ukuran",
+      "addons": "Pengaya",
+      "printing": "Pencetakan",
+      "packing": "Sedang mengemas",
+      "quantity": "Kuantitas",
+      "destination": "Negara tujuan",
+      "review": "Tinjauan",
+      "bagType": "Jenis tas",
+      "packedProduct": "Produk yang dikemas"
+    },
+    "stepLabel": "Langkah {current} dari {total}",
+    "reviewLabels": {
+      "productType": "Jenis produk",
+      "capacity": "Kapasitas",
+      "printing": "Pencetakan",
+      "addons": "Pengaya",
+      "packing": "Sedang mengemas",
+      "quantity": "Kuantitas",
+      "bagSize": "Ukuran tas",
+      "destination": "Tujuan",
+      "empty": "-",
+      "packedProduct": "Produk yang dikemas"
+    },
+    "savedWithName": "0, detail kontak Anda disimpan.",
+    "closeForm": "Tutup formulir pertanyaan",
+    "emailInvalid": "Masukkan alamat email yang valid.",
+    "reviewSteps": {
+      "product": "Produk",
+      "order": "Memesan",
+      "sizePrint": "Ukuran & cetak"
+    },
+    "saved": "Detail kontak Anda disimpan."
+  },
+  "sample": {
+    "steps": {
+      "review": "Tinjauan",
+      "payment": "Pembayaran",
+      "confirmed": "Dikonfirmasi"
+    },
+    "bankTransfer": "Transfer bank",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "continuePayment": "Lanjutkan ke Pembayaran",
+    "reference": "Referensi:",
+    "specification": "Spesifikasi sampel",
+    "billRows": {
+      "productType": "Jenis produk",
+      "sampleQuantity": "Kuantitas sampel",
+      "capacity": "Kapasitas",
+      "printing": "Pencetakan",
+      "packing": "Sedang mengemas",
+      "leadTime": "Waktu memimpin",
+      "unitPrice": "Harga satuan",
+      "total": "Total",
+      "exportPacking": "Ekspor pengepakan & pengiriman"
+    },
+    "yourDetails": "Detail Anda",
+    "searchBanks": "Cari bank",
+    "selectBranch": "Pilih cabang",
+    "selectBank": "Pilih bank",
+    "searchBranches": "Cari cabang",
+    "bankRows": {
+      "bank": "Bank",
+      "branch": "Cabang",
+      "accountNumber": "Nomor rekening",
+      "swift": "CEPAT",
+      "amount": "Jumlah",
+      "beneficiary": "Penerima manfaat",
+      "accountType": "Jenis akun",
+      "ifsc": "IFSC",
+      "paymentReference": "Referensi pembayaran"
+    },
+    "form": {
+      "name": "Nama",
+      "address": "Alamat pengiriman",
+      "quantity": "Jumlah yang dibutuhkan untuk sampel"
+    },
+    "noBankMatches": "Tidak ada kecocokan. Coba pencarian lain.",
+    "closePicker": "Tutup pemilih"
+  },
+  "blog": {
+    "fallbackReadTime": "5 menit membaca",
+    "pageTitle": "Panduan & wawasan pembeli",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "fallbackCategory": "Panduan pembeli",
+    "emptyBody": "Panduan dan wawasan pembeli baru akan segera hadir — periksa kembali nanti.",
+    "loading": "Memuat artikel…",
+    "emptyTitle": "Belum ada artikel",
+    "backToArticles": "Kembali ke semua artikel"
+  },
+  "careers": {
+    "applyNow": "Lamar Sekarang",
+    "title": "Bersumber dari India. Terpercaya di Seluruh Dunia.",
+    "eyebrow": "Karir di VividPoly",
+    "seeHowWeWork": "Lihat bagaimana kami bekerja",
+    "whyHeading": "Mengapa VividPoly",
+    "lead": "Kami mencari orang yang peduli dengan kualitas, komunikasi yang jelas, dan pengiriman yang dapat diandalkan. Perannya mencakup kantor, pabrik, dan operasi ekspor di Ahmedabad dan Vadodara.",
+    "whyLead": "Tempat praktis untuk membangun keterampilan di bidang manufaktur dan perdagangan global.",
+    "reasons": [
+      {
+        "body": "Pekerjaan terkait dengan pembeli di 70+ pasar ekspor.",
+        "title": "Paparan Global"
+      },
+      {
+        "body": "Tanggung jawab baru datang dengan cepat dalam bisnis yang sedang berkembang.",
+        "title": "Ruang untuk Tumbuh"
+      },
+      {
+        "title": "Keamanan Kerja",
+        "body": "Didukung oleh operasi ekspor yang stabil dan mapan."
+      },
+      {
+        "body": "Paparan langsung terhadap manufaktur dan perdagangan global.",
+        "title": "Belajar sambil Bekerja"
+      }
+    ],
+    "whyBody": "Tempat praktis untuk membangun keterampilan di bidang manufaktur dan perdagangan global. Pekerjaan terikat pada pembeli di 70+ pasar ekspor, tanggung jawab baru datang dengan cepat dalam bisnis yang sedang berkembang, dan peran tersebut didukung oleh operasi ekspor yang stabil dan mapan dengan paparan langsung terhadap manufaktur dan perdagangan global.",
+    "positionsEyebrow": "POSISI TERBUKA",
+    "positionsHeading": "Temukan kami di tempat yang Anda cari",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Pembaruan perusahaan dan peran terbuka untuk karir ekspor, operasi, dan pengemasan."
+      },
+      {
+        "label": "Memang",
+        "blurb": "Cari daftar VIVIDPOLY berdasarkan peran, lokasi, dan tingkat pengalaman."
+      },
+      {
+        "blurb": "Pembukaan yang berfokus di India di seluruh tim manufaktur, penjualan, dan dukungan.",
+        "label": "Naukri"
+      }
+    ],
+    "positionsLead": "Lowongan terkini diposting dan diperbarui pada platform ini. Telusuri peran langsung, lalu lamar melalui formulir di bawah ini.",
+    "positionsNote": "Lebih suka lamaran langsung? Gunakan Terapkan Sekarang di bawah.",
+    "positionsMoreLabel": "LIHAT PEMBUKAAN",
+    "ctaLead": "Bagikan minat peran, pengalaman, dan lokasi pilihan Anda. Tim kami akan meninjau aplikasi saat lowongan tersedia.",
+    "ctaHeading": "Perpindahan karier Anda selanjutnya dimulai di sini",
+    "ctaEyebrow": "DAFTAR SEKARANG"
+  },
+  "search": {
+    "recentHeading": "Pencarian terkini",
+    "suggestionsHeading": "Saran",
+    "noMatches": "Tidak ada kecocokan. Coba \"beras\" atau \"semen\"",
+    "recentTerms": [
+      "kantong beras",
+      "kantong semen",
+      "dicetak laminasi",
+      "25 kg mulut terbuka"
+    ]
+  },
+  "filters": {
+    "capacityCustomNotice": "VIVIDPOLY menyediakan kemasan tas PP antara {min} kg hingga {max} kg. Silakan masukkan kapasitas dalam kisaran ini.",
+    "capacityMax": "Kapasitas maksimum",
+    "capacityOrEnter": "Atau masukkan kapasitas",
+    "capacityMin": "Kapasitas minimal",
+    "capacityExample": "misalnya 23kg",
+    "customSelectNoMatches": "Tidak ada kecocokan yang ditemukan",
+    "customSelectEnter": "Masukkan spesifikasi Anda…",
+    "productUseOptions": "Opsi penggunaan produk",
+    "customSelectUseAnyway": "Tetap gunakan nilai ini"
+  },
+  "breadcrumbs": {
+    "home": "Rumah",
+    "blog": "blog",
+    "faqs": "FAQ",
+    "about": "Tentang",
+    "careers": "Karier",
+    "contact": "Hubungi kami",
+    "getQuote": "Dapatkan Penawaran",
+    "products": "Produk",
+    "requestExportQuote": "Minta Penawaran Ekspor"
+  },
+  "validation": {
+    "emailInvalid": "Masukkan alamat email yang valid."
+  },
+  "buyerRows": [
+    {
+      "response": "VIVIDPOLY diposisikan sebagai eksportir yang berbasis di India untuk pembeli tas PP global.",
+      "requirement": "Ekspor sumber dari India"
+    },
+    {
+      "response": "Mulut terbuka, dijahit, potong D, katup, bawa, laminasi, jepit bagian bawah, bagian bawah blok, buhul, dan tas belanja.",
+      "requirement": "Variasi produk"
+    },
+    {
+      "requirement": "Kapasitas khusus",
+      "response": "Solusi tas PP dapat direncanakan mulai dari 5 kg hingga 75 kg tergantung pada kepadatan produk dan struktur tas."
+    },
+    {
+      "requirement": "Presentasi merek",
+      "response": "Opsi pencetakan Flexo dan PP anyaman laminasi cetak mendukung identitas produk dan daya tarik rak."
+    },
+    {
+      "response": "Jenis produk, ukuran, kapasitas, pencetakan, laminasi, liner, buhul, pegangan, dan detail pengepakan dapat ditangkap sebelum penawaran.",
+      "requirement": "Alur pertanyaan yang ramah pembeli"
+    }
+  ],
+  "buyerMeta": [
+    {
+      "short": "Eksportir yang berbasis di India",
+      "label": "sumber India"
+    },
+    {
+      "label": "Rangkaian produk",
+      "short": "10 jenis tas"
+    },
+    {
+      "label": "Kapasitas khusus",
+      "short": "5kg hingga 75kg"
+    },
+    {
+      "short": "Cetak & laminasi",
+      "label": "Pencetakan merek"
+    },
+    {
+      "short": "Detail siap penawaran",
+      "label": "Alur kerja kutipan"
+    }
+  ],
+  "useRows": [
+    {
+      "tips": "Pencetakan flexo, cetakan laminasi, jendela, buhul, liner, pegangan, pengepakan bale ekspor.",
+      "cardTitle": "Biji-bijian & Kacang-kacangan",
+      "bags": "Kantong mulut terbuka, kantong jahitan atas dan bawah, kantong anyaman PP laminasi cetak, kantong bawah cubit",
+      "use": "Beras, gandum, biji-bijian, kacang-kacangan, tepung"
+    },
+    {
+      "use": "Pupuk dan benih",
+      "tips": "Liner, gusset, pencetakan flexo, pencetakan laminasi, perforasi, pengepakan palet.",
+      "bags": "Tas yang dijahit, tas anyaman PP yang dilaminasi, tas bagian bawah blok, tas gusset bagian bawah blok",
+      "cardTitle": "Pupuk & Benih"
+    },
+    {
+      "cardTitle": "Pakan Ternak & Makanan Hewan",
+      "bags": "Tas PP anyaman laminasi yang dicetak, tas buhul bagian bawah blok, tas jinjing, tas bagian bawah cubit",
+      "use": "Pakan ternak dan makanan hewan",
+      "tips": "Konstruksi multi-lapis, jendela, gusset, pegangan, pencetakan premium, perforasi opsional."
+    },
+    {
+      "use": "Semen, bahan kimia, mineral, bubuk",
+      "cardTitle": "Semen & Bubuk Industri",
+      "tips": "Konstruksi katup, liner, perforasi, jahitan kuat, pengepakan tugas berat.",
+      "bags": "Tas katup, tas blok bawah, tas jahitan atas dan bawah, tas yang didukung liner"
+    },
+    {
+      "use": "Garam, gula, komoditas konsumen",
+      "cardTitle": "Garam, Gula & Komoditas",
+      "bags": "Kantong dengan mulut terbuka, tas yang dijahit, tas yang dilaminasi, tas dengan penyangga liner",
+      "tips": "Liner, permukaan laminasi, pencetakan flexo, jahitan bersih, opsi pendukung kelembapan."
+    },
+    {
+      "use": "Ritel, belanja, promosi",
+      "tips": "Opsi pegangan, pencetakan laminasi, buhul, kemasan karton, karya seni merek.",
+      "bags": "Tas potong D, tas jinjing, tas belanja anyaman, tas PP anyaman laminasi cetak",
+      "cardTitle": "Ritel & Promosi"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Pencetakan flexo, cetakan laminasi, jendela, buhul, liner, pegangan, pengepakan bale ekspor.",
+      "title": "Beras, Gandum, Biji-bijian dan Kacang-kacangan",
+      "bags": "Kantong mulut terbuka, kantong jahitan atas dan bawah, kantong anyaman PP laminasi cetak, kantong bawah cubit."
+    },
+    {
+      "tips": "Liner, permukaan laminasi, potongan bersih, jahitan aman, desain ramah ritel.",
+      "title": "Komoditas Tepung dan Pangan",
+      "bags": "Kantong mulut terbuka, tas anyaman PP yang dicetak dan dilaminasi, kantong bawah cubit."
+    },
+    {
+      "tips": "Liner, permukaan laminasi, pencetakan flexo, jahitan bersih, opsi pendukung kelembapan.",
+      "bags": "Kantong mulut terbuka, tas yang dijahit, tas PP anyaman laminasi yang dicetak.",
+      "title": "Garam dan Gula"
+    },
+    {
+      "tips": "Liner, gusset, pencetakan flexo, pencetakan laminasi, perforasi, pengepakan palet.",
+      "bags": "Tas yang dijahit, tas anyaman PP yang dilaminasi, tas bagian bawah blok, tas gusset bagian bawah blok.",
+      "title": "Pupuk dan Benih"
+    },
+    {
+      "tips": "Konstruksi multi-lapis, jendela, gusset, pegangan, pencetakan premium, perforasi opsional.",
+      "bags": "Tas anyaman PP laminasi cetak, tas cubit bagian bawah, tas gusset bagian bawah blok, tas jinjing.",
+      "title": "Pakan Ternak dan Makanan Hewan"
+    },
+    {
+      "tips": "Konstruksi katup, liner, perforasi, jahitan kuat, pengepakan tugas berat.",
+      "bags": "Tas katup, tas blok bawah, tas dijahit atas dan bawah.",
+      "title": "Semen dan Bahan Konstruksi"
+    },
+    {
+      "title": "Bahan Kimia dan Mineral",
+      "tips": "Liner, laminasi, perforasi penghilangan udara, jahitan aman, pengepakan ekspor.",
+      "bags": "Tas katup, tas yang dijahit, tas mulut terbuka, tas yang didukung liner."
+    },
+    {
+      "tips": "Opsi pegangan, pencetakan laminasi, buhul, kemasan karton, karya seni merek.",
+      "title": "Produk Ritel dan Promosi",
+      "bags": "Tas potong D, tas jinjing, tas belanja anyaman, tas PP anyaman laminasi cetak."
+    },
+    {
+      "title": "Belanja dan Kemasan Bergaya Dapat Digunakan Kembali",
+      "bags": "Tas belanja anyaman, tas jinjing, tas anyaman PP potong D.",
+      "tips": "Pegangan lingkaran, pegangan potongan D, buhul samping, gusset bawah, pencetakan multi-warna."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Tas Tenun"
+    },
+    {
+      "title": "Kain"
+    },
+    {
+      "title": "Penghalang Gulma"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Komoditas Pertanian & Pangan",
+      "items": [
+        "Beras, Gandum, Biji-bijian dan Kacang-kacangan",
+        "Komoditas Tepung dan Pangan",
+        "Garam dan Gula"
+      ]
+    },
+    {
+      "title": "Input Pertanian & Perawatan Hewan",
+      "items": [
+        "Pupuk dan Benih",
+        "Pakan Ternak dan Makanan Hewan"
+      ]
+    },
+    {
+      "title": "Industri & Konstruksi",
+      "items": [
+        "Semen dan Bahan Konstruksi",
+        "Bahan Kimia dan Mineral"
+      ]
+    },
+    {
+      "title": "Ritel & Promosi",
+      "items": [
+        "Produk Ritel dan Promosi",
+        "Belanja dan Kemasan Bergaya Dapat Digunakan Kembali"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Kapasitas",
+      "title": "Kapasitas",
+      "options": [
+        {
+          "label": "5kg"
+        },
+        {
+          "label": "10kg"
+        },
+        {
+          "label": "15kg"
+        },
+        {
+          "label": "20kg"
+        },
+        {
+          "label": "25kg"
+        },
+        {
+          "label": "30kg"
+        },
+        {
+          "label": "40kg"
+        },
+        {
+          "label": "50kg"
+        },
+        {
+          "label": "60kg"
+        },
+        {
+          "label": "75kg"
+        },
+        {
+          "label": "Kebiasaan"
+        }
+      ]
+    },
+    {
+      "key": "Jenis Produk",
+      "title": "Jenis Produk",
+      "options": [
+        {
+          "label": "Buka mulut"
+        },
+        {
+          "label": "Dijahit"
+        },
+        {
+          "label": "potong D"
+        },
+        {
+          "label": "Katup"
+        },
+        {
+          "label": "Membawa"
+        },
+        {
+          "label": "dilaminasi"
+        },
+        {
+          "label": "Jepit bagian bawah"
+        },
+        {
+          "label": "Blokir bagian bawah"
+        },
+        {
+          "label": "Blokir gusset bawah"
+        },
+        {
+          "label": "Belanja tenun"
+        },
+        {
+          "label": "Kain tenun PP"
+        },
+        {
+          "label": "Penghalang gulma"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "Jenis tas PP apa yang diekspor VIVIDPOLY?",
+      "a": "VIVIDPOLY mengekspor tas mulut terbuka, tas jahitan atas dan bawah, tas anyaman PP potong D, tas katup, tas jinjing, tas anyaman PP yang dicetak dan dilaminasi, tas bawah jepit PP anyaman yang dicetak dan dilaminasi, tas bawah blok PP anyaman yang dicetak dan dilaminasi, tas buhul bawah blok PP anyaman yang dicetak dan dilaminasi, dan tas belanja anyaman."
+    },
+    {
+      "q": "Berapa kapasitas berat yang tersedia untuk tas VIVIDPOLY PP?",
+      "a": "VIVIDPOLY dapat mendiskusikan kebutuhan tas PP mulai dari 5 kg hingga 75 kg, tergantung pada kepadatan produk, ukuran tas, kekuatan kain, konstruksi, laminasi, liner, gusset, jahitan, dan aplikasi penggunaan akhir."
+    },
+    {
+      "q": "Informasi apa yang diperlukan untuk kutipan?",
+      "a": "Pembeli harus memberikan jenis produk, produk yang dikemas, kapasitas, ukuran tas, jumlah, persyaratan pencetakan, laminasi, liner, gusset, pegangan, pemotongan, jahitan, jenis kemasan, negara tujuan, dan karya seni atau referensi sampel jika tersedia."
+    },
+    {
+      "q": "Dapatkah VIVIDPOLY menyediakan tas anyaman PP yang dicetak dan dilaminasi?",
+      "a": "Ya. VIVIDPOLY dapat mendukung kebutuhan tas PP anyaman cetak dan laminasi untuk produk seperti beras, tepung, pupuk, pakan ternak, makanan hewan, benih, garam, gula, dan komoditas ritel."
+    },
+    {
+      "q": "Apa perbedaan antara kantong mulut terbuka dan kantong katup?",
+      "a": "Kantong mulut terbuka diisi melalui bagian atas yang terbuka dan ditutup setelah diisi. Kantong katup diisi melalui bukaan katup dan biasanya digunakan untuk bubuk, produk bergaya semen, bahan kimia, mineral, dan bahan konstruksi."
+    },
+    {
+      "q": "Untuk apa tas pinch bottom digunakan?",
+      "a": "Kantong cubit bawah digunakan ketika pembeli membutuhkan tampilan kemasan premium dan presentasi penutupan yang bersih. Mereka cocok untuk makanan pilihan, makanan hewan, pakan ternak, biji-bijian, benih, dan produk ritel."
+    },
+    {
+      "q": "Untuk apa tas buhul bawah blok digunakan?",
+      "a": "Tas gusset bawah blok cocok jika pembeli membutuhkan peningkatan volume, bentuk isian yang stabil, area branding yang lebih kuat, dan presentasi penumpukan yang lebih baik."
+    },
+    {
+      "q": "Bisakah tas PP dilengkapi jendela?",
+      "a": "Ya. Tas PP anyaman yang dicetak dan dilaminasi dapat dilengkapi jendela transparan untuk menampilkan produk yang dikemas di dalamnya."
+    },
+    {
+      "a": "Ya. Liner dapat dipertimbangkan jika diperlukan perlindungan produk tambahan, penahan kelembapan, atau retensi produk yang baik.",
+      "q": "Bisakah VIVIDPOLY menyediakan pelapis di dalam tas PP?"
+    },
+    {
+      "q": "Opsi pencetakan apa yang tersedia?",
+      "a": "VIVIDPOLY dapat mendukung tas polos, tas cetak flexo, dan format tas anyaman PP cetak dan laminasi, bergantung pada kebutuhan merek, kompleksitas karya seni, anggaran, dan pasar produk."
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Panduan pembeli",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore dan dolore magna aliqua.",
+      "readTime": "6 menit membaca",
+      "title": "Apa itu Tas PP? Panduan Lengkap untuk Pembeli Impor",
+      "purpose": "Jelaskan tas PP, kegunaan umum, dan faktor pemilihan pembeli."
+    },
+    {
+      "excerpt": "Dengan sedikit racun, yang merupakan latihan keras yang tidak bisa dilakukan oleh orang lain sebagai konsekuensinya.",
+      "readTime": "5 menit membaca",
+      "category": "Kemasan",
+      "purpose": "Bandingkan gaya pengisian dan aplikasi yang sesuai.",
+      "title": "Tas Mulut Terbuka vs Tas Katup: Tas PP Mana yang Tepat untuk Produk Anda?"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Panduan pembeli",
+      "readTime": "7 menit membaca",
+      "purpose": "Edukasi pembeli tentang format tas yang dijahit.",
+      "title": "Tas PP Jahitan Atas dan Bawah: Kegunaan, Manfaat, dan Kustomisasi"
+    },
+    {
+      "excerpt": "Kecuali sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "readTime": "5 menit membaca",
+      "category": "merek",
+      "title": "Tas PP Tenun yang Dicetak dan Dilaminasi untuk Kemasan Beras, Pakan dan Pupuk",
+      "purpose": "Promosikan kemasan bermerek premium."
+    },
+    {
+      "category": "Kemasan",
+      "readTime": "6 menit membaca",
+      "title": "Tas Pinch Bottom vs Block Bottom Bag: Panduan Pembeli",
+      "purpose": "Bandingkan konstruksi tas premium.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elite, sed do eiusmod tempor incididunt ut labore."
+    },
+    {
+      "category": "Perekat",
+      "readTime": "8 menit membaca",
+      "excerpt": "Dengan sedikit racun, yang merupakan latihan keras yang tidak bisa dilakukan oleh orang lain.",
+      "purpose": "Bantu pembeli menentukan ukuran dan kapasitas sebelum bertanya.",
+      "title": "Panduan Ukuran Tas PP: Cara Memilih Kapasitas Tas 5 kg hingga 75 kg"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "merek",
+      "readTime": "5 menit membaca",
+      "purpose": "Jelaskan pilihan pencetakan dan dampak branding.",
+      "title": "Pencetakan Flexo vs Pencetakan Laminasi untuk Tas PP"
+    },
+    {
+      "title": "Mengapa Liner, Gusset, dan Perforasi Penting dalam Tas PP",
+      "category": "Fitur",
+      "purpose": "Jelaskan fitur tambahan untuk perlindungan dan penanganan produk.",
+      "readTime": "4 menit membaca",
+      "excerpt": "Kecuali sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    },
+    {
+      "readTime": "6 menit membaca",
+      "title": "Cara Mempersiapkan Permintaan Ekspor Tas PP",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante.",
+      "purpose": "Ajari pembeli detail apa yang harus dikirim untuk penawaran.",
+      "category": "Ekspor kiat"
+    },
+    {
+      "title": "Tas Belanja Anyaman untuk Kemasan Ritel dan Promosi",
+      "readTime": "5 menit membaca",
+      "category": "Pengecer",
+      "purpose": "Targetkan pembeli tas belanja dan promosi.",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "Rp",
+    "qtyLabel": "5 buah sampel",
+    "packing": "Kemasan ekspor karton",
+    "printing": "Biasa (spesifikasi sampel)",
+    "leadTime": "7–10 hari kerja setelah konfirmasi pembayaran"
+  },
+  "bankDetails": {
+    "branch": "Ahmedabad, Bopal, Gujarat, India",
+    "accountType": "Rekening Giro",
+    "swift": "HDFCINBB",
+    "ifsc": "HDFC0001234",
+    "bankName": "HDFC Bank Ltd.",
+    "paymentNote": "Cantumkan nama perusahaan Anda dan referensi sampel dalam narasi transfer."
+  },
+  "paymentBankAccounts": [
+    {
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "accountType": "Rekening Giro",
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, India",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, India",
+      "swift": "HDFCINBB",
+      "accountType": "Rekening Giro",
+      "branch": "Vadodara, Jalan Halol",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Rekening Giro",
+      "bankName": "ICICI Bank Ltd.",
+      "swift": "ICICINBB",
+      "branch": "Ahmedabad, Jalan Raya SG",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Rekening Giro",
+      "bankName": "Axis Bank Ltd.",
+      "branch": "Ahmedabad, Prahladnagar",
+      "swift": "AXISINBB",
+      "ifsc": "ISK0000123"
+    },
+    {
+      "bankName": "Bank Negara India",
+      "location": "Gujarat, India",
+      "accountType": "Rekening Giro",
+      "ifsc": "SBIN0006789",
+      "branch": "Gandhinagar, Sektor 21",
+      "swift": "SBININBB"
+    },
+    {
+      "bankName": "Kotak Mahindra Bank",
+      "location": "Gujarat, India",
+      "accountType": "Rekening Giro",
+      "ifsc": "KKBK0001234",
+      "branch": "Ahmedabad, Jalan Ashram",
+      "swift": "KKBKINBB"
+    },
+    {
+      "bankName": "Ya Bank Ltd.",
+      "branch": "Mumbai, Andheri Timur",
+      "accountType": "Rekening Giro",
+      "location": "Maharashtra, India",
+      "ifsc": "YASB0000123",
+      "swift": "YASBINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Rekening Giro",
+      "bankName": "IndusInd Bank Ltd.",
+      "branch": "Ahmedabad, Navrangpura",
+      "swift": "INDBINBB",
+      "ifsc": "INDB0000123"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Kantong Mulut Terbuka"
+    },
+    {
+      "label": "Tas yang Dijahit"
+    },
+    {
+      "label": "Tas D-Cut"
+    },
+    {
+      "label": "Tas Katup"
+    },
+    {
+      "label": "Membawa Tas"
+    },
+    {
+      "label": "Tas PP Tenun Laminasi"
+    },
+    {
+      "label": "Jepit Tas Bagian Bawah"
+    },
+    {
+      "label": "Blokir Tas Bawah"
+    },
+    {
+      "label": "Blokir Tas Gusset Bawah"
+    },
+    {
+      "label": "Tas Belanja Tenun"
+    },
+    {
+      "label": "Kain Tenun PP"
+    },
+    {
+      "label": "Penghalang Gulma"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Kantong Mulut Terbuka",
+      "group": "Tas Tenun",
+      "short": "Kantong anyaman PP yang mudah diisi untuk produk curah kering seperti biji-bijian, tepung, pakan, pupuk, garam, gula, biji-bijian, dan mineral.",
+      "features": [
+        {
+          "body": "Bagian atas yang terbuka memungkinkan pengisian cepat dengan metode manual, semi-otomatis, atau yang didukung mesin.",
+          "title": "Pengisian mudah"
+        },
+        {
+          "title": "Fleksibilitas kapasitas",
+          "body": "Cocok untuk aplikasi 5 kg hingga 75 kg tergantung kepadatan produk dan desain tas."
+        },
+        {
+          "title": "Selesai khusus",
+          "body": "Bagian atas dapat berupa potongan panas, potongan dingin, potongan keliman, atau potongan zig-zag."
+        },
+        {
+          "title": "Opsi pencetakan dan liner",
+          "body": "Pencetakan flexo, pencetakan laminasi, dan dukungan liner dapat ditambahkan jika diperlukan."
+        }
+      ],
+      "intro": "Open Mouth Bag adalah salah satu model tas PP paling praktis untuk kemasan curah kering. VIVIDPOLY mengekspor tas PP mulut terbuka untuk pembeli yang membutuhkan pengisian yang mudah, penutupan yang fleksibel, dan penyesuaian untuk aplikasi pertanian, makanan, pupuk, pakan, kimia, mineral, garam, gula, dan industri.",
+      "cta": "Jelajahi Kantong Mulut Terbuka",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "5kg hingga 75kg"
+        },
+        {
+          "key": "Atas",
+          "value": "Mulut terbuka, potongan panas, potongan dingin, zig-zag, dikelim"
+        },
+        {
+          "key": "Dasar",
+          "value": "Jahitan lipat tunggal, jahitan lipat ganda, hasil akhir khusus"
+        },
+        {
+          "key": "Pencetakan",
+          "value": "Cetakan polos, flexo, laminasi"
+        },
+        {
+          "key": "Pengaya",
+          "value": "Gusset, liner, perforasi, pegangan jika diperlukan"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Bale, bundel, palet, karton, kemasan ekspor"
+        }
+      ],
+      "benefits": "Kantong PP mulut terbuka lebih disukai karena kesederhanaan, kemampuan beradaptasi, dan penanganannya yang hemat biaya. Cocok bagi pembeli yang membutuhkan tas anyaman kuat yang dapat ditutup setelah diisi dengan cara dijahit, disegel, dilipat, atau diikat.",
+      "details": "Tas ini dapat disediakan sebagai tas PP anyaman polos, tas cetak flexo, atau tas PP tenun cetak dan laminasi. Pembeli dapat memilih ukuran, kain, kapasitas, gusset, liner, pencetakan, jahitan, pemotongan, dan pengepakan.",
+      "material": "Kain tenun PP, tinta cetak, benang jahitan, laminasi opsional, pelapis opsional, dan persyaratan warna/bahan tambahan khusus pembeli.",
+      "speciality": "Keistimewaan kantong mulut terbuka adalah fleksibilitasnya untuk berbagai produk dan metode pengisian.",
+      "mfg": "Prosesnya meliputi penenunan kain, pencetakan atau laminasi opsional, pemotongan, jahitan bawah, inspeksi, dan pengepakan."
+    },
+    "stitched": {
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Jahitan atas dan bawah yang aman, kekuatan kain khusus, liner opsional, pencetakan flexo atau laminasi, pengepakan khusus."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Keamanan penutupan yang lebih baik, penanganan yang praktis, kinerja penumpukan yang baik, dan kesesuaian untuk banyak produk curah kering."
+        },
+        {
+          "title": "Detail",
+          "body": "Pembeli dapat menentukan jenis jahitan, jenis benang, gaya lipatan, ukuran, kapasitas, pencetakan, liner, gusset, dan pengepakan."
+        }
+      ],
+      "short": "Tas PP yang dijahit dengan aman untuk pengangkutan, penyimpanan, dan pengepakan ekspor produk pertanian dan industri.",
+      "intro": "Tas Jahitan Atas dan Bawah dirancang untuk pembeli yang membutuhkan penutupan yang aman dan penanganan yang dapat diandalkan selama penyimpanan dan pengangkutan. VIVIDPOLY mengekspor tas PP jahitan untuk kemasan pertanian, makanan, pupuk, pakan ternak, bahan kimia, mineral, dan industri.",
+      "cta": "Jelajahi Tas Jahitan",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "5kg hingga 75kg"
+        },
+        {
+          "key": "Jahitan",
+          "value": "Lipatan tunggal, lipatan ganda, benang tunggal, benang ganda, dijahit atas dan bawah"
+        },
+        {
+          "key": "Pencetakan",
+          "value": "Polos, flexo, cetak laminasi"
+        },
+        {
+          "key": "kapal",
+          "value": "Liner longgar atau dijahit opsional"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Bale, bundel, palet, kemasan ekspor terkompresi"
+        }
+      ],
+      "name": "Tas Jahitan Atas dan Bawah",
+      "benefits": "Keamanan penutupan yang lebih baik, penanganan yang praktis, kinerja penumpukan yang baik, dan kesesuaian untuk banyak produk curah kering.",
+      "details": "Pembeli dapat menentukan jenis jahitan, jenis benang, gaya lipatan, ukuran, kapasitas, pencetakan, liner, gusset, dan pengepakan.",
+      "speciality": "Keistimewaan jenis tas ini adalah jahitan penutup yang dapat diandalkan.",
+      "mfg": "Proses pembuatannya meliputi penenunan, pencetakan/laminasi opsional, pemotongan, jahitan atas dan bawah, inspeksi, dan pengepakan.",
+      "material": "Kombinasi bahan meliputi kain tenun PP, benang jahitan, laminasi opsional, liner opsional, dan tinta cetak."
+    },
+    "d-cut": {
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Pegangan berpotongan D, ukuran khusus, pencetakan flexo atau laminasi, buhul opsional, hasil akhir ramah ritel."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Mudah dibawa, struktur tenun yang kuat, visibilitas merek, dan nilai promosi yang bermanfaat."
+        },
+        {
+          "title": "Detail",
+          "body": "Cocok untuk aplikasi pengangkutan ringan hingga menengah, barang ritel, pameran dagang, dan kampanye promosi."
+        }
+      ],
+      "name": "Tas Anyaman PP D-Cut",
+      "cta": "Jelajahi Tas D-Cut",
+      "intro": "Tas Anyaman PP D-Cut dilengkapi potongan pegangan terintegrasi yang membuat tas lebih mudah dibawa. VIVIDPOLY mengekspor tas D-cut untuk keperluan ritel, belanja, promosi, pameran, dan kemasan gaya yang dapat digunakan kembali.",
+      "short": "Tas anyaman PP model jinjing dengan potongan pegangan terintegrasi untuk kemasan ritel, promosi, dan gaya yang dapat digunakan kembali.",
+      "spec": [
+        {
+          "key": "Menangani",
+          "value": "Pegangan potongan D atau potongan D yang diperkuat"
+        },
+        {
+          "key": "Bahan",
+          "value": "Bahan PP tenunan atau PP laminasi"
+        },
+        {
+          "key": "Pencetakan",
+          "value": "Pencetakan khusus"
+        },
+        {
+          "key": "Jahitan",
+          "value": "Jahitan samping/bawah"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Kemasan karton atau bundel"
+        }
+      ],
+      "benefits": "Mudah dibawa, struktur tenun yang kuat, visibilitas merek, dan nilai promosi yang bermanfaat.",
+      "details": "Cocok untuk aplikasi pengangkutan ringan hingga menengah, barang ritel, pameran dagang, dan kampanye promosi.",
+      "speciality": "Kombinasi ini menghadirkan kenyamanan dengan kekuatan tenun dan presentasi merek.",
+      "mfg": "Tenun, pencetakan atau laminasi, pemotongan, pembentukan pegangan D-cut, jahitan, inspeksi, pengepakan.",
+      "material": "Kain tenun PP, film laminasi jika diperlukan, tinta cetak, benang jahit, penguat pegangan jika diperlukan."
+    },
+    "valve": {
+      "name": "Tas Katup",
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Desain pengisian katup, liner opsional, perforasi, pencetakan laminasi, kompatibilitas blok bawah."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Pengisian lebih cepat terkontrol, format kemasan lebih bersih, cocok untuk produk bubuk dan granular."
+        },
+        {
+          "title": "Detail",
+          "body": "Ukuran katup, jenis katup, perforasi, liner, kapasitas, dan konstruksi harus dipilih sesuai dengan produk dan sistem pengisian."
+        }
+      ],
+      "cta": "Jelajahi Tas Katup",
+      "short": "Kantong PP pengisi katup untuk produk sejenis semen, bahan kimia, mineral, bubuk, dan bahan konstruksi.",
+      "intro": "Valve Bag dikembangkan untuk produk yang memerlukan pengisian melalui bukaan katup. VIVIDPOLY mengekspor kantong katup untuk produk sejenis semen, bahan kimia, mineral, bubuk, bahan konstruksi, dan barang industri.",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "Umumnya 20 kg hingga 75 kg"
+        },
+        {
+          "key": "Katup",
+          "value": "Katup sederhana atau diperpanjang"
+        },
+        {
+          "key": "Konstruksi",
+          "value": "Konstruksi dasar standar atau blok"
+        },
+        {
+          "key": "Pengaya",
+          "value": "Liner dan perforasi opsional"
+        }
+      ],
+      "details": "Ukuran katup, jenis katup, perforasi, liner, kapasitas, dan konstruksi harus dipilih sesuai dengan produk dan sistem pengisian.",
+      "benefits": "Pengisian lebih cepat terkontrol, format kemasan lebih bersih, cocok untuk produk bubuk dan granular.",
+      "mfg": "Persiapan kain, pencetakan/laminasi, pemotongan, pembentukan katup, perforasi jika diperlukan, inspeksi, pengepakan.",
+      "speciality": "Cocok untuk pengisian industri dan distribusi ekspor.",
+      "material": "Kain tenun PP, bahan katup, liner, lapisan laminasi, benang jahit, tinta cetak."
+    },
+    "carry": {
+      "name": "Membawa Tas",
+      "group": "Tas Tenun",
+      "short": "Tas jinjing anyaman yang kuat dan bermerek untuk keperluan ritel, perdagangan, dan promosi.",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Opsi potongan D, lingkar, jahit, pelubang, pegangan samping atau atas; hasil akhir yang dicetak atau dilaminasi; buhul opsional."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Meningkatkan visibilitas merek dan memberikan kekuatan membawa yang praktis."
+        },
+        {
+          "title": "Detail",
+          "body": "Pembeli dapat menyesuaikan ukuran tas, gaya pegangan, desain cetak, laminasi, buhul, jahitan, dan pengepakan."
+        }
+      ],
+      "cta": "Jelajahi Tas Jinjing",
+      "intro": "Tas jinjing berbahan anyaman PP cocok bagi pembeli yang membutuhkan tas jinjing yang kuat, branded, dan praktis. Ekspor VIVIDPOLY membawa tas untuk ritel, perdagangan, belanja, acara, dan kemasan promosi.",
+      "spec": [
+        {
+          "key": "Bahan",
+          "value": "Bahan PP tenunan atau PP laminasi"
+        },
+        {
+          "key": "Pencetakan",
+          "value": "Cetakan flexo atau laminasi"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset samping/bawah"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Kemasan karton/bundel/bale"
+        }
+      ],
+      "details": "Pembeli dapat menyesuaikan ukuran tas, gaya pegangan, desain cetak, laminasi, buhul, jahitan, dan pengepakan.",
+      "benefits": "Meningkatkan visibilitas merek dan memberikan kekuatan membawa yang praktis.",
+      "speciality": "Kemasan bawaan yang kuat dengan komunikasi merek.",
+      "mfg": "Tenun, pencetakan/laminasi, pemotongan, pembuatan atau pemasangan pegangan, jahitan, inspeksi, pengepakan.",
+      "material": "Kain tenun PP, film laminasi, tinta cetak, benang jahitan, bahan pegangan jika diperlukan."
+    },
+    "laminated": {
+      "group": "Tas Tenun",
+      "cta": "Jelajahi Tas PP Laminasi",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Permukaan laminasi tercetak, alas anyaman PP, opsi lapisan, gusset, liner, jendela, perforasi, pegangan."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Peningkatan branding, daya tarik rak yang lebih baik, identitas produk, dan struktur kemasan yang kuat."
+        },
+        {
+          "title": "Detail",
+          "body": "Cocok untuk 5 kg hingga 75 kg tergantung konstruksi dan kepadatan produk."
+        }
+      ],
+      "short": "Kemasan cetak premium untuk beras, tepung, pakan, makanan hewan, pupuk, benih, dan komoditas ritel.",
+      "name": "Tas PP Tenun Dicetak & Dilaminasi",
+      "spec": [
+        {
+          "key": "Basis",
+          "value": "Lapisan laminasi tenun PP + cetak"
+        },
+        {
+          "key": "kapal",
+          "value": "Lapisan opsional"
+        },
+        {
+          "key": "Menyelesaikan",
+          "value": "Hasil akhir bergaya gloss/matt jika tersedia"
+        },
+        {
+          "key": "Kebiasaan",
+          "value": "Ukuran dan karya seni khusus"
+        }
+      ],
+      "details": "Cocok untuk 5 kg hingga 75 kg tergantung konstruksi dan kepadatan produk.",
+      "benefits": "Peningkatan branding, daya tarik rak yang lebih baik, identitas produk, dan struktur kemasan yang kuat.",
+      "intro": "Tas PP Tenun yang Dicetak dan Dilaminasi menggabungkan kekuatan tenun dengan presentasi merek yang menarik. VIVIDPOLY mengekspor tas ini untuk pembeli yang membutuhkan kemasan cetak premium untuk komoditas pangan, pupuk, pakan, makanan hewan, benih, garam, gula, dan produk retail.",
+      "speciality": "Kemasan ekspor premium dengan tampilan yang berfokus pada merek.",
+      "mfg": "Tenun kain, persiapan karya seni, pencetakan, laminasi, pemotongan, jahitan/konversi, inspeksi, pengepakan.",
+      "material": "Kain tenun PP, film cetak atau lapisan cetak, lapisan laminasi, benang jahitan, lapisan/jendela opsional, tinta cetak."
+    },
+    "pinch-bottom": {
+      "name": "Jepit Tas Bagian Bawah",
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Konstruksi bagian bawah cubit, permukaan laminasi tercetak, fitur opsional yang mudah dibuka, jendela, gusset, liner."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Penampilan premium, bentuk terisi terorganisir, presentasi rak lebih kuat, komunikasi merek lebih baik."
+        },
+        {
+          "title": "Detail",
+          "body": "Paling cocok untuk produk siap ritel dan paket komoditas bermerek."
+        }
+      ],
+      "short": "Tas PP laminasi cetak premium dengan tampilan penutupan bersih untuk kemasan siap ritel.",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "Umumnya 5 kg hingga 50 kg, lebih tinggi berdasarkan tinjauan desain"
+        },
+        {
+          "key": "Konstruksi",
+          "value": "PP anyaman laminasi cetak"
+        },
+        {
+          "key": "Pengaya",
+          "value": "Jendela/liner/gusset opsional"
+        }
+      ],
+      "cta": "Jelajahi Tas Pinch Bottom",
+      "intro": "Tas Pinch Bottom PP Tenun yang Dicetak dan Dilaminasi dirancang untuk kemasan premium yang mengutamakan presentasi penutupan yang bersih dan penampilan merek. VIVIDPOLY mengekspor kantong bawah untuk biji-bijian makanan, makanan hewan, pakan ternak, benih, dan produk ritel.",
+      "details": "Paling cocok untuk produk siap ritel dan paket komoditas bermerek.",
+      "speciality": "Presentasi penutupan premium untuk kemasan ekspor bermerek.",
+      "benefits": "Penampilan premium, bentuk terisi terorganisir, presentasi rak lebih kuat, komunikasi merek lebih baik.",
+      "material": "Kain tenun PP, film laminasi cetak, lapisan laminasi, liner, kaca film, tinta cetak.",
+      "mfg": "Persiapan kain, pencetakan/laminasi, pemotongan, pembentukan bagian bawah cubit, jendela/perforasi opsional, inspeksi, pengepakan."
+    },
+    "block-bottom": {
+      "name": "Blokir Tas Bawah",
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Struktur bawah blok, lapisan akhir laminasi tercetak, mulut terbuka atau bagian atas katup, liner, perforasi."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Bentuk berdiri yang lebih baik, presentasi palet yang lebih baik, permukaan branding yang kuat, dan penanganan yang lebih mudah."
+        },
+        {
+          "title": "Detail",
+          "body": "Cocok untuk produk yang mengutamakan presentasi visual dan performa penumpukan."
+        }
+      ],
+      "cta": "Jelajahi Tas Blok Bawah",
+      "intro": "Tas Bawah Blok PP Tenun yang Dicetak dan Dilaminasi memberikan bentuk pengisian yang lebih stabil dan tampilan penumpukan yang lebih baik. Ekspor VIVIDPOLY memblokir kantong bawah untuk pupuk, makanan hewan, pakan ternak, biji-bijian, mineral, bahan kimia, dan kemasan ritel.",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "5 kg hingga 75 kg tergantung konstruksi"
+        },
+        {
+          "key": "Format",
+          "value": "Blokir format bawah"
+        },
+        {
+          "key": "Atas",
+          "value": "Katup opsional"
+        },
+        {
+          "key": "Pengaya",
+          "value": "Liner, perforasi, cetakan laminasi"
+        }
+      ],
+      "short": "Kantong PP laminasi cetak berbentuk stabil untuk penumpukan, tampilan, dan presentasi ekspor yang lebih baik.",
+      "details": "Cocok untuk produk yang mengutamakan presentasi visual dan performa penumpukan.",
+      "benefits": "Bentuk berdiri yang lebih baik, presentasi palet yang lebih baik, permukaan branding yang kuat, dan penanganan yang lebih mudah.",
+      "material": "Kain tenun PP, film laminasi, tinta cetak, liner, bahan katup, bahan pembentuk/jahitan.",
+      "speciality": "Presentasi siap ekspor dengan bentuk tas terisi stabil.",
+      "mfg": "Produksi kain, pencetakan/laminasi, pemotongan, pembentukan blok bawah, penyelesaian atas/katup, inspeksi, pengepakan."
+    },
+    "gusset": {
+      "name": "Blokir Tas Gusset Bawah",
+      "group": "Tas Tenun",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Blok bagian bawah dengan gusset, eksterior laminasi tercetak, kedalaman gusset khusus, jendela, liner, perforasi."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Volume yang dapat digunakan lebih tinggi, bentuk isi yang lebih kuat, area pencitraan merek yang lebih baik, dan presentasi visual yang lebih baik."
+        },
+        {
+          "title": "Detail",
+          "body": "Berguna dimana pembeli membutuhkan tas bermotif premium dengan volume ekstra dan bentuk yang stabil."
+        }
+      ],
+      "intro": "Tas Gusset Bawah Blok PP Tenun yang Dicetak dan Dilaminasi menggabungkan konstruksi dasar blok yang stabil dengan volume yang didukung gusset. VIVIDPOLY mengekspor tas-tas ini untuk pakan ternak, makanan hewan, pupuk, biji-bijian, benih, dan produk ritel atau industri bervolume tinggi.",
+      "short": "Kantong PP laminasi cetak bervolume tinggi dengan dukungan gusset dan area branding yang kuat.",
+      "spec": [
+        {
+          "key": "Kapasitas",
+          "value": "5 kg hingga 75 kg berdasarkan kepadatan dan desain produk"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset bawah samping/bawah/blok"
+        },
+        {
+          "key": "Pengaya",
+          "value": "Katup opsional, liner, jendela"
+        }
+      ],
+      "cta": "Jelajahi Tas Gusset",
+      "benefits": "Volume yang dapat digunakan lebih tinggi, bentuk isi yang lebih kuat, area pencitraan merek yang lebih baik, dan presentasi visual yang lebih baik.",
+      "details": "Berguna dimana pembeli membutuhkan tas bermotif premium dengan volume ekstra dan bentuk yang stabil.",
+      "speciality": "Menggabungkan volume, presentasi, dan kepraktisan kemasan ekspor.",
+      "mfg": "Tenun, pencetakan/laminasi, pemotongan, pembentukan gusset, pembentukan blok bawah, penambahan fitur, inspeksi, pengepakan.",
+      "material": "Kain tenun PP, film laminasi cetak, liner, kaca film, konstruksi buhul, tinta cetak, bahan jahitan/pembentuk."
+    },
+    "shopping": {
+      "group": "Tas Tenun",
+      "short": "Tas belanja anyaman untuk jaringan ritel, supermarket, pameran, dan kampanye promosi.",
+      "features": [
+        {
+          "title": "Fitur",
+          "body": "Struktur tenun bergaya yang dapat digunakan kembali, pegangan khusus, pencetakan flexo atau laminasi, buhul, hasil akhir yang ramah ritel."
+        },
+        {
+          "title": "Manfaat",
+          "body": "Kekuatan pembawa yang praktis, promosi merek, presentasi ritel profesional, dan visibilitas berulang."
+        },
+        {
+          "title": "Detail",
+          "body": "Cocok untuk pengecer, supermarket, pameran, promosi perusahaan, dan kampanye belanja."
+        }
+      ],
+      "name": "Tas Belanja (Anyaman)",
+      "cta": "Jelajahi Tas Belanja",
+      "intro": "Tas Belanja Anyaman adalah tas jinjing anyaman PP yang digunakan untuk ritel, supermarket, acara, pameran dagang, dan kemasan promosi. VIVIDPOLY mengekspor tas belanja anyaman untuk pembeli yang membutuhkan kemasan jinjing yang kuat, dapat digunakan kembali, dan bermerek.",
+      "spec": [
+        {
+          "key": "Ukuran",
+          "value": "Ukuran khusus"
+        },
+        {
+          "key": "Menangani",
+          "value": "Gagang potong/lingkaran/dijahit/dilubangi"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset samping atau bawah"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Kemasan karton/bundel/bale"
+        }
+      ],
+      "benefits": "Kekuatan pembawa yang praktis, promosi merek, presentasi ritel profesional, dan visibilitas berulang.",
+      "details": "Cocok untuk pengecer, supermarket, pameran, promosi perusahaan, dan kampanye belanja.",
+      "mfg": "Persiapan kain, pencetakan/laminasi, pemotongan, pembentukan/pelekatan pegangan, penjahitan, inspeksi, pengepakan.",
+      "speciality": "Presentasi merek khusus untuk pembeli ekspor ritel dan promosi.",
+      "material": "Kain tenun PP, film cetak laminasi, benang jahitan, bahan pegangan, tinta cetak."
+    },
+    "fabric": {
+      "name": "Kain Tenun PP",
+      "cta": "Jelajahi Kain Tenun PP",
+      "group": "Kain",
+      "short": "Kain tenun PP digulung dan dipotong panjangnya untuk penggunaan industri, pertanian, dan konversi.",
+      "intro": "Kain tenun PP digulung dan dipotong panjangnya untuk penggunaan industri, pertanian, dan konversi.",
+      "features": [
+        {
+          "title": "Ekspor siap",
+          "body": "Disediakan untuk pembeli internasional dengan pilihan ukuran dan pengepakan khusus."
+        },
+        {
+          "body": "Lebar, GSM, warna, dan panjang gulungan atau potongan dapat direncanakan sesuai pesanan.",
+          "title": "Spesifikasi khusus"
+        },
+        {
+          "title": "Fokus kualitas",
+          "body": "Tenunan dan penyelesaian akhir yang konsisten untuk keperluan industri dan pertanian."
+        }
+      ],
+      "benefits": "Kain tenun PP digulung dan dipotong panjangnya untuk penggunaan industri, pertanian, dan konversi.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Kustom untuk penyelidikan"
+        },
+        {
+          "key": "Bahan",
+          "value": "PP tenun"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Ekspor kemasan"
+        }
+      ],
+      "details": "Bagikan lebar, GSM, warna, jumlah, dan tujuan yang Anda perlukan untuk mendapatkan penawaran.",
+      "material": "Bahan tenun PP dan bahan tambahan khusus pembeli jika diperlukan.",
+      "speciality": "Kain Tenun PP dari VIVIDPOLY untuk pembeli global.",
+      "mfg": "Tenun, finishing, inspeksi, dan pengepakan ekspor."
+    },
+    "weed-barrier": {
+      "name": "Penghalang Gulma",
+      "group": "Penghalang Gulma",
+      "features": [
+        {
+          "title": "Ekspor siap",
+          "body": "Disediakan untuk pembeli internasional dengan pilihan ukuran dan pengepakan khusus."
+        },
+        {
+          "title": "Spesifikasi khusus",
+          "body": "Lebar, GSM, warna, dan panjang gulungan atau potongan dapat direncanakan sesuai pesanan."
+        },
+        {
+          "title": "Fokus kualitas",
+          "body": "Tenunan dan penyelesaian akhir yang konsisten untuk keperluan industri dan pertanian."
+        }
+      ],
+      "details": "Bagikan lebar, GSM, warna, jumlah, dan tujuan yang Anda perlukan untuk mendapatkan penawaran.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Kustom untuk penyelidikan"
+        },
+        {
+          "key": "Bahan",
+          "value": "PP tenun"
+        },
+        {
+          "key": "Sedang mengemas",
+          "value": "Ekspor kemasan"
+        }
+      ],
+      "short": "Kain penghalang gulma tenun PP untuk aplikasi lansekap, pertanian, dan penutup tanah.",
+      "benefits": "Kain penghalang gulma tenun PP untuk aplikasi lansekap, pertanian, dan penutup tanah.",
+      "mfg": "Tenun, finishing, inspeksi, dan pengepakan ekspor.",
+      "material": "Bahan tenun PP dan bahan tambahan khusus pembeli jika diperlukan.",
+      "intro": "Kain penghalang gulma tenun PP untuk aplikasi lansekap, pertanian, dan penutup tanah.",
+      "cta": "Jelajahi Penghalang Gulma",
+      "speciality": "Weed Barrier dari VIVIDPOLY untuk pembeli global."
+    }
+  },
+  "markets": [
+    "Amerika Serikat",
+    "Kanada",
+    "Australia",
+    "Eropa",
+    "Inggris",
+    "Afrika",
+    "Thailand",
+    "Arab Saudi",
+    "Amerika Latin",
+    "Selandia Baru"
+  ],
+  "packedProductOptions": [
+    "Beras",
+    "Pupuk",
+    "Pakan ternak",
+    "Semen",
+    "Barang eceran"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5kg",
+      "10kg",
+      "15kg",
+      "20kg",
+      "25kg",
+      "30kg",
+      "40kg",
+      "50kg",
+      "60kg",
+      "75kg",
+      "Kebiasaan"
+    ],
+    "printing": [
+      "Polos",
+      "Flexo dicetak",
+      "Dicetak dilaminasi",
+      "Beraneka warna"
+    ],
+    "addons": [
+      "kapal",
+      "Gusset",
+      "Menangani",
+      "Jendela",
+      "Perforasi",
+      "Katup",
+      "Mencubit",
+      "Blokir bagian bawah"
+    ],
+    "packing": [
+      "Bal",
+      "Karton",
+      "Palet",
+      "Ekspor kemasan"
+    ]
+  }
+}

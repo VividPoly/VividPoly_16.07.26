@@ -5,10 +5,17 @@ import VpSubpageTop from '@/components/vividpoly/VpSubpageTop';
 import { ChevronRightIcon } from '@/components/vividpoly/VividPolyIcons';
 import type { VpBreadcrumb } from '@/lib/vividpoly-navigation';
 import { fetchPublishedBlogs } from '@/lib/supabase';
-import type { Blog } from '@/lib/blog';
+import {
+  type Blog,
+  type BlogTranslation,
+  localizeBlog,
+  translationIsCurrent,
+} from '@/lib/blog';
+import { fetchBlogTranslation } from '@/lib/blog-i18n';
 import VpContactEnquiryForm, {
   type ContactEnquiryFormProps,
 } from '@/components/vividpoly/VpContactEnquiryForm';
+import { useLocale, useLocaleMessages } from '@/lib/i18n/LocaleProvider';
 
 type BlogRow = {
   title: string;
@@ -49,6 +56,65 @@ export default function VpBlogPage({
   // list (empty state shown when there are none).
   const [posts, setPosts] = useState<Blog[] | null>(null);
   const [activePost, setActivePost] = useState<Blog | null>(null);
+  const { blog } = useLocaleMessages();
+  const { locale } = useLocale();
+  // On-the-fly translations of blog text for the current locale, keyed by
+  // `${slug}:${updatedAt}:${locale}`. Filled in the background from
+  // /api/translate-blog; until a post's translation arrives it shows English.
+  const [txMap, setTxMap] = useState<Record<string, BlogTranslation>>({});
+
+  const applyTx = (b: Blog): Blog => {
+    // Prefer a freshly fetched translation; otherwise use the DB one only if it
+    // matches the current source (not stale). Else show English until it loads.
+    const fresh = txMap[`${b.id}:${locale}`];
+    const dbTx = b.translations?.[locale];
+    const tx = fresh ?? (translationIsCurrent(b, dbTx) ? dbTx : undefined);
+    if (!tx) return b;
+    return localizeBlog({ ...b, translations: { ...b.translations, [locale]: tx } }, locale);
+  };
+
+  // Fetch translations for the open article and the list posts when the locale
+  // is non-English. Fetches are cached (memory + sessionStorage + server), so
+  // re-running on state changes is cheap.
+  useEffect(() => {
+    if (!locale || locale === 'en' || locale.startsWith('en-')) return;
+    const targets = [...(activePost ? [activePost] : []), ...(posts ?? [])];
+    let cancelled = false;
+    (async () => {
+      // De-dupe (the open article may also appear in the list) and drop posts
+      // whose stored translation is already current — those need no request.
+      const seen = new Set<string>();
+      const pending = targets.filter((b) => {
+        if (seen.has(b.id)) return false;
+        seen.add(b.id);
+        // Skip only if the stored translation is current AND real; stale (post
+        // edited) or a failed English row falls through to re-translate.
+        return !translationIsCurrent(b, b.translations?.[locale]);
+      });
+
+      // Translate a few posts at once (instead of one-by-one, top to bottom) so
+      // the cards fill in together. Kept small to stay under the free Google
+      // endpoint's rate limit — too many at once just triggers 429s.
+      const CONCURRENCY = 3;
+      let cursor = 0;
+      const worker = async () => {
+        while (cursor < pending.length && !cancelled) {
+          const b = pending[cursor];
+          cursor += 1;
+          const tx = await fetchBlogTranslation(b, locale);
+          if (cancelled || !tx || Object.keys(tx).length === 0) continue;
+          const key = `${b.id}:${locale}`;
+          setTxMap((m) => (m[key] ? m : { ...m, [key]: tx }));
+        }
+      };
+      await Promise.all(
+        Array.from({ length: Math.min(CONCURRENCY, pending.length) }, worker),
+      );
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [locale, posts, activePost]);
 
   useEffect(() => {
     let cancelled = false;
@@ -75,9 +141,12 @@ export default function VpBlogPage({
 
   // --- Full article view -------------------------------------------------
   if (activePost) {
+    // Show the active locale's translation where available (title, body, etc.);
+    // tags/cover image stay as authored. Falls back to English per field.
+    const post = applyTx(activePost);
     const metaParts = [
-      ...(activePost.tags ?? []).map((t) => `#${t}`),
-      activePost.readTime,
+      ...(post.tags ?? []).map((t) => `#${t}`),
+      post.readTime,
     ].filter(Boolean);
     return (
       <div
@@ -113,17 +182,17 @@ export default function VpBlogPage({
               <span style={{ transform: 'rotate(180deg)', display: 'inline-flex' }}>
                 <ChevronRightIcon size={14} />
               </span>
-              Back to all articles
+              {blog.backToArticles}
             </button>
-            <h1 className="vp-h1 vp-blog-title">{activePost.title}</h1>
+            <h1 className="vp-h1 vp-blog-title">{post.title}</h1>
             {metaParts.length > 0 && (
               <p className="vp-blog-intro">{metaParts.join('  ·  ')}</p>
             )}
             <article className="vp-blog-article" style={{ maxWidth: 760 }}>
-              {activePost.coverImageUrl && (
+              {post.coverImageUrl && (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={activePost.coverImageUrl}
+                  src={post.coverImageUrl}
                   alt=""
                   style={{
                     width: '100%',
@@ -135,7 +204,7 @@ export default function VpBlogPage({
               )}
               <div
                 className="vp-blog-article-body"
-                dangerouslySetInnerHTML={{ __html: activePost.body }}
+                dangerouslySetInnerHTML={{ __html: post.body }}
               />
             </article>
           </div>
@@ -167,7 +236,7 @@ export default function VpBlogPage({
         onHomeClick={onHomeClick}
         className="vp-blog-top"
       >
-        <h1 className="vp-h1 vp-blog-title">Buyer guides &amp; insights</h1>
+        <h1 className="vp-h1 vp-blog-title">{blog.pageTitle}</h1>
         <p className="vp-blog-intro">{siteCopy.blogIntro}</p>
       </VpSubpageTop>
 
@@ -178,29 +247,33 @@ export default function VpBlogPage({
               className="vp-blog-intro"
               style={{ textAlign: 'center', padding: '32px 0' }}
             >
-              Loading articles…
+              {blog.loading}
             </p>
           ) : posts.length === 0 && blogRows.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '48px 16px' }}>
               <h2 className="vp-blog-card-title" style={{ marginBottom: 8 }}>
-                No articles yet
+                {blog.emptyTitle}
               </h2>
               <p className="vp-blog-intro">
-                New buyer guides and insights are on the way — check back soon.
+                {blog.emptyBody}
               </p>
             </div>
           ) : (
             <div className="vp-blog-grid">
               {/* Admin-published posts (from the admin app / Supabase) */}
-              {posts.map((post) => (
+              {posts.map((rawPost) => {
+                // Localized copy for display; keep the raw post for opening so
+                // the article view localizes it against the current locale too.
+                const post = applyTx(rawPost);
+                return (
                   <article
-                    key={post.id}
+                    key={rawPost.id}
                     className="vp-blog-card"
-                    onClick={() => setActivePost(post)}
+                    onClick={() => setActivePost(rawPost)}
                     onKeyDown={(event) => {
                       if (event.key === 'Enter' || event.key === ' ') {
                         event.preventDefault();
-                        setActivePost(post);
+                        setActivePost(rawPost);
                       }
                     }}
                     role="button"
@@ -234,7 +307,8 @@ export default function VpBlogPage({
                       </div>
                     </div>
                   </article>
-              ))}
+                );
+              })}
               {/* Original sample cards built into the site */}
               {blogRows.map((row, index) => (
                 <article

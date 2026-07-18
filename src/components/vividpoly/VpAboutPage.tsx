@@ -35,6 +35,7 @@ type AboutCopy = {
   whyBody?: string;
   whyMoreLabel?: string;
   contactTeam: string;
+  ctaBandEyebrow?: string;
   ctaBandTitle?: string;
   ctaBandBody?: string;
   ctaBandButton?: string;
@@ -177,7 +178,7 @@ export default function VpAboutPage({
 
       <section className="vp-about-enquire" aria-labelledby="vp-about-enquire-title">
         <div className="vp-about-enquire-inner">
-          <p className="vp-about-enquire-eyebrow">Get in touch</p>
+          <p className="vp-about-enquire-eyebrow">{about.ctaBandEyebrow}</p>
           <h2 id="vp-about-enquire-title" className="vp-about-enquire-title">
             {about.ctaBandTitle || about.contactTeam}
           </h2>

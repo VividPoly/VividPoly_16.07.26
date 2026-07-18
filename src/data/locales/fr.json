@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Sélectionner la langue",
+    "career": "Carrière"
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produit",
+    "about": "À propos",
+    "industryServed": "Secteurs desservis",
+    "resources": "Actualités",
+    "career": "Carrières",
+    "contact": "Contact",
+    "byProductType": "Par type de produit",
+    "byIndustryUse": "Par industrie/utilisation",
+    "viewAllByIndustry": "Voir tous les produits par secteur d'activité",
+    "themeLight": "Passer en mode lumière",
+    "buyerResourcesLead": "Guides d'achat, FAQ et dernières nouveautés de VIVIDPOLY.",
+    "themeDark": "Passer en mode sombre",
+    "viewAllByType": "Afficher tous les produits par type",
+    "buyerResourcesEyebrow": "Nouvelles et mises à jour",
+    "getQuoteShort": "Obtenir un devis",
+    "blogDesc": "Guides d'achat sur les types de sacs PP, leur dimensionnement et les demandes d'exportation.",
+    "faqsTitle": "FAQ",
+    "faqsDesc": "Réponses sur la capacité, l’impression, les doublures et les détails du devis.",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu",
+    "blogTitle": "Blogue",
+    "industryMenu": "Menu servi par l'industrie",
+    "mobileNav": "Navigation mobile",
+    "mainNav": "Navigation principale",
+    "resourcesMenu": "Menu Actualités et mise à jour",
+    "logoHome": "VIVIDPOLY, aller à la page d'accueil",
+    "productsMenu": "Menu des produits",
+    "mobileByProductType": "Par type de produit",
+    "mobileByIndustry": "Par industrie / utilisation"
+  },
+  "fab": {
+    "label": "Demande",
+    "mobileLabel": "Renseigner",
+    "ariaLabel": "Formulaire de demande ouvert"
+  },
+  "common": {
+    "getQuote": "Demander un devis",
+    "submitEnquiry": "Envoyer la demande",
+    "viewAll": "Voir tout",
+    "backToHome": "Retour à l'accueil",
+    "back": "Dos",
+    "select": "Sélectionner",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "selectEnquiryType": "Sélectionnez le type de demande",
+    "selectBagType": "Sélectionnez le type de sac",
+    "none": "Aucun",
+    "selectCountry": "Sélectionnez un pays",
+    "custom": "Coutume",
+    "optional": "facultatif",
+    "clearFilters": "Effacer les filtres",
+    "filters": "Filtres",
+    "viewDetails": "Afficher les détails",
+    "recommended": "Recommandé",
+    "chatExportTeam": "Discutez avec l'équipe d'exportation",
+    "clearAllFilters": "Supprimer tous les filtres",
+    "specification": "Spécification",
+    "noProductsMatch": "Aucun produit ne correspond à vos filtres.",
+    "of": "de",
+    "relatedProducts": "Produits associés",
+    "filtered": "(filtré)",
+    "productsCount": "{count} produits",
+    "close": "Fermer"
+  },
+  "siteCopy": {
+    "heroHeadline": "Sacs PP pour acheteurs mondiaux",
+    "heroLead": "Sacs PP, sacs tissés, sacs à valve et emballages d'exportation personnalisés depuis l'Inde, conçus pour les importateurs, distributeurs et acheteurs industriels du monde entier.",
+    "heroIsoLabel": "Certifié ISO",
+    "heroIecLabel": "Certifié IEC",
+    "heroCtaSecondary": "Voir les types de produits",
+    "heroIecLabelShort": "CEI",
+    "searchPlaceholder": "Rechercher un type de sac, un produit ou une industrie (par exemple, sacs de riz, sacs de ciment)",
+    "heroHeadlineLine1": "Sacs PP pour",
+    "heroHeadlineAccent": "Acheteurs mondiaux",
+    "heroCtaSecondaryShort": "Produits",
+    "heroHeadlineLine2": "Acheteurs mondiaux",
+    "heroHeadlinePrefix": "Sacs PP pour",
+    "heroCtaPrimary": "WhatsApp",
+    "headerQuoteLabel": "Citation",
+    "heroCtaEnquiry": "Enquête",
+    "heroCtaWhatsApp": "WhatsApp",
+    "heroLeadShort": "Emballages d'exportation conçus pour les acheteurs mondiaux.",
+    "heroIsoLabelShort": "OIN",
+    "brandTagline": "Solutions d'emballage de qualité",
+    "introTitle": "Sacs PP pour les acheteurs mondiaux",
+    "introHighlights": [
+      {
+        "label": "Capacité",
+        "value": "5 à 75 kg"
+      },
+      {
+        "label": "Origine",
+        "value": "Exportation de l'Inde"
+      },
+      {
+        "label": "Se concentrer",
+        "value": "Impression et emballage personnalisés"
+      }
+    ],
+    "heroRail": "INDE · EXPORTATION MONDIALE",
+    "introEyebrow": "Ce que nous exportons",
+    "marketsStrip": "Principaux marchés d'exportation : Amérique/États-Unis, Canada, Australie, Europe, Royaume-Uni, Afrique, Thaïlande, Arabie Saoudite, Amérique latine, Nouvelle-Zélande et autres marchés d'importation mondiaux.",
+    "intro1": "VIVIDPOLY exporte des sacs PP, des sacs tissés PP, des sacs PP tissés imprimés et laminés, des sacs à fond pincé, des sacs à fond bloc, des sacs à soufflet, des sacs à valve, des sacs de transport, des sacs découpés en D et des sacs à provisions tissés de l'Inde vers les marchés mondiaux. Nos solutions d'emballage sont conçues pour les importateurs, les distributeurs, les transformateurs de céréales alimentaires, les fabricants d'engrais, les marques d'aliments pour animaux, les fournisseurs de produits chimiques, les entreprises de matériaux de construction, les chaînes de vente au détail et les acheteurs d'emballages promotionnels.",
+    "homeAboutTitle": "Partenaire mondial d'emballage d'exportation",
+    "homeAboutCtaType": "Magasiner par type de produit",
+    "homeAboutCtaIndustry": "Magasiner par industrie",
+    "homeAboutEyebrow": "À propos de nous",
+    "homeProductsEyebrow": "Nos produits",
+    "homeProductsTitle": "Ce que nous proposons",
+    "homeValuePropsEyebrow": "Pourquoi les acheteurs choisissent VIVIDPOLY",
+    "intro2": "Des emballages de vente au détail de 5 kg aux sacs industriels robustes de 75 kg, VIVIDPOLY aide les acheteurs à sélectionner la bonne construction de sac, la méthode d'impression, la doublure, la poignée, le soufflet, les coutures, le style de coupe et le format d'emballage d'exportation en fonction de l'utilisation du produit et du marché de destination.",
+    "homeProductsLead": "Sacs en PP tissés imprimés et laminés, sacs à valve, sacs à gueule ouverte et emballages d'exportation personnalisés depuis l'Inde pour les acheteurs agricoles, industriels et de détail du monde entier.",
+    "homeValueProps": [
+      {
+        "title": "Spécification personnalisable",
+        "description": "Capacité, construction, impression et emballage adaptés à votre produit et à votre marché de destination."
+      },
+      {
+        "title": "Échantillon avant la commande en gros",
+        "description": "Vérifiez la qualité, la taille et la finition des sacs avant de confirmer les quantités totales exportées."
+      },
+      {
+        "title": "Emballage d'exportation inclus",
+        "description": "Emballage de balles, de palettes et de cartons prévu pour une expédition internationale en toute sécurité."
+      }
+    ],
+    "homeBrowseHeading": "Parcourir les sacs PP par catégorie",
+    "buyerRequirementLabel": "Exigence de l'acheteur",
+    "productUsesLearnMore": "Envoyer une demande",
+    "productUseCol": "Utilisation du produit",
+    "buyerSectionTitle": "Emballage d'exportation, conçu pour les acheteurs mondiaux",
+    "recommendedBagsCol": "Types de sacs recommandés",
+    "finalCtaBody": "Partagez votre type de sac, sa capacité, vos besoins d'impression, sa quantité et sa destination. VIVIDPOLY examinera votre demande et suivra avec des options pratiques.",
+    "finalCtaButton": "Envoyer une demande",
+    "buyerResponseLabel": "Réponse VIVIDPOLY",
+    "trustMessage": "VIVIDPOLY est conçu pour les acheteurs internationaux d'importation qui ont besoin d'une communication professionnelle, de spécifications de produit claires, d'options d'emballage personnalisées et d'une assistance réactive à l'exportation depuis l'Inde. Le contenu de nos sacs PP est structuré pour aider les acheteurs à comparer les types de sacs, à comprendre les utilisations des produits, à examiner les fonctionnalités complémentaires et à soumettre des exigences de devis complètes.",
+    "faqSectionTitle": "Questions fréquemment posées",
+    "productUsesEmptyHint": "Passez la souris ou sélectionnez une utilisation de produit pour voir les types de sacs recommandés.",
+    "catalogueUseSub": "Les sacs VIVIDPOLY PP conviennent à un large éventail de catégories de produits. Le bon sac doit être sélectionné en fonction du poids du produit, de sa densité, du processus de remplissage, de sa sensibilité à l'humidité, des exigences de marque, des conditions de manipulation et des normes d'emballage d'exportation.",
+    "productUsesIntro": "Les sacs VIVIDPOLY PP conviennent à un large éventail de catégories de produits. Le bon sac doit être sélectionné en fonction du poids du produit, de sa densité, du processus de remplissage, de sa sensibilité à l'humidité, des exigences de marque, des conditions de manipulation et des normes d'emballage d'exportation.",
+    "finalCtaTitle": "Prêt à discuter de vos besoins en matière d'emballage ?",
+    "catalogueTypeSub": "VIVIDPOLY exporte des sacs PP depuis l'Inde pour les entreprises qui ont besoin d'un emballage solide, personnalisable et prêt à l'exportation. Nos sacs PP peuvent être développés pour des capacités de 5 kg à 75 kg en fonction de la densité du produit, de la taille du sac, de la construction, de la résistance du tissu, de la stratification, de la doublure, des coutures, du gousset et des exigences de remplissage.",
+    "shopByUseLabel": "Je fais mes valises…",
+    "catalogueGuideProductType": "Choisissez ici",
+    "catalogueGuideUseSort": "Trier par secteur d'activité ici",
+    "contactIntro": "Utilisez cette page pour envoyer une demande de produit ou une question générale. Sélectionnez le type de sac qui vous intéresse ou choisissez Requête générale si vous êtes encore en train d'explorer les options.",
+    "quoteIntro1": "Veuillez partager vos besoins en matière de sacs PP afin que l'équipe d'exportation VIVIDPOLY puisse recommander le bon type de produit, la construction, la taille, la capacité, l'impression, les fonctionnalités supplémentaires et le format d'emballage d'exportation.",
+    "quoteIntro2": "Répondez à quelques questions à la fois. Nous vous guiderons à travers le type de sac, sa taille, l'impression et les détails d'expédition.",
+    "quotePageTitle": "Partagez vos besoins en matière de bagages",
+    "quoteContactStepLead": "Partagez comment nous pouvons vous joindre. Nous enregistrons immédiatement votre demande et effectuons un suivi sur WhatsApp.",
+    "quotePageEyebrow": "Demande d'exportation",
+    "quoteContactSubmitLabel": "Enregistrer ma demande",
+    "quoteContactStepTitle": "Vos coordonnées",
+    "quoteLeadCapturedSkipCta": "j'ai fini pour l'instant",
+    "quoteLeadCapturedContinueCta": "Ajouter une spécification de sac",
+    "quoteLeadCapturedTitle": "Demande enregistrée",
+    "quoteLeadCapturedLead": "Un spécialiste de l'exportation VIVIDPOLY vous contactera bientôt sur WhatsApp, généralement dans quelques heures.",
+    "quoteLeadCapturedOptionalTitle": "Vous souhaitez un devis plus rapide et plus précis ?",
+    "quoteSubmitNote": "Lorsque vous êtes satisfait des détails ci-dessus, soumettez-les. Notre équipe d’exportation examinera tout et assurera le suivi sur WhatsApp.",
+    "quoteLeadCapturedOptionalBody": "Si vous avez une minute, ajoutez les spécifications de votre sac maintenant. Cela nous aide à recommander le type, la taille et l'impression de sac PP appropriés avant notre appel, de sorte que votre première conversation est déjà utile.",
+    "quoteLeadOnlySuccessBody": "Nous vous contacterons bientôt sur WhatsApp. Vous pouvez partager les détails de votre sac lorsque nous vous contactons ou revenir à tout moment pour compléter vos spécifications.",
+    "sampleBillIntro": "Consultez l’exemple de spécifications et les frais ci-dessous. Les échantillons sont expédiés après confirmation du paiement.",
+    "samplePaymentIntro": "Transférez la quantité d’échantillon en utilisant les détails ci-dessous. Utilisez la référence afin que nous puissions correspondre à votre paiement.",
+    "sampleSuccessTitle": "Exemple de commande reçu",
+    "samplePaymentTitle": "Détails du virement bancaire",
+    "sampleBillTitle": "Exemple de facture de commande",
+    "samplePaymentConfirmCta": "Confirmer le virement bancaire",
+    "blogLeadTitle": "Une question sur l'emballage ?",
+    "blogLeadCta": "Envoyer une demande",
+    "blogReadArticle": "Lire l'article",
+    "blogIntro": "Écrit pour les acheteurs internationaux comparant les fournisseurs de sacs PP, se renseignant sur les types de sacs, vérifiant les spécifications et préparant les demandes d'exportation.",
+    "quoteSuccessBody": "Nous vous répondrons par téléphone ou WhatsApp dans les 12 heures.",
+    "homeStats": [
+      {
+        "label": "Marchés d'exportation",
+        "value": "70+"
+      },
+      {
+        "value": "9+",
+        "label": "Pays desservis"
+      },
+      {
+        "label": "Capacité mensuelle",
+        "value": "750 TM"
+      },
+      {
+        "label": "Qualité d'exportation"
+      }
+    ],
+    "quoteSuccessTitle": "Demande reçue",
+    "homeCertsHeading": "Certifications",
+    "blogLeadBody": "Envoyez une demande de produit ou une requête générale sur notre page de contact. Notre équipe examinera votre besoin et vous fournira des conseils pratiques.",
+    "sampleSuccessBody": "Merci. Nous vérifierons votre paiement et confirmerons les délais de production et d’expédition des échantillons par e-mail.",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY sert les acheteurs internationaux d'importation avec une communication professionnelle, des spécifications de produit claires, des options d'emballage personnalisées et une assistance à l'exportation réactive. La capacité, la construction, l'impression et l'emballage sont adaptés à votre produit et à votre marché de destination afin que chaque commande corresponde à votre processus de remplissage, à vos besoins en matière de marque et à vos conditions d'expédition.",
+      "Demandez des échantillons avant de vous engager sur des quantités complètes. L'emballage des balles, des palettes et des cartons est prévu pour une expédition internationale en toute sécurité dans dix constructions en PP tissé, depuis la bouche ouverte jusqu'aux formats laminés de qualité supérieure, adaptés aux utilisations du riz, des engrais, du ciment, des aliments pour animaux et de la vente au détail."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY est un exportateur de sacs PP basé en Inde au service des importateurs mondiaux qui ont besoin d'une communication professionnelle, de spécifications de produits claires et d'un support d'exportation fiable. Nous fournissons des sacs à bouche ouverte, cousus, coupés en D, à valve, de transport, laminés, à fond pincé, à fond bloc, à soufflet et à provisions de 5 kg à 75 kg, avec des options d'impression flexo ou laminée pour la présentation de la marque. Le type de produit, la taille, la capacité, l'impression, le laminage, la doublure, le gousset, la poignée et les détails de l'emballage sont tous capturés à l'avance avant l'émission d'un devis."
+    ]
+  },
+  "footer": {
+    "company": "Entreprise",
+    "productTypes": "Types de produits",
+    "buyerHelp": "Aide à l'achat",
+    "contact": "Contact",
+    "aboutBlurb": "VIVIDPOLY exporte des sacs PP depuis l'Inde pour les acheteurs mondiaux qui ont besoin d'une capacité personnalisable, d'une impression, de doublures et d'un emballage prêt à l'exportation.",
+    "links": {
+      "contact": "Contactez-nous",
+      "home": "Maison",
+      "about": "À propos",
+      "getQuote": "Obtenir un devis",
+      "productUses": "Utilisations du produit"
+    },
+    "backToTop": "Retour en haut",
+    "backToTopAria": "Retour en haut de la page"
+  },
+  "meta": {
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Exportateur de sacs PP d'Inde",
+    "description": "VIVIDPOLY exporte des sacs PP d'Inde pour des acheteurs mondiaux.",
+    "loading": "Chargement de VIVIDPOLY…",
+    "title": "VIVIDPOLY : exportateur de sacs PP d'Inde"
+  },
+  "enquiryModal": {
+    "title": "Formulaire de demande",
+    "close": "Fermer le formulaire de demande"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Requête générale"
+    },
+    {
+      "label": "Sacs à gueule ouverte - OMB"
+    },
+    {
+      "label": "Sacs cousus haut et bas - TBS"
+    },
+    {
+      "label": "Sacs tissés en PP D-Cut - DCB"
+    },
+    {
+      "label": "Sacs à valves - VB"
+    },
+    {
+      "label": "Sacs de transport - CB"
+    },
+    {
+      "label": "Sacs PP tissés laminés imprimés - LWB"
+    },
+    {
+      "label": "Sacs à fond pincé - PBB"
+    },
+    {
+      "label": "Sacs à fond bloc - BBB"
+    },
+    {
+      "label": "Sacs à gousset à fond bloc - BGB"
+    },
+    {
+      "label": "Sacs à provisions tissés - WSB"
+    },
+    {
+      "label": "Tissu tissé PP"
+    },
+    {
+      "label": "Barrière contre les mauvaises herbes"
+    }
+  ],
+  "emailCompose": {
+    "toLabel": "À",
+    "title": "Envoyer un e-mail à VIVIDPOLY",
+    "fromLabel": "Votre email",
+    "messageLabel": "Message",
+    "subjectLabel": "Sujet",
+    "send": "Envoyer un message",
+    "nameLabel": "Votre nom",
+    "sending": "Envoi…",
+    "close": "Fermer le panneau de rédaction",
+    "hint": "Votre message est envoyé directement à notre équipe export. Nous vous répondrons à l'adresse e-mail que vous avez saisie ci-dessus.",
+    "defaultSubject": "Demande d’exportation de Vividpoly.com",
+    "sendSuccess": "Message envoyé. Notre équipe vous répondra bientôt.",
+    "messageRequired": "Ajoutez un court message avant de l'envoyer.",
+    "emailInvalid": "Entrez une adresse e-mail valide.",
+    "sendUnavailable": "L'envoi d'email n'est pas encore configuré. Veuillez utiliser le téléphone ou WhatsApp pour nous joindre.",
+    "sendError": "Nous n'avons pas pu envoyer votre message. Veuillez réessayer ou appelez-nous directement."
+  },
+  "home": {
+    "shopByProductType": "Magasiner par type de produit",
+    "howWeHelpBuyers": "Comment nous aidons les acheteurs",
+    "shopByIndustryDesc": "Faites correspondre les types de sacs aux utilisations du riz, des engrais, du ciment, des aliments pour animaux et de la vente au détail.",
+    "faqsEyebrow": "FAQ",
+    "shopByProductTypeDesc": "Dix constructions en PP tissé, depuis la bouche ouverte jusqu'aux formats laminés haut de gamme.",
+    "shopByIndustry": "Magasiner par industrie",
+    "productTypes": "Types de produits",
+    "swipeCards": "Glissez les cartes",
+    "swipeIndustries": "Faites glisser pour parcourir les secteurs",
+    "valuePropsSlides": "Pourquoi les acheteurs choisissent les diapositives VIVIDPOLY",
+    "buyerCarousel": "Carrousel des exigences de l'acheteur",
+    "buyerRequirements": "Exigences de l'acheteur",
+    "buyerNeed": "L'acheteur a besoin de {index}",
+    "slideOf": "{current} sur {total}",
+    "buyerPagination": "L'acheteur a besoin d'une pagination",
+    "productUses": "Utilisations du produit",
+    "nextProducts": "Produits suivants",
+    "previousProducts": "Produits précédents"
+  },
+  "catalogue": {
+    "titleByType": "Magasiner par type de produit",
+    "titleByUse": "Magasiner par industrie / utilisation",
+    "breadcrumbType": "Produits / Par type de produit",
+    "capacity": "Capacité",
+    "productType": "Type de produit",
+    "breadcrumbUse": "Produits / Par industrie et utilisation",
+    "sortAllProducts": "Tous les produits"
+  },
+  "pdp": {
+    "getQuoteFor": "Obtenez un devis pour {productName}",
+    "keyFeatures": "Principales caractéristiques",
+    "whyBuyersChoose": "Pourquoi les acheteurs choisissent ce sac",
+    "productionMaterials": "Production et matériaux",
+    "speciality": "Spécialité",
+    "benefits": "Avantages",
+    "manufacturingProcess": "Processus de fabrication",
+    "customization": "Détails de personnalisation",
+    "materialCombination": "Combinaison de matériaux",
+    "trustBadges": [
+      "Spécification personnalisable",
+      "Échantillon disponible avant la commande groupée",
+      "Emballage d'exportation inclus",
+      "Équipe Export réactive"
+    ],
+    "productImage": "Image du produit {index}"
+  },
+  "about": {
+    "pageEyebrow": "À PROPOS DE NOUS",
+    "p1": "VIVIDPOLY sert les acheteurs internationaux d'importation avec une communication professionnelle, des spécifications de produit claires, des options d'emballage personnalisées et une assistance à l'exportation réactive. La capacité, la construction, l'impression et l'emballage sont adaptés à votre produit et à votre marché de destination afin que chaque commande corresponde à votre processus de remplissage, à vos besoins en matière de marque et à vos conditions d'expédition.",
+    "ctaSecondary": "Magasiner par type de produit",
+    "title": "À propos de nous",
+    "pageTitle": "Partenaire mondial d'emballage d'exportation",
+    "exportVisionEyebrow": "Notre vision de l'exportation",
+    "ctaPrimary": "Envoyer une demande",
+    "exportVisionHeading": "Vers un avenir radieux",
+    "p2": "Demandez des échantillons avant de vous engager sur des quantités complètes. L'emballage des balles, des palettes et des cartons est prévu pour une expédition internationale en toute sécurité dans dix constructions en PP tissé, depuis la bouche ouverte jusqu'aux formats laminés de qualité supérieure, adaptés aux utilisations du riz, des engrais, du ciment, des aliments pour animaux et de la vente au détail.",
+    "pillarsLead": "Des normes internationales à l'aide aux demandes de renseignements pratiques, VIVIDPOLY est structuré autour de la manière dont les acheteurs mondiaux d'emballages s'approvisionnent réellement.",
+    "exportVisionBody": "VIVIDPOLY vise à devenir un partenaire d'exportation indien de confiance pour les entreprises mondiales qui ont besoin de sacs PP solides, personnalisables et prêts à porter la marque. Nous comprenons que les acheteurs internationaux ont besoin de plus que des descriptions générales de produits. Ils ont besoin de spécifications précises, de conseils d'utilisation des produits, d'un support pour les illustrations et l'impression, d'options d'emballage adaptées et d'une communication réactive tout au long du processus de demande.",
+    "pillarsHeading": "Porter un héritage d’exportation axé sur l’acheteur",
+    "pillars": [
+      {
+        "title": "Nous garantissons les normes internationales d’exportation",
+        "body": "Les spécifications, l'emballage et la communication sont planifiés en fonction des marchés de destination et des besoins de conformité des acheteurs."
+      },
+      {
+        "title": "Capacité et construction prêtes à l’exportation",
+        "body": "Des emballages de vente au détail de 5 kg aux sacs industriels de 75 kg, avec options de laminage, de doublure, de soufflet, de valve et d'impression."
+      },
+      {
+        "title": "Équipe d’assistance à l’exportation dédiée",
+        "body": "Conseils réactifs sur le type de produit, les illustrations, le format d'emballage, la quantité et la destination avant le devis."
+      },
+      {
+        "title": "Expérience pratique avec un processus clair",
+        "body": "Les acheteurs bénéficient de conseils structurés sur l'utilisation des produits et d'un cheminement de demande complet au lieu d'une vague copie de catalogue."
+      }
+    ],
+    "pillarsBody": "Des normes internationales à l'aide aux demandes de renseignements pratiques, VIVIDPOLY est structuré autour de la manière dont les acheteurs mondiaux d'emballages s'approvisionnent réellement. Les spécifications, l'emballage et la communication sont planifiés en fonction des marchés de destination et des besoins de conformité des acheteurs. La capacité va des emballages de vente au détail de 5 kg aux sacs industriels de 75 kg, avec des options de laminage, de doublure, de gousset, de valve et d'impression. Une assistance dédiée à l’exportation couvre le type de produit, les illustrations, le format d’emballage, la quantité et la destination avant le devis, avec des conseils structurés sur l’utilisation du produit et un cheminement de demande complet.",
+    "pillarsEyebrow": "POINTS FORTS",
+    "factsHeading": "VIVIDPOLY en un coup d'œil",
+    "whyEyebrow": "SERVICES",
+    "contactTeam": "Envoyer une demande",
+    "requestCustomQuote": "Envoyer une demande",
+    "whyHeading": "Le meilleur support pour les emballages d’exportation",
+    "whyBody": "De la variété des produits et de la planification des capacités à l'impression, aux doublures et à l'emballage pour l'exportation, VIVIDPOLY est structuré pour soutenir les décisions pratiques d'approvisionnement. Les acheteurs peuvent s'approvisionner en sacs PP en Inde pour les États-Unis, le Canada, l'Australie, l'Europe, le Royaume-Uni, l'Afrique, la Thaïlande, l'Arabie saoudite et d'autres marchés à travers une gamme claire de types de sacs industriels, agricoles, de vente au détail et promotionnels. La planification de la capacité couvre de 5 kg à 75 kg, avec une construction personnalisée, une assistance à l'impression et à la marque, des conseils d'utilisation du produit et un processus de devis convivial qui capture les détails nécessaires avant le devis.",
+    "ctaBandButton": "Envoyer une demande",
+    "factsEyebrow": "Détails de l'entreprise",
+    "whyMoreLabel": "PLUS DE DÉTAILS",
+    "ctaBandBody": "Partagez votre type de sac, sa capacité, vos besoins d'impression, sa quantité et sa destination. VIVIDPOLY examinera votre demande et suivra avec des options pratiques.",
+    "whyLead": "De la variété des produits et de la planification des capacités à l'impression, aux doublures et à l'emballage pour l'exportation, VIVIDPOLY est structuré pour soutenir les décisions pratiques d'approvisionnement.",
+    "ctaBandTitle": "Vous recherchez un partenaire professionnel en matière d’emballage pour l’exportation ?",
+    "whyItems": [
+      [
+        "Positionnement des exportateurs basés en Inde",
+        "Les acheteurs peuvent se procurer des sacs PP en Inde pour les États-Unis, le Canada, l'Australie, l'Europe, le Royaume-Uni, l'Afrique, la Thaïlande, l'Arabie saoudite et d'autres marchés."
+      ],
+      [
+        "Gamme de produits ciblée de sacs PP",
+        "L'offre de produits est claire et pratique, couvrant les types courants de sacs industriels, agricoles, de vente au détail et promotionnels."
+      ],
+      [
+        "Planification de capacité de 5 kg à 75 kg",
+        "Les acheteurs peuvent discuter de petits emballages de vente au détail, de sacs de produits de taille moyenne et de sacs industriels robustes."
+      ],
+      [
+        "Options de construction sur mesure",
+        "Des options de couches, de stratification, de gousset, de doublure, de perforation, de fenêtre, de poignée, de valve, de fond pincé et de fond bloc peuvent être planifiées."
+      ],
+      [
+        "Assistance à l'impression et au branding",
+        "Les options d’impression flexo et de PP tissé laminé imprimé contribuent à soutenir la visibilité de la marque et la présentation sur le marché."
+      ],
+      [
+        "Conseils d'utilisation du produit",
+        "Les acheteurs peuvent sélectionner des sacs par application, comme le riz, les engrais, les aliments pour animaux, les produits chimiques, le ciment, le sel, le sucre, la vente au détail et les achats."
+      ],
+      [
+        "Processus de devis convivial pour l'acheteur",
+        "Le site Web aide les acheteurs à partager le type de produit, la capacité, la taille, l'impression, les modules complémentaires, l'emballage, la quantité et la destination avant le devis."
+      ]
+    ],
+    "ctaBandEyebrow": "Entrer en contact"
+  },
+  "contact": {
+    "sendRequirement": "Formulaire de demande",
+    "title": "Contactez-nous",
+    "reachUs": "Contactez-nous directement",
+    "sendRequirementLead": "Dites-nous ce dont vous avez besoin. Choisissez un type de produit ou envoyez une requête générale et nous vous répondrons avec des conseils pratiques.",
+    "formName": "Nom",
+    "formMessage": "Message",
+    "formCompany": "Nom de l'entreprise",
+    "sending": "Envoi…",
+    "formPhone": "WhatsApp/téléphone",
+    "formEnquiryType": "Type de demande",
+    "submitEnquiry": "Soumettre une demande",
+    "emailInvalid": "Entrez une adresse e-mail valide.",
+    "formEmail": "E-mail",
+    "submitSuccess": "Demande envoyée. Notre équipe vous répondra bientôt.",
+    "emailLabel": "E-mail",
+    "submitError": "Nous n'avons pas pu envoyer votre demande. Veuillez réessayer ou appelez-nous directement.",
+    "messageRequired": "Ajoutez un court message avant de soumettre.",
+    "formCountry": "Pays",
+    "websiteLabel": "Site web",
+    "phoneLabel": "WhatsApp/Téléphone",
+    "corporateOffice": "Siège social",
+    "phoneRequired": "Ajoutez un WhatsApp ou un numéro de téléphone pour que nous puissions vous joindre.",
+    "submitUnavailable": "La demande en ligne n'est pas encore configurée. Veuillez nous envoyer un e-mail ou nous appeler en utilisant les détails sur cette page.",
+    "companyRows": [
+      [
+        "Entreprise / Marque"
+      ],
+      [
+        "Site web",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mail"
+      ],
+      [
+        "Téléphone"
+      ],
+      [
+        "Adresse de l'entreprise",
+        "Place Sankalp, A 1601, Sindhu Bhavan Marg, près de l'hôtel Taj, opp. Jeu de tir, colonie PRL, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Place Sankalp, A 1601, Sindhu Bhavan Marg, près de l'hôtel Taj, opp. Jeu de tir, colonie PRL, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepBagSpec": "Spécification du sac",
+    "submitEnquiry": "Soumettre une demande",
+    "stepContact": "Coordonnées",
+    "howReachYou": "Comment devons-nous vous joindre ?",
+    "bagSpec": "Spécification du sac",
+    "stepLabel": "Étape {current} de {total}",
+    "fields": {
+      "capacity": "Capacité",
+      "bagType": "Type de sac",
+      "printing": "Impression",
+      "addons": "Modules complémentaires",
+      "size": "Taille",
+      "destination": "Pays de destination",
+      "packedProduct": "Produit emballé",
+      "quantity": "Quantité",
+      "review": "Revoir",
+      "product": "Produit",
+      "packing": "Emballage"
+    },
+    "savedWithName": "{name}, vos coordonnées sont enregistrées.",
+    "saved": "Vos coordonnées sont enregistrées.",
+    "registerLead": "Nous enregistrerons votre demande et ferons un suivi sur WhatsApp.",
+    "reviewLabels": {
+      "packedProduct": "Produit emballé",
+      "capacity": "Capacité",
+      "printing": "Impression",
+      "addons": "Modules complémentaires",
+      "quantity": "Quantité",
+      "productType": "Type de produit",
+      "bagSize": "Taille du sac",
+      "packing": "Emballage",
+      "destination": "Destination",
+      "empty": "-"
+    },
+    "closeForm": "Fermer le formulaire de demande",
+    "emailInvalid": "Entrez une adresse e-mail valide.",
+    "reviewSteps": {
+      "product": "Produit",
+      "order": "Commande",
+      "sizePrint": "Taille et impression"
+    }
+  },
+  "sample": {
+    "steps": {
+      "review": "Revoir",
+      "payment": "Paiement",
+      "confirmed": "Confirmé"
+    },
+    "specification": "Exemple de spécification",
+    "yourDetails": "Vos coordonnées",
+    "subtotal": "Total",
+    "total": "Total",
+    "reference": "Référence:",
+    "continuePayment": "Continuer vers le paiement",
+    "billRows": {
+      "productType": "Type de produit",
+      "capacity": "Capacité",
+      "printing": "Impression",
+      "packing": "Emballage",
+      "total": "Total",
+      "sampleQuantity": "Quantité d'échantillon",
+      "unitPrice": "Prix ​​unitaire",
+      "leadTime": "Délai de mise en œuvre",
+      "exportPacking": "Emballage et expédition à l'exportation"
+    },
+    "bankTransfer": "Virement bancaire",
+    "selectBank": "Sélectionnez la banque",
+    "selectBranch": "Sélectionnez une succursale",
+    "searchBanks": "Rechercher des banques",
+    "searchBranches": "Rechercher des succursales",
+    "bankRows": {
+      "bank": "Banque",
+      "branch": "Bifurquer",
+      "ifsc": "IFSC",
+      "swift": "RAPIDE",
+      "accountNumber": "Numéro de compte",
+      "amount": "Montant",
+      "paymentReference": "Référence de paiement",
+      "beneficiary": "Bénéficiaire",
+      "accountType": "Type de compte"
+    },
+    "form": {
+      "name": "Nom",
+      "address": "Adresse de livraison",
+      "quantity": "Quantité nécessaire pour l'échantillon"
+    },
+    "noBankMatches": "Aucun match. Essayez une autre recherche.",
+    "closePicker": "Fermer le sélecteur"
+  },
+  "blog": {
+    "pageTitle": "Guides et informations d'achat",
+    "fallbackCategory": "Guide de l'acheteur",
+    "fallbackReadTime": "5 minutes de lecture",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "emptyBody": "De nouveaux guides d’achat et informations sont en route – revenez bientôt.",
+    "emptyTitle": "Pas encore d'articles",
+    "loading": "Chargement des articles…",
+    "backToArticles": "Retour à tous les articles"
+  },
+  "careers": {
+    "eyebrow": "Carrières chez VividPoly",
+    "title": "Provenant d'Inde. Reconnu dans le monde entier.",
+    "lead": "Nous recherchons des personnes soucieuses de la qualité, d’une communication claire et d’une livraison fiable. Les rôles couvrent les opérations de bureau, d’usine et d’exportation à Ahmedabad et Vadodara.",
+    "applyNow": "Postulez maintenant",
+    "seeHowWeWork": "Voyez comment nous travaillons",
+    "whyLead": "Un lieu pratique pour développer des compétences dans le secteur manufacturier et le commerce mondial.",
+    "reasons": [
+      {
+        "title": "Exposition mondiale",
+        "body": "Travail lié aux acheteurs sur plus de 70 marchés d’exportation."
+      },
+      {
+        "title": "De la place pour grandir",
+        "body": "Les nouvelles responsabilités arrivent rapidement dans une entreprise en croissance."
+      },
+      {
+        "title": "Sécurité d'emploi",
+        "body": "Soutenu par une opération d’exportation stable et établie."
+      },
+      {
+        "title": "Apprendre sur le tas",
+        "body": "Exposition pratique à l'industrie manufacturière et au commerce mondial."
+      }
+    ],
+    "whyBody": "Un lieu pratique pour développer des compétences dans le secteur manufacturier et le commerce mondial. Le travail est lié à des acheteurs sur plus de 70 marchés d'exportation, de nouvelles responsabilités arrivent rapidement dans une entreprise en croissance et les postes sont soutenus par une opération d'exportation stable et établie avec une exposition pratique à la fabrication et au commerce mondial.",
+    "whyHeading": "Pourquoi VividPoly",
+    "positionsHeading": "Trouvez-nous là où vous cherchez déjà",
+    "positionsLead": "Les ouvertures actuelles sont affichées et mises à jour sur ces plateformes. Parcourez les postes en direct, puis postulez via le formulaire ci-dessous.",
+    "positionsNote": "Vous préférez une candidature directe ? Utilisez Postuler maintenant ci-dessous.",
+    "positionsEyebrow": "POSTES OUVERTS",
+    "positionsMoreLabel": "VOIR LES OUVERTURES",
+    "platforms": [
+      {
+        "blurb": "Mises à jour de l'entreprise et postes ouverts pour les carrières en exportation, en opérations et en emballage.",
+        "label": "LinkedIn"
+      },
+      {
+        "label": "En effet",
+        "blurb": "Recherchez les listes VIVIDPOLY par rôle, emplacement et niveau d'expérience."
+      },
+      {
+        "blurb": "Ouvertures axées sur l'Inde au sein des équipes de fabrication, de vente et de support.",
+        "label": "Naukri"
+      }
+    ],
+    "ctaHeading": "Votre prochaine évolution de carrière commence ici",
+    "ctaEyebrow": "Postulez maintenant",
+    "ctaLead": "Partagez votre intérêt pour votre rôle, votre expérience et votre emplacement préféré. Notre équipe examinera les candidatures au fur et à mesure que des postes seront disponibles."
+  },
+  "search": {
+    "suggestionsHeading": "Suggestions",
+    "recentHeading": "Recherches récentes",
+    "noMatches": "Aucun match. Essayez « riz » ou « ciment »",
+    "recentTerms": [
+      "sacs de riz",
+      "sacs de ciment",
+      "imprimé laminé",
+      "25 kg bouche ouverte"
+    ]
+  },
+  "filters": {
+    "capacityCustomNotice": "VIVIDPOLY propose des conditionnements en sacs PP entre {min} kg et {max} kg. Veuillez entrer une capacité comprise dans cette plage.",
+    "capacityOrEnter": "Ou entrez la capacité",
+    "capacityExample": "par ex. 23 kg",
+    "capacityMax": "Capacité maximale",
+    "capacityMin": "Capacité minimale",
+    "customSelectUseAnyway": "Utilisez quand même cette valeur",
+    "customSelectNoMatches": "Aucune correspondance trouvée",
+    "productUseOptions": "Options d'utilisation du produit",
+    "customSelectEnter": "Entrez votre spécification…"
+  },
+  "breadcrumbs": {
+    "home": "Maison",
+    "products": "Produits",
+    "blog": "Blogue",
+    "faqs": "FAQ",
+    "about": "À propos",
+    "careers": "Carrière",
+    "contact": "Contactez-nous",
+    "getQuote": "Obtenez un devis",
+    "requestExportQuote": "Demander un devis d'exportation"
+  },
+  "validation": {
+    "emailInvalid": "Entrez une adresse e-mail valide."
+  },
+  "buyerRows": [
+    {
+      "requirement": "Approvisionnement à l’exportation depuis l’Inde",
+      "response": "VIVIDPOLY se positionne comme un exportateur basé en Inde pour les acheteurs mondiaux de sacs PP."
+    },
+    {
+      "requirement": "Variété de produits",
+      "response": "Bouche ouverte, cousue, coupe en D, valve, transport, laminé, fond pincé, fond bloc, soufflet et sacs de courses."
+    },
+    {
+      "requirement": "Capacité personnalisée",
+      "response": "Des solutions de sacs PP peuvent être prévues de 5 kg à 75 kg en fonction de la densité du produit et de la structure du sac."
+    },
+    {
+      "requirement": "Présentation de la marque",
+      "response": "Les options d'impression flexo et de PP tissé laminé imprimé soutiennent l'identité du produit et son attrait en rayon."
+    },
+    {
+      "requirement": "Flux de demandes de renseignements convivial pour les acheteurs",
+      "response": "Le type de produit, la taille, la capacité, l'impression, le laminage, la doublure, le gousset, la poignée et les détails de l'emballage peuvent être capturés avant le devis."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "short": "Exportateur basé en Inde",
+      "label": "Approvisionnement en Inde"
+    },
+    {
+      "label": "Gamme de produits",
+      "short": "10 types de sacs"
+    },
+    {
+      "label": "Capacité personnalisée",
+      "short": "5 kg à 75 kg"
+    },
+    {
+      "label": "Impression de marque",
+      "short": "Imprimer et plastifier"
+    },
+    {
+      "short": "Détails prêts pour le devis",
+      "label": "Flux de travail de devis"
+    }
+  ],
+  "useRows": [
+    {
+      "use": "Riz, blé, céréales, légumineuses, farine",
+      "cardTitle": "Céréales et légumineuses",
+      "tips": "Impression flexo, impression laminée, fenêtre, gousset, doublure, poignée, emballage de balles pour l'exportation.",
+      "bags": "Sacs à bouche ouverte, sacs cousus en haut et en bas, sacs en PP tissés laminés imprimés, sacs à fond pincé"
+    },
+    {
+      "cardTitle": "Engrais et Semences",
+      "tips": "Liner, gousset, impression flexo, impression laminée, perforation, emballage palette.",
+      "use": "Engrais et graines",
+      "bags": "Sacs cousus, sacs PP tissés laminés, sacs à fond bloc, sacs à soufflet à fond bloc"
+    },
+    {
+      "cardTitle": "Aliments pour animaux et aliments pour animaux de compagnie",
+      "use": "Aliments pour animaux et aliments pour animaux de compagnie",
+      "tips": "Construction multicouche, fenêtre, soufflet, poignée, impression premium, perforation en option.",
+      "bags": "Sacs PP tissés laminés imprimés, sacs à soufflet à fond bloc, sacs de transport, sacs à fond pincé"
+    },
+    {
+      "tips": "Construction de valve, doublure, perforation, coutures solides, garniture robuste.",
+      "bags": "Sacs à valve, sacs à fond bloc, sacs cousus en haut et en bas, sacs soutenus par une doublure",
+      "cardTitle": "Ciment et poudres industrielles",
+      "use": "Ciment, produits chimiques, minéraux, poudres"
+    },
+    {
+      "bags": "Sacs à gueule ouverte, sacs cousus, sacs laminés, sacs à doublure",
+      "cardTitle": "Sel, sucre et matières premières",
+      "use": "Sel, sucre, biens de consommation",
+      "tips": "Doublure, surface laminée, impression flexo, coutures nettes, options de support contre l'humidité."
+    },
+    {
+      "cardTitle": "Vente au détail et promotion",
+      "tips": "Options de poignée, impression laminée, gousset, emballage en carton, illustration de la marque.",
+      "bags": "Sacs découpés en D, sacs de transport, sacs à provisions tissés, sacs PP tissés laminés imprimés",
+      "use": "Commerce de détail, achats, promotion"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Impression flexo, impression laminée, fenêtre, gousset, doublure, poignée, emballage de balles pour l'exportation.",
+      "bags": "Sacs à bouche ouverte, sacs cousus en haut et en bas, sacs en PP tissés laminés imprimés, sacs à fond pincé.",
+      "title": "Riz, blé, céréales et légumineuses"
+    },
+    {
+      "title": "Farine et produits alimentaires",
+      "bags": "Sacs à bouche ouverte, sacs en PP tissés imprimés et laminés, sacs à fond pincé.",
+      "tips": "Doublure, surface laminée, coupe nette, coutures sécurisées, design convivial."
+    },
+    {
+      "tips": "Doublure, surface laminée, impression flexo, coutures nettes, options de support contre l'humidité.",
+      "title": "Sel et sucre",
+      "bags": "Sacs à bouche ouverte, sacs cousus, sacs PP tissés laminés imprimés."
+    },
+    {
+      "title": "Engrais et Semences",
+      "tips": "Liner, gousset, impression flexo, impression laminée, perforation, emballage palette.",
+      "bags": "Sacs cousus, sacs PP tissés laminés, sacs à fond bloc, sacs à soufflet à fond bloc."
+    },
+    {
+      "tips": "Construction multicouche, fenêtre, soufflet, poignée, impression premium, perforation en option.",
+      "bags": "Sacs en PP tissés laminés imprimés, sacs à fond pincé, sacs à soufflet à fond bloc, sacs de transport.",
+      "title": "Aliments pour animaux et aliments pour animaux de compagnie"
+    },
+    {
+      "tips": "Construction de valve, doublure, perforation, coutures solides, garniture robuste.",
+      "title": "Ciment et matériaux de construction",
+      "bags": "Sacs à valve, sacs à fond bloc, sacs cousus haut et bas."
+    },
+    {
+      "tips": "Doublure, stratification, perforation de désaération, coutures sécurisées, emballage d'exportation.",
+      "title": "Produits chimiques et minéraux",
+      "bags": "Sacs à valve, sacs cousus, sacs à gueule ouverte, sacs à doublure."
+    },
+    {
+      "tips": "Options de poignée, impression laminée, gousset, emballage en carton, illustration de la marque.",
+      "bags": "Sacs découpés en D, sacs de transport, sacs à provisions tissés, sacs PP tissés laminés imprimés.",
+      "title": "Produits de vente au détail et promotionnels"
+    },
+    {
+      "title": "Emballages de style shopping et réutilisables",
+      "tips": "Poignées en boucle, poignées découpées en D, soufflet latéral, soufflet inférieur, impression multicolore.",
+      "bags": "Sacs à provisions tissés, sacs de transport, sacs tissés en PP découpés en D."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Sac tissé"
+    },
+    {
+      "title": "Tissu"
+    },
+    {
+      "title": "Barrière contre les mauvaises herbes"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Produits agricoles et alimentaires",
+      "items": [
+        "Riz, blé, céréales et légumineuses",
+        "Farine et produits alimentaires",
+        "Sel et sucre"
+      ]
+    },
+    {
+      "title": "Intrants agricoles et soins aux animaux",
+      "items": [
+        "Engrais et Semences",
+        "Aliments pour animaux et aliments pour animaux de compagnie"
+      ]
+    },
+    {
+      "title": "Industriel et construction",
+      "items": [
+        "Ciment et matériaux de construction",
+        "Produits chimiques et minéraux"
+      ]
+    },
+    {
+      "title": "Vente au détail et promotion",
+      "items": [
+        "Produits de vente au détail et promotionnels",
+        "Emballages de style shopping et réutilisables"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Capacité",
+      "title": "Capacité",
+      "options": [
+        {
+          "label": "5kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Coutume"
+        }
+      ]
+    },
+    {
+      "key": "Type de produit",
+      "title": "Type de produit",
+      "options": [
+        {
+          "label": "Bouche ouverte"
+        },
+        {
+          "label": "Cousu"
+        },
+        {
+          "label": "Coupe en D"
+        },
+        {
+          "label": "Soupape"
+        },
+        {
+          "label": "Porter"
+        },
+        {
+          "label": "Feuilleté"
+        },
+        {
+          "label": "Pincer le bas"
+        },
+        {
+          "label": "Fond de bloc"
+        },
+        {
+          "label": "Gousset inférieur bloc"
+        },
+        {
+          "label": "Shopping tissé"
+        },
+        {
+          "label": "Tissu tissé PP"
+        },
+        {
+          "label": "Barrière contre les mauvaises herbes"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "a": "VIVIDPOLY exporte des sacs à bouche ouverte, des sacs cousus en haut et en bas, des sacs tissés en PP découpés en D, des sacs à valve, des sacs de transport, des sacs en PP tissés imprimés et laminés, des sacs à fond pincé en PP tissés imprimés et laminés, des sacs à fond bloc en PP tissés imprimés et laminés, des sacs à soufflet à fond bloc en PP tissés imprimés et laminés et des sacs à provisions tissés.",
+      "q": "Quels types de sacs PP VIVIDPOLY exporte-t-il ?"
+    },
+    {
+      "q": "Quelle capacité de poids est disponible pour les sacs VIVIDPOLY PP ?",
+      "a": "VIVIDPOLY peut discuter des exigences en matière de sacs PP de 5 kg à 75 kg, en fonction de la densité du produit, de la taille du sac, de la résistance du tissu, de la construction, du laminage, de la doublure, du gousset, des coutures et de l'application finale."
+    },
+    {
+      "q": "Quelles informations sont nécessaires pour un devis ?",
+      "a": "Les acheteurs doivent fournir le type de produit, le produit emballé, la capacité, la taille du sac, la quantité, les exigences d'impression, la stratification, la doublure, le gousset, la poignée, la découpe, la couture, le type d'emballage, le pays de destination et la référence d'illustration ou d'échantillon si disponible."
+    },
+    {
+      "a": "Oui. VIVIDPOLY peut répondre aux exigences en matière de sacs PP tissés imprimés et laminés pour des produits tels que le riz, la farine, les engrais, les aliments pour animaux, les aliments pour animaux de compagnie, les graines, le sel, le sucre et les produits de vente au détail.",
+      "q": "VIVIDPOLY peut-il fournir des sacs PP tissés imprimés et laminés ?"
+    },
+    {
+      "q": "Quelle est la différence entre les sacs à gueule ouverte et les sacs à valve ?",
+      "a": "Les sacs à gueule ouverte sont remplis par un dessus ouvert et fermés après remplissage. Les sacs à valve sont remplis par une ouverture de valve et sont couramment utilisés pour les poudres, les produits de type ciment, les produits chimiques, les minéraux et les matériaux de construction."
+    },
+    {
+      "a": "Les sacs à fond pincé sont utilisés lorsque les acheteurs ont besoin d’un emballage de qualité supérieure et d’une présentation propre de la fermeture. Ils conviennent à certains aliments, aliments pour animaux de compagnie, aliments pour animaux, céréales, graines et produits de vente au détail.",
+      "q": "A quoi servent les sacs à fond pincé ?"
+    },
+    {
+      "q": "A quoi servent les sacs à soufflet à fond bloc ?",
+      "a": "Les sacs à soufflet à fond bloc conviennent lorsque les acheteurs ont besoin d'un volume amélioré, d'une forme remplie stable, d'une zone de marque plus forte et d'une meilleure présentation d'empilage."
+    },
+    {
+      "a": "Oui. Les sacs PP tissés imprimés et laminés sélectionnés peuvent inclure une fenêtre transparente pour montrer le produit emballé à l'intérieur.",
+      "q": "Les sacs PP peuvent-ils inclure des fenêtres ?"
+    },
+    {
+      "q": "VIVIDPOLY peut-il fournir des doublures à l'intérieur des sacs PP ?",
+      "a": "Oui. Des doublures peuvent être envisagées lorsqu’une protection supplémentaire du produit, un soutien à l’humidité ou une rétention fine du produit sont nécessaires."
+    },
+    {
+      "q": "Quelles sont les options d'impression disponibles ?",
+      "a": "VIVIDPOLY peut prendre en charge les formats de sacs unis, de sacs imprimés en flexographie et de sacs PP tissés imprimés et laminés, en fonction des besoins de la marque, de la complexité des illustrations, du budget et du marché des produits."
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Guide de l'acheteur",
+      "readTime": "6 minutes de lecture",
+      "purpose": "Expliquez les sacs PP, les utilisations courantes et les facteurs de sélection des acheteurs.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "title": "Que sont les sacs PP ? Guide complet pour les acheteurs importateurs"
+    },
+    {
+      "purpose": "Comparez les styles de remplissage et les applications appropriées.",
+      "category": "Conditionnement",
+      "readTime": "5 minutes de lecture",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title": "Sacs à gueule ouverte ou sacs à valve : quel sac en PP convient le mieux à votre produit ?"
+    },
+    {
+      "category": "Guide de l'acheteur",
+      "readTime": "7 minutes de lecture",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "purpose": "Sensibiliser les acheteurs aux formats de sacs cousus.",
+      "title": "Sacs PP cousus en haut et en bas : utilisations, avantages et personnalisation"
+    },
+    {
+      "title": "Sacs en PP tissés imprimés et laminés pour l'emballage de riz, d'aliments pour animaux et d'engrais",
+      "readTime": "5 minutes de lecture",
+      "purpose": "Promouvoir les emballages de marque haut de gamme.",
+      "category": "Image de marque",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "category": "Conditionnement",
+      "readTime": "6 minutes de lecture",
+      "purpose": "Comparez les constructions de sacs haut de gamme.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "title": "Sacs à fond pincé vs sacs à fond bloc : guide de l'acheteur"
+    },
+    {
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercice ullamco laboris nisi ut aliquip ex ea commodo.",
+      "title": "Guide des tailles de sacs PP : Comment choisir une capacité de sac de 5 kg à 75 kg",
+      "purpose": "Aidez les acheteurs à définir la taille et la capacité avant toute demande.",
+      "readTime": "8 minutes de lecture",
+      "category": "Dimensionnement"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Image de marque",
+      "readTime": "5 minutes de lecture",
+      "title": "Impression flexo vs impression laminée pour les sacs PP",
+      "purpose": "Expliquer les choix d’impression et l’impact de la marque."
+    },
+    {
+      "category": "Caractéristiques",
+      "readTime": "4 minutes de lecture",
+      "title": "Pourquoi les doublures, les soufflets et les perforations sont importants dans les sacs PP",
+      "purpose": "Expliquer les fonctionnalités complémentaires pour la protection et la manipulation du produit.",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    },
+    {
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Entier nec odio praesent libero sed cursus ante.",
+      "readTime": "6 minutes de lecture",
+      "purpose": "Apprenez aux acheteurs quels détails envoyer pour un devis.",
+      "title": "Comment préparer une demande d'exportation de sacs PP",
+      "category": "Conseils d'exportation"
+    },
+    {
+      "readTime": "5 minutes de lecture",
+      "title": "Sacs à provisions tissés pour emballages de vente au détail et promotionnels",
+      "category": "Vente au détail",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet.",
+      "purpose": "Ciblez les acheteurs de sacs de courses et de sacs promotionnels."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "USD",
+    "packing": "Emballage d'exportation de carton",
+    "qtyLabel": "5 échantillons de pièces",
+    "printing": "Plaine (exemple de spécification)",
+    "leadTime": "7 à 10 jours ouvrables après la confirmation du paiement"
+  },
+  "bankDetails": {
+    "accountType": "Compte courant",
+    "swift": "HDFCINBB",
+    "bankName": "Banque HDFC Ltd.",
+    "ifsc": "HDFC0001234",
+    "branch": "Ahmedabad, Bopal, Gujarat, Inde",
+    "paymentNote": "Incluez le nom de votre entreprise et la référence de l’échantillon dans la narration du transfert."
+  },
+  "paymentBankAccounts": [
+    {
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "accountType": "Compte courant",
+      "bankName": "Banque HDFC Ltd.",
+      "location": "Gujarat, Inde",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "Banque HDFC Ltd.",
+      "location": "Gujarat, Inde",
+      "swift": "HDFCINBB",
+      "accountType": "Compte courant",
+      "ifsc": "HDFC0005678",
+      "branch": "Vadodara, route de Halol"
+    },
+    {
+      "location": "Gujarat, Inde",
+      "bankName": "ICICI Banque Ltd.",
+      "accountType": "Compte courant",
+      "branch": "Ahmedabad, autoroute SG",
+      "swift": "ICICINBBB",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "Gujarat, Inde",
+      "bankName": "Banque Axe Ltd.",
+      "accountType": "Compte courant",
+      "branch": "Ahmedabad, Prahladnagar",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujarat, Inde",
+      "bankName": "Banque d'État de l'Inde",
+      "accountType": "Compte courant",
+      "branch": "Gandhinagar, secteur 21",
+      "ifsc": "SBIN0006789",
+      "swift": "SBININBB"
+    },
+    {
+      "location": "Gujarat, Inde",
+      "branch": "Ahmedabad, route de l'Ashram",
+      "accountType": "Compte courant",
+      "swift": "KKBKINBB",
+      "bankName": "Banque Kotak Mahindra",
+      "ifsc": "KKKBK0001234"
+    },
+    {
+      "ifsc": "OUIB0000123",
+      "accountType": "Compte courant",
+      "swift": "OUIBINBB",
+      "location": "Maharashtra, Inde",
+      "branch": "Mumbai, Andheri Est",
+      "bankName": "Oui Banque Ltd."
+    },
+    {
+      "location": "Gujarat, Inde",
+      "accountType": "Compte courant",
+      "swift": "INDBINBB",
+      "bankName": "IndusInd Bank Ltd.",
+      "branch": "Ahmedabad, Navrangpura",
+      "ifsc": "INDB0000123"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Sacs à bouche ouverte"
+    },
+    {
+      "label": "Sacs cousus"
+    },
+    {
+      "label": "Sacs coupe D"
+    },
+    {
+      "label": "Sacs à valves"
+    },
+    {
+      "label": "Sacs de transport"
+    },
+    {
+      "label": "Sacs PP tissés laminés"
+    },
+    {
+      "label": "Sacs à fond pincé"
+    },
+    {
+      "label": "Sacs à fond bloc"
+    },
+    {
+      "label": "Sacs à gousset à fond bloc"
+    },
+    {
+      "label": "Sacs à provisions tissés"
+    },
+    {
+      "label": "Tissu tissé PP"
+    },
+    {
+      "label": "Barrière contre les mauvaises herbes"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Sacs à bouche ouverte",
+      "group": "Sac tissé",
+      "short": "Sacs tissés en PP faciles à remplir pour les produits secs en vrac tels que les céréales, la farine, les aliments pour animaux, les engrais, le sel, le sucre, les graines et les minéraux.",
+      "features": [
+        {
+          "title": "Remplissage facile",
+          "body": "Le dessus ouvert permet un remplissage rapide par des méthodes manuelles, semi-automatiques ou assistées par machine."
+        },
+        {
+          "body": "Convient aux applications de 5 kg à 75 kg en fonction de la densité du produit et de la conception du sac.",
+          "title": "Flexibilité des capacités"
+        },
+        {
+          "title": "Finition personnalisée",
+          "body": "Le dessus peut être coupé à chaud, coupé à froid, ourlé ou coupé en zigzag."
+        },
+        {
+          "title": "Options d'impression et de doublure",
+          "body": "L'impression flexo, l'impression laminée et un support de doublure peuvent être ajoutés si nécessaire."
+        }
+      ],
+      "cta": "Explorez les sacs à bouche ouverte",
+      "intro": "Les sacs à gueule ouverte sont l'un des styles de sacs PP les plus pratiques pour l'emballage de vrac sec. VIVIDPOLY exporte des sacs PP à gueule ouverte pour les acheteurs qui ont besoin d'un remplissage facile, d'une fermeture flexible et d'une personnalisation pour les applications agricoles, alimentaires, d'engrais, d'aliments pour animaux, chimiques, minérales, de sel, de sucre et industrielles.",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "5 kg à 75 kg"
+        },
+        {
+          "key": "Haut",
+          "value": "Bouche ouverte, coupe à chaud, coupe à froid, zigzag, ourlée"
+        },
+        {
+          "key": "Bas",
+          "value": "Pli simple cousu, double pli cousu, finition personnalisée"
+        },
+        {
+          "key": "Impression",
+          "value": "Papier ordinaire, flexo, imprimé laminé"
+        },
+        {
+          "key": "Modules complémentaires",
+          "value": "Gousset, liner, perforation, poignée si besoin"
+        },
+        {
+          "key": "Emballage",
+          "value": "Balle, paquet, palette, carton, emballage d'exportation"
+        }
+      ],
+      "benefits": "Les sacs PP à gueule ouverte sont préférés pour leur simplicité, leur adaptabilité et leur manipulation rentable. Ils sont idéaux pour les acheteurs qui ont besoin d'un sac tissé solide qui peut être fermé après remplissage par couture, scellement, pliage ou attachement.",
+      "details": "Ces sacs peuvent être fournis sous forme de sacs PP tissés unis, de sacs imprimés en flexographie ou de sacs PP tissés imprimés et laminés. Les acheteurs peuvent sélectionner la taille, le tissu, la capacité, le gousset, la doublure, l'impression, la couture, la découpe et l'emballage.",
+      "mfg": "Le processus comprend le tissage du tissu, l'impression ou le laminage optionnel, la découpe, la couture du bas, l'inspection et l'emballage.",
+      "material": "Tissu tissé PP, encre d'imprimerie, fil de couture, stratification en option, doublure en option et exigences de couleur/additif spécifiques à l'acheteur.",
+      "speciality": "La spécialité des sacs à gueule ouverte est leur flexibilité pour différents produits et méthodes de remplissage."
+    },
+    "stitched": {
+      "group": "Sac tissé",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Coutures supérieures et inférieures sécurisées, résistance du tissu personnalisée, doublure en option, impression flexo ou laminée, emballage personnalisé."
+        },
+        {
+          "title": "Avantages",
+          "body": "Meilleure sécurité de fermeture, manipulation pratique, bonnes performances d'empilage et adaptation à de nombreux produits en vrac sec."
+        },
+        {
+          "title": "Détails",
+          "body": "Les acheteurs peuvent spécifier le type de couture, le type de fil, le style de pliage, la taille, la capacité, l'impression, la doublure, le gousset et l'emballage."
+        }
+      ],
+      "name": "Sacs cousus en haut et en bas",
+      "short": "Sacs PP cousus sécurisés pour le transport, le stockage et l'emballage à l'exportation de produits agricoles et industriels.",
+      "cta": "Découvrez les sacs cousus",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "5 kg à 75 kg"
+        },
+        {
+          "key": "Piqûre",
+          "value": "Pli simple, pli double, fil simple, fil double, coutures supérieure et inférieure"
+        },
+        {
+          "key": "Impression",
+          "value": "Uni, flexo, imprimé laminé"
+        },
+        {
+          "key": "Doublure",
+          "value": "Doublure ample ou cousue en option"
+        },
+        {
+          "key": "Emballage",
+          "value": "Balle, paquet, palette, emballage d'exportation compressé"
+        }
+      ],
+      "intro": "Les sacs cousus en haut et en bas sont conçus pour les acheteurs qui ont besoin d'une fermeture sécurisée et d'une manipulation fiable pendant le stockage et le transport. VIVIDPOLY exporte des sacs PP cousus pour les emballages agricoles, alimentaires, d'engrais, d'aliments pour animaux, chimiques, minéraux et industriels.",
+      "benefits": "Meilleure sécurité de fermeture, manipulation pratique, bonnes performances d'empilage et adaptation à de nombreux produits en vrac sec.",
+      "details": "Les acheteurs peuvent spécifier le type de couture, le type de fil, le style de pliage, la taille, la capacité, l'impression, la doublure, le gousset et l'emballage.",
+      "mfg": "Le processus de fabrication comprend le tissage, l’impression/laminage en option, la découpe, les coutures supérieure et inférieure, l’inspection et l’emballage.",
+      "material": "Les combinaisons de matériaux incluent le tissu PP, le fil de couture, la stratification en option, la doublure en option et l'encre d'imprimerie.",
+      "speciality": "La spécialité de ce type de sac est une fermeture cousue fiable."
+    },
+    "d-cut": {
+      "group": "Sac tissé",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Poignée découpée en D, format personnalisé, impression flexo ou laminée, gousset en option, finition adaptée aux ventes au détail."
+        },
+        {
+          "title": "Avantages",
+          "body": "Transport facile, structure tissée solide, visibilité de la marque et valeur promotionnelle utile."
+        },
+        {
+          "title": "Détails",
+          "body": "Convient aux applications de transport léger à moyen, aux produits de vente au détail, aux salons professionnels et aux campagnes promotionnelles."
+        }
+      ],
+      "name": "Sacs tissés en PP découpés en D",
+      "cta": "Découvrez les sacs D-Cut",
+      "short": "Sacs tissés en PP de style transport avec poignée intégrée découpée pour la vente au détail, la promotion et les emballages de style réutilisable.",
+      "intro": "Les sacs tissés D-Cut PP comprennent une poignée intégrée qui rend le sac plus facile à transporter. VIVIDPOLY exporte des sacs découpés en D pour les besoins d'emballage de vente au détail, de shopping, de promotion, d'exposition et de style réutilisable.",
+      "benefits": "Transport facile, structure tissée solide, visibilité de la marque et valeur promotionnelle utile.",
+      "spec": [
+        {
+          "key": "Poignée",
+          "value": "Poignée coupée en D ou renforcée en D"
+        },
+        {
+          "key": "Matériel",
+          "value": "Matériau PP tissé ou laminé"
+        },
+        {
+          "key": "Impression",
+          "value": "Impression personnalisée"
+        },
+        {
+          "key": "Piqûre",
+          "value": "Coutures latérales/inférieures"
+        },
+        {
+          "key": "Emballage",
+          "value": "Emballage en carton ou en paquet"
+        }
+      ],
+      "details": "Convient aux applications de transport léger à moyen, aux produits de vente au détail, aux salons professionnels et aux campagnes promotionnelles.",
+      "material": "Tissu tissé PP, film laminé si nécessaire, encre d'imprimerie, fil à coudre, renfort de poignée si nécessaire.",
+      "speciality": "Combine la commodité du transport avec la résistance du tissage et la présentation de la marque.",
+      "mfg": "Tissage, impression ou laminage, découpe, formation de poignées en D, couture, inspection, emballage."
+    },
+    "valve": {
+      "name": "Sacs à valves",
+      "group": "Sac tissé",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Conception de remplissage de valve, doublure en option, perforation, impression laminée, compatibilité avec fond de bloc."
+        },
+        {
+          "title": "Avantages",
+          "body": "Remplissage contrôlé plus rapide, format emballé plus propre, adapté aux produits en poudre et granulés."
+        },
+        {
+          "title": "Détails",
+          "body": "La taille de la vanne, le type de vanne, la perforation, le revêtement, la capacité et la construction doivent être sélectionnés en fonction du produit et du système de remplissage."
+        }
+      ],
+      "cta": "Découvrez les sacs à valve",
+      "intro": "Les sacs à valve sont développés pour les produits qui doivent être remplis par une ouverture de valve. VIVIDPOLY exporte des sacs à valve pour les produits de type ciment, les produits chimiques, les minéraux, les poudres, les matériaux de construction et les biens industriels.",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "Généralement 20 kg à 75 kg"
+        },
+        {
+          "key": "Soupape",
+          "value": "Vanne simple ou allongée"
+        },
+        {
+          "key": "Construction",
+          "value": "Construction standard ou à fond bloc"
+        },
+        {
+          "key": "Modules complémentaires",
+          "value": "Doublure et perforation en option"
+        }
+      ],
+      "short": "Sacs PP de remplissage à valve pour produits de type ciment, produits chimiques, minéraux, poudres et matériaux de construction.",
+      "benefits": "Remplissage contrôlé plus rapide, format emballé plus propre, adapté aux produits en poudre et granulés.",
+      "details": "La taille de la vanne, le type de vanne, la perforation, le revêtement, la capacité et la construction doivent être sélectionnés en fonction du produit et du système de remplissage.",
+      "speciality": "Convient au remplissage industriel et à la distribution à l'exportation.",
+      "material": "Tissu tissé PP, matériau de valve, doublure, couche laminée, fil à coudre, encre d'imprimerie.",
+      "mfg": "Préparation du tissu, impression/laminage, découpe, formation de valves, perforation si nécessaire, contrôle, emballage."
+    },
+    "carry": {
+      "name": "Sacs de transport",
+      "group": "Sac tissé",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Options de coupe en D, de boucle, cousue, perforée, latérale ou supérieure ; finition imprimée ou laminée ; gousset en option."
+        },
+        {
+          "title": "Avantages",
+          "body": "Améliore la visibilité de la marque et offre une résistance de transport pratique."
+        },
+        {
+          "title": "Détails",
+          "body": "Les acheteurs peuvent personnaliser la taille du sac, le style de la poignée, le motif d'impression, le laminage, le gousset, les coutures et l'emballage."
+        }
+      ],
+      "cta": "Découvrez les sacs de transport",
+      "spec": [
+        {
+          "key": "Matériel",
+          "value": "Matériau PP tissé ou laminé"
+        },
+        {
+          "key": "Impression",
+          "value": "Impression flexo ou laminée"
+        },
+        {
+          "key": "Soufflet",
+          "value": "Gousset latéral/inférieur"
+        },
+        {
+          "key": "Emballage",
+          "value": "Emballage de carton/paquet/balle"
+        }
+      ],
+      "short": "Sacs de transport tissés solides et personnalisables pour les applications de vente au détail, commerciales et promotionnelles.",
+      "details": "Les acheteurs peuvent personnaliser la taille du sac, le style de la poignée, le motif d'impression, le laminage, le gousset, les coutures et l'emballage.",
+      "benefits": "Améliore la visibilité de la marque et offre une résistance de transport pratique.",
+      "intro": "Les sacs de transport fabriqués en matériau tissé PP conviennent aux acheteurs qui ont besoin de sacs de transport solides, de marque et pratiques. VIVIDPOLY exporte des sacs de transport pour la vente au détail, le commerce, le shopping, les événements et les emballages promotionnels.",
+      "speciality": "Emballage de transport solide avec communication de la marque.",
+      "material": "Tissu tissé PP, film laminé, encre d'imprimerie, fil à coudre, matériau de poignée si nécessaire.",
+      "mfg": "Tissage, impression/laminage, découpe, création ou fixation de anses, couture, contrôle, emballage."
+    },
+    "laminated": {
+      "group": "Sac tissé",
+      "name": "Sacs PP tissés imprimés et laminés",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Surface laminée imprimée, base en PP tissé, options de couches, gousset, doublure, fenêtre, perforation, poignées."
+        },
+        {
+          "title": "Avantages",
+          "body": "Image de marque améliorée, meilleur attrait en rayon, identité du produit et structure d'emballage solide."
+        },
+        {
+          "title": "Détails",
+          "body": "Convient pour 5 kg à 75 kg selon la construction et la densité du produit."
+        }
+      ],
+      "short": "Emballages imprimés haut de gamme pour le riz, la farine, les aliments pour animaux, les aliments pour animaux, les engrais, les semences et les produits de vente au détail.",
+      "cta": "Découvrez les sacs PP laminés",
+      "intro": "Les sacs PP tissés imprimés et laminés allient la résistance du tissage à une présentation attrayante de la marque. VIVIDPOLY exporte ces sacs pour les acheteurs qui ont besoin d'emballages imprimés de qualité supérieure pour les produits alimentaires, les engrais, les aliments pour animaux, les aliments pour animaux, les graines, le sel, le sucre et les produits de vente au détail.",
+      "benefits": "Image de marque améliorée, meilleur attrait en rayon, identité du produit et structure d'emballage solide.",
+      "spec": [
+        {
+          "key": "Base",
+          "value": "PP tissé + couche laminée imprimée"
+        },
+        {
+          "key": "Doublure",
+          "value": "Doublure en option"
+        },
+        {
+          "key": "Finition",
+          "value": "Finition de style brillant/mat si disponible"
+        },
+        {
+          "key": "Coutume",
+          "value": "Taille et illustration personnalisées"
+        }
+      ],
+      "details": "Convient pour 5 kg à 75 kg selon la construction et la densité du produit.",
+      "material": "Tissu tissé PP, film imprimé ou couche d'impression, couche de stratification, fil de couture, doublure/fenêtre en option, encre d'imprimerie.",
+      "mfg": "Tissage de tissus, préparation des illustrations, impression, laminage, découpe, couture/conversion, inspection, emballage.",
+      "speciality": "Emballage d'exportation haut de gamme avec une apparence axée sur la marque."
+    },
+    "pinch-bottom": {
+      "name": "Sacs à fond pincé",
+      "group": "Sac tissé",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Construction à fond pincé, surface laminée imprimée, fonction d'ouverture facile en option, fenêtre, gousset, doublure."
+        },
+        {
+          "title": "Avantages",
+          "body": "Aspect haut de gamme, forme remplie organisée, présentation en rayon plus solide, meilleure communication de la marque."
+        },
+        {
+          "title": "Détails",
+          "body": "Idéal pour les produits prêts à être vendus au détail et les emballages de produits de marque."
+        }
+      ],
+      "short": "Sacs PP laminés imprimés de qualité supérieure avec fermeture propre pour un emballage prêt à la vente au détail.",
+      "details": "Idéal pour les produits prêts à être vendus au détail et les emballages de produits de marque.",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "Généralement 5 kg à 50 kg, plus élevé selon la conception"
+        },
+        {
+          "key": "Construction",
+          "value": "PP tissé laminé imprimé"
+        },
+        {
+          "key": "Modules complémentaires",
+          "value": "Fenêtre/doublure/gousset en option"
+        }
+      ],
+      "cta": "Découvrez les sacs à fond pincé",
+      "intro": "Les sacs à fond pincé en PP tissé imprimé et laminé sont conçus pour les emballages haut de gamme où la présentation propre de la fermeture et l'apparence de la marque sont importantes. VIVIDPOLY exporte des sacs à fond pincé pour les céréales alimentaires, les aliments pour animaux de compagnie, les aliments pour animaux, les graines et les produits de vente au détail.",
+      "mfg": "Préparation du tissu, impression/laminage, découpe, formation du fond pincé, fenêtre/perforation en option, inspection, emballage.",
+      "speciality": "Présentation de fermeture haut de gamme pour emballages d'exportation de marque.",
+      "benefits": "Aspect haut de gamme, forme remplie organisée, présentation en rayon plus solide, meilleure communication de la marque.",
+      "material": "Tissu tissé PP, film laminé imprimé, couche de stratification, doublure, film pour fenêtre, encre d'imprimerie."
+    },
+    "block-bottom": {
+      "name": "Sacs à fond bloc",
+      "group": "Sac tissé",
+      "short": "Sacs PP laminés imprimés de forme stable pour un meilleur empilage, affichage et présentation à l'exportation.",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Structure à fond bloc, finition laminée imprimée, bouche ouverte ou dessus à valve, liner, perforation."
+        },
+        {
+          "title": "Avantages",
+          "body": "Meilleure forme, présentation améliorée des palettes, surface de marquage solide et manipulation plus facile."
+        },
+        {
+          "title": "Détails",
+          "body": "Convient aux produits pour lesquels la présentation visuelle et les performances d'empilage sont importantes."
+        }
+      ],
+      "intro": "Les sacs à fond bloc en PP tissés imprimés et laminés offrent une forme remplie plus stable et un aspect d'empilage amélioré. VIVIDPOLY exporte des sacs à fond bloc pour les engrais, les aliments pour animaux de compagnie, les aliments pour animaux, les céréales, les minéraux, les produits chimiques et les emballages de vente au détail.",
+      "cta": "Découvrez les sacs à fond bloc",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "5 kg à 75 kg selon construction"
+        },
+        {
+          "key": "Format",
+          "value": "Format fond de bloc"
+        },
+        {
+          "key": "Haut",
+          "value": "Vanne en option"
+        },
+        {
+          "key": "Modules complémentaires",
+          "value": "Liner, perforation, impression laminée"
+        }
+      ],
+      "benefits": "Meilleure forme, présentation améliorée des palettes, surface de marquage solide et manipulation plus facile.",
+      "details": "Convient aux produits pour lesquels la présentation visuelle et les performances d'empilage sont importantes.",
+      "mfg": "Production de tissus, impression/laminage, découpe, formage de fond de bloc, finition supérieure/vanne, inspection, emballage.",
+      "material": "Tissu tissé PP, film laminé, encre d'imprimerie, doublure, matériau de valve, matériaux de formage/couture.",
+      "speciality": "Présentation prête à l'exportation avec une forme de sac rempli stable."
+    },
+    "gusset": {
+      "name": "Sacs à gousset à fond bloc",
+      "group": "Sac tissé",
+      "intro": "Les sacs à soufflet à fond bloc en PP tissés imprimés et laminés combinent une construction stable à fond bloc avec un volume soutenu par un soufflet. VIVIDPOLY exporte ces sacs pour l'alimentation animale, la nourriture pour animaux de compagnie, les engrais, les céréales, les graines et les produits industriels ou de vente au détail à grand volume.",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Fond bloc avec soufflet, extérieur laminé imprimé, profondeur de soufflet sur mesure, fenêtre, doublure, perforation."
+        },
+        {
+          "title": "Avantages",
+          "body": "Volume utilisable plus élevé, forme remplie plus solide, zone de marque améliorée et meilleure présentation visuelle."
+        },
+        {
+          "title": "Détails",
+          "body": "Utile lorsque les acheteurs ont besoin de sacs imprimés haut de gamme avec un volume supplémentaire et une forme stable."
+        }
+      ],
+      "short": "Sacs PP laminés imprimés en grand volume avec support à soufflet et zone de marque forte.",
+      "benefits": "Volume utilisable plus élevé, forme remplie plus solide, zone de marque améliorée et meilleure présentation visuelle.",
+      "spec": [
+        {
+          "key": "Capacité",
+          "value": "5 kg à 75 kg selon la densité et la conception du produit"
+        },
+        {
+          "key": "Soufflet",
+          "value": "Gousset latéral/inférieur/inférieur du bloc"
+        },
+        {
+          "key": "Modules complémentaires",
+          "value": "Valve, doublure, fenêtre en option"
+        }
+      ],
+      "details": "Utile lorsque les acheteurs ont besoin de sacs imprimés haut de gamme avec un volume supplémentaire et une forme stable.",
+      "cta": "Découvrez les sacs à gousset",
+      "speciality": "Combine volume, présentation et praticité de l’emballage d’exportation.",
+      "material": "Tissu tissé PP, film laminé imprimé, doublure, film pour fenêtre, construction à soufflet, encre d'imprimerie, matériaux de couture/formage.",
+      "mfg": "Tissage, impression/laminage, découpe, formation de gousset, formation de fond de bloc, ajout de fonctionnalités, inspection, emballage."
+    },
+    "shopping": {
+      "group": "Sac tissé",
+      "short": "Sacs à provisions tissés pour chaînes de vente au détail, supermarchés, expositions et campagnes promotionnelles.",
+      "features": [
+        {
+          "title": "Caractéristiques",
+          "body": "Structure tissée de style réutilisable, poignées personnalisées, impression flexo ou laminée, gousset, finition adaptée au commerce de détail."
+        },
+        {
+          "title": "Avantages",
+          "body": "Force de transport pratique, promotion de la marque, présentation professionnelle au détail et visibilité répétée."
+        },
+        {
+          "title": "Détails",
+          "body": "Convient aux détaillants, aux supermarchés, aux expositions, aux promotions d'entreprise et aux campagnes d'achat."
+        }
+      ],
+      "name": "Sacs à provisions (tissés)",
+      "cta": "Découvrez les sacs à provisions",
+      "spec": [
+        {
+          "key": "Taille",
+          "value": "Taille personnalisée"
+        },
+        {
+          "key": "Poignées",
+          "value": "Poignées coupées en D/boucle/cousues/perforées"
+        },
+        {
+          "key": "Soufflet",
+          "value": "Gousset latéral ou inférieur"
+        },
+        {
+          "key": "Emballage",
+          "value": "Emballage de carton/paquet/balle"
+        }
+      ],
+      "benefits": "Force de transport pratique, promotion de la marque, présentation professionnelle au détail et visibilité répétée.",
+      "details": "Convient aux détaillants, aux supermarchés, aux expositions, aux promotions d'entreprise et aux campagnes d'achat.",
+      "intro": "Les sacs à provisions tissés sont des sacs de transport tissés en PP utilisés pour la vente au détail, les supermarchés, les événements, les salons professionnels et les emballages promotionnels. VIVIDPOLY exporte des sacs à provisions tissés pour les acheteurs qui ont besoin d'un emballage de transport solide, réutilisable et personnalisable.",
+      "speciality": "Présentation de marque personnalisée pour les acheteurs de détail et d'exportation promotionnelle.",
+      "mfg": "Préparation du tissu, impression/laminage, découpe, formation/fixation des poignées, couture, inspection, emballage.",
+      "material": "Tissu tissé PP, film imprimé laminé, fil de couture, matériau de poignée, encres d'imprimerie."
+    },
+    "fabric": {
+      "name": "Tissu tissé PP",
+      "group": "Tissu",
+      "features": [
+        {
+          "title": "Prêt à exporter",
+          "body": "Fourni aux acheteurs internationaux avec des options de dimensionnement et d'emballage personnalisées."
+        },
+        {
+          "body": "La largeur, le GSM, la couleur et la longueur du rouleau ou de la coupe peuvent être planifiés sur commande.",
+          "title": "Spécification personnalisée"
+        },
+        {
+          "body": "Tissage et finition cohérents pour un usage industriel et agricole.",
+          "title": "Priorité à la qualité"
+        }
+      ],
+      "short": "Rouleaux de tissu PP et longueurs coupées pour une utilisation industrielle, agricole et de conversion.",
+      "intro": "Rouleaux de tissu PP et longueurs coupées pour une utilisation industrielle, agricole et de conversion.",
+      "benefits": "Rouleaux de tissu PP et longueurs coupées pour une utilisation industrielle, agricole et de conversion.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Personnalisé à l'enquête"
+        },
+        {
+          "key": "Matériel",
+          "value": "PP tissé"
+        },
+        {
+          "key": "Emballage",
+          "value": "Emballage d'exportation"
+        }
+      ],
+      "cta": "Explorez le tissu tissé PP",
+      "speciality": "Tissu tissé PP de VIVIDPOLY pour les acheteurs mondiaux.",
+      "details": "Partagez la largeur, le GSM, la couleur, la quantité et la destination requis pour un devis.",
+      "mfg": "Tissage, finition, inspection et emballage d'exportation.",
+      "material": "Matériau tissé en PP et additifs spécifiques à l'acheteur si nécessaire."
+    },
+    "weed-barrier": {
+      "name": "Barrière contre les mauvaises herbes",
+      "group": "Barrière contre les mauvaises herbes",
+      "features": [
+        {
+          "title": "Prêt à exporter",
+          "body": "Fourni aux acheteurs internationaux avec des options de dimensionnement et d'emballage personnalisées."
+        },
+        {
+          "title": "Spécification personnalisée",
+          "body": "La largeur, le GSM, la couleur et la longueur du rouleau ou de la coupe peuvent être planifiés sur commande."
+        },
+        {
+          "body": "Tissage et finition cohérents pour un usage industriel et agricole.",
+          "title": "Priorité à la qualité"
+        }
+      ],
+      "details": "Partagez la largeur, le GSM, la couleur, la quantité et la destination requis pour un devis.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Personnalisé à l'enquête"
+        },
+        {
+          "key": "Matériel",
+          "value": "PP tissé"
+        },
+        {
+          "key": "Emballage",
+          "value": "Emballage d'exportation"
+        }
+      ],
+      "benefits": "Tissu barrière contre les mauvaises herbes tissé en PP pour les applications d'aménagement paysager, d'agriculture et de couverture du sol.",
+      "mfg": "Tissage, finition, inspection et emballage d'exportation.",
+      "material": "Matériau tissé en PP et additifs spécifiques à l'acheteur si nécessaire.",
+      "cta": "Explorez la barrière contre les mauvaises herbes",
+      "intro": "Tissu barrière contre les mauvaises herbes tissé en PP pour les applications d'aménagement paysager, d'agriculture et de couverture du sol.",
+      "short": "Tissu barrière contre les mauvaises herbes tissé en PP pour les applications d'aménagement paysager, d'agriculture et de couverture du sol.",
+      "speciality": "Barrière contre les mauvaises herbes de VIVIDPOLY pour les acheteurs mondiaux."
+    }
+  },
+  "markets": [
+    "USA",
+    "Canada",
+    "Australie",
+    "Europe",
+    "ROYAUME-UNI",
+    "Afrique",
+    "Thaïlande",
+    "Arabie Saoudite",
+    "l'Amérique latine",
+    "Nouvelle-Zélande"
+  ],
+  "packedProductOptions": [
+    "Riz",
+    "Engrais",
+    "Alimentation animale",
+    "Ciment",
+    "Biens de vente au détail"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Coutume"
+    ],
+    "printing": [
+      "Plaine",
+      "Impression flexographique",
+      "Imprimé laminé",
+      "Multicolore"
+    ],
+    "addons": [
+      "Doublure",
+      "Soufflet",
+      "Poignée",
+      "Fenêtre",
+      "Perforation",
+      "Soupape",
+      "Pincer",
+      "Fond de bloc"
+    ],
+    "packing": [
+      "Balle",
+      "Carton",
+      "Palette",
+      "Emballage d'exportation"
+    ]
+  }
+}

@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Sprache auswählen",
+    "career": "Karriere"
+  },
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkt",
+    "about": "Über uns",
+    "industryServed": "Branchen",
+    "resources": "Neuigkeiten",
+    "career": "Karriere",
+    "contact": "Kontakt",
+    "byProductType": "Nach Produkttyp",
+    "byIndustryUse": "Nach Branche/Verwendung",
+    "buyerResourcesLead": "Einkaufsführer, FAQs und das Neueste von VIVIDPOLY.",
+    "viewAllByType": "Alle Produkte nach Typ anzeigen",
+    "getQuoteShort": "Holen Sie sich ein Angebot",
+    "themeLight": "Wechseln Sie in den Lichtmodus",
+    "blogTitle": "Blog",
+    "faqsTitle": "FAQs",
+    "buyerResourcesEyebrow": "Neuigkeiten und Updates",
+    "themeDark": "Wechseln Sie in den Dunkelmodus",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "blogDesc": "Einkaufsführer zu PP-Beuteltypen, Größen und Exportanfragen.",
+    "faqsDesc": "Antworten zu Kapazität, Druck, Trägermaterialien und Angebotsdetails.",
+    "mainNav": "Hauptnavigation",
+    "mobileNav": "Mobile Navigation",
+    "logoHome": "VIVIDPOLY, gehe zur Homepage",
+    "viewAllByIndustry": "Alle Produkte nach Branche anzeigen",
+    "resourcesMenu": "Menü „Neuigkeiten und Updates“.",
+    "mobileByProductType": "Nach Produkttyp",
+    "industryMenu": "Von der Industrie serviertes Menü",
+    "mobileByIndustry": "Nach Branche/Verwendung",
+    "productsMenu": "Produktmenü"
+  },
+  "fab": {
+    "label": "Anfrage",
+    "mobileLabel": "Erkundigen",
+    "ariaLabel": "Anfrageformular öffnen"
+  },
+  "common": {
+    "getQuote": "Angebot anfordern",
+    "submitEnquiry": "Anfrage senden",
+    "viewAll": "Alle ansehen",
+    "backToHome": "Zurück zur Startseite",
+    "back": "Zurück",
+    "selectCountry": "Land auswählen",
+    "select": "Wählen",
+    "previous": "Vorherige",
+    "next": "Nächste",
+    "custom": "Brauch",
+    "none": "Keiner",
+    "selectEnquiryType": "Anfragetyp auswählen",
+    "clearFilters": "Filter löschen",
+    "optional": "optional",
+    "selectBagType": "Taschentyp auswählen",
+    "viewDetails": "Details anzeigen",
+    "recommended": "Empfohlen",
+    "filters": "Filter",
+    "of": "von",
+    "specification": "Spezifikation",
+    "relatedProducts": "Verwandte Produkte",
+    "close": "Schließen",
+    "filtered": "(gefiltert)",
+    "chatExportTeam": "Chatten Sie mit dem Exportteam",
+    "productsCount": "{count} Produkte",
+    "clearAllFilters": "Alle Filter löschen",
+    "noProductsMatch": "Keine Produkte entsprechen Ihren Filtern."
+  },
+  "siteCopy": {
+    "heroHeadline": "PP-Säcke für globale Käufer",
+    "heroLead": "PP-Säcke, Gewebesäcke, Ventilsäcke und maßgeschneiderte Exportverpackungen aus Indien – für Importeure, Händler und Industriekäufer weltweit.",
+    "heroIsoLabel": "ISO-zertifiziert",
+    "heroIecLabel": "IEC-zertifiziert",
+    "heroCtaSecondary": "Produkttypen ansehen",
+    "searchPlaceholder": "Suchen Sie nach Beuteltyp, Produkt oder Branche (z. B. Reissäcke, Zementsäcke)",
+    "heroIecLabelShort": "IEC",
+    "heroHeadlineLine2": "Globale Käufer",
+    "heroHeadlineLine1": "PP-Beutel für",
+    "heroHeadlinePrefix": "PP-Beutel für",
+    "heroCtaSecondaryShort": "Produkte",
+    "heroHeadlineAccent": "Globale Käufer",
+    "heroLeadShort": "Exportverpackungen für globale Käufer.",
+    "heroCtaWhatsApp": "WhatsApp",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaEnquiry": "Anfrage",
+    "headerQuoteLabel": "Zitat",
+    "heroIsoLabelShort": "ISO",
+    "heroRail": "INDIEN · GLOBALER EXPORT",
+    "intro1": "VIVIDPOLY exportiert PP-Beutel, gewebte PP-Beutel, bedruckte und laminierte gewebte PP-Beutel, Quetschbodenbeutel, Blockbodenbeutel, Seitenfaltenbeutel, Ventilbeutel, Tragetaschen, D-Schnitt-Beutel und gewebte Einkaufstaschen aus Indien auf globale Märkte. Unsere Verpackungslösungen richten sich an Importeure, Händler, Lebensmittelgetreideverarbeiter, Düngemittelunternehmen, Tierfuttermarken, Chemielieferanten, Baustoffunternehmen, Einzelhandelsketten und Käufer von Werbeverpackungen.",
+    "introHighlights": [
+      {
+        "label": "Kapazität",
+        "value": "5 bis 75 kg"
+      },
+      {
+        "label": "Herkunft",
+        "value": "Indien-Export"
+      },
+      {
+        "label": "Fokus",
+        "value": "Individueller Druck und Verpackung"
+      }
+    ],
+    "marketsStrip": "Primäre Exportmärkte: Amerika/USA, Kanada, Australien, Europa, Vereinigtes Königreich, Afrika, Thailand, Saudi-Arabien, Lateinamerika, Neuseeland und andere globale Importmärkte.",
+    "introEyebrow": "Was wir exportieren",
+    "brandTagline": "Hochwertige Verpackungslösungen",
+    "introTitle": "PP-Beutel für globale Käufer",
+    "homeAboutTitle": "Globaler Exportverpackungspartner",
+    "homeAboutCtaType": "Kaufen Sie nach Produkttyp",
+    "homeAboutCtaIndustry": "Nach Branche einkaufen",
+    "homeAboutEyebrow": "Über uns",
+    "intro2": "Von 5-kg-Einzelhandelspackungen bis zu 75-kg-Hochleistungs-Industriesäcken unterstützt VIVIDPOLY Käufer bei der Auswahl der richtigen Beutelkonstruktion, Druckmethode, Auskleidung, Griff, Seitenfalte, Naht, Schnittart und Exportverpackungsformat je nach Produktverwendung und Zielmarkt.",
+    "homeProductsEyebrow": "Unsere Produkte",
+    "homeProductsTitle": "Was wir anbieten",
+    "homeValueProps": [
+      {
+        "title": "Anpassbare Spezifikation",
+        "description": "Kapazität, Konstruktion, Druck und Verpackung, abgestimmt auf Ihr Produkt und Ihren Zielmarkt."
+      },
+      {
+        "description": "Überprüfen Sie die Qualität, Größe und Verarbeitung der Beutel, bevor Sie die vollständigen Exportmengen bestätigen.",
+        "title": "Probe vor Großbestellung"
+      },
+      {
+        "title": "Exportverpackung inklusive",
+        "description": "Ballen-, Paletten- und Kartonverpackung für sicheren internationalen Versand geplant."
+      }
+    ],
+    "homeValuePropsEyebrow": "Warum Käufer sich für VIVIDPOLY entscheiden",
+    "homeBrowseHeading": "Durchsuchen Sie PP-Beutel nach Kategorie",
+    "homeProductsLead": "Bedruckte und laminierte gewebte PP-Beutel, Ventilbeutel, offene Beutel und maßgeschneiderte Exportverpackungen aus Indien für Käufer aus der Landwirtschaft, der Industrie und dem Einzelhandel weltweit.",
+    "buyerRequirementLabel": "Käuferanforderung",
+    "trustMessage": "VIVIDPOLY wurde für globale Importkäufer entwickelt, die professionelle Kommunikation, klare Produktspezifikationen, individuelle Verpackungsoptionen und reaktionsschnelle Exportunterstützung aus Indien benötigen. Unser PP-Beutelinhalt ist so strukturiert, dass er Käufern hilft, Beuteltypen zu vergleichen, Produktverwendungen zu verstehen, Zusatzfunktionen zu prüfen und vollständige Angebotsanforderungen einzureichen.",
+    "productUsesLearnMore": "Senden Sie eine Anfrage",
+    "productUseCol": "Produktverwendung",
+    "productUsesEmptyHint": "Bewegen Sie den Mauszeiger über eine Produktverwendung oder wählen Sie sie aus, um die empfohlenen Beuteltypen anzuzeigen.",
+    "finalCtaBody": "Teilen Sie Ihren Beuteltyp, Ihre Kapazität, Ihren Druckbedarf, Ihre Menge und Ihren Bestimmungsort mit. VIVIDPOLY wird Ihre Anfrage prüfen und Ihnen praktische Optionen mitteilen.",
+    "finalCtaButton": "Senden Sie eine Anfrage",
+    "buyerSectionTitle": "Exportverpackungen, entwickelt für globale Käufer",
+    "finalCtaTitle": "Sind Sie bereit, Ihre Verpackungsanforderungen zu besprechen?",
+    "faqSectionTitle": "Häufig gestellte Fragen",
+    "buyerResponseLabel": "VIVIDPOLY-Antwort",
+    "recommendedBagsCol": "Empfohlene Taschentypen",
+    "productUsesIntro": "VIVIDPOLY PP-Beutel eignen sich für eine Vielzahl von Produktkategorien. Der richtige Beutel sollte basierend auf Produktgewicht, Dichte, Abfüllprozess, Feuchtigkeitsempfindlichkeit, Branding-Anforderung, Handhabungsbedingungen und Exportverpackungsstandard ausgewählt werden.",
+    "catalogueGuideUseSort": "Hier nach Branche sortieren",
+    "shopByUseLabel": "Ich packe...",
+    "catalogueGuideProductType": "Wählen Sie hier",
+    "contactIntro": "Verwenden Sie diese Seite, um eine Produktanfrage oder eine allgemeine Frage zu senden. Wählen Sie den Taschentyp aus, der Sie interessiert, oder wählen Sie „Allgemeine Abfrage“, wenn Sie noch nach Optionen suchen.",
+    "catalogueUseSub": "VIVIDPOLY PP-Beutel eignen sich für eine Vielzahl von Produktkategorien. Der richtige Beutel sollte basierend auf Produktgewicht, Dichte, Abfüllprozess, Feuchtigkeitsempfindlichkeit, Branding-Anforderung, Handhabungsbedingungen und Exportverpackungsstandard ausgewählt werden.",
+    "catalogueTypeSub": "VIVIDPOLY exportiert PP-Beutel aus Indien für Unternehmen, die starke, anpassbare und exportfähige Verpackungen benötigen. Unsere PP-Beutel können für Kapazitäten von 5 kg bis 75 kg entwickelt werden, je nach Produktdichte, Beutelgröße, Konstruktion, Stoffstärke, Laminierung, Innenfutter, Nähten, Seitenfalten und Füllanforderungen.",
+    "quotePageTitle": "Teilen Sie uns Ihre Taschenanforderungen mit",
+    "quotePageEyebrow": "Exportanfrage",
+    "quoteIntro2": "Beantworten Sie jeweils ein paar Fragen. Wir erklären Ihnen den Taschentyp, die Größe, den Druck und die Versanddetails.",
+    "quoteContactStepLead": "Teilen Sie uns mit, wie wir Sie erreichen können. Wir nehmen Ihre Anfrage umgehend auf und verfolgen diese per WhatsApp.",
+    "quoteIntro1": "Bitte teilen Sie uns Ihre Anforderungen an PP-Beutel mit, damit das VIVIDPOLY-Exportteam den richtigen Produkttyp, die richtige Konstruktion, die richtige Größe, die richtige Kapazität, den richtigen Druck, die richtigen Zusatzfunktionen und das richtige Exportverpackungsformat empfehlen kann.",
+    "quoteContactStepTitle": "Ihre Kontaktdaten",
+    "quoteContactSubmitLabel": "Registrieren Sie meine Anfrage",
+    "quoteLeadCapturedOptionalBody": "Wenn Sie eine Minute Zeit haben, fügen Sie jetzt Ihre Taschenspezifikation hinzu. Es hilft uns, den richtigen PP-Beuteltyp, die richtige Größe und den richtigen Druck zu empfehlen, bevor wir anrufen, sodass Ihr erstes Gespräch bereits nützlich ist.",
+    "quoteLeadCapturedOptionalTitle": "Möchten Sie ein schnelleres und genaueres Angebot?",
+    "quoteLeadCapturedLead": "Ein VIVIDPOLY-Exportspezialist wird Sie in Kürze, in der Regel innerhalb weniger Stunden, über WhatsApp erreichen.",
+    "quoteLeadOnlySuccessBody": "Wir werden Sie bald über WhatsApp erreichen. Sie können uns die Taschendetails mitteilen, wenn wir Sie kontaktieren, oder jederzeit zurückkommen, um Ihre Spezifikationen zu vervollständigen.",
+    "quoteLeadCapturedContinueCta": "Taschenspezifikation hinzufügen",
+    "sampleBillTitle": "Muster-Bestellrechnung",
+    "quoteLeadCapturedSkipCta": "Ich bin jetzt fertig",
+    "quoteLeadCapturedTitle": "Anfrage registriert",
+    "samplePaymentTitle": "Angaben zur Banküberweisung",
+    "sampleSuccessBody": "Danke schön. Wir überprüfen Ihre Zahlung und bestätigen die Produktions- und Versandfristen für Muster per E-Mail.",
+    "sampleBillIntro": "Sehen Sie sich unten die Beispielspezifikation und die Gebühren an. Der Versand der Muster erfolgt nach Zahlungsbestätigung.",
+    "quoteSubmitNote": "Wenn Sie mit den oben genannten Details zufrieden sind, senden Sie es ab. Unser Exportteam wird alles überprüfen und per WhatsApp weiterverfolgen.",
+    "samplePaymentIntro": "Überweisen Sie die Probenmenge mithilfe der untenstehenden Angaben. Verwenden Sie die Referenz, damit wir Ihre Zahlung zuordnen können.",
+    "samplePaymentConfirmCta": "Banküberweisung bestätigen",
+    "quoteSuccessTitle": "Anfrage erhalten",
+    "blogLeadCta": "Senden Sie eine Anfrage",
+    "sampleSuccessTitle": "Musterbestellung erhalten",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Exportmärkte"
+      },
+      {
+        "value": "9+",
+        "label": "Belieferte Länder"
+      },
+      {
+        "label": "Monatliche Kapazität",
+        "value": "750 MT"
+      },
+      {
+        "label": "Note exportieren"
+      }
+    ],
+    "blogReadArticle": "Artikel lesen",
+    "blogLeadTitle": "Haben Sie eine Frage zur Verpackung?",
+    "blogIntro": "Geschrieben für internationale Einkäufer, die Lieferanten von PP-Beuteln vergleichen, sich über Beuteltypen informieren, Spezifikationen prüfen und Exportanfragen vorbereiten.",
+    "blogLeadBody": "Senden Sie eine Produktanfrage oder eine allgemeine Anfrage über unsere Kontaktseite. Unser Team wird Ihre Anforderungen prüfen und Ihnen anschließend praktische Ratschläge geben.",
+    "quoteSuccessBody": "Wir werden uns innerhalb von 12 Stunden per Telefon oder WhatsApp bei Ihnen melden.",
+    "homeCertsHeading": "Zertifizierungen",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY bedient globale Importkäufer mit professioneller Kommunikation, klaren Produktspezifikationen, maßgeschneiderten Verpackungsoptionen und reaktionsschneller Exportunterstützung. Kapazität, Konstruktion, Druck und Verpackung sind auf Ihr Produkt und Ihren Zielmarkt zugeschnitten, sodass jede Bestellung Ihrem Abfüllprozess, Ihren Branding-Anforderungen und Ihren Versandbedingungen entspricht.",
+      "Fordern Sie Muster an, bevor Sie sich auf vollständige Mengen festlegen. Ballen-, Paletten- und Kartonverpackungen sind für den sicheren internationalen Versand in zehn gewebten PP-Konstruktionen geplant, von offenen Formaten bis hin zu Premium-Laminatformaten, abgestimmt auf Reis-, Düngemittel-, Zement-, Futtermittel- und Einzelhandelszwecke."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY ist ein in Indien ansässiger Exporteur von PP-Beuteln, der globale Importeure bedient, die professionelle Kommunikation, klare Produktspezifikationen und zuverlässige Exportunterstützung benötigen. Wir liefern offene, genähte, D-Schnitt-, Ventil-, Trage-, laminierte, Quetschboden-, Blockboden-, Seitenfalten- und Einkaufstaschen von 5 kg bis 75 kg, mit Flexo- oder laminierten Druckoptionen für die Markenpräsentation. Produkttyp, Größe, Kapazität, Druck, Laminierung, Trägermaterial, Zwickel, Griff und Verpackungsdetails werden alle im Voraus erfasst, bevor ein Angebot erstellt wird."
+    ]
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "productTypes": "Produkttypen",
+    "buyerHelp": "Käuferhilfe",
+    "contact": "Kontakt",
+    "backToTop": "Zurück nach oben",
+    "links": {
+      "home": "Heim",
+      "contact": "Kontaktieren Sie uns",
+      "about": "Um",
+      "productUses": "Produktverwendungen",
+      "getQuote": "Angebot einholen"
+    },
+    "aboutBlurb": "VIVIDPOLY exportiert PP-Beutel aus Indien für globale Käufer, die anpassbare Kapazität, Druck, Liner und exportfähige Verpackung benötigen.",
+    "backToTopAria": "Zurück zum Seitenanfang"
+  },
+  "meta": {
+    "title": "VIVIDPOLY: PP-Beutel-Exporteur aus Indien",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Exporteur von PP-Beuteln aus Indien",
+    "description": "VIVIDPOLY exportiert PP-Beutel aus Indien für globale Käufer.",
+    "loading": "VIVIDPOLY wird geladen…"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Allgemeine Abfrage"
+    },
+    {
+      "label": "Offene Beutel – OMB"
+    },
+    {
+      "label": "Oben und unten genähte Taschen – TBS"
+    },
+    {
+      "label": "Gewebte PP-Beutel mit D-Schnitt – DCB"
+    },
+    {
+      "label": "Ventiltaschen - VB"
+    },
+    {
+      "label": "Tragetaschen – CB"
+    },
+    {
+      "label": "Bedruckte, laminierte, gewebte PP-Beutel – LWB"
+    },
+    {
+      "label": "Quetschbodenbeutel – PBB"
+    },
+    {
+      "label": "Blockbodenbeutel – BBB"
+    },
+    {
+      "label": "Beutel mit Blockbodenfalte – BGB"
+    },
+    {
+      "label": "Gewebte Einkaufstaschen - WSB"
+    },
+    {
+      "label": "PP-Gewebe"
+    },
+    {
+      "label": "Unkrautbarriere"
+    }
+  ],
+  "enquiryModal": {
+    "title": "Anfrageformular",
+    "close": "Anfrageformular schließen"
+  },
+  "emailCompose": {
+    "toLabel": "Zu",
+    "fromLabel": "Ihre E-Mail",
+    "nameLabel": "Ihr Name",
+    "messageLabel": "Nachricht",
+    "subjectLabel": "Thema",
+    "send": "Nachricht senden",
+    "title": "E-Mail an VIVIDPOLY",
+    "sending": "Senden…",
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "hint": "Ihre Nachricht wird direkt an unser Exportteam gesendet. Wir antworten auf die E-Mail-Adresse, die Sie oben eingegeben haben.",
+    "close": "Schließen Sie das Erstellungsfenster",
+    "messageRequired": "Fügen Sie vor dem Senden eine kurze Nachricht hinzu.",
+    "sendUnavailable": "Der E-Mail-Versand ist noch nicht konfiguriert. Bitte nutzen Sie Telefon oder WhatsApp, um uns zu erreichen.",
+    "defaultSubject": "Exportanfrage von Vividpoly.com",
+    "sendSuccess": "Nachricht gesendet. Unser Team wird sich bald bei Ihnen melden.",
+    "sendError": "Wir konnten Ihre Nachricht nicht senden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an."
+  },
+  "home": {
+    "swipeCards": "Streichen Sie über die Karten",
+    "shopByProductType": "Kaufen Sie nach Produkttyp",
+    "shopByIndustry": "Nach Branche einkaufen",
+    "faqsEyebrow": "FAQs",
+    "shopByProductTypeDesc": "Zehn gewebte PP-Konstruktionen vom offenen Mund bis zum Premium-Laminatformat.",
+    "shopByIndustryDesc": "Passen Sie die Beuteltypen an Reis, Düngemittel, Zement, Futtermittel und Einzelhandelszwecke an.",
+    "howWeHelpBuyers": "Wie wir Käufern helfen",
+    "slideOf": "{current} von {total}",
+    "productTypes": "Produkttypen",
+    "valuePropsSlides": "Warum Käufer sich für VIVIDPOLY-Folien entscheiden",
+    "swipeIndustries": "Wischen Sie, um Branchen zu durchsuchen",
+    "productUses": "Produktverwendungen",
+    "buyerNeed": "Der Käufer benötigt {index}",
+    "buyerRequirements": "Anforderungen des Käufers",
+    "buyerPagination": "Der Käufer benötigt eine Paginierung",
+    "buyerCarousel": "Karussell mit Käuferanforderungen",
+    "nextProducts": "Nächste Produkte",
+    "previousProducts": "Vorherige Produkte"
+  },
+  "catalogue": {
+    "titleByType": "Kaufen Sie nach Produkttyp",
+    "breadcrumbUse": "Produkte / Nach Branche und Verwendung",
+    "breadcrumbType": "Produkte / Nach Produkttyp",
+    "sortAllProducts": "Alle Produkte",
+    "productType": "Produkttyp",
+    "capacity": "Kapazität",
+    "titleByUse": "Einkaufen nach Branche/Verwendung"
+  },
+  "pdp": {
+    "keyFeatures": "Hauptmerkmale",
+    "benefits": "Vorteile",
+    "speciality": "Spezialität",
+    "manufacturingProcess": "Herstellungsprozess",
+    "materialCombination": "Materialkombination",
+    "whyBuyersChoose": "Warum Käufer diese Tasche wählen",
+    "productionMaterials": "Produktion & Materialien",
+    "customization": "Anpassungsdetails",
+    "getQuoteFor": "Holen Sie sich ein Angebot für {productName}",
+    "trustBadges": [
+      "Anpassbare Spezifikation",
+      "Muster vor Großbestellung verfügbar",
+      "Exportverpackung inklusive",
+      "Reaktionsschnelles Exportteam"
+    ],
+    "productImage": "Produktbild {index}"
+  },
+  "about": {
+    "title": "Über uns",
+    "pageEyebrow": "ÜBER UNS",
+    "ctaSecondary": "Kaufen Sie nach Produkttyp",
+    "pageTitle": "Globaler Exportverpackungspartner",
+    "p2": "Fordern Sie Muster an, bevor Sie sich auf vollständige Mengen festlegen. Ballen-, Paletten- und Kartonverpackungen sind für den sicheren internationalen Versand in zehn gewebten PP-Konstruktionen geplant, von offenen Formaten bis hin zu Premium-Laminatformaten, abgestimmt auf Reis-, Düngemittel-, Zement-, Futtermittel- und Einzelhandelszwecke.",
+    "p1": "VIVIDPOLY bedient globale Importkäufer mit professioneller Kommunikation, klaren Produktspezifikationen, maßgeschneiderten Verpackungsoptionen und reaktionsschneller Exportunterstützung. Kapazität, Konstruktion, Druck und Verpackung sind auf Ihr Produkt und Ihren Zielmarkt zugeschnitten, sodass jede Bestellung Ihrem Abfüllprozess, Ihren Branding-Anforderungen und Ihren Versandbedingungen entspricht.",
+    "exportVisionEyebrow": "Unsere Exportvision",
+    "ctaPrimary": "Senden Sie eine Anfrage",
+    "exportVisionHeading": "Auf dem Weg in eine strahlende Zukunft",
+    "pillarsHeading": "Wir tragen eine Tradition beim Export, bei der der Käufer an erster Stelle steht",
+    "pillarsLead": "Von internationalen Standards bis hin zur praktischen Unterstützung bei Anfragen ist VIVIDPOLY darauf ausgerichtet, wie globale Verpackungskäufer tatsächlich einkaufen.",
+    "pillars": [
+      {
+        "body": "Spezifikationen, Verpackung und Kommunikation werden für die Zielmärkte und die Compliance-Anforderungen der Käufer geplant.",
+        "title": "Wir stellen internationale Exportstandards sicher"
+      },
+      {
+        "title": "Exportfähige Kapazität und Konstruktion",
+        "body": "Von 5-kg-Einzelhandelspackungen bis hin zu 75-kg-Industriesäcken, mit Laminierung, Liner, Seitenfalte, Ventil und Druckoptionen."
+      },
+      {
+        "title": "Engagiertes Export-Support-Team",
+        "body": "Reaktionsschnelle Beratung zu Produkttyp, Druckvorlage, Verpackungsformat, Menge und Bestimmungsort vor der Angebotserstellung."
+      },
+      {
+        "body": "Käufer erhalten eine strukturierte Anleitung zur Produktverwendung und einen vollständigen Anfragepfad anstelle einer vagen Katalogkopie.",
+        "title": "Praxiserfahrung mit klarem Prozess"
+      }
+    ],
+    "pillarsEyebrow": "STÄRKEN",
+    "exportVisionBody": "VIVIDPOLY möchte ein vertrauenswürdiger indischer Exportpartner für globale Unternehmen werden, die starke, anpassbare und markengerechte PP-Beutel benötigen. Wir verstehen, dass internationale Käufer mehr als nur allgemeine Produktbeschreibungen benötigen. Sie benötigen genaue Spezifikationen, Anleitungen zur Produktverwendung, Unterstützung bei der Gestaltung und beim Drucken, geeignete Verpackungsoptionen und eine reaktionsschnelle Kommunikation während des gesamten Anfrageprozesses.",
+    "pillarsBody": "Von internationalen Standards bis hin zur praktischen Unterstützung bei Anfragen ist VIVIDPOLY darauf ausgerichtet, wie globale Verpackungskäufer tatsächlich einkaufen. Spezifikationen, Verpackung und Kommunikation werden für die Zielmärkte und die Compliance-Anforderungen der Käufer geplant. Die Kapazität reicht von 5-kg-Einzelhandelspackungen bis hin zu 75-kg-Industriebeuteln, mit Laminierung, Liner, Seitenfalte, Ventil und Druckoptionen. Die dedizierte Exportunterstützung deckt Produkttyp, Druckvorlage, Verpackungsformat, Menge und Bestimmungsort vor der Angebotserstellung ab, mit strukturierter Anleitung zur Produktverwendung und einem vollständigen Anfragepfad.",
+    "factsEyebrow": "Firmendetails",
+    "whyEyebrow": "DIENSTLEISTUNGEN",
+    "contactTeam": "Senden Sie eine Anfrage",
+    "requestCustomQuote": "Senden Sie eine Anfrage",
+    "whyHeading": "Exportverpackungsunterstützung vom Feinsten",
+    "ctaBandBody": "Teilen Sie Ihren Beuteltyp, Ihre Kapazität, Ihren Druckbedarf, Ihre Menge und Ihren Bestimmungsort mit. VIVIDPOLY wird Ihre Anfrage prüfen und Ihnen praktische Optionen mitteilen.",
+    "ctaBandButton": "Senden Sie eine Anfrage",
+    "ctaBandTitle": "Suchen Sie einen professionellen Exportverpackungspartner?",
+    "factsHeading": "VIVIDPOLY auf einen Blick",
+    "whyLead": "Von der Produktvielfalt und Kapazitätsplanung bis hin zu Druck, Linern und Exportverpackung ist VIVIDPOLY so strukturiert, dass es praktische Beschaffungsentscheidungen unterstützt.",
+    "whyBody": "Von der Produktvielfalt und Kapazitätsplanung bis hin zu Druck, Linern und Exportverpackung ist VIVIDPOLY so strukturiert, dass es praktische Beschaffungsentscheidungen unterstützt. Käufer können PP-Taschen aus Indien für die USA, Kanada, Australien, Europa, das Vereinigte Königreich, Afrika, Thailand, Saudi-Arabien und andere Märkte in einer breiten Palette von Industrie-, Landwirtschafts-, Einzelhandels- und Werbetaschentypen beziehen. Die Kapazitätsplanung umfasst 5 kg bis 75 kg, mit kundenspezifischer Konstruktion, Druck- und Branding-Unterstützung, Anleitung zur Produktverwendung und einem käuferfreundlichen Angebotsprozess, der die vor der Angebotserstellung erforderlichen Details erfasst.",
+    "whyMoreLabel": "WEITERE DETAILS",
+    "whyItems": [
+      [
+        "Positionierung eines in Indien ansässigen Exporteurs",
+        "Käufer können PP-Beutel aus Indien für die USA, Kanada, Australien, Europa, Großbritannien, Afrika, Thailand, Saudi-Arabien und andere Märkte beziehen."
+      ],
+      [
+        "Fokussiertes Sortiment an PP-Beuteln",
+        "Das Produktangebot ist übersichtlich und praktisch und deckt gängige Taschentypen für Industrie, Landwirtschaft, Einzelhandel und Werbezwecke ab."
+      ],
+      [
+        "5 kg bis 75 kg Kapazitätsplanung",
+        "Käufer können über kleine Einzelhandelsverpackungen, mittelgroße Gebrauchsbeutel und robuste Industriebeutel diskutieren."
+      ],
+      [
+        "Individuelle Konstruktionsmöglichkeiten",
+        "Es können Schichten, Laminierung, Zwickel, Liner, Perforation, Fenster, Griff, Ventil, Quetschboden und Blockbodenoptionen geplant werden."
+      ],
+      [
+        "Druck- und Branding-Unterstützung",
+        "Optionen für Flexodruck und bedrucktes, laminiertes PP-Gewebe unterstützen die Sichtbarkeit der Marke und die Marktpräsentation."
+      ],
+      [
+        "Anleitung zur Produktverwendung",
+        "Käufer können Beutel nach Anwendung auswählen, z. B. Reis, Düngemittel, Tierfutter, Chemikalien, Zement, Salz, Zucker, Einzelhandel und Einkauf."
+      ],
+      [
+        "Käuferfreundlicher Angebotsprozess",
+        "Die Website hilft Käufern, Produkttyp, Kapazität, Größe, Druck, Add-ons, Verpackung, Menge und Bestimmungsort vor der Angebotserstellung mitzuteilen."
+      ]
+    ],
+    "ctaBandEyebrow": "Nehmen Sie Kontakt auf"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "sendRequirement": "Anfrageformular",
+    "formName": "Name",
+    "reachUs": "Erreichen Sie uns direkt",
+    "formEmail": "E-Mail",
+    "formMessage": "Nachricht",
+    "formCompany": "Name der Firma",
+    "sending": "Senden…",
+    "formCountry": "Land",
+    "sendRequirementLead": "Sagen Sie uns, was Sie brauchen. Wählen Sie einen Produkttyp oder senden Sie eine allgemeine Anfrage und wir werden Ihnen mit praktischen Ratschlägen antworten.",
+    "submitSuccess": "Anfrage gesendet. Unser Team wird sich bald bei Ihnen melden.",
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "formEnquiryType": "Anfragetyp",
+    "formPhone": "WhatsApp / Telefon",
+    "emailLabel": "E-Mail",
+    "submitEnquiry": "Anfrage absenden",
+    "websiteLabel": "Webseite",
+    "submitUnavailable": "Die Online-Anfrage ist noch nicht konfiguriert. Bitte senden Sie uns eine E-Mail oder rufen Sie uns an. Die Kontaktdaten finden Sie auf dieser Seite.",
+    "submitError": "Wir konnten Ihre Anfrage nicht senden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.",
+    "messageRequired": "Fügen Sie vor dem Absenden eine kurze Nachricht hinzu.",
+    "phoneRequired": "Fügen Sie eine WhatsApp- oder Telefonnummer hinzu, damit wir Sie erreichen können.",
+    "corporateOffice": "Unternehmenszentrale",
+    "phoneLabel": "WhatsApp / Telefon",
+    "companyRows": [
+      [
+        "Unternehmen / Marke"
+      ],
+      [
+        "Webseite",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-Mail"
+      ],
+      [
+        "Telefon"
+      ],
+      [
+        "Firmenadresse",
+        "Sankalp Square, A 1601, Sindhu Bhavan Marg, in der Nähe des Taj Hotels, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, in der Nähe des Taj Hotels, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Kontaktdaten",
+    "stepLabel": "Schritt {current} von {total}",
+    "submitEnquiry": "Anfrage absenden",
+    "stepBagSpec": "Taschenspezifikation",
+    "fields": {
+      "bagType": "Taschentyp",
+      "capacity": "Kapazität",
+      "product": "Produkt",
+      "size": "Größe",
+      "printing": "Drucken",
+      "addons": "Add-ons",
+      "quantity": "Menge",
+      "packing": "Verpackung",
+      "destination": "Zielland",
+      "review": "Rezension",
+      "packedProduct": "Verpacktes Produkt"
+    },
+    "bagSpec": "Taschenspezifikation",
+    "savedWithName": "{name} werden Ihre Kontaktdaten gespeichert.",
+    "reviewLabels": {
+      "productType": "Produkttyp",
+      "capacity": "Kapazität",
+      "printing": "Drucken",
+      "addons": "Add-ons",
+      "packing": "Verpackung",
+      "quantity": "Menge",
+      "bagSize": "Taschengröße",
+      "destination": "Ziel",
+      "empty": "-",
+      "packedProduct": "Verpacktes Produkt"
+    },
+    "saved": "Ihre Kontaktdaten werden gespeichert.",
+    "registerLead": "Wir nehmen Ihre Anfrage auf und verfolgen sie per WhatsApp weiter.",
+    "closeForm": "Anfrageformular schließen",
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "reviewSteps": {
+      "product": "Produkt",
+      "order": "Befehl",
+      "sizePrint": "Größe und Druck"
+    },
+    "howReachYou": "Wie sollen wir Sie erreichen?"
+  },
+  "sample": {
+    "steps": {
+      "review": "Rezension",
+      "payment": "Zahlung",
+      "confirmed": "Bestätigt"
+    },
+    "yourDetails": "Ihre Daten",
+    "subtotal": "Zwischensumme",
+    "total": "Gesamt",
+    "continuePayment": "Weiter zur Zahlung",
+    "bankTransfer": "Banküberweisung",
+    "reference": "Referenz:",
+    "selectBranch": "Zweig auswählen",
+    "billRows": {
+      "productType": "Produkttyp",
+      "capacity": "Kapazität",
+      "printing": "Drucken",
+      "packing": "Verpackung",
+      "leadTime": "Vorlaufzeit",
+      "sampleQuantity": "Probenmenge",
+      "total": "Gesamt",
+      "unitPrice": "Stückpreis",
+      "exportPacking": "Exportverpackung und Versand"
+    },
+    "specification": "Beispielspezifikation",
+    "selectBank": "Bank auswählen",
+    "bankRows": {
+      "bank": "Bank",
+      "branch": "Zweig",
+      "accountNumber": "Kontonummer",
+      "accountType": "Kontotyp",
+      "swift": "SCHNELL",
+      "amount": "Menge",
+      "paymentReference": "Zahlungsreferenz",
+      "ifsc": "IFSC",
+      "beneficiary": "Begünstigter"
+    },
+    "searchBranches": "Filialen durchsuchen",
+    "searchBanks": "Banken durchsuchen",
+    "form": {
+      "name": "Name",
+      "address": "Lieferadresse",
+      "quantity": "Für die Probe benötigte Menge"
+    },
+    "noBankMatches": "Keine Übereinstimmungen. Versuchen Sie es mit einer anderen Suche.",
+    "closePicker": "Auswahl schließen"
+  },
+  "blog": {
+    "pageTitle": "Einkaufsführer und Einblicke",
+    "fallbackReadTime": "5 Minuten gelesen",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "fallbackCategory": "Einkaufsführer",
+    "emptyTitle": "Noch keine Artikel",
+    "emptyBody": "Neue Einkaufsführer und Einblicke sind in Vorbereitung – schauen Sie bald wieder vorbei.",
+    "loading": "Artikel werden geladen…",
+    "backToArticles": "Zurück zu allen Artikeln"
+  },
+  "careers": {
+    "applyNow": "Bewerben Sie sich jetzt",
+    "seeHowWeWork": "Sehen Sie, wie wir arbeiten",
+    "lead": "Wir suchen Menschen, denen Qualität, klare Kommunikation und zuverlässige Lieferung am Herzen liegen. Die Aufgaben umfassen Büro-, Fabrik- und Exportbetriebe in Ahmedabad und Vadodara.",
+    "whyHeading": "Warum VividPoly",
+    "eyebrow": "Karriere bei VividPoly",
+    "title": "Aus Indien bezogen. Weltweit vertrauenswürdig.",
+    "whyLead": "Ein praktischer Ort, um Fähigkeiten in der Fertigung und im globalen Handel zu erwerben.",
+    "reasons": [
+      {
+        "body": "Die Arbeit ist an Käufer in über 70 Exportmärkten gebunden.",
+        "title": "Globale Präsenz"
+      },
+      {
+        "body": "In einem wachsenden Unternehmen kommt schnell neue Verantwortung.",
+        "title": "Raum zum Wachsen"
+      },
+      {
+        "title": "Arbeitsplatzsicherheit",
+        "body": "Unterstützt durch einen stabilen, etablierten Exportbetrieb."
+      },
+      {
+        "body": "Praktischer Einblick in die Fertigung und den Welthandel.",
+        "title": "Lernen am Arbeitsplatz"
+      }
+    ],
+    "whyBody": "Ein praktischer Ort, um Fähigkeiten in der Fertigung und im globalen Handel zu erwerben. Die Arbeit ist an Käufer in über 70 Exportmärkten gebunden, in einem wachsenden Unternehmen kommt schnell neue Verantwortung hinzu und die Rollen werden durch einen stabilen, etablierten Exportbetrieb mit praktischer Erfahrung in der Fertigung und im globalen Handel unterstützt.",
+    "positionsEyebrow": "OFFENE POSITIONEN",
+    "positionsLead": "Auf diesen Plattformen werden aktuelle Stellenangebote veröffentlicht und aktualisiert. Durchsuchen Sie Live-Rollen und bewerben Sie sich dann über das untenstehende Formular.",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Unternehmensaktualisierungen und offene Stellen für Export-, Betriebs- und Verpackungsberufe."
+      },
+      {
+        "label": "In der Tat",
+        "blurb": "Durchsuchen Sie VIVIDPOLY-Einträge nach Rolle, Standort und Erfahrungsniveau."
+      },
+      {
+        "label": "Naukri",
+        "blurb": "Auf Indien ausgerichtete Stellenangebote für Fertigungs-, Vertriebs- und Supportteams."
+      }
+    ],
+    "positionsHeading": "Finden Sie uns dort, wo Sie bereits suchen",
+    "positionsNote": "Bevorzugen Sie eine Direktbewerbung? Verwenden Sie unten „Jetzt bewerben“.",
+    "positionsMoreLabel": "ERÖFFNUNGEN ANZEIGEN",
+    "ctaLead": "Teilen Sie uns Ihr Rolleninteresse, Ihre Erfahrung und Ihren bevorzugten Standort mit. Unser Team prüft die Bewerbungen, sobald freie Stellen verfügbar sind.",
+    "ctaEyebrow": "JETZT BEWERBEN",
+    "ctaHeading": "Ihr nächster Karriereschritt beginnt hier"
+  },
+  "search": {
+    "suggestionsHeading": "Vorschläge",
+    "recentHeading": "Aktuelle Suchanfragen",
+    "noMatches": "Keine Übereinstimmungen. Versuchen Sie es mit „Reis“ oder „Zement“",
+    "recentTerms": [
+      "Reisbeutel",
+      "Zementsäcke",
+      "bedruckt laminiert",
+      "25 kg offener Mund"
+    ]
+  },
+  "filters": {
+    "capacityOrEnter": "Oder geben Sie die Kapazität ein",
+    "capacityMax": "Maximale Kapazität",
+    "capacityMin": "Mindestkapazität",
+    "capacityCustomNotice": "VIVIDPOLY bietet PP-Beutelverpackungen zwischen {min} kg und {max} kg an. Bitte geben Sie eine Kapazität innerhalb dieses Bereichs ein.",
+    "productUseOptions": "Produktnutzungsmöglichkeiten",
+    "capacityExample": "z.B. 23 kg",
+    "customSelectNoMatches": "Keine Übereinstimmungen gefunden",
+    "customSelectEnter": "Geben Sie Ihre Spezifikation ein…",
+    "customSelectUseAnyway": "Verwenden Sie diesen Wert trotzdem"
+  },
+  "breadcrumbs": {
+    "home": "Heim",
+    "products": "Produkte",
+    "getQuote": "Holen Sie sich ein Angebot",
+    "blog": "Blog",
+    "faqs": "FAQs",
+    "about": "Um",
+    "careers": "Karriere",
+    "contact": "Kontaktieren Sie uns",
+    "requestExportQuote": "Fordern Sie ein Exportangebot an"
+  },
+  "validation": {
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein."
+  },
+  "buyerRows": [
+    {
+      "response": "VIVIDPOLY ist als in Indien ansässiger Exporteur für weltweite Käufer von PP-Beuteln positioniert.",
+      "requirement": "Exportbeschaffung aus Indien"
+    },
+    {
+      "requirement": "Produktvielfalt",
+      "response": "Offene Öffnung, genäht, D-Schnitt, Ventil, Tragetasche, laminiert, Quetschboden, Blockboden, Zwickel und Einkaufstaschen."
+    },
+    {
+      "response": "PP-Beutellösungen können je nach Produktdichte und Beutelstruktur von 5 kg bis 75 kg geplant werden.",
+      "requirement": "Benutzerdefinierte Kapazität"
+    },
+    {
+      "requirement": "Markenpräsentation",
+      "response": "Optionen für Flexodruck und bedrucktes laminiertes PP-Gewebe unterstützen die Produktidentität und die Attraktivität im Regal."
+    },
+    {
+      "requirement": "Käuferfreundlicher Anfrageablauf",
+      "response": "Produkttyp, Größe, Kapazität, Druck, Laminierung, Trägermaterial, Zwickel, Griff und Verpackungsdetails können vor dem Angebot erfasst werden."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "Beschaffung in Indien",
+      "short": "Exporteur mit Sitz in Indien"
+    },
+    {
+      "label": "Produktpalette",
+      "short": "10 Beuteltypen"
+    },
+    {
+      "label": "Benutzerdefinierte Kapazität",
+      "short": "5 kg bis 75 kg"
+    },
+    {
+      "label": "Markendruck",
+      "short": "Drucken und laminieren"
+    },
+    {
+      "short": "Angebotsfertige Details",
+      "label": "Angebotsworkflow"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Getreide und Hülsenfrüchte",
+      "use": "Reis, Weizen, Getreide, Hülsenfrüchte, Mehl",
+      "bags": "Offene Beutel, oben und unten genähte Beutel, bedruckte, laminierte, gewebte PP-Beutel, Quetschbodenbeutel",
+      "tips": "Flexodruck, laminierter Druck, Fenster, Zwickel, Liner, Griff, Exportballenverpackung."
+    },
+    {
+      "bags": "Genähte Beutel, laminierte gewebte PP-Beutel, Beutel mit Blockboden, Beutel mit Blockbodenfalte",
+      "cardTitle": "Dünger und Saatgut",
+      "use": "Dünger und Samen",
+      "tips": "Liner, Zwickel, Flexodruck, laminierter Druck, Perforation, Palettenverpackung."
+    },
+    {
+      "cardTitle": "Tierfutter und Tiernahrung",
+      "bags": "Bedruckte, laminierte, gewebte PP-Beutel, Beutel mit Blockbodenfalte, Tragetaschen, Beutel mit Quetschboden",
+      "use": "Tierfutter und Tiernahrung",
+      "tips": "Mehrschichtiger Aufbau, Fenster, Zwickel, Griff, Premium-Druck, optionale Perforation."
+    },
+    {
+      "cardTitle": "Zement und Industriepulver",
+      "use": "Zement, Chemikalien, Mineralien, Pulver",
+      "bags": "Ventilbeutel, Blockbodenbeutel, oben und unten genähte Beutel, Liner-gestützte Beutel",
+      "tips": "Ventilkonstruktion, Innenfutter, Perforation, starke Nähte, robuste Verpackung."
+    },
+    {
+      "cardTitle": "Salz, Zucker und Rohstoffe",
+      "use": "Salz, Zucker, Konsumgüter",
+      "tips": "Liner, laminierte Oberfläche, Flexodruck, saubere Nähte, Optionen zur Feuchtigkeitsunterstützung.",
+      "bags": "Offene Beutel, genähte Beutel, laminierte Beutel, trägergestützte Beutel"
+    },
+    {
+      "bags": "D-Schnitt-Taschen, Tragetaschen, gewebte Einkaufstaschen, bedruckte, laminierte, gewebte PP-Taschen",
+      "tips": "Griffoptionen, laminierter Druck, Zwickel, Kartonverpackung, Markengrafik.",
+      "use": "Einzelhandel, Einkaufen, Werbung",
+      "cardTitle": "Einzelhandel und Werbung"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Flexodruck, laminierter Druck, Fenster, Zwickel, Liner, Griff, Exportballenverpackung.",
+      "bags": "Offene Beutel, oben und unten genähte Beutel, bedruckte, laminierte, gewebte PP-Beutel, Quetschbodenbeutel.",
+      "title": "Reis, Weizen, Getreide und Hülsenfrüchte"
+    },
+    {
+      "bags": "Offene Beutel, bedruckte und laminierte gewebte PP-Beutel, Quetschbodenbeutel.",
+      "tips": "Liner, laminierte Oberfläche, sauberer Schnitt, sichere Nähte, handelsfreundliches Design.",
+      "title": "Mehl und Nahrungsmittel"
+    },
+    {
+      "tips": "Liner, laminierte Oberfläche, Flexodruck, saubere Nähte, Optionen zur Feuchtigkeitsunterstützung.",
+      "bags": "Offene Beutel, genähte Beutel, bedruckte, laminierte, gewebte PP-Beutel.",
+      "title": "Salz und Zucker"
+    },
+    {
+      "tips": "Liner, Zwickel, Flexodruck, laminierter Druck, Perforation, Palettenverpackung.",
+      "bags": "Genähte Beutel, laminierte gewebte PP-Beutel, Beutel mit Blockboden, Beutel mit Blockbodenfalte.",
+      "title": "Dünger und Saatgut"
+    },
+    {
+      "tips": "Mehrschichtiger Aufbau, Fenster, Zwickel, Griff, Premium-Druck, optionale Perforation.",
+      "title": "Tierfutter und Tiernahrung",
+      "bags": "Bedruckte, laminierte, gewebte PP-Beutel, Quetschbodenbeutel, Blockbodenfaltenbeutel, Tragetaschen."
+    },
+    {
+      "tips": "Ventilkonstruktion, Innenfutter, Perforation, starke Nähte, robuste Verpackung.",
+      "title": "Zement und Baumaterialien",
+      "bags": "Ventilbeutel, Blockbodenbeutel, Ober- und Bodennahtbeutel."
+    },
+    {
+      "title": "Chemikalien und Mineralien",
+      "bags": "Ventilbeutel, genähte Beutel, Offenbeutel, Liner-gestützte Beutel.",
+      "tips": "Liner, Laminierung, Entlüftungsperforation, sicheres Nähen, Exportverpackung."
+    },
+    {
+      "tips": "Griffoptionen, laminierter Druck, Zwickel, Kartonverpackung, Markengrafik.",
+      "title": "Einzelhandels- und Werbeprodukte",
+      "bags": "D-Schnitt-Taschen, Tragetaschen, gewebte Einkaufstaschen, bedruckte, laminierte, gewebte PP-Taschen."
+    },
+    {
+      "title": "Einkaufen und wiederverwendbare Verpackungen",
+      "bags": "Gewebte Einkaufstaschen, Tragetaschen, gewebte PP-Taschen mit D-Schnitt.",
+      "tips": "Schlaufengriffe, D-förmige Griffe, Seitenfalte, Bodenfalte, Mehrfarbendruck."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Gewebte Tasche"
+    },
+    {
+      "title": "Stoff"
+    },
+    {
+      "title": "Unkrautbarriere"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Landwirtschaft und Nahrungsmittel",
+      "items": [
+        "Reis, Weizen, Getreide und Hülsenfrüchte",
+        "Mehl und Nahrungsmittel",
+        "Salz und Zucker"
+      ]
+    },
+    {
+      "title": "Agrarrohstoffe und Tierpflege",
+      "items": [
+        "Dünger und Saatgut",
+        "Tierfutter und Tiernahrung"
+      ]
+    },
+    {
+      "title": "Industrie & Bau",
+      "items": [
+        "Zement und Baumaterialien",
+        "Chemikalien und Mineralien"
+      ]
+    },
+    {
+      "title": "Einzelhandel und Werbung",
+      "items": [
+        "Einzelhandels- und Werbeprodukte",
+        "Einkaufen und wiederverwendbare Verpackungen"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Kapazität",
+      "title": "Kapazität",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Brauch"
+        }
+      ]
+    },
+    {
+      "key": "Produkttyp",
+      "title": "Produkttyp",
+      "options": [
+        {
+          "label": "Mund öffnen"
+        },
+        {
+          "label": "Genäht"
+        },
+        {
+          "label": "D-Schnitt"
+        },
+        {
+          "label": "Ventil"
+        },
+        {
+          "label": "Tragen"
+        },
+        {
+          "label": "Laminiert"
+        },
+        {
+          "label": "Den Boden zusammendrücken"
+        },
+        {
+          "label": "Blockboden"
+        },
+        {
+          "label": "Blockierter unterer Zwickel"
+        },
+        {
+          "label": "Gewebter Einkauf"
+        },
+        {
+          "label": "PP-Gewebe"
+        },
+        {
+          "label": "Unkrautbarriere"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "Welche Arten von PP-Beuteln exportiert VIVIDPOLY?",
+      "a": "VIVIDPOLY exportiert offene Beutel, oben und unten genähte Beutel, gewebte PP-Beutel mit D-Schnitt, Ventilbeutel, Tragetaschen, bedruckte und laminierte gewebte PP-Beutel, bedruckte und laminierte gewebte PP-Quetschbodenbeutel, bedruckte und laminierte gewebte PP-Blockbodenbeutel, bedruckte und laminierte gewebte PP-Blockbodenfaltenbeutel und gewebte Einkaufstaschen."
+    },
+    {
+      "q": "Welche Gewichtskapazität ist für VIVIDPOLY PP-Beutel verfügbar?",
+      "a": "VIVIDPOLY kann PP-Beutelanforderungen von 5 kg bis 75 kg besprechen, abhängig von Produktdichte, Beutelgröße, Stoffstärke, Konstruktion, Laminierung, Liner, Zwickel, Nähten und Endanwendung."
+    },
+    {
+      "q": "Welche Informationen werden für ein Angebot benötigt?",
+      "a": "Käufer sollten Produkttyp, verpacktes Produkt, Kapazität, Beutelgröße, Menge, Druckanforderung, Laminierung, Trägermaterial, Zwickel, Griff, Zuschnitt, Heftung, Verpackungsart, Zielland und ggf. Referenzvorlage oder Muster angeben."
+    },
+    {
+      "q": "Kann VIVIDPOLY bedruckte und laminierte gewebte PP-Beutel liefern?",
+      "a": "Ja. VIVIDPOLY kann den Bedarf an bedruckten und laminierten gewebten PP-Beuteln für Produkte wie Reis, Mehl, Düngemittel, Tierfutter, Tiernahrung, Saatgut, Salz, Zucker und Einzelhandelswaren decken."
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Offenbeuteln und Ventilbeuteln?",
+      "a": "Offene Beutel werden durch eine offene Oberseite befüllt und nach dem Befüllen verschlossen. Ventilsäcke werden durch eine Ventilöffnung befüllt und werden üblicherweise für Pulver, zementartige Produkte, Chemikalien, Mineralien und Baumaterialien verwendet."
+    },
+    {
+      "q": "Wofür werden Quetschbodenbeutel verwendet?",
+      "a": "Quetschbodenbeutel werden dort eingesetzt, wo Käufer ein erstklassiges Erscheinungsbild der Verpackung und einen sauberen Verschluss benötigen. Sie eignen sich für ausgewählte Lebensmittel, Tiernahrung, Tierfutter, Getreide, Saatgut und Einzelhandelsprodukte."
+    },
+    {
+      "q": "Wofür werden Blockbodenfaltenbeutel verwendet?",
+      "a": "Beutel mit Blockbodenfalten eignen sich dort, wo Käufer ein größeres Volumen, eine stabile Füllform, eine stärkere Werbefläche und eine bessere Stapelpräsentation benötigen."
+    },
+    {
+      "a": "Ja. Ausgewählte bedruckte und laminierte gewebte PP-Beutel können mit einem transparenten Fenster ausgestattet sein, um das darin verpackte Produkt sichtbar zu machen.",
+      "q": "Können PP-Beutel mit Fenstern versehen sein?"
+    },
+    {
+      "a": "Ja. Liner können dort in Betracht gezogen werden, wo zusätzlicher Produktschutz, Feuchtigkeitsunterstützung oder eine feine Produktretention erforderlich sind.",
+      "q": "Kann VIVIDPOLY Einlagen in PP-Beuteln liefern?"
+    },
+    {
+      "q": "Welche Druckoptionen stehen zur Verfügung?",
+      "a": "VIVIDPOLY kann je nach Branding-Anforderungen, Komplexität der Druckvorlage, Budget und Produktmarkt einfache Beutel, Beutel mit Flexodruck sowie bedruckte und laminierte gewebte PP-Beutelformate unterstützen."
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Einkaufsführer",
+      "readTime": "6 Min. gelesen",
+      "title": "Was sind PP-Beutel? Vollständiger Leitfaden für Importkäufer",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Es dauerte eine Weile, bis es zu viel Arbeit und viel Mühe gab.",
+      "purpose": "Erklären Sie PP-Beutel, häufige Verwendungszwecke und Käuferauswahlfaktoren."
+    },
+    {
+      "excerpt": "Bis zu einem gewissen Grad ist es uns gelungen, unsere Arbeit zu erledigen, ohne dass wir sie von der entsprechenden Kommode übernehmen müssen.",
+      "readTime": "5 Minuten gelesen",
+      "category": "Verpackung",
+      "title": "Offene Beutel vs. Ventilbeutel: Welcher PP-Beutel ist der richtige für Ihr Produkt?",
+      "purpose": "Vergleichen Sie Füllungsstile und geeignete Anwendungen."
+    },
+    {
+      "category": "Einkaufsführer",
+      "title": "Oben und unten genähte PP-Beutel: Verwendung, Vorteile und Anpassung",
+      "purpose": "Informieren Sie Käufer über die Formate genähter Taschen.",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur.",
+      "readTime": "7 Min. gelesen"
+    },
+    {
+      "purpose": "Bewerben Sie Premium-Markenverpackungen.",
+      "readTime": "5 Minuten gelesen",
+      "category": "Branding",
+      "title": "Bedruckte und laminierte gewebte PP-Beutel für die Verpackung von Reis, Futtermitteln und Düngemitteln",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "category": "Verpackung",
+      "readTime": "6 Min. gelesen",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore.",
+      "purpose": "Vergleichen Sie Premium-Taschenkonstruktionen.",
+      "title": "Quetschbodenbeutel vs. Blockbodenbeutel: Ein Kaufratgeber"
+    },
+    {
+      "category": "Größenbestimmung",
+      "readTime": "8 Min. Lektüre",
+      "excerpt": "Bis zu einem gewissen Grad sind unsere Anstrengungen nicht mehr von jedem Kommandeur erledigt.",
+      "purpose": "Helfen Sie Käufern, Größe und Kapazität vor der Anfrage zu definieren.",
+      "title": "Leitfaden zur Größenbestimmung von PP-Beuteln: So wählen Sie eine Beutelkapazität von 5 kg bis 75 kg aus"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur.",
+      "category": "Branding",
+      "readTime": "5 Minuten gelesen",
+      "title": "Flexodruck vs. laminierter Druck für PP-Beutel",
+      "purpose": "Erklären Sie die Druckauswahl und die Auswirkungen auf das Branding."
+    },
+    {
+      "category": "Merkmale",
+      "readTime": "4 Minuten gelesen",
+      "purpose": "Erklären Sie Zusatzfunktionen zum Produktschutz und zur Handhabung.",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "title": "Warum Liner, Seitenfalten und Perforation bei PP-Beuteln wichtig sind"
+    },
+    {
+      "purpose": "Bringen Sie Käufern bei, welche Details sie für ein Angebot senden sollen.",
+      "readTime": "6 Min. gelesen",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ganzzahlige Zahlen, die vor dem Beginn freigelassen werden.",
+      "title": "So bereiten Sie eine Exportanfrage für PP-Beutel vor",
+      "category": "Exporttipps"
+    },
+    {
+      "readTime": "5 Minuten gelesen",
+      "category": "Einzelhandel",
+      "purpose": "Zielgruppe sind Käufer von Einkaufs- und Werbetaschen.",
+      "title": "Gewebte Einkaufstaschen für Einzelhandels- und Werbeverpackungen",
+      "excerpt": "Sed cursus ante dapibus diam. Ich werde nichts tun, wenn ich nicht einmal ein gewisses Maß an Ungewissheit habe."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "USD",
+    "printing": "Einfach (Beispielspezifikation)",
+    "qtyLabel": "5 Musterstücke",
+    "packing": "Karton-Exportverpackung",
+    "leadTime": "7–10 Werktage nach Zahlungsbestätigung"
+  },
+  "bankDetails": {
+    "branch": "Ahmedabad, Bopal, Gujarat, Indien",
+    "bankName": "HDFC Bank Ltd.",
+    "swift": "HDFCINBB",
+    "ifsc": "HDFC0001234",
+    "accountType": "Girokonto",
+    "paymentNote": "Geben Sie Ihren Firmennamen und die Musterreferenz in den Übertragungsbericht ein."
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "location": "Gujarat, Indien",
+      "accountType": "Girokonto",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, Indien",
+      "swift": "HDFCINBB",
+      "accountType": "Girokonto",
+      "branch": "Vadodara, Halol Road",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, Indien",
+      "accountType": "Girokonto",
+      "branch": "Ahmedabad, SG Highway",
+      "bankName": "ICICI Bank Ltd.",
+      "ifsc": "ICIC0001234",
+      "swift": "ICICINBB"
+    },
+    {
+      "location": "Gujarat, Indien",
+      "branch": "Ahmedabad, Prahladnagar",
+      "accountType": "Girokonto",
+      "bankName": "Axis Bank Ltd.",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujarat, Indien",
+      "bankName": "Staatsbank von Indien",
+      "accountType": "Girokonto",
+      "branch": "Gandhinagar, Sektor 21",
+      "swift": "SBININBB",
+      "ifsc": "SBIN0006789"
+    },
+    {
+      "location": "Gujarat, Indien",
+      "branch": "Ahmedabad, Ashram Road",
+      "accountType": "Girokonto",
+      "ifsc": "KKBK0001234",
+      "bankName": "Kotak Mahindra Bank",
+      "swift": "KKBKINBB"
+    },
+    {
+      "swift": "JABINBB",
+      "accountType": "Girokonto",
+      "bankName": "Ja Bank Ltd.",
+      "location": "Maharashtra, Indien",
+      "ifsc": "JAB0000123",
+      "branch": "Mumbai, Andheri Ost"
+    },
+    {
+      "branch": "Ahmedabad, Navrangpura",
+      "location": "Gujarat, Indien",
+      "accountType": "Girokonto",
+      "bankName": "IndusInd Bank Ltd.",
+      "swift": "INDBINBB",
+      "ifsc": "INDB0000123"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Offene Beutel"
+    },
+    {
+      "label": "Genähte Taschen"
+    },
+    {
+      "label": "D-Cut-Taschen"
+    },
+    {
+      "label": "Ventilbeutel"
+    },
+    {
+      "label": "Tragetaschen"
+    },
+    {
+      "label": "Laminierte gewebte PP-Beutel"
+    },
+    {
+      "label": "Quetschbodenbeutel"
+    },
+    {
+      "label": "Blockbodenbeutel"
+    },
+    {
+      "label": "Beutel mit Blockbodenfalte"
+    },
+    {
+      "label": "Gewebte Einkaufstaschen"
+    },
+    {
+      "label": "PP-Gewebe"
+    },
+    {
+      "label": "Unkrautbarriere"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Offene Beutel",
+      "group": "Gewebte Tasche",
+      "intro": "Offene Beutel sind eine der praktischsten PP-Beutelarten für die Trockenverpackung. VIVIDPOLY exportiert offene PP-Beutel für Käufer, die einfaches Befüllen, flexibles Verschließen und individuelle Anpassung für Anwendungen in den Bereichen Landwirtschaft, Lebensmittel, Düngemittel, Futtermittel, Chemie, Mineralien, Salz, Zucker und Industrie benötigen.",
+      "features": [
+        {
+          "title": "Einfaches Befüllen",
+          "body": "Die offene Oberseite ermöglicht eine schnelle Befüllung durch manuelle, halbautomatische oder maschinengestützte Methoden."
+        },
+        {
+          "body": "Geeignet für Anwendungen von 5 kg bis 75 kg, je nach Produktdichte und Beuteldesign.",
+          "title": "Kapazitätsflexibilität"
+        },
+        {
+          "body": "Das Oberteil kann heiß geschnitten, kalt geschnitten, gesäumt oder im Zickzack geschnitten sein.",
+          "title": "Individuelles Finish"
+        },
+        {
+          "title": "Druck- und Lineroptionen",
+          "body": "Flexodruck, laminierter Druck und Trägermaterialunterstützung können bei Bedarf hinzugefügt werden."
+        }
+      ],
+      "cta": "Entdecken Sie offene Beutel",
+      "short": "Leicht zu befüllende PP-Gewebesäcke für trockene Schüttgüter wie Getreide, Mehl, Futtermittel, Düngemittel, Salz, Zucker, Samen und Mineralien.",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "5 kg bis 75 kg"
+        },
+        {
+          "key": "Spitze",
+          "value": "Offener Mund, Heißschnitt, Kaltschnitt, Zickzack, gesäumt"
+        },
+        {
+          "key": "Unten",
+          "value": "Einzelfalz genäht, Doppelfalz genäht, individuelles Finish"
+        },
+        {
+          "key": "Drucken",
+          "value": "Normal, Flexodruck, laminierter Druck"
+        },
+        {
+          "key": "Add-Ons",
+          "value": "Zwickel, Liner, Perforation, Griff bei Bedarf"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Ballen, Bündel, Palette, Karton, Exportverpackung"
+        }
+      ],
+      "benefits": "Offene PP-Beutel werden aufgrund ihrer Einfachheit, Anpassungsfähigkeit und kostengünstigen Handhabung bevorzugt. Sie sind ideal für Käufer, die einen stabilen gewebten Beutel benötigen, der nach dem Befüllen durch Nähen, Versiegeln, Falten oder Binden verschlossen werden kann.",
+      "details": "Diese Beutel können als einfach gewebte PP-Beutel, Flexodruckbeutel oder bedruckte und laminierte gewebte PP-Beutel geliefert werden. Käufer können Größe, Stoff, Kapazität, Zwickel, Futter, Druck, Nähte, Zuschnitt und Verpackung auswählen.",
+      "speciality": "Die Besonderheit von Offenbeuteln liegt in ihrer Flexibilität für unterschiedliche Produkte und Abfüllmethoden.",
+      "material": "PP-Gewebe, Druckfarbe, Nähgarn, optionale Laminierung, optionales Liner und käuferspezifische Farb-/Zusatzstoffanforderungen.",
+      "mfg": "Der Prozess umfasst das Weben des Stoffes, optionales Bedrucken oder Laminieren, Schneiden, Bodennähen, Inspektion und Verpackung."
+    },
+    "stitched": {
+      "group": "Gewebte Tasche",
+      "short": "Sicher vernähte PP-Beutel für Transport, Lagerung und Exportverpackung von Agrar- und Industrieprodukten.",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Sichere Nähte oben und unten, individuelle Stoffstärke, optionales Trägermaterial, Flexo- oder Laminatdruck, individuelle Verpackung."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Bessere Verschlusssicherheit, praktische Handhabung, gute Stapelleistung und Eignung für viele Trockenschüttgüter."
+        },
+        {
+          "title": "Details",
+          "body": "Käufer können Nahttyp, Fadentyp, Faltstil, Größe, Kapazität, Druck, Liner, Zwickel und Verpackung angeben."
+        }
+      ],
+      "intro": "Oben und unten genähte Beutel sind für Käufer konzipiert, die einen sicheren Verschluss und eine zuverlässige Handhabung bei Lagerung und Transport benötigen. VIVIDPOLY exportiert genähte PP-Beutel für Agrar-, Lebensmittel-, Düngemittel-, Tierfutter-, Chemie-, Mineral- und Industrieverpackungen.",
+      "cta": "Entdecken Sie genähte Taschen",
+      "name": "Oben und unten genähte Taschen",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "5 kg bis 75 kg"
+        },
+        {
+          "key": "Nähen",
+          "value": "Einfachfalte, Doppelfalte, Einfachfaden, Doppelfaden, Ober- und Unternaht"
+        },
+        {
+          "key": "Drucken",
+          "value": "Normal, Flexo, bedruckt, laminiert"
+        },
+        {
+          "key": "Liner",
+          "value": "Wahlweise lose oder genähte Einlage"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Ballen, Bündel, Paletten, komprimierte Exportverpackung"
+        }
+      ],
+      "benefits": "Bessere Verschlusssicherheit, praktische Handhabung, gute Stapelleistung und Eignung für viele Trockenschüttgüter.",
+      "details": "Käufer können Nahttyp, Fadentyp, Faltstil, Größe, Kapazität, Druck, Liner, Zwickel und Verpackung angeben.",
+      "speciality": "Die Besonderheit dieses Taschentyps ist der zuverlässige Nahtverschluss.",
+      "mfg": "Der Herstellungsprozess umfasst Weben, optionales Drucken/Laminieren, Schneiden, Ober- und Unternaht, Inspektion und Verpackung.",
+      "material": "Zu den Materialkombinationen gehören PP-Gewebe, Nähgarn, optionale Laminierung, optionales Trägermaterial und Druckfarbe."
+    },
+    "d-cut": {
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "D-Cut-Griff, individuelle Größe, Flexo- oder laminierter Druck, optionale Zwickel, einzelhandelsfreundliche Verarbeitung."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Leicht zu tragen, starke Webstruktur, Markensichtbarkeit und nützlicher Werbewert."
+        },
+        {
+          "title": "Details",
+          "body": "Geeignet für leichte bis mittlere Transportanwendungen, Einzelhandelswaren, Messen und Werbekampagnen."
+        }
+      ],
+      "intro": "D-Cut PP-Gewebetaschen verfügen über einen integrierten Griffausschnitt, der das Tragen der Tasche erleichtert. VIVIDPOLY exportiert D-Cut-Beutel für Einzelhandels-, Einkaufs-, Werbe-, Ausstellungs- und wiederverwendbare Verpackungsanforderungen.",
+      "cta": "Entdecken Sie D-Cut-Taschen",
+      "details": "Geeignet für leichte bis mittlere Transportanwendungen, Einzelhandelswaren, Messen und Werbekampagnen.",
+      "short": "Tragetaschen aus PP-Gewebe mit integriertem Griffausschnitt für Einzelhandels-, Werbe- und wiederverwendbare Verpackungen.",
+      "spec": [
+        {
+          "key": "Handhaben",
+          "value": "Griff mit D-Schnitt oder verstärktem D-Schnitt"
+        },
+        {
+          "key": "Material",
+          "value": "PP-Gewebe oder laminiertes PP-Material"
+        },
+        {
+          "key": "Drucken",
+          "value": "Individueller Druck"
+        },
+        {
+          "key": "Nähen",
+          "value": "Seitliche/untere Nähte"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Karton- oder Bündelverpackung"
+        }
+      ],
+      "name": "Gewebte PP-Beutel mit D-Schnitt",
+      "benefits": "Leicht zu tragen, starke Webstruktur, Markensichtbarkeit und nützlicher Werbewert.",
+      "mfg": "Weben, Drucken oder Laminieren, Schneiden, D-Cut-Griffformung, Nähen, Inspektion, Verpackung.",
+      "speciality": "Kombiniert Tragekomfort mit Webfestigkeit und Markenpräsentation.",
+      "material": "PP-Gewebe, bei Bedarf laminierte Folie, bei Bedarf Druckfarbe, Nähgarn, Griffverstärkung."
+    },
+    "valve": {
+      "name": "Ventilbeutel",
+      "group": "Gewebte Tasche",
+      "cta": "Entdecken Sie Ventilbeutel",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Ventilfülldesign, optionaler Liner, Perforation, laminierter Druck, Blockbodenkompatibilität."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Schnellere, kontrollierte Abfüllung, saubereres Verpackungsformat, geeignet für Pulver- und Granulatprodukte."
+        },
+        {
+          "title": "Details",
+          "body": "Ventilgröße, Ventiltyp, Perforation, Liner, Kapazität und Konstruktion sollten je nach Produkt und Füllsystem ausgewählt werden."
+        }
+      ],
+      "short": "PP-Beutel mit Ventilfüllung für zementartige Produkte, Chemikalien, Mineralien, Pulver und Baumaterialien.",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "Üblicherweise 20 kg bis 75 kg"
+        },
+        {
+          "key": "Ventil",
+          "value": "Einfaches oder verlängertes Ventil"
+        },
+        {
+          "key": "Konstruktion",
+          "value": "Standard- oder Blockbodenkonstruktion"
+        },
+        {
+          "key": "Add-Ons",
+          "value": "Optionaler Liner und Perforation"
+        }
+      ],
+      "intro": "Ventilbeutel wurden für Produkte entwickelt, die durch eine Ventilöffnung befüllt werden müssen. VIVIDPOLY exportiert Ventilsäcke für zementartige Produkte, Chemikalien, Mineralien, Pulver, Baumaterialien und Industriegüter.",
+      "benefits": "Schnellere, kontrollierte Abfüllung, saubereres Verpackungsformat, geeignet für Pulver- und Granulatprodukte.",
+      "details": "Ventilgröße, Ventiltyp, Perforation, Liner, Kapazität und Konstruktion sollten je nach Produkt und Füllsystem ausgewählt werden.",
+      "mfg": "Stoffvorbereitung, Bedrucken/Laminieren, Zuschnitt, Ventilbildung, ggf. Perforation, Inspektion, Verpackung.",
+      "speciality": "Geeignet für die industrielle Abfüllung und den Exportvertrieb.",
+      "material": "PP-Gewebe, Ventilmaterial, Liner, laminierte Schicht, Nähfaden, Druckfarbe."
+    },
+    "carry": {
+      "name": "Tragetaschen",
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "D-Schnitt, Schlaufe, genäht, gestanzt, seitliche oder obere Griffoptionen; bedruckte oder laminierte Oberfläche; optionaler Zwickel."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Verbessert die Sichtbarkeit der Marke und sorgt für praktische Tragefestigkeit."
+        },
+        {
+          "title": "Details",
+          "body": "Käufer können Beutelgröße, Griffstil, Druckdesign, Laminierung, Zwickel, Nähte und Verpackung individuell anpassen."
+        }
+      ],
+      "cta": "Entdecken Sie Tragetaschen",
+      "short": "Robuste und markentaugliche gewebte Tragetaschen für Einzelhandel, Gewerbe und Werbezwecke.",
+      "spec": [
+        {
+          "key": "Material",
+          "value": "PP-Gewebe oder laminiertes PP-Material"
+        },
+        {
+          "key": "Drucken",
+          "value": "Flexo- oder laminierter Druck"
+        },
+        {
+          "key": "Zwickel",
+          "value": "Seiten-/Bodenzwickel"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Karton-/Bündel-/Ballenverpackung"
+        }
+      ],
+      "intro": "Tragetaschen aus PP-Gewebe eignen sich für Käufer, die robuste, markentaugliche und praktische Tragetaschen benötigen. VIVIDPOLY exportiert Tragetaschen für Einzelhandel, Handel, Shopping, Veranstaltungen und Werbeverpackungen.",
+      "details": "Käufer können Beutelgröße, Griffstil, Druckdesign, Laminierung, Zwickel, Nähte und Verpackung individuell anpassen.",
+      "speciality": "Starke Trageverpackung mit Markenkommunikation.",
+      "mfg": "Weben, Drucken/Laminieren, Schneiden, Anfertigen oder Anbringen von Griffen, Nähen, Inspektion, Verpacken.",
+      "benefits": "Verbessert die Sichtbarkeit der Marke und sorgt für praktische Tragefestigkeit.",
+      "material": "PP-Gewebe, laminierte Folie, Druckfarbe, Nähgarn, Griffmaterial bei Bedarf."
+    },
+    "laminated": {
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Bedruckte laminierte Oberfläche, gewebte PP-Basis, Schichtoptionen, Zwickel, Liner, Fenster, Perforation, Griffe."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Verbessertes Branding, bessere Regalattraktivität, Produktidentität und starke Verpackungsstruktur."
+        },
+        {
+          "title": "Details",
+          "body": "Je nach Konstruktion und Produktdichte für 5 kg bis 75 kg geeignet."
+        }
+      ],
+      "name": "Bedruckte und laminierte gewebte PP-Beutel",
+      "cta": "Entdecken Sie laminierte PP-Beutel",
+      "short": "Hochwertige bedruckte Verpackungen für Reis, Mehl, Futtermittel, Tiernahrung, Düngemittel, Saatgut und Einzelhandelswaren.",
+      "details": "Je nach Konstruktion und Produktdichte für 5 kg bis 75 kg geeignet.",
+      "spec": [
+        {
+          "key": "Base",
+          "value": "Gewebtes PP + bedruckte laminierte Schicht"
+        },
+        {
+          "key": "Liner",
+          "value": "Optionaler Liner"
+        },
+        {
+          "key": "Beenden",
+          "value": "Glanz-/Matt-Finish, falls verfügbar"
+        },
+        {
+          "key": "Brauch",
+          "value": "Benutzerdefinierte Größe und Grafik"
+        }
+      ],
+      "intro": "Bedruckte und laminierte gewebte PP-Beutel kombinieren gewebte Festigkeit mit attraktiver Markenpräsentation. VIVIDPOLY exportiert diese Beutel für Käufer, die hochwertige bedruckte Verpackungen für Lebensmittel, Düngemittel, Futtermittel, Tiernahrung, Saatgut, Salz, Zucker und Einzelhandelsprodukte benötigen.",
+      "benefits": "Verbessertes Branding, bessere Regalattraktivität, Produktidentität und starke Verpackungsstruktur.",
+      "material": "PP-Gewebe, bedruckte Folie oder Druckschicht, Laminierungsschicht, Nähfaden, optionales Futter/Fenster, Druckfarbe.",
+      "speciality": "Hochwertige Exportverpackung mit markenorientiertem Erscheinungsbild.",
+      "mfg": "Weben von Stoffen, Vorbereitung von Druckvorlagen, Drucken, Laminieren, Schneiden, Nähen/Konvertieren, Inspektion, Verpacken."
+    },
+    "pinch-bottom": {
+      "name": "Quetschbodenbeutel",
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Pinch-Bottom-Konstruktion, bedruckte laminierte Oberfläche, optionale Easy-Open-Funktion, Fenster, Zwickel, Innenfutter."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Erstklassiges Erscheinungsbild, organisierte gefüllte Form, stärkere Regalpräsentation, bessere Markenkommunikation."
+        },
+        {
+          "title": "Details",
+          "body": "Bestens geeignet für einzelhandelsfertige Produkte und Markenartikelverpackungen."
+        }
+      ],
+      "cta": "Entdecken Sie Quetschbodenbeutel",
+      "intro": "Bedruckte und laminierte gewebte PP-Pinch-Bottom-Beutel sind für Premium-Verpackungen konzipiert, bei denen ein sauberer Verschluss und ein Markenauftritt wichtig sind. VIVIDPOLY exportiert Quetschbodenbeutel für Lebensmittelgetreide, Tiernahrung, Tierfutter, Saatgut und Einzelhandelsprodukte.",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "Üblicherweise 5 kg bis 50 kg, je nach Designüberprüfung höher"
+        },
+        {
+          "key": "Konstruktion",
+          "value": "Bedrucktes, laminiertes PP-Gewebe"
+        },
+        {
+          "key": "Add-Ons",
+          "value": "Optionales Fenster/Liner/Zwickel"
+        }
+      ],
+      "short": "Hochwertige, bedruckte, laminierte PP-Beutel mit sauberer Verschlusspräsentation für verkaufsfertige Verpackungen.",
+      "details": "Bestens geeignet für einzelhandelsfertige Produkte und Markenartikelverpackungen.",
+      "benefits": "Erstklassiges Erscheinungsbild, organisierte gefüllte Form, stärkere Regalpräsentation, bessere Markenkommunikation.",
+      "material": "PP-Gewebe, bedruckte Laminatfolie, Laminierschicht, Liner, Fensterfolie, Druckfarbe.",
+      "mfg": "Stoffvorbereitung, Drucken/Laminieren, Schneiden, Quetschbodenbildung, optionales Fenster/Perforation, Inspektion, Verpackung.",
+      "speciality": "Premium-Verschlusspräsentation für Marken-Exportverpackungen."
+    },
+    "block-bottom": {
+      "name": "Blockbodenbeutel",
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Blockbodenstruktur, bedruckte laminierte Oberfläche, offene Öffnung oder Ventiloberseite, Liner, Perforation."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Bessere Standform, verbesserte Palettenpräsentation, starke Branding-Oberfläche und einfachere Handhabung."
+        },
+        {
+          "title": "Details",
+          "body": "Geeignet für Produkte, bei denen es auf visuelle Präsentation und Stapelleistung ankommt."
+        }
+      ],
+      "cta": "Entdecken Sie Blockbodenbeutel",
+      "short": "Formstabile, bedruckte, laminierte PP-Beutel für bessere Stapelung, Präsentation und Exportpräsentation.",
+      "intro": "Bedruckte und laminierte gewebte PP-Blockbodenbeutel sorgen für eine stabilere Füllform und ein verbessertes Stapelbild. VIVIDPOLY exportiert Beutel mit Blockboden für Düngemittel, Tiernahrung, Tierfutter, Getreide, Mineralien, Chemikalien und Einzelhandelsverpackungen.",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "5 kg bis 75 kg je nach Konstruktion"
+        },
+        {
+          "key": "Format",
+          "value": "Blockbodenformat"
+        },
+        {
+          "key": "Spitze",
+          "value": "Optionales Ventil"
+        },
+        {
+          "key": "Add-Ons",
+          "value": "Liner, Perforation, laminierter Druck"
+        }
+      ],
+      "details": "Geeignet für Produkte, bei denen es auf visuelle Präsentation und Stapelleistung ankommt.",
+      "mfg": "Stoffproduktion, Drucken/Laminieren, Schneiden, Blockbodenformen, Ober-/Ventilveredelung, Inspektion, Verpackung.",
+      "speciality": "Exportgerechte Präsentation mit stabiler Füllbeutelform.",
+      "benefits": "Bessere Standform, verbesserte Palettenpräsentation, starke Branding-Oberfläche und einfachere Handhabung.",
+      "material": "PP-Gewebe, laminierte Folie, Druckfarbe, Liner, Ventilmaterial, Form-/Nähmaterialien."
+    },
+    "gusset": {
+      "name": "Beutel mit Blockbodenfalte",
+      "group": "Gewebte Tasche",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Blockboden mit Zwickel, bedruckte laminierte Außenseite, individuelle Zwickeltiefe, Fenster, Innenfutter, Perforation."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Höheres Nutzvolumen, stärker gefüllte Form, verbesserte Branding-Fläche und bessere visuelle Präsentation."
+        },
+        {
+          "title": "Details",
+          "body": "Nützlich, wenn Käufer hochwertige bedruckte Taschen mit zusätzlichem Volumen und stabiler Form benötigen."
+        }
+      ],
+      "cta": "Entdecken Sie Seitenfaltenbeutel",
+      "short": "Großvolumige bedruckte laminierte PP-Beutel mit Seitenfalte und starkem Branding-Bereich.",
+      "spec": [
+        {
+          "key": "Kapazität",
+          "value": "5 kg bis 75 kg je nach Produktdichte und Design"
+        },
+        {
+          "key": "Zwickel",
+          "value": "Seiten-/Boden-/Blockbodenzwickel"
+        },
+        {
+          "key": "Add-Ons",
+          "value": "Optionales Ventil, Liner, Fenster"
+        }
+      ],
+      "intro": "Bedruckte und laminierte gewebte PP-Blockbodenfaltenbeutel kombinieren eine stabile Blockbodenkonstruktion mit durch Seitenfalten unterstütztem Volumen. VIVIDPOLY exportiert diese Beutel für Tierfutter, Tiernahrung, Düngemittel, Getreide, Saatgut und großvolumige Einzelhandels- oder Industrieprodukte.",
+      "benefits": "Höheres Nutzvolumen, stärker gefüllte Form, verbesserte Branding-Fläche und bessere visuelle Präsentation.",
+      "speciality": "Vereint Volumen, Präsentation und praktische Exportverpackung.",
+      "details": "Nützlich, wenn Käufer hochwertige bedruckte Taschen mit zusätzlichem Volumen und stabiler Form benötigen.",
+      "mfg": "Weben, Drucken/Laminieren, Schneiden, Zwickelbildung, Blockbodenbildung, Hinzufügen von Merkmalen, Inspektion, Verpackung.",
+      "material": "PP-Gewebe, bedruckte Laminatfolie, Liner, Fensterfolie, Zwickelkonstruktion, Druckfarbe, Näh-/Formmaterialien."
+    },
+    "shopping": {
+      "group": "Gewebte Tasche",
+      "cta": "Entdecken Sie Einkaufstaschen",
+      "features": [
+        {
+          "title": "Merkmale",
+          "body": "Wiederverwendbare Webstruktur, individuelle Griffe, Flexo- oder Laminatdruck, Zwickel, einzelhandelsfreundliche Verarbeitung."
+        },
+        {
+          "title": "Vorteile",
+          "body": "Praktische Tragkraft, Markenwerbung, professionelle Einzelhandelspräsentation und wiederholte Sichtbarkeit."
+        },
+        {
+          "title": "Details",
+          "body": "Geeignet für Einzelhändler, Supermärkte, Messen, Firmenaktionen und Einkaufskampagnen."
+        }
+      ],
+      "name": "Einkaufstaschen (gewebt)",
+      "short": "Gewebte Einkaufstaschen für Einzelhandelsketten, Supermärkte, Messen und Werbekampagnen.",
+      "intro": "Gewebte Einkaufstaschen sind aus PP gewebte Tragetaschen, die für Einzelhandels-, Supermarkt-, Veranstaltungs-, Messe- und Werbeverpackungen verwendet werden. VIVIDPOLY exportiert gewebte Einkaufstaschen für Käufer, die eine robuste, wiederverwendbare und mit einer Marke versehene Tragetasche benötigen.",
+      "spec": [
+        {
+          "key": "Größe",
+          "value": "Benutzerdefinierte Größe"
+        },
+        {
+          "key": "Griffe",
+          "value": "D-Schnitt/Schlaufe/genähte/gestanzte Griffe"
+        },
+        {
+          "key": "Zwickel",
+          "value": "Seiten- oder Bodenfalte"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Karton-/Bündel-/Ballenverpackung"
+        }
+      ],
+      "benefits": "Praktische Tragkraft, Markenwerbung, professionelle Einzelhandelspräsentation und wiederholte Sichtbarkeit.",
+      "details": "Geeignet für Einzelhändler, Supermärkte, Messen, Firmenaktionen und Einkaufskampagnen.",
+      "speciality": "Individuelle Markenpräsentation für Einzelhandels- und Werbeeinkäufer im Export.",
+      "mfg": "Stoffvorbereitung, Drucken/Laminieren, Schneiden, Formen/Befestigen von Griffen, Nähen, Inspektion, Verpacken.",
+      "material": "PP-Gewebe, laminierte bedruckte Folie, Nähgarn, Griffmaterial, Druckfarben."
+    },
+    "fabric": {
+      "name": "PP-Gewebe",
+      "group": "Stoff",
+      "features": [
+        {
+          "title": "Exportbereit",
+          "body": "Wird für internationale Käufer mit individuellen Größen- und Verpackungsoptionen geliefert."
+        },
+        {
+          "title": "Kundenspezifische Spezifikation",
+          "body": "Breite, GSM, Farbe und Rollen- oder Schnittlänge können auf Bestellung geplant werden."
+        },
+        {
+          "title": "Qualitätsfokus",
+          "body": "Konsistente Webart und Oberfläche für den industriellen und landwirtschaftlichen Einsatz."
+        }
+      ],
+      "cta": "Entdecken Sie PP-Gewebe",
+      "short": "PP-Geweberollen und -Zuschnitte für Industrie-, Landwirtschafts- und Verarbeitungszwecke.",
+      "benefits": "PP-Geweberollen und -Zuschnitte für Industrie-, Landwirtschafts- und Verarbeitungszwecke.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Maßgeschneidert auf Anfrage"
+        },
+        {
+          "key": "Material",
+          "value": "PP gewebt"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Exportverpackung"
+        }
+      ],
+      "intro": "PP-Geweberollen und -Zuschnitte für Industrie-, Landwirtschafts- und Verarbeitungszwecke.",
+      "details": "Teilen Sie uns für ein Angebot die gewünschte Breite, GSM, Farbe, Menge und Zielort mit.",
+      "material": "PP-Gewebe und bei Bedarf käuferspezifische Zusätze.",
+      "speciality": "PP-Gewebe von VIVIDPOLY für globale Käufer.",
+      "mfg": "Weberei, Veredelung, Inspektion und Exportverpackung."
+    },
+    "weed-barrier": {
+      "name": "Unkrautbarriere",
+      "group": "Unkrautbarriere",
+      "cta": "Entdecken Sie Unkrautbarriere",
+      "features": [
+        {
+          "title": "Exportbereit",
+          "body": "Wird für internationale Käufer mit individuellen Größen- und Verpackungsoptionen geliefert."
+        },
+        {
+          "title": "Kundenspezifische Spezifikation",
+          "body": "Breite, GSM, Farbe und Rollen- oder Schnittlänge können auf Bestellung geplant werden."
+        },
+        {
+          "title": "Qualitätsfokus",
+          "body": "Konsistente Webart und Oberfläche für den industriellen und landwirtschaftlichen Einsatz."
+        }
+      ],
+      "details": "Teilen Sie uns für ein Angebot die gewünschte Breite, GSM, Farbe, Menge und Zielort mit.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Maßgeschneidert auf Anfrage"
+        },
+        {
+          "key": "Material",
+          "value": "PP gewebt"
+        },
+        {
+          "key": "Verpackung",
+          "value": "Exportverpackung"
+        }
+      ],
+      "short": "PP-gewebtes Unkrautschutzgewebe für den Landschaftsbau, die Landwirtschaft und Bodendeckeranwendungen.",
+      "material": "PP-Gewebe und bei Bedarf käuferspezifische Zusätze.",
+      "intro": "PP-gewebtes Unkrautschutzgewebe für den Landschaftsbau, die Landwirtschaft und Bodendeckeranwendungen.",
+      "mfg": "Weberei, Veredelung, Inspektion und Exportverpackung.",
+      "benefits": "PP-gewebtes Unkrautschutzgewebe für den Landschaftsbau, die Landwirtschaft und Bodendeckeranwendungen.",
+      "speciality": "Unkrautschutz von VIVIDPOLY für globale Käufer."
+    }
+  },
+  "markets": [
+    "USA",
+    "Kanada",
+    "Australien",
+    "Europa",
+    "Vereinigtes Königreich",
+    "Afrika",
+    "Thailand",
+    "Saudi-Arabien",
+    "Lateinamerika",
+    "Neuseeland"
+  ],
+  "packedProductOptions": [
+    "Reis",
+    "Dünger",
+    "Tierfutter",
+    "Zement",
+    "Einzelhandelswaren"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Brauch"
+    ],
+    "printing": [
+      "Schmucklos",
+      "Flexodruck",
+      "Bedruckt, laminiert",
+      "Mehrfarbig"
+    ],
+    "addons": [
+      "Liner",
+      "Zwickel",
+      "Handhaben",
+      "Fenster",
+      "Zähnung",
+      "Ventil",
+      "Prise",
+      "Blockboden"
+    ],
+    "packing": [
+      "Ballen",
+      "Karton",
+      "Palette",
+      "Exportverpackung"
+    ]
+  }
+}

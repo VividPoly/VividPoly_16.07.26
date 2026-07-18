@@ -284,6 +284,7 @@
     ],
     "contactTeam": "Send an enquiry",
     "requestCustomQuote": "Send an enquiry",
+    "ctaBandEyebrow": "Get in touch",
     "ctaBandTitle": "Looking for a professional export packaging partner?",
     "ctaBandBody": "Share your bag type, capacity, printing needs, quantity, and destination. VIVIDPOLY will review your enquiry and follow up with practical options.",
     "ctaBandButton": "Send an enquiry"
@@ -312,6 +313,7 @@
     "websiteLabel": "Website",
     "phoneLabel": "WhatsApp / Phone",
     "corporateOffice": "Corporate office",
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058",
     "companyRows": [
       [
         "Company / Brand",
@@ -429,6 +431,10 @@
   },
   "blog": {
     "pageTitle": "Buyer guides & insights",
+    "backToArticles": "Back to all articles",
+    "loading": "Loading articles…",
+    "emptyTitle": "No articles yet",
+    "emptyBody": "New buyer guides and insights are on the way — check back soon.",
     "fallbackCategory": "Buyer guide",
     "fallbackReadTime": "5 min read",
     "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor."

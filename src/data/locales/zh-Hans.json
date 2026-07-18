@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "选择语言",
+    "career": "职业"
+  },
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "about": "关于我们",
+    "industryServed": "服务行业",
+    "resources": "新闻与动态",
+    "career": "招聘",
+    "contact": "联系我们",
+    "byProductType": "按产品类型",
+    "buyerResourcesEyebrow": "新闻和更新",
+    "byIndustryUse": "按行业/用途",
+    "buyerResourcesLead": "买家指南、常见问题解答以及 VIVIDPOLY 的最新信息。",
+    "getQuoteShort": "获取报价",
+    "viewAllByType": "按类型查看所有产品",
+    "viewAllByIndustry": "按行业查看所有产品",
+    "themeDark": "切换到深色模式",
+    "blogTitle": "博客",
+    "themeLight": "切换到灯光模式",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "faqsTitle": "常见问题解答",
+    "mainNav": "主导航",
+    "blogDesc": "有关 PP 袋类型、尺寸和出口查询的买家指南。",
+    "faqsDesc": "有关容量、印刷、衬纸和报价详细信息的解答。",
+    "logoHome": "VIVIDPOLY，转到主页",
+    "mobileByProductType": "按产品类型",
+    "industryMenu": "行业服务菜单",
+    "resourcesMenu": "新闻和更新菜单",
+    "mobileByIndustry": "按行业/用途",
+    "productsMenu": "产品菜单",
+    "mobileNav": "手机导航"
+  },
+  "fab": {
+    "label": "咨询",
+    "mobileLabel": "查询",
+    "ariaLabel": "打开查询表格"
+  },
+  "common": {
+    "getQuote": "获取报价",
+    "submitEnquiry": "提交咨询",
+    "viewAll": "查看全部",
+    "backToHome": "返回首页",
+    "back": "后退",
+    "next": "下一个",
+    "previous": "以前的",
+    "select": "选择",
+    "selectCountry": "选择国家",
+    "optional": "选修的",
+    "custom": "风俗",
+    "none": "没有任何",
+    "clearFilters": "清除过滤器",
+    "clearAllFilters": "清除所有过滤器",
+    "viewDetails": "查看详情",
+    "selectBagType": "选择袋子类型",
+    "selectEnquiryType": "选择查询类型",
+    "filters": "过滤器",
+    "recommended": "受到推崇的",
+    "specification": "规格",
+    "of": "的",
+    "relatedProducts": "相关产品",
+    "close": "关闭",
+    "noProductsMatch": "没有产品符合您的筛选条件。",
+    "chatExportTeam": "与出口团队聊天",
+    "filtered": "（已过滤）",
+    "productsCount": "0产品"
+  },
+  "siteCopy": {
+    "heroHeadline": "面向全球买家的PP袋",
+    "heroLead": "来自印度的PP袋、编织袋、阀口袋及定制出口包装，专为全球进口商、分销商和工业买家打造。",
+    "heroIsoLabel": "ISO认证",
+    "heroIecLabel": "IEC认证",
+    "heroCtaSecondary": "查看产品类型",
+    "heroHeadlineLine2": "全球买家",
+    "heroHeadlineLine1": "PP袋用于",
+    "heroHeadlineAccent": "全球买家",
+    "heroIecLabelShort": "国际电工委员会",
+    "heroCtaSecondaryShort": "产品",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaWhatsApp": "WhatsApp",
+    "searchPlaceholder": "搜索袋子类型、产品或行业（例如大米袋、水泥袋）",
+    "heroCtaEnquiry": "询问",
+    "headerQuoteLabel": "引用",
+    "heroHeadlinePrefix": "PP袋用于",
+    "heroIsoLabelShort": "国际标准化组织",
+    "heroLeadShort": "为全球买家打造的出口包装。",
+    "brandTagline": "优质包装解决方案",
+    "heroRail": "印度·全球出口",
+    "introHighlights": [
+      {
+        "label": "容量",
+        "value": "5至75公斤"
+      },
+      {
+        "label": "起源",
+        "value": "印度出口"
+      },
+      {
+        "label": "重点",
+        "value": "定制印刷和包装"
+      }
+    ],
+    "introEyebrow": "我们出口什么",
+    "intro1": "VIVIDPOLY 从印度向全球市场出口 PP 袋、PP 编织袋、印刷和层压编织 PP 袋、夹底袋、方底袋、角撑袋、自封袋、手提袋、D 形切袋和编织购物袋。我们的包装解决方案专为进口商、分销商、粮食加工商、化肥公司、动物饲料品牌、化学品供应商、建筑材料企业、零售连锁店和促销包装买家而设计。",
+    "introTitle": "面向全球买家的PP袋",
+    "homeAboutTitle": "全球出口包装合作伙伴",
+    "homeAboutCtaType": "按产品类型选购",
+    "homeAboutCtaIndustry": "按行业选购",
+    "homeAboutEyebrow": "关于我们",
+    "homeProductsEyebrow": "我们的产品",
+    "marketsStrip": "主要出口市场：美国、加拿大、澳大利亚、欧洲、英国、非洲、泰国、沙特阿拉伯、拉丁美洲、新西兰和其他全球进口市场。",
+    "homeProductsTitle": "我们提供什么",
+    "homeValuePropsEyebrow": "为什么买家选择VIVIDPOLY",
+    "intro2": "从 5 公斤零售包装到 75 公斤重型工业袋，VIVIDPOLY 帮助买家根据产品用途和目的地市场选择合适的袋子结构、印刷方法、内衬、提手、角撑板、缝合、切割样式和出口包装格式。",
+    "homeValueProps": [
+      {
+        "description": "根据您的产品和目标市场量身定制的容量、结构、印刷和包装。",
+        "title": "可定制规格"
+      },
+      {
+        "title": "批量订购前样品",
+        "description": "在确认全部出口数量之前，请检查袋子的质量、尺寸和表面处理。"
+      },
+      {
+        "description": "计划用于安全国际运输的捆包、托盘和纸箱包装。",
+        "title": "包括出口包装"
+      }
+    ],
+    "homeBrowseHeading": "按类别浏览 PP 袋",
+    "homeProductsLead": "来自印度的印刷和层压编织 PP 袋、自封袋、敞口袋以及定制出口包装，面向全球农业、工业和零售买家。",
+    "buyerRequirementLabel": "买家要求",
+    "productUsesLearnMore": "发送询问",
+    "buyerSectionTitle": "为全球买家打造的出口包装",
+    "buyerResponseLabel": "VIVIDPOLY 回应",
+    "productUsesEmptyHint": "将鼠标悬停或选择产品用途即可查看推荐的包袋类型。",
+    "finalCtaBody": "分享您的袋子类型、容量、打印需求、数量和目的地。 VIVIDPOLY 将审核您的询问并跟进实际选项。",
+    "finalCtaButton": "发送询问",
+    "recommendedBagsCol": "推荐的包袋类型",
+    "productUseCol": "产品用途",
+    "faqSectionTitle": "常见问题",
+    "finalCtaTitle": "准备好讨论您的包装要求了吗？",
+    "shopByUseLabel": "我正在收拾行李……",
+    "catalogueGuideProductType": "从这里选择",
+    "productUsesIntro": "VIVIDPOLY PP 袋适用于多种产品类别。应根据产品重量、密度、填充工艺、湿度敏感性、品牌要求、处理条件和出口包装标准选择合适的袋子。",
+    "trustMessage": "VIVIDPOLY 专为需要专业沟通、清晰的产品规格、定制包装选项以及来自印度的快速出口支持的全球进口买家而打造。我们的 PP 袋内容旨在帮助买家比较袋子类型、了解产品用途、查看附加功能并提交完整的报价要求。",
+    "catalogueGuideUseSort": "此处按行业排序",
+    "catalogueTypeSub": "VIVIDPOLY 从印度出口 PP 袋，以满足需要坚固、可定制和出口就绪包装的企业。我们的 PP 袋容量可开发为 5 公斤至 75 公斤，具体取决于产品密度、袋子尺寸、结构、织物强度、层压、内衬、缝合、角撑板和填充要求。",
+    "catalogueUseSub": "VIVIDPOLY PP 袋适用于多种产品类别。应根据产品重量、密度、填充工艺、湿度敏感性、品牌要求、处理条件和出口包装标准选择合适的袋子。",
+    "contactIntro": "使用此页面发送产品查询或一般问题。选择您感兴趣的行李类型，或者如果您仍在探索选项，请选择常规查询。",
+    "quoteContactStepTitle": "您的联系方式",
+    "quoteIntro2": "一次回答几个问题。我们将指导您了解袋子类型、尺寸、印刷和运输详细信息。",
+    "quotePageEyebrow": "出口询价",
+    "quoteIntro1": "请分享您的 PP 袋要求，以便 VIVIDPOLY 出口团队推荐正确的产品类型、结构、尺寸、容量、印刷、附加功能和出口包装格式。",
+    "quotePageTitle": "分享您的行李要求",
+    "quoteContactStepLead": "分享我们如何联系您。我们会立即登记您的询问并通过 WhatsApp 进行跟进。",
+    "quoteLeadCapturedLead": "VIVIDPOLY 出口专家很快就会通过 WhatsApp 与您联系，通常在几个小时内。",
+    "quoteLeadCapturedSkipCta": "我现在已经完成了",
+    "quoteContactSubmitLabel": "登记我的询问",
+    "quoteLeadCapturedTitle": "查询登记",
+    "quoteLeadCapturedOptionalBody": "如果您有时间，请立即添加您的包袋规格。它可以帮助我们在致电之前推荐正确的 PP 袋类型、尺寸和印刷，因此您的第一次对话已经很有用。",
+    "quoteLeadCapturedOptionalTitle": "想要更快、更准确的报价吗？",
+    "quoteSubmitNote": "如果您对上述详细信息感到满意，请提交。我们的出口团队将审核所有内容并通过 WhatsApp 进行跟进。",
+    "sampleBillIntro": "查看下面的示例规格和费用。付款确认后发送样品。",
+    "quoteLeadCapturedContinueCta": "添加袋子规格",
+    "sampleBillTitle": "订单账单样本",
+    "quoteLeadOnlySuccessBody": "我们很快就会通过 WhatsApp 与您联系。当我们联系您时，您可以分享包的详细信息，或者随时回来完成您的规格。",
+    "samplePaymentTitle": "银行转账详情",
+    "sampleSuccessTitle": "收到样品订单",
+    "samplePaymentConfirmCta": "确认银行转账",
+    "samplePaymentIntro": "使用以下详细信息转移样品量。请使用参考信息，以便我们匹配您的付款。",
+    "blogLeadTitle": "有包装问题吗？",
+    "blogLeadCta": "发送询问",
+    "sampleSuccessBody": "谢谢。我们将通过电子邮件验证您的付款并确认样品生产和发货时间表。",
+    "quoteSuccessBody": "我们将在 12 小时内通过电话或 WhatsApp 回复您。",
+    "blogIntro": "为国际买家撰写，比较 PP 袋供应商、了解袋子类型、检查规格以及准备出口询价。",
+    "quoteSuccessTitle": "收到询问",
+    "blogReadArticle": "阅读文章",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "出口市场"
+      },
+      {
+        "value": "9+",
+        "label": "服务国家"
+      },
+      {
+        "label": "每月产能",
+        "value": "750吨"
+      },
+      {
+        "label": "出口级"
+      }
+    ],
+    "homeCertsHeading": "认证证书",
+    "blogLeadBody": "在我们的联系页面上发送产品询问或一般询问。我们的团队将审查您的要求并提供实际指导。",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY 为全球进口买家提供专业的沟通、清晰的产品规格、定制包装选项和快速响应的出口支持。容量、结构、印刷和包装是根据您的产品和目的地市场量身定制的，因此每个订单都符合您的灌装流程、品牌需求和运输条件。",
+      "在承诺全部数量之前索取样品。捆包、托盘和纸箱包装计划用于安全国际运输，采用 10 种编织 PP 结构，从开口到优质层压格式，适合大米、化肥、水泥、饲料和零售用途。"
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY 是一家总部位于印度的 PP 袋出口商，为需要专业沟通、清晰的产品规格和可靠的出口支持的全球进口商提供服务。我们提供 5 公斤至 75 公斤的敞口袋、缝合袋、D 型切割袋、阀门袋、手提袋、层压袋、夹底袋、块底袋、角撑板袋和购物袋，并提供用于品牌展示的柔印或层压印刷选项。产品类型、尺寸、容量、印刷、层压、衬里、角撑板、手柄和包装细节均在发出报价之前预先获取。"
+    ]
+  },
+  "footer": {
+    "company": "公司",
+    "productTypes": "产品类型",
+    "buyerHelp": "买家帮助",
+    "contact": "联系",
+    "backToTop": "返回顶部",
+    "backToTopAria": "返回页面顶部",
+    "links": {
+      "home": "家",
+      "contact": "联系我们",
+      "about": "关于",
+      "productUses": "产品用途",
+      "getQuote": "获取报价"
+    },
+    "aboutBlurb": "VIVIDPOLY 从印度出口 PP 袋，以满足需要定制容量、印刷、内衬和出口包装的全球买家的需求。"
+  },
+  "meta": {
+    "loading": "加载中 VIVIDPOLY...",
+    "title": "VIVIDPOLY：印度 PP 袋出口商",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · 印度 PP 袋出口商",
+    "description": "VIVIDPOLY 从印度向全球买家出口 PP 袋。"
+  },
+  "enquiryModal": {
+    "title": "查询表格",
+    "close": "关闭查询表格"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "一般查询"
+    },
+    {
+      "label": "开口袋 - OMB"
+    },
+    {
+      "label": "顶部和底部缝合袋 - TBS"
+    },
+    {
+      "label": "D型切PP编织袋 - DCB"
+    },
+    {
+      "label": "自封袋 - VB"
+    },
+    {
+      "label": "手提包 - CB"
+    },
+    {
+      "label": "印刷层压编织 PP 袋 - LWB"
+    },
+    {
+      "label": "夹底袋 - PBB"
+    },
+    {
+      "label": "方底袋 - BBB"
+    },
+    {
+      "label": "方底角撑袋 - BGB"
+    },
+    {
+      "label": "编织购物袋 - WSB"
+    },
+    {
+      "label": "丙纶机织布"
+    },
+    {
+      "label": "杂草屏障"
+    }
+  ],
+  "emailCompose": {
+    "toLabel": "到",
+    "fromLabel": "您的电子邮件",
+    "nameLabel": "你的名字",
+    "subjectLabel": "主题",
+    "messageLabel": "信息",
+    "send": "发送消息",
+    "sending": "正在发送...",
+    "emailInvalid": "输入有效的电子邮件地址。",
+    "messageRequired": "发送前添加一条短信。",
+    "defaultSubject": "来自vividpoly.com 的出口询价",
+    "close": "关闭撰写面板",
+    "title": "电子邮件 VIVIDPOLY",
+    "sendError": "我们无法发送您的消息。请重试或直接致电我们。",
+    "sendUnavailable": "尚未配置电子邮件发送。请使用电话或 WhatsApp 联系我们。",
+    "sendSuccess": "消息已发送。我们的团队会尽快回复您。",
+    "hint": "您的消息将直接发送至我们的出口团队。我们将回复您在上面输入的电子邮件地址。"
+  },
+  "home": {
+    "shopByProductType": "按产品类型选购",
+    "shopByIndustry": "按行业选购",
+    "productTypes": "产品类型",
+    "faqsEyebrow": "常见问题解答",
+    "swipeIndustries": "左右滑动浏览行业",
+    "shopByProductTypeDesc": "十种编织 PP 结构，从开口到优质层压形式。",
+    "shopByIndustryDesc": "将袋子类型与大米、化肥、水泥、饲料和零售用途相匹配。",
+    "swipeCards": "刷卡",
+    "howWeHelpBuyers": "我们如何帮助买家",
+    "valuePropsSlides": "为什么买家选择 VIVIDPOLY 幻灯片",
+    "buyerPagination": "买家需要分页",
+    "previousProducts": "以前的产品",
+    "buyerNeed": "买家需求0",
+    "buyerRequirements": "买家要求",
+    "slideOf": "01",
+    "nextProducts": "下一个产品",
+    "buyerCarousel": "买家需求轮播",
+    "productUses": "产品用途"
+  },
+  "catalogue": {
+    "titleByType": "按产品类型选购",
+    "productType": "产品类型",
+    "capacity": "容量",
+    "breadcrumbUse": "产品/按行业和用途",
+    "breadcrumbType": "产品/按产品类型",
+    "sortAllProducts": "所有产品",
+    "titleByUse": "按行业/用途选购"
+  },
+  "pdp": {
+    "getQuoteFor": "获取报价 0",
+    "keyFeatures": "主要特点",
+    "benefits": "好处",
+    "speciality": "专业",
+    "manufacturingProcess": "制造流程",
+    "whyBuyersChoose": "为什么买家选择这款包",
+    "productionMaterials": "生产及材料",
+    "materialCombination": "材质组合",
+    "customization": "定制细节",
+    "trustBadges": [
+      "可定制规格",
+      "批量订购前可提供样品",
+      "包括出口包装",
+      "反应灵敏的出口团队"
+    ],
+    "productImage": "产品图片0"
+  },
+  "about": {
+    "title": "关于我们",
+    "pageEyebrow": "关于我们",
+    "ctaSecondary": "按产品类型选购",
+    "pageTitle": "全球出口包装合作伙伴",
+    "exportVisionEyebrow": "我们的出口愿景",
+    "ctaPrimary": "发送询问",
+    "p1": "VIVIDPOLY 为全球进口买家提供专业的沟通、清晰的产品规格、定制包装选项和快速响应的出口支持。容量、结构、印刷和包装是根据您的产品和目的地市场量身定制的，因此每个订单都符合您的灌装流程、品牌需求和运输条件。",
+    "p2": "在承诺全部数量之前索取样品。捆包、托盘和纸箱包装计划用于安全国际运输，采用 10 种编织 PP 结构，从开口到优质层压格式，适合大米、化肥、水泥、饲料和零售用途。",
+    "pillarsEyebrow": "优势",
+    "exportVisionHeading": "走向光明的未来",
+    "pillarsHeading": "秉承买家至上的出口传统",
+    "pillars": [
+      {
+        "title": "我们确保国际出口标准",
+        "body": "规格、包装和沟通是针对目的地市场和买家合规性需求而规划的。"
+      },
+      {
+        "title": "出口准备能力和建设",
+        "body": "从 5 公斤零售包装到 75 公斤工业袋，提供层压、内衬、角撑板、阀门和印刷选项。"
+      },
+      {
+        "title": "专门的出口支持团队",
+        "body": "报价前对产品类型、艺术品、包装格式、数量和目的地提供响应式指导。"
+      },
+      {
+        "title": "实践经验丰富，流程清晰",
+        "body": "买家可以获得结构化的产品使用指导和完整的查询路径，而不是模糊的目录副本。"
+      }
+    ],
+    "pillarsLead": "从国际标准到实用查询支持，VIVIDPOLY 围绕全球包装买家的实际采购方式构建。",
+    "factsEyebrow": "公司详情",
+    "whyEyebrow": "服务",
+    "exportVisionBody": "VIVIDPOLY 旨在成为需要坚固、可定制和品牌化 PP 袋的全球企业值得信赖的印度出口合作伙伴。我们知道国际买家需要的不仅仅是一般的产品描述。他们需要准确的规格、产品使用指南、艺术品和印刷支持、合适的包装选项以及整个询价过程中的快速沟通。",
+    "pillarsBody": "从国际标准到实用查询支持，VIVIDPOLY 围绕全球包装买家的实际采购方式构建。规格、包装和沟通是针对目的地市场和买家合规性需求而规划的。容量从 5 公斤零售包装到 75 公斤工业袋，具有层压、内衬、角撑板、阀门和印刷选项。专门的出口支持涵盖报价前的产品类型、艺术品、包装格式、数量和目的地，并提供结构化的产品使用指导和完整的查询路径。",
+    "contactTeam": "发送询问",
+    "requestCustomQuote": "发送询问",
+    "whyMoreLabel": "更多详情",
+    "factsHeading": "VIVIDPOLY 一目了然",
+    "ctaBandButton": "发送询问",
+    "ctaBandTitle": "寻找专业的出口包装合作伙伴？",
+    "whyHeading": "最好的出口包装支持",
+    "ctaBandBody": "分享您的袋子类型、容量、打印需求、数量和目的地。 VIVIDPOLY 将审核您的询问并跟进实际选项。",
+    "whyLead": "从产品品种和产能规划到印刷、衬里和出口包装，VIVIDPOLY 的结构旨在支持实际的采购决策。",
+    "whyBody": "从产品品种和产能规划到印刷、衬里和出口包装，VIVIDPOLY 的结构旨在支持实际的采购决策。买家可以从印度采购 PP 袋，销往美国、加拿大、澳大利亚、欧洲、英国、非洲、泰国、沙特阿拉伯和其他市场，涵盖各种工业、农业、零售和促销袋类型。容量规划涵盖 5 公斤至 75 公斤，提供定制结构、印刷和品牌支持、产品使用指导以及买家友好的报价流程，可在报价前获取所需的详细信息。",
+    "whyItems": [
+      [
+        "印度出口商定位",
+        "买家可以从印度采购 PP 袋，销往美国、加拿大、澳大利亚、欧洲、英国、非洲、泰国、沙特阿拉伯和其他市场。"
+      ],
+      [
+        "专注 PP 袋产品系列",
+        "产品内容清晰实用，涵盖常见的工业、农业、零售和促销袋类型。"
+      ],
+      [
+        "5公斤至75公斤容量规划",
+        "买家可以讨论小型零售包装、中型商品袋和重型工业袋。"
+      ],
+      [
+        "定制施工选项",
+        "可以规划层、层压、角撑板、衬里、穿孔、窗口、手柄、阀门、夹口底部和块底部选项。"
+      ],
+      [
+        "印刷和品牌支持",
+        "柔版印刷和印刷层压编织聚丙烯选项有助于提高品牌知名度和市场展示。"
+      ],
+      [
+        "产品使用指导",
+        "买家可以根据用途选择袋子，例如大米、肥料、动物饲料、化学品、水泥、盐、糖、零售和购物。"
+      ],
+      [
+        "买家友好的报价流程",
+        "该网站帮助买家在报价前分享产品类型、容量、尺寸、印刷、附加组件、包装、数量和目的地。"
+      ]
+    ],
+    "ctaBandEyebrow": "联系我们"
+  },
+  "contact": {
+    "title": "联系我们",
+    "sendRequirement": "查询表格",
+    "reachUs": "直接联系我们",
+    "formName": "姓名",
+    "formCompany": "公司名称",
+    "formEmail": "电子邮件",
+    "formCountry": "国家",
+    "formMessage": "信息",
+    "sending": "正在发送...",
+    "sendRequirementLead": "告诉我们您需要什么。选择产品类型或发送一般查询，我们将回复并提供实用指导。",
+    "formPhone": "WhatsApp / 电话",
+    "emailInvalid": "输入有效的电子邮件地址。",
+    "formEnquiryType": "询价类型",
+    "submitEnquiry": "提交询问",
+    "emailLabel": "电子邮件",
+    "submitError": "我们无法发送您的询问。请重试或直接致电我们。",
+    "websiteLabel": "网站",
+    "submitSuccess": "询价已发送。我们的团队会尽快回复您。",
+    "submitUnavailable": "尚未配置在线查询。请使用本页上的详细信息发送电子邮件或致电我们。",
+    "messageRequired": "提交前添加一条短信。",
+    "phoneRequired": "添加 WhatsApp 或电话号码，以便我们与您联系。",
+    "phoneLabel": "WhatsApp / 电话",
+    "corporateOffice": "公司办公室",
+    "companyRows": [
+      [
+        "公司/品牌"
+      ],
+      [
+        "网站",
+        "维维德保利网"
+      ],
+      [
+        "电子邮件"
+      ],
+      [
+        "电话"
+      ],
+      [
+        "公司地址",
+        "Sankalp Square，A 1601，Sindhu Bhavan Marg，靠近泰姬陵酒店，对面。射击游戏，PRL 殖民地，博帕尔，艾哈迈达巴德，古吉拉特邦 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Square，A 1601，Sindhu Bhavan Marg，靠近泰姬陵酒店，对面。射击游戏，PRL 殖民地，博帕尔，艾哈迈达巴德，古吉拉特邦 380058"
+  },
+  "quote": {
+    "stepContact": "联系方式",
+    "submitEnquiry": "提交询问",
+    "stepLabel": "步骤 0 / 1",
+    "stepBagSpec": "袋子规格",
+    "bagSpec": "袋子规格",
+    "fields": {
+      "product": "产品",
+      "capacity": "容量",
+      "bagType": "袋型",
+      "size": "尺寸",
+      "printing": "印刷",
+      "addons": "附加组件",
+      "packing": "包装",
+      "quantity": "数量",
+      "destination": "目的地国家",
+      "review": "审查",
+      "packedProduct": "包装产品"
+    },
+    "howReachYou": "我们应该如何联系您？",
+    "reviewLabels": {
+      "productType": "产品类型",
+      "capacity": "容量",
+      "printing": "印刷",
+      "addons": "附加组件",
+      "packing": "包装",
+      "quantity": "数量",
+      "bagSize": "袋子尺寸",
+      "destination": "目的地",
+      "empty": "-",
+      "packedProduct": "包装产品"
+    },
+    "savedWithName": "0，您的联系方式已保存。",
+    "saved": "您的联系方式已保存。",
+    "closeForm": "关闭查询表格",
+    "emailInvalid": "输入有效的电子邮件地址。",
+    "reviewSteps": {
+      "product": "产品",
+      "order": "命令",
+      "sizePrint": "尺寸及印刷"
+    },
+    "registerLead": "我们将登记您的询问并通过 WhatsApp 进行跟进。"
+  },
+  "sample": {
+    "steps": {
+      "review": "审查",
+      "payment": "支付",
+      "confirmed": "确认的"
+    },
+    "yourDetails": "您的详细信息",
+    "bankTransfer": "银行转账",
+    "subtotal": "小计",
+    "total": "全部的",
+    "continuePayment": "继续付款",
+    "reference": "参考：",
+    "specification": "样品规格",
+    "billRows": {
+      "productType": "产品类型",
+      "capacity": "容量",
+      "printing": "印刷",
+      "packing": "包装",
+      "unitPrice": "单价",
+      "total": "全部的",
+      "leadTime": "交货时间",
+      "sampleQuantity": "样品数量",
+      "exportPacking": "出口包装及发货"
+    },
+    "selectBank": "选择银行",
+    "searchBanks": "搜寻银行",
+    "bankRows": {
+      "beneficiary": "受益人",
+      "bank": "银行",
+      "branch": "分支",
+      "accountNumber": "帐号",
+      "swift": "迅速",
+      "ifsc": "国际金融服务中心",
+      "accountType": "账户类型",
+      "paymentReference": "付款参考",
+      "amount": "数量"
+    },
+    "searchBranches": "搜寻分行",
+    "selectBranch": "选择分行",
+    "form": {
+      "name": "姓名",
+      "address": "送货地址",
+      "quantity": "样品所需数量"
+    },
+    "noBankMatches": "没有匹配项。尝试不同的搜索。",
+    "closePicker": "关闭选择器"
+  },
+  "blog": {
+    "fallbackReadTime": "5 分钟阅读",
+    "fallbackCategory": "买家指南",
+    "pageTitle": "买家指南和见解",
+    "fallbackExcerpt": "Lorem ipsum dolor sat amet，consectetur adipiscing elit sed do eiusmod tempor。",
+    "emptyTitle": "还没有文章",
+    "loading": "正在加载文章...",
+    "emptyBody": "新的买家指南和见解即将推出 - 请稍后回来查看。",
+    "backToArticles": "返回所有文章"
+  },
+  "careers": {
+    "seeHowWeWork": "看看我们如何工作",
+    "applyNow": "立即申请",
+    "title": "源自印度。值得全球信赖。",
+    "eyebrow": "VividPoly 的职业机会",
+    "lead": "我们寻找关心质量、清晰沟通和可靠交付的人才。其职责涵盖艾哈迈达巴德和巴罗达的办公室、工厂和出口业务。",
+    "whyLead": "培养制造和全球贸易技能的实用场所。",
+    "whyHeading": "为什么选择VividPoly",
+    "reasons": [
+      {
+        "title": "全球曝光",
+        "body": "与 70 多个出口市场的买家相关的工作。"
+      },
+      {
+        "body": "在不断发展的业务中，新的责任会很快到来。",
+        "title": "成长空间"
+      },
+      {
+        "title": "工作保障",
+        "body": "以稳定、成熟的出口业务为后盾。"
+      },
+      {
+        "title": "在工作中学习",
+        "body": "亲身接触制造业和全球贸易。"
+      }
+    ],
+    "whyBody": "培养制造和全球贸易技能的实用场所。工作与 70 多个出口市场的买家联系在一起，在不断增长的业务中迅速承担新的责任，并且角色得到稳定、成熟的出口业务的支持，并亲自接触制造业和全球贸易。",
+    "positionsHeading": "在您已经寻找过的地方找到我们",
+    "platforms": [
+      {
+        "label": "领英",
+        "blurb": "公司更新并开放出口、运营和包装职业的职位。"
+      },
+      {
+        "label": "的确",
+        "blurb": "按角色、位置和经验水平搜索 VIVIDPOLY 列表。"
+      },
+      {
+        "label": "瑙克里",
+        "blurb": "以印度为重点的制造、销售和支持团队的职位空缺。"
+      }
+    ],
+    "positionsLead": "当前的空缺职位会在这些平台上发布和更新。浏览实时角色，然后通过下面的表格进行申请。",
+    "positionsEyebrow": "空缺职位",
+    "positionsNote": "更喜欢直接申请？使用下面的“立即申请”。",
+    "positionsMoreLabel": "查看职位空缺",
+    "ctaEyebrow": "立即申请",
+    "ctaLead": "分享您的角色兴趣、经验和首选地点。我们的团队将在有空缺职位时审核申请。",
+    "ctaHeading": "您的下一个职业生涯从这里开始"
+  },
+  "search": {
+    "recentHeading": "最近的搜索",
+    "suggestionsHeading": "建议",
+    "noMatches": "没有匹配项。尝试“米”或“水泥”",
+    "recentTerms": [
+      "米袋",
+      "水泥袋",
+      "印刷层压",
+      "25斤张口"
+    ]
+  },
+  "filters": {
+    "capacityMin": "最小容量",
+    "capacityExample": "例如23公斤",
+    "capacityMax": "最大容量",
+    "capacityCustomNotice": "VIVIDPOLY 提供 0 kg 至 1 kg 之间的 PP 袋包装。请输入此范围内的容量。",
+    "customSelectNoMatches": "未找到匹配项",
+    "capacityOrEnter": "或输入容量",
+    "customSelectEnter": "输入您的规格...",
+    "customSelectUseAnyway": "无论如何使用这个值",
+    "productUseOptions": "产品使用选项"
+  },
+  "breadcrumbs": {
+    "home": "家",
+    "blog": "博客",
+    "faqs": "常见问题解答",
+    "about": "关于",
+    "careers": "职业",
+    "contact": "联系我们",
+    "products": "产品",
+    "getQuote": "获取报价",
+    "requestExportQuote": "索取出口报价"
+  },
+  "validation": {
+    "emailInvalid": "输入有效的电子邮件地址。"
+  },
+  "buyerRows": [
+    {
+      "requirement": "印度出口采购",
+      "response": "VIVIDPOLY 定位为面向全球 PP 袋买家的印度出口商。"
+    },
+    {
+      "requirement": "产品种类丰富",
+      "response": "敞口袋、缝合袋、D 形切口袋、阀门袋、手提袋、层压袋、捏底袋、块底袋、角撑板和购物袋。"
+    },
+    {
+      "requirement": "定制产能",
+      "response": "根据产品密度和袋子结构，PP袋解决方案可规划为5公斤至75公斤。"
+    },
+    {
+      "requirement": "品牌呈现",
+      "response": "柔版印刷和印刷层压编织聚丙烯选项支持产品标识和货架吸引力。"
+    },
+    {
+      "requirement": "买家友好的询价流程",
+      "response": "产品类型、尺寸、容量、印刷、层压、内衬、角撑板、手柄和包装细节可在报价前获取。"
+    }
+  ],
+  "buyerMeta": [
+    {
+      "short": "印度出口商",
+      "label": "印度采购"
+    },
+    {
+      "label": "产品范围",
+      "short": "10种包袋类型"
+    },
+    {
+      "label": "定制产能",
+      "short": "5公斤至75公斤"
+    },
+    {
+      "label": "品牌印刷",
+      "short": "印刷和层压"
+    },
+    {
+      "short": "报价准备细节",
+      "label": "报价工作流程"
+    }
+  ],
+  "useRows": [
+    {
+      "use": "大米、小麦、谷物、豆类、面粉",
+      "cardTitle": "谷物和豆类",
+      "bags": "敞口袋、上下缝合袋、印刷复合编织PP袋、夹底袋",
+      "tips": "柔版印刷、层压印刷、窗口、角撑板、衬里、手柄、出口捆包包装。"
+    },
+    {
+      "use": "肥料和种子",
+      "tips": "衬纸、角撑板、柔版印刷、层压印刷、穿孔、托盘包装。",
+      "bags": "缝编袋、复合编织袋、方底袋、方底插角袋",
+      "cardTitle": "肥料和种子"
+    },
+    {
+      "use": "动物饲料和宠物食品",
+      "cardTitle": "动物饲料和宠物食品",
+      "bags": "印刷层压编织PP袋、方底插角袋、手提袋、夹底袋",
+      "tips": "多层结构、窗户、角撑板、把手、高级印刷、可选穿孔。"
+    },
+    {
+      "cardTitle": "水泥和工业粉末",
+      "use": "水泥、化学品、矿物、粉末",
+      "bags": "自封袋、方底袋、上下缝合袋、内衬袋",
+      "tips": "阀门结构、衬里、穿孔、强力缝合、重型填料。"
+    },
+    {
+      "use": "盐、糖、消费品",
+      "cardTitle": "盐、糖和商品",
+      "bags": "敞口袋、缝编袋、复合袋、内衬袋",
+      "tips": "衬里、层压表面、柔版印刷、干净的缝合、防潮选项。"
+    },
+    {
+      "cardTitle": "零售及促销",
+      "use": "零售、购物、促销",
+      "bags": "D型切袋、手提袋、编织购物袋、印刷层压编织PP袋",
+      "tips": "手柄选项、层压印刷、角撑板、纸箱包装、品牌艺术品。"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "柔版印刷、层压印刷、窗口、角撑板、衬里、手柄、出口捆包包装。",
+      "title": "大米、小麦、谷物和豆类",
+      "bags": "敞口袋、上下缝合袋、印刷复合编织PP袋、夹底袋。"
+    },
+    {
+      "title": "面粉和食品",
+      "bags": "敞口袋、印刷复合编织PP袋、夹底袋。",
+      "tips": "衬里、层压表面、干净的切割、安全的缝合、零售友好的设计。"
+    },
+    {
+      "tips": "衬里、层压表面、柔版印刷、干净的缝合、防潮选项。",
+      "bags": "敞口袋、缝编袋、印刷复合编织袋。",
+      "title": "盐和糖"
+    },
+    {
+      "tips": "衬纸、角撑板、柔版印刷、层压印刷、穿孔、托盘包装。",
+      "bags": "缝编袋、复合编织袋、方底袋、方底插角袋。",
+      "title": "肥料和种子"
+    },
+    {
+      "tips": "多层结构、窗户、角撑板、把手、高级印刷、可选穿孔。",
+      "title": "动物饲料和宠物食品",
+      "bags": "印刷层压编织PP袋、夹底袋、方底插角袋、手提袋。"
+    },
+    {
+      "title": "水泥和建筑材料",
+      "tips": "阀门结构、衬里、穿孔、强力缝合、重型填料。",
+      "bags": "自封袋、方底袋、上下缝合袋。"
+    },
+    {
+      "title": "化学品和矿物",
+      "tips": "衬里、层压、脱气穿孔、安全缝合、出口包装。",
+      "bags": "自封袋、缝编袋、敞口袋、内衬袋。"
+    },
+    {
+      "tips": "手柄选项、层压印刷、角撑板、纸箱包装、品牌艺术品。",
+      "title": "零售和促销产品",
+      "bags": "D型切袋、手提袋、编织购物袋、印刷层压编织PP袋。"
+    },
+    {
+      "title": "购物和可重复使用式包装",
+      "tips": "环形手柄、D 型切割手柄、侧面角撑板、底部角撑板、多色印刷。",
+      "bags": "编织购物袋、手提袋、D型切PP编织袋。"
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "编织袋"
+    },
+    {
+      "title": "织物"
+    },
+    {
+      "title": "杂草屏障"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "农业和食品",
+      "items": [
+        "大米、小麦、谷物和豆类",
+        "面粉和食品",
+        "盐和糖"
+      ]
+    },
+    {
+      "title": "农业投入品和动物护理",
+      "items": [
+        "肥料和种子",
+        "动物饲料和宠物食品"
+      ]
+    },
+    {
+      "title": "工业与建筑",
+      "items": [
+        "水泥和建筑材料",
+        "化学品和矿物"
+      ]
+    },
+    {
+      "title": "零售及促销",
+      "items": [
+        "零售和促销产品",
+        "购物和可重复使用式包装"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "容量",
+      "title": "容量",
+      "options": [
+        {
+          "label": "5公斤"
+        },
+        {
+          "label": "10公斤"
+        },
+        {
+          "label": "15公斤"
+        },
+        {
+          "label": "20公斤"
+        },
+        {
+          "label": "25公斤"
+        },
+        {
+          "label": "30公斤"
+        },
+        {
+          "label": "40公斤"
+        },
+        {
+          "label": "50公斤"
+        },
+        {
+          "label": "60公斤"
+        },
+        {
+          "label": "75公斤"
+        },
+        {
+          "label": "风俗"
+        }
+      ]
+    },
+    {
+      "key": "产品类型",
+      "title": "产品类型",
+      "options": [
+        {
+          "label": "张开嘴"
+        },
+        {
+          "label": "缝合"
+        },
+        {
+          "label": "D 型切割"
+        },
+        {
+          "label": "阀门"
+        },
+        {
+          "label": "携带"
+        },
+        {
+          "label": "层压"
+        },
+        {
+          "label": "捏底"
+        },
+        {
+          "label": "块底"
+        },
+        {
+          "label": "块状底部角撑板"
+        },
+        {
+          "label": "编织购物"
+        },
+        {
+          "label": "丙纶机织布"
+        },
+        {
+          "label": "杂草屏障"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "a": "VIVIDPOLY出口开口袋、上下缝合袋、D型切PP编织袋、阀口袋、手提袋、印刷复合编织PP袋、印刷复合编织PP夹底袋、印刷复合编织PP方底袋、印刷复合编织PP方底插角袋和编织购物袋。",
+      "q": "VIVIDPOLY出口哪些类型的PP袋？"
+    },
+    {
+      "q": "VIVIDPOLY PP 袋的承重能力是多少？",
+      "a": "VIVIDPOLY 可以讨论 5 公斤至 75 公斤的 PP 袋要求，具体取决于产品密度、袋子尺寸、织物强度、结构、层压、内衬、角撑板、缝合和最终用途应用。"
+    },
+    {
+      "q": "报价需要哪些信息？",
+      "a": "买家应提供产品类型、包装产品、容量、袋子尺寸、数量、印刷要求、层压、内衬、角撑板、手柄、切割、缝合、包装类型、目的地国家以及艺术品或样品参考（如果有）。"
+    },
+    {
+      "q": "VIVIDPOLY可以供应印刷和层压编织PP袋吗？",
+      "a": "是的。 VIVIDPOLY 可满足大米、面粉、化肥、动物饲料、宠物食品、种子、盐、糖和零售商品等产品的印刷和层压编织 PP 袋要求。"
+    },
+    {
+      "q": "敞口袋和阀口袋有什么区别？",
+      "a": "敞口袋通过顶部开口进行灌装，灌装后封闭。自阀袋通过阀门开口填充，通常用于粉末、水泥类产品、化学品、矿物和建筑材料。"
+    },
+    {
+      "q": "夹底袋有什么用途？",
+      "a": "夹底袋用于买家需要优质包装外观和干净的闭合外观的地方。它们适用于精选食品、宠物食品、动物饲料、谷物、种子和零售产品。"
+    },
+    {
+      "q": "方底插角袋的用途是什么？",
+      "a": "方底角撑板袋适合买家需要更大的容量、稳定的填充形状、更强的品牌区域和更好的堆叠展示的情况。"
+    },
+    {
+      "a": "是的。精选的印刷和层压编织聚丙烯袋可以包括一个透明的窗口，以显示内部包装的产品。",
+      "q": "PP袋可以带窗户吗？"
+    },
+    {
+      "a": "是的。当需要额外的产品保护、防潮或良好的产品保留时，可以考虑使用衬垫。",
+      "q": "VIVIDPOLY可以提供PP袋内衬吗？"
+    },
+    {
+      "q": "有哪些打印选项可用？",
+      "a": "VIVIDPOLY 可支持普通袋、柔版印刷袋以及印刷和层压编织 PP 袋格式，具体取决于品牌需求、艺术品复杂性、预算和产品市场。"
+    }
+  ],
+  "blogList": [
+    {
+      "category": "买家指南",
+      "readTime": "6 分钟阅读",
+      "title": "什么是PP袋？进口买家完整指南",
+      "excerpt": "Lorem ipsum dolor sat amet，consectetur adipiscing elit。 Sed do eiusmod tempor inciditunt ut laboure et dolore magna aliqua。",
+      "purpose": "解释PP袋、常见用途以及买家选择因素。"
+    },
+    {
+      "readTime": "5 分钟阅读",
+      "title": "敞口袋与自封袋：哪种 PP 袋适合您的产品？",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exeritation ullamco labouris nisi ut aliquip ex ea commodo consequat.",
+      "category": "包装",
+      "purpose": "比较填充方式和合适的应用。"
+    },
+    {
+      "category": "买家指南",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur。",
+      "readTime": "7 分钟阅读",
+      "title": "顶部和底部缝合 PP 袋：用途、优点和定制",
+      "purpose": "向买家介绍缝制袋的格式。"
+    },
+    {
+      "readTime": "5 分钟阅读",
+      "excerpt": "例外的是，如果你没有做好准备，那么你就必须承担责任，因为你必须付出努力。",
+      "category": "品牌推广",
+      "title": "用于大米、饲料和肥料包装的印刷和层压编织 PP 袋",
+      "purpose": "推广优质品牌包装。"
+    },
+    {
+      "category": "包装",
+      "readTime": "6 分钟阅读",
+      "purpose": "比较优质包袋结构。",
+      "title": "夹底袋与方底袋：买家指南",
+      "excerpt": "Lorem ipsum dolor sat amet，consectetur adipiscing elit，sed do eiusmod tempor incididunt ut labore。"
+    },
+    {
+      "title": "PP袋尺寸指南：如何选择5公斤至75公斤的袋子容量",
+      "purpose": "在询价前帮助买家确定尺寸和容量。",
+      "category": "浆纱",
+      "readTime": "8 分钟阅读",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exeritation ullamco Laboris nisi ut aliquip ex ea commodo."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur。",
+      "category": "品牌推广",
+      "readTime": "5 分钟阅读",
+      "purpose": "解释印刷选择和品牌影响。",
+      "title": "PP袋柔印与层压印刷"
+    },
+    {
+      "excerpt": "例外的是，如果你不这样做，就必须承担责任。",
+      "purpose": "解释产品保护和处理的附加功能。",
+      "title": "为什么内衬、角撑板和穿孔在 PP 袋中很重要",
+      "readTime": "4 分钟阅读",
+      "category": "特征"
+    },
+    {
+      "readTime": "6 分钟阅读",
+      "purpose": "指导买家发送哪些详细信息以获取报价。",
+      "title": "如何准备 PP 袋出口询价",
+      "category": "导出技巧",
+      "excerpt": "Lorem ipsum dolor sat amet，consectetur adipiscing elit。整数 nec odio praesent libero sed cursus ante。"
+    },
+    {
+      "purpose": "目标购物和促销袋买家。",
+      "readTime": "5 分钟阅读",
+      "category": "零售",
+      "title": "用于零售和促销包装的编织购物袋",
+      "excerpt": "Sed cursus ante dapibus diam。 Sed nisi nulla quis sem at nibh elementum imperdiet。"
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "美元",
+    "qtyLabel": "5个样品",
+    "printing": "普通（样本规格）",
+    "packing": "纸箱出口包装",
+    "leadTime": "付款确认后 7-10 个工作日"
+  },
+  "bankDetails": {
+    "swift": "HDFCINBB",
+    "bankName": "HDFC 银行有限公司",
+    "ifsc": "HDFC0001234",
+    "accountType": "往来账户",
+    "branch": "艾哈迈达巴德, 博帕尔, 古吉拉特邦, 印度",
+    "paymentNote": "在转让说明中包含您的公司名称和样本参考。"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC 银行有限公司",
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "accountType": "往来账户",
+      "location": "印度古吉拉特邦",
+      "branch": "艾哈迈达巴德、博帕尔"
+    },
+    {
+      "bankName": "HDFC 银行有限公司",
+      "location": "印度古吉拉特邦",
+      "swift": "HDFCINBB",
+      "accountType": "往来账户",
+      "branch": "巴罗达, 哈洛尔路",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "印度古吉拉特邦",
+      "accountType": "往来账户",
+      "bankName": "印度工业信贷投资银行有限公司",
+      "swift": "ICICINBB",
+      "branch": "艾哈迈达巴德，SG 高速公路",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "印度古吉拉特邦",
+      "accountType": "往来账户",
+      "branch": "艾哈迈达巴德、普拉德纳加尔",
+      "bankName": "轴心银行有限公司",
+      "ifsc": "UTIB0000123",
+      "swift": "轴心BB"
+    },
+    {
+      "bankName": "印度国家银行",
+      "location": "印度古吉拉特邦",
+      "branch": "甘地讷格尔，21 区",
+      "accountType": "往来账户",
+      "swift": "斯比宁BB",
+      "ifsc": "SBIN0006789"
+    },
+    {
+      "location": "印度古吉拉特邦",
+      "bankName": "科塔克马恒达银行",
+      "accountType": "往来账户",
+      "ifsc": "KKBK0001234",
+      "branch": "艾哈迈达巴德阿什拉姆路",
+      "swift": "KKBKINBB"
+    },
+    {
+      "location": "印度马哈拉施特拉邦",
+      "accountType": "往来账户",
+      "branch": "孟买, 安泰里东",
+      "bankName": "是银行有限公司",
+      "swift": "耶宾BB",
+      "ifsc": "是B0000123"
+    },
+    {
+      "location": "印度古吉拉特邦",
+      "accountType": "往来账户",
+      "ifsc": "INDB0000123",
+      "bankName": "印度工业银行有限公司",
+      "swift": "INDBINBB",
+      "branch": "艾哈迈达巴德, 纳夫朗普拉"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "开口袋"
+    },
+    {
+      "label": "缝合袋"
+    },
+    {
+      "label": "D 形切割袋"
+    },
+    {
+      "label": "自封袋"
+    },
+    {
+      "label": "手提袋"
+    },
+    {
+      "label": "复合编织袋 PP"
+    },
+    {
+      "label": "夹底袋"
+    },
+    {
+      "label": "方底袋"
+    },
+    {
+      "label": "方底插角袋"
+    },
+    {
+      "label": "编织购物袋"
+    },
+    {
+      "label": "丙纶机织布"
+    },
+    {
+      "label": "杂草屏障"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "开口袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "轻松灌装",
+          "body": "开放式顶部允许通过手动、半自动或机器支持的方法快速填充。"
+        },
+        {
+          "body": "适用于 5 公斤至 75 公斤的应用，具体取决于产品密度和袋子设计。",
+          "title": "产能灵活性"
+        },
+        {
+          "title": "定制饰面",
+          "body": "顶部可以进行热切割、冷切割、卷边或锯齿形切割。"
+        },
+        {
+          "title": "印刷和衬纸选项",
+          "body": "如有需要，可添加柔版印刷、层压印刷和衬垫支撑。"
+        }
+      ],
+      "cta": "探索敞口袋",
+      "short": "易于填充的PP编织袋，适用于谷物、面粉、饲料、化肥、盐、糖、种子和矿物质等干散装产品。",
+      "intro": "敞口袋是干散装包装最实用的 PP 袋样式之一。 VIVIDPOLY 为需要轻松填充、灵活闭合以及农业、食品、化肥、饲料、化工、矿物、盐、糖和工业应用定制的买家出口敞口 PP 袋。",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "5公斤至75公斤"
+        },
+        {
+          "key": "顶部",
+          "value": "开口、热切、冷切、之字形、卷边"
+        },
+        {
+          "key": "底部",
+          "value": "单折缝合、双折缝合、定制饰面"
+        },
+        {
+          "key": "印刷",
+          "value": "平版、柔版、层压印刷"
+        },
+        {
+          "key": "附加组件",
+          "value": "角撑板、衬里、穿孔、手柄（如果需要）"
+        },
+        {
+          "key": "包装",
+          "value": "捆包、捆扎、托盘、纸箱、出口包装"
+        }
+      ],
+      "benefits": "敞口 PP 袋因其简单、适应性强且处理成本效益高而受到青睐。对于需要坚固的编织袋的买家来说，它们是理想的选择，这种编织袋可以在填充后通过缝合、密封、折叠或捆绑来封闭。",
+      "details": "这些袋子可以作为平纹编织 PP 袋、柔版印刷袋或印刷层压编织 PP 袋提供。买家可以选择尺寸、面料、容量、角撑板、内衬、印刷、缝合、切割和包装。",
+      "speciality": "敞口袋的特点是能够适应不同产品和填充方法的灵活性。",
+      "mfg": "该过程包括织物编织、可选印刷或层压、切割、底部缝合、检验和包装。",
+      "material": "PP 机织物、印刷油墨、缝合线、可选层压、可选衬里以及买方特定的颜色/添加剂要求。"
+    },
+    "stitched": {
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "安全的顶部和底部缝合、定制织物强度、可选衬里、柔印或层压印刷、定制包装。"
+        },
+        {
+          "title": "好处",
+          "body": "更好的封闭安全性、实用的操作、良好的堆垛性能以及对许多干散装产品的适用性。"
+        },
+        {
+          "title": "细节",
+          "body": "买家可以指定缝合类型、线类型、折叠样式、尺寸、容量、印刷、衬里、角撑板和包装。"
+        }
+      ],
+      "short": "安全缝合 PP 袋，用于农业和工业产品的运输、储存和出口包装。",
+      "intro": "顶部和底部缝合袋专为在储存和运输过程中需要安全闭合和可靠处理的买家而设计。 VIVIDPOLY 出口用于农业、食品、化肥、动物饲料、化学品、矿物和工业包装的缝合 PP 袋。",
+      "cta": "探索缝制包",
+      "name": "顶部和底部缝合袋",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "5公斤至75公斤"
+        },
+        {
+          "key": "拼接",
+          "value": "单折、双折、单线、双线、上下缝合"
+        },
+        {
+          "key": "印刷",
+          "value": "平版、柔版、印刷层压"
+        },
+        {
+          "key": "衬垫",
+          "value": "可选松散或缝合内衬"
+        },
+        {
+          "key": "包装",
+          "value": "捆包、捆扎、托盘、压缩出口包装"
+        }
+      ],
+      "details": "买家可以指定缝合类型、线类型、折叠样式、尺寸、容量、印刷、衬里、角撑板和包装。",
+      "benefits": "更好的封闭安全性、实用的操作、良好的堆垛性能以及对许多干散装产品的适用性。",
+      "mfg": "制造过程包括编织、可选印刷/层压、切割、顶部和底部缝合、检验和包装。",
+      "speciality": "这种包类型的特点是可靠的缝合闭合。",
+      "material": "材料组合包括PP编织布、缝合线、可选层压、可选衬里和印刷油墨。"
+    },
+    "d-cut": {
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "D 形切割手柄、定制尺寸、柔印或层压印刷、可选角撑板、适合零售的表面处理。"
+        },
+        {
+          "title": "好处",
+          "body": "携带方便，编织结构坚固，品牌知名度高，具有实用的促销价值。"
+        },
+        {
+          "title": "细节",
+          "body": "适用于轻型到中型携带应用、零售商品、贸易展览和促销活动。"
+        }
+      ],
+      "intro": "D 型切割 PP 编织袋包含一体式手柄切割，使袋子更易于携带。 VIVIDPOLY 出口 D 形切割袋，以满足零售、购物、促销、展览和可重复使用式包装要求。",
+      "benefits": "携带方便，编织结构坚固，品牌知名度高，具有实用的促销价值。",
+      "short": "手提式 PP 编织袋，带有一体式手柄切割，适用于零售、促销和可重复使用式包装。",
+      "spec": [
+        {
+          "key": "处理",
+          "value": "D 型切割或加固 D 型切割手柄"
+        },
+        {
+          "key": "材料",
+          "value": "PP编织或层压PP材料"
+        },
+        {
+          "key": "印刷",
+          "value": "定制印刷"
+        },
+        {
+          "key": "拼接",
+          "value": "侧面/底部缝合"
+        },
+        {
+          "key": "包装",
+          "value": "纸箱或捆扎包装"
+        }
+      ],
+      "cta": "探索 D 型剪裁包袋",
+      "name": "D型切PP编织袋",
+      "details": "适用于轻型到中型携带应用、零售商品、贸易展览和促销活动。",
+      "mfg": "编织、印刷或层压、切割、D 形切割手柄成型、缝合、检验、包装。",
+      "speciality": "将携带便利性与编织强度和品牌展示相结合。",
+      "material": "PP编织布、层压薄膜（如果需要）、印刷油墨、缝合线、手柄加固（如果需要）。"
+    },
+    "valve": {
+      "name": "自封袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "阀门灌装设计，可选内衬、打孔、层压印刷、块底兼容。"
+        },
+        {
+          "title": "好处",
+          "body": "更快的受控灌装，更清洁的包装形式，适用于粉末和颗粒产品。"
+        },
+        {
+          "title": "细节",
+          "body": "应根据产品和灌装系统选择阀门尺寸、阀门类型、穿孔、衬里、容量和结构。"
+        }
+      ],
+      "short": "用于水泥类产品、化学品、矿物、粉末和建筑材料的阀门填充 PP 袋。",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "一般为20公斤至75公斤"
+        },
+        {
+          "key": "阀门",
+          "value": "简单或扩展阀门"
+        },
+        {
+          "key": "建造",
+          "value": "标准或块底结构"
+        },
+        {
+          "key": "附加组件",
+          "value": "可选衬里和穿孔"
+        }
+      ],
+      "intro": "自封袋专为需要通过阀门开口填充的产品而开发。 VIVIDPOLY 出口用于水泥类产品、化学品、矿物、粉末、建筑材料和工业产品的阀袋。",
+      "benefits": "更快的受控灌装，更清洁的包装形式，适用于粉末和颗粒产品。",
+      "cta": "探索自封袋",
+      "details": "应根据产品和灌装系统选择阀门尺寸、阀门类型、穿孔、衬里、容量和结构。",
+      "speciality": "适用于工业灌装和出口配送。",
+      "mfg": "织物准备、印刷/层压、切割、阀门形成、穿孔（如果需要）、检查、包装。",
+      "material": "PP编织布、阀门材料、内衬、层压层、缝合线、印刷油墨。"
+    },
+    "carry": {
+      "name": "手提袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "D 形切割、环形、缝合、打孔、侧面或顶部手柄选项；印刷或层压饰面；可选角撑板。"
+        },
+        {
+          "title": "好处",
+          "body": "提高品牌知名度并提供实用承载力。"
+        },
+        {
+          "title": "细节",
+          "body": "买家可以定制袋子尺寸、手柄样式、印刷设计、层压、角撑板、缝合和包装。"
+        }
+      ],
+      "cta": "探索手提包",
+      "spec": [
+        {
+          "key": "材料",
+          "value": "PP编织或层压PP材料"
+        },
+        {
+          "key": "印刷",
+          "value": "柔印或层压印刷"
+        },
+        {
+          "key": "角撑板",
+          "value": "侧面/底部角撑板"
+        },
+        {
+          "key": "包装",
+          "value": "纸箱/捆/捆包装"
+        }
+      ],
+      "short": "适用于零售、贸易和促销应用的坚固且可贴品牌的编织手提袋。",
+      "intro": "采用PP编织材料制成的手提袋适合需要坚固、有品牌、实用的手提袋的买家。 VIVIDPOLY 出口用于零售、贸易、购物、活动和促销包装的手提袋。",
+      "details": "买家可以定制袋子尺寸、手柄样式、印刷设计、层压、角撑板、缝合和包装。",
+      "benefits": "提高品牌知名度并提供实用承载力。",
+      "speciality": "具有品牌传播力的强大携带包装。",
+      "mfg": "编织、印刷/层压、切割、手柄制作或连接、缝合、检查、包装。",
+      "material": "PP编织布、层压薄膜、印刷油墨、缝合线、手柄材料（如果需要）。"
+    },
+    "laminated": {
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "印刷层压表面、编织 PP 底座、层选项、角撑板、衬里、窗口、穿孔、手柄。"
+        },
+        {
+          "title": "好处",
+          "body": "改进的品牌、更好的货架吸引力、产品标识和坚固的包装结构。"
+        },
+        {
+          "title": "细节",
+          "body": "根据结构和产品密度，适合 5 公斤至 75 公斤。"
+        }
+      ],
+      "name": "印刷和层压编织 PP 袋",
+      "cta": "探索层压 PP 袋",
+      "short": "适用于大米、面粉、饲料、宠物食品、化肥、种子和零售商品的优质印刷包装。",
+      "benefits": "改进的品牌、更好的货架吸引力、产品标识和坚固的包装结构。",
+      "spec": [
+        {
+          "key": "根据",
+          "value": "编织PP+印刷层压层"
+        },
+        {
+          "key": "衬垫",
+          "value": "可选衬板"
+        },
+        {
+          "key": "结束",
+          "value": "光泽/哑光风格饰面（如果有）"
+        },
+        {
+          "key": "风俗",
+          "value": "定制尺寸和艺术品"
+        }
+      ],
+      "intro": "印刷和层压编织 PP 袋将编织强度与有吸引力的品牌展示相结合。 VIVIDPOLY 为需要优质印刷包装的买家出口这些袋子，用于食品、化肥、饲料、宠物食品、种子、盐、糖和零售产品。",
+      "details": "根据结构和产品密度，适合 5 公斤至 75 公斤。",
+      "speciality": "具有品牌特色外观的优质出口包装。",
+      "mfg": "织物编织、艺术品准备、印刷、层压、切割、缝合/转换、检验、包装。",
+      "material": "PP编织布、印刷薄膜或印刷层、层压层、缝合线、可选衬里/窗口、印刷油墨。"
+    },
+    "pinch-bottom": {
+      "name": "夹底袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "捏底结构、印刷层压表面、可选的易开功能、窗口、角撑板、衬里。"
+        },
+        {
+          "title": "好处",
+          "body": "优质的外观、井然有序的填充形状、更强的货架展示、更好的品牌传播。"
+        },
+        {
+          "title": "细节",
+          "body": "最适合零售产品和品牌商品包装。"
+        }
+      ],
+      "cta": "探索夹底袋",
+      "benefits": "优质的外观、井然有序的填充形状、更强的货架展示、更好的品牌传播。",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "通常为 5 公斤至 50 公斤，根据设计审查可更高"
+        },
+        {
+          "key": "建造",
+          "value": "印花层压编织PP"
+        },
+        {
+          "key": "附加组件",
+          "value": "可选窗/内衬/角撑板"
+        }
+      ],
+      "short": "优质印刷层压 PP 袋，具有干净的闭合外观，适合零售包装。",
+      "details": "最适合零售产品和品牌商品包装。",
+      "speciality": "品牌出口包装的优质封口展示。",
+      "intro": "印刷和层压编织 PP 夹底袋专为优质包装而设计，其中干净的闭合呈现和品牌外观非常重要。 VIVIDPOLY 出口用于谷物、宠物食品、动物饲料、种子和零售产品的夹底袋。",
+      "mfg": "织物准备、印刷/层压、切割、捏底形成、可选窗口/穿孔、检验、包装。",
+      "material": "PP编织布、印刷层压膜、层压层、衬垫、窗膜、印刷油墨。"
+    },
+    "block-bottom": {
+      "name": "方底袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "块状底部结构，印刷层压饰面，开口或阀门顶部，衬里，穿孔。"
+        },
+        {
+          "title": "好处",
+          "body": "更好的站立形状、改进的托盘展示、强大的品牌表面以及更容易的操作。"
+        },
+        {
+          "title": "细节",
+          "body": "适用于注重视觉呈现和堆叠性能的产品。"
+        }
+      ],
+      "cta": "探索方底袋",
+      "short": "形状稳定的印刷层压 PP 袋，可更好地堆叠、展示和出口展示。",
+      "intro": "印刷和层压编织 PP 方底袋提供更稳定的填充形状和改善的堆叠外观。 VIVIDPOLY 出口用于化肥、宠物食品、动物饲料、谷物、矿物、化学品和零售包装的方底袋。",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "5 公斤至 75 公斤，具体取决于结构"
+        },
+        {
+          "key": "格式",
+          "value": "块底格式"
+        },
+        {
+          "key": "顶部",
+          "value": "可选阀门"
+        },
+        {
+          "key": "附加组件",
+          "value": "衬纸、穿孔、层压印刷"
+        }
+      ],
+      "benefits": "更好的站立形状、改进的托盘展示、强大的品牌表面以及更容易的操作。",
+      "speciality": "具有稳定的填充袋形状，适合出口。",
+      "details": "适用于注重视觉呈现和堆叠性能的产品。",
+      "mfg": "面料生产、印刷/层压、切割、块底成型、顶部/阀门整理、检验、包装。",
+      "material": "PP编织布、复合膜、印刷油墨、衬垫、阀门材料、成型/缝合材料。"
+    },
+    "gusset": {
+      "name": "方底插角袋",
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "带角撑板的块底部、印刷层压外部、定制角撑板深度、窗口、衬里、穿孔。"
+        },
+        {
+          "title": "好处",
+          "body": "更高的可用体积、更强的填充形状、改善的品牌区域和更好的视觉呈现。"
+        },
+        {
+          "title": "细节",
+          "body": "当买家需要具有额外容量和稳定形状的优质印刷袋时非常有用。"
+        }
+      ],
+      "intro": "印刷和层压编织 PP 块底角撑袋将稳定的块底结构与角撑支撑的体积结合在一起。 VIVIDPOLY 出口这些袋子用于动物饲料、宠物食品、肥料、谷物、种子和大批量零售或工业产品。",
+      "short": "大容量印刷层压 PP 袋，带有角板支撑和强大的品牌区域。",
+      "cta": "探索角撑袋",
+      "spec": [
+        {
+          "key": "容量",
+          "value": "5 公斤至 75 公斤（按产品密度和设计而定）"
+        },
+        {
+          "key": "角撑板",
+          "value": "侧面/底部/块状底部角撑板"
+        },
+        {
+          "key": "附加组件",
+          "value": "可选阀门、衬里、窗口"
+        }
+      ],
+      "benefits": "更高的可用体积、更强的填充形状、改善的品牌区域和更好的视觉呈现。",
+      "details": "当买家需要具有额外容量和稳定形状的优质印刷袋时非常有用。",
+      "speciality": "结合了体积、展示和出口包装的实用性。",
+      "mfg": "编织、印刷/层压、切割、角撑板形成、块底形成、功能添加、检查、包装。",
+      "material": "PP编织布、印刷层压薄膜、衬里、窗膜、角撑板结构、印刷油墨、缝合/成型材料。"
+    },
+    "shopping": {
+      "group": "编织袋",
+      "features": [
+        {
+          "title": "特征",
+          "body": "可重复使用的编织结构、定制手柄、柔版或层压印刷、角撑板、适合零售的饰面。"
+        },
+        {
+          "title": "好处",
+          "body": "实用承载力、品牌推广、专业零售展示、重复曝光度。"
+        },
+        {
+          "title": "细节",
+          "body": "适用于零售商、超市、展览、企业促销和购物活动。"
+        }
+      ],
+      "benefits": "实用承载力、品牌推广、专业零售展示、重复曝光度。",
+      "short": "用于零售连锁店、超市、展览和促销活动的编织购物袋。",
+      "spec": [
+        {
+          "key": "尺寸",
+          "value": "定制尺寸"
+        },
+        {
+          "key": "手柄",
+          "value": "D 形切割/环形/缝合/冲孔手柄"
+        },
+        {
+          "key": "角撑板",
+          "value": "侧面或底部角撑板"
+        },
+        {
+          "key": "包装",
+          "value": "纸箱/捆/捆包装"
+        }
+      ],
+      "cta": "探索购物袋",
+      "name": "购物袋（编织袋）",
+      "intro": "编织购物袋是用于零售、超市、活动、贸易展览和促销包装的 PP 编织手提袋。 VIVIDPOLY 为需要坚固、可重复使用和可品牌携带包装的买家出口编织购物袋。",
+      "details": "适用于零售商、超市、展览、企业促销和购物活动。",
+      "speciality": "为零售和促销出口买家定制品牌展示。",
+      "mfg": "织物准备、印刷/层压、切割、手柄成型/连接、缝合、检验、包装。",
+      "material": "PP编织布、层压印刷膜、缝合线、手柄材料、印刷油墨。"
+    },
+    "fabric": {
+      "name": "丙纶机织布",
+      "group": "织物",
+      "intro": "用于工业、农业和加工用途的 PP 机织织物卷和切割长度。",
+      "short": "用于工业、农业和加工用途的 PP 机织织物卷和切割长度。",
+      "cta": "探索丙纶机织布",
+      "features": [
+        {
+          "body": "为国际买家提供定制尺寸和包装选项。",
+          "title": "出口准备就绪"
+        },
+        {
+          "body": "宽度、GSM、颜色以及卷绕或切割长度均可按计划订购。",
+          "title": "定制规格"
+        },
+        {
+          "title": "品质聚焦",
+          "body": "工业和农业用途的一致编织和整理。"
+        }
+      ],
+      "benefits": "用于工业、农业和加工用途的 PP 机织织物卷和切割长度。",
+      "spec": [
+        {
+          "key": "格式",
+          "value": "定制询价"
+        },
+        {
+          "key": "材料",
+          "value": "丙纶编织"
+        },
+        {
+          "key": "包装",
+          "value": "出口包装"
+        }
+      ],
+      "details": "分享您所需的宽度、GSM、颜色、数量和目的地以获取报价。",
+      "speciality": "VIVIDPOLY 为全球买家提供的 PP 机织物。",
+      "material": "PP 编织材料和买家特定的添加剂（如果需要）。",
+      "mfg": "编织、整理、检验和出口包装。"
+    },
+    "weed-barrier": {
+      "name": "杂草屏障",
+      "group": "杂草屏障",
+      "features": [
+        {
+          "title": "出口准备就绪",
+          "body": "为国际买家提供定制尺寸和包装选项。"
+        },
+        {
+          "title": "定制规格",
+          "body": "宽度、GSM、颜色以及卷绕或切割长度均可按计划订购。"
+        },
+        {
+          "title": "品质聚焦",
+          "body": "工业和农业用途的一致编织和整理。"
+        }
+      ],
+      "details": "分享您所需的宽度、GSM、颜色、数量和目的地以获取报价。",
+      "spec": [
+        {
+          "key": "格式",
+          "value": "定制询价"
+        },
+        {
+          "key": "材料",
+          "value": "丙纶编织"
+        },
+        {
+          "key": "包装",
+          "value": "出口包装"
+        }
+      ],
+      "intro": "PP 机织杂草屏障织物，适用于景观美化、农业和地被应用。",
+      "material": "PP 编织材料和买家特定的添加剂（如果需要）。",
+      "short": "PP 机织杂草屏障织物，适用于景观美化、农业和地被应用。",
+      "cta": "探索杂草屏障",
+      "mfg": "编织、整理、检验和出口包装。",
+      "benefits": "PP 机织杂草屏障织物，适用于景观美化、农业和地被应用。",
+      "speciality": "VIVIDPOLY 为全球买家提供的杂草屏障。"
+    }
+  },
+  "markets": [
+    "美国",
+    "加拿大",
+    "澳大利亚",
+    "欧洲",
+    "英国",
+    "非洲",
+    "泰国",
+    "沙特阿拉伯",
+    "拉美",
+    "新西兰"
+  ],
+  "packedProductOptions": [
+    "米",
+    "肥料",
+    "动物饲料",
+    "水泥",
+    "零售商品"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5公斤",
+      "10公斤",
+      "15公斤",
+      "20公斤",
+      "25公斤",
+      "30公斤",
+      "40公斤",
+      "50公斤",
+      "60公斤",
+      "75公斤",
+      "风俗"
+    ],
+    "printing": [
+      "清楚的",
+      "柔印",
+      "印刷层压",
+      "多色的"
+    ],
+    "addons": [
+      "衬垫",
+      "角撑板",
+      "处理",
+      "窗户",
+      "穿孔",
+      "阀门",
+      "捏",
+      "块底"
+    ],
+    "packing": [
+      "包",
+      "纸盒",
+      "托盘",
+      "出口包装"
+    ]
+  }
+}

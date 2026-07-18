@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Zaɓi harshe",
+    "career": "Sana'a"
+  },
+  "nav": {
+    "home": "Gida",
+    "products": "Kaya",
+    "about": "Game da mu",
+    "industryServed": "Masana'antun da muke bautar",
+    "resources": "Labarai da Sabuntawa",
+    "career": "Aiki",
+    "contact": "Tuntuɓe mu",
+    "byIndustryUse": "Ta Masana'antu / Amfani",
+    "buyerResourcesEyebrow": "Labarai da sabuntawa",
+    "byProductType": "Ta Nau'in Samfur",
+    "buyerResourcesLead": "Jagorar mai siye, FAQs, da sabbin abubuwa daga VVIDPOLY.",
+    "blogTitle": "Blog",
+    "viewAllByType": "Duba duk samfuran ta nau'in",
+    "themeLight": "Canja zuwa yanayin haske",
+    "themeDark": "Canja zuwa yanayin duhu",
+    "getQuoteShort": "Samu zance",
+    "viewAllByIndustry": "Duba duk samfuran masana'antu",
+    "faqsTitle": "FAQs",
+    "blogDesc": "Jagorar mai siye akan nau'ikan jakar PP, girman girman, da tambayoyin fitarwa.",
+    "faqsDesc": "Amsoshi akan iya aiki, bugu, layi, da cikakkun bayanai.",
+    "mainNav": "Babban kewayawa",
+    "closeMenu": "Rufe menu",
+    "openMenu": "Buɗe menu",
+    "logoHome": "VVIDPOLY, je zuwa shafin gida",
+    "mobileByIndustry": "Ta masana'antu / amfani",
+    "mobileByProductType": "Ta nau'in samfur",
+    "productsMenu": "Menu na samfur",
+    "mobileNav": "Kewayawa ta hannu",
+    "industryMenu": "Menu Sabis na Masana'antu",
+    "resourcesMenu": "Menu na Labarai da Sabuntawa"
+  },
+  "fab": {
+    "label": "Tambaya",
+    "mobileLabel": "Tambaya",
+    "ariaLabel": "Bude form na tambaya"
+  },
+  "common": {
+    "getQuote": "Nemi farashi",
+    "submitEnquiry": "Aika tambaya",
+    "viewAll": "Duba duka",
+    "backToHome": "Koma gida",
+    "next": "Na gaba",
+    "back": "Baya",
+    "select": "Zaɓi",
+    "selectBagType": "Zaɓi nau'in jaka",
+    "selectCountry": "Zaɓi ƙasa",
+    "previous": "A baya",
+    "selectEnquiryType": "Zaɓi nau'in tambaya",
+    "optional": "na zaɓi",
+    "viewDetails": "Duba cikakkun bayanai",
+    "custom": "Custom",
+    "filters": "Tace",
+    "recommended": "Nasiha",
+    "relatedProducts": "Samfura masu alaƙa",
+    "specification": "Ƙayyadaddun bayanai",
+    "of": "na",
+    "productsCount": "0 samfur",
+    "none": "Babu",
+    "clearAllFilters": "Share duk tacewa",
+    "clearFilters": "Share masu tacewa",
+    "chatExportTeam": "Yi Taɗi tare da Tawagar fitarwa",
+    "filtered": "(tace)",
+    "close": "Kusa",
+    "noProductsMatch": "Babu samfuran da suka dace da matatun ku."
+  },
+  "siteCopy": {
+    "heroHeadline": "Jakunkuna na PP don masu saye a duniya",
+    "heroLead": "Jakunkuna na PP, jakunkuna saƙaƙƙu, jakunkuna masu bawul, da kayan tattarawa na fitarwa na musamman daga Indiya, an yi su don masu shigo da kaya, masu rarrabawa, da masu saye na masana'antu a duniya.",
+    "heroIsoLabel": "An tabbatar da ISO",
+    "heroIecLabel": "An tabbatar da IEC",
+    "heroCtaSecondary": "Duba nau'ikan kaya",
+    "heroHeadlineLine1": "PP Bags don",
+    "heroHeadlineLine2": "Masu Siyan Duniya",
+    "searchPlaceholder": "Nau'in buhun bincike, samfur, ko masana'antu (misali buhunan shinkafa, buhunan siminti)",
+    "heroHeadlinePrefix": "PP Bags don",
+    "heroCtaSecondaryShort": "Kayayyaki",
+    "heroHeadlineAccent": "Masu Siyan Duniya",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaWhatsApp": "WhatsApp",
+    "headerQuoteLabel": "Magana",
+    "heroLeadShort": "Fitar da fakitin da aka gina don masu siye na duniya.",
+    "brandTagline": "Maganganun Marufi masu inganci",
+    "heroIsoLabelShort": "ISO",
+    "heroRail": "INDIA · FITOWA TA DUNIYA",
+    "heroCtaEnquiry": "Tambaya",
+    "introEyebrow": "Abin da muke fitarwa",
+    "introHighlights": [
+      {
+        "label": "Iyawa",
+        "value": "5 zuwa 75 kg"
+      },
+      {
+        "label": "Asalin",
+        "value": "Indiya fitarwa"
+      },
+      {
+        "value": "Buga na al'ada & tattara kaya",
+        "label": "Mayar da hankali"
+      }
+    ],
+    "heroIecLabelShort": "IEC",
+    "introTitle": "Jakunkuna PP don masu siye na duniya",
+    "intro2": "Daga fakitin dillali na kilogiram 5 zuwa jakunkuna masu nauyi na kilogiram 75, VIDPOLY yana taimaka wa masu siye su zaɓi ginin jakar da ta dace, hanyar bugu, layi, rike, gusset, dinki, salon yanke, da tsarin tattara kayayyaki na fitarwa bisa ga amfani da samfur da kasuwar makoma.",
+    "intro1": "VIVIDPOLY tana fitar da Jakunkuna na PP, Jakunkuna na PP ɗin da aka saka, buhunan buhunan PP ɗin da aka saka da kuma lanƙwasa, jakunkuna na ƙasa, toshe jakunkuna na ƙasa, jakunkunan gusset, bawul ɗin bawul, jakunkuna, jakunkuna masu yanke D, da saƙan saƙa daga Indiya zuwa kasuwannin duniya. An tsara hanyoyin tattara kayan mu don masu shigo da kaya, masu rarrabawa, masu sarrafa hatsin abinci, kamfanonin taki, samfuran ciyar da dabbobi, masu sinadarai, kasuwancin kayan gini, sarƙoƙi, da masu siyar da kayan talla.",
+    "marketsStrip": "Kasuwannin Fitarwa na Farko: Amurka/Amurka, Kanada, Ostiraliya, Turai, Burtaniya, Afirka, Thailand, Saudi Arabia, Latin Amurka, New Zealand, da sauran kasuwannin shigo da kayayyaki na duniya.",
+    "homeAboutTitle": "Abokin Haɗin Kai na Duniya",
+    "homeAboutCtaType": "Siyayya ta Nau'in Samfur",
+    "homeAboutCtaIndustry": "Siyayya ta Masana'antu",
+    "homeAboutEyebrow": "Game da mu",
+    "homeProductsEyebrow": "Kayayyakin mu",
+    "homeProductsTitle": "Abin da Muka Bayar",
+    "homeValueProps": [
+      {
+        "title": "Ƙimar da za a iya daidaitawa",
+        "description": "Ƙarfin ƙarfi, gini, bugu, da tattarawa waɗanda aka keɓance da samfurin ku da kasuwar inda za ku."
+      },
+      {
+        "description": "Yi bitar ingancin jakar, girman, da ƙarewa kafin tabbatar da cikakken adadin fitarwa.",
+        "title": "Samfurin Kafin Babban Oda"
+      },
+      {
+        "title": "Fitar da Fitarwa Ya Haɗa",
+        "description": "Bale, pallet, da kwali an shirya shirya jigilar kaya na duniya lafiya."
+      }
+    ],
+    "homeBrowseHeading": "Bincika jakar PP ta nau'i",
+    "homeValuePropsEyebrow": "Me yasa masu siye ke zaɓar VVIDPOLY",
+    "homeProductsLead": "Bugawa da kuma lanƙwasa jakunkuna na PP, jakunkuna bawul, buɗaɗɗen jakunkuna, da fakitin fitarwa na al'ada daga Indiya don aikin gona, masana'antu, da masu siye a duk duniya.",
+    "buyerRequirementLabel": "Bukatun mai siye",
+    "buyerResponseLabel": "Martanin VIIDPOLY",
+    "productUsesLearnMore": "Aika tambaya",
+    "trustMessage": "VVIDPOLY an gina shi don masu siyan shigo da kayayyaki na duniya waɗanda ke buƙatar sadarwar ƙwararru, bayyanannun ƙayyadaddun samfur, zaɓuɓɓukan marufi na al'ada, da tallafin fitarwa daga Indiya. An tsara abun cikin jakar mu na PP don taimakawa masu siye su kwatanta nau'ikan jaka, fahimtar amfanin samfur, bitar fasalulluka, da ƙaddamar da cikakkun buƙatun zance.",
+    "productUsesIntro": "Jakunkuna VVIDPOLY PP sun dace da nau'ikan nau'ikan samfura da yawa. Ya kamata a zaɓi jakar da ta dace dangane da nauyin samfur, yawa, tsarin cikawa, jin daɗin ɗanshi, buƙatun alamar alama, yanayin kulawa, da daidaitattun tattara kaya na fitarwa.",
+    "finalCtaBody": "Raba nau'in jakar ku, iya aiki, buƙatun bugu, yawa, da kuma inda za ku. VVIDPOLY zai sake nazarin binciken ku kuma ya biyo baya tare da zaɓuɓɓuka masu amfani.",
+    "finalCtaButton": "Aika tambaya",
+    "faqSectionTitle": "Tambayoyin da ake yawan yi",
+    "buyerSectionTitle": "Kunshin fitarwa, Gina don Masu Siyayya na Duniya",
+    "catalogueUseSub": "Jakunkuna VVIDPOLY PP sun dace da nau'ikan nau'ikan samfura da yawa. Ya kamata a zaɓi jakar da ta dace dangane da nauyin samfur, yawa, tsarin cikawa, jin daɗin ɗanshi, buƙatun alamar alama, yanayin kulawa, da daidaitattun tattara kaya na fitarwa.",
+    "productUsesEmptyHint": "Tsayawa ko zaɓi amfanin samfur don ganin nau'ikan jaka da aka ba da shawarar.",
+    "finalCtaTitle": "Shirya don tattaunawa game da buƙatun ku?",
+    "recommendedBagsCol": "Nau'in Jakar da aka Shawarta",
+    "productUseCol": "Amfanin Samfur",
+    "shopByUseLabel": "ina shiryawa…",
+    "quoteIntro1": "Da fatan za a raba buƙatun jakar PP ɗin ku don ƙungiyar fitarwa ta VVIDPOLY za ta iya ba da shawarar nau'in samfur daidai, gini, girma, iya aiki, bugu, fasalulluka na ƙara, da tsarin tattara kaya na fitarwa.",
+    "catalogueTypeSub": "VVIDPOLY tana fitar da jakunkuna PP daga Indiya don kasuwancin da ke buƙatar ƙarfi, mai daidaitawa, da shirya kayan fitarwa. Ana iya haɓaka jakunkuna na PP ɗinmu don 5 kg zuwa 75 kg ƙarfin gwargwadon samfuran samfuran, girman jaka, gini, ƙarfin masana'anta, lamination, layi, dinki, gusset, da buƙatun cikawa.",
+    "catalogueGuideProductType": "Zabi daga nan",
+    "quotePageEyebrow": "Tambayar fitarwa",
+    "catalogueGuideUseSort": "Tsara ta masana'antu a nan",
+    "contactIntro": "Yi amfani da wannan shafin don aika binciken samfur ko tambaya gabaɗaya. Zaɓi nau'in jakar da kuke sha'awar, ko zaɓi Gabaɗaya Tambaya idan har yanzu kuna neman zaɓuɓɓuka.",
+    "quoteContactStepLead": "Raba yadda za mu iya samun ku. Muna yin rijistar tambayar ku nan take kuma mu bi ta WhatsApp.",
+    "quotePageTitle": "Raba buƙatun jakar ku",
+    "quoteIntro2": "Amsa ƴan tambayoyi lokaci guda. Za mu jagorance ku ta nau'in jaka, girman, bugu, da bayanan jigilar kaya.",
+    "quoteContactSubmitLabel": "Yi rijistar tambayata",
+    "quoteContactStepTitle": "Bayanan tuntuɓar ku",
+    "quoteLeadCapturedTitle": "An yi rajistar bincike",
+    "quoteLeadCapturedLead": "Wani ƙwararren ƙwararren masarufi na VVIDPOLY zai same ku ta WhatsApp nan ba da jimawa ba, yawanci cikin sa'o'i kaɗan.",
+    "quoteLeadCapturedOptionalBody": "Idan kuna da minti ɗaya, ƙara ƙayyadaddun jakar ku a yanzu. Yana taimaka mana bayar da shawarar nau'in jakar PP daidai, girman, da bugu kafin mu kira, don haka tattaunawar ku ta farko ta riga da amfani.",
+    "quoteLeadOnlySuccessBody": "Za mu same ku a WhatsApp nan ba da jimawa ba. Kuna iya raba bayanan jaka lokacin da muka tuntube ku, ko dawo kowane lokaci don kammala bayanin ku.",
+    "quoteLeadCapturedOptionalTitle": "Kuna son magana mai sauri, mafi inganci?",
+    "quoteLeadCapturedSkipCta": "Na gama yanzu",
+    "quoteLeadCapturedContinueCta": "Ƙara ƙayyadaddun jaka",
+    "quoteSubmitNote": "Lokacin da kuke farin ciki da cikakkun bayanai a sama, ƙaddamar. Tawagar mu na fitarwa za ta sake duba komai kuma za ta bi ta WhatsApp.",
+    "samplePaymentTitle": "Bayanan canja wurin banki",
+    "samplePaymentConfirmCta": "Tabbatar da canja wurin banki",
+    "sampleSuccessTitle": "Samfurin odar da aka karɓa",
+    "sampleBillTitle": "Samfurin oda lissafin",
+    "sampleBillIntro": "Yi nazarin ƙayyadaddun samfurin da cajin da ke ƙasa. Ana aika samfurori bayan tabbatar da biyan kuɗi.",
+    "samplePaymentIntro": "Canja wurin adadin samfurin ta amfani da cikakkun bayanai da ke ƙasa. Yi amfani da tunani don mu dace da biyan ku.",
+    "sampleSuccessBody": "Na gode. Za mu tabbatar da biyan kuɗin ku kuma mu tabbatar da samar da samfurin da kuma aika lokutan lokaci ta imel.",
+    "blogLeadCta": "Aika tambaya",
+    "blogLeadBody": "Aika binciken samfur ko tambaya gabaɗaya akan shafin sadarwar mu. Ƙungiyarmu za ta sake nazarin abubuwan da kuke buƙata kuma za su bi tare da jagora mai amfani.",
+    "quoteSuccessTitle": "An samu bincike",
+    "blogLeadTitle": "Kuna da tambayan marufi?",
+    "homeStats": [
+      {
+        "label": "Kasuwannin fitarwa",
+        "value": "70+"
+      },
+      {
+        "label": "Kasashe Masu Hidima",
+        "value": "9+"
+      },
+      {
+        "label": "Ƙarfin wata-wata",
+        "value": "750 MT"
+      },
+      {
+        "label": "Fitar da Daraja"
+      }
+    ],
+    "blogIntro": "An rubuta don masu siye na ƙasa da ƙasa kwatanta masu samar da jakar PP, koyo game da nau'ikan jaka, bincika ƙayyadaddun bayanai, da shirya tambayoyin fitarwa.",
+    "quoteSuccessBody": "Zamu dawo muku ta waya ko WhatsApp cikin awanni 12.",
+    "blogReadArticle": "Karanta labarin",
+    "homeCertsHeading": "Takaddun shaida",
+    "homeAboutParagraphs": [
+      "VVIDPOLY yana hidima ga masu siyan shigo da kayayyaki na duniya tare da sadarwar ƙwararru, bayyananniyar ƙayyadaddun samfur, zaɓuɓɓukan marufi na al'ada, da tallafin fitarwa na fitarwa. Ƙarfi, gini, bugu, da tattarawa an keɓance su ga samfur ɗinku da kasuwar inda za ku tafi don haka kowane oda ya dace da tsarin cika ku, buƙatun alama, da yanayin jigilar kaya.",
+      "Nemi samfurori kafin yin cikakken adadi. Bale, pallet, da kwali an shirya jigilar kaya na ƙasa da ƙasa lafiyayye a cikin gine-ginen PP ɗin saƙa guda goma, daga buɗaɗɗen baki zuwa nau'ikan lamintattun ƙira, wanda ya dace da shinkafa, taki, siminti, ciyarwa, da amfanin dillali."
+    ],
+    "buyerSectionParagraphs": [
+      "VVIDPOLY mai fitar da jakar PP ce ta Indiya wacce ke ba da masu shigo da kayayyaki na duniya waɗanda ke buƙatar sadarwar ƙwararru, bayyanannun ƙayyadaddun samfur, da ingantaccen tallafin fitarwa. Muna ba da buɗaɗɗen baki, ɗinki, D-yanke, bawul, ɗaukar hoto, laminated, tsunkule ƙasa, toshe ƙasa, gusset, da jakunkuna na siyayya daga 5 kg zuwa 75 kg, tare da zaɓuɓɓukan flexo ko laminated bugu don gabatarwar alama. Nau'in samfur, girman, iya aiki, bugu, lamination, liner, gusset, rike, da cikakkun bayanai ana ɗaukar su gaba kafin a ba da kowane zance."
+    ]
+  },
+  "footer": {
+    "company": "Kamfani",
+    "productTypes": "Nau'ikan kaya",
+    "buyerHelp": "Taimako ga mai saye",
+    "contact": "Tuntuɓa",
+    "links": {
+      "about": "Game da",
+      "contact": "Tuntube Mu",
+      "home": "Gida",
+      "productUses": "Amfanin Samfura",
+      "getQuote": "Samun Quote"
+    },
+    "aboutBlurb": "VVIDPOLY tana fitar da jakunkuna PP daga Indiya don masu siye na duniya waɗanda ke buƙatar iyawar da za a iya daidaita su, bugu, masu layi, da shirya shirye-shiryen fitarwa zuwa fitarwa.",
+    "backToTopAria": "Komawa saman shafi",
+    "backToTop": "Komawa saman"
+  },
+  "meta": {
+    "title": "VVIDPOLY: Mai Fitar da Jakunkuna na PP daga Indiya",
+    "loading": "Ana loda VVIDPOLY…",
+    "copyright": "© 2026 VIDPOLY · WWW.VIDPOLY.COM · PP Jakunkuna Mai Fito daga Indiya",
+    "description": "VVIDPOLY tana fitar da jakunkuna PP daga Indiya don masu siye na duniya."
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Gabaɗaya Tambaya"
+    },
+    {
+      "label": "Buɗe Bags - OMB"
+    },
+    {
+      "label": "Manyan Jakunkuna masu dinka da kasa - TBS"
+    },
+    {
+      "label": "D-Yanke PP Saƙa Jakunkuna - DCB"
+    },
+    {
+      "label": "Bags Bags - VB"
+    },
+    {
+      "label": "Dauke Jakunkuna - CB"
+    },
+    {
+      "label": "Buga Laminated Saƙa PP Jakunkuna - LWB"
+    },
+    {
+      "label": "Tsuntsaye Bottom Jakunkuna - PBB"
+    },
+    {
+      "label": "Toshe Bottom Bags - BBB"
+    },
+    {
+      "label": "Toshe Bottom Gusset Jakunkuna - BGB"
+    },
+    {
+      "label": "Jakunkuna na Siyayya - WSB"
+    },
+    {
+      "label": "PP Sakin Fabric"
+    },
+    {
+      "label": "Katangar ciyawa"
+    }
+  ],
+  "enquiryModal": {
+    "title": "Form na tambaya",
+    "close": "Rufe fam ɗin tambaya"
+  },
+  "emailCompose": {
+    "toLabel": "Zuwa",
+    "nameLabel": "Sunan ku",
+    "subjectLabel": "Magana",
+    "messageLabel": "Sako",
+    "title": "Imel VVIDPOLY",
+    "fromLabel": "Imel ɗin ku",
+    "send": "Aika sako",
+    "sending": "Ana aikawa…",
+    "emailInvalid": "Shigar da ingantaccen adireshin imel.",
+    "defaultSubject": "Fitar da bincike daga vividpoly.com",
+    "close": "Rufe rubutun panel",
+    "messageRequired": "Ƙara ɗan gajeren saƙo kafin aikawa.",
+    "hint": "Ana aika saƙon ku kai tsaye zuwa ƙungiyar mu na fitarwa. Za mu ba da amsa ga adireshin imel ɗin da kuka shigar a sama.",
+    "sendSuccess": "An aika sako. Tawagar mu za ta dawo muku da wuri.",
+    "sendUnavailable": "Ba a saita aika imel ba tukuna. Da fatan za a yi amfani da waya ko WhatsApp don samun mu.",
+    "sendError": "Ba mu iya aika sakon ku ba. Da fatan za a sake gwadawa ko a kira mu kai tsaye."
+  },
+  "home": {
+    "shopByIndustryDesc": "Daidaita nau'ikan jaka da shinkafa, taki, siminti, ciyarwa, da amfanin dillali.",
+    "shopByProductTypeDesc": "Gine-ginen PP guda goma da aka saka daga buɗaɗɗen baki zuwa ƙira mai ƙima.",
+    "shopByIndustry": "Siyayya ta Masana'antu",
+    "faqsEyebrow": "FAQs",
+    "shopByProductType": "Siyayya ta Nau'in Samfur",
+    "howWeHelpBuyers": "Yadda muke taimakon masu siye",
+    "swipeIndustries": "Dokewa don bincika masana'antu",
+    "valuePropsSlides": "Me yasa masu siye ke zaɓar nunin faifai VVIDPOLY",
+    "buyerNeed": "Bukatar mai siye {index}",
+    "swipeCards": "Share katunan",
+    "slideOf": "0 na 1",
+    "productTypes": "Nau'in samfur",
+    "buyerCarousel": "Bukatun mai siye carousel",
+    "buyerPagination": "Mai siye yana buƙatar pagination",
+    "productUses": "Amfanin samfur",
+    "nextProducts": "Kayayyaki na gaba",
+    "previousProducts": "Abubuwan da suka gabata",
+    "buyerRequirements": "Bukatun mai siye"
+  },
+  "catalogue": {
+    "titleByType": "Siyayya ta Nau'in Samfur",
+    "productType": "Nau'in Samfur",
+    "capacity": "Iyawa",
+    "titleByUse": "Siyayya ta Masana'antu / Amfani",
+    "sortAllProducts": "Duk samfuran",
+    "breadcrumbType": "Kayayyaki / Ta Nau'in Samfur",
+    "breadcrumbUse": "Samfura / Ta Masana'antu & Amfani"
+  },
+  "pdp": {
+    "getQuoteFor": "Samu Quote don {productName}",
+    "keyFeatures": "Mabuɗin fasali",
+    "benefits": "Amfani",
+    "whyBuyersChoose": "Me yasa masu saye ke zaɓar wannan jakar",
+    "materialCombination": "Haɗin kayan abu",
+    "speciality": "Na musamman",
+    "customization": "Cikakkun bayanai na keɓancewa",
+    "productionMaterials": "Production & kayan",
+    "manufacturingProcess": "Tsarin sarrafawa",
+    "trustBadges": [
+      "Ƙimar da za a iya daidaitawa",
+      "Samfurin Akwai Kafin Babban oda",
+      "Fitar da Fitarwa Ya Haɗa",
+      "Tawagar Export Mai Amsa"
+    ],
+    "productImage": "Hoton samfur {index}"
+  },
+  "about": {
+    "title": "Game da Mu",
+    "pageEyebrow": "GAME DA MU",
+    "ctaSecondary": "Siyayya ta Nau'in Samfur",
+    "ctaPrimary": "Aika tambaya",
+    "p1": "VVIDPOLY yana hidima ga masu siyan shigo da kayayyaki na duniya tare da sadarwar ƙwararru, bayyananniyar ƙayyadaddun samfur, zaɓuɓɓukan marufi na al'ada, da tallafin fitarwa na fitarwa. Ƙarfi, gini, bugu, da tattarawa an keɓance su ga samfur ɗinku da kasuwar inda za ku tafi don haka kowane oda ya dace da tsarin cika ku, buƙatun alama, da yanayin jigilar kaya.",
+    "p2": "Nemi samfurori kafin yin cikakken adadi. Bale, pallet, da kwali an shirya jigilar kaya na ƙasa da ƙasa lafiyayye a cikin gine-ginen PP ɗin saƙa guda goma, daga buɗaɗɗen baki zuwa nau'ikan lamintattun ƙira, wanda ya dace da shinkafa, taki, siminti, ciyarwa, da amfanin dillali.",
+    "pageTitle": "Abokin Haɗin Kai na Duniya",
+    "pillarsHeading": "Ɗaukar gadon mai siye-na farko na fitarwa",
+    "exportVisionBody": "VVIDPOLY yana nufin zama amintaccen abokin tarayya na fitarwa na Indiya don kasuwancin duniya waɗanda ke buƙatar jakunkunan PP masu ƙarfi, da za a iya daidaita su, da kuma shirye-shiryen iri. Mun fahimci cewa masu siye na ƙasashen duniya suna buƙatar fiye da kwatancen samfur na gaba ɗaya. Suna buƙatar ingantattun bayanai dalla-dalla, jagora-amfani da samfur, aikin zane-zane da tallafin bugu, zaɓuɓɓukan tattarawa da suka dace, da sadarwa mai amsawa a duk lokacin aikin bincike.",
+    "pillarsLead": "Daga ƙa'idodin ƙasa da ƙasa zuwa tallafin bincike mai amfani, VVIDPOLY an tsara shi ta yadda masu siyan marufi na duniya ke samo asali.",
+    "exportVisionHeading": "Jagora zuwa ga kyakkyawar makoma",
+    "exportVisionEyebrow": "Hangen fitarwa na mu",
+    "pillarsEyebrow": "KARFI",
+    "pillars": [
+      {
+        "body": "An tsara ƙayyadaddun ƙayyadaddun bayanai, tattarawa, da sadarwa don kasuwannin da aka nufa da kuma biyan bukatun masu siye.",
+        "title": "Muna tabbatar da matakan fitarwa na duniya"
+      },
+      {
+        "body": "Daga 5kg dillali fakitin zuwa 75kg masana'antu jakunkuna, tare da lamination, liner, gusset, bawul, da kuma bugu zažužžukan.",
+        "title": "Ƙimar da aka shirya da fitarwa zuwa fitarwa"
+      },
+      {
+        "title": "Tawagar tallafin fitarwa na sadaukarwa",
+        "body": "Jagorar amsa kan nau'in samfur, zane-zane, tsarin tattarawa, yawa, da makoma kafin fa'ida."
+      },
+      {
+        "title": "Kwarewar aiki tare da tsari bayyananne",
+        "body": "Masu siye suna samun ingantaccen jagora-amfani da samfur da cikakkiyar hanyar bincike maimakon kwafin katalogi."
+      }
+    ],
+    "pillarsBody": "Daga ƙa'idodin ƙasa da ƙasa zuwa tallafin bincike mai amfani, VVIDPOLY an tsara shi ta yadda masu siyan marufi na duniya ke samo asali. An tsara ƙayyadaddun ƙayyadaddun bayanai, tattarawa, da sadarwa don kasuwannin da aka nufa da kuma biyan bukatun masu siye. Ƙarfin yana gudana daga fakitin dillalan kilogiram 5 zuwa jakunkuna na masana'antu kilogiram 75, tare da lamination, liner, gusset, bawul, da zaɓuɓɓukan bugawa. Ƙaddamar da goyon bayan fitarwa zuwa fitarwa ya ƙunshi nau'in samfur, zane-zane, tsarin tattarawa, yawa, da makõma kafin ambato, tare da ingantaccen jagora-amfani da samfur da cikakkiyar hanyar bincike.",
+    "whyEyebrow": "HIDIMAR",
+    "whyHeading": "Goyan bayan fakitin fitarwa a mafi kyawun sa",
+    "factsEyebrow": "Bayanin kamfani",
+    "contactTeam": "Aika tambaya",
+    "requestCustomQuote": "Aika tambaya",
+    "factsHeading": "VIDIPOLY a kallo",
+    "ctaBandButton": "Aika tambaya",
+    "whyMoreLabel": "KARIN BAYANI",
+    "ctaBandBody": "Raba nau'in jakar ku, iya aiki, buƙatun bugu, yawa, da kuma inda za ku. VVIDPOLY zai sake nazarin binciken ku kuma ya biyo baya tare da zaɓuɓɓuka masu amfani.",
+    "whyBody": "Daga nau'ikan samfuri da tsara iya aiki zuwa bugu, layin layi, da tattarawar fitarwa, VVIDPOLY an tsara shi don tallafawa yanke shawara mai amfani. Masu siye za su iya samo buhunan PP daga Indiya don Amurka, Kanada, Australia, Turai, UK, Afirka, Thailand, Saudi Arabia, da sauran kasuwanni a cikin kewayon masana'antu, noma, dillalai, da nau'ikan jaka na talla. Tsare-tsaren iyawa ya ƙunshi kilogiram 5 zuwa 75, tare da ginin al'ada, bugu da goyan bayan alamar alama, jagorar amfani da samfur, da tsarin faɗin abokantaka mai siye wanda ke ɗaukar cikakkun bayanai da ake buƙata kafin zance.",
+    "whyLead": "Daga nau'ikan samfuri da tsara iya aiki zuwa bugu, layin layi, da tattarawar fitarwa, VVIDPOLY an tsara shi don tallafawa yanke shawara mai amfani.",
+    "ctaBandTitle": "Ana neman ƙwararriyar abokiyar haɗa marufi zuwa fitarwa?",
+    "whyItems": [
+      [
+        "Matsayin masu fitarwa na tushen Indiya",
+        "Masu siye za su iya samo buhunan PP daga Indiya don Amurka, Kanada, Australia, Turai, UK, Afirka, Thailand, Saudi Arabia, da sauran kasuwanni."
+      ],
+      [
+        "Mayar da hankali PP Bags kewayon samfurin",
+        "Bayar da samfurin a bayyane take kuma mai amfani, yana rufe masana'antu gama gari, aikin gona, dillali, da nau'ikan jaka na talla."
+      ],
+      [
+        "5 kg zuwa 75 kg shirin iya aiki",
+        "Masu saye za su iya tattauna kananan fakitin dillali, jakunkuna na kayayyaki masu girman gaske, da jakunkunan masana'antu masu nauyi."
+      ],
+      [
+        "Zaɓuɓɓukan gini na al'ada",
+        "Za'a iya tsara kayan yadudduka, lamination, gusset, liner, perforation, taga, rike, bawul, tsunkule kasa, da toshe zabin kasa."
+      ],
+      [
+        "Tallafin bugu da alama",
+        "Zaɓuɓɓukan PP ɗin da aka saka da bugu na Flexo suna taimakawa goyan bayan ganuwa iri da gabatarwar kasuwa."
+      ],
+      [
+        "Jagorar amfani da samfur",
+        "Masu saye za su iya zaɓar jaka ta aikace-aikace, kamar shinkafa, taki, abincin dabbobi, sinadarai, siminti, gishiri, sukari, dillali, da siyayya."
+      ],
+      [
+        "Siye-friendly quote tsari",
+        "Gidan yanar gizon yana taimaka wa masu siye su raba nau'in samfur, iya aiki, girman, bugu, ƙara-kan, tattarawa, yawa, da kuma inda ake nufi kafin zance."
+      ]
+    ],
+    "ctaBandEyebrow": "A tuntubi"
+  },
+  "contact": {
+    "title": "Tuntube Mu",
+    "reachUs": "Ku isa gare mu kai tsaye",
+    "sendRequirement": "Form na tambaya",
+    "formName": "Suna",
+    "formCompany": "Sunan kamfani",
+    "formMessage": "Sako",
+    "formEmail": "Imel",
+    "sending": "Ana aikawa…",
+    "formCountry": "Ƙasa",
+    "submitError": "Ba mu iya aika binciken ku ba. Da fatan za a sake gwadawa ko a kira mu kai tsaye.",
+    "sendRequirementLead": "Faɗa mana abin da kuke buƙata. Zaɓi nau'in samfur ko aika tambaya gabaɗaya kuma za mu amsa tare da jagora mai amfani.",
+    "emailInvalid": "Shigar da ingantaccen adireshin imel.",
+    "formPhone": "WhatsApp / waya",
+    "formEnquiryType": "Nau'in tambaya",
+    "emailLabel": "Imel",
+    "submitEnquiry": "Gabatar da tambaya",
+    "submitSuccess": "An aika bincike. Tawagar mu za ta dawo muku da wuri.",
+    "websiteLabel": "Yanar Gizo",
+    "messageRequired": "Ƙara ɗan gajeren saƙo kafin ƙaddamarwa.",
+    "phoneRequired": "Ƙara WhatsApp ko lambar waya don mu iya samun ku.",
+    "submitUnavailable": "Ba a saita binciken kan layi ba tukuna. Da fatan za a yi mana imel ko a kira mu ta amfani da cikakkun bayanai akan wannan shafin.",
+    "phoneLabel": "WhatsApp / Waya",
+    "corporateOffice": "Ofishin kamfani",
+    "companyRows": [
+      [
+        "Kamfanin / Brand"
+      ],
+      [
+        "Yanar Gizo",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "Imel"
+      ],
+      [
+        "Waya"
+      ],
+      [
+        "Adireshin kamfani",
+        "Sankalp Square, A 1601, Sindhu Bhavan Marg, kusa da Taj Hotel, opp. Wasan harbi, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, kusa da Taj Hotel, opp. Wasan harbi, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Bayanan tuntuɓar juna",
+    "submitEnquiry": "Gabatar da tambaya",
+    "stepLabel": "Mataki 0 na {total}",
+    "bagSpec": "Bayanin jaka",
+    "stepBagSpec": "Bayanin jaka",
+    "howReachYou": "Ta yaya za mu isa gare ku?",
+    "fields": {
+      "capacity": "Iyawa",
+      "product": "Samfura",
+      "size": "Girman",
+      "printing": "Bugawa",
+      "packing": "Shiryawa",
+      "quantity": "Yawan",
+      "review": "Bita",
+      "destination": "Makoma kasar",
+      "addons": "Ƙara-kan",
+      "packedProduct": "Kunshin samfur",
+      "bagType": "Nau'in jaka"
+    },
+    "registerLead": "Za mu yi rajistar tambayar ku kuma za mu bi ta WhatsApp.",
+    "savedWithName": "{name}, an adana bayanan tuntuɓar ku.",
+    "reviewLabels": {
+      "capacity": "Iyawa",
+      "printing": "Bugawa",
+      "addons": "Ƙara-kan",
+      "packing": "Shiryawa",
+      "quantity": "Yawan",
+      "productType": "Nau'in samfur",
+      "packedProduct": "Kunshin samfur",
+      "destination": "Makomawa",
+      "bagSize": "Girman jaka",
+      "empty": "-"
+    },
+    "closeForm": "Rufe fam ɗin tambaya",
+    "emailInvalid": "Shigar da ingantaccen adireshin imel.",
+    "reviewSteps": {
+      "product": "Samfura",
+      "order": "Oda",
+      "sizePrint": "Girman & bugawa"
+    },
+    "saved": "An adana bayanan tuntuɓar ku."
+  },
+  "sample": {
+    "steps": {
+      "review": "Bita",
+      "payment": "Biya",
+      "confirmed": "An tabbatar"
+    },
+    "total": "Jimlar",
+    "subtotal": "Ƙarfafawa",
+    "reference": "Magana:",
+    "yourDetails": "Bayanin ku",
+    "specification": "Ƙayyadaddun samfurin",
+    "bankTransfer": "Canja wurin banki",
+    "billRows": {
+      "productType": "Nau'in samfur",
+      "capacity": "Iyawa",
+      "printing": "Bugawa",
+      "packing": "Shiryawa",
+      "leadTime": "Lokacin jagora",
+      "total": "Jimlar",
+      "exportPacking": "Fitar da tattarawa & aikawa",
+      "unitPrice": "Farashin raka'a",
+      "sampleQuantity": "Yawan samfurin"
+    },
+    "selectBranch": "Zaɓi reshe",
+    "selectBank": "Zaɓi banki",
+    "continuePayment": "Ci gaba da Biyan Kuɗi",
+    "bankRows": {
+      "bank": "Banki",
+      "beneficiary": "Mai amfana",
+      "branch": "Reshe",
+      "amount": "Adadin",
+      "accountType": "Nau'in asusun",
+      "swift": "SWIFT",
+      "accountNumber": "Lambar akant",
+      "ifsc": "Farashin IFSC",
+      "paymentReference": "Maganar biyan kuɗi"
+    },
+    "searchBranches": "Bincika rassan",
+    "searchBanks": "Bincika bankuna",
+    "form": {
+      "name": "Suna",
+      "address": "Adireshin bayarwa",
+      "quantity": "Adadin da ake buƙata don samfurin"
+    },
+    "closePicker": "Kusa mai ɗaukar hoto",
+    "noBankMatches": "Babu ashana. Gwada wani bincike na daban."
+  },
+  "careers": {
+    "eyebrow": "Ayyuka a VividPoly",
+    "title": "An samo asali daga Indiya. Amintacce a Duniya.",
+    "applyNow": "Aiwatar Yanzu",
+    "whyHeading": "Menene dalilin da yasa VividPoly",
+    "reasons": [
+      {
+        "title": "Bayyanar Duniya",
+        "body": "Aiki daura da masu siye a cikin kasuwannin fitarwa 70+."
+      },
+      {
+        "title": "Dakin Girma",
+        "body": "Sabon alhaki yana zuwa da sauri a cikin kasuwanci mai girma."
+      },
+      {
+        "title": "Tsaron Ayyuka",
+        "body": "An goyi bayan ingantaccen aiki, kafaffen aikin fitarwa."
+      },
+      {
+        "title": "Koyo akan Aiki",
+        "body": "Hannu-kan fallasa ga masana'antu da kasuwancin duniya."
+      }
+    ],
+    "seeHowWeWork": "Dubi yadda muke aiki",
+    "whyLead": "Wuri mai amfani don gina ƙwarewa a masana'antu da kasuwancin duniya.",
+    "lead": "Muna neman mutanen da suka damu da inganci, bayyananniyar sadarwa, da isar da abin dogaro. Matsayin ofis, masana'anta, da ayyukan fitarwa a duk faɗin Ahmedabad da Vadodara.",
+    "whyBody": "Wuri mai amfani don gina ƙwarewa a masana'antu da kasuwancin duniya. Aiki yana da alaƙa da masu siye a cikin kasuwannin fitarwa na 70+, sabon alhakin yana zuwa da sauri a cikin kasuwancin haɓaka, kuma ayyukan suna goyan bayan tsayayyen aikin fitarwa da aka kafa tare da nunawa ga masana'antu da kasuwancin duniya.",
+    "positionsMoreLabel": "DUBI BUDADE",
+    "positionsEyebrow": "BUƊAUKAKA",
+    "positionsLead": "Ana buga abubuwan buɗewa na yanzu kuma ana sabunta su akan waɗannan dandamali. Bincika ayyukan kai tsaye, sannan a yi amfani da fom ɗin da ke ƙasa.",
+    "positionsHeading": "Nemo mu inda kuka riga kuka nema",
+    "positionsNote": "An fi son aikace-aikacen kai tsaye? Yi amfani da Aiwatar Yanzu a ƙasa.",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Sabunta kamfani da buɗe ayyuka don fitarwa, ayyuka, da ayyukan tattara kaya."
+      },
+      {
+        "label": "Lallai",
+        "blurb": "Bincika jerin sunayen VVIDPOLY ta matsayi, wuri, da matakin gogewa."
+      },
+      {
+        "blurb": "Buɗewa Indiya mai da hankali kan masana'antu, tallace-tallace, da ƙungiyoyin tallafi.",
+        "label": "Naukri"
+      }
+    ],
+    "ctaHeading": "Yunkurin aikinku na gaba yana farawa a nan",
+    "ctaEyebrow": "NEMAN YANZU",
+    "ctaLead": "Raba sha'awar rawar ku, gogewa, da wurin da aka fi so. Ƙungiyarmu za ta sake duba aikace-aikace yayin da buɗewa ke samuwa."
+  },
+  "blog": {
+    "fallbackReadTime": "5 min karatu",
+    "fallbackCategory": "Jagorar mai siye",
+    "pageTitle": "Jagoran siyayya & fahimta",
+    "fallbackExcerpt": "Lorem ipsum dolor zauna amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "emptyTitle": "Babu labarai tukuna",
+    "loading": "Ana loda labarai…",
+    "emptyBody": "Sabbin jagororin saye da fahimta suna kan hanya - duba nan ba da jimawa ba.",
+    "backToArticles": "Komawa ga duk labarai"
+  },
+  "search": {
+    "recentHeading": "Bincike na baya-bayan nan",
+    "suggestionsHeading": "Shawarwari",
+    "noMatches": "Babu ashana. Gwada \"shinkafa\" ko \"siminti\"",
+    "recentTerms": [
+      "buhunan shinkafa",
+      "buhunan siminti",
+      "buga laminated",
+      "25 kg bude baki"
+    ]
+  },
+  "filters": {
+    "capacityCustomNotice": "VIIDPOLY yana ba da marufi na PP tsakanin {min} kg da 1kg. Da fatan za a shigar da iya aiki a cikin wannan kewayon.",
+    "customSelectEnter": "Shigar da bayanin ku…",
+    "capacityExample": "misali 23 kg",
+    "capacityOrEnter": "Ko shigar da iya aiki",
+    "customSelectNoMatches": "Ba a sami ashana ba",
+    "capacityMax": "Matsakaicin iya aiki",
+    "capacityMin": "Mafi ƙarancin iya aiki",
+    "productUseOptions": "Zaɓuɓɓukan amfani da samfur",
+    "customSelectUseAnyway": "Yi amfani da wannan ƙimar ta wata hanya"
+  },
+  "breadcrumbs": {
+    "home": "Gida",
+    "blog": "Blog",
+    "faqs": "FAQs",
+    "about": "Game da",
+    "careers": "Sana'a",
+    "contact": "Tuntube Mu",
+    "getQuote": "Samu Quote",
+    "products": "Kayayyaki",
+    "requestExportQuote": "Nemi Bayanin Fitarwa"
+  },
+  "validation": {
+    "emailInvalid": "Shigar da ingantaccen adireshin imel."
+  },
+  "buyerRows": [
+    {
+      "response": "VVIDPOLY an sanya shi azaman mai fitarwa na tushen Indiya don masu siyan jaka na PP na duniya.",
+      "requirement": "Tushen fitar da kayayyaki daga Indiya"
+    },
+    {
+      "response": "Bude baki, dinki, D-yanke, bawul, ɗaukar hoto, laminated, tsunkule ƙasa, toshe ƙasa, gusset, da jakunkuna na siyayya.",
+      "requirement": "Samfura iri-iri"
+    },
+    {
+      "requirement": "Ƙarfin al'ada",
+      "response": "Za a iya tsara mafita na PP jakar daga 5 kg zuwa 75 kg dangane da yawan samfurin da tsarin jaka."
+    },
+    {
+      "response": "Zaɓuɓɓukan PP ɗin da aka saka da bugu na Flexo suna goyan bayan shaidar samfur da roƙon shiryayye.",
+      "requirement": "Alamar gabatarwa"
+    },
+    {
+      "requirement": "Gudun bincike na abokantaka",
+      "response": "Nau'in samfur, girman, iya aiki, bugu, lamination, liner, gusset, rike, da cikakkun bayanai za a iya kama su kafin zance."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "Indiya tushen",
+      "short": "Mai fitarwa na tushen Indiya"
+    },
+    {
+      "short": "Nau'in jaka 10",
+      "label": "Kewayon samfur"
+    },
+    {
+      "label": "Ƙarfin al'ada",
+      "short": "5 zuwa 75 kg"
+    },
+    {
+      "label": "Buga alama",
+      "short": "Buga & laminate"
+    },
+    {
+      "label": "Quote tsarin aiki",
+      "short": "Cikakken bayani-shirye-shiryen"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Hatsi & Pulses",
+      "tips": "Buga Flexo, bugu mai laushi, taga, gusset, layi, rike, shirya bale na fitarwa.",
+      "bags": "Bude jakunkuna, jakunkuna masu dinki na sama da kasa, buhunan buhunan PP da aka saka, buga jakunkuna na kasa",
+      "use": "Shinkafa, alkama, hatsi, hatsi, gari"
+    },
+    {
+      "tips": "Liner, gusset, flexo printing, laminated print, perforation, pallet packing.",
+      "bags": "Jakunkuna masu dinki, jakunkuna na PP da aka saka, toshe jakunkuna na kasa, toshe jakunkunan gusset na kasa",
+      "cardTitle": "Taki & iri",
+      "use": "Taki da tsaba"
+    },
+    {
+      "cardTitle": "Ciyar da Dabbobi & Abincin Dabbobi",
+      "use": "Abincin dabbobi da abincin dabbobi",
+      "bags": "Buga jakunkuna na PP da aka saka, toshe jakunkunan gusset na kasa, jakunkuna masu ɗaukar kaya, jakunkuna na ƙasa tsunkule",
+      "tips": "Multi-Layer yi, taga, gusset, rike, premium bugu, tilas perforation."
+    },
+    {
+      "use": "Siminti, sunadarai, ma'adanai, foda",
+      "cardTitle": "Siminti & Fadawar Masana'antu",
+      "bags": "Jakunkuna bawul, toshe jakunkuna na ƙasa, jakunkuna masu dinki na sama da ƙasa, jakunkuna masu goyan bayan layi",
+      "tips": "Gine-ginen bawul, layin layi, juzu'i, dinki mai ƙarfi, ɗaukar nauyi mai nauyi."
+    },
+    {
+      "tips": "Liner, laminated surface, flexo printing, tsaftataccen dinki, zabin goyon bayan danshi.",
+      "bags": "Bude jakunkuna, jakunkuna masu dinki, jakunkuna masu laushi, jakunkuna masu goyan bayan layi",
+      "cardTitle": "Gishiri, Sugar & Kayayyaki",
+      "use": "Gishiri, sukari, kayan masarufi"
+    },
+    {
+      "cardTitle": "Retail & Promotional",
+      "use": "Retail, shopping, gabatarwa",
+      "bags": "D-yanke jakunkuna, ɗauke da jakunkuna, saƙa na shopping jakunkuna, buga laminated sakakkun jakunkuna PP",
+      "tips": "Zaɓuɓɓukan hannu, bugu mai lanƙwasa, gusset, shirya kwali, zane-zanen alama."
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Buga Flexo, bugu mai laushi, taga, gusset, layi, rike, shirya bale na fitarwa.",
+      "title": "Shinkafa, Alkama, Hatsi da Kwayoyi",
+      "bags": "Bude jakunkuna, jakunkuna masu dinki na sama da kasa, buhunan buhunan PP da aka saka, buga jakunkuna na kasa."
+    },
+    {
+      "bags": "Buɗaɗɗen jakunkuna, buhunan PP ɗin da aka saka da buɗaɗɗe, tsuke jakunkunan ƙasa.",
+      "title": "Gari da Kayan Abinci",
+      "tips": "Liner, laminated surface, tsabta yankan, amintacce dinki, kiri-friendly zane."
+    },
+    {
+      "title": "Gishiri da Sugar",
+      "tips": "Liner, laminated surface, flexo printing, tsaftataccen dinki, zabin goyon bayan danshi.",
+      "bags": "Buɗaɗɗen jakunkuna, jakunkuna ɗinki, buhunan PP ɗin da aka saka."
+    },
+    {
+      "tips": "Liner, gusset, flexo printing, laminated print, perforation, pallet packing.",
+      "title": "Taki da iri",
+      "bags": "Jakunkuna masu dinki, jakunkuna na PP da aka saka, toshe jakunkuna na kasa, toshe jakunkunan gusset na kasa."
+    },
+    {
+      "tips": "Multi-Layer yi, taga, gusset, rike, premium bugu, tilas perforation.",
+      "title": "Ciyar da Dabbobi da Abincin Dabbobi",
+      "bags": "Buga jakunkuna na PP ɗin da aka saƙa, jakunkuna na ƙasa tsunkule, toshe jakunkuna na gusset na ƙasa, jakunkuna."
+    },
+    {
+      "tips": "Gine-ginen bawul, layin layi, juzu'i, dinki mai ƙarfi, ɗaukar nauyi mai nauyi.",
+      "bags": "Jakunkuna bawul, toshe jakunkuna na ƙasa, jakunkuna masu dinki na sama da ƙasa.",
+      "title": "Siminti da Kayayyakin Gina"
+    },
+    {
+      "title": "Sinadaran da Ma'adanai",
+      "bags": "Jakunkuna bawul, jakunkuna ɗinki, buhunan baki, jakunkuna masu goyan bayan layi.",
+      "tips": "Liner, lamination, de-air perforation, amintaccen dinki, shiryawa fitarwa."
+    },
+    {
+      "tips": "Zaɓuɓɓukan hannu, bugu mai lanƙwasa, gusset, shirya kwali, zane-zanen alama.",
+      "bags": "D-yanke jakunkuna, ɗauke da jakunkuna, saƙa na shopping jakunkuna, buga laminated sakakkun jakunkuna PP.",
+      "title": "Kasuwanci da Kayayyakin Talla"
+    },
+    {
+      "title": "Siyayya da Kunshin Salon Sake Maimaituwa",
+      "tips": "Hannun madauki, hannaye-yanke-D, gusset na gefe, gusset na kasa, bugu masu launuka iri-iri.",
+      "bags": "Jakunkuna masu saƙa, jakunkuna masu ɗaukar kaya, Jakunkuna ɗin saƙa na PP D-yanke."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Jakar Saƙa"
+    },
+    {
+      "title": "Fabric"
+    },
+    {
+      "title": "Katangar ciyawa"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Noma & Kayayyakin Abinci",
+      "items": [
+        "Shinkafa, Alkama, Hatsi da Kwayoyi",
+        "Gari da Kayan Abinci",
+        "Gishiri da Sugar"
+      ]
+    },
+    {
+      "title": "Agri-Inputs & Kula da Dabbobi",
+      "items": [
+        "Taki da iri",
+        "Ciyar da Dabbobi da Abincin Dabbobi"
+      ]
+    },
+    {
+      "title": "Masana'antu & Gina",
+      "items": [
+        "Siminti da Kayayyakin Gina",
+        "Sinadaran da Ma'adanai"
+      ]
+    },
+    {
+      "title": "Retail & Promotional",
+      "items": [
+        "Kasuwanci da Kayayyakin Talla",
+        "Siyayya da Kunshin Salon Sake Maimaituwa"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Iyawa",
+      "title": "Iyawa",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "kg 60"
+        },
+        {
+          "label": "kg 75"
+        },
+        {
+          "label": "Custom"
+        }
+      ]
+    },
+    {
+      "key": "Nau'in Samfur",
+      "title": "Nau'in Samfur",
+      "options": [
+        {
+          "label": "Bude baki"
+        },
+        {
+          "label": "dinka"
+        },
+        {
+          "label": "D-yanke"
+        },
+        {
+          "label": "Valve"
+        },
+        {
+          "label": "Dauke"
+        },
+        {
+          "label": "Laminated"
+        },
+        {
+          "label": "Tsokaci kasa"
+        },
+        {
+          "label": "Toshe kasa"
+        },
+        {
+          "label": "Toshe kasa gusset"
+        },
+        {
+          "label": "Sakin sayayya"
+        },
+        {
+          "label": "PP saƙa masana'anta"
+        },
+        {
+          "label": "Katangar ciyawa"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "a": "VIVIDPOLY yana fitar da buhunan baki, jakunkuna masu dinki na sama da kasa, jakunkuna masu dinki na D-yanke PP, bakunan bawul, jakunkuna, buhunan buhunan PP da aka saka, buhunan bugu da lankwasa na PP tsunkule na kasa, bugu da laminated PP toshe jaka na kasa, bugu da laminated saƙa PP toshe jakunkuna da jakunkuna.",
+      "q": "Wadanne nau'ikan jakunkuna na PP VIDPOLY ke fitarwa?"
+    },
+    {
+      "q": "Wane ƙarfin nauyi yana samuwa don jaka na VVIDPOLY PP?",
+      "a": "VVIDPOLY na iya tattauna buƙatun buhun PP daga 5 kg zuwa 75 kg, dangane da yawan samfur, girman jakar, ƙarfin masana'anta, gini, lamination, liner, gusset, stitching, da aikace-aikacen amfani na ƙarshe."
+    },
+    {
+      "q": "Wane bayani ake buƙata don zance?",
+      "a": "Ya kamata masu siye su samar da nau'in samfur, samfuri mai cike da kaya, iya aiki, girman jaka, yawa, buƙatun bugu, lamination, liner, gusset, rike, yankan, dinki, nau'in tattarawa, ƙasar da za ta nufa, da zane-zane ko samfurin tunani idan akwai."
+    },
+    {
+      "a": "Ee. VVIDPOLY na iya tallafawa buƙatun buhun PP buƙatun buƙatun buƙatun kamar shinkafa, gari, taki, abincin dabbobi, abincin dabbobi, tsaba, gishiri, sukari, da kayan siyarwa.",
+      "q": "Shin VVIDPOLY na iya samar da buhunan PP ɗin da aka saka da aka saka?"
+    },
+    {
+      "q": "Menene bambanci tsakanin buhunan baki da buhunan bawul?",
+      "a": "Budaddiyar buhunan buɗaɗɗiyar buɗaɗɗiyar buɗaɗɗen buɗaɗɗen buɗaɗɗen saman an rufe su bayan an cika. Ana cika buhunan bawul ta hanyar buɗe bawul kuma ana amfani da su don foda, samfuran siminti, sinadarai, ma'adanai, da kayan gini."
+    },
+    {
+      "q": "Menene ake amfani da jakunkuna na ƙasan tsunkule?",
+      "a": "Ana amfani da jakunkuna na ƙasan tsunkule inda masu siye ke buƙatar bayyanar marufi mai ƙima da gabatarwar rufewa mai tsabta. Sun dace da zaɓaɓɓen abinci, abincin dabbobi, abincin dabbobi, hatsi, iri, da samfuran dillalai."
+    },
+    {
+      "q": "Menene buhunan gusset na kasa da ake amfani dasu?",
+      "a": "Toshe jakunkuna na gusset na ƙasa sun dace inda masu siye ke buƙatar ingantacciyar girma, ingantaccen sifa, yanki mai ƙarfi mai ƙarfi, da mafi kyawun gabatarwa."
+    },
+    {
+      "q": "Shin jakar PP za ta iya haɗa da windows?",
+      "a": "Ee. Zaɓaɓɓen bugu da lallausan jakunkuna na PP na iya haɗawa da taga bayyananne don nuna cikar samfurin a ciki."
+    },
+    {
+      "q": "Shin VVIDPOLY na iya samar da masu layi a cikin jakunkuna PP?",
+      "a": "Ee. Za'a iya la'akari da layin layi inda ake buƙatar ƙarin kariyar samfur, tallafin danshi, ko riƙewar samfur mai kyau."
+    },
+    {
+      "q": "Wadanne zaɓuɓɓukan bugu ne akwai?",
+      "a": "VIVIDPOLY na iya tallafawa jakunkuna na fili, jakunkuna masu flexo, da bugu da kuma lallausan tsarin jakan PP, ya danganta da buƙatun ƙira, rikitarwar zane-zane, kasafin kuɗi, da kasuwar samfur."
+    }
+  ],
+  "blogList": [
+    {
+      "purpose": "Bayyana jakunkuna PP, amfanin gama gari, da abubuwan zaɓin mai siye.",
+      "category": "Jagorar mai siye",
+      "readTime": "6 min karatu",
+      "title": "Menene PP Bags? Cikakken Jagora don Masu Siyan Shigo",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Yi la'akari da rashin jin daɗi na ɗan lokaci da aiki."
+    },
+    {
+      "category": "Marufi",
+      "readTime": "5 min karatu",
+      "title": "Buɗe Bags vs Valve Bags: Wanne Jakar PP Yayi Dama don Samfurin ku?",
+      "excerpt": "Duk da haka, ba tare da yin amfani da motsa jiki ba tare da yin amfani da aikin motsa jiki ba tare da yin amfani da shi ba.",
+      "purpose": "Kwatanta salon cikawa da aikace-aikacen da suka dace."
+    },
+    {
+      "category": "Jagorar mai siye",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "purpose": "Ilimantar da masu siye game da tsarin jakar dinki.",
+      "title": "Jakunkuna na PP na sama da ƙasa: Amfani, fa'idodi da keɓancewa",
+      "readTime": "7 min karatu"
+    },
+    {
+      "category": "Sa alama",
+      "readTime": "5 min karatu",
+      "purpose": "Haɓaka marufi mai alamar ƙima.",
+      "title": "Bugawa da Lamintattun Jakunkuna na PP don Shinkafa, Ciyarwa da Kundin Taki",
+      "excerpt": "Sai dai in ba haka ba ne, ba tare da la'akari da shi ba."
+    },
+    {
+      "category": "Marufi",
+      "readTime": "6 min karatu",
+      "title": "Tsokake Jakunkuna na Kasa vs Toshe Jakunkuna na Kasa: Jagorar Mai Siye",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labour.",
+      "purpose": "Kwatanta gine-ginen jakunkuna na ƙima."
+    },
+    {
+      "excerpt": "Duk da haka, muna buƙatar yin aikin motsa jiki na yau da kullun na iya yin aiki tuƙuru.",
+      "title": "Jagorar Girman Jakar PP: Yadda ake Zaɓan 5kg zuwa 75kg 75 Ƙarfin Jakar",
+      "purpose": "Taimaka wa masu siye su ayyana girman da iya aiki kafin bincike.",
+      "category": "Girman girma",
+      "readTime": "8 min karatu"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Sa alama",
+      "readTime": "5 min karatu",
+      "title": "Buga Flexo vs Laminated Buga don Jakunkuna PP",
+      "purpose": "Bayyana zaɓin bugu da tasirin sa alama."
+    },
+    {
+      "category": "Siffofin",
+      "excerpt": "Sai dai in ba haka ba ne, ba tare da yin la'akari da shi ba.",
+      "title": "Me yasa Liners, Gussets da Perforation Mahimmanci a cikin Jakunkuna na PP",
+      "readTime": "4 min karatu",
+      "purpose": "Bayyana fasalulluka na ƙari don kariya da sarrafa samfur."
+    },
+    {
+      "readTime": "6 min karatu",
+      "category": "Tukwici na fitarwa",
+      "purpose": "Koyawa masu siye abin da cikakkun bayanai za su aika don faɗin magana.",
+      "title": "Yadda ake Shirya Binciken Fitar da Jakar PP",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante."
+    },
+    {
+      "readTime": "5 min karatu",
+      "category": "Retail",
+      "title": "Saƙa Jakunkunan Siyayya don Dillali da Kundin Talla",
+      "purpose": "Cin kasuwa da masu siyan jaka na talla.",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem and nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "dalar Amurka",
+    "leadTime": "7-10 kwanakin kasuwanci bayan tabbatar da biyan kuɗi",
+    "qtyLabel": "5 samfurin inji mai kwakwalwa",
+    "packing": "Marufi fitar da katon",
+    "printing": "Filaye (samfurin ƙayyadaddun bayanai)"
+  },
+  "bankDetails": {
+    "accountType": "Account na yanzu",
+    "swift": "HDFCINBB",
+    "bankName": "HDFC Bank Ltd. girma",
+    "ifsc": "HDFC0001234",
+    "branch": "Ahmedabad, Bopal, Gujarat, Indiya",
+    "paymentNote": "Haɗa sunan kamfanin ku da samfurin tunani a cikin labarin canja wuri."
+  },
+  "paymentBankAccounts": [
+    {
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "accountType": "Account na yanzu",
+      "bankName": "HDFC Bank Ltd. girma",
+      "location": "Gujarat, India",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "HDFC Bank Ltd. girma",
+      "swift": "HDFCINBB",
+      "accountType": "Account na yanzu",
+      "location": "Gujarat, India",
+      "branch": "Vadodara, Halol Road",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Account na yanzu",
+      "bankName": "ICICI Bank Ltd.",
+      "ifsc": "Saukewa: ICIC0001234",
+      "branch": "Ahmedabad, Hanyar SG",
+      "swift": "ICICINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Account na yanzu",
+      "bankName": "Axis Bank Ltd. girma",
+      "ifsc": "Saukewa: UTIB0000123",
+      "swift": "AXISINBB",
+      "branch": "Ahmedabad, Prahladnagar"
+    },
+    {
+      "bankName": "Bankin Jiha na Indiya",
+      "location": "Gujarat, India",
+      "accountType": "Account na yanzu",
+      "ifsc": "SBIN0006789",
+      "branch": "Gandhinagar, Sashi na 21",
+      "swift": "SBININBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Account na yanzu",
+      "bankName": "Kotak Mahindra Bank",
+      "branch": "Ahmedabad, Ashram Road",
+      "swift": "KKBKINBB",
+      "ifsc": "KKBK0001234"
+    },
+    {
+      "branch": "Mumbai, Andheri Gabas",
+      "location": "Maharashtra, India",
+      "accountType": "Account na yanzu",
+      "bankName": "Da Bank Ltd.",
+      "ifsc": "Farashin 0000123",
+      "swift": "YESBINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "ifsc": "Farashin INDB0000123",
+      "accountType": "Account na yanzu",
+      "bankName": "IndusInd Bank Ltd.",
+      "branch": "Ahmedabad, Navrangpura",
+      "swift": "INDBINBB"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Bude Baki Jakunkuna"
+    },
+    {
+      "label": "Dike Jakunkuna"
+    },
+    {
+      "label": "D-Yanke Jakunkuna"
+    },
+    {
+      "label": "Bags Bags"
+    },
+    {
+      "label": "Dauke Jakunkuna"
+    },
+    {
+      "label": "Laminated Woven PP Jakunkuna"
+    },
+    {
+      "label": "Tsokuso Jakunkuna na Kasa"
+    },
+    {
+      "label": "Toshe Jakunkuna na Kasa"
+    },
+    {
+      "label": "Toshe Bottom Gusset Jakunkuna"
+    },
+    {
+      "label": "Saƙa Buhunan Siyayya"
+    },
+    {
+      "label": "PP Sakin Fabric"
+    },
+    {
+      "label": "Katangar ciyawa"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Bude Baki Jakunkuna",
+      "group": "Jakar Saƙa",
+      "cta": "Bincika Buɗe Bakin Jakunkuna",
+      "short": "Sauƙaƙan cika jakunkuna na PP ɗin busassun busassun samfuran kamar hatsi, gari, abinci, taki, gishiri, sukari, tsaba, da ma'adanai.",
+      "features": [
+        {
+          "title": "Sauƙi cikawa",
+          "body": "Babban buɗaɗɗen yana ba da damar cika sauri ta hanyar hannu, Semi-atomatik, ko hanyoyin tallafin inji."
+        },
+        {
+          "title": "Canjin iya aiki",
+          "body": "Ya dace da aikace-aikacen 5 kg zuwa 75 kg dangane da yawan samfurin da ƙirar jaka."
+        },
+        {
+          "title": "Ƙarshen al'ada",
+          "body": "saman na iya zama yanke zafi, yanke sanyi, yanke, ko yanke zigzag."
+        },
+        {
+          "title": "Zaɓuɓɓukan bugu da layi",
+          "body": "Ana iya ƙara bugu na Flexo, bugu mai laushi, da goyan bayan layi a inda ake buƙata."
+        }
+      ],
+      "intro": "Buɗe Bags suna ɗaya daga cikin salon jakar PP mafi amfani don busassun busassun busassun busassun. VVIDPOLY yana fitar da buhunan buɗaɗɗen bakin PP don masu siye waɗanda ke buƙatar sauƙi mai sauƙi, rufewa mai sauƙi, da keɓancewa don aikin gona, abinci, taki, ciyarwa, sinadarai, ma'adinai, gishiri, sukari, da aikace-aikacen masana'antu.",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "5 zuwa 75 kg"
+        },
+        {
+          "key": "Sama",
+          "value": "Buɗe baki, yanke zafi, yanke sanyi, zigzag, dunƙule"
+        },
+        {
+          "key": "Kasa",
+          "value": "Ninki ɗaya ɗinki, ninki biyu ɗinki, gamawa na al'ada"
+        },
+        {
+          "key": "Bugawa",
+          "value": "A fili, flexo, laminated buga"
+        },
+        {
+          "value": "Gusset, liner, perforation, rike idan an buƙata",
+          "key": "Ƙara-kan"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Bale, daure, pallet, kartani, shiryawa fitarwa"
+        }
+      ],
+      "benefits": "An fi son buɗaɗɗen jakunkunan PP don sauƙi, daidaitawa, da sarrafa farashi mai inganci. Suna da kyau ga masu siye waɗanda ke buƙatar jakar saƙa mai ƙarfi wacce za a iya rufe ta bayan an cika ta hanyar dinki, rufewa, nadawa, ko ɗaure.",
+      "details": "Ana iya ba da waɗannan jakunkuna azaman jakunkuna na PP ɗin da aka saka a fili, jakunkuna na flexo, ko buhunan buhunan PP ɗin da aka saka. Masu siye za su iya zaɓar girman, masana'anta, iya aiki, gusset, layi, bugu, dinki, yankan, da tattarawa.",
+      "speciality": "Kwarewar buhunan buɗaɗɗen baki shine sassaucin su don samfura daban-daban da hanyoyin cikawa.",
+      "material": "PP ɗin masana'anta da aka saka, tawada bugu, zaren dinki, lamination na zaɓi, layin zaɓi, da takamaiman launi/ƙarin buƙatun mai siye.",
+      "mfg": "Tsarin ya haɗa da saƙar masana'anta, bugu na zaɓi ko lamination, yankan, ɗinke ƙasa, dubawa, da tattarawa."
+    },
+    "stitched": {
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Amintaccen dinki na sama da ƙasa, ƙarfin masana'anta na al'ada, layin zaɓi na zaɓi, flexo ko bugu mai lanƙwasa, shirya kayan al'ada."
+        },
+        {
+          "title": "Amfani",
+          "body": "Mafi kyawun tsaro na rufewa, aiki mai amfani, kyakkyawan aiki mai kyau, da dacewa ga yawancin busassun kayayyakin busassun."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Masu siye za su iya ƙayyade nau'in ɗinki, nau'in zaren, salon ninka, girman, iya aiki, bugu, layi, gusset, da tattarawa."
+        }
+      ],
+      "name": "Jakunkuna Dinka Na Sama Da Kasa",
+      "cta": "Bincika Jakunkuna masu dinki",
+      "benefits": "Mafi kyawun tsaro na rufewa, aiki mai amfani, kyakkyawan aiki mai kyau, da dacewa ga yawancin busassun kayayyakin busassun.",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "5 zuwa 75 kg"
+        },
+        {
+          "key": "dinki",
+          "value": "Ninki ɗaya, ninki biyu, zare ɗaya, zare biyu, sama da ƙasa an dinke"
+        },
+        {
+          "key": "Bugawa",
+          "value": "Filaye, flexo, buga laminated"
+        },
+        {
+          "key": "Mai layi",
+          "value": "Zabin sako-sako ko mai dinki"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Bale, daure, pallet, matsar shirya fitarwa na waje"
+        }
+      ],
+      "intro": "Jakunkuna masu dinki na sama da na ƙasa an tsara su don masu siye waɗanda ke buƙatar amintaccen rufewa da abin dogaro mai dogaro yayin ajiya da sufuri. VVIDPOLY tana fitar da buhunan PP ɗin da aka dinka don aikin noma, abinci, taki, abincin dabbobi, sinadarai, ma'adinai, da kayan masana'antu.",
+      "short": "Amintattun jakunkuna na PP ɗinki don jigilar kayayyaki, ajiya, da jigilar kayayyaki na noma da masana'antu.",
+      "details": "Masu siye za su iya ƙayyade nau'in ɗinki, nau'in zaren, salon ninka, girman, iya aiki, bugu, layi, gusset, da tattarawa.",
+      "speciality": "Kwarewar wannan nau'in jakar shine abin dogaro mai ƙulli.",
+      "material": "Haɗin abubuwa sun haɗa da masana'anta da aka saka PP, zaren ɗinki, lamination na zaɓi, layin zaɓi, da tawada bugu.",
+      "mfg": "Tsarin masana'antu ya haɗa da saƙa, bugu na zaɓi / lamination, yankan, ɗigon sama da ƙasa, dubawa, da tattarawa."
+    },
+    "d-cut": {
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Hannun yankan D, girman al'ada, flexo ko bugu mai lanƙwasa, gusset zaɓi na zaɓi, gamawar dillali."
+        },
+        {
+          "title": "Amfani",
+          "body": "Sauƙaƙan ɗauka, tsari mai ƙarfi mai ƙarfi, ganuwa iri, da ƙimar talla mai amfani."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Ya dace da aikace-aikacen ɗaukar haske zuwa matsakaici, kayan siyarwa, nunin kasuwanci, da yaƙin neman zaɓe."
+        }
+      ],
+      "cta": "Bincika D-Yanke Jakunkuna",
+      "name": "D-Yanke PP Saƙa Jakunkuna",
+      "short": "Dauki-style PP jakunkuna saka tare da hadedde rike da yanke don kiri, gabatarwa, da marufi mai sake amfani da.",
+      "intro": "D-Yanke PP Saƙa Jakunkuna sun haɗa da haɗaɗɗen yanke hannu wanda ke sa jakar sauƙin ɗauka. VVIDPOLY tana fitar da jakunkuna na D-yanke don siyarwa, siyayya, tallatawa, nunin, da buƙatun marufi na sake amfani da su.",
+      "spec": [
+        {
+          "key": "Hannu",
+          "value": "D-yanke ko ƙarfafa D-yanke rike"
+        },
+        {
+          "key": "Kayan abu",
+          "value": "PP saƙa ko laminated PP abu"
+        },
+        {
+          "key": "Bugawa",
+          "value": "Buga na al'ada"
+        },
+        {
+          "key": "dinki",
+          "value": "Dinki na gefe/kasa"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Carton ko daure shiryawa"
+        }
+      ],
+      "benefits": "Sauƙaƙan ɗauka, tsari mai ƙarfi mai ƙarfi, ganuwa iri, da ƙimar talla mai amfani.",
+      "details": "Ya dace da aikace-aikacen ɗaukar haske zuwa matsakaici, kayan siyarwa, nunin kasuwanci, da yaƙin neman zaɓe.",
+      "material": "PP saƙa masana'anta, laminated fim idan ake bukata, bugu tawada, stitching thread, rike da ƙarfafa idan an buƙata.",
+      "mfg": "Saƙa, bugu ko lamination, yankan, D-yanke samuwar rikewa, dinki, dubawa, shiryawa.",
+      "speciality": "Haɗuwa suna ɗaukar dacewa tare da ƙarfin saƙa da gabatarwar alama."
+    },
+    "valve": {
+      "name": "Bags Bags",
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Zane mai cike da bawul, layin zaɓi na zaɓi, ɓarna, bugu mai laushi, toshe karfin ƙasa."
+        },
+        {
+          "title": "Amfani",
+          "body": "Cika mai saurin sarrafawa, tsari mai tsabta mai tsabta, dacewa da foda da samfuran granular."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Girman bawul, nau'in bawul, ɓarna, layin layi, iya aiki, da gini yakamata a zaɓa bisa ga tsarin samfur da cikawa."
+        }
+      ],
+      "intro": "Ana haɓaka Bags na Valve don samfuran da ke buƙatar ciko ta hanyar buɗe bawul. VVIDPOLY tana fitar da buhunan bawul don samfuran siminti, sinadarai, ma'adanai, foda, kayan gini, da kayayyakin masana'antu.",
+      "details": "Girman bawul, nau'in bawul, ɓarna, layin layi, iya aiki, da gini yakamata a zaɓa bisa ga tsarin samfur da cikawa.",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "Yawanci daga 20 zuwa 75 kg"
+        },
+        {
+          "key": "Valve",
+          "value": "Bawul mai sauƙi ko mai tsawo"
+        },
+        {
+          "key": "Gina",
+          "value": "Daidaitaccen ko toshe ginin ƙasa"
+        },
+        {
+          "key": "Ƙara-kan",
+          "value": "Zabin layi da perforation"
+        }
+      ],
+      "short": "Jakunkuna na PP masu cika bawul don samfuran siminti, sinadarai, ma'adanai, foda, da kayan gini.",
+      "benefits": "Cika mai saurin sarrafawa, tsari mai tsabta mai tsabta, dacewa da foda da samfuran granular.",
+      "cta": "Bincika Bags Bags",
+      "material": "PP saƙa masana'anta, bawul abu, liner, laminated Layer, stitching thread, bugu tawada.",
+      "speciality": "Ya dace da cika masana'antu da rarraba fitarwa.",
+      "mfg": "Shirye-shiryen masana'anta, bugu / lamination, yankan, samuwar bawul, perforation idan an buƙata, dubawa, shiryawa."
+    },
+    "carry": {
+      "name": "Dauke Jakunkuna",
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "D-yanke, madauki, dinka, naushi, gefe ko zaɓuɓɓukan hannun sama; Ƙarshen bugu ko laminated; gusset na tilas."
+        },
+        {
+          "title": "Amfani",
+          "body": "Yana haɓaka ganuwa iri kuma yana ba da ƙarfin ɗaukar aiki."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Masu saye za su iya keɓance girman jaka, salon sarrafa, ƙirar bugu, lamination, gusset, ɗinki, da tattarawa."
+        }
+      ],
+      "cta": "Bincika Dauke Jakunkuna",
+      "intro": "Ɗaukar Jakunkuna da aka yi da kayan saƙa na PP sun dace da masu siye waɗanda ke buƙatar jakunkuna masu ƙarfi, ƙima, da aikace-aikacen ɗaukar hoto. Fitowar VVIDPOLY tana ɗaukar jakunkuna don siyarwa, kasuwanci, siyayya, abubuwan da suka faru, da fakitin talla.",
+      "spec": [
+        {
+          "key": "Kayan abu",
+          "value": "PP saƙa ko laminated PP abu"
+        },
+        {
+          "key": "Bugawa",
+          "value": "Flexo ko laminated print"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gefe / kasa gusset"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Carton / dam / bale shiryawa"
+        }
+      ],
+      "short": "Ƙarfafan saƙa mai ƙarfi yana ɗaukar jakunkuna don siyarwa, kasuwanci, da aikace-aikacen talla.",
+      "details": "Masu saye za su iya keɓance girman jaka, salon sarrafa, ƙirar bugu, lamination, gusset, ɗinki, da tattarawa.",
+      "mfg": "Saƙa, bugu/lamination, yankan, ƙirƙira ko abin da aka makala, ɗinki, dubawa, tattarawa.",
+      "benefits": "Yana haɓaka ganuwa iri kuma yana ba da ƙarfin ɗaukar aiki.",
+      "speciality": "Marufi mai ƙarfi mai ƙarfi tare da sadarwar alama.",
+      "material": "PP saƙa masana'anta, laminated fim, bugu tawada, stitching thread, rike abu idan ake bukata."
+    },
+    "laminated": {
+      "name": "Buga & Laminated Saka PP Jakunkuna",
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Buga laminated surface, saka PP tushe, Layer zažužžukan, gusset, liner, taga, perforation, iyawa."
+        },
+        {
+          "title": "Amfani",
+          "body": "Ingantacciyar alama, mafi kyawun roƙon shiryayye, asalin samfur, da tsarin marufi mai ƙarfi."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Ya dace da 5 kg zuwa 75 kg dangane da ginin da yawan samfurin."
+        }
+      ],
+      "benefits": "Ingantacciyar alama, mafi kyawun roƙon shiryayye, asalin samfur, da tsarin marufi mai ƙarfi.",
+      "short": "Marufi na musamman na shinkafa, gari, ciyarwa, abincin dabbobi, taki, iri, da kayan masarufi.",
+      "spec": [
+        {
+          "key": "Tushen",
+          "value": "Saƙa PP + buga laminated Layer"
+        },
+        {
+          "key": "Mai layi",
+          "value": "Zabin layi"
+        },
+        {
+          "key": "Gama",
+          "value": "Ƙarshe mai sheki/matt-style idan akwai"
+        },
+        {
+          "key": "Custom",
+          "value": "Girman al'ada da zane-zane"
+        }
+      ],
+      "cta": "Bincika Laminated Jakunkuna PP",
+      "intro": "Bugawa da Laminated Saƙa PP Jakunkuna suna haɗa ƙarfin saƙa tare da gabatarwar alama mai kyau. VVIDPOLY tana fitar da waɗannan jakunkuna don masu siye waɗanda ke buƙatar buƙatun bugu na ƙima don kayan abinci, taki, abinci, abincin dabbobi, iri, gishiri, sukari, da samfuran dillalai.",
+      "details": "Ya dace da 5 kg zuwa 75 kg dangane da ginin da yawan samfurin.",
+      "mfg": "Saƙar masana'anta, shirye-shiryen zane-zane, bugu, lamination, yankan, ɗinke / juyawa, dubawa, tattarawa.",
+      "speciality": "Babban fakitin fitarwa tare da alamar mai da hankali ga alama.",
+      "material": "PP saƙa masana'anta, Fim da aka buga ko bugu Layer, lamination Layer, stitching thread, na zaɓi liner / taga, bugu tawada."
+    },
+    "pinch-bottom": {
+      "name": "Tsokuso Jakunkuna na Kasa",
+      "group": "Jakar Saƙa",
+      "short": "Jakunkuna na PP mai ƙima da aka buga tare da gabatarwar rufewa mai tsabta don marufi da aka shirya.",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Tsuntsaye ginin ƙasa, bugu da aka buga, fasalin buɗaɗɗen zaɓi na zaɓi, taga, gusset, layi."
+        },
+        {
+          "title": "Amfani",
+          "body": "Siffar ƙima, tsari mai cike da tsari, ƙaddamar da shiryayye mai ƙarfi, mafi kyawun sadarwar alama."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Mafi dacewa don shirye-shiryen tallace-tallace da fakitin kayayyaki masu alama."
+        }
+      ],
+      "cta": "Bincika Tsokakken Jakunkuna na Kasa",
+      "intro": "Bugawa da Laminated Saƙa PP Pinch Bottom Bags an ƙera su don marufi masu ƙima inda tsabtataccen bayanin rufewa da bayyanar alama ke da mahimmanci. VVIDPOLY tana fitar da jakunkuna na ƙasa don hatsin abinci, abincin dabbobi, abincin dabbobi, iri, da samfuran dillalai.",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "Yawanci 5 kg zuwa 50 kg, mafi girma ta hanyar nazarin ƙira"
+        },
+        {
+          "key": "Gina",
+          "value": "Buga laminated saka PP"
+        },
+        {
+          "key": "Ƙara-kan",
+          "value": "Tagar zaɓi / layi / gusset"
+        }
+      ],
+      "details": "Mafi dacewa don shirye-shiryen tallace-tallace da fakitin kayayyaki masu alama.",
+      "benefits": "Siffar ƙima, tsari mai cike da tsari, gabatarwar shiryayye mai ƙarfi, mafi kyawun sadarwar alama.",
+      "speciality": "Gabatarwar ƙulli mai ƙima don marufi na fitarwa mai alama.",
+      "mfg": "Shirye-shiryen Fabric, bugu / lamination, yankan, tsunkule kasa samuwar, tilas taga / perforation, dubawa, shiryawa.",
+      "material": "PP saƙa masana'anta, buga laminated fim, lamination Layer, liner, taga fim, bugu tawada."
+    },
+    "block-bottom": {
+      "name": "Toshe Jakunkuna na Kasa",
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Toshe tsarin ƙasa, buga laminti, buɗaɗɗen baki ko saman bawul, layi, perforation."
+        },
+        {
+          "title": "Amfani",
+          "body": "Ingantacciyar siffa mai kyau, ingantaccen gabatarwar pallet, saman alama mai ƙarfi, da sauƙin sarrafawa."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Ya dace da samfuran inda gabatarwar gani da tari aiki ke da mahimmanci."
+        }
+      ],
+      "intro": "Bugawa da Laminated PP Block Bottom Jakunkuna suna ba da ingantacciyar siffa mai cike da ingantacciyar siffa. VVIDPOLY yana toshe jakunkuna na ƙasa don taki, abincin dabbobi, abincin dabbobi, hatsi, ma'adanai, sinadarai, da fakitin dillali.",
+      "short": "Jakunkuna na PP da aka buga masu siffa mai tsayayye don ingantacciyar tari, nuni, da gabatarwar fitarwa.",
+      "cta": "Bincika Toshe Bottom Bags",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "5 kg zuwa 75 kg dangane da ginin"
+        },
+        {
+          "key": "Tsarin",
+          "value": "Toshe tsarin ƙasa"
+        },
+        {
+          "key": "Sama",
+          "value": "Bawul ɗin zaɓi"
+        },
+        {
+          "key": "Ƙara-kan",
+          "value": "Liner, perforation, laminated buga"
+        }
+      ],
+      "details": "Ya dace da samfuran inda gabatarwar gani da tari aiki ke da mahimmanci.",
+      "benefits": "Ingantacciyar siffa mai kyau, ingantaccen gabatarwar pallet, saman alama mai ƙarfi, da sauƙin sarrafawa.",
+      "material": "PP saƙa masana'anta, laminated film, bugu tawada, liner, bawul abu, forming/stitching kayan.",
+      "speciality": "Gabatar da shirye-shiryen fitarwa tare da tsayayyen siffa mai cike da jaka.",
+      "mfg": "Samar da masana'anta, bugu / lamination, yankan, toshe ƙasa kafa, saman / bawul gamawa, dubawa, shiryawa."
+    },
+    "gusset": {
+      "name": "Toshe Bottom Gusset Jakunkuna",
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Toshe ƙasa tare da gusset, bugu na waje da aka buga, zurfin gusset na al'ada, taga, layin layi, huɗa."
+        },
+        {
+          "title": "Amfani",
+          "body": "Ƙarfin da ake amfani da shi mafi girma, cikakken siffa mai ƙarfi, ingantacciyar wurin yin alama, da mafi kyawun gabatarwar gani."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Yana da amfani inda masu siye ke buƙatar buƙatun bugu na ƙima tare da ƙarin ƙara da tsayin daka."
+        }
+      ],
+      "intro": "Bugawa da Lamintattun Saƙa PP Block Bottom Gusset Jakunkuna suna haɗa ƙaƙƙarfan ginin toshe ƙasa tare da ƙarar goyan bayan gusset. VVIDPOLY tana fitar da waɗannan jakunkuna don ciyar da dabbobi, abincin dabbobi, taki, hatsi, iri, da manyan dillalai ko kayayyakin masana'antu.",
+      "short": "Jakunkuna na PP mai girma da aka buga tare da goyan bayan gusset da yanki mai ƙarfi mai ƙarfi.",
+      "spec": [
+        {
+          "key": "Iyawa",
+          "value": "5 kg zuwa 75 kg ta samfurin yawa da ƙira"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gefe / kasa/ toshe gusset na kasa"
+        },
+        {
+          "key": "Ƙara-kan",
+          "value": "Bawul ɗin zaɓi, layi, taga"
+        }
+      ],
+      "details": "Yana da amfani inda masu siye ke buƙatar buƙatun bugu na ƙima tare da ƙarin ƙara da tsayin daka.",
+      "cta": "Bincika Jakunkuna Gusset",
+      "mfg": "Saƙa, bugu / lamination, yankan, gusset samuwar, toshe kasa samuwar, fasali ƙari, dubawa, shiryawa.",
+      "benefits": "Ƙarfin da ake amfani da shi mafi girma, cikakken siffa mai ƙarfi, ingantacciyar wurin yin alama, da mafi kyawun gabatarwar gani.",
+      "speciality": "Haɗa ƙara, gabatarwa, da fa'idar fakitin fitarwa zuwa waje.",
+      "material": "PP saƙa masana'anta, buga laminated film, liner, taga film, gusset yi, bugu tawada, dinki/forming kayan."
+    },
+    "shopping": {
+      "group": "Jakar Saƙa",
+      "features": [
+        {
+          "title": "Siffofin",
+          "body": "Tsarin saƙa mai sake amfani da shi, hannaye na al'ada, flexo ko bugu mai laushi, gusset, gamawar dillali."
+        },
+        {
+          "title": "Amfani",
+          "body": "Kyakkyawan ɗaukar ƙarfi, haɓaka tambari, gabatarwar dillalan ƙwararru, da maimaita gani."
+        },
+        {
+          "title": "Cikakkun bayanai",
+          "body": "Ya dace da dillalai, manyan kantuna, nune-nune, tallan kamfanoni, da yakin sayayya."
+        }
+      ],
+      "name": "Jakunan Siyayya (Saƙa)",
+      "cta": "Bincika Jakunan Siyayya",
+      "short": "Saƙa da jakunkunan sayayya don sarƙoƙin dillali, manyan kantuna, nune-nune, da kamfen talla.",
+      "spec": [
+        {
+          "key": "Girman",
+          "value": "Girman al'ada"
+        },
+        {
+          "key": "Hannu",
+          "value": "D-yanke/madauki/dika/buga hannaye"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gefe ko kasa gusset"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Carton / dam / bale shiryawa"
+        }
+      ],
+      "intro": "Saƙa Jakunkunan Siyayya sune PP ɗin da aka saka da aka yi amfani da su don siyarwa, babban kanti, taron, nunin kasuwanci, da marufi na talla. VVIDPOLY tana fitar da jakunkunan saƙa ga masu siye waɗanda ke buƙatar ƙaƙƙarfan salon sake amfani da su, da marufi mai ƙima.",
+      "benefits": "Kyakkyawan ɗaukar ƙarfi, haɓaka tambari, gabatarwar dillalan ƙwararru, da maimaita gani.",
+      "details": "Ya dace da dillalai, manyan kantuna, nune-nune, tallan kamfanoni, da yakin sayayya.",
+      "mfg": "Shirye-shiryen Fabric, bugu / lamination, yankan, rike kafa / abin da aka makala, dinki, dubawa, shiryawa.",
+      "speciality": "Gabatarwar alamar ta musamman don dillalai da masu siyan fitarwa na talla.",
+      "material": "PP saƙa masana'anta, laminated buga fim, stitching thread, rike abu, bugu tawada."
+    },
+    "fabric": {
+      "name": "PP Sakin Fabric",
+      "group": "Fabric",
+      "short": "PP saƙa masana'anta rolls da yanke tsayi don masana'antu, noma, da amfani da juyawa.",
+      "intro": "PP saƙa masana'anta rolls da yanke tsayi don masana'antu, noma, da amfani da juyawa.",
+      "cta": "Bincika PP Saƙa Fabric",
+      "features": [
+        {
+          "title": "Ana shirya fitarwa",
+          "body": "An ba da shi don masu siye na ƙasashen waje tare da ƙima na al'ada da zaɓuɓɓukan tattarawa."
+        },
+        {
+          "title": "Ƙididdigar al'ada",
+          "body": "Za a iya tsara nisa, GSM, launi, da tsayi ko tsayi don yin oda."
+        },
+        {
+          "title": "Kyakkyawan mayar da hankali",
+          "body": "Daidaitaccen saƙa da gamawa don amfanin masana'antu da noma."
+        }
+      ],
+      "benefits": "PP saƙa masana'anta rolls da yanke tsayi don masana'antu, noma, da amfani da juyawa.",
+      "spec": [
+        {
+          "key": "Tsarin",
+          "value": "Al'ada don bincike"
+        },
+        {
+          "key": "Kayan abu",
+          "value": "PP saƙa"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Fitarwa shiryawa"
+        }
+      ],
+      "details": "Raba faɗin da ake buƙata, GSM, launi, yawa, da kuma inda ake nufi don zance.",
+      "speciality": "PP Woven Fabric daga VIDPOLY don masu siye na duniya.",
+      "material": "Kayan PP ɗin da aka saka da takamaiman abubuwan ƙari na mai siye inda ake buƙata.",
+      "mfg": "Saƙa, ƙarewa, dubawa, da tattara kaya zuwa fitarwa."
+    },
+    "weed-barrier": {
+      "name": "Katangar ciyawa",
+      "group": "Katangar ciyawa",
+      "cta": "Bincika Katangar ciyawa",
+      "features": [
+        {
+          "title": "Ana shirya fitarwa",
+          "body": "An ba da shi don masu siye na ƙasashen waje tare da ƙima na al'ada da zaɓuɓɓukan tattarawa."
+        },
+        {
+          "title": "Ƙididdigar al'ada",
+          "body": "Za a iya tsara nisa, GSM, launi, da tsayi ko tsayi don yin oda."
+        },
+        {
+          "title": "Kyakkyawan mayar da hankali",
+          "body": "Daidaitaccen saƙa da gamawa don amfanin masana'antu da noma."
+        }
+      ],
+      "details": "Raba faɗin da ake buƙata, GSM, launi, yawa, da kuma inda ake nufi don zance.",
+      "spec": [
+        {
+          "key": "Tsarin",
+          "value": "Al'ada don bincike"
+        },
+        {
+          "key": "Kayan abu",
+          "value": "PP saƙa"
+        },
+        {
+          "key": "Shiryawa",
+          "value": "Fitarwa shiryawa"
+        }
+      ],
+      "material": "Kayan PP ɗin da aka saka da takamaiman abubuwan ƙari na mai siye inda ake buƙata.",
+      "intro": "PP saƙa mai shinge masana'anta don gyaran shimfidar wuri, noma, da aikace-aikacen rufe ƙasa.",
+      "short": "PP saƙa mai shinge masana'anta don gyaran shimfidar wuri, noma, da aikace-aikacen rufe ƙasa.",
+      "mfg": "Saƙa, ƙarewa, dubawa, da tattara kaya zuwa fitarwa.",
+      "benefits": "PP saƙa mai shinge masana'anta don gyaran shimfidar wuri, noma, da aikace-aikacen rufe ƙasa.",
+      "speciality": "Barrier Weed daga VVIDPOLY don masu siye na duniya."
+    }
+  },
+  "markets": [
+    "Amurka",
+    "Kanada",
+    "Ostiraliya",
+    "Turai",
+    "Birtaniya",
+    "Afirka",
+    "Tailandia",
+    "Saudi Arabia",
+    "Latin Amurka",
+    "New Zealand"
+  ],
+  "packedProductOptions": [
+    "Shinkafa",
+    "Taki",
+    "Abincin dabbobi",
+    "Siminti",
+    "Kayayyakin siyarwa"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "kg 60",
+      "kg 75",
+      "Custom"
+    ],
+    "addons": [
+      "Mai layi",
+      "Gusset",
+      "Hannu",
+      "Taga",
+      "Perforation",
+      "Valve",
+      "tsunkule",
+      "Toshe kasa"
+    ],
+    "printing": [
+      "A fili",
+      "An buga Flexo",
+      "Buga laminated",
+      "Multi-launi"
+    ],
+    "packing": [
+      "Bale",
+      "Karton",
+      "Pallet",
+      "Fitarwa shiryawa"
+    ]
+  }
+}

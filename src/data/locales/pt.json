@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Selecionar idioma",
+    "career": "Carreira"
+  },
+  "nav": {
+    "home": "Início",
+    "products": "Produto",
+    "about": "Sobre nós",
+    "industryServed": "Setores atendidos",
+    "resources": "Novidades",
+    "career": "Carreiras",
+    "contact": "Contato",
+    "byProductType": "Por tipo de produto",
+    "buyerResourcesEyebrow": "Notícias e atualizações",
+    "byIndustryUse": "Por indústria/uso",
+    "viewAllByType": "Veja todos os produtos por tipo",
+    "blogTitle": "Blogue",
+    "buyerResourcesLead": "Guias do comprador, perguntas frequentes e as novidades da VIVIDPOLY.",
+    "blogDesc": "Guias do comprador sobre tipos de sacolas PP, tamanhos e dúvidas sobre exportação.",
+    "viewAllByIndustry": "Veja todos os produtos por setor",
+    "faqsTitle": "Perguntas frequentes",
+    "themeLight": "Mudar para o modo claro",
+    "getQuoteShort": "Obter cotação",
+    "themeDark": "Mudar para o modo escuro",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "mainNav": "Navegação principal",
+    "mobileNav": "Navegação móvel",
+    "faqsDesc": "Respostas sobre capacidade, impressão, revestimentos e detalhes de cotação.",
+    "logoHome": "VIVIDPOLY, vá para a página inicial",
+    "mobileByProductType": "Por tipo de produto",
+    "mobileByIndustry": "Por indústria/uso",
+    "resourcesMenu": "Menu Notícias e atualizações",
+    "industryMenu": "Cardápio Servido pela Indústria",
+    "productsMenu": "Cardápio de produtos"
+  },
+  "fab": {
+    "label": "Consulta",
+    "mobileLabel": "Pergunte",
+    "ariaLabel": "Abrir formulário de consulta"
+  },
+  "common": {
+    "getQuote": "Solicitar orçamento",
+    "submitEnquiry": "Enviar consulta",
+    "viewAll": "Ver tudo",
+    "backToHome": "Voltar ao início",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "select": "Selecione",
+    "selectCountry": "Selecione o país",
+    "selectBagType": "Selecione o tipo de bolsa",
+    "custom": "Personalizado",
+    "none": "Nenhum",
+    "optional": "opcional",
+    "clearFilters": "Limpar filtros",
+    "viewDetails": "Ver detalhes",
+    "filters": "Filtros",
+    "recommended": "Recomendado",
+    "specification": "Especificação",
+    "relatedProducts": "Produtos relacionados",
+    "of": "de",
+    "selectEnquiryType": "Selecione o tipo de consulta",
+    "close": "Fechar",
+    "clearAllFilters": "Limpar todos os filtros",
+    "chatExportTeam": "Converse com a equipe de exportação",
+    "noProductsMatch": "Nenhum produto corresponde aos seus filtros.",
+    "filtered": "(filtrado)",
+    "productsCount": "{count} produtos"
+  },
+  "siteCopy": {
+    "heroHeadline": "Sacos PP para compradores globais",
+    "heroLead": "Sacos PP, sacos tecidos, sacos com válvula e embalagens de exportação personalizadas da Índia, feitos para importadores, distribuidores e compradores industriais em todo o mundo.",
+    "heroIsoLabel": "Certificado ISO",
+    "heroIecLabel": "Certificado IEC",
+    "heroCtaSecondary": "Ver tipos de produto",
+    "searchPlaceholder": "Pesquise tipo de saco, produto ou indústria (por exemplo, sacos de arroz, sacos de cimento)",
+    "heroIecLabelShort": "CEI",
+    "heroHeadlineLine2": "Compradores globais",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaSecondaryShort": "Produtos",
+    "heroCtaEnquiry": "Investigação",
+    "heroCtaWhatsApp": "WhatsApp",
+    "headerQuoteLabel": "Citar",
+    "heroHeadlinePrefix": "Sacos PP para",
+    "heroHeadlineLine1": "Sacos PP para",
+    "heroHeadlineAccent": "Compradores globais",
+    "heroIsoLabelShort": "ISO",
+    "brandTagline": "Soluções de embalagem de qualidade",
+    "heroLeadShort": "Embalagem de exportação desenvolvida para compradores globais.",
+    "introEyebrow": "O que exportamos",
+    "introHighlights": [
+      {
+        "label": "Capacidade",
+        "value": "5 a 75kg"
+      },
+      {
+        "label": "Origem",
+        "value": "Exportação da Índia"
+      },
+      {
+        "label": "Foco",
+        "value": "Impressão e embalagem personalizadas"
+      }
+    ],
+    "marketsStrip": "Mercados de exportação primários: América/EUA, Canadá, Austrália, Europa, Reino Unido, África, Tailândia, Arábia Saudita, América Latina, Nova Zelândia e outros mercados de importação globais.",
+    "heroRail": "ÍNDIA · EXPORTAÇÃO GLOBAL",
+    "intro1": "VIVIDPOLY exporta sacos PP, sacos tecidos PP, sacos PP tecidos impressos e laminados, sacos com fundo apertado, sacos com fundo em bloco, sacos com reforço, sacos com válvula, sacos de transporte, sacos com corte em D e sacos de compras tecidos da Índia para os mercados globais. Nossas soluções de embalagens são projetadas para importadores, distribuidores, processadores de grãos alimentícios, empresas de fertilizantes, marcas de ração animal, fornecedores de produtos químicos, empresas de materiais de construção, redes de varejo e compradores de embalagens promocionais.",
+    "intro2": "De embalagens de varejo de 5 kg a sacolas industriais resistentes de 75 kg, a VIVIDPOLY ajuda os compradores a selecionar a construção correta da sacola, método de impressão, forro, alça, reforço, costura, estilo de corte e formato de embalagem de exportação de acordo com o uso do produto e o mercado de destino.",
+    "homeAboutTitle": "Parceiro global de embalagens de exportação",
+    "homeAboutCtaType": "Compre por tipo de produto",
+    "homeAboutCtaIndustry": "Compre por setor",
+    "homeAboutEyebrow": "Sobre nós",
+    "homeProductsEyebrow": "Nossos produtos",
+    "introTitle": "Sacos PP para compradores globais",
+    "homeProductsTitle": "O que oferecemos",
+    "homeValueProps": [
+      {
+        "title": "Especificação personalizável",
+        "description": "Capacidade, construção, impressão e embalagem adaptadas ao seu produto e mercado de destino."
+      },
+      {
+        "title": "Amostra antes do pedido em grandes quantidades",
+        "description": "Revise a qualidade, o tamanho e o acabamento da sacola antes de confirmar as quantidades totais de exportação."
+      },
+      {
+        "title": "Embalagem de exportação incluída",
+        "description": "Embalagem em fardos, paletes e caixas planejadas para remessa internacional segura."
+      }
+    ],
+    "homeValuePropsEyebrow": "Por que os compradores escolhem VIVIDPOLY",
+    "homeBrowseHeading": "Procure bolsas PP por categoria",
+    "homeProductsLead": "Sacos PP tecidos impressos e laminados, sacos valvulados, sacos de boca aberta e embalagens personalizadas de exportação da Índia para compradores agrícolas, industriais e de varejo em todo o mundo.",
+    "buyerRequirementLabel": "Requisito do comprador",
+    "productUsesLearnMore": "Envie uma consulta",
+    "productUseCol": "Uso do produto",
+    "recommendedBagsCol": "Tipos de bolsas recomendados",
+    "trustMessage": "VIVIDPOLY foi desenvolvido para compradores de importação globais que precisam de comunicação profissional, especificações claras de produtos, opções de embalagens personalizadas e suporte de exportação ágil da Índia. Nosso conteúdo de sacolas PP é estruturado para ajudar os compradores a comparar tipos de sacolas, entender os usos do produto, revisar recursos complementares e enviar requisitos de cotação completos.",
+    "finalCtaBody": "Compartilhe seu tipo de sacola, capacidade, necessidades de impressão, quantidade e destino. A VIVIDPOLY analisará sua consulta e fará o acompanhamento com opções práticas.",
+    "finalCtaButton": "Envie uma consulta",
+    "faqSectionTitle": "Perguntas frequentes",
+    "buyerResponseLabel": "Resposta VIVIDPOLY",
+    "finalCtaTitle": "Pronto para discutir seus requisitos de embalagem?",
+    "productUsesEmptyHint": "Passe o mouse ou selecione um produto para ver os tipos de sacola recomendados.",
+    "productUsesIntro": "Os sacos VIVIDPOLY PP são adequados para uma ampla gama de categorias de produtos. A sacola certa deve ser selecionada com base no peso do produto, densidade, processo de enchimento, sensibilidade à umidade, requisitos de marca, condições de manuseio e padrão de embalagem para exportação.",
+    "buyerSectionTitle": "Embalagem de exportação, criada para compradores globais",
+    "catalogueGuideProductType": "Escolha aqui",
+    "catalogueGuideUseSort": "Classifique por setor aqui",
+    "shopByUseLabel": "Estou fazendo as malas…",
+    "contactIntro": "Use esta página para enviar uma consulta sobre o produto ou uma pergunta geral. Selecione o tipo de bolsa de seu interesse ou escolha Consulta Geral se ainda estiver explorando opções.",
+    "catalogueUseSub": "Os sacos VIVIDPOLY PP são adequados para uma ampla gama de categorias de produtos. A sacola certa deve ser selecionada com base no peso do produto, densidade, processo de enchimento, sensibilidade à umidade, requisitos de marca, condições de manuseio e padrão de embalagem para exportação.",
+    "catalogueTypeSub": "A VIVIDPOLY exporta sacolas PP da Índia para empresas que precisam de embalagens fortes, personalizáveis ​​e prontas para exportação. Nossos sacos PP podem ser desenvolvidos para capacidades de 5 kg a 75 kg, dependendo da densidade do produto, tamanho do saco, construção, resistência do tecido, laminação, forro, costura, reforço e requisitos de enchimento.",
+    "quoteIntro1": "Compartilhe seus requisitos de sacola PP para que a equipe de exportação da VIVIDPOLY possa recomendar o tipo de produto, construção, tamanho, capacidade, impressão, recursos adicionais e formato de embalagem de exportação corretos.",
+    "quotePageEyebrow": "Consulta de exportação",
+    "quoteIntro2": "Responda algumas perguntas de cada vez. Orientaremos você sobre o tipo de sacola, tamanho, impressão e detalhes de envio.",
+    "quotePageTitle": "Compartilhe seus requisitos de bagagem",
+    "quoteContactStepLead": "Compartilhe como podemos entrar em contato com você. Registramos sua consulta imediatamente e acompanhamos pelo WhatsApp.",
+    "quoteContactStepTitle": "Seus detalhes de contato",
+    "quoteContactSubmitLabel": "Registrar minha consulta",
+    "quoteLeadCapturedOptionalTitle": "Quer um orçamento mais rápido e preciso?",
+    "quoteLeadCapturedTitle": "Consulta registrada",
+    "quoteLeadCapturedOptionalBody": "Se você tiver um minuto, adicione as especificações da sua bolsa agora. Isso nos ajuda a recomendar o tipo, tamanho e impressão corretos de sacola PP antes de ligarmos, para que sua primeira conversa já seja útil.",
+    "quoteLeadCapturedSkipCta": "Eu terminei por agora",
+    "quoteLeadCapturedContinueCta": "Adicionar especificação de sacola",
+    "quoteLeadCapturedLead": "Um especialista em exportação da VIVIDPOLY entrará em contato com você pelo WhatsApp em breve, geralmente dentro de algumas horas.",
+    "samplePaymentTitle": "Detalhes da transferência bancária",
+    "quoteSubmitNote": "Quando estiver satisfeito com os detalhes acima, envie. Nossa equipe de exportação irá analisar tudo e acompanhar pelo WhatsApp.",
+    "sampleBillIntro": "Revise as especificações e cobranças da amostra abaixo. As amostras são enviadas após confirmação do pagamento.",
+    "quoteLeadOnlySuccessBody": "Em breve entraremos em contato com você pelo WhatsApp. Você pode compartilhar os detalhes da bagagem quando entrarmos em contato com você ou voltar a qualquer momento para completar suas especificações.",
+    "samplePaymentConfirmCta": "Confirmar transferência bancária",
+    "sampleSuccessTitle": "Pedido de amostra recebido",
+    "sampleBillTitle": "Exemplo de fatura de pedido",
+    "quoteSuccessTitle": "Consulta recebida",
+    "samplePaymentIntro": "Transfira o valor da amostra usando os detalhes abaixo. Utilize a referência para que possamos igualar o seu pagamento.",
+    "blogLeadCta": "Envie uma consulta",
+    "blogReadArticle": "Leia o artigo",
+    "sampleSuccessBody": "Obrigado. Verificaremos seu pagamento e confirmaremos os prazos de produção e envio da amostra por e-mail.",
+    "homeStats": [
+      {
+        "value": "Mais de 70",
+        "label": "Mercados de exportação"
+      },
+      {
+        "label": "Países atendidos",
+        "value": "9+"
+      },
+      {
+        "label": "Capacidade Mensal",
+        "value": "750 MT"
+      },
+      {
+        "label": "Grau de exportação"
+      }
+    ],
+    "blogLeadTitle": "Tem alguma dúvida sobre embalagem?",
+    "homeCertsHeading": "Certificações",
+    "blogLeadBody": "Envie uma consulta sobre o produto ou uma consulta geral em nossa página de contato. Nossa equipe analisará sua necessidade e fará o acompanhamento com orientações práticas.",
+    "quoteSuccessBody": "Entraremos em contato com você por telefone ou WhatsApp em até 12 horas.",
+    "blogIntro": "Escrito para compradores internacionais, comparando fornecedores de sacolas PP, aprendendo sobre os tipos de sacolas, verificando especificações e preparando consultas de exportação.",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY atende compradores globais de importação com comunicação profissional, especificações claras de produtos, opções de embalagens personalizadas e suporte de exportação ágil. Capacidade, construção, impressão e embalagem são adaptadas ao seu produto e mercado de destino para que cada pedido corresponda ao seu processo de enchimento, necessidade de marca e condição de envio.",
+      "Solicite amostras antes de comprometer-se com as quantidades totais. As embalagens em fardos, paletes e caixas de papelão são planejadas para envio internacional seguro em dez construções de PP tecido, desde boca aberta até formatos laminados premium, adequados para arroz, fertilizantes, cimento, rações e usos no varejo."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY é um exportador de sacolas PP com sede na Índia que atende importadores globais que precisam de comunicação profissional, especificações claras de produtos e suporte confiável à exportação. Fornecemos boca aberta, costurada, corte D, válvula, carry, laminada, fundo pitada, fundo bloco, reforço e sacolas de compras de 5 kg a 75 kg, com opções de impressão flexográfica ou laminada para apresentação da marca. Tipo de produto, tamanho, capacidade, impressão, laminação, forro, reforço, alça e detalhes de embalagem são todos capturados antecipadamente, antes que qualquer cotação seja emitida."
+    ]
+  },
+  "footer": {
+    "company": "Empresa",
+    "productTypes": "Tipos de produto",
+    "buyerHelp": "Ajuda ao comprador",
+    "contact": "Contato",
+    "backToTop": "Voltar ao topo",
+    "links": {
+      "home": "Lar",
+      "contact": "Contate-nos",
+      "about": "Sobre",
+      "getQuote": "Obter cotação",
+      "productUses": "Usos do produto"
+    },
+    "backToTopAria": "Voltar ao topo da página",
+    "aboutBlurb": "VIVIDPOLY exporta sacolas PP da Índia para compradores globais que precisam de capacidade personalizável, impressão, forros e embalagens prontas para exportação."
+  },
+  "meta": {
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Exportador de sacos PP da Índia",
+    "description": "VIVIDPOLY exporta sacolas PP da Índia para compradores globais.",
+    "loading": "Carregando VIVIDPOLY…",
+    "title": "VIVIDPOLY: Exportador de sacos PP da Índia"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Consulta Geral"
+    },
+    {
+      "label": "Sacos de Boca Aberta - OMB"
+    },
+    {
+      "label": "Bolsas costuradas na parte superior e inferior - TBS"
+    },
+    {
+      "label": "Sacos tecidos PP D-Cut - DCB"
+    },
+    {
+      "label": "Bolsas Valvuladas - VB"
+    },
+    {
+      "label": "Bolsas de transporte - CB"
+    },
+    {
+      "label": "Sacos PP tecidos laminados impressos - LWB"
+    },
+    {
+      "label": "Sacos de fundo apertado - PBB"
+    },
+    {
+      "label": "Sacos de fundo bloco - BBB"
+    },
+    {
+      "label": "Sacos de reforço com fundo em bloco - BGB"
+    },
+    {
+      "label": "Sacolas de compras tecidas - WSB"
+    },
+    {
+      "label": "Tecido PP"
+    },
+    {
+      "label": "Barreira contra ervas daninhas"
+    }
+  ],
+  "enquiryModal": {
+    "close": "Fechar formulário de consulta",
+    "title": "Formulário de consulta"
+  },
+  "emailCompose": {
+    "toLabel": "Para",
+    "fromLabel": "Seu e-mail",
+    "nameLabel": "Seu nome",
+    "subjectLabel": "Assunto",
+    "messageLabel": "Mensagem",
+    "sending": "Enviando…",
+    "send": "Enviar mensagem",
+    "title": "E-mail VIVIDPOLY",
+    "close": "Fechar painel de composição",
+    "emailInvalid": "Insira um endereço de e-mail válido.",
+    "defaultSubject": "Consulta de exportação de vividpoly.com",
+    "sendUnavailable": "O envio de e-mail ainda não está configurado. Por favor, use telefone ou WhatsApp para entrar em contato conosco.",
+    "messageRequired": "Adicione uma mensagem curta antes de enviar.",
+    "sendError": "Não foi possível enviar sua mensagem. Por favor, tente novamente ou ligue diretamente para nós.",
+    "sendSuccess": "Mensagem enviada. Nossa equipe entrará em contato com você em breve.",
+    "hint": "Sua mensagem é enviada diretamente para nossa equipe de exportação. Responderemos para o endereço de e-mail que você digitou acima."
+  },
+  "home": {
+    "shopByProductType": "Compre por tipo de produto",
+    "shopByIndustry": "Compre por setor",
+    "shopByProductTypeDesc": "Dez construções de PP tecido, desde boca aberta até formatos laminados premium.",
+    "faqsEyebrow": "Perguntas frequentes",
+    "swipeIndustries": "Deslize para navegar pelos setores",
+    "shopByIndustryDesc": "Combine os tipos de sacola com arroz, fertilizante, cimento, ração e uso no varejo.",
+    "valuePropsSlides": "Por que os compradores escolhem os slides VIVIDPOLY",
+    "swipeCards": "Passe os cartões",
+    "productTypes": "Tipos de produtos",
+    "buyerNeed": "O comprador precisa de {index}",
+    "slideOf": "{current} de {total}",
+    "howWeHelpBuyers": "Como ajudamos os compradores",
+    "buyerCarousel": "Carrossel de requisitos do comprador",
+    "previousProducts": "Produtos anteriores",
+    "buyerRequirements": "Requisitos do comprador",
+    "buyerPagination": "O comprador precisa de paginação",
+    "productUses": "Usos do produto",
+    "nextProducts": "Próximos produtos"
+  },
+  "catalogue": {
+    "titleByType": "Compre por tipo de produto",
+    "capacity": "Capacidade",
+    "productType": "Tipo de produto",
+    "sortAllProducts": "Todos os produtos",
+    "titleByUse": "Comprar por setor/uso",
+    "breadcrumbUse": "Produtos / Por Indústria e Uso",
+    "breadcrumbType": "Produtos / Por tipo de produto"
+  },
+  "pdp": {
+    "benefits": "Benefícios",
+    "getQuoteFor": "Obtenha uma cotação por {productName}",
+    "keyFeatures": "Principais recursos",
+    "speciality": "Especialidade",
+    "manufacturingProcess": "Processo de fabricação",
+    "whyBuyersChoose": "Por que os compradores escolhem esta bolsa",
+    "productionMaterials": "Produção e materiais",
+    "customization": "Detalhes de personalização",
+    "materialCombination": "Combinação de materiais",
+    "trustBadges": [
+      "Especificação personalizável",
+      "Amostra disponível antes do pedido em massa",
+      "Embalagem de exportação incluída",
+      "Equipe de exportação responsiva"
+    ],
+    "productImage": "Imagem do produto {index}"
+  },
+  "about": {
+    "title": "Sobre nós",
+    "pageEyebrow": "SOBRE NÓS",
+    "ctaSecondary": "Compre por tipo de produto",
+    "p1": "VIVIDPOLY atende compradores globais de importação com comunicação profissional, especificações claras de produtos, opções de embalagens personalizadas e suporte de exportação ágil. Capacidade, construção, impressão e embalagem são adaptadas ao seu produto e mercado de destino para que cada pedido corresponda ao seu processo de enchimento, necessidade de marca e condição de envio.",
+    "pageTitle": "Parceiro global de embalagens de exportação",
+    "p2": "Solicite amostras antes de comprometer-se com as quantidades totais. As embalagens em fardos, paletes e caixas de papelão são planejadas para envio internacional seguro em dez construções de PP tecido, desde boca aberta até formatos laminados premium, adequados para arroz, fertilizantes, cimento, rações e usos no varejo.",
+    "ctaPrimary": "Envie uma consulta",
+    "exportVisionEyebrow": "Nossa visão de exportação",
+    "exportVisionHeading": "Liderando para um futuro brilhante",
+    "pillarsEyebrow": "FORÇAS",
+    "pillarsLead": "Desde padrões internacionais até suporte prático para consultas, a VIVIDPOLY está estruturada em torno de como os compradores globais de embalagens realmente adquirem.",
+    "exportVisionBody": "A VIVIDPOLY pretende se tornar um parceiro de exportação indiano confiável para empresas globais que exigem sacolas PP fortes, personalizáveis ​​e prontas para a marca. Entendemos que os compradores internacionais precisam de mais do que descrições gerais dos produtos. Eles precisam de especificações precisas, orientação sobre o uso do produto, arte e suporte para impressão, opções de embalagem adequadas e comunicação ágil durante todo o processo de consulta.",
+    "pillars": [
+      {
+        "body": "Especificações, embalagem e comunicação são planejadas para os mercados de destino e necessidades de conformidade do comprador.",
+        "title": "Garantimos padrões internacionais de exportação"
+      },
+      {
+        "body": "Desde embalagens de varejo de 5 kg até sacos industriais de 75 kg, com opções de laminação, liner, reforço, válvula e impressão.",
+        "title": "Capacidade e construção prontas para exportação"
+      },
+      {
+        "body": "Orientação responsiva sobre tipo de produto, arte, formato de embalagem, quantidade e destino antes da cotação.",
+        "title": "Equipe dedicada de suporte à exportação"
+      },
+      {
+        "title": "Experiência prática com processo claro",
+        "body": "Os compradores recebem orientação estruturada sobre o uso do produto e um caminho de consulta completo, em vez de uma cópia vaga do catálogo."
+      }
+    ],
+    "pillarsHeading": "Carregando um legado de exportação que prioriza o comprador",
+    "pillarsBody": "Desde padrões internacionais até suporte prático para consultas, a VIVIDPOLY está estruturada em torno de como os compradores globais de embalagens realmente adquirem. Especificações, embalagem e comunicação são planejadas para os mercados de destino e necessidades de conformidade do comprador. A capacidade vai de embalagens de varejo de 5 kg a sacos industriais de 75 kg, com opções de laminação, forro, reforço, válvula e impressão. O suporte dedicado à exportação abrange tipo de produto, arte, formato de embalagem, quantidade e destino antes da cotação, com orientação estruturada sobre o uso do produto e um caminho completo de consulta.",
+    "whyEyebrow": "SERVIÇOS",
+    "whyMoreLabel": "MAIS DETALHES",
+    "contactTeam": "Envie uma consulta",
+    "requestCustomQuote": "Envie uma consulta",
+    "factsHeading": "VIVIDPOLY em resumo",
+    "factsEyebrow": "Detalhes da empresa",
+    "ctaBandButton": "Envie uma consulta",
+    "whyBody": "Desde a variedade de produtos e planejamento de capacidade até impressão, revestimentos e embalagens para exportação, a VIVIDPOLY está estruturada para apoiar decisões práticas de fornecimento. Os compradores podem adquirir sacolas PP da Índia para os EUA, Canadá, Austrália, Europa, Reino Unido, África, Tailândia, Arábia Saudita e outros mercados em uma ampla gama de tipos de sacolas industriais, agrícolas, de varejo e promocionais. O planejamento de capacidade abrange de 5 kg a 75 kg, com construção personalizada, impressão e suporte de marca, orientação sobre uso do produto e um processo de cotação amigável ao comprador que captura os detalhes necessários antes da cotação.",
+    "whyHeading": "Suporte para embalagens de exportação no seu melhor",
+    "whyLead": "Desde a variedade de produtos e planejamento de capacidade até impressão, revestimentos e embalagens para exportação, a VIVIDPOLY está estruturada para apoiar decisões práticas de fornecimento.",
+    "ctaBandBody": "Compartilhe seu tipo de sacola, capacidade, necessidades de impressão, quantidade e destino. A VIVIDPOLY analisará sua consulta e fará o acompanhamento com opções práticas.",
+    "ctaBandTitle": "Procurando um parceiro profissional de embalagens de exportação?",
+    "whyItems": [
+      [
+        "Posicionamento de exportador baseado na Índia",
+        "Os compradores podem adquirir sacolas PP da Índia para EUA, Canadá, Austrália, Europa, Reino Unido, África, Tailândia, Arábia Saudita e outros mercados."
+      ],
+      [
+        "Gama de produtos de sacos PP focados",
+        "A oferta de produtos é clara e prática, abrangendo tipos comuns de sacolas industriais, agrícolas, de varejo e promocionais."
+      ],
+      [
+        "Planejamento de capacidade de 5 kg a 75 kg",
+        "Os compradores podem discutir pequenas embalagens de varejo, sacolas de commodities de tamanho médio e sacolas industriais pesadas."
+      ],
+      [
+        "Opções de construção personalizadas",
+        "Opções de camadas, laminação, reforço, forro, perfuração, janela, alça, válvula, fundo de aperto e fundo de bloco podem ser planejadas."
+      ],
+      [
+        "Suporte para impressão e branding",
+        "As opções de impressão flexográfica e PP tecido laminado impresso ajudam a dar suporte à visibilidade da marca e à apresentação no mercado."
+      ],
+      [
+        "Orientação de uso do produto",
+        "Os compradores podem selecionar sacolas por aplicação, como arroz, fertilizantes, ração animal, produtos químicos, cimento, sal, açúcar, varejo e compras."
+      ],
+      [
+        "Processo de cotação amigável ao comprador",
+        "O site ajuda os compradores a compartilhar tipo de produto, capacidade, tamanho, impressão, complementos, embalagem, quantidade e destino antes da cotação."
+      ]
+    ],
+    "ctaBandEyebrow": "Entre em contato"
+  },
+  "contact": {
+    "title": "Contate-nos",
+    "sendRequirement": "Formulário de consulta",
+    "formName": "Nome",
+    "formCompany": "Nome da empresa",
+    "formEmail": "E-mail",
+    "formCountry": "País",
+    "formMessage": "Mensagem",
+    "sending": "Enviando…",
+    "sendRequirementLead": "Diga-nos o que você precisa. Escolha um tipo de produto ou envie uma consulta geral e responderemos com orientações práticas.",
+    "reachUs": "Entre em contato conosco diretamente",
+    "formEnquiryType": "Tipo de consulta",
+    "emailInvalid": "Insira um endereço de e-mail válido.",
+    "formPhone": "WhatsApp/telefone",
+    "submitEnquiry": "Enviar consulta",
+    "emailLabel": "E-mail",
+    "phoneRequired": "Adicione um WhatsApp ou número de telefone para que possamos entrar em contato com você.",
+    "websiteLabel": "Site",
+    "phoneLabel": "WhatsApp/Telefone",
+    "submitError": "Não foi possível enviar sua consulta. Por favor, tente novamente ou ligue diretamente para nós.",
+    "messageRequired": "Adicione uma mensagem curta antes de enviar.",
+    "submitUnavailable": "A consulta online ainda não está configurada. Envie um e-mail ou ligue para nós usando os detalhes nesta página.",
+    "submitSuccess": "Consulta enviada. Nossa equipe entrará em contato com você em breve.",
+    "corporateOffice": "Escritório corporativo",
+    "companyRows": [
+      [
+        "Empresa / Marca"
+      ],
+      [
+        "Site",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mail"
+      ],
+      [
+        "Telefone"
+      ],
+      [
+        "Endereço Corporativo",
+        "Praça Sankalp, A 1601, Sindhu Bhavan Marg, perto do Taj Hotel, opp. Jogo de tiro, Colônia PRL, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Praça Sankalp, A 1601, Sindhu Bhavan Marg, perto do Taj Hotel, opp. Jogo de tiro, Colônia PRL, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Detalhes de contato",
+    "stepBagSpec": "Especificação da bolsa",
+    "bagSpec": "Especificação da bolsa",
+    "submitEnquiry": "Enviar consulta",
+    "stepLabel": "Passo {current} de {total}",
+    "howReachYou": "Como devemos entrar em contato com você?",
+    "fields": {
+      "capacity": "Capacidade",
+      "product": "Produto",
+      "bagType": "Tipo de bolsa",
+      "size": "Tamanho",
+      "packing": "Embalagem",
+      "printing": "Impressão",
+      "addons": "Complementos",
+      "quantity": "Quantidade",
+      "destination": "País de destino",
+      "review": "Análise",
+      "packedProduct": "Produto embalado"
+    },
+    "savedWithName": "{name}, seus dados de contato serão salvos.",
+    "reviewLabels": {
+      "capacity": "Capacidade",
+      "productType": "Tipo de produto",
+      "printing": "Impressão",
+      "addons": "Complementos",
+      "packing": "Embalagem",
+      "quantity": "Quantidade",
+      "bagSize": "Tamanho da bolsa",
+      "destination": "Destino",
+      "empty": "-",
+      "packedProduct": "Produto embalado"
+    },
+    "closeForm": "Fechar formulário de consulta",
+    "emailInvalid": "Insira um endereço de e-mail válido.",
+    "reviewSteps": {
+      "product": "Produto",
+      "order": "Ordem",
+      "sizePrint": "Tamanho e impressão"
+    },
+    "registerLead": "Registraremos sua consulta e acompanharemos pelo WhatsApp.",
+    "saved": "Seus detalhes de contato são salvos."
+  },
+  "sample": {
+    "steps": {
+      "review": "Análise",
+      "payment": "Pagamento",
+      "confirmed": "Confirmado"
+    },
+    "yourDetails": "Seus detalhes",
+    "bankTransfer": "Transferência bancária",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "continuePayment": "Continuar para o pagamento",
+    "reference": "Referência:",
+    "billRows": {
+      "productType": "Tipo de produto",
+      "capacity": "Capacidade",
+      "printing": "Impressão",
+      "packing": "Embalagem",
+      "leadTime": "Tempo de espera",
+      "sampleQuantity": "Quantidade de amostra",
+      "unitPrice": "Preço unitário",
+      "total": "Total",
+      "exportPacking": "Embalagem e expedição para exportação"
+    },
+    "specification": "Especificação de amostra",
+    "bankRows": {
+      "beneficiary": "Beneficiário",
+      "bank": "Banco",
+      "branch": "Filial",
+      "accountNumber": "Número de conta",
+      "amount": "Quantia",
+      "paymentReference": "Referência de pagamento",
+      "accountType": "Tipo de conta",
+      "swift": "Rápido",
+      "ifsc": "IFSC"
+    },
+    "searchBanks": "Pesquisar bancos",
+    "selectBranch": "Selecione a filial",
+    "selectBank": "Selecione o banco",
+    "searchBranches": "Pesquisar filiais",
+    "form": {
+      "name": "Nome",
+      "address": "Endereço de entrega",
+      "quantity": "Quantidade necessária para amostra"
+    },
+    "noBankMatches": "Nenhuma correspondência. Tente uma pesquisa diferente.",
+    "closePicker": "Fechar seletor"
+  },
+  "blog": {
+    "pageTitle": "Guias e insights do comprador",
+    "fallbackReadTime": "5 minutos de leitura",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "fallbackCategory": "Guia do comprador",
+    "emptyTitle": "Nenhum artigo ainda",
+    "loading": "Carregando artigos…",
+    "emptyBody": "Novos guias e insights do comprador estão a caminho. Volte em breve.",
+    "backToArticles": "Voltar para todos os artigos"
+  },
+  "careers": {
+    "applyNow": "Inscreva-se agora",
+    "seeHowWeWork": "Veja como trabalhamos",
+    "lead": "Procuramos pessoas que se preocupam com qualidade, comunicação clara e entrega confiável. As funções abrangem escritórios, fábricas e operações de exportação em Ahmedabad e Vadodara.",
+    "title": "Originário da Índia. Confiável em todo o mundo.",
+    "eyebrow": "Carreiras na VividPoly",
+    "whyHeading": "Por que VividPoly",
+    "whyLead": "Um lugar prático para desenvolver habilidades em manufatura e comércio global.",
+    "reasons": [
+      {
+        "body": "Trabalho vinculado a compradores em mais de 70 mercados de exportação.",
+        "title": "Exposição Global"
+      },
+      {
+        "body": "Novas responsabilidades surgem rapidamente em uma empresa em crescimento.",
+        "title": "Espaço para crescer"
+      },
+      {
+        "title": "Segurança no Trabalho",
+        "body": "Apoiado por uma operação de exportação estável e estabelecida."
+      },
+      {
+        "body": "Exposição prática à manufatura e ao comércio global.",
+        "title": "Aprendendo no trabalho"
+      }
+    ],
+    "whyBody": "Um lugar prático para desenvolver habilidades em manufatura e comércio global. O trabalho está vinculado a compradores em mais de 70 mercados de exportação, novas responsabilidades surgem rapidamente em um negócio em crescimento e as funções são apoiadas por uma operação de exportação estável e estabelecida, com exposição prática à manufatura e ao comércio global.",
+    "positionsLead": "As vagas atuais são publicadas e atualizadas nessas plataformas. Procure funções ao vivo e inscreva-se por meio do formulário abaixo.",
+    "positionsHeading": "Encontre-nos onde você já está procurando",
+    "positionsEyebrow": "POSIÇÕES ABERTAS",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Atualizações da empresa e vagas abertas para carreiras de exportação, operações e embalagens."
+      },
+      {
+        "label": "De fato",
+        "blurb": "Pesquise listagens VIVIDPOLY por função, localização e nível de experiência."
+      },
+      {
+        "label": "Naukri",
+        "blurb": "Vagas com foco na Índia em equipes de fabricação, vendas e suporte."
+      }
+    ],
+    "positionsMoreLabel": "VER VAGAS",
+    "positionsNote": "Prefere uma aplicação direta? Use Aplicar agora abaixo.",
+    "ctaLead": "Compartilhe seu interesse, experiência e localização preferida. Nossa equipe analisará as inscrições conforme as vagas estiverem disponíveis.",
+    "ctaHeading": "Seu próximo passo na carreira começa aqui",
+    "ctaEyebrow": "INSCREVA-SE AGORA"
+  },
+  "search": {
+    "recentHeading": "Pesquisas recentes",
+    "suggestionsHeading": "Sugestões",
+    "noMatches": "Nenhuma correspondência. Experimente \"arroz\" ou \"cimento\"",
+    "recentTerms": [
+      "sacos de arroz",
+      "sacos de cimento",
+      "laminado impresso",
+      "25 kg de boca aberta"
+    ]
+  },
+  "filters": {
+    "capacityExample": "por exemplo 23kg",
+    "capacityCustomNotice": "A VIVIDPOLY fornece embalagens em saco PP entre {min} kg e {max} kg. Insira uma capacidade dentro deste intervalo.",
+    "capacityMax": "Capacidade máxima",
+    "capacityOrEnter": "Ou insira a capacidade",
+    "capacityMin": "Capacidade mínima",
+    "productUseOptions": "Opções de uso do produto",
+    "customSelectNoMatches": "Nenhuma correspondência encontrada",
+    "customSelectEnter": "Insira sua especificação…",
+    "customSelectUseAnyway": "Use este valor mesmo assim"
+  },
+  "breadcrumbs": {
+    "home": "Lar",
+    "getQuote": "Obtenha uma cotação",
+    "blog": "Blogue",
+    "faqs": "Perguntas frequentes",
+    "about": "Sobre",
+    "careers": "Carreira",
+    "contact": "Contate-nos",
+    "products": "Produtos",
+    "requestExportQuote": "Solicitar cotação de exportação"
+  },
+  "validation": {
+    "emailInvalid": "Insira um endereço de e-mail válido."
+  },
+  "buyerRows": [
+    {
+      "requirement": "Fornecimento de exportação da Índia",
+      "response": "A VIVIDPOLY está posicionada como um exportador com sede na Índia para compradores globais de sacolas PP."
+    },
+    {
+      "requirement": "Variedade de produtos",
+      "response": "Boca aberta, costurada, corte em D, válvula, transporte, laminada, fundo apertado, fundo bloco, reforço e sacolas de compras."
+    },
+    {
+      "requirement": "Capacidade personalizada",
+      "response": "As soluções de sacos PP podem ser planejadas de 5 kg a 75 kg dependendo da densidade do produto e da estrutura do saco."
+    },
+    {
+      "requirement": "Apresentação da marca",
+      "response": "As opções de impressão flexográfica e PP tecido laminado impresso dão suporte à identidade do produto e ao apelo nas prateleiras."
+    },
+    {
+      "response": "Tipo de produto, tamanho, capacidade, impressão, laminação, forro, reforço, alça e detalhes de embalagem podem ser capturados antes da cotação.",
+      "requirement": "Fluxo de consulta amigável ao comprador"
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "Fornecimento na Índia",
+      "short": "Exportador baseado na Índia"
+    },
+    {
+      "label": "Gama de produtos",
+      "short": "10 tipos de bolsa"
+    },
+    {
+      "label": "Capacidade personalizada",
+      "short": "5kg a 75kg"
+    },
+    {
+      "label": "Impressão de marca",
+      "short": "Imprimir e laminar"
+    },
+    {
+      "label": "Fluxo de trabalho de cotação",
+      "short": "Detalhes prontos para cotação"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Grãos e Leguminosas",
+      "bags": "Sacos de boca aberta, sacos costurados na parte superior e inferior, sacos PP tecidos laminados impressos, sacos com fundo apertado",
+      "use": "Arroz, trigo, grãos, leguminosas, farinha",
+      "tips": "Impressão flexográfica, impressão laminada, janela, reforço, forro, alça, embalagem de fardos de exportação."
+    },
+    {
+      "bags": "Sacos costurados, sacos PP tecidos laminados, sacos com fundo em bloco, sacos com reforço em fundo em bloco",
+      "tips": "Liner, reforço, impressão flexográfica, impressão laminada, perfuração, embalagem de paletes.",
+      "use": "Fertilizante e sementes",
+      "cardTitle": "Fertilizantes e Sementes"
+    },
+    {
+      "use": "Ração animal e ração para animais de estimação",
+      "bags": "Sacos PP tecidos laminados impressos, sacos de reforço com fundo em bloco, sacos de transporte, sacos com fundo apertado",
+      "tips": "Construção multicamadas, janela, reforço, alça, impressão premium, perfuração opcional.",
+      "cardTitle": "Ração Animal e Alimentos para Animais de Estimação"
+    },
+    {
+      "use": "Cimento, produtos químicos, minerais, pós",
+      "bags": "Sacos valvulados, sacos com fundo em bloco, sacos costurados na parte superior e inferior, sacos com suporte de forro",
+      "tips": "Construção da válvula, revestimento, perfuração, costura forte, embalagem resistente.",
+      "cardTitle": "Cimento e Pós Industriais"
+    },
+    {
+      "cardTitle": "Sal, açúcar e commodities",
+      "use": "Sal, açúcar, produtos de consumo",
+      "tips": "Forro, superfície laminada, impressão flexográfica, costura limpa, opções de suporte à umidade.",
+      "bags": "Sacos de boca aberta, sacos costurados, sacos laminados, sacos com forro"
+    },
+    {
+      "cardTitle": "Varejo e promocional",
+      "tips": "Opções de alça, impressão laminada, reforço, embalagem cartonada, arte da marca.",
+      "bags": "Sacos com corte D, sacos de transporte, sacos de compras tecidos, sacos PP tecidos laminados impressos",
+      "use": "Varejo, compras, promoção"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Impressão flexográfica, impressão laminada, janela, reforço, forro, alça, embalagem de fardos de exportação.",
+      "bags": "Sacos de boca aberta, sacos costurados na parte superior e inferior, sacos PP tecidos laminados impressos, sacos com fundo apertado.",
+      "title": "Arroz, Trigo, Grãos e Leguminosas"
+    },
+    {
+      "tips": "Forro, superfície laminada, corte limpo, costura segura, design amigável ao varejo.",
+      "title": "Farinha e produtos alimentares",
+      "bags": "Sacos de boca aberta, sacos PP tecidos impressos e laminados, sacos com fundo apertado."
+    },
+    {
+      "tips": "Forro, superfície laminada, impressão flexográfica, costura limpa, opções de suporte à umidade.",
+      "title": "Sal e Açúcar",
+      "bags": "Sacos de boca aberta, sacos costurados, sacos PP tecidos laminados impressos."
+    },
+    {
+      "tips": "Liner, reforço, impressão flexográfica, impressão laminada, perfuração, embalagem de paletes.",
+      "title": "Fertilizantes e Sementes",
+      "bags": "Sacos costurados, sacos PP tecidos laminados, sacos com fundo em bloco, sacos com reforço em fundo em bloco."
+    },
+    {
+      "tips": "Construção multicamadas, janela, reforço, alça, impressão premium, perfuração opcional.",
+      "title": "Ração Animal e Alimentos para Animais de Estimação",
+      "bags": "Sacos PP tecidos laminados impressos, sacos com fundo apertado, sacos com reforço com fundo em bloco, sacos de transporte."
+    },
+    {
+      "tips": "Construção da válvula, revestimento, perfuração, costura forte, embalagem resistente.",
+      "title": "Cimento e Materiais de Construção",
+      "bags": "Sacos valvulados, sacos com fundo em bloco, sacos com costura superior e inferior."
+    },
+    {
+      "title": "Produtos Químicos e Minerais",
+      "tips": "Forro, laminação, perfuração de ventilação, costura segura, embalagem para exportação.",
+      "bags": "Sacos valvulados, sacos costurados, sacos de boca aberta, sacos com suporte de liner."
+    },
+    {
+      "tips": "Opções de alça, impressão laminada, reforço, embalagem cartonada, arte da marca.",
+      "title": "Produtos promocionais e de varejo",
+      "bags": "Sacos com corte D, sacos de transporte, sacos de compras tecidos, sacos PP tecidos laminados impressos."
+    },
+    {
+      "title": "Embalagem de compras e estilo reutilizável",
+      "tips": "Alças de laço, alças de corte D, reforço lateral, reforço inferior, impressão multicolorida.",
+      "bags": "Sacolas de compras tecidas, sacolas de transporte, sacolas de tecido PP com corte D."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Saco tecido"
+    },
+    {
+      "title": "Tecido"
+    },
+    {
+      "title": "Barreira contra ervas daninhas"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Produtos Agrícolas e Alimentares",
+      "items": [
+        "Arroz, Trigo, Grãos e Leguminosas",
+        "Farinha e produtos alimentares",
+        "Sal e Açúcar"
+      ]
+    },
+    {
+      "title": "Insumos agrícolas e cuidados com animais",
+      "items": [
+        "Fertilizantes e Sementes",
+        "Ração Animal e Alimentos para Animais de Estimação"
+      ]
+    },
+    {
+      "title": "Industrial e Construção",
+      "items": [
+        "Cimento e Materiais de Construção",
+        "Produtos Químicos e Minerais"
+      ]
+    },
+    {
+      "title": "Varejo e promocional",
+      "items": [
+        "Produtos promocionais e de varejo",
+        "Embalagem de compras e estilo reutilizável"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Capacidade",
+      "title": "Capacidade",
+      "options": [
+        {
+          "label": "5kg"
+        },
+        {
+          "label": "10kg"
+        },
+        {
+          "label": "15kg"
+        },
+        {
+          "label": "20kg"
+        },
+        {
+          "label": "25kg"
+        },
+        {
+          "label": "30kg"
+        },
+        {
+          "label": "40kg"
+        },
+        {
+          "label": "50kg"
+        },
+        {
+          "label": "60kg"
+        },
+        {
+          "label": "75kg"
+        },
+        {
+          "label": "Personalizado"
+        }
+      ]
+    },
+    {
+      "key": "Tipo de produto",
+      "title": "Tipo de produto",
+      "options": [
+        {
+          "label": "Boca aberta"
+        },
+        {
+          "label": "Costurado"
+        },
+        {
+          "label": "Corte D"
+        },
+        {
+          "label": "Válvula"
+        },
+        {
+          "label": "Carregar"
+        },
+        {
+          "label": "Laminado"
+        },
+        {
+          "label": "Aperte o fundo"
+        },
+        {
+          "label": "Fundo do bloco"
+        },
+        {
+          "label": "Reforço inferior do bloco"
+        },
+        {
+          "label": "Compras de tecido"
+        },
+        {
+          "label": "Tecido PP"
+        },
+        {
+          "label": "Barreira contra ervas daninhas"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "Que tipos de sacolas PP a VIVIDPOLY exporta?",
+      "a": "VIVIDPOLY exporta sacos de boca aberta, sacos costurados na parte superior e inferior, sacos tecidos PP com corte D, sacos valvulados, sacos de transporte, sacos PP tecidos impressos e laminados, sacos PP tecidos impressos e laminados com fundo apertado, sacos de fundo de bloco PP tecido impresso e laminado, sacos de reforço de fundo de bloco PP tecido impresso e laminado, e sacos de compras tecidos."
+    },
+    {
+      "q": "Qual capacidade de peso está disponível para sacolas VIVIDPOLY PP?",
+      "a": "A VIVIDPOLY pode discutir os requisitos de sacolas PP de 5 kg a 75 kg, dependendo da densidade do produto, tamanho da sacola, resistência do tecido, construção, laminação, forro, reforço, costura e aplicação de uso final."
+    },
+    {
+      "q": "Quais informações são necessárias para uma cotação?",
+      "a": "Os compradores devem fornecer o tipo de produto, produto embalado, capacidade, tamanho do saco, quantidade, requisitos de impressão, laminação, forro, reforço, alça, corte, costura, tipo de embalagem, país de destino e arte ou referência de amostra, se disponível."
+    },
+    {
+      "q": "A VIVIDPOLY pode fornecer sacolas PP tecidas impressas e laminadas?",
+      "a": "Sim. VIVIDPOLY pode atender aos requisitos de sacos PP tecidos impressos e laminados para produtos como arroz, farinha, fertilizantes, ração animal, ração para animais de estimação, sementes, sal, açúcar e commodities de varejo."
+    },
+    {
+      "q": "Qual é a diferença entre bolsas de boca aberta e bolsas valvuladas?",
+      "a": "Os sacos de boca aberta são enchidos através de uma tampa aberta e fechados após o enchimento. Os sacos valvulados são preenchidos através de uma abertura de válvula e são comumente usados ​​para pós, produtos do tipo cimento, produtos químicos, minerais e materiais de construção."
+    },
+    {
+      "a": "Sacos com fundo apertado são usados ​​onde os compradores precisam de aparência de embalagem premium e apresentação de fechamento limpa. Eles são adequados para alimentos selecionados, rações para animais de estimação, rações para animais, grãos, sementes e produtos de varejo.",
+      "q": "Para que são usados ​​os sacos com fundo apertado?"
+    },
+    {
+      "q": "Para que são usados ​​os sacos de reforço com fundo em bloco?",
+      "a": "Os sacos de reforço com fundo em bloco são adequados onde os compradores precisam de maior volume, formato de preenchimento estável, área de marca mais forte e melhor apresentação de empilhamento."
+    },
+    {
+      "q": "Os sacos PP podem incluir janelas?",
+      "a": "Sim. Sacos PP tecidos laminados e impressos selecionados podem incluir uma janela transparente para mostrar o produto embalado em seu interior."
+    },
+    {
+      "a": "Sim. Os liners podem ser considerados onde for necessária proteção adicional do produto, suporte de umidade ou retenção de produto fino.",
+      "q": "A VIVIDPOLY pode fornecer forros dentro de sacos PP?"
+    },
+    {
+      "q": "Quais opções de impressão estão disponíveis?",
+      "a": "VIVIDPOLY pode suportar sacos simples, sacos impressos flexográficos e formatos de sacos PP tecidos impressos e laminados, dependendo das necessidades de marca, complexidade da arte, orçamento e mercado do produto."
+    }
+  ],
+  "blogList": [
+    {
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incidente ut labore et dolore magna aliqua.",
+      "category": "Guia do comprador",
+      "purpose": "Explique as sacolas PP, usos comuns e fatores de seleção do comprador.",
+      "title": "O que são sacos PP? Guia completo para compradores de importação",
+      "readTime": "6 minutos de leitura"
+    },
+    {
+      "category": "Embalagem",
+      "readTime": "5 minutos de leitura",
+      "title": "Sacos de boca aberta versus sacos valvulados: qual saco PP é adequado para o seu produto?",
+      "purpose": "Compare estilos de enchimento e aplicações adequadas.",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat."
+    },
+    {
+      "title": "Sacos PP costurados na parte superior e inferior: usos, benefícios e personalização",
+      "category": "Guia do comprador",
+      "purpose": "Eduque os compradores sobre os formatos de sacolas costuradas.",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "readTime": "7 minutos de leitura"
+    },
+    {
+      "readTime": "5 minutos de leitura",
+      "category": "Marca",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Sacos PP tecidos impressos e laminados para embalagens de arroz, ração e fertilizantes",
+      "purpose": "Promova embalagens de marca premium."
+    },
+    {
+      "category": "Embalagem",
+      "readTime": "6 minutos de leitura",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidente ut labore.",
+      "title": "Sacos com fundo apertado versus sacos com fundo em bloco: um guia do comprador",
+      "purpose": "Compare construções de bolsas premium."
+    },
+    {
+      "purpose": "Ajude os compradores a definir o tamanho e a capacidade antes da consulta.",
+      "title": "Guia de dimensionamento de sacolas PP: como escolher a capacidade de sacola de 5 kg a 75 kg",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo.",
+      "readTime": "8 minutos de leitura",
+      "category": "Dimensionamento"
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Marca",
+      "readTime": "5 minutos de leitura",
+      "purpose": "Explique as opções de impressão e o impacto da marca.",
+      "title": "Impressão flexográfica vs impressão laminada para sacos PP"
+    },
+    {
+      "category": "Características",
+      "title": "Por que forros, reforços e perfuração são importantes em sacos PP",
+      "purpose": "Explicar os recursos adicionais para proteção e manuseio do produto.",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "readTime": "4 minutos de leitura"
+    },
+    {
+      "title": "Como preparar uma consulta de exportação de sacola PP",
+      "readTime": "6 minutos de leitura",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inteiro nec odio praesent libero sed cursus ante.",
+      "purpose": "Ensine aos compradores quais detalhes enviar para cotação.",
+      "category": "Dicas de exportação"
+    },
+    {
+      "category": "Varejo",
+      "readTime": "5 minutos de leitura",
+      "title": "Sacolas de compras tecidas para embalagens promocionais e de varejo",
+      "purpose": "Almeje compradores de sacolas promocionais e de compras.",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "USD",
+    "qtyLabel": "5 peças de amostra",
+    "packing": "Embalagem de exportação de caixa",
+    "printing": "Simples (especificação de amostra)",
+    "leadTime": "7 a 10 dias úteis após a confirmação do pagamento"
+  },
+  "bankDetails": {
+    "bankName": "Banco HDFC Ltda.",
+    "accountType": "Conta corrente",
+    "branch": "Ahmedabad, Bopal, Gujarat, Índia",
+    "paymentNote": "Inclua o nome da sua empresa e o exemplo de referência na narração da transferência.",
+    "ifsc": "HDFC0001234",
+    "swift": "HDFCINBB"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "Banco HDFC Ltda.",
+      "location": "Gujarat, Índia",
+      "accountType": "Conta corrente",
+      "branch": "Ahmedabad, Bopal",
+      "swift": "HDFCINBB",
+      "ifsc": "HDFC0001234"
+    },
+    {
+      "bankName": "Banco HDFC Ltda.",
+      "location": "Gujarat, Índia",
+      "swift": "HDFCINBB",
+      "accountType": "Conta corrente",
+      "branch": "Vadodara, Halol Road",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, Índia",
+      "bankName": "Banco ICICI Ltda.",
+      "accountType": "Conta corrente",
+      "branch": "Rodovia Ahmedabad, SG",
+      "ifsc": "ICIC0001234",
+      "swift": "ICICINBB"
+    },
+    {
+      "bankName": "Banco Eixo Ltda.",
+      "location": "Gujarat, Índia",
+      "accountType": "Conta corrente",
+      "branch": "Ahmedabad, Prahladnagar",
+      "swift": "AXISINBB",
+      "ifsc": "UTIB0000123"
+    },
+    {
+      "location": "Gujarat, Índia",
+      "branch": "Gandinagar, Setor 21",
+      "ifsc": "SBIN0006789",
+      "accountType": "Conta corrente",
+      "swift": "SBININBB",
+      "bankName": "Banco Estatal da Índia"
+    },
+    {
+      "location": "Gujarat, Índia",
+      "accountType": "Conta corrente",
+      "ifsc": "KKBK0001234",
+      "bankName": "Banco Kotak Mahindra",
+      "swift": "KKBKINBB",
+      "branch": "Ahmedabad, Estrada Ashram"
+    },
+    {
+      "bankName": "Sim Banco Ltda.",
+      "location": "Maharashtra, Índia",
+      "accountType": "Conta corrente",
+      "ifsc": "SIMB0000123",
+      "swift": "SIMBINBB",
+      "branch": "Mumbai, Anderi Leste"
+    },
+    {
+      "location": "Gujarat, Índia",
+      "accountType": "Conta corrente",
+      "branch": "Ahmedabad, Navrangpur",
+      "bankName": "IndusInd Bank Ltd.",
+      "ifsc": "INDB0000123",
+      "swift": "INDBINBB"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Sacos de boca aberta"
+    },
+    {
+      "label": "Sacos costurados"
+    },
+    {
+      "label": "Sacos com corte D"
+    },
+    {
+      "label": "Sacos de válvula"
+    },
+    {
+      "label": "Sacolas de transporte"
+    },
+    {
+      "label": "Sacos PP tecidos laminados"
+    },
+    {
+      "label": "Sacos de fundo apertado"
+    },
+    {
+      "label": "Sacos de fundo em bloco"
+    },
+    {
+      "label": "Sacos de reforço de fundo em bloco"
+    },
+    {
+      "label": "Sacolas de compras tecidas"
+    },
+    {
+      "label": "Tecido PP"
+    },
+    {
+      "label": "Barreira contra ervas daninhas"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Sacos de boca aberta",
+      "group": "Saco tecido",
+      "short": "Sacos de tecido PP de fácil enchimento para produtos secos a granel, como grãos, farinha, ração, fertilizantes, sal, açúcar, sementes e minerais.",
+      "cta": "Explore sacos de boca aberta",
+      "intro": "Os sacos de boca aberta são um dos estilos de sacos PP mais práticos para embalagens a granel seco. VIVIDPOLY exporta sacos PP de boca aberta para compradores que precisam de enchimento fácil, fechamento flexível e personalização para aplicações agrícolas, alimentícias, fertilizantes, rações, químicas, minerais, salinas, açúcar e industriais.",
+      "features": [
+        {
+          "title": "Enchimento fácil",
+          "body": "A parte superior aberta permite o enchimento rápido por métodos manuais, semiautomáticos ou com suporte de máquina."
+        },
+        {
+          "title": "Flexibilidade de capacidade",
+          "body": "Adequado para aplicações de 5 kg a 75 kg, dependendo da densidade do produto e do design do saco."
+        },
+        {
+          "title": "Acabamento personalizado",
+          "body": "A parte superior pode ser cortada a quente, a frio, com bainha ou em zigue-zague."
+        },
+        {
+          "title": "Opções de impressão e liner",
+          "body": "Impressão flexográfica, impressão laminada e suporte de liner podem ser adicionados quando necessário."
+        }
+      ],
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "5kg a 75kg"
+        },
+        {
+          "key": "Principal",
+          "value": "Boca aberta, corte a quente, corte a frio, zigue-zague, bainha"
+        },
+        {
+          "key": "Fundo",
+          "value": "Costura dobrada simples, costura dobrada dupla, acabamento personalizado"
+        },
+        {
+          "key": "Impressão",
+          "value": "Impressão lisa, flexográfica, laminada"
+        },
+        {
+          "key": "Complementos",
+          "value": "Reforço, forro, perfuração, alça, se necessário"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Fardo, pacote, palete, caixa, embalagem de exportação"
+        }
+      ],
+      "details": "Esses sacos podem ser fornecidos como sacos PP de tecido simples, sacos impressos flexográficos ou sacos PP tecidos impressos e laminados. Os compradores podem selecionar tamanho, tecido, capacidade, reforço, forro, impressão, costura, corte e embalagem.",
+      "benefits": "Os sacos PP de boca aberta são preferidos pela sua simplicidade, adaptabilidade e manuseamento económico. Eles são ideais para compradores que precisam de um saco de tecido resistente que possa ser fechado após o enchimento, costurando, selando, dobrando ou amarrando.",
+      "mfg": "O processo inclui tecelagem de tecido, impressão ou laminação opcional, corte, costura inferior, inspeção e embalagem.",
+      "material": "Tecido PP, tinta de impressão, linha de costura, laminação opcional, forro opcional e requisitos de cores/aditivos específicos do comprador.",
+      "speciality": "A especialidade dos sacos de boca aberta é a sua flexibilidade para diferentes produtos e métodos de enchimento."
+    },
+    "stitched": {
+      "cta": "Explorar bolsas costuradas",
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Costura superior e inferior segura, resistência do tecido personalizada, forro opcional, impressão flexográfica ou laminada, embalagem personalizada."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Melhor segurança de fechamento, manuseio prático, bom desempenho de empilhamento e adequação para muitos produtos a granel sólidos."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Os compradores podem especificar o tipo de costura, tipo de linha, estilo de dobra, tamanho, capacidade, impressão, forro, reforço e embalagem."
+        }
+      ],
+      "name": "Sacos costurados na parte superior e inferior",
+      "short": "Sacos PP costurados e seguros para transporte, armazenamento e embalagem para exportação de produtos agrícolas e industriais.",
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "5kg a 75kg"
+        },
+        {
+          "key": "Costura",
+          "value": "Dobra simples, dobra dupla, linha simples, linha dupla, costura superior e inferior"
+        },
+        {
+          "key": "Impressão",
+          "value": "Simples, flexográfico, laminado impresso"
+        },
+        {
+          "key": "Forro",
+          "value": "Forro solto ou costurado opcional"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Fardo, pacote, palete, embalagem comprimida para exportação"
+        }
+      ],
+      "intro": "Os sacos costurados na parte superior e inferior são projetados para compradores que precisam de fechamento seguro e manuseio confiável durante o armazenamento e transporte. A VIVIDPOLY exporta sacolas de PP costuradas para embalagens agrícolas, alimentícias, fertilizantes, ração animal, químicas, minerais e industriais.",
+      "details": "Os compradores podem especificar o tipo de costura, tipo de linha, estilo de dobra, tamanho, capacidade, impressão, forro, reforço e embalagem.",
+      "benefits": "Melhor segurança de fechamento, manuseio prático, bom desempenho de empilhamento e adequação para muitos produtos a granel sólidos.",
+      "speciality": "A especialidade deste tipo de bolsa é o fechamento costurado confiável.",
+      "mfg": "O processo de fabricação inclui tecelagem, impressão/laminação opcional, corte, costura superior e inferior, inspeção e embalagem.",
+      "material": "As combinações de materiais incluem tecido PP, linha de costura, laminação opcional, forro opcional e tinta de impressão."
+    },
+    "d-cut": {
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Alça com corte D, tamanho personalizado, impressão flexográfica ou laminada, reforço opcional, acabamento adequado para varejo."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Fácil transporte, estrutura tecida forte, visibilidade da marca e valor promocional útil."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Adequado para aplicações de transporte leve a médio, produtos de varejo, feiras comerciais e campanhas promocionais."
+        }
+      ],
+      "name": "Sacos tecidos PP D-Cut",
+      "short": "Sacos de tecido PP tipo transporte com alça integrada cortada para varejo, promoção e embalagens reutilizáveis.",
+      "intro": "Os sacos tecidos PP D-Cut incluem um corte de alça integrado que torna o saco mais fácil de transportar. VIVIDPOLY exporta sacolas com corte D para requisitos de varejo, compras, promocionais, exposições e embalagens de estilo reutilizável.",
+      "cta": "Explorar bolsas D-Cut",
+      "details": "Adequado para aplicações de transporte leve a médio, produtos de varejo, feiras comerciais e campanhas promocionais.",
+      "benefits": "Fácil transporte, estrutura tecida forte, visibilidade da marca e valor promocional útil.",
+      "spec": [
+        {
+          "key": "Lidar",
+          "value": "Cabo com corte em D ou corte em D reforçado"
+        },
+        {
+          "key": "Material",
+          "value": "Material PP tecido ou laminado PP"
+        },
+        {
+          "key": "Impressão",
+          "value": "Impressão personalizada"
+        },
+        {
+          "key": "Costura",
+          "value": "Costura lateral/inferior"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Embalagem de caixa ou pacote"
+        }
+      ],
+      "mfg": "Tecelagem, impressão ou laminação, corte, formação de alça em corte D, costura, inspeção, embalagem.",
+      "material": "Tecido PP, filme laminado se necessário, tinta de impressão, linha de costura, reforço de alça se necessário.",
+      "speciality": "Combina conveniência de transporte com resistência do tecido e apresentação da marca."
+    },
+    "valve": {
+      "name": "Sacos de válvula",
+      "cta": "Explorar bolsas valvuladas",
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Design de enchimento de válvula, revestimento opcional, perfuração, impressão laminada, compatibilidade com fundo de bloco."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Enchimento controlado mais rápido, formato embalado mais limpo, adequado para produtos em pó e granulados."
+        },
+        {
+          "title": "Detalhes",
+          "body": "O tamanho da válvula, tipo de válvula, perfuração, revestimento, capacidade e construção devem ser selecionados de acordo com o produto e sistema de enchimento."
+        }
+      ],
+      "details": "O tamanho da válvula, tipo de válvula, perfuração, revestimento, capacidade e construção devem ser selecionados de acordo com o produto e sistema de enchimento.",
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "Geralmente 20 kg a 75 kg"
+        },
+        {
+          "key": "Válvula",
+          "value": "Válvula simples ou estendida"
+        },
+        {
+          "key": "Construção",
+          "value": "Construção padrão ou de fundo em bloco"
+        },
+        {
+          "key": "Complementos",
+          "value": "Forro e perfuração opcionais"
+        }
+      ],
+      "benefits": "Enchimento controlado mais rápido, formato embalado mais limpo, adequado para produtos em pó e granulados.",
+      "intro": "Os sacos valvulados são desenvolvidos para produtos que necessitam de enchimento através de uma abertura de válvula. VIVIDPOLY exporta sacos valvulados para produtos do tipo cimento, produtos químicos, minerais, pós, materiais de construção e produtos industriais.",
+      "short": "Sacos PP com enchimento de válvula para produtos tipo cimento, produtos químicos, minerais, pós e materiais de construção.",
+      "material": "Tecido PP, material de válvula, forro, camada laminada, linha de costura, tinta de impressão.",
+      "mfg": "Preparação do tecido, impressão/laminação, corte, formação de válvulas, perfuração se necessário, inspeção, embalagem.",
+      "speciality": "Adequado para envase industrial e distribuição para exportação."
+    },
+    "carry": {
+      "name": "Sacolas de transporte",
+      "group": "Saco tecido",
+      "short": "Sacolas de transporte tecidas fortes e com marca para aplicações de varejo, comércio e promocionais.",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Opções de corte D, laço, costurado, perfurado, alça lateral ou superior; acabamento impresso ou laminado; reforço opcional."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Melhora a visibilidade da marca e proporciona resistência prática ao transporte."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Os compradores podem personalizar o tamanho da sacola, estilo da alça, design de impressão, laminação, reforço, costura e embalagem."
+        }
+      ],
+      "intro": "As sacolas de transporte feitas com material tecido PP são adequadas para compradores que exigem sacolas de transporte fortes, de marca e práticas. As exportações VIVIDPOLY carregam sacolas para varejo, comércio, compras, eventos e embalagens promocionais.",
+      "details": "Os compradores podem personalizar o tamanho da sacola, estilo da alça, design de impressão, laminação, reforço, costura e embalagem.",
+      "spec": [
+        {
+          "key": "Material",
+          "value": "Material PP tecido ou laminado PP"
+        },
+        {
+          "key": "Impressão",
+          "value": "Impressão flexográfica ou laminada"
+        },
+        {
+          "key": "Reforço",
+          "value": "Reforço lateral/inferior"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Embalagem de caixa/pacote/fardo"
+        }
+      ],
+      "cta": "Explorar bolsas de transporte",
+      "benefits": "Melhora a visibilidade da marca e proporciona resistência prática ao transporte.",
+      "mfg": "Tecelagem, impressão/laminação, corte, criação ou fixação de alças, costura, inspeção, embalagem.",
+      "speciality": "Embalagem forte para transporte com comunicação da marca.",
+      "material": "Tecido PP, filme laminado, tinta de impressão, linha de costura, material de alça, se necessário."
+    },
+    "laminated": {
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Superfície laminada impressa, base em tecido PP, opções de camadas, reforço, forro, janela, perfuração, alças."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Marca aprimorada, melhor apelo nas prateleiras, identidade do produto e estrutura de embalagem forte."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Adequado para 5 kg a 75 kg dependendo da construção e da densidade do produto."
+        }
+      ],
+      "cta": "Explore sacos PP laminados",
+      "name": "Sacos PP tecidos impressos e laminados",
+      "short": "Embalagens impressas premium para arroz, farinha, rações, rações para animais de estimação, fertilizantes, sementes e produtos de varejo.",
+      "benefits": "Marca aprimorada, melhor apelo nas prateleiras, identidade do produto e estrutura de embalagem forte.",
+      "details": "Adequado para 5 kg a 75 kg dependendo da construção e da densidade do produto.",
+      "spec": [
+        {
+          "key": "Base",
+          "value": "Tecido PP + camada laminada impressa"
+        },
+        {
+          "key": "Forro",
+          "value": "Forro opcional"
+        },
+        {
+          "key": "Terminar",
+          "value": "Acabamento brilhante/fosco, se disponível"
+        },
+        {
+          "key": "Personalizado",
+          "value": "Tamanho personalizado e arte"
+        }
+      ],
+      "intro": "Os sacos PP tecidos impressos e laminados combinam a resistência do tecido com uma apresentação atraente da marca. A VIVIDPOLY exporta essas sacolas para compradores que precisam de embalagens impressas premium para produtos alimentícios, fertilizantes, rações, rações para animais de estimação, sementes, sal, açúcar e produtos de varejo.",
+      "mfg": "Tecelagem de tecidos, preparação de arte, impressão, laminação, corte, costura/conversão, inspeção, embalagem.",
+      "speciality": "Embalagem premium de exportação com aparência focada na marca.",
+      "material": "Tecido PP, filme impresso ou camada de impressão, camada de laminação, linha de costura, forro/janela opcional, tinta de impressão."
+    },
+    "pinch-bottom": {
+      "name": "Sacos de fundo apertado",
+      "group": "Saco tecido",
+      "short": "Sacos PP laminados impressos premium com apresentação de fechamento limpo para embalagens prontas para varejo.",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Construção inferior de aperto, superfície laminada impressa, recurso opcional de fácil abertura, janela, reforço, forro."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Aparência premium, formato preenchido organizado, apresentação mais forte nas prateleiras, melhor comunicação da marca."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Mais adequado para produtos prontos para varejo e embalagens de commodities de marca."
+        }
+      ],
+      "cta": "Explorar sacos de aperto",
+      "intro": "Os sacos com fundo apertado de PP tecido impresso e laminado são projetados para embalagens premium onde a apresentação do fechamento limpo e a aparência da marca são importantes. VIVIDPOLY exporta sacos com fundo apertado para grãos alimentícios, rações para animais de estimação, ração animal, sementes e produtos de varejo.",
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "Geralmente 5 kg a 50 kg, superior pela revisão do projeto"
+        },
+        {
+          "key": "Construção",
+          "value": "PP tecido laminado impresso"
+        },
+        {
+          "key": "Complementos",
+          "value": "Janela/forro/reforço opcional"
+        }
+      ],
+      "benefits": "Aparência premium, formato preenchido organizado, apresentação mais forte nas prateleiras, melhor comunicação da marca.",
+      "details": "Mais adequado para produtos prontos para varejo e embalagens de commodities de marca.",
+      "mfg": "Preparação do tecido, impressão/laminação, corte, formação de fundo comprimido, janela/perfuração opcional, inspeção, embalagem.",
+      "speciality": "Apresentação de fechamento premium para embalagens de exportação de marca.",
+      "material": "Tecido PP, filme laminado impresso, camada de laminação, forro, película para janelas, tinta de impressão."
+    },
+    "block-bottom": {
+      "name": "Sacos de fundo em bloco",
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Estrutura inferior em bloco, acabamento laminado estampado, boca aberta ou topo valvulado, liner, perfuração."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Melhor formato de pé, melhor apresentação do palete, superfície de marca forte e manuseio mais fácil."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Adequado para produtos onde a apresentação visual e o desempenho de empilhamento são importantes."
+        }
+      ],
+      "short": "Sacos PP laminados impressos de formato estável para melhor empilhamento, exibição e apresentação de exportação.",
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "5 kg a 75 kg dependendo da construção"
+        },
+        {
+          "key": "Formatar",
+          "value": "Formato inferior do bloco"
+        },
+        {
+          "key": "Principal",
+          "value": "Válvula opcional"
+        },
+        {
+          "key": "Complementos",
+          "value": "Liner, perfuração, impressão laminada"
+        }
+      ],
+      "benefits": "Melhor formato de pé, melhor apresentação do palete, superfície de marca forte e manuseio mais fácil.",
+      "intro": "Os sacos inferiores em bloco de PP tecido impresso e laminado fornecem um formato preenchido mais estável e melhor aparência de empilhamento. A VIVIDPOLY exporta sacos com fundo em bloco para fertilizantes, rações para animais de estimação, rações para animais, grãos, minerais, produtos químicos e embalagens de varejo.",
+      "cta": "Explorar sacos com fundo de bloco",
+      "details": "Adequado para produtos onde a apresentação visual e o desempenho de empilhamento são importantes.",
+      "speciality": "Apresentação pronta para exportação com formato estável de saco cheio.",
+      "mfg": "Produção de tecidos, impressão/laminação, corte, formação de fundo de bloco, acabamento superior/válvula, inspeção, embalagem.",
+      "material": "Tecido PP, filme laminado, tinta de impressão, forro, material de válvula, materiais de formação/costura."
+    },
+    "gusset": {
+      "name": "Sacos de reforço de fundo em bloco",
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Fundo de bloco com reforço, exterior laminado impresso, profundidade de reforço personalizada, janela, forro, perfuração."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Maior volume utilizável, formato preenchido mais forte, área de marca aprimorada e melhor apresentação visual."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Útil onde os compradores precisam de sacolas impressas premium com volume extra e formato estável."
+        }
+      ],
+      "benefits": "Maior volume utilizável, formato preenchido mais forte, área de marca aprimorada e melhor apresentação visual.",
+      "cta": "Explorar bolsas de reforço",
+      "spec": [
+        {
+          "key": "Capacidade",
+          "value": "5 kg a 75 kg por densidade e design do produto"
+        },
+        {
+          "key": "Reforço",
+          "value": "Reforço lateral/inferior/bloco inferior"
+        },
+        {
+          "key": "Complementos",
+          "value": "Válvula opcional, forro, janela"
+        }
+      ],
+      "intro": "Sacos de reforço de fundo de bloco de PP impressos e laminados combinam construção estável de fundo de bloco com volume suportado por reforço. A VIVIDPOLY exporta essas sacolas para ração animal, ração para animais de estimação, fertilizantes, grãos, sementes e produtos industriais ou de varejo de alto volume.",
+      "short": "Sacos PP laminados impressos em grande volume com suporte de reforço e área de marca forte.",
+      "details": "Útil onde os compradores precisam de sacolas impressas premium com volume extra e formato estável.",
+      "speciality": "Combina volume, apresentação e praticidade de embalagem para exportação.",
+      "mfg": "Tecelagem, impressão/laminação, corte, formação de reforço, formação de fundo de bloco, adição de recursos, inspeção, embalagem.",
+      "material": "Tecido PP, filme laminado impresso, forro, película para janelas, construção de reforço, tinta de impressão, materiais de costura/formação."
+    },
+    "shopping": {
+      "name": "Sacolas de compras (tecido)",
+      "group": "Saco tecido",
+      "features": [
+        {
+          "title": "Características",
+          "body": "Estrutura tecida de estilo reutilizável, alças personalizadas, impressão flexográfica ou laminada, reforço, acabamento adequado para varejo."
+        },
+        {
+          "title": "Benefícios",
+          "body": "Força de transporte prática, promoção da marca, apresentação profissional de varejo e visibilidade repetida."
+        },
+        {
+          "title": "Detalhes",
+          "body": "Adequado para varejistas, supermercados, exposições, promoções corporativas e campanhas de compras."
+        }
+      ],
+      "intro": "Sacolas de compras tecidas são sacolas de tecido PP usadas para varejo, supermercados, eventos, feiras comerciais e embalagens promocionais. VIVIDPOLY exporta sacolas de compras tecidas para compradores que precisam de embalagens de transporte fortes, reutilizáveis ​​e de marca.",
+      "cta": "Explorar sacolas de compras",
+      "short": "Sacolas de compras tecidas para redes de varejo, supermercados, exposições e campanhas promocionais.",
+      "spec": [
+        {
+          "key": "Tamanho",
+          "value": "Tamanho personalizado"
+        },
+        {
+          "key": "Alças",
+          "value": "Alças com corte D/laço/costurado/perfurado"
+        },
+        {
+          "key": "Reforço",
+          "value": "Reforço lateral ou inferior"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Embalagem de caixa/pacote/fardo"
+        }
+      ],
+      "benefits": "Força de transporte prática, promoção da marca, apresentação profissional de varejo e visibilidade repetida.",
+      "details": "Adequado para varejistas, supermercados, exposições, promoções corporativas e campanhas de compras.",
+      "material": "Tecido PP, filme impresso laminado, linha de costura, material de alça, tintas de impressão.",
+      "speciality": "Apresentação de marca personalizada para compradores de varejo e exportação promocional.",
+      "mfg": "Preparação de tecido, impressão/laminação, corte, formação/fixação de alça, costura, inspeção, embalagem."
+    },
+    "fabric": {
+      "name": "Tecido PP",
+      "group": "Tecido",
+      "features": [
+        {
+          "title": "Pronto para exportação",
+          "body": "Fornecido para compradores internacionais com opções personalizadas de tamanho e embalagem."
+        },
+        {
+          "body": "Largura, GSM, cor e comprimento do rolo ou corte podem ser planejados sob encomenda.",
+          "title": "Especificação personalizada"
+        },
+        {
+          "title": "Foco na qualidade",
+          "body": "Tecido e acabamento consistentes para uso industrial e agrícola."
+        }
+      ],
+      "cta": "Explore o tecido PP",
+      "short": "Rolos de tecido PP e comprimentos cortados para uso industrial, agrícola e de conversão.",
+      "benefits": "Rolos de tecido PP e comprimentos cortados para uso industrial, agrícola e de conversão.",
+      "intro": "Rolos de tecido PP e comprimentos cortados para uso industrial, agrícola e de conversão.",
+      "spec": [
+        {
+          "key": "Formatar",
+          "value": "Personalizado para consulta"
+        },
+        {
+          "key": "Material",
+          "value": "Tecido PP"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Embalagem de exportação"
+        }
+      ],
+      "details": "Compartilhe a largura, GSM, cor, quantidade e destino necessários para um orçamento.",
+      "mfg": "Tecelagem, acabamento, inspeção e embalagem para exportação.",
+      "speciality": "Tecido PP da VIVIDPOLY para compradores globais.",
+      "material": "Material tecido PP e aditivos específicos do comprador, quando necessário."
+    },
+    "weed-barrier": {
+      "name": "Barreira contra ervas daninhas",
+      "group": "Barreira contra ervas daninhas",
+      "cta": "Explorar barreira contra ervas daninhas",
+      "features": [
+        {
+          "title": "Pronto para exportação",
+          "body": "Fornecido para compradores internacionais com opções personalizadas de tamanho e embalagem."
+        },
+        {
+          "title": "Especificação personalizada",
+          "body": "Largura, GSM, cor e comprimento do rolo ou corte podem ser planejados sob encomenda."
+        },
+        {
+          "title": "Foco na qualidade",
+          "body": "Tecido e acabamento consistentes para uso industrial e agrícola."
+        }
+      ],
+      "short": "Tecido PP de barreira contra ervas daninhas para aplicações em paisagismo, agricultura e cobertura de solo.",
+      "details": "Compartilhe a largura, GSM, cor, quantidade e destino necessários para um orçamento.",
+      "spec": [
+        {
+          "key": "Formatar",
+          "value": "Personalizado para consulta"
+        },
+        {
+          "key": "Material",
+          "value": "Tecido PP"
+        },
+        {
+          "key": "Embalagem",
+          "value": "Embalagem de exportação"
+        }
+      ],
+      "intro": "Tecido PP de barreira contra ervas daninhas para aplicações em paisagismo, agricultura e cobertura de solo.",
+      "mfg": "Tecelagem, acabamento, inspeção e embalagem para exportação.",
+      "material": "Material tecido PP e aditivos específicos do comprador, quando necessário.",
+      "benefits": "Tecido PP de barreira contra ervas daninhas para aplicações em paisagismo, agricultura e cobertura de solo.",
+      "speciality": "Barreira contra ervas daninhas da VIVIDPOLY para compradores globais."
+    }
+  },
+  "markets": [
+    "EUA",
+    "Canadá",
+    "Austrália",
+    "Europa",
+    "Reino Unido",
+    "África",
+    "Tailândia",
+    "Arábia Saudita",
+    "América latina",
+    "Nova Zelândia"
+  ],
+  "packedProductOptions": [
+    "Arroz",
+    "Fertilizante",
+    "Ração animal",
+    "Cimento",
+    "Bens de varejo"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5kg",
+      "10kg",
+      "15kg",
+      "20kg",
+      "25kg",
+      "30kg",
+      "40kg",
+      "50kg",
+      "60kg",
+      "75kg",
+      "Personalizado"
+    ],
+    "printing": [
+      "Simples",
+      "Flexográfico impresso",
+      "Laminado impresso",
+      "Multicolorido"
+    ],
+    "addons": [
+      "Forro",
+      "Reforço",
+      "Lidar",
+      "Janela",
+      "Perfuração",
+      "Válvula",
+      "Pitada",
+      "Fundo do bloco"
+    ],
+    "packing": [
+      "Fardo",
+      "Caixa",
+      "Palete",
+      "Embalagem de exportação"
+    ]
+  }
+}

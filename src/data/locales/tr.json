@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Dil seçin",
+    "career": "Kariyer"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürün",
+    "about": "Hakkımızda",
+    "industryServed": "Hizmet Verilen Sektörler",
+    "resources": "Haberler ve Güncellemeler",
+    "career": "Kariyer",
+    "contact": "İletişim",
+    "buyerResourcesLead": "Alıcı kılavuzları, SSS'ler ve VIVIDPOLY'den en son haberler.",
+    "buyerResourcesEyebrow": "Haberler ve güncellemeler",
+    "byIndustryUse": "Sektöre / Kullanıma Göre",
+    "byProductType": "Ürün Türüne Göre",
+    "blogTitle": "Blog",
+    "viewAllByType": "Tüm ürünleri türüne göre görüntüle",
+    "faqsTitle": "SSS",
+    "viewAllByIndustry": "Tüm ürünleri sektöre göre görüntüle",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "themeLight": "Işık moduna geç",
+    "faqsDesc": "Kapasite, baskı, astarlar ve teklif ayrıntılarına ilişkin yanıtlar.",
+    "blogDesc": "PP torba türleri, boyutlandırma ve ihracat talepleri hakkında alıcı kılavuzları.",
+    "getQuoteShort": "Fiyat teklifi al",
+    "themeDark": "Karanlık moda geç",
+    "mobileNav": "Mobil navigasyon",
+    "mainNav": "Ana gezinme",
+    "productsMenu": "Ürün menüsü",
+    "logoHome": "VIVIDPOLY, ana sayfaya git",
+    "resourcesMenu": "Haberler ve Güncelleme menüsü",
+    "mobileByProductType": "Ürün türüne göre",
+    "mobileByIndustry": "Sektöre/kullanıma göre",
+    "industryMenu": "Endüstride Sunulan menü"
+  },
+  "fab": {
+    "label": "Talep",
+    "mobileLabel": "Sor",
+    "ariaLabel": "Talep formunu aç"
+  },
+  "common": {
+    "getQuote": "Teklif Al",
+    "submitEnquiry": "Talebi Gönder",
+    "viewAll": "Tümünü Gör",
+    "backToHome": "Ana Sayfaya Dön",
+    "back": "Geri",
+    "next": "Sonraki",
+    "previous": "Öncesi",
+    "select": "Seçme",
+    "optional": "isteğe bağlı",
+    "custom": "Gelenek",
+    "none": "Hiçbiri",
+    "clearFilters": "Filtreleri temizle",
+    "selectEnquiryType": "Sorgu türünü seçin",
+    "selectBagType": "Çanta tipini seçin",
+    "selectCountry": "Ülke seçin",
+    "clearAllFilters": "Tüm filtreleri temizle",
+    "viewDetails": "Ayrıntıları Görüntüle",
+    "filters": "Filtreler",
+    "recommended": "Tavsiye edilen",
+    "specification": "Şartname",
+    "of": "ile ilgili",
+    "relatedProducts": "İlgili ürünler",
+    "close": "Kapalı",
+    "chatExportTeam": "İhracat Ekibiyle Sohbet Edin",
+    "productsCount": "{count} ürünler",
+    "filtered": "(filtrelendi)",
+    "noProductsMatch": "Filtrelerinizle eşleşen ürün yok."
+  },
+  "siteCopy": {
+    "heroHeadline": "Küresel Alıcılar için PP Çuvallar",
+    "heroLead": "Hindistan'dan PP çuvallar, dokuma çuvallar, valfli çuvallar ve özel ihracat ambalajı; dünya çapında ithalatçılar, distribütörler ve endüstriyel alıcılar için üretilir.",
+    "heroIsoLabel": "ISO sertifikalı",
+    "heroIecLabel": "IEC sertifikalı",
+    "heroCtaSecondary": "Ürün Tiplerini Görüntüle",
+    "searchPlaceholder": "Torba türünü, ürünü veya sektörü arayın (ör. pirinç torbaları, çimento torbaları)",
+    "heroIecLabelShort": "IEC",
+    "heroHeadlineLine1": "PP Çantalar",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaSecondaryShort": "Ürünler",
+    "heroCtaEnquiry": "Sorgu",
+    "heroCtaWhatsApp": "WhatsApp",
+    "headerQuoteLabel": "Alıntı",
+    "heroHeadlineLine2": "Küresel Alıcılar",
+    "heroRail": "HİNDİSTAN · GLOBAL İHRACAT",
+    "heroHeadlineAccent": "Küresel Alıcılar",
+    "heroHeadlinePrefix": "PP Çantalar",
+    "heroIsoLabelShort": "ISO",
+    "introEyebrow": "Neleri ihraç ediyoruz",
+    "introTitle": "Küresel alıcılar için PP torbalar",
+    "introHighlights": [
+      {
+        "label": "Kapasite",
+        "value": "5 ila 75 kg"
+      },
+      {
+        "label": "Menşei",
+        "value": "Hindistan ihracatı"
+      },
+      {
+        "label": "Odak",
+        "value": "Özel baskı ve paketleme"
+      }
+    ],
+    "brandTagline": "Kaliteli Ambalaj Çözümleri",
+    "heroLeadShort": "Küresel alıcılar için tasarlanmış ihracat ambalajları.",
+    "intro1": "VIVIDPOLY, Hindistan'dan küresel pazarlara PP Çantalar, PP dokuma çantalar, baskılı ve lamine dokuma PP torbalar, sıkıştırılmış tabanlı torbalar, blok tabanlı torbalar, köşebentli torbalar, valfli torbalar, taşıma çantaları, D-kesimli torbalar ve dokuma alışveriş çantaları ihraç etmektedir. Ambalaj çözümlerimiz ithalatçılar, distribütörler, gıda tahıl işleyicileri, gübre şirketleri, hayvan yemi markaları, kimyasal tedarikçileri, inşaat malzemesi işletmeleri, perakende zincirleri ve promosyon ambalaj alıcıları için tasarlanmıştır.",
+    "marketsStrip": "Birincil İhracat Pazarları: Amerika/ABD, Kanada, Avustralya, Avrupa, Birleşik Krallık, Afrika, Tayland, Suudi Arabistan, Latin Amerika, Yeni Zelanda ve diğer küresel ithalat pazarları.",
+    "homeAboutTitle": "Küresel İhracat Paketleme Ortağı",
+    "homeAboutCtaType": "Ürün Türüne Göre Alışveriş Yapın",
+    "homeAboutCtaIndustry": "Sektöre Göre Alışveriş Yapın",
+    "homeAboutEyebrow": "Hakkımızda",
+    "homeProductsEyebrow": "Ürünlerimiz",
+    "homeProductsTitle": "Ne Sunuyoruz?",
+    "intro2": "VIVIDPOLY, 5 kg'lık perakende paketlerden 75 kg'lık ağır hizmet tipi endüstriyel torbalara kadar, alıcıların ürün kullanımına ve hedef pazara göre doğru torba yapısını, baskı yöntemini, astarı, sapı, köşebenti, dikişi, kesim stilini ve ihracat ambalaj formatını seçmesine yardımcı olur.",
+    "homeValueProps": [
+      {
+        "title": "Özelleştirilebilir Şartname",
+        "description": "Ürününüze ve hedef pazarınıza göre uyarlanmış kapasite, yapı, baskı ve paketleme."
+      },
+      {
+        "title": "Toplu Sipariş Öncesi Örnek",
+        "description": "Tam ihracat miktarlarını onaylamadan önce torba kalitesini, boyutunu ve kaplamasını inceleyin."
+      },
+      {
+        "title": "İhracat Ambalajı Dahil",
+        "description": "Güvenli uluslararası sevkiyat için balya, palet ve karton ambalajlama planlandı."
+      }
+    ],
+    "homeValuePropsEyebrow": "Alıcılar neden VIVIDPOLY'yi seçiyor?",
+    "homeProductsLead": "Baskılı ve lamine dokuma PP torbalar, valfli torbalar, ağzı açık torbalar ve dünya çapındaki tarımsal, endüstriyel ve perakende alıcılar için Hindistan'dan özel ihracat ambalajları.",
+    "homeBrowseHeading": "PP torbalara kategoriye göre göz atın",
+    "buyerResponseLabel": "VIVIDPOLY Yanıtı",
+    "productUsesLearnMore": "Bir soruşturma gönderin",
+    "trustMessage": "VIVIDPOLY, profesyonel iletişime, net ürün özelliklerine, özel paketleme seçeneklerine ve Hindistan'dan hızlı yanıt veren ihracat desteğine ihtiyaç duyan küresel ithalat alıcıları için üretilmiştir. PP torba içeriğimiz, alıcıların torba türlerini karşılaştırmasına, ürün kullanımlarını anlamasına, eklenti özelliklerini incelemesine ve fiyat teklifi gereksinimlerini eksiksiz olarak göndermesine yardımcı olacak şekilde yapılandırılmıştır.",
+    "buyerSectionTitle": "Küresel Alıcılar için Geliştirilmiş İhracat Ambalajları",
+    "buyerRequirementLabel": "Alıcı Gereksinimi",
+    "finalCtaBody": "Çanta türünüzü, kapasitenizi, baskı ihtiyaçlarınızı, miktarını ve varış yerini paylaşın. VIVIDPOLY talebinizi inceleyecek ve pratik seçeneklerle takip edecektir.",
+    "finalCtaButton": "Bir soruşturma gönderin",
+    "faqSectionTitle": "Sık sorulan sorular",
+    "productUsesEmptyHint": "Önerilen çanta türlerini görmek için fareyle üzerine gelin veya bir ürün kullanımını seçin.",
+    "productUsesIntro": "VIVIDPOLY PP torbalar çok çeşitli ürün kategorileri için uygundur. Ürün ağırlığı, yoğunluğu, doldurma işlemi, nem hassasiyeti, markalama gereksinimi, taşıma koşulu ve ihracat paketleme standardına göre doğru torba seçilmelidir.",
+    "catalogueUseSub": "VIVIDPOLY PP torbalar çok çeşitli ürün kategorileri için uygundur. Ürün ağırlığı, yoğunluğu, doldurma işlemi, nem hassasiyeti, markalama gereksinimi, taşıma koşulu ve ihracat paketleme standardına göre doğru torba seçilmelidir.",
+    "recommendedBagsCol": "Önerilen Çanta Çeşitleri",
+    "productUseCol": "Ürün Kullanımı",
+    "finalCtaTitle": "Ambalaj ihtiyacınızı tartışmaya hazır mısınız?",
+    "catalogueTypeSub": "VIVIDPOLY, güçlü, özelleştirilebilir ve ihracata hazır ambalajlara ihtiyaç duyan işletmeler için Hindistan'dan PP torbalar ihraç ediyor. PP torbalarımız, ürün yoğunluğuna, torba boyutuna, yapısına, kumaş mukavemetine, laminasyon, astar, dikiş, köşebent ve dolgu ihtiyacına bağlı olarak 5 kg'dan 75 kg'a kadar kapasiteler için geliştirilebilir.",
+    "catalogueGuideProductType": "Buradan seçin",
+    "shopByUseLabel": "Paketliyorum…",
+    "catalogueGuideUseSort": "Burada sektöre göre sıralayın",
+    "quoteContactStepTitle": "İletişim bilgileriniz",
+    "contactIntro": "Bir ürün sorgusu veya genel bir soru göndermek için bu sayfayı kullanın. İlgilendiğiniz çanta türünü seçin veya hala seçenekleri araştırıyorsanız Genel Sorgu'yu seçin.",
+    "quoteIntro1": "VIVIDPOLY ihracat ekibinin doğru ürün tipini, yapısını, boyutunu, kapasitesini, baskısını, eklenti özelliklerini ve ihracat ambalaj formatını önerebilmesi için lütfen PP torba ihtiyacınızı paylaşın.",
+    "quoteContactStepLead": "Size nasıl ulaşabileceğimizi paylaşın. Talebinizi hemen kaydedip WhatsApp üzerinden takip ediyoruz.",
+    "quoteIntro2": "Aynı anda birkaç soruyu yanıtlayın. Çanta türü, boyutu, baskısı ve nakliye ayrıntıları konusunda size rehberlik edeceğiz.",
+    "quotePageTitle": "Çanta ihtiyaçlarınızı paylaşın",
+    "quoteLeadCapturedTitle": "Sorgulama kaydedildi",
+    "quotePageEyebrow": "İhracat talebi",
+    "quoteContactSubmitLabel": "Sorgumu kaydet",
+    "quoteLeadCapturedLead": "Bir VIVIDPOLY ihracat uzmanı, genellikle birkaç saat içinde WhatsApp üzerinden size ulaşacaktır.",
+    "quoteLeadCapturedOptionalBody": "Bir dakikanız varsa şimdi çantanızın özelliklerini ekleyin. Aramadan önce doğru PP torba tipini, boyutunu ve baskısını önermemize yardımcı olur, böylece ilk görüşmeniz zaten faydalı olur.",
+    "quoteLeadOnlySuccessBody": "En kısa zamanda WhatsApp'tan size ulaşacağız. Sizinle iletişime geçtiğimizde çanta detaylarını paylaşabilir veya spesifikasyonunuzu tamamlamak için istediğiniz zaman geri dönebilirsiniz.",
+    "sampleBillTitle": "Örnek sipariş faturası",
+    "quoteLeadCapturedSkipCta": "şimdilik işim bitti",
+    "quoteLeadCapturedContinueCta": "Çanta spesifikasyonu ekle",
+    "quoteLeadCapturedOptionalTitle": "Daha hızlı ve daha doğru bir fiyat teklifi mi istiyorsunuz?",
+    "samplePaymentTitle": "Banka havalesi ayrıntıları",
+    "quoteSubmitNote": "Yukarıdaki ayrıntılardan memnun olduğunuzda gönderin. İhracat ekibimiz her şeyi inceleyecek ve WhatsApp üzerinden takip edecek.",
+    "quoteSuccessTitle": "Sorgu alındı",
+    "sampleSuccessTitle": "Örnek sipariş alındı",
+    "samplePaymentConfirmCta": "Banka havalesini onaylayın",
+    "sampleSuccessBody": "Teşekkür ederim. Ödemenizi doğrulayacağız ve numune üretim ve gönderim zaman çizelgelerini e-postayla onaylayacağız.",
+    "sampleBillIntro": "Aşağıdaki örnek spesifikasyonları ve ücretleri inceleyin. Ödeme onaylandıktan sonra numuneler gönderilir.",
+    "blogLeadCta": "Bir soruşturma gönderin",
+    "samplePaymentIntro": "Aşağıdaki ayrıntıları kullanarak numune miktarını aktarın. Ödemenizi eşleştirebilmemiz için referansı kullanın.",
+    "blogReadArticle": "Makaleyi okuyun",
+    "homeStats": [
+      {
+        "label": "İhracat Pazarları",
+        "value": "70+"
+      },
+      {
+        "value": "9+",
+        "label": "Hizmet Verilen Ülkeler"
+      },
+      {
+        "label": "Aylık Kapasite",
+        "value": "750 Ton"
+      },
+      {
+        "label": "İhracat Notu"
+      }
+    ],
+    "quoteSuccessBody": "12 saat içinde size telefon veya WhatsApp yoluyla geri döneceğiz.",
+    "blogIntro": "PP torba tedarikçilerini karşılaştıran, torba türlerini öğrenen, spesifikasyonları kontrol eden ve ihracat taleplerini hazırlayan uluslararası alıcılar için yazılmıştır.",
+    "homeCertsHeading": "Sertifikalar",
+    "blogLeadTitle": "Paketlemeyle ilgili bir sorunuz mu var?",
+    "blogLeadBody": "İletişim sayfamızdan ürün talebinizi veya genel sorgunuzu gönderin. Ekibimiz gereksinimlerinizi inceleyecek ve pratik rehberlikle takip edecektir.",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY, küresel ithalat alıcılarına profesyonel iletişim, net ürün özellikleri, özel paketleme seçenekleri ve duyarlı ihracat desteği ile hizmet vermektedir. Kapasite, yapım, baskı ve paketleme, ürününüze ve hedef pazarınıza göre uyarlanır, böylece her sipariş dolum sürecinize, markalama ihtiyacınıza ve nakliye koşulunuza uyar.",
+      "Tam miktarları taahhüt etmeden önce numune isteyin. Balya, palet ve karton ambalajlar, pirinç, gübre, çimento, yem ve perakende kullanımlara uygun, açık ağızlı birinci sınıf lamine formatlara kadar on adet dokuma PP yapıda güvenli uluslararası sevkiyat için planlanıyor."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY, profesyonel iletişime, net ürün özelliklerine ve güvenilir ihracat desteğine ihtiyaç duyan küresel ithalatçılara hizmet veren Hindistan merkezli bir PP torba ihracatçısıdır. Marka tanıtımı için 5 kg'dan 75 kg'a kadar açık ağızlı, dikişli, D-kesimli, valfli, taşımalı, lamineli, tutam dipli, blok dipli, köşebentli ve alışveriş poşetlerini flekso veya laminant baskı seçenekleriyle tedarik etmekteyiz. Ürün tipi, boyutu, kapasitesi, baskı, laminasyon, astar, köşebent, kulp ve paketleme ayrıntılarının tümü, herhangi bir teklif verilmeden önce önceden yakalanır."
+    ]
+  },
+  "footer": {
+    "company": "Şirket",
+    "productTypes": "Ürün Tipleri",
+    "buyerHelp": "Alıcı Yardımı",
+    "contact": "İletişim",
+    "aboutBlurb": "VIVIDPOLY, özelleştirilebilir kapasiteye, baskıya, astarlara ve ihracata hazır ambalajlara ihtiyaç duyan küresel alıcılar için Hindistan'dan PP torbalar ihraç ediyor.",
+    "links": {
+      "contact": "Bize Ulaşın",
+      "home": "Ev",
+      "about": "Hakkında",
+      "productUses": "Ürün Kullanımları",
+      "getQuote": "Teklif Al"
+    },
+    "backToTop": "Başa dön",
+    "backToTopAria": "Sayfanın başına dön"
+  },
+  "meta": {
+    "title": "VIVIDPOLY: Hindistan'dan PP Çanta İhracatçısı",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Hindistan'dan PP Çanta İhracatçısı",
+    "description": "VIVIDPOLY, küresel alıcılar için Hindistan'dan PP torbalar ihraç ediyor.",
+    "loading": "VIVIDPOLY yükleniyor…"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Genel Sorgu"
+    },
+    {
+      "label": "Ağzı Açık Torbalar - OMB"
+    },
+    {
+      "label": "Üst ve Alt Dikişli Çantalar - TBS"
+    },
+    {
+      "label": "D-Cut PP Dokuma Çantalar - DCB"
+    },
+    {
+      "label": "Valf Torbaları - VB"
+    },
+    {
+      "label": "Taşıma Çantaları - CB"
+    },
+    {
+      "label": "Baskılı Lamine Dokuma PP Torbalar - LWB"
+    },
+    {
+      "label": "Sıkıştırmalı Alt Çantalar - PBB"
+    },
+    {
+      "label": "Blok Altlı Çantalar - BBB"
+    },
+    {
+      "label": "Blok Alt Körüklü Çantalar - BGB"
+    },
+    {
+      "label": "Dokuma Alışveriş Çantaları - WSB"
+    },
+    {
+      "label": "PP Dokuma Kumaş"
+    },
+    {
+      "label": "Ot Bariyeri"
+    }
+  ],
+  "enquiryModal": {
+    "title": "Talep Formu",
+    "close": "Talep formunu kapat"
+  },
+  "emailCompose": {
+    "toLabel": "İle",
+    "fromLabel": "E-postanız",
+    "nameLabel": "Adınız",
+    "messageLabel": "Mesaj",
+    "subjectLabel": "Ders",
+    "send": "Mesaj gönder",
+    "sending": "Gönderiliyor…",
+    "emailInvalid": "Geçerli bir e-posta adresi girin.",
+    "hint": "Mesajınız doğrudan ihracat ekibimize iletilir. Yukarıda girdiğiniz e-posta adresine yanıt vereceğiz.",
+    "close": "Oluşturma panelini kapat",
+    "title": "E-posta VIVIDPOLY",
+    "sendSuccess": "Mesaj gönderildi. Ekibimiz kısa sürede size geri dönüş yapacaktır.",
+    "messageRequired": "Göndermeden önce kısa bir mesaj ekleyin.",
+    "defaultSubject": "Vividpoly.com'dan ihracat talebi",
+    "sendError": "Mesajınızı gönderemedik. Lütfen tekrar deneyin veya doğrudan bizi arayın.",
+    "sendUnavailable": "E-posta gönderme henüz yapılandırılmadı. Bize ulaşmak için lütfen telefon veya WhatsApp'ı kullanın."
+  },
+  "home": {
+    "shopByIndustryDesc": "Torba türlerini pirinç, gübre, çimento, yem ve perakende kullanımlarla eşleştirin.",
+    "shopByProductTypeDesc": "Açık ağızdan birinci sınıf lamine formatlara kadar on dokuma PP yapı.",
+    "swipeIndustries": "Sektörlere göz atmak için kaydırın",
+    "faqsEyebrow": "SSS",
+    "swipeCards": "Kartları kaydırın",
+    "productTypes": "Ürün türleri",
+    "shopByIndustry": "Sektöre Göre Alışveriş Yapın",
+    "howWeHelpBuyers": "Alıcılara nasıl yardımcı oluyoruz",
+    "shopByProductType": "Ürün Türüne Göre Alışveriş Yapın",
+    "buyerNeed": "Alıcının {index}'a ihtiyacı var",
+    "buyerCarousel": "Alıcı gereksinimleri karuseli",
+    "buyerRequirements": "Alıcı gereksinimleri",
+    "buyerPagination": "Alıcının sayfalandırmaya ihtiyacı var",
+    "productUses": "Ürün kullanımları",
+    "slideOf": "{current} / {total}",
+    "previousProducts": "Önceki ürünler",
+    "valuePropsSlides": "Alıcılar neden VIVIDPOLY slaytlarını seçiyor?",
+    "nextProducts": "Sonraki ürünler"
+  },
+  "catalogue": {
+    "titleByType": "Ürün Türüne Göre Alışveriş Yapın",
+    "capacity": "Kapasite",
+    "productType": "Ürün Tipi",
+    "sortAllProducts": "Tüm ürünler",
+    "breadcrumbUse": "Ürünler / Sektöre ve Kullanıma Göre",
+    "breadcrumbType": "Ürünler / Ürün Tipine Göre",
+    "titleByUse": "Sektöre / Kullanıma Göre Alışveriş Yapın"
+  },
+  "pdp": {
+    "keyFeatures": "Temel özellikler",
+    "whyBuyersChoose": "Alıcılar neden bu çantayı seçiyor?",
+    "benefits": "Faydalar",
+    "getQuoteFor": "{productName} İçin Teklif Alın",
+    "customization": "Özelleştirme ayrıntıları",
+    "speciality": "Uzmanlık",
+    "productionMaterials": "Üretim ve malzemeler",
+    "materialCombination": "Malzeme kombinasyonu",
+    "manufacturingProcess": "Üretim süreci",
+    "trustBadges": [
+      "Özelleştirilebilir Şartname",
+      "Toplu Siparişten Önce Örnek Mevcuttur",
+      "İhracat Ambalajı Dahil",
+      "Duyarlı İhracat Ekibi"
+    ],
+    "productImage": "Ürün resmi {index}"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "pageEyebrow": "HAKKIMIZDA",
+    "pageTitle": "Küresel İhracat Paketleme Ortağı",
+    "ctaSecondary": "Ürün Türüne Göre Alışveriş Yapın",
+    "p2": "Tam miktarları taahhüt etmeden önce numune isteyin. Balya, palet ve karton ambalajlar, pirinç, gübre, çimento, yem ve perakende kullanımlara uygun, açık ağızlı birinci sınıf lamine formatlara kadar on adet dokuma PP yapıda güvenli uluslararası sevkiyat için planlanıyor.",
+    "p1": "VIVIDPOLY, küresel ithalat alıcılarına profesyonel iletişim, net ürün özellikleri, özel paketleme seçenekleri ve duyarlı ihracat desteği ile hizmet vermektedir. Kapasite, yapım, baskı ve paketleme, ürününüze ve hedef pazarınıza göre uyarlanır, böylece her sipariş dolum sürecinize, markalama ihtiyacınıza ve nakliye koşulunuza uyar.",
+    "ctaPrimary": "Bir soruşturma gönderin",
+    "exportVisionEyebrow": "İhracat Vizyonumuz",
+    "pillarsEyebrow": "GÜÇLÜ YÖNLER",
+    "exportVisionHeading": "Parlak bir geleceğe doğru ilerliyoruz",
+    "pillarsLead": "VIVIDPOLY, uluslararası standartlardan pratik sorgulama desteğine kadar, küresel ambalaj alıcılarının gerçekte nasıl kaynak sağladığına göre yapılandırılmıştır.",
+    "pillars": [
+      {
+        "title": "Uluslararası ihracat standartlarını sağlıyoruz",
+        "body": "Spesifikasyonlar, paketleme ve iletişim, hedef pazarlara ve alıcı uyumluluk ihtiyaçlarına göre planlanır."
+      },
+      {
+        "body": "5 kg'lık perakende paketlerden 75 kg'lık endüstriyel torbalara kadar, laminasyon, astar, köşebent, valf ve baskı seçenekleriyle.",
+        "title": "İhracata hazır kapasite ve inşaat"
+      },
+      {
+        "body": "Teklif vermeden önce ürün türü, çizimi, ambalaj formatı, miktarı ve varış yeri hakkında duyarlı rehberlik.",
+        "title": "Özel ihracat destek ekibi"
+      },
+      {
+        "body": "Alıcılar, belirsiz katalog kopyaları yerine yapılandırılmış ürün kullanım kılavuzuna ve eksiksiz bir sorgulama yoluna sahip olur.",
+        "title": "Net süreçle pratik deneyim"
+      }
+    ],
+    "pillarsBody": "VIVIDPOLY, uluslararası standartlardan pratik sorgulama desteğine kadar, küresel ambalaj alıcılarının gerçekte nasıl kaynak sağladığına göre yapılandırılmıştır. Spesifikasyonlar, paketleme ve iletişim, hedef pazarlara ve alıcı uyumluluk ihtiyaçlarına göre planlanır. Kapasite, laminasyon, astar, köşebent, valf ve baskı seçenekleriyle 5 kg'lık perakende paketlerden 75 kg'lık endüstriyel torbalara kadar değişir. Özel ihracat desteği, yapılandırılmış ürün kullanım kılavuzu ve eksiksiz bir sorgulama yolu ile birlikte ürün türünü, resmini, ambalaj formatını, miktarını ve fiyat teklifinden önceki varış yerini kapsar.",
+    "exportVisionBody": "VIVIDPOLY, güçlü, özelleştirilebilir ve markaya hazır PP torbalara ihtiyaç duyan küresel işletmeler için güvenilir bir Hint ihracat ortağı olmayı hedefliyor. Uluslararası alıcıların genel ürün açıklamalarından daha fazlasına ihtiyaç duyduğunun bilincindeyiz. Sorgulama süreci boyunca doğru spesifikasyonlara, ürün kullanım rehberliğine, çizim ve baskı desteğine, uygun paketleme seçeneklerine ve duyarlı iletişime ihtiyaç duyarlar.",
+    "pillarsHeading": "Alıcı öncelikli ihracat mirasını taşımak",
+    "whyEyebrow": "HİZMETLER",
+    "whyMoreLabel": "DAHA FAZLA DETAY",
+    "contactTeam": "Bir soruşturma gönderin",
+    "requestCustomQuote": "Bir soruşturma gönderin",
+    "factsHeading": "Bir bakışta VIVIDPOLY",
+    "ctaBandTitle": "Profesyonel bir ihracat paketleme ortağı mı arıyorsunuz?",
+    "ctaBandButton": "Bir soruşturma gönderin",
+    "whyLead": "VIVIDPOLY, ürün çeşitliliği ve kapasite planlamasından baskıya, astarlara ve ihracat ambalajına kadar pratik kaynak bulma kararlarını destekleyecek şekilde yapılandırılmıştır.",
+    "whyHeading": "Ambalaj desteğini en iyi şekilde ihraç edin",
+    "ctaBandBody": "Çanta türünüzü, kapasitenizi, baskı ihtiyaçlarınızı, miktarını ve varış yerini paylaşın. VIVIDPOLY talebinizi inceleyecek ve pratik seçeneklerle takip edecektir.",
+    "factsEyebrow": "Şirket ayrıntıları",
+    "whyBody": "VIVIDPOLY, ürün çeşitliliği ve kapasite planlamasından baskıya, astarlara ve ihracat ambalajına kadar pratik kaynak bulma kararlarını destekleyecek şekilde yapılandırılmıştır. Alıcılar, PP torbaları ABD, Kanada, Avustralya, Avrupa, İngiltere, Afrika, Tayland, Suudi Arabistan ve diğer pazarlar için Hindistan'dan çok çeşitli endüstriyel, tarım, perakende ve promosyon torba türlerinde tedarik edebilirler. Kapasite planlaması, özel yapım, baskı ve markalama desteği, ürün kullanım kılavuzu ve teklif öncesinde ihtiyaç duyulan ayrıntıları yakalayan alıcı dostu bir teklif süreciyle birlikte 5 kg ila 75 kg'ı kapsar.",
+    "whyItems": [
+      [
+        "Hindistan merkezli ihracatçı konumlandırması",
+        "Alıcılar ABD, Kanada, Avustralya, Avrupa, İngiltere, Afrika, Tayland, Suudi Arabistan ve diğer pazarlar için Hindistan'dan PP torba tedarik edebilirler."
+      ],
+      [
+        "Odaklanmış PP Torbalar ürün yelpazesi",
+        "Yaygın endüstriyel, tarım, perakende ve promosyon çanta türlerini kapsayan ürün sunumu açık ve pratiktir."
+      ],
+      [
+        "5 kg'dan 75 kg'a kadar kapasite planlaması",
+        "Alıcılar küçük perakende paketleri, orta boy emtia torbaları ve ağır hizmet tipi endüstriyel torbaları tartışabilirler."
+      ],
+      [
+        "Özel inşaat seçenekleri",
+        "Katmanlı, laminasyon, köşebent, liner, perfore, pencere, kulp, vana, tutam dip ve blok dip seçenekleri planlanabilmektedir."
+      ],
+      [
+        "Baskı ve markalama desteği",
+        "Flekso baskı ve baskılı lamine dokuma PP seçenekleri, marka görünürlüğünü ve pazar sunumunu desteklemeye yardımcı olur."
+      ],
+      [
+        "Ürün kullanım kılavuzu",
+        "Alıcılar torbaları pirinç, gübre, hayvan yemi, kimyasallar, çimento, tuz, şeker, perakende satış ve alışveriş gibi uygulamalara göre seçebiliyor."
+      ],
+      [
+        "Alıcı dostu teklif süreci",
+        "Web sitesi, alıcıların teklif vermeden önce ürün türünü, kapasitesini, boyutunu, baskısını, eklentilerini, ambalajını, miktarını ve varış yerini paylaşmalarına yardımcı olur."
+      ]
+    ],
+    "ctaBandEyebrow": "İletişime geçin"
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "sendRequirement": "Talep Formu",
+    "formName": "İsim",
+    "formCompany": "Firma Adı",
+    "formEmail": "E-posta",
+    "formCountry": "Ülke",
+    "formMessage": "Mesaj",
+    "sending": "Gönderiliyor…",
+    "submitEnquiry": "Soruşturmayı gönder",
+    "reachUs": "Bize doğrudan ulaşın",
+    "formEnquiryType": "Sorgu türü",
+    "emailInvalid": "Geçerli bir e-posta adresi girin.",
+    "formPhone": "WhatsApp / telefon",
+    "submitSuccess": "Soruşturma gönderildi. Ekibimiz kısa sürede size geri dönüş yapacaktır.",
+    "emailLabel": "E-posta",
+    "sendRequirementLead": "Bize neye ihtiyacınız olduğunu söyleyin. Bir ürün türü seçin veya genel bir sorgu gönderin; size pratik rehberlikle yanıt verelim.",
+    "websiteLabel": "Web sitesi",
+    "phoneLabel": "WhatsApp / Telefon",
+    "phoneRequired": "Size ulaşabilmemiz için WhatsApp veya telefon numarası ekleyin.",
+    "messageRequired": "Göndermeden önce kısa bir mesaj ekleyin.",
+    "corporateOffice": "Kurumsal ofis",
+    "submitError": "Sorgunuzu gönderemedik. Lütfen tekrar deneyin veya doğrudan bizi arayın.",
+    "submitUnavailable": "Çevrimiçi sorgulama henüz yapılandırılmadı. Lütfen bu sayfadaki ayrıntıları kullanarak bize e-posta gönderin veya bizi arayın.",
+    "companyRows": [
+      [
+        "Şirket / Marka"
+      ],
+      [
+        "Web sitesi",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-posta"
+      ],
+      [
+        "Telefon"
+      ],
+      [
+        "Kurumsal Adres",
+        "Sankalp Meydanı, A 1601, Sindhu Bhavan Marg, Taj Hotel yakınında, opp. Vur Oyunu, PRL Kolonisi, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Meydanı, A 1601, Sindhu Bhavan Marg, Taj Hotel yakınında, opp. Vur Oyunu, PRL Kolonisi, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepBagSpec": "Çanta özellikleri",
+    "stepContact": "İletişim bilgileri",
+    "registerLead": "Sorunuzu kaydedeceğiz ve WhatsApp üzerinden takip edeceğiz.",
+    "bagSpec": "Çanta özellikleri",
+    "submitEnquiry": "Soruşturmayı gönder",
+    "saved": "İletişim bilgileriniz kaydedilir.",
+    "savedWithName": "{name}, iletişim bilgileriniz kaydedilir.",
+    "fields": {
+      "capacity": "Kapasite",
+      "product": "Ürün",
+      "printing": "Baskı",
+      "size": "Boyut",
+      "packing": "Ambalaj",
+      "quantity": "Miktar",
+      "destination": "Hedef ülke",
+      "bagType": "Çanta tipi",
+      "review": "Gözden geçirmek",
+      "addons": "Eklentiler",
+      "packedProduct": "Paketlenmiş ürün"
+    },
+    "stepLabel": "Adım {current} / {total}",
+    "howReachYou": "Size nasıl ulaşmalıyız?",
+    "reviewLabels": {
+      "capacity": "Kapasite",
+      "printing": "Baskı",
+      "productType": "Ürün türü",
+      "packing": "Ambalaj",
+      "quantity": "Miktar",
+      "bagSize": "Çanta boyutu",
+      "destination": "Varış noktası",
+      "empty": "-",
+      "addons": "Eklentiler",
+      "packedProduct": "Paketlenmiş ürün"
+    },
+    "closeForm": "Talep formunu kapat",
+    "emailInvalid": "Geçerli bir e-posta adresi girin.",
+    "reviewSteps": {
+      "product": "Ürün",
+      "order": "Emir",
+      "sizePrint": "Boyut ve baskı"
+    }
+  },
+  "sample": {
+    "steps": {
+      "review": "Gözden geçirmek",
+      "payment": "Ödeme",
+      "confirmed": "Onaylandı"
+    },
+    "bankTransfer": "Banka havalesi",
+    "continuePayment": "Ödemeye Devam Et",
+    "reference": "Referans:",
+    "total": "Toplam",
+    "selectBranch": "Şube seç",
+    "yourDetails": "Bilgileriniz",
+    "billRows": {
+      "productType": "Ürün türü",
+      "capacity": "Kapasite",
+      "printing": "Baskı",
+      "packing": "Ambalaj",
+      "sampleQuantity": "Numune miktarı",
+      "leadTime": "Kurşun zamanı",
+      "unitPrice": "Birim fiyatı",
+      "total": "Toplam",
+      "exportPacking": "İhracat paketleme ve sevkiyat"
+    },
+    "specification": "Örnek spesifikasyon",
+    "subtotal": "Ara toplam",
+    "selectBank": "Banka seçin",
+    "searchBanks": "Bankaları ara",
+    "bankRows": {
+      "bank": "Banka",
+      "branch": "Dal",
+      "accountNumber": "Hesap numarası",
+      "swift": "SÜRATLİ",
+      "accountType": "Hesap türü",
+      "amount": "Miktar",
+      "paymentReference": "Ödeme referansı",
+      "beneficiary": "Yararlanıcı",
+      "ifsc": "IFSC"
+    },
+    "form": {
+      "name": "İsim",
+      "address": "Teslimat adresi",
+      "quantity": "Numune için gerekli miktar"
+    },
+    "searchBranches": "Şube ara",
+    "closePicker": "Seçiciyi kapat",
+    "noBankMatches": "Eşleşme yok. Farklı bir arama yapmayı deneyin."
+  },
+  "blog": {
+    "fallbackReadTime": "5 dakikalık okuma",
+    "fallbackCategory": "Alıcı kılavuzu",
+    "pageTitle": "Alıcı kılavuzları ve bilgiler",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "emptyTitle": "Henüz makale yok",
+    "loading": "Makaleler yükleniyor…",
+    "emptyBody": "Yeni alıcı kılavuzları ve bilgiler yolda; kısa süre sonra tekrar kontrol edin.",
+    "backToArticles": "Tüm makalelere geri dön"
+  },
+  "careers": {
+    "applyNow": "Şimdi Başvurun",
+    "lead": "Kaliteye, net iletişime ve güvenilir teslimata önem veren kişileri arıyoruz. Roller Ahmedabad ve Vadodara'daki ofis, fabrika ve ihracat operasyonlarını kapsamaktadır.",
+    "title": "Hindistan'dan kaynaklı. Dünya çapında güvenilir.",
+    "whyHeading": "Neden VividPoly",
+    "seeHowWeWork": "Nasıl çalıştığımızı görün",
+    "eyebrow": "VividPoly'de Kariyer",
+    "reasons": [
+      {
+        "body": "İş, 70'ten fazla ihracat pazarındaki alıcılara bağlı.",
+        "title": "Küresel Pozlama"
+      },
+      {
+        "body": "Büyüyen bir işletmede yeni sorumluluk hızla gelir.",
+        "title": "Büyüme Odası"
+      },
+      {
+        "title": "İş Güvenliği",
+        "body": "İstikrarlı ve yerleşik bir ihracat operasyonuyla desteklenmektedir."
+      },
+      {
+        "body": "Üretim ve küresel ticarete uygulamalı maruz kalma.",
+        "title": "İş Başında Öğrenme"
+      }
+    ],
+    "whyLead": "Üretim ve küresel ticarette beceriler geliştirmek için pratik bir yer.",
+    "whyBody": "Üretim ve küresel ticarette beceriler geliştirmek için pratik bir yer. 70'i aşkın ihracat pazarında iş alıcılara bağlıdır, büyüyen bir işletmede yeni sorumluluklar hızla gelir ve roller, üretim ve küresel ticarette uygulamalı deneyime sahip istikrarlı, köklü bir ihracat operasyonuyla desteklenir.",
+    "positionsLead": "Güncel açılışlar bu platformlarda yayınlanmakta ve güncellenmektedir. Canlı rollere göz atın ve ardından aşağıdaki formu kullanarak başvurun.",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "İhracat, operasyon ve paketleme kariyerlerine yönelik şirket güncellemeleri ve açık roller."
+      },
+      {
+        "label": "Aslında",
+        "blurb": "VIVIDPOLY listelerini role, konuma ve deneyim düzeyine göre arayın."
+      },
+      {
+        "label": "Naukri",
+        "blurb": "Üretim, satış ve destek ekipleri genelinde Hindistan odaklı açılışlar."
+      }
+    ],
+    "positionsMoreLabel": "AÇIKLIKLARI GÖRÜNTÜLE",
+    "positionsEyebrow": "AÇIK POZİSYONLAR",
+    "positionsNote": "Doğrudan başvuruyu mu tercih ediyorsunuz? Aşağıdaki Şimdi Uygula seçeneğini kullanın.",
+    "positionsHeading": "Zaten aradığınız yerde bizi bulun",
+    "ctaEyebrow": "ŞİMDİ BAŞVUR",
+    "ctaLead": "Rol ilginizi, deneyiminizi ve tercih ettiğiniz konumu paylaşın. Kontenjanlar açıldıkça ekibimiz başvuruları inceleyecektir.",
+    "ctaHeading": "Bir sonraki kariyer hamleniz burada başlıyor"
+  },
+  "search": {
+    "recentHeading": "Son aramalar",
+    "suggestionsHeading": "Öneriler",
+    "noMatches": "Eşleşme yok. \"Pirinç\" veya \"çimento\"yu deneyin",
+    "recentTerms": [
+      "pirinç çuvalları",
+      "çimento torbaları",
+      "baskılı lamine",
+      "25 kg ağzı açık"
+    ]
+  },
+  "filters": {
+    "capacityCustomNotice": "VIVIDPOLY {min} kg ile {max} kg arasında PP torba ambalajlama sağlamaktadır. Lütfen bu aralıkta bir kapasite girin.",
+    "capacityExample": "örneğin 23 kilo",
+    "capacityMin": "Minimum kapasite",
+    "capacityOrEnter": "Veya kapasiteyi girin",
+    "capacityMax": "Maksimum kapasite",
+    "customSelectUseAnyway": "Bu değeri yine de kullan",
+    "customSelectNoMatches": "Eşleşme bulunamadı",
+    "productUseOptions": "Ürün kullanım seçenekleri",
+    "customSelectEnter": "Şartnamenizi girin…"
+  },
+  "breadcrumbs": {
+    "home": "Ev",
+    "products": "Ürünler",
+    "blog": "Blog",
+    "faqs": "SSS",
+    "about": "Hakkında",
+    "careers": "Kariyer",
+    "contact": "Bize Ulaşın",
+    "getQuote": "Teklif Al",
+    "requestExportQuote": "İhracat Teklifi İste"
+  },
+  "validation": {
+    "emailInvalid": "Geçerli bir e-posta adresi girin."
+  },
+  "buyerRows": [
+    {
+      "requirement": "Hindistan'dan ihracat kaynağı",
+      "response": "VIVIDPOLY, küresel PP torba alıcıları için Hindistan merkezli bir ihracatçı olarak konumlanıyor."
+    },
+    {
+      "requirement": "Ürün çeşitliliği",
+      "response": "Açık ağızlı, dikişli, D-kesimli, valfli, taşımalı, lamine edilmiş, sıkıştırılmış tabanlı, blok tabanlı, köşebentli ve alışveriş torbaları."
+    },
+    {
+      "requirement": "Özel kapasite",
+      "response": "PP torba çözümleri ürün yoğunluğuna ve torba yapısına bağlı olarak 5 kg'dan 75 kg'a kadar planlanabilmektedir."
+    },
+    {
+      "requirement": "Marka sunumu",
+      "response": "Flekso baskı ve baskılı lamine dokuma PP seçenekleri, ürün kimliğini ve raf çekiciliğini destekler."
+    },
+    {
+      "response": "Ürün tipi, boyutu, kapasitesi, baskı, laminasyon, astar, köşebent, kulp ve paketleme detayları teklif öncesinde yakalanabilir.",
+      "requirement": "Alıcı dostu sorgulama akışı"
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "Hindistan kaynak kullanımı",
+      "short": "Hindistan merkezli ihracatçı"
+    },
+    {
+      "label": "Ürün yelpazesi",
+      "short": "10 çanta türü"
+    },
+    {
+      "label": "Özel kapasite",
+      "short": "5 kg'dan 75 kg'a"
+    },
+    {
+      "label": "Marka baskısı",
+      "short": "Baskı ve laminat"
+    },
+    {
+      "label": "Teklif iş akışı",
+      "short": "Teklif vermeye hazır ayrıntılar"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Tahıllar ve Bakliyatlar",
+      "bags": "Ağzı açık torbalar, üst ve alt dikişli torbalar, baskılı lamine dokuma PP torbalar, tutam altlı torbalar",
+      "tips": "Flekso baskı, laminasyon baskı, pencere, köşebent, liner, sap, ihracat balya paketleme.",
+      "use": "Pirinç, buğday, tahıllar, bakliyat, un"
+    },
+    {
+      "cardTitle": "Gübre ve Tohumlar",
+      "bags": "Dikişli torbalar, lamine dokuma PP torbalar, blok tabanlı torbalar, blok tabanlı köşebentli torbalar",
+      "tips": "Astar, köşebent, flekso baskı, laminasyon baskı, perfore, palet ambalaj.",
+      "use": "Gübre ve tohumlar"
+    },
+    {
+      "cardTitle": "Hayvan Yemi ve Evcil Hayvan Yemi",
+      "bags": "Baskılı lamine dokuma PP torbalar, blok tabanlı köşebentli torbalar, taşıma torbaları, tutam tabanlı torbalar",
+      "use": "Hayvan yemi ve evcil hayvan yemi",
+      "tips": "Çok katmanlı yapı, pencere, köşebent, kulp, birinci sınıf baskı, isteğe bağlı delikli."
+    },
+    {
+      "cardTitle": "Çimento ve Endüstriyel Tozlar",
+      "use": "Çimento, kimyasallar, mineraller, tozlar",
+      "tips": "Valf yapısı, astar, delikli delik, güçlü dikiş, ağır hizmet tipi salmastra.",
+      "bags": "Valfli torbalar, blok tabanlı torbalar, üst ve alt dikişli torbalar, astar destekli torbalar"
+    },
+    {
+      "tips": "Astar, lamine yüzey, flekso baskı, temiz dikiş, nem destekli seçenekler.",
+      "bags": "Ağzı açık torbalar, dikişli torbalar, lamine torbalar, astar destekli torbalar",
+      "cardTitle": "Tuz, Şeker ve Emtialar",
+      "use": "Tuz, şeker, tüketim malları"
+    },
+    {
+      "cardTitle": "Perakende ve Promosyon",
+      "use": "Perakende, alışveriş, promosyon",
+      "bags": "D-kesimli çantalar, taşıma çantaları, dokuma alışveriş çantaları, baskılı lamine dokuma PP torbalar",
+      "tips": "Kulp seçenekleri, laminasyon baskı, köşebent, karton ambalaj, marka görselleri."
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Flekso baskı, laminasyon baskı, pencere, köşebent, liner, sap, ihracat balya paketleme.",
+      "title": "Pirinç, Buğday, Tahıllar ve Bakliyat",
+      "bags": "Ağzı açık torbalar, üst ve alt dikişli torbalar, baskılı lamine dokuma PP torbalar, tutam altlı torbalar."
+    },
+    {
+      "title": "Un ve Gıda Ürünleri",
+      "tips": "Astar, lamine yüzey, temiz kesim, güvenli dikiş, perakende satış dostu tasarım.",
+      "bags": "Ağzı açık torbalar, baskılı ve lamine dokuma PP torbalar, tutam altlı torbalar."
+    },
+    {
+      "tips": "Astar, lamine yüzey, flekso baskı, temiz dikiş, nem destekli seçenekler.",
+      "bags": "Ağzı açık torbalar, dikişli torbalar, baskılı lamine dokuma PP torbalar.",
+      "title": "Tuz ve Şeker"
+    },
+    {
+      "title": "Gübre ve Tohumlar",
+      "tips": "Astar, köşebent, flekso baskı, laminasyon baskı, perfore, palet ambalaj.",
+      "bags": "Dikişli torbalar, lamine dokuma PP torbalar, blok tabanlı torbalar, blok tabanlı köşebentli torbalar."
+    },
+    {
+      "tips": "Çok katmanlı yapı, pencere, köşebent, kulp, birinci sınıf baskı, isteğe bağlı delikli.",
+      "title": "Hayvan Yemi ve Evcil Hayvan Yemi",
+      "bags": "Baskılı lamine dokuma PP torbalar, tutam altlı torbalar, blok alt köşebentli torbalar, taşıma torbaları."
+    },
+    {
+      "tips": "Valf yapısı, astar, delikli delik, güçlü dikiş, ağır hizmet tipi salmastra.",
+      "bags": "Valfli torbalar, blok altlı torbalar, üst ve alt dikişli torbalar.",
+      "title": "Çimento ve İnşaat Malzemeleri"
+    },
+    {
+      "title": "Kimyasallar ve Mineraller",
+      "bags": "Valfli torbalar, dikişli torbalar, ağzı açık torbalar, astar destekli torbalar.",
+      "tips": "Astar, laminasyon, hava alma perforasyonu, güvenli dikiş, ihracat ambalajı."
+    },
+    {
+      "tips": "Kulp seçenekleri, laminasyon baskı, köşebent, karton ambalaj, marka görselleri.",
+      "title": "Perakende ve Promosyon Ürünleri",
+      "bags": "D-kesimli çantalar, taşıma çantaları, dokuma alışveriş çantaları, baskılı lamine dokuma PP torbalar."
+    },
+    {
+      "title": "Alışveriş ve Yeniden Kullanılabilir Stilde Paketleme",
+      "tips": "Halkalı kulplar, D-kesimli kulplar, yan köşebent, alt köşebent, çok renkli baskı.",
+      "bags": "Dokuma alışveriş çantaları, taşıma çantaları, D-cut PP dokuma çantalar."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Dokuma Çanta"
+    },
+    {
+      "title": "Kumaş"
+    },
+    {
+      "title": "Ot Bariyeri"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Tarım ve Gıda Ürünleri",
+      "items": [
+        "Pirinç, Buğday, Tahıllar ve Bakliyat",
+        "Un ve Gıda Ürünleri",
+        "Tuz ve Şeker"
+      ]
+    },
+    {
+      "title": "Tarımsal Girdiler ve Hayvan Bakımı",
+      "items": [
+        "Gübre ve Tohumlar",
+        "Hayvan Yemi ve Evcil Hayvan Yemi"
+      ]
+    },
+    {
+      "title": "Endüstriyel ve İnşaat",
+      "items": [
+        "Çimento ve İnşaat Malzemeleri",
+        "Kimyasallar ve Mineraller"
+      ]
+    },
+    {
+      "title": "Perakende ve Promosyon",
+      "items": [
+        "Perakende ve Promosyon Ürünleri",
+        "Alışveriş ve Yeniden Kullanılabilir Stilde Paketleme"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Kapasite",
+      "title": "Kapasite",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Gelenek"
+        }
+      ]
+    },
+    {
+      "key": "Ürün Tipi",
+      "title": "Ürün Tipi",
+      "options": [
+        {
+          "label": "Ağzı açık"
+        },
+        {
+          "label": "Dikişli"
+        },
+        {
+          "label": "D kesimi"
+        },
+        {
+          "label": "Vana"
+        },
+        {
+          "label": "Taşımak"
+        },
+        {
+          "label": "Lamine"
+        },
+        {
+          "label": "Alt kısmı sıkıştır"
+        },
+        {
+          "label": "Alt kısmı bloke et"
+        },
+        {
+          "label": "Alt köşebenti bloke edin"
+        },
+        {
+          "label": "Dokuma alışverişi"
+        },
+        {
+          "label": "PP dokuma kumaş"
+        },
+        {
+          "label": "Ot bariyeri"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "VIVIDPOLY ne tür PP torbalar ihraç ediyor?",
+      "a": "VIVIDPOLY, ağzı açık torbalar, üst ve alt dikişli torbalar, D-kesimli PP dokuma torbalar, valfli torbalar, taşıma torbaları, baskılı ve lamine dokuma PP torbalar, baskılı ve lamine dokuma PP tutam altlı torbalar, baskılı ve lamine dokuma PP blok altlı torbalar, baskılı ve lamine dokuma PP blok alt köşebentli torbalar ve dokuma alışveriş torbaları ihraç etmektedir."
+    },
+    {
+      "q": "VIVIDPOLY PP torbalar için hangi ağırlık kapasitesi mevcuttur?",
+      "a": "VIVIDPOLY, ürün yoğunluğuna, torba boyutuna, kumaş mukavemetine, yapıya, laminasyona, astara, köşebent, dikişe ve son kullanım uygulamasına bağlı olarak 5 kg'dan 75 kg'a kadar PP torba gereksinimlerini tartışabilir."
+    },
+    {
+      "a": "Alıcılar, ürün türünü, paketlenmiş ürünü, kapasiteyi, torba boyutunu, miktarını, baskı gereksinimini, laminasyon, astar, köşebent, sap, kesme, dikiş, paketleme türü, varış ülkesini ve varsa sanat eseri veya örnek referansı sağlamalıdır.",
+      "q": "Teklif için hangi bilgilere ihtiyaç vardır?"
+    },
+    {
+      "q": "VIVIDPOLY baskılı ve lamine dokuma PP torbalar tedarik edebilir mi?",
+      "a": "Evet. VIVIDPOLY, pirinç, un, gübre, hayvan yemi, evcil hayvan yemi, tohumlar, tuz, şeker ve perakende mallar gibi ürünler için baskılı ve lamine dokuma PP torba gereksinimlerini destekleyebilir."
+    },
+    {
+      "q": "Açık ağızlı torbalar ile valfli torbalar arasındaki fark nedir?",
+      "a": "Ağzı açık torbalara üst kısmı açık olarak doldurulur ve doldurulduktan sonra kapatılır. Valf torbaları bir valf açıklığından doldurulur ve genellikle tozlar, çimento tarzı ürünler, kimyasallar, mineraller ve inşaat malzemeleri için kullanılır."
+    },
+    {
+      "q": "Sıkıştırma alt torbaları ne için kullanılır?",
+      "a": "Sıkıştırmalı alt torbalar, alıcıların birinci sınıf ambalaj görünümüne ve temiz kapatma sunumuna ihtiyaç duyduğu yerlerde kullanılır. Seçilen gıdalar, evcil hayvan yemleri, hayvan yemi, tahıllar, tohumlar ve perakende ürünler için uygundurlar."
+    },
+    {
+      "q": "Blok tabanlı körüklü torbalar ne için kullanılır?",
+      "a": "Blok tabanlı köşebentli torbalar, alıcıların gelişmiş hacim, sabit dolgulu şekil, daha güçlü markalama alanı ve daha iyi istifleme sunumuna ihtiyaç duyduğu durumlar için uygundur."
+    },
+    {
+      "q": "PP torbalar pencere içerebilir mi?",
+      "a": "Evet. Seçilen baskılı ve lamine dokuma PP torbalar, içindeki paketlenmiş ürünü göstermek için şeffaf bir pencere içerebilir."
+    },
+    {
+      "q": "VIVIDPOLY PP torbaların içinde astar sağlayabilir mi?",
+      "a": "Evet. Ek ürün koruması, nem desteği veya ince ürün tutmanın gerekli olduğu durumlarda astarlar düşünülebilir."
+    },
+    {
+      "a": "VIVIDPOLY, markalama ihtiyaçlarına, sanat eserinin karmaşıklığına, bütçeye ve ürün pazarına bağlı olarak düz çantaları, flekso baskılı poşetleri ve baskılı ve lamine dokuma PP torba formatlarını destekleyebilir.",
+      "q": "Hangi yazdırma seçenekleri mevcut?"
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Alıcı kılavuzu",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed, geçici bir olayla uğraştı ve çok fazla şey yaşadı.",
+      "purpose": "PP torbaları, ortak kullanım alanlarını ve alıcı seçim faktörlerini açıklayın.",
+      "readTime": "6 dakikalık okuma",
+      "title": "PP Torba Nedir? İthalat Alıcıları için Tam Kılavuz"
+    },
+    {
+      "title": "Açık Ağızlı Torbalar ve Valfli Torbalar: Ürününüz için Hangi PP Torba Uygun?",
+      "readTime": "5 dakikalık okuma",
+      "category": "Ambalajlama",
+      "excerpt": "Enim ve minimum düzeyde, çok fazla çaba gerektiren bir egzersiz, her şeyden önce mümkün olan en iyi egzersizdir.",
+      "purpose": "Doldurma stillerini ve uygun uygulamaları karşılaştırın."
+    },
+    {
+      "category": "Alıcı kılavuzu",
+      "purpose": "Alıcıları dikişli çanta formatları hakkında eğitin.",
+      "title": "Üst ve Alt Dikişli PP Torbalar: Kullanım Alanları, Faydaları ve Kişiselleştirme",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "readTime": "7 dakikalık okuma"
+    },
+    {
+      "title": "Pirinç, Yem ve Gübre Paketleme için Baskılı ve Lamine Dokuma PP Torbalar",
+      "readTime": "5 dakikalık okuma",
+      "category": "Markalaşma",
+      "purpose": "Birinci sınıf markalı ambalajları tanıtın.",
+      "excerpt": "İstisnai olarak, bazı durumlarda aşırıya kaçmamak, iş id est emekten vazgeçmek için resmi olarak kusurlu olmak."
+    },
+    {
+      "category": "Ambalajlama",
+      "readTime": "6 dakikalık okuma",
+      "purpose": "Birinci sınıf çanta yapılarını karşılaştırın.",
+      "title": "Sıkıştırılmış Tabanlı Çantalar ve Blok Tabanlı Çantalar: Bir Satın Alma Kılavuzu",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut emek."
+    },
+    {
+      "category": "Boyutlandırma",
+      "readTime": "8 dakikalık okuma",
+      "purpose": "Alıcıların soruşturma öncesinde boyutu ve kapasiteyi tanımlamasına yardımcı olun.",
+      "title": "PP Torba Boyutlandırma Kılavuzu: 5 kg'dan 75 kg'a kadar Torba Kapasitesi Nasıl Seçilir",
+      "excerpt": "Enim ve minimum düzeyde, çok zorlu bir egzersizle, her yerden başka bir şey elde edilemez."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Markalaşma",
+      "readTime": "5 dakikalık okuma",
+      "title": "PP Torbalar için Flekso Baskı ve Lamine Baskı Karşılaştırması",
+      "purpose": "Yazdırma seçeneklerini ve markalama etkisini açıklayın."
+    },
+    {
+      "category": "Özellikler",
+      "purpose": "Ürün koruması ve kullanımına yönelik eklenti özelliklerini açıklayın.",
+      "excerpt": "İstisnai olarak, bazı durumlarda hayal kırıklığı yaratan bir olay, resmi olarak ıssız bir suçla karşı karşıya kaldı.",
+      "title": "PP Torbalarda Astarlar, Köşebentler ve Delikler Neden Önemlidir?",
+      "readTime": "4 dakikalık okuma"
+    },
+    {
+      "title": "PP Torba İhracat Talebi Nasıl Hazırlanır?",
+      "readTime": "6 dakikalık okuma",
+      "category": "İhracat ipuçları",
+      "purpose": "Alıcılara teklif için hangi ayrıntıları göndereceklerini öğretin.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tamsayı önceden serbest bırakılmıştır."
+    },
+    {
+      "readTime": "5 dakikalık okuma",
+      "purpose": "Alışveriş ve promosyon çantası alıcılarını hedefleyin.",
+      "category": "Perakende",
+      "title": "Perakende ve Promosyon Ambalajları için Dokuma Alışveriş Çantaları",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "Amerikan Doları",
+    "packing": "Karton ihracat ambalajı",
+    "qtyLabel": "5 örnek adet",
+    "leadTime": "Ödeme onayından sonra 7-10 iş günü",
+    "printing": "Düz (örnek spesifikasyon)"
+  },
+  "bankDetails": {
+    "bankName": "HDFC Bankası Ltd.",
+    "branch": "Ahmedabad, Bopal, Gujarat, Hindistan",
+    "paymentNote": "Transfer anlatımına firma adınızı ve örnek referansı ekleyin.",
+    "ifsc": "HDFC0001234",
+    "swift": "HDFCINBB",
+    "accountType": "Cari Hesap"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Bankası Ltd.",
+      "location": "Gujarat, Hindistan",
+      "branch": "Ahmedabad, Bopal",
+      "swift": "HDFCINBB",
+      "accountType": "Cari Hesap",
+      "ifsc": "HDFC0001234"
+    },
+    {
+      "bankName": "HDFC Bankası Ltd.",
+      "location": "Gujarat, Hindistan",
+      "swift": "HDFCINBB",
+      "accountType": "Cari Hesap",
+      "branch": "Vadodara, Halol Yolu",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, Hindistan",
+      "accountType": "Cari Hesap",
+      "branch": "Ahmedabad, SG Otoyolu",
+      "bankName": "ICICI Bank Ltd.",
+      "swift": "ICICINBB",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "Gujarat, Hindistan",
+      "accountType": "Cari Hesap",
+      "bankName": "Eksen Bankası Ltd.",
+      "branch": "Ahmedabad, Prahladnagar",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "bankName": "Hindistan Devlet Bankası",
+      "location": "Gujarat, Hindistan",
+      "accountType": "Cari Hesap",
+      "branch": "Gandhinagar, Sektör 21",
+      "ifsc": "SBIN0006789",
+      "swift": "SBININBB"
+    },
+    {
+      "location": "Gujarat, Hindistan",
+      "ifsc": "KKBK0001234",
+      "bankName": "Kotak Mahindra Bankası",
+      "accountType": "Cari Hesap",
+      "branch": "Ahmedabad, Ashram Yolu",
+      "swift": "KKBKINBB"
+    },
+    {
+      "accountType": "Cari Hesap",
+      "ifsc": "EVET0000123",
+      "bankName": "Evet Banka Ltd.",
+      "branch": "Mumbai, Andheri Doğu",
+      "swift": "EVETİNBB",
+      "location": "Maharashtra, Hindistan"
+    },
+    {
+      "location": "Gujarat, Hindistan",
+      "accountType": "Cari Hesap",
+      "bankName": "IndusInd Bank Ltd.",
+      "ifsc": "INDB0000123",
+      "swift": "INDBINBB",
+      "branch": "Ahmedabad, Navrangpura"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Ağzı Açık Torbalar"
+    },
+    {
+      "label": "Dikişli Çantalar"
+    },
+    {
+      "label": "D Kesim Çantalar"
+    },
+    {
+      "label": "Valf Torbaları"
+    },
+    {
+      "label": "Taşıma Çantaları"
+    },
+    {
+      "label": "Lamine Dokuma PP Torbalar"
+    },
+    {
+      "label": "Tutam Alt Çantalar"
+    },
+    {
+      "label": "Blok Alt Çantalar"
+    },
+    {
+      "label": "Blok Alt Körüklü Çantalar"
+    },
+    {
+      "label": "Dokuma Alışveriş Çantaları"
+    },
+    {
+      "label": "PP Dokuma Kumaş"
+    },
+    {
+      "label": "Ot Bariyeri"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Ağzı Açık Torbalar",
+      "group": "Dokuma Çanta",
+      "cta": "Ağzı Açık Torbaları Keşfedin",
+      "features": [
+        {
+          "body": "Üstü açık, manuel, yarı otomatik veya makine destekli yöntemlerle hızlı doldurmaya olanak sağlar.",
+          "title": "Kolay doldurma"
+        },
+        {
+          "title": "Kapasite esnekliği",
+          "body": "Ürün yoğunluğuna ve torba tasarımına bağlı olarak 5 kg'dan 75 kg'a kadar uygulamalara uygundur."
+        },
+        {
+          "title": "Özel kaplama",
+          "body": "Üst kısım sıcak kesim, soğuk kesim, kenarlı veya zig-zag kesim olabilir."
+        },
+        {
+          "title": "Baskı ve astar seçenekleri",
+          "body": "Gerektiğinde flekso baskı, laminasyon baskı ve liner desteği eklenebilmektedir."
+        }
+      ],
+      "short": "Tahıl, un, yem, gübre, tuz, şeker, tohum ve mineraller gibi kuru dökme ürünler için kolay doldurulabilen PP dokuma torbalar.",
+      "intro": "Açık Ağızlı Torbalar, kuru dökme ambalajlar için en pratik PP torba stillerinden biridir. VIVIDPOLY, tarım, gıda, gübre, yem, kimya, mineral, tuz, şeker ve endüstriyel uygulamalar için kolay dolum, esnek kapatma ve özelleştirmeye ihtiyaç duyan alıcılar için ağzı açık PP torbalar ihraç ediyor.",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "5 kg'dan 75 kg'a"
+        },
+        {
+          "key": "Tepe",
+          "value": "Ağzı açık, sıcak kesim, soğuk kesim, zig-zag, kenarlı"
+        },
+        {
+          "key": "Alt",
+          "value": "Tek kat dikişli, çift kat dikişli, özel kaplama"
+        },
+        {
+          "key": "Baskı",
+          "value": "Düz, flekso, lamine baskılı"
+        },
+        {
+          "key": "Eklentiler",
+          "value": "Gerekirse köşebent, astar, delikli kısım, tutamak"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "Balya, paket, palet, karton, ihracat ambalajı"
+        }
+      ],
+      "benefits": "Açık ağızlı PP torbalar basitlikleri, uyarlanabilirlikleri ve uygun maliyetli kullanımları nedeniyle tercih edilir. Doldurduktan sonra dikerek, kapatarak, katlayarak veya bağlayarak kapatılabilen güçlü bir dokuma torbaya ihtiyaç duyan alıcılar için idealdir.",
+      "details": "Bu torbalar düz dokuma PP torbalar, flekso baskılı torbalar veya baskılı ve lamine dokuma PP torbalar olarak tedarik edilebilmektedir. Alıcılar boyut, kumaş, kapasite, köşebent, astar, baskı, dikiş, kesme ve paketleme işlemlerini seçebilir.",
+      "material": "PP dokuma kumaş, baskı mürekkebi, dikiş ipliği, isteğe bağlı laminasyon, isteğe bağlı astar ve alıcıya özel renk/katkı maddesi gereksinimleri.",
+      "speciality": "Açık ağızlı poşetlerin özelliği farklı ürünlere ve dolum yöntemlerine göre esneklikleridir.",
+      "mfg": "Süreç, kumaş dokuma, isteğe bağlı baskı veya laminasyon, kesme, alt dikiş, inceleme ve paketlemeyi içerir."
+    },
+    "stitched": {
+      "group": "Dokuma Çanta",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Güvenli üst ve alt dikiş, özel kumaş mukavemeti, isteğe bağlı astar, flekso veya lamine baskı, özel ambalaj."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Daha iyi kapatma güvenliği, pratik kullanım, iyi istifleme performansı ve birçok kuru dökme ürüne uygunluk."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Alıcılar dikiş tipini, iplik tipini, katlama stilini, boyutunu, kapasitesini, baskısını, astarını, köşebentini ve ambalajını belirleyebilir."
+        }
+      ],
+      "name": "Üst ve Alt Dikişli Çantalar",
+      "cta": "Dikişli Çantaları Keşfedin",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "5 kg'dan 75 kg'a"
+        },
+        {
+          "key": "Dikiş",
+          "value": "Tek kat, çift kat, tek iplik, çift iplik, üst ve alt dikişli"
+        },
+        {
+          "key": "Baskı",
+          "value": "Düz, flekso, baskılı lamine"
+        },
+        {
+          "key": "Astar",
+          "value": "İsteğe bağlı gevşek veya dikişli astar"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "Balya, paket, palet, sıkıştırılmış ihracat ambalajı"
+        }
+      ],
+      "short": "Tarımsal ve endüstriyel ürünlerin taşınması, depolanması ve ihracat ambalajı için güvenli dikişli PP torbalar.",
+      "intro": "Üst ve Alt Dikişli Çantalar, depolama ve taşıma sırasında güvenli kapamaya ve güvenilir kullanıma ihtiyaç duyan alıcılar için tasarlanmıştır. VIVIDPOLY tarım, gıda, gübre, hayvan yemi, kimyasal, mineral ve endüstriyel ambalajlara yönelik dikişli PP torbalar ihraç etmektedir.",
+      "benefits": "Daha iyi kapatma güvenliği, pratik kullanım, iyi istifleme performansı ve birçok kuru dökme ürüne uygunluk.",
+      "details": "Alıcılar dikiş tipini, iplik tipini, katlama stilini, boyutunu, kapasitesini, baskısını, astarını, köşebentini ve ambalajını belirleyebilir.",
+      "material": "Malzeme kombinasyonları arasında PP dokuma kumaş, dikiş ipliği, isteğe bağlı laminasyon, isteğe bağlı astar ve baskı mürekkebi bulunur.",
+      "mfg": "Üretim süreci dokuma, isteğe bağlı baskı/laminasyon, kesme, üst ve alt dikiş, inceleme ve paketlemeyi içerir.",
+      "speciality": "Bu çanta tipinin özelliği güvenilir dikişli kapatmadır."
+    },
+    "d-cut": {
+      "group": "Dokuma Çanta",
+      "cta": "D-Cut Çantaları Keşfedin",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "D kesim sap, özel boyut, flekso veya lamine baskı, isteğe bağlı köşebent, perakende satış dostu kaplama."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Kolay taşıma, güçlü dokuma yapı, marka görünürlüğü ve kullanışlı tanıtım değeri."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Hafif ila orta taşıma uygulamaları, perakende ürünler, ticari fuarlar ve promosyon kampanyaları için uygundur."
+        }
+      ],
+      "name": "D-Cut PP Dokuma Çantalar",
+      "intro": "D-Cut PP Dokuma Çantalar, çantanın taşınmasını kolaylaştıran entegre bir sap kesimi içerir. VIVIDPOLY perakende, alışveriş, promosyon, sergi ve yeniden kullanılabilir tarzda ambalajlama gereksinimleri için D-kesimli çantalar ihraç etmektedir.",
+      "short": "Perakende, promosyon ve yeniden kullanılabilir tarzdaki ambalajlar için entegre sap kesimli, taşıma tarzı PP dokuma çantalar.",
+      "spec": [
+        {
+          "key": "Halletmek",
+          "value": "D kesimli veya güçlendirilmiş D kesimli sap"
+        },
+        {
+          "key": "Malzeme",
+          "value": "PP dokuma veya lamine PP malzeme"
+        },
+        {
+          "key": "Baskı",
+          "value": "Özel baskı"
+        },
+        {
+          "key": "Dikiş",
+          "value": "Yan/alt dikiş"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "Karton veya paket ambalaj"
+        }
+      ],
+      "details": "Hafif ila orta taşıma uygulamaları, perakende ürünler, ticari fuarlar ve promosyon kampanyaları için uygundur.",
+      "mfg": "Dokuma, baskı veya laminasyon, kesme, D-kesimli sap oluşumu, dikiş, inceleme, paketleme.",
+      "speciality": "Taşıma rahatlığını dokuma gücü ve marka sunumuyla birleştirir.",
+      "benefits": "Kolay taşıma, güçlü dokuma yapı, marka görünürlüğü ve kullanışlı tanıtım değeri.",
+      "material": "PP dokuma kumaş, gerekiyorsa lamine film, matbaa mürekkebi, dikiş ipliği, gerekiyorsa sap takviyesi."
+    },
+    "valve": {
+      "name": "Valf Torbaları",
+      "group": "Dokuma Çanta",
+      "cta": "Valve Çantalarını Keşfedin",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Valf dolgu tasarımı, isteğe bağlı astar, delikli, lamine baskı, blok tabanı uyumluluğu."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Daha hızlı kontrollü dolum, daha temiz ambalajlama formatı, toz ve granül ürünler için uygundur."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Ürüne ve dolum sistemine göre vana boyutu, vana tipi, perforasyon, astar, kapasite ve konstrüksiyon seçilmelidir."
+        }
+      ],
+      "intro": "Valf Torbaları, valf açıklığından doldurulması gereken ürünler için geliştirilmiştir. VIVIDPOLY, çimento tarzı ürünler, kimyasallar, mineraller, tozlar, inşaat malzemeleri ve endüstriyel ürünler için valfli torbalar ihraç etmektedir.",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "Genellikle 20 kg ila 75 kg"
+        },
+        {
+          "key": "Vana",
+          "value": "Basit veya genişletilmiş valf"
+        },
+        {
+          "key": "Yapı",
+          "value": "Standart veya blok alt yapı"
+        },
+        {
+          "key": "Eklentiler",
+          "value": "İsteğe bağlı astar ve delik"
+        }
+      ],
+      "short": "Çimento tarzı ürünler, kimyasallar, mineraller, tozlar ve inşaat malzemeleri için valf dolgulu PP torbalar.",
+      "benefits": "Daha hızlı kontrollü dolum, daha temiz ambalajlama formatı, toz ve granül ürünler için uygundur.",
+      "details": "Ürüne ve dolum sistemine göre vana boyutu, vana tipi, perforasyon, astar, kapasite ve konstrüksiyon seçilmelidir.",
+      "mfg": "Kumaş hazırlama, baskı/laminasyon, kesme, valf oluşturma, gerekiyorsa delme, kontrol, paketleme.",
+      "speciality": "Endüstriyel dolum ve ihracat dağıtımına uygundur.",
+      "material": "PP dokuma kumaş, valf malzemesi, astar, lamine katman, dikiş ipliği, baskı mürekkebi."
+    },
+    "carry": {
+      "name": "Taşıma Çantaları",
+      "group": "Dokuma Çanta",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "D kesim, ilmekli, dikişli, delikli, yan veya üst sap seçenekleri; baskılı veya lamine kaplama; isteğe bağlı köşebent."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Marka görünürlüğünü artırır ve pratik taşıma gücü sağlar."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Alıcılar çanta boyutunu, sap stilini, baskı tasarımını, laminasyonu, köşebenti, dikişi ve ambalajı özelleştirebilir."
+        }
+      ],
+      "intro": "PP dokuma malzemeden üretilen Taşıma Çantaları, sağlam, markalanabilir ve pratik taşıma çantası arayan alıcılar için uygundur. VIVIDPOLY ihracatları perakende, ticaret, alışveriş, etkinlikler ve promosyon ambalajlarına yönelik çantalar taşır.",
+      "benefits": "Marka görünürlüğünü artırır ve pratik taşıma gücü sağlar.",
+      "short": "Perakende, ticari ve promosyon uygulamalarına yönelik güçlü ve markalanabilir dokuma taşıma çantaları.",
+      "spec": [
+        {
+          "key": "Malzeme",
+          "value": "PP dokuma veya lamine PP malzeme"
+        },
+        {
+          "key": "Baskı",
+          "value": "Flekso veya lamine baskı"
+        },
+        {
+          "key": "Köşebent",
+          "value": "Yan/alt köşebent"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "Karton/paket/balya ambalajı"
+        }
+      ],
+      "cta": "Taşıma Çantalarını Keşfedin",
+      "details": "Alıcılar çanta boyutunu, sap stilini, baskı tasarımını, laminasyonu, köşebenti, dikişi ve ambalajı özelleştirebilir.",
+      "speciality": "Marka iletişimi ile güçlü taşıma ambalajı.",
+      "mfg": "Dokuma, baskı/laminasyon, kesme, sap oluşturma veya ekleme, dikiş, inceleme, paketleme.",
+      "material": "Gerekirse PP dokuma kumaş, lamine film, matbaa mürekkebi, dikiş ipliği, sap malzemesi."
+    },
+    "laminated": {
+      "group": "Dokuma Çanta",
+      "name": "Baskılı ve Lamine Dokuma PP Torbalar",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Baskılı lamine yüzey, dokuma PP taban, katman seçenekleri, köşebent, astar, pencere, delikli, kulplar."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Geliştirilmiş markalama, daha iyi raf çekiciliği, ürün kimliği ve güçlü ambalaj yapısı."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Yapısına ve ürün yoğunluğuna bağlı olarak 5 kg'dan 75 kg'a kadar uygundur."
+        }
+      ],
+      "cta": "Lamine PP Torbaları Keşfedin",
+      "short": "Pirinç, un, yem, evcil hayvan yemi, gübre, tohum ve perakende ürünler için birinci sınıf baskılı ambalajlar.",
+      "spec": [
+        {
+          "key": "Temel",
+          "value": "Dokuma PP + baskılı lamine katman"
+        },
+        {
+          "key": "Astar",
+          "value": "İsteğe bağlı astar"
+        },
+        {
+          "key": "Sona ermek",
+          "value": "Varsa parlak/mat tarzda kaplama"
+        },
+        {
+          "key": "Gelenek",
+          "value": "Özel boyut ve sanat eseri"
+        }
+      ],
+      "intro": "Baskılı ve Lamine Dokuma PP Torbalar, dokuma gücünü çekici marka sunumuyla birleştirir. VIVIDPOLY bu poşetleri gıda ürünleri, gübre, yem, evcil hayvan yemi, tohumlar, tuz, şeker ve perakende ürünler için birinci sınıf baskılı ambalajlara ihtiyaç duyan alıcılar için ihraç ediyor.",
+      "details": "Yapısına ve ürün yoğunluğuna bağlı olarak 5 kg'dan 75 kg'a kadar uygundur.",
+      "benefits": "Geliştirilmiş markalama, daha iyi raf çekiciliği, ürün kimliği ve güçlü ambalaj yapısı.",
+      "mfg": "Kumaş dokuma, sanat eseri hazırlama, baskı, laminasyon, kesim, dikiş/dönüştürme, inceleme, paketleme.",
+      "speciality": "Marka odaklı görünüme sahip birinci sınıf ihracat ambalajı.",
+      "material": "PP dokuma kumaş, baskılı film veya baskı katmanı, laminasyon katmanı, dikiş ipliği, isteğe bağlı astar/pencere, baskı mürekkebi."
+    },
+    "pinch-bottom": {
+      "name": "Tutam Alt Çantalar",
+      "group": "Dokuma Çanta",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Kıstırma alt yapısı, baskılı lamine yüzey, isteğe bağlı kolay açılma özelliği, pencere, köşebent, astar."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Birinci sınıf görünüm, düzenli dolgulu şekil, daha güçlü raf sunumu, daha iyi marka iletişimi."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Perakende satışa hazır ürünler ve markalı emtia paketleri için en uygunudur."
+        }
+      ],
+      "cta": "Sıkıştırılmış Alt Çantaları Keşfedin",
+      "details": "Perakende satışa hazır ürünler ve markalı emtia paketleri için en uygunudur.",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "Genellikle 5 kg ila 50 kg, tasarım incelemesine göre daha yüksek"
+        },
+        {
+          "key": "Yapı",
+          "value": "Baskılı lamine dokuma PP"
+        },
+        {
+          "key": "Eklentiler",
+          "value": "İsteğe bağlı pencere/astar/köşe"
+        }
+      ],
+      "short": "Perakende satışa hazır ambalajlar için temiz kapatma sunumuna sahip birinci sınıf baskılı lamine PP torbalar.",
+      "benefits": "Birinci sınıf görünüm, düzenli dolgulu şekil, daha güçlü raf sunumu, daha iyi marka iletişimi.",
+      "intro": "Baskılı ve Lamine Dokuma PP Sıkıştırmalı Alt Çantalar, temiz kapatma sunumunun ve marka görünümünün önemli olduğu birinci sınıf ambalajlar için tasarlanmıştır. VIVIDPOLY, gıda tahılları, evcil hayvan yemi, hayvan yemi, tohumlar ve perakende ürünler için küçük tabanlı torbalar ihraç ediyor.",
+      "mfg": "Kumaş hazırlama, baskı/laminasyon, kesme, alt kısmın oluşturulması, isteğe bağlı pencere/delik açma, inceleme, paketleme.",
+      "speciality": "Markalı ihracat ambalajları için birinci sınıf kapatma sunumu.",
+      "material": "PP dokuma kumaş, baskılı lamine film, laminasyon katmanı, astar, cam filmi, matbaa mürekkebi."
+    },
+    "block-bottom": {
+      "name": "Blok Alt Çantalar",
+      "group": "Dokuma Çanta",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Blok alt yapı, baskılı lamine kaplama, açık ağız veya valf üst kısmı, astar, delikli."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Daha iyi durma şekli, geliştirilmiş palet sunumu, güçlü markalama yüzeyi ve daha kolay kullanım."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Görsel sunumun ve istifleme performansının önemli olduğu ürünler için uygundur."
+        }
+      ],
+      "details": "Görsel sunumun ve istifleme performansının önemli olduğu ürünler için uygundur.",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "Yapıya bağlı olarak 5 kg'dan 75 kg'a kadar"
+        },
+        {
+          "key": "Biçim",
+          "value": "Alt formatı engelle"
+        },
+        {
+          "key": "Tepe",
+          "value": "Opsiyonel valf"
+        },
+        {
+          "key": "Eklentiler",
+          "value": "Astar, delikli, lamine baskı"
+        }
+      ],
+      "intro": "Baskılı ve Lamine Dokuma PP Blok Alt Torbalar, daha sağlam bir dolgulu şekil ve gelişmiş istifleme görünümü sağlar. VIVIDPOLY gübre, evcil hayvan yemi, hayvan yemi, tahıllar, mineraller, kimyasallar ve perakende ambalajlar için blok tabanlı torbalar ihraç etmektedir.",
+      "cta": "Blok Alt Çantaları Keşfedin",
+      "short": "Daha iyi istifleme, sergileme ve ihracat sunumu için sabit şekilli baskılı lamine PP torbalar.",
+      "benefits": "Daha iyi durma şekli, geliştirilmiş palet sunumu, güçlü markalama yüzeyi ve daha kolay kullanım.",
+      "material": "PP dokuma kumaş, lamine film, matbaa mürekkebi, astar, valf malzemesi, şekillendirme/dikiş malzemeleri.",
+      "speciality": "Sabit dolu torba şekliyle ihracata hazır sunum.",
+      "mfg": "Kumaş üretimi, baskı/laminasyon, kesim, blok alt şekillendirme, üst/valf bitirme, muayene, paketleme."
+    },
+    "gusset": {
+      "name": "Blok Alt Körüklü Çantalar",
+      "group": "Dokuma Çanta",
+      "short": "Köşebent destekli ve güçlü markalama alanına sahip yüksek hacimli baskılı lamine PP torbalar.",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Köşebentli blok tabanı, baskılı lamine dış cephe, özel köşebent derinliği, pencere, astar, delikli."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Daha yüksek kullanılabilir hacim, daha güçlü dolgulu şekil, gelişmiş markalama alanı ve daha iyi görsel sunum."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Alıcıların ekstra hacimli ve sabit şekilli birinci sınıf baskılı çantalara ihtiyaç duyduğu durumlarda kullanışlıdır."
+        }
+      ],
+      "intro": "Baskılı ve Lamine Dokuma PP Blok Alt Kıskaçlı Çantalar, sağlam blok alt yapıyı köşebent destekli hacimle birleştirir. VIVIDPOLY bu torbaları hayvan yemi, evcil hayvan yemi, gübre, tahıl, tohum ve yüksek hacimli perakende veya endüstriyel ürünler için ihraç etmektedir.",
+      "cta": "Köşebent Çantaları Keşfedin",
+      "spec": [
+        {
+          "key": "Kapasite",
+          "value": "Ürün yoğunluğuna ve tasarımına göre 5 kg ila 75 kg"
+        },
+        {
+          "key": "Köşebent",
+          "value": "Yan/alt/blok alt köşebent"
+        },
+        {
+          "key": "Eklentiler",
+          "value": "Opsiyonel valf, astar, pencere"
+        }
+      ],
+      "details": "Alıcıların ekstra hacimli ve sabit şekilli birinci sınıf baskılı çantalara ihtiyaç duyduğu durumlarda kullanışlıdır.",
+      "benefits": "Daha yüksek kullanılabilir hacim, daha güçlü dolgulu şekil, gelişmiş markalama alanı ve daha iyi görsel sunum.",
+      "mfg": "Dokuma, baskı/laminasyon, kesme, köşebent oluşturma, blok alt oluşturma, özellik ekleme, inceleme, paketleme.",
+      "material": "PP dokuma kumaş, baskılı lamine film, astar, cam filmi, köşebent yapısı, baskı mürekkebi, dikiş/şekillendirme malzemeleri.",
+      "speciality": "Hacim, sunum ve ihracat ambalajlama pratikliğini birleştirir."
+    },
+    "shopping": {
+      "group": "Dokuma Çanta",
+      "cta": "Alışveriş Çantalarını Keşfedin",
+      "name": "Alışveriş Çantaları (Dokuma)",
+      "features": [
+        {
+          "title": "Özellikler",
+          "body": "Yeniden kullanılabilir tarzda dokuma yapı, özel kulplar, flekso veya lamine baskı, köşebent, perakende satış dostu kaplama."
+        },
+        {
+          "title": "Faydalar",
+          "body": "Pratik taşıma gücü, marka tanıtımı, profesyonel perakende sunumu ve tekrarlanan görünürlük."
+        },
+        {
+          "title": "Detaylar",
+          "body": "Perakendeciler, süpermarketler, sergiler, kurumsal promosyonlar ve alışveriş kampanyaları için uygundur."
+        }
+      ],
+      "short": "Perakende zincirleri, süpermarketler, sergiler ve promosyon kampanyaları için dokuma alışveriş çantaları.",
+      "spec": [
+        {
+          "key": "Boyut",
+          "value": "Özel boyut"
+        },
+        {
+          "key": "Kollar",
+          "value": "D-kesim/döngü/dikişli/delikli saplar"
+        },
+        {
+          "key": "Köşebent",
+          "value": "Yan veya alt köşebent"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "Karton/paket/balya ambalajı"
+        }
+      ],
+      "details": "Perakendeciler, süpermarketler, sergiler, kurumsal promosyonlar ve alışveriş kampanyaları için uygundur.",
+      "intro": "Dokuma Alışveriş Çantaları perakende, süpermarket, etkinlik, fuar ve promosyon ambalajlarında kullanılan PP dokuma taşıma çantalarıdır. VIVIDPOLY, güçlü, yeniden kullanılabilir tarzda ve markalanabilir taşıma ambalajına ihtiyaç duyan alıcılar için dokuma alışveriş çantaları ihraç ediyor.",
+      "benefits": "Pratik taşıma gücü, marka tanıtımı, profesyonel perakende sunumu ve tekrarlanan görünürlük.",
+      "mfg": "Kumaş hazırlama, baskı/laminasyon, kesme, sap oluşturma/bağlama, dikiş, inceleme, paketleme.",
+      "speciality": "Perakende ve promosyon amaçlı ihracat alıcıları için özel marka sunumu.",
+      "material": "PP dokuma kumaş, lamine baskılı film, dikiş ipliği, sap malzemesi, baskı mürekkepleri."
+    },
+    "fabric": {
+      "name": "PP Dokuma Kumaş",
+      "group": "Kumaş",
+      "features": [
+        {
+          "title": "Dışa aktarıma hazır",
+          "body": "Uluslararası alıcılara özel ebat ve paketleme seçenekleriyle sunulmaktadır."
+        },
+        {
+          "body": "En, GSM, renk, rulo veya kesim uzunluğu siparişe göre planlanabilir.",
+          "title": "Özel özellikler"
+        },
+        {
+          "body": "Endüstriyel ve tarımsal kullanım için tutarlı dokuma ve kaplama.",
+          "title": "Kalite odağı"
+        }
+      ],
+      "cta": "PP Dokuma Kumaşı Keşfedin",
+      "short": "Endüstriyel, tarımsal ve dönüştürme amaçlı kullanıma yönelik PP dokuma kumaş ruloları ve kesilmiş uzunluklar.",
+      "intro": "Endüstriyel, tarımsal ve dönüştürme amaçlı kullanıma yönelik PP dokuma kumaş ruloları ve kesilmiş uzunluklar.",
+      "benefits": "Endüstriyel, tarımsal ve dönüştürme amaçlı kullanıma yönelik PP dokuma kumaş ruloları ve kesilmiş uzunluklar.",
+      "spec": [
+        {
+          "key": "Biçim",
+          "value": "Soruşturmaya özel"
+        },
+        {
+          "key": "Malzeme",
+          "value": "PP dokuma"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "İhracat ambalajı"
+        }
+      ],
+      "mfg": "Dokuma, terbiye, muayene ve ihracat paketleme.",
+      "speciality": "Küresel alıcılar için VIVIDPOLY'den PP Dokuma Kumaş.",
+      "details": "Fiyat teklifi için gerekli genişlik, GSM, renk, adet ve varış yerini paylaşın.",
+      "material": "Gerektiğinde PP dokuma malzeme ve alıcıya özel katkı maddeleri."
+    },
+    "weed-barrier": {
+      "name": "Ot Bariyeri",
+      "group": "Ot Bariyeri",
+      "features": [
+        {
+          "title": "Dışa aktarıma hazır",
+          "body": "Uluslararası alıcılara özel ebat ve paketleme seçenekleriyle sunulmaktadır."
+        },
+        {
+          "title": "Özel özellikler",
+          "body": "En, GSM, renk, rulo veya kesim uzunluğu siparişe göre planlanabilir."
+        },
+        {
+          "title": "Kalite odağı",
+          "body": "Endüstriyel ve tarımsal kullanım için tutarlı dokuma ve kaplama."
+        }
+      ],
+      "details": "Fiyat teklifi için gerekli genişlik, GSM, renk, adet ve varış yerini paylaşın.",
+      "spec": [
+        {
+          "key": "Biçim",
+          "value": "Soruşturmaya özel"
+        },
+        {
+          "key": "Malzeme",
+          "value": "PP dokuma"
+        },
+        {
+          "key": "Ambalaj",
+          "value": "İhracat ambalajı"
+        }
+      ],
+      "cta": "Weed Barrier'ı keşfedin",
+      "mfg": "Dokuma, terbiye, muayene ve ihracat paketleme.",
+      "material": "Gerektiğinde PP dokuma malzeme ve alıcıya özel katkı maddeleri.",
+      "short": "Peyzaj, tarım ve yer kaplama uygulamaları için PP dokuma yabani ot bariyer kumaşı.",
+      "benefits": "Peyzaj, tarım ve yer kaplama uygulamaları için PP dokuma yabani ot bariyer kumaşı.",
+      "intro": "Peyzaj, tarım ve yer kaplama uygulamaları için PP dokuma yabani ot bariyer kumaşı.",
+      "speciality": "Küresel alıcılar için VIVIDPOLY'den Ot Bariyeri."
+    }
+  },
+  "markets": [
+    "Amerika",
+    "Kanada",
+    "Avustralya",
+    "Avrupa",
+    "İngiltere",
+    "Afrika",
+    "Tayland",
+    "Suudi Arabistan",
+    "Latin Amerika",
+    "Yeni Zelanda"
+  ],
+  "packedProductOptions": [
+    "Pirinç",
+    "Gübre",
+    "Hayvan yemi",
+    "Çimento",
+    "Perakende ürünler"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Gelenek"
+    ],
+    "printing": [
+      "Ova",
+      "Flekso baskılı",
+      "Baskılı lamine",
+      "Çok renkli"
+    ],
+    "addons": [
+      "Astar",
+      "Köşebent",
+      "Halletmek",
+      "Pencere",
+      "Perforasyon",
+      "Vana",
+      "Tutam",
+      "Alt kısmı bloke et"
+    ],
+    "packing": [
+      "Balya",
+      "karton",
+      "Palet",
+      "İhracat ambalajı"
+    ]
+  }
+}

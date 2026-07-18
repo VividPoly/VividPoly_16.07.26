@@ -1,0 +1,1726 @@
+{
+  "topBar": {
+    "selectLanguage": "Chagua lugha",
+    "career": "Kazi"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "products": "Bidhaa",
+    "about": "Kuhusu sisi",
+    "industryServed": "Sekta tunazohudumia",
+    "resources": "Habari na Masasisho",
+    "career": "Kazi",
+    "contact": "Wasiliana nasi",
+    "buyerResourcesEyebrow": "Habari na masasisho",
+    "byProductType": "Kwa Aina ya Bidhaa",
+    "byIndustryUse": "Kwa Viwanda / Matumizi",
+    "viewAllByType": "Tazama bidhaa zote kwa aina",
+    "blogTitle": "Blogu",
+    "viewAllByIndustry": "Tazama bidhaa zote kulingana na tasnia",
+    "faqsTitle": "Maswali Yanayoulizwa Mara kwa Mara",
+    "blogDesc": "Miongozo ya mnunuzi juu ya aina za mifuko ya PP, ukubwa, na maswali ya kuuza nje.",
+    "buyerResourcesLead": "Miongozo ya wanunuzi, Maswali Yanayoulizwa Mara kwa Mara, na habari mpya zaidi kutoka kwa VIVIDPOLY.",
+    "getQuoteShort": "Pata nukuu",
+    "themeDark": "Badili hadi hali ya giza",
+    "themeLight": "Badilisha kwa hali ya mwanga",
+    "faqsDesc": "Majibu juu ya uwezo, uchapishaji, laini, na maelezo ya nukuu.",
+    "productsMenu": "Menyu ya bidhaa",
+    "mainNav": "Urambazaji mkuu",
+    "closeMenu": "Funga menyu",
+    "openMenu": "Fungua menyu",
+    "logoHome": "VIVIDPOLY, nenda kwenye ukurasa wa nyumbani",
+    "resourcesMenu": "Menyu ya Habari na Usasishaji",
+    "mobileByProductType": "Kwa aina ya bidhaa",
+    "industryMenu": "Menyu ya Sekta Inayotumika",
+    "mobileNav": "Urambazaji wa rununu",
+    "mobileByIndustry": "Kwa tasnia / matumizi"
+  },
+  "fab": {
+    "label": "Uliza",
+    "mobileLabel": "Uliza",
+    "ariaLabel": "Fungua fomu ya uchunguzi"
+  },
+  "common": {
+    "getQuote": "Omba bei",
+    "submitEnquiry": "Tuma ulizo",
+    "viewAll": "Ona zote",
+    "backToHome": "Rudi nyumbani",
+    "back": "Nyuma",
+    "next": "Inayofuata",
+    "previous": "Iliyotangulia",
+    "select": "Chagua",
+    "selectCountry": "Chagua nchi",
+    "selectBagType": "Chagua aina ya mfuko",
+    "custom": "Desturi",
+    "optional": "hiari",
+    "none": "Hakuna",
+    "viewDetails": "Tazama Maelezo",
+    "recommended": "Imependekezwa",
+    "specification": "Vipimo",
+    "relatedProducts": "Bidhaa zinazohusiana",
+    "of": "ya",
+    "filters": "Vichujio",
+    "chatExportTeam": "Piga gumzo na Timu ya Mauzo",
+    "selectEnquiryType": "Chagua aina ya uchunguzi",
+    "productsCount": "{count} bidhaa",
+    "close": "Funga",
+    "clearFilters": "Futa vichujio",
+    "clearAllFilters": "Futa vichujio vyote",
+    "noProductsMatch": "Hakuna bidhaa zinazolingana na vichujio vyako.",
+    "filtered": "(imechujwa)"
+  },
+  "siteCopy": {
+    "heroHeadline": "Mifuko ya PP kwa wanunuzi wa kimataifa",
+    "heroLead": "Mifuko ya PP, mifuko iliyofumwa, mifuko ya vali na vifungashio maalum vya kuuza nje kutoka India, vilivyotengenezwa kwa waagizaji, wasambazaji na wanunuzi wa viwandani duniani kote.",
+    "heroIsoLabel": "Imethibitishwa na ISO",
+    "heroIecLabel": "Imethibitishwa na IEC",
+    "heroCtaSecondary": "Ona aina za bidhaa",
+    "searchPlaceholder": "Aina ya mifuko ya utafutaji, bidhaa au tasnia (k.m. mifuko ya mchele, mifuko ya simenti)",
+    "heroHeadlineLine2": "Wanunuzi wa Kimataifa",
+    "heroIecLabelShort": "IEC",
+    "heroHeadlineLine1": "Mifuko ya PP kwa",
+    "heroCtaSecondaryShort": "Bidhaa",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaWhatsApp": "WhatsApp",
+    "heroHeadlineAccent": "Wanunuzi wa Kimataifa",
+    "heroHeadlinePrefix": "Mifuko ya PP kwa",
+    "headerQuoteLabel": "Nukuu",
+    "heroIsoLabelShort": "ISO",
+    "heroLeadShort": "Hamisha vifungashio vilivyoundwa kwa wanunuzi wa kimataifa.",
+    "heroCtaEnquiry": "Uchunguzi",
+    "heroRail": "INDIA · USAFIRISHAJI WA DUNIA",
+    "introEyebrow": "Tunachouza nje",
+    "introHighlights": [
+      {
+        "label": "Uwezo",
+        "value": "5 hadi 75 kg"
+      },
+      {
+        "label": "Asili",
+        "value": "Usafirishaji wa India"
+      },
+      {
+        "label": "Kuzingatia",
+        "value": "Uchapishaji maalum na upakiaji"
+      }
+    ],
+    "brandTagline": "Ufumbuzi wa Ufungaji wa Ubora",
+    "marketsStrip": "Masoko ya Msingi ya Usafirishaji: Amerika/Marekani, Kanada, Australia, Ulaya, Uingereza, Afrika, Thailand, Saudi Arabia, Amerika Kusini, New Zealand, na masoko mengine ya kimataifa ya kuagiza.",
+    "introTitle": "Mifuko ya PP kwa wanunuzi wa kimataifa",
+    "homeAboutEyebrow": "Kuhusu sisi",
+    "homeAboutTitle": "Mshirika wa Ufungaji wa Global Export",
+    "homeAboutCtaType": "Nunua kwa Aina ya Bidhaa",
+    "homeAboutCtaIndustry": "Nunua kwa Viwanda",
+    "intro2": "Kutoka kwa vifurushi vya rejareja vya kilo 5 hadi mifuko ya viwandani yenye uzito wa kilo 75, VIVIDPOLY huwasaidia wanunuzi kuchagua muundo sahihi wa mifuko, njia ya uchapishaji, mjengo, mpini, gusset, kushona, mtindo wa kukata, na umbizo la kufungashia nje kulingana na matumizi ya bidhaa na soko lengwa.",
+    "intro1": "VIVIDPOLY inauza nje Mifuko ya PP, mifuko ya PP iliyofumwa, mifuko ya PP iliyochapwa na iliyofumwa, Bana mifuko ya chini, mifuko ya chini ya block, mifuko ya gusset, mifuko ya valves, mifuko ya kubeba, mifuko ya D-cut, na mifuko ya ununuzi ya kusuka kutoka India hadi masoko ya kimataifa. Suluhu zetu za ufungashaji zimeundwa kwa ajili ya waagizaji, wasambazaji, wasindikaji wa nafaka za chakula, makampuni ya mbolea, chapa za chakula cha mifugo, wasambazaji wa kemikali, biashara za nyenzo za ujenzi, minyororo ya rejareja na wanunuzi wa vifungashio vya matangazo.",
+    "homeProductsEyebrow": "Bidhaa Zetu",
+    "homeProductsTitle": "Tunachotoa",
+    "homeValueProps": [
+      {
+        "title": "Customizable Vipimo",
+        "description": "Uwezo, ujenzi, uchapishaji, na upakiaji kulingana na bidhaa yako na soko lengwa."
+      },
+      {
+        "title": "Sampuli Kabla ya Agizo la Wingi",
+        "description": "Kagua ubora wa mikoba, saizi na umalize kabla ya kuthibitisha idadi kamili ya usafirishaji."
+      },
+      {
+        "description": "Vifungashio vya Bale, godoro na katoni vimepangwa kwa usafirishaji salama wa kimataifa.",
+        "title": "Ufungaji wa Kuuza nje umejumuishwa"
+      }
+    ],
+    "homeValuePropsEyebrow": "Kwa nini wanunuzi huchagua VIVIDPOLY",
+    "homeProductsLead": "Mifuko ya PP iliyochapishwa na iliyofumwa, mifuko ya vali, mifuko ya mdomo wazi, na vifungashio maalum vya usafirishaji kutoka India kwa wanunuzi wa kilimo, viwanda na rejareja duniani kote.",
+    "homeBrowseHeading": "Vinjari mifuko ya PP kwa kategoria",
+    "buyerRequirementLabel": "Mahitaji ya Mnunuzi",
+    "productUsesLearnMore": "Tuma uchunguzi",
+    "productUseCol": "Matumizi ya Bidhaa",
+    "buyerResponseLabel": "Jibu la VIVIDPOLY",
+    "trustMessage": "VIVIDPOLY imeundwa kwa ajili ya wanunuzi wa kimataifa wa kuagiza bidhaa wanaohitaji mawasiliano ya kitaalamu, vipimo vya wazi vya bidhaa, chaguo maalum za ufungaji, na usaidizi wa kuitikia wa usafirishaji kutoka India. Maudhui yetu ya mikoba ya PP yameundwa ili kuwasaidia wanunuzi kulinganisha aina za mifuko, kuelewa matumizi ya bidhaa, kukagua vipengele vya nyongeza na kuwasilisha mahitaji kamili ya nukuu.",
+    "finalCtaBody": "Shiriki aina ya mfuko wako, uwezo, mahitaji ya uchapishaji, wingi na unakoenda. VIVIDPOLY itakagua uchunguzi wako na kufuata chaguzi zinazofaa.",
+    "finalCtaButton": "Tuma uchunguzi",
+    "productUsesIntro": "Mifuko ya VIVIDPOLY PP inafaa kwa aina mbalimbali za bidhaa. Mfuko wa kulia unapaswa kuchaguliwa kulingana na uzito wa bidhaa, msongamano, mchakato wa kujaza, unyeti wa unyevu, mahitaji ya chapa, hali ya kushughulikia, na kiwango cha upakiaji nje ya nchi.",
+    "productUsesEmptyHint": "Elea juu au chagua matumizi ya bidhaa ili kuona aina za mikoba inayopendekezwa.",
+    "catalogueUseSub": "Mifuko ya VIVIDPOLY PP inafaa kwa aina mbalimbali za bidhaa. Mfuko wa kulia unapaswa kuchaguliwa kulingana na uzito wa bidhaa, msongamano, mchakato wa kujaza, unyeti wa unyevu, mahitaji ya chapa, hali ya kushughulikia, na kiwango cha upakiaji nje ya nchi.",
+    "faqSectionTitle": "Maswali yanayoulizwa mara kwa mara",
+    "buyerSectionTitle": "Ufungaji wa Hamisha, Umejengwa kwa Wanunuzi wa Kimataifa",
+    "finalCtaTitle": "Je, uko tayari kujadili hitaji lako la kifungashio?",
+    "shopByUseLabel": "Ninapakia...",
+    "recommendedBagsCol": "Aina za Mifuko Zinazopendekezwa",
+    "catalogueGuideUseSort": "Panga kulingana na tasnia hapa",
+    "catalogueGuideProductType": "Chagua kutoka hapa",
+    "contactIntro": "Tumia ukurasa huu kutuma uchunguzi wa bidhaa au swali la jumla. Chagua aina ya mikoba unayopenda, au chagua Hoja ya Jumla ikiwa bado unagundua chaguo.",
+    "catalogueTypeSub": "VIVIDPOLY husafirisha mifuko ya PP kutoka India kwa biashara zinazohitaji vifungashio imara, vinavyoweza kugeuzwa kukufaa na vilivyo tayari kusafirishwa nje ya nchi. Mifuko yetu ya PP inaweza kutengenezwa kwa uwezo wa kilo 5 hadi 75 kutegemea msongamano wa bidhaa, ukubwa wa mfuko, ujenzi, nguvu ya kitambaa, lamination, mjengo, kushona, gusset, na mahitaji ya kujaza.",
+    "quoteIntro2": "Jibu maswali machache kwa wakati mmoja. Tutakuongoza kupitia aina ya begi, saizi, uchapishaji na maelezo ya usafirishaji.",
+    "quoteIntro1": "Tafadhali shiriki mahitaji yako ya mikoba ya PP ili timu ya kuuza nje ya VIVIDPOLY iweze kupendekeza aina sahihi ya bidhaa, ujenzi, ukubwa, uwezo, uchapishaji, vipengele vya nyongeza, na umbizo la upakiaji wa kuuza nje.",
+    "quotePageEyebrow": "Uchunguzi wa kuuza nje",
+    "quoteContactStepTitle": "Maelezo yako ya mawasiliano",
+    "quoteContactStepLead": "Shiriki jinsi tunavyoweza kukufikia. Tunasajili uchunguzi wako mara moja na kufuatilia kwenye WhatsApp.",
+    "quotePageTitle": "Shiriki mahitaji ya mfuko wako",
+    "quoteLeadCapturedTitle": "Uchunguzi umesajiliwa",
+    "quoteLeadCapturedContinueCta": "Ongeza vipimo vya mfuko",
+    "quoteContactSubmitLabel": "Sajili uchunguzi wangu",
+    "quoteSubmitNote": "Unapofurahishwa na maelezo hapo juu, wasilisha. Timu yetu ya usafirishaji itakagua kila kitu na kufuatilia kwenye WhatsApp.",
+    "quoteLeadCapturedLead": "Mtaalamu wa usafirishaji wa VIVIDPOLY atakufikia kwenye WhatsApp hivi karibuni, kwa kawaida ndani ya saa chache.",
+    "quoteLeadCapturedOptionalTitle": "Je, unataka nukuu ya haraka na sahihi zaidi?",
+    "quoteLeadOnlySuccessBody": "Tutakufikia kwenye WhatsApp hivi karibuni. Unaweza kushiriki maelezo ya mikoba tunapowasiliana nawe, au urudi wakati wowote ili kukamilisha maelezo yako.",
+    "quoteLeadCapturedOptionalBody": "Ikiwa una dakika, ongeza vipimo vya mkoba wako sasa. Inatusaidia kupendekeza aina, saizi na uchapishaji sahihi wa mfuko wa PP kabla hatujapiga simu, kwa hivyo mazungumzo yako ya kwanza tayari ni muhimu.",
+    "quoteLeadCapturedSkipCta": "Nimemaliza kwa sasa",
+    "sampleBillIntro": "Kagua sampuli ya vipimo na gharama hapa chini. Sampuli hutumwa baada ya uthibitisho wa malipo.",
+    "samplePaymentTitle": "Maelezo ya uhamishaji wa benki",
+    "sampleSuccessTitle": "Sampuli ya agizo limepokelewa",
+    "sampleBillTitle": "Muswada wa agizo la sampuli",
+    "samplePaymentConfirmCta": "Thibitisha uhamisho wa benki",
+    "samplePaymentIntro": "Hamisha kiasi cha sampuli kwa kutumia maelezo yaliyo hapa chini. Tumia rejeleo ili tulingane na malipo yako.",
+    "quoteSuccessBody": "Tutawasiliana nawe kwa simu au WhatsApp ndani ya saa 12.",
+    "blogLeadCta": "Tuma uchunguzi",
+    "sampleSuccessBody": "Asante. Tutathibitisha malipo yako na kuthibitisha sampuli ya uzalishaji na tarehe za kutuma kwa barua pepe.",
+    "blogLeadBody": "Tuma swali la bidhaa au swali la jumla kwenye ukurasa wetu wa mawasiliano. Timu yetu itakagua mahitaji yako na kufuata mwongozo wa vitendo.",
+    "homeStats": [
+      {
+        "label": "Masoko ya kuuza nje",
+        "value": "70+"
+      },
+      {
+        "label": "Nchi Zinazohudumiwa",
+        "value": "9+"
+      },
+      {
+        "label": "Uwezo wa Kila Mwezi",
+        "value": "750 MT"
+      },
+      {
+        "label": "Hamisha daraja"
+      }
+    ],
+    "quoteSuccessTitle": "Uchunguzi umepokelewa",
+    "blogIntro": "Imeandikwa kwa wanunuzi wa kimataifa kulinganisha wasambazaji wa mifuko ya PP, kujifunza kuhusu aina za mifuko, kuangalia vipimo, na kuandaa maswali ya kuuza nje.",
+    "blogLeadTitle": "Je, una swali la ufungaji?",
+    "homeCertsHeading": "Vyeti",
+    "blogReadArticle": "Soma makala",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY hutumikia wanunuzi wa kimataifa wa kuagiza na mawasiliano ya kitaalamu, vipimo vya wazi vya bidhaa, chaguo maalum za ufungaji, na usaidizi wa kuitikia wa kuuza nje. Uwezo, ujenzi, uchapishaji na upakiaji umeundwa kulingana na bidhaa yako na soko lengwa ili kila agizo lilingane na mchakato wako wa kujaza, hitaji la chapa na hali ya usafirishaji.",
+      "Omba sampuli kabla ya kujitolea kwa idadi kamili. Vifungashio vya Bale, godoro, na katoni vimepangwa kwa usafirishaji salama wa kimataifa katika miundo kumi ya PP iliyofumwa, kutoka kwa mdomo wazi hadi muundo wa laminate wa hali ya juu, unaolingana na mchele, mbolea, saruji, malisho na matumizi ya rejareja."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY ni msafirishaji wa mifuko ya PP yenye makao yake India inayohudumia waagizaji wa kimataifa wanaohitaji mawasiliano ya kitaalamu, vipimo vya wazi vya bidhaa, na usaidizi wa kutegemewa wa kuuza nje. Tunasambaza mdomo wazi, kushonwa, kukata kwa D, valvu, kubeba, laminated, Bana chini, chini ya block, gusset, na mifuko ya ununuzi kutoka kilo 5 hadi 75 kg, na flexo au chaguzi laminated magazeti kwa ajili ya kuwasilisha brand. Aina ya bidhaa, saizi, uwezo, chapa, lamination, mjengo, gusset, mpini na maelezo ya upakiaji yote yananaswa mbele kabla ya nukuu yoyote kutolewa."
+    ]
+  },
+  "footer": {
+    "company": "Kampuni",
+    "productTypes": "Aina za bidhaa",
+    "buyerHelp": "Msaada kwa mnunuzi",
+    "contact": "Wasiliana",
+    "links": {
+      "home": "Nyumbani",
+      "contact": "Wasiliana Nasi",
+      "about": "Kuhusu",
+      "productUses": "Matumizi ya Bidhaa",
+      "getQuote": "Pata Nukuu"
+    },
+    "aboutBlurb": "VIVIDPOLY inasafirisha mifuko ya PP kutoka India kwa wanunuzi wa kimataifa wanaohitaji uwezo unaoweza kubinafsishwa, uchapishaji, lini, na upakiaji ulio tayari kuuzwa nje.",
+    "backToTop": "Rudi juu",
+    "backToTopAria": "Rudi juu ya ukurasa"
+  },
+  "meta": {
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Msafirishaji wa Mifuko ya PP kutoka India",
+    "loading": "Inapakia VIVIDPOLY...",
+    "title": "VIVIDPOLY: Msafirishaji wa Mifuko ya PP kutoka India",
+    "description": "VIVIDPOLY inasafirisha mifuko ya PP kutoka India kwa wanunuzi wa kimataifa."
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Swali la Jumla"
+    },
+    {
+      "label": "Fungua Mifuko ya Kinywa - OMB"
+    },
+    {
+      "label": "Mifuko Iliyounganishwa Juu na Chini - TBS"
+    },
+    {
+      "label": "D-Cut PP Woven Bags - DCB"
+    },
+    {
+      "label": "Mifuko ya Valve - VB"
+    },
+    {
+      "label": "Beba Mifuko - CB"
+    },
+    {
+      "label": "Mifuko ya PP Iliyochapishwa Laminated Woven - LWB"
+    },
+    {
+      "label": "Bana Mifuko ya Chini - PBB"
+    },
+    {
+      "label": "Kuzuia Mifuko ya Chini - BBB"
+    },
+    {
+      "label": "Zuia Mifuko ya Gusset ya Chini - BGB"
+    },
+    {
+      "label": "Mifuko ya Ununuzi iliyosokotwa - WSB"
+    },
+    {
+      "label": "Kitambaa cha PP"
+    },
+    {
+      "label": "Kizuizi cha Magugu"
+    }
+  ],
+  "enquiryModal": {
+    "title": "Fomu ya Uchunguzi",
+    "close": "Funga fomu ya uchunguzi"
+  },
+  "emailCompose": {
+    "toLabel": "Kwa",
+    "fromLabel": "Barua pepe yako",
+    "nameLabel": "Jina lako",
+    "subjectLabel": "Somo",
+    "messageLabel": "Ujumbe",
+    "title": "Barua pepe kwa VIVIDPOLY",
+    "sending": "Inatuma...",
+    "emailInvalid": "Weka barua pepe halali.",
+    "close": "Funga kidirisha cha kutunga",
+    "send": "Tuma ujumbe",
+    "defaultSubject": "Hamisha uchunguzi kutoka kwa vividpoly.com",
+    "messageRequired": "Ongeza ujumbe mfupi kabla ya kutuma.",
+    "hint": "Ujumbe wako unatumwa moja kwa moja kwa timu yetu ya usafirishaji. Tutajibu barua pepe utakayoweka hapo juu.",
+    "sendSuccess": "Ujumbe umetumwa. Timu yetu itawasiliana nawe hivi karibuni.",
+    "sendError": "Hatukuweza kutuma ujumbe wako. Tafadhali jaribu tena au utupigie simu moja kwa moja.",
+    "sendUnavailable": "Utumaji barua pepe bado haujasanidiwa. Tafadhali tumia simu au WhatsApp kuwasiliana nasi."
+  },
+  "home": {
+    "shopByProductType": "Nunua kwa Aina ya Bidhaa",
+    "shopByIndustry": "Nunua kwa Viwanda",
+    "howWeHelpBuyers": "Jinsi tunavyosaidia wanunuzi",
+    "faqsEyebrow": "Maswali Yanayoulizwa Mara kwa Mara",
+    "shopByIndustryDesc": "Linganisha aina za mifuko na mchele, mbolea, simenti, malisho na matumizi ya rejareja.",
+    "shopByProductTypeDesc": "Miundo kumi ya PP iliyofumwa kutoka kwa mdomo wazi hadi umbizo la ubora wa juu.",
+    "swipeIndustries": "Telezesha kidole ili kuvinjari tasnia",
+    "slideOf": "{current} ya {total}",
+    "productTypes": "Aina za bidhaa",
+    "swipeCards": "Telezesha kadi",
+    "buyerNeed": "Mnunuzi haja {index}",
+    "buyerRequirements": "Mahitaji ya mnunuzi",
+    "valuePropsSlides": "Kwa nini wanunuzi huchagua slaidi za VIVIDPOLY",
+    "buyerPagination": "Mnunuzi anahitaji pagination",
+    "previousProducts": "Bidhaa za awali",
+    "productUses": "Matumizi ya bidhaa",
+    "buyerCarousel": "Mahitaji ya mnunuzi jukwa",
+    "nextProducts": "Bidhaa zinazofuata"
+  },
+  "catalogue": {
+    "titleByType": "Nunua kwa Aina ya Bidhaa",
+    "capacity": "Uwezo",
+    "productType": "Aina ya Bidhaa",
+    "sortAllProducts": "Bidhaa zote",
+    "titleByUse": "Nunua kwa Viwanda / Matumizi",
+    "breadcrumbType": "Bidhaa / Kwa Aina ya Bidhaa",
+    "breadcrumbUse": "Bidhaa / Kwa Viwanda & Matumizi"
+  },
+  "pdp": {
+    "benefits": "Faida",
+    "whyBuyersChoose": "Kwa nini wanunuzi huchagua mfuko huu",
+    "manufacturingProcess": "Mchakato wa utengenezaji",
+    "customization": "Maelezo ya ubinafsishaji",
+    "speciality": "Umaalumu",
+    "keyFeatures": "Vipengele muhimu",
+    "getQuoteFor": "Pata Nukuu kwa {productName}",
+    "materialCombination": "Mchanganyiko wa nyenzo",
+    "productionMaterials": "Uzalishaji na nyenzo",
+    "trustBadges": [
+      "Customizable Vipimo",
+      "Sampuli Inapatikana Kabla ya Agizo la Wingi",
+      "Ufungaji wa Kuuza nje umejumuishwa",
+      "Timu ya Usafirishaji Msikivu"
+    ],
+    "productImage": "Picha ya bidhaa {index}"
+  },
+  "about": {
+    "title": "Kuhusu Sisi",
+    "pageEyebrow": "KUHUSU SISI",
+    "ctaSecondary": "Nunua kwa Aina ya Bidhaa",
+    "pageTitle": "Mshirika wa Ufungaji wa Global Export",
+    "p1": "VIVIDPOLY hutumikia wanunuzi wa kimataifa wa kuagiza na mawasiliano ya kitaalamu, vipimo vya wazi vya bidhaa, chaguo maalum za ufungaji, na usaidizi wa kuitikia wa kuuza nje. Uwezo, ujenzi, uchapishaji na upakiaji umeundwa kulingana na bidhaa yako na soko lengwa ili kila agizo lilingane na mchakato wako wa kujaza, hitaji la chapa na hali ya usafirishaji.",
+    "p2": "Omba sampuli kabla ya kujitolea kwa idadi kamili. Vifungashio vya Bale, godoro, na katoni vimepangwa kwa usafirishaji salama wa kimataifa katika miundo kumi ya PP iliyofumwa, kutoka kwa mdomo wazi hadi muundo wa laminate wa hali ya juu, unaolingana na mchele, mbolea, saruji, malisho na matumizi ya rejareja.",
+    "exportVisionEyebrow": "Dira Yetu ya Uuzaji Nje",
+    "ctaPrimary": "Tuma uchunguzi",
+    "exportVisionHeading": "Kuongoza kuelekea wakati ujao mkali",
+    "pillarsLead": "Kuanzia viwango vya kimataifa hadi usaidizi wa uchunguzi wa vitendo, VIVIDPOLY imeundwa kulingana na jinsi wanunuzi wa kimataifa wa ufungashaji wanavyotoka.",
+    "pillarsEyebrow": "NGUVU",
+    "exportVisionBody": "VIVIDPOLY inalenga kuwa mshirika anayeaminika wa kuuza nje wa India kwa biashara za kimataifa zinazohitaji mifuko ya PP imara, inayoweza kugeuzwa kukufaa na iliyo tayari chapa. Tunaelewa kuwa wanunuzi wa kimataifa wanahitaji zaidi ya maelezo ya jumla ya bidhaa. Wanahitaji vipimo sahihi, mwongozo wa matumizi ya bidhaa, mchoro na usaidizi wa uchapishaji, chaguo zinazofaa za kufunga, na mawasiliano sikivu katika mchakato wote wa uchunguzi.",
+    "pillarsBody": "Kuanzia viwango vya kimataifa hadi usaidizi wa uchunguzi wa vitendo, VIVIDPOLY imeundwa kulingana na jinsi wanunuzi wa kimataifa wa ufungashaji wanavyotoka. Vipimo, upakiaji na mawasiliano vimepangwa kwa ajili ya masoko lengwa na mahitaji ya kufuata mnunuzi. Uwezo unatokana na pakiti za rejareja za kilo 5 hadi mifuko ya viwandani ya kilo 75, yenye lamination, mjengo, gusset, vali, na chaguzi za kuchapisha. Usaidizi mahususi wa kusafirisha nje hujumuisha aina ya bidhaa, kazi ya sanaa, umbizo la upakiaji, wingi na lengwa kabla ya nukuu, kwa mwongozo wa matumizi ya bidhaa na njia kamili ya uchunguzi.",
+    "pillars": [
+      {
+        "title": "Tunahakikisha viwango vya kimataifa vya usafirishaji",
+        "body": "Vipimo, upakiaji na mawasiliano vimepangwa kwa ajili ya masoko lengwa na mahitaji ya kufuata mnunuzi."
+      },
+      {
+        "title": "Uwezo na ujenzi ulio tayari kuuzwa nje",
+        "body": "Kutoka pakiti za rejareja za kilo 5 hadi mifuko ya viwandani ya kilo 75, iliyo na lamination, mjengo, gusset, valves, na chaguzi za kuchapisha."
+      },
+      {
+        "title": "Timu iliyojitolea ya usaidizi wa kuuza nje",
+        "body": "Mwongozo sikivu kuhusu aina ya bidhaa, kazi ya sanaa, umbizo la upakiaji, wingi na lengwa kabla ya nukuu."
+      },
+      {
+        "body": "Wanunuzi hupata mwongozo uliopangwa wa matumizi ya bidhaa na njia kamili ya uchunguzi badala ya nakala isiyoeleweka ya katalogi.",
+        "title": "Uzoefu wa vitendo na mchakato wazi"
+      }
+    ],
+    "pillarsHeading": "Kubeba urithi wa mnunuzi wa kwanza kuuza nje",
+    "factsEyebrow": "Maelezo ya kampuni",
+    "factsHeading": "VIVIDPOLY kwa mtazamo",
+    "contactTeam": "Tuma uchunguzi",
+    "requestCustomQuote": "Tuma uchunguzi",
+    "whyMoreLabel": "MAELEZO ZAIDI",
+    "whyEyebrow": "HUDUMA",
+    "ctaBandButton": "Tuma uchunguzi",
+    "whyHeading": "Hamisha usaidizi wa vifungashio kwa ubora wake",
+    "whyBody": "Kuanzia anuwai ya bidhaa na upangaji wa uwezo hadi uchapishaji, laini, na upakiaji wa kuuza nje, VIVIDPOLY imeundwa kusaidia maamuzi ya vitendo ya vyanzo. Wanunuzi wanaweza kupata mifuko ya PP kutoka India kwa Marekani, Kanada, Australia, Ulaya, Uingereza, Afrika, Thailand, Saudi Arabia na masoko mengine katika anuwai ya aina ya mifuko ya viwanda, kilimo, rejareja na ya matangazo. Upangaji wa uwezo unajumuisha kilo 5 hadi 75, kwa usaidizi wa ujenzi maalum, uchapishaji na uwekaji chapa, mwongozo wa matumizi ya bidhaa, na mchakato wa kunukuu unaomfaa mnunuzi ambao unanasa maelezo yanayohitajika kabla ya nukuu.",
+    "whyLead": "Kuanzia anuwai ya bidhaa na upangaji wa uwezo hadi uchapishaji, laini, na upakiaji wa kuuza nje, VIVIDPOLY imeundwa kusaidia maamuzi ya vitendo ya vyanzo.",
+    "ctaBandTitle": "Je, unatafuta mshirika wa ufungashaji wa kitaalamu wa kuuza nje?",
+    "ctaBandBody": "Shiriki aina ya mfuko wako, uwezo, mahitaji ya uchapishaji, wingi na unakoenda. VIVIDPOLY itakagua uchunguzi wako na kufuata chaguzi zinazofaa.",
+    "whyItems": [
+      [
+        "Nafasi ya muuzaji bidhaa nje ya India",
+        "Wanunuzi wanaweza kupata mifuko ya PP kutoka India kwa Marekani, Kanada, Australia, Ulaya, Uingereza, Afrika, Thailand, Saudi Arabia na masoko mengine."
+      ],
+      [
+        "Aina mbalimbali za bidhaa za PP Bags zinazolengwa",
+        "Utoaji wa bidhaa ni wazi na wa vitendo, unaojumuisha aina za kawaida za mifuko ya viwanda, kilimo, rejareja na ya matangazo."
+      ],
+      [
+        "Upangaji wa uwezo wa kilo 5 hadi 75",
+        "Wanunuzi wanaweza kujadili vifurushi vidogo vya rejareja, mifuko ya bidhaa za ukubwa wa kati, na mifuko ya viwandani ya kazi nzito."
+      ],
+      [
+        "Chaguzi za ujenzi maalum",
+        "Safu, lamination, gusset, mjengo, utoboaji, dirisha, kushughulikia, valve, Bana chini, na block chini chaguzi inaweza kupangwa."
+      ],
+      [
+        "Usaidizi wa uchapishaji na chapa",
+        "Uchapishaji wa Flexo na chaguzi zilizochapishwa za PP zilizofumwa husaidia kusaidia mwonekano wa chapa na uwasilishaji wa soko."
+      ],
+      [
+        "Mwongozo wa matumizi ya bidhaa",
+        "Wanunuzi wanaweza kuchagua mifuko kwa kutumia, kama vile mchele, mbolea, chakula cha mifugo, kemikali, saruji, chumvi, sukari, rejareja na ununuzi."
+      ],
+      [
+        "Mchakato wa kunukuu unaomfaa mnunuzi",
+        "Tovuti huwasaidia wanunuzi kushiriki aina ya bidhaa, uwezo, saizi, uchapishaji, programu jalizi, upakiaji, wingi na lengwa kabla ya nukuu."
+      ]
+    ],
+    "ctaBandEyebrow": "Wasiliana"
+  },
+  "contact": {
+    "title": "Wasiliana Nasi",
+    "sendRequirement": "Fomu ya Uchunguzi",
+    "formName": "Jina",
+    "formCompany": "Jina la kampuni",
+    "formEmail": "Barua pepe",
+    "formCountry": "Nchi",
+    "formMessage": "Ujumbe",
+    "sendRequirementLead": "Tuambie unachohitaji. Chagua aina ya bidhaa au tuma swali la jumla na tutajibu kwa mwongozo wa vitendo.",
+    "sending": "Inatuma...",
+    "reachUs": "Tufikie moja kwa moja",
+    "formPhone": "WhatsApp / simu",
+    "emailInvalid": "Weka barua pepe halali.",
+    "formEnquiryType": "Aina ya uchunguzi",
+    "submitSuccess": "Uchunguzi umetumwa. Timu yetu itawasiliana nawe hivi karibuni.",
+    "emailLabel": "Barua pepe",
+    "submitEnquiry": "Peana uchunguzi",
+    "messageRequired": "Ongeza ujumbe mfupi kabla ya kuwasilisha.",
+    "submitError": "Hatukuweza kutuma swali lako. Tafadhali jaribu tena au utupigie simu moja kwa moja.",
+    "submitUnavailable": "Uchunguzi wa mtandaoni bado haujasanidiwa. Tafadhali tutumie barua pepe au tupigie simu kwa kutumia maelezo kwenye ukurasa huu.",
+    "corporateOffice": "Ofisi ya shirika",
+    "websiteLabel": "Tovuti",
+    "phoneRequired": "Ongeza WhatsApp au nambari ya simu ili tuweze kuwasiliana nawe.",
+    "phoneLabel": "WhatsApp / Simu",
+    "companyRows": [
+      [
+        "Kampuni / Chapa"
+      ],
+      [
+        "Tovuti",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "Barua pepe"
+      ],
+      [
+        "Simu"
+      ],
+      [
+        "Anwani ya Biashara",
+        "Sankalp Square, A 1601, Sindhu Bhavan Marg, karibu na Taj Hotel, opp. Risasi Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, karibu na Taj Hotel, opp. Risasi Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Maelezo ya mawasiliano",
+    "submitEnquiry": "Peana uchunguzi",
+    "stepBagSpec": "Uainishaji wa begi",
+    "bagSpec": "Uainishaji wa begi",
+    "howReachYou": "Je, tunapaswa kukufikia vipi?",
+    "stepLabel": "Hatua {current} ya {total}",
+    "fields": {
+      "capacity": "Uwezo",
+      "product": "Bidhaa",
+      "size": "Ukubwa",
+      "printing": "Uchapishaji",
+      "bagType": "Aina ya mfuko",
+      "packing": "Ufungashaji",
+      "quantity": "Kiasi",
+      "destination": "Nchi unakoenda",
+      "review": "Kagua",
+      "addons": "Viongezi",
+      "packedProduct": "Bidhaa iliyopakiwa"
+    },
+    "registerLead": "Tutasajili uchunguzi wako na kufuatilia kwenye WhatsApp.",
+    "saved": "Maelezo yako ya mawasiliano yamehifadhiwa.",
+    "savedWithName": "{name}, maelezo yako ya mawasiliano yamehifadhiwa.",
+    "reviewLabels": {
+      "capacity": "Uwezo",
+      "printing": "Uchapishaji",
+      "productType": "Aina ya bidhaa",
+      "packing": "Ufungashaji",
+      "quantity": "Kiasi",
+      "destination": "Marudio",
+      "empty": "-",
+      "bagSize": "Ukubwa wa mfuko",
+      "addons": "Viongezi",
+      "packedProduct": "Bidhaa iliyopakiwa"
+    },
+    "closeForm": "Funga fomu ya uchunguzi",
+    "emailInvalid": "Weka barua pepe halali.",
+    "reviewSteps": {
+      "product": "Bidhaa",
+      "sizePrint": "Ukubwa na uchapishaji",
+      "order": "Agizo"
+    }
+  },
+  "sample": {
+    "steps": {
+      "review": "Kagua",
+      "payment": "Malipo",
+      "confirmed": "Imethibitishwa"
+    },
+    "subtotal": "Jumla ndogo",
+    "total": "Jumla",
+    "reference": "Rejeleo:",
+    "selectBranch": "Chagua tawi",
+    "continuePayment": "Endelea kwa Malipo",
+    "selectBank": "Chagua benki",
+    "billRows": {
+      "productType": "Aina ya bidhaa",
+      "capacity": "Uwezo",
+      "printing": "Uchapishaji",
+      "packing": "Ufungashaji",
+      "leadTime": "Wakati wa kuongoza",
+      "total": "Jumla",
+      "unitPrice": "Bei ya kitengo",
+      "sampleQuantity": "Sampuli ya wingi",
+      "exportPacking": "Hamisha upakiaji na utumaji"
+    },
+    "yourDetails": "Maelezo yako",
+    "specification": "Vipimo vya sampuli",
+    "bankTransfer": "Uhamisho wa benki",
+    "bankRows": {
+      "bank": "Benki",
+      "branch": "Tawi",
+      "beneficiary": "Anayefaidika",
+      "accountNumber": "Nambari ya akaunti",
+      "swift": "SWIFT",
+      "paymentReference": "Rejeleo la malipo",
+      "amount": "Kiasi",
+      "ifsc": "IFSC",
+      "accountType": "Aina ya akaunti"
+    },
+    "searchBanks": "Tafuta benki",
+    "searchBranches": "Tafuta matawi",
+    "form": {
+      "name": "Jina",
+      "address": "Anwani ya usafirishaji",
+      "quantity": "Kiasi kinachohitajika kwa sampuli"
+    },
+    "closePicker": "Funga kiteuzi",
+    "noBankMatches": "Hakuna zinazolingana. Jaribu utafutaji tofauti."
+  },
+  "blog": {
+    "fallbackReadTime": "dk 5 kusoma",
+    "pageTitle": "Miongozo na maarifa ya wanunuzi",
+    "fallbackCategory": "Mwongozo wa mnunuzi",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "loading": "Inapakia makala...",
+    "emptyTitle": "Bado hakuna makala",
+    "emptyBody": "Miongozo mpya ya wanunuzi na maarifa yako njiani - angalia tena hivi karibuni.",
+    "backToArticles": "Rudi kwenye makala yote"
+  },
+  "careers": {
+    "lead": "Tunatafuta watu wanaojali ubora, mawasiliano ya wazi na uwasilishaji unaotegemewa. Majukumu yanahusu shughuli za ofisi, kiwanda, na usafirishaji kote katika Ahmedabad na Vadodara.",
+    "eyebrow": "Kazi katika VividPoly",
+    "applyNow": "Tumia Sasa",
+    "seeHowWeWork": "Tazama jinsi tunavyofanya kazi",
+    "title": "Imetolewa kutoka India. Inaaminika Ulimwenguni Pote.",
+    "whyLead": "Mahali pazuri pa kujenga ujuzi katika utengenezaji na biashara ya kimataifa.",
+    "reasons": [
+      {
+        "title": "Mfiduo wa Kimataifa",
+        "body": "Kazi inayohusiana na wanunuzi katika masoko 70+ ya kuuza nje."
+      },
+      {
+        "title": "Chumba cha Kukua",
+        "body": "Wajibu mpya huja haraka katika biashara inayokua."
+      },
+      {
+        "body": "Inaungwa mkono na operesheni thabiti, iliyoanzishwa ya usafirishaji.",
+        "title": "Usalama wa Kazi"
+      },
+      {
+        "body": "Kujidhihirisha kwa mikono kwa utengenezaji na biashara ya kimataifa.",
+        "title": "Kujifunza kwenye Kazi"
+      }
+    ],
+    "whyBody": "Mahali pazuri pa kujenga ujuzi katika utengenezaji na biashara ya kimataifa. Kazi inahusishwa na wanunuzi katika masoko 70+ ya mauzo ya nje, jukumu jipya linakuja haraka katika biashara inayokua, na majukumu yanaungwa mkono na operesheni thabiti, iliyoanzishwa ya usafirishaji na kufichuliwa kwa mikono kwa utengenezaji na biashara ya kimataifa.",
+    "whyHeading": "Kwa nini VividPoly",
+    "positionsEyebrow": "NAFASI WAZI",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Masasisho ya kampuni na majukumu wazi ya usafirishaji, shughuli na kazi za upakiaji."
+      },
+      {
+        "label": "Hakika",
+        "blurb": "Tafuta uorodheshaji wa VIVIDPOLY kulingana na jukumu, eneo na kiwango cha uzoefu."
+      },
+      {
+        "blurb": "Nafasi zinazolenga India kote katika utengenezaji, mauzo na timu za usaidizi.",
+        "label": "Naukri"
+      }
+    ],
+    "positionsMoreLabel": "TAZAMA MAFUNGUZI",
+    "positionsNote": "Je, unapendelea maombi ya moja kwa moja? Tumia Tumia Sasa hapa chini.",
+    "positionsHeading": "Tupate mahali ambapo tayari unatafuta",
+    "positionsLead": "Nafasi zilizopo huchapishwa na kusasishwa kwenye mifumo hii. Vinjari majukumu ya moja kwa moja, kisha utume ombi kupitia fomu iliyo hapa chini.",
+    "ctaHeading": "Hatua yako inayofuata ya kikazi inaanzia hapa",
+    "ctaEyebrow": "TUMA OMBI SASA",
+    "ctaLead": "Shiriki mambo yanayokuvutia, uzoefu na eneo unalopendelea. Timu yetu itakagua maombi kadiri fursa zinavyopatikana."
+  },
+  "search": {
+    "suggestionsHeading": "Mapendekezo",
+    "recentHeading": "Utafutaji wa hivi majuzi",
+    "noMatches": "Hakuna zinazolingana. Jaribu \"mchele\" au \"saruji\"",
+    "recentTerms": [
+      "mifuko ya mchele",
+      "mifuko ya saruji",
+      "laminated iliyochapishwa",
+      "25 kg mdomo wazi"
+    ]
+  },
+  "filters": {
+    "capacityExample": "k.m. 23 kg",
+    "capacityMax": "Kiwango cha juu cha uwezo",
+    "capacityOrEnter": "Au ingiza uwezo",
+    "capacityMin": "Kiwango cha chini cha uwezo",
+    "capacityCustomNotice": "VIVIDPOLY hutoa ufungashaji wa mifuko ya PP kati ya {min} kg na {max} kg. Tafadhali weka nafasi ndani ya safu hii.",
+    "customSelectEnter": "Weka maelezo yako...",
+    "customSelectNoMatches": "Hakuna zinazolingana zilizopatikana",
+    "productUseOptions": "Chaguzi za matumizi ya bidhaa",
+    "customSelectUseAnyway": "Tumia thamani hii hata hivyo"
+  },
+  "breadcrumbs": {
+    "home": "Nyumbani",
+    "products": "Bidhaa",
+    "blog": "Blogu",
+    "faqs": "Maswali Yanayoulizwa Mara kwa Mara",
+    "about": "Kuhusu",
+    "careers": "Kazi",
+    "contact": "Wasiliana Nasi",
+    "getQuote": "Pata Nukuu",
+    "requestExportQuote": "Omba Nukuu ya kuuza nje"
+  },
+  "validation": {
+    "emailInvalid": "Weka barua pepe halali."
+  },
+  "buyerRows": [
+    {
+      "requirement": "Uuzaji wa nje kutoka India",
+      "response": "VIVIDPOLY imewekwa kama msafirishaji-msingi wa India kwa wanunuzi wa mifuko ya kimataifa ya PP."
+    },
+    {
+      "response": "Mdomo wazi, umeunganishwa, D-kata, vali, beba, laminated, bana chini, chini ya block, gusset, na mifuko ya ununuzi.",
+      "requirement": "Aina ya bidhaa"
+    },
+    {
+      "requirement": "Uwezo maalum",
+      "response": "Ufumbuzi wa mfuko wa PP unaweza kupangwa kutoka kilo 5 hadi kilo 75 kulingana na wiani wa bidhaa na muundo wa mfuko."
+    },
+    {
+      "requirement": "Uwasilishaji wa chapa",
+      "response": "Uchapishaji wa Flexo na chaguzi zilizochapishwa za PP zilizosokotwa za laminated zinasaidia utambulisho wa bidhaa na rufaa ya rafu."
+    },
+    {
+      "requirement": "Mtiririko wa uchunguzi wa kirafiki wa mnunuzi",
+      "response": "Aina ya bidhaa, saizi, uwezo, uchapishaji, lamination, mjengo, gusset, mpini, na maelezo ya kufunga yanaweza kunaswa kabla ya nukuu."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "short": "Msafirishaji nje ya India",
+      "label": "India vyanzo"
+    },
+    {
+      "label": "Bidhaa mbalimbali",
+      "short": "Aina 10 za mifuko"
+    },
+    {
+      "label": "Uwezo maalum",
+      "short": "Kilo 5 hadi 75 kg"
+    },
+    {
+      "label": "Uchapishaji wa chapa",
+      "short": "Chapisha na laminate"
+    },
+    {
+      "label": "Nukuu mtiririko wa kazi",
+      "short": "Maelezo tayari ya kunukuu"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Nafaka & Kunde",
+      "bags": "Mifuko ya wazi ya mdomo, mifuko ya juu na chini iliyoshonwa, mifuko ya PP iliyosokotwa iliyochapishwa, bana mifuko ya chini.",
+      "use": "Mchele, ngano, nafaka, kunde, unga",
+      "tips": "Uchapishaji wa Flexo, uchapishaji wa laminated, dirisha, gusset, mjengo, mpini, upakiaji wa bale nje."
+    },
+    {
+      "cardTitle": "Mbolea na Mbegu",
+      "tips": "Mjengo, gusset, uchapishaji wa flexo, uchapishaji wa laminated, utoboaji, ufungashaji wa godoro.",
+      "bags": "Mifuko iliyounganishwa, mifuko ya PP iliyotiwa laminated, mifuko ya kuzuia chini, mifuko ya gusset ya kuzuia chini",
+      "use": "Mbolea na mbegu"
+    },
+    {
+      "bags": "Mifuko ya PP iliyofumwa iliyochapwa, mifuko ya gusset ya chini ya block, mifuko ya kubebea, mikoba ya chini",
+      "tips": "Ujenzi wa tabaka nyingi, dirisha, gusset, mpini, uchapishaji wa hali ya juu, utoboaji wa hiari.",
+      "cardTitle": "Chakula cha Wanyama & Chakula cha Kipenzi",
+      "use": "Chakula cha mifugo na chakula cha mifugo"
+    },
+    {
+      "cardTitle": "Saruji na Poda za Viwandani",
+      "use": "Saruji, kemikali, madini, poda",
+      "tips": "Ujenzi wa valves, mjengo, utoboaji, kushona kwa nguvu, upakiaji wa kazi nzito.",
+      "bags": "Mifuko ya valves, mifuko ya chini ya block, mifuko ya juu na chini iliyounganishwa, mifuko inayoungwa mkono na mjengo"
+    },
+    {
+      "use": "Chumvi, sukari, bidhaa za walaji",
+      "cardTitle": "Chumvi, Sukari na Bidhaa",
+      "tips": "Mjengo, uso wa laminated, uchapishaji wa flexo, kushona safi, chaguzi za usaidizi wa unyevu.",
+      "bags": "Mifuko ya wazi ya mdomo, mifuko iliyounganishwa, mifuko ya laminated, mifuko inayoungwa mkono na mjengo"
+    },
+    {
+      "cardTitle": "Rejareja na Matangazo",
+      "tips": "Chaguzi za kushughulikia, uchapishaji wa laminated, gusset, upakiaji wa katoni, mchoro wa chapa.",
+      "bags": "Mifuko ya D-kata, mifuko ya kubeba, mifuko ya ununuzi iliyosokotwa, iliyochapishwa laminated kusuka mifuko ya PP",
+      "use": "Uuzaji wa rejareja, ununuzi, ukuzaji"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Uchapishaji wa Flexo, uchapishaji wa laminated, dirisha, gusset, mjengo, mpini, upakiaji wa bale nje.",
+      "bags": "Fungua mifuko ya mdomo, mifuko ya juu na ya chini iliyounganishwa, mifuko iliyochapishwa laminated ya PP, mifuko ya chini ya Bana.",
+      "title": "Mchele, Ngano, Nafaka na Kunde"
+    },
+    {
+      "bags": "Fungua mifuko ya mdomo, mifuko ya PP iliyochapishwa na laminated, Bana mifuko ya chini.",
+      "title": "Unga na Bidhaa za Chakula",
+      "tips": "Mjengo, uso wa laminated, ukataji safi, kushona salama, muundo unaofaa rejareja."
+    },
+    {
+      "tips": "Mjengo, uso wa laminated, uchapishaji wa flexo, kushona safi, chaguzi za usaidizi wa unyevu.",
+      "title": "Chumvi na Sukari",
+      "bags": "Mifuko ya mdomo wazi, mifuko iliyounganishwa, mifuko ya PP iliyochapishwa iliyochapishwa laminated."
+    },
+    {
+      "tips": "Mjengo, gusset, uchapishaji wa flexo, uchapishaji wa laminated, utoboaji, ufungashaji wa godoro.",
+      "title": "Mbolea na Mbegu",
+      "bags": "Mifuko iliyounganishwa, mifuko ya PP iliyotiwa laminated, mifuko ya kuzuia chini, mifuko ya gusset ya kuzuia chini."
+    },
+    {
+      "tips": "Ujenzi wa tabaka nyingi, dirisha, gusset, mpini, uchapishaji wa hali ya juu, utoboaji wa hiari.",
+      "title": "Chakula cha Wanyama na Chakula cha Kipenzi",
+      "bags": "Mifuko ya PP iliyochapishwa laminated, Bana mifuko ya chini, kuzuia chini gusset mifuko, kubeba mifuko."
+    },
+    {
+      "tips": "Ujenzi wa valves, mjengo, utoboaji, kushona kwa nguvu, upakiaji wa kazi nzito.",
+      "bags": "Mifuko ya valves, mifuko ya kuzuia chini, mifuko ya juu na chini iliyounganishwa.",
+      "title": "Saruji na Vifaa vya Ujenzi"
+    },
+    {
+      "title": "Kemikali na Madini",
+      "tips": "Mjengo, lamination, de-airing perforation, salama kushona, kufunga nje ya nchi.",
+      "bags": "Mifuko ya valves, mifuko iliyounganishwa, mifuko ya mdomo wazi, mifuko inayoungwa mkono na mjengo."
+    },
+    {
+      "tips": "Chaguzi za kushughulikia, uchapishaji wa laminated, gusset, upakiaji wa katoni, mchoro wa chapa.",
+      "bags": "Mifuko ya D-kata, mifuko ya kubeba, mifuko ya ununuzi iliyosokotwa, iliyochapishwa laminated kusuka mifuko ya PP.",
+      "title": "Bidhaa za Rejareja na Matangazo"
+    },
+    {
+      "title": "Ununuzi na Ufungaji wa Mtindo unaoweza kutumika tena",
+      "bags": "Kusuka mifuko ya ununuzi, kubeba mifuko, D-kata PP kusuka mifuko.",
+      "tips": "Hushughulikia kitanzi, vipini vya kukata D, gusset ya upande, gusset ya chini, uchapishaji wa rangi nyingi."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Mfuko wa kusuka"
+    },
+    {
+      "title": "Kitambaa"
+    },
+    {
+      "title": "Kizuizi cha Magugu"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Bidhaa za Kilimo na Chakula",
+      "items": [
+        "Mchele, Ngano, Nafaka na Kunde",
+        "Unga na Bidhaa za Chakula",
+        "Chumvi na Sukari"
+      ]
+    },
+    {
+      "title": "Pembejeo za Kilimo na Utunzaji wa Wanyama",
+      "items": [
+        "Mbolea na Mbegu",
+        "Chakula cha Wanyama na Chakula cha Kipenzi"
+      ]
+    },
+    {
+      "title": "Viwanda na Ujenzi",
+      "items": [
+        "Saruji na Vifaa vya Ujenzi",
+        "Kemikali na Madini"
+      ]
+    },
+    {
+      "title": "Rejareja na Matangazo",
+      "items": [
+        "Bidhaa za Rejareja na Matangazo",
+        "Ununuzi na Ufungaji wa Mtindo unaoweza kutumika tena"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Uwezo",
+      "title": "Uwezo",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Desturi"
+        }
+      ]
+    },
+    {
+      "key": "Aina ya Bidhaa",
+      "title": "Aina ya Bidhaa",
+      "options": [
+        {
+          "label": "Mdomo wazi"
+        },
+        {
+          "label": "Imeunganishwa"
+        },
+        {
+          "label": "D-kata"
+        },
+        {
+          "label": "Valve"
+        },
+        {
+          "label": "Beba"
+        },
+        {
+          "label": "Laminated"
+        },
+        {
+          "label": "Bana chini"
+        },
+        {
+          "label": "Zuia chini"
+        },
+        {
+          "label": "Zuia gusset ya chini"
+        },
+        {
+          "label": "Ununuzi wa kusuka"
+        },
+        {
+          "label": "PP kitambaa cha kusuka"
+        },
+        {
+          "label": "Kizuizi cha magugu"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "Je, ni aina gani za mifuko ya PP ambayo VIVIDPOLY husafirisha nje?",
+      "a": "VIVIDPOLY mauzo ya nje mifuko ya mdomo wazi, mifuko ya juu na chini stitched, D-kata PP kusuka mifuko, mifuko valve, mifuko ya kubeba, kuchapishwa na laminated kusuka mifuko ya PP, kuchapishwa na laminated kusuka PP Bana mifuko ya chini, kuchapishwa na laminated kusuka PP kuzuia mifuko ya chini, kuchapishwa na laminated kusuka mifuko ya ununuzi PP block na gusset chini gusset."
+    },
+    {
+      "q": "Ni uwezo gani wa uzito unaopatikana kwa mifuko ya VIVIDPOLY PP?",
+      "a": "VIVIDPOLY inaweza kujadili mahitaji ya mfuko wa PP kutoka kilo 5 hadi 75, kulingana na msongamano wa bidhaa, ukubwa wa mfuko, nguvu ya kitambaa, ujenzi, lamination, mjengo, gusset, kushona, na matumizi ya mwisho."
+    },
+    {
+      "q": "Ni habari gani inahitajika kwa nukuu?",
+      "a": "Wanunuzi wanapaswa kutoa aina ya bidhaa, bidhaa iliyopakiwa, uwezo, saizi ya begi, wingi, mahitaji ya uchapishaji, lamination, mjengo, gusset, mpini, kukata, kushona, aina ya pakiti, nchi lengwa, na mchoro au marejeleo ya sampuli ikiwa inapatikana."
+    },
+    {
+      "a": "Ndiyo. VIVIDPOLY inaweza kusaidia mahitaji ya mifuko ya PP iliyochapishwa na iliyofumwa kwa bidhaa kama vile mchele, unga, mbolea, chakula cha mifugo, chakula cha wanyama, mbegu, chumvi, sukari na bidhaa za rejareja.",
+      "q": "Je, VIVIDPOLY inaweza kutoa mifuko ya PP iliyochapishwa na iliyofumwa?"
+    },
+    {
+      "q": "Kuna tofauti gani kati ya mifuko ya mdomo wazi na mifuko ya valves?",
+      "a": "Mifuko ya mdomo wazi hujazwa kupitia sehemu ya juu iliyo wazi na kufungwa baada ya kujaza. Mifuko ya valves hujazwa kupitia uwazi wa valve na hutumiwa kwa kawaida kwa poda, bidhaa za mtindo wa saruji, kemikali, madini na vifaa vya ujenzi."
+    },
+    {
+      "q": "Mifuko ya chini ya kubana inatumika nini?",
+      "a": "Bana mifuko ya chini hutumiwa ambapo wanunuzi wanahitaji mwonekano wa kifungashio cha hali ya juu na uwasilishaji safi wa kufungwa. Wanafaa kwa chakula kilichochaguliwa, chakula cha pet, chakula cha mifugo, nafaka, mbegu, na bidhaa za rejareja."
+    },
+    {
+      "a": "Mifuko ya gusset ya chini ya block inafaa ambapo wanunuzi wanahitaji sauti iliyoboreshwa, umbo dhabiti uliojaa, eneo thabiti la chapa, na uwasilishaji bora wa kutundika.",
+      "q": "Mifuko ya gusset ya block bottom inatumika nini?"
+    },
+    {
+      "q": "Mifuko ya PP inaweza kujumuisha madirisha?",
+      "a": "Ndiyo. Mifuko ya PP iliyochaguliwa iliyochapishwa na iliyofumwa inaweza kujumuisha dirisha la uwazi ili kuonyesha bidhaa iliyopakiwa ndani."
+    },
+    {
+      "a": "Ndiyo. Laini zinaweza kuzingatiwa pale ambapo ulinzi wa ziada wa bidhaa, usaidizi wa unyevu, au uhifadhi mzuri wa bidhaa unahitajika.",
+      "q": "Je, VIVIDPOLY inaweza kutoa lini ndani ya mifuko ya PP?"
+    },
+    {
+      "q": "Ni chaguzi gani za uchapishaji zinapatikana?",
+      "a": "VIVIDPOLY inaweza kusaidia mifuko ya kawaida, mifuko iliyochapishwa ya flexo, na miundo ya mifuko ya PP iliyochapishwa na laminated, kulingana na mahitaji ya chapa, utata wa mchoro, bajeti, na soko la bidhaa."
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Mwongozo wa mnunuzi",
+      "title": "Mifuko ya PP ni nini? Mwongozo Kamili kwa Wanunuzi wa Kuagiza",
+      "purpose": "Eleza mifuko ya PP, matumizi ya kawaida, na vipengele vya uteuzi wa mnunuzi.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed kufanya eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "readTime": "dk 6 kusoma"
+    },
+    {
+      "readTime": "dk 5 kusoma",
+      "title": "Fungua Mifuko ya Kinywa dhidi ya Mifuko ya Valve: Ni Mfuko gani wa PP Unafaa kwa Bidhaa Yako?",
+      "excerpt": "Ili kufanya hivyo kwa muda mfupi zaidi, ni lazima tufanye mazoezi ya ullamco kufanya kazi ili kupata matokeo bora.",
+      "category": "Ufungaji",
+      "purpose": "Linganisha mitindo ya kujaza na programu zinazofaa."
+    },
+    {
+      "category": "Mwongozo wa mnunuzi",
+      "purpose": "Waelimishe wanunuzi kuhusu miundo ya mifuko iliyounganishwa.",
+      "readTime": "dk 7 kusoma",
+      "title": "Mifuko ya PP Iliyounganishwa Juu na Chini: Matumizi, Faida na Ubinafsishaji",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "purpose": "Tangaza ufungaji wenye chapa inayolipishwa.",
+      "category": "Kuweka chapa",
+      "readTime": "dk 5 kusoma",
+      "title": "Mifuko ya PP Iliyochapwa na Kufumwa kwa Lami kwa ajili ya Ufungaji wa Mpunga, Chakula na Mbolea",
+      "excerpt": "Isipokuwa tu tunapata kikombe cha upendeleo, tunachoweza kufanya ni kuachana na kazi yoyote."
+    },
+    {
+      "category": "Ufungaji",
+      "readTime": "dk 6 kusoma",
+      "title": "Bana Mifuko ya Chini vs Zuia Mifuko ya Chini: Mwongozo wa Mnunuzi",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "purpose": "Linganisha ujenzi wa mifuko ya malipo."
+    },
+    {
+      "purpose": "Wasaidie wanunuzi kufafanua ukubwa na uwezo kabla ya kuuliza.",
+      "category": "Ukubwa",
+      "title": "Mwongozo wa Ukubwa wa Mifuko ya PP: Jinsi ya Kuchagua Uwezo wa Begi wa kilo 5 hadi 75",
+      "readTime": "dk 8 kusoma",
+      "excerpt": "Ili kufanya hivyo kwa muda mfupi zaidi, ni lazima ufanye mazoezi ya ziada ili uweze kufanya kazi kwa urahisi."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Kuweka chapa",
+      "readTime": "dk 5 kusoma",
+      "purpose": "Eleza chaguzi za uchapishaji na athari za chapa.",
+      "title": "Uchapishaji wa Flexo dhidi ya Uchapishaji wa Laminated kwa Mifuko ya PP"
+    },
+    {
+      "purpose": "Eleza vipengele vya ziada vya ulinzi na utunzaji wa bidhaa.",
+      "title": "Kwa nini Liners, Gussets na Utoboaji ni Muhimu katika Mifuko ya PP",
+      "category": "Vipengele",
+      "excerpt": "Isipokuwa tu sit occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "readTime": "4 dakika kusoma"
+    },
+    {
+      "readTime": "dk 6 kusoma",
+      "title": "Jinsi ya Kutayarisha Uchunguzi wa Kusafirisha Begi ya PP",
+      "purpose": "Wafundishe wanunuzi ni maelezo gani ya kutuma kwa nukuu.",
+      "category": "Vidokezo vya kuuza nje",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante."
+    },
+    {
+      "readTime": "dk 5 kusoma",
+      "title": "Mifuko ya Ununuzi iliyofumwa kwa Ufungaji wa Rejareja na Matangazo",
+      "purpose": "Lenga wanunuzi wa mifuko ya utangazaji na ununuzi.",
+      "category": "Rejareja",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "USD",
+    "qtyLabel": "5 pcs sampuli",
+    "printing": "Wazi (sampuli za vipimo)",
+    "packing": "Ufungashaji wa nje wa katoni",
+    "leadTime": "Siku 7-10 za kazi baada ya uthibitisho wa malipo"
+  },
+  "bankDetails": {
+    "swift": "HDFCINBB",
+    "bankName": "HDFC Bank Ltd.",
+    "ifsc": "HDFC0001234",
+    "branch": "Ahmedabad, Bopal, Gujarat, India",
+    "paymentNote": "Jumuisha jina la kampuni yako na sampuli ya marejeleo katika simulizi la uhamishaji.",
+    "accountType": "Akaunti ya Sasa"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "ifsc": "HDFC0001234",
+      "swift": "HDFCINBB",
+      "accountType": "Akaunti ya Sasa",
+      "location": "Gujarat, India",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, India",
+      "swift": "HDFCINBB",
+      "accountType": "Akaunti ya Sasa",
+      "branch": "Vadodara, Barabara ya Halol",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Akaunti ya Sasa",
+      "bankName": "Benki ya ICCI Ltd.",
+      "branch": "Ahmedabad, Barabara kuu ya SG",
+      "swift": "ICICINBB",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "Gujarat, India",
+      "bankName": "Benki ya Axis Ltd.",
+      "branch": "Ahmedabad, Prahladnagar",
+      "accountType": "Akaunti ya Sasa",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "branch": "Gandhinagar, Sekta ya 21",
+      "accountType": "Akaunti ya Sasa",
+      "bankName": "Benki ya Jimbo la India",
+      "ifsc": "SBIN0006789",
+      "swift": "SBININBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Akaunti ya Sasa",
+      "branch": "Ahmedabad, Barabara ya Ashram",
+      "ifsc": "KBK0001234",
+      "bankName": "Benki ya Kotak Mahindra",
+      "swift": "KKBKINBB"
+    },
+    {
+      "accountType": "Akaunti ya Sasa",
+      "bankName": "Ndiyo Bank Ltd.",
+      "swift": "YESBINBB",
+      "branch": "Mumbai, Andheri Mashariki",
+      "location": "Maharashtra, India",
+      "ifsc": "YESB0000123"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Akaunti ya Sasa",
+      "swift": "INDBINBB",
+      "bankName": "IndusInd Bank Ltd.",
+      "ifsc": "INDB0000123",
+      "branch": "Ahmedabad, Navrangpura"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Fungua Mifuko ya Kinywa"
+    },
+    {
+      "label": "Mifuko Iliyounganishwa"
+    },
+    {
+      "label": "Mifuko ya D-Kukata"
+    },
+    {
+      "label": "Mifuko ya Valve"
+    },
+    {
+      "label": "Beba Mifuko"
+    },
+    {
+      "label": "Laminated Woven PP Mifuko"
+    },
+    {
+      "label": "Bana Mifuko ya Chini"
+    },
+    {
+      "label": "Zuia Mifuko ya Chini"
+    },
+    {
+      "label": "Zuia Mifuko ya Gusset ya Chini"
+    },
+    {
+      "label": "Mifuko ya Ununuzi iliyosokotwa"
+    },
+    {
+      "label": "Kitambaa cha PP"
+    },
+    {
+      "label": "Kizuizi cha Magugu"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Fungua Mifuko ya Kinywa",
+      "group": "Mfuko wa kusuka",
+      "short": "Mifuko ya PP iliyofumwa kwa urahisi kwa ajili ya bidhaa kavu nyingi kama vile nafaka, unga, malisho, mbolea, chumvi, sukari, mbegu na madini.",
+      "features": [
+        {
+          "title": "Rahisi kujaza",
+          "body": "Sehemu ya juu iliyo wazi inaruhusu kujaza haraka kwa njia za mwongozo, nusu otomatiki, au zinazoauniwa na mashine."
+        },
+        {
+          "title": "Kubadilika kwa uwezo",
+          "body": "Inafaa kwa matumizi ya kilo 5 hadi 75 kulingana na msongamano wa bidhaa na muundo wa mifuko."
+        },
+        {
+          "body": "Juu inaweza kuwa kukata joto, kukata baridi, hemmed, au kukata zig-zag.",
+          "title": "Kumaliza maalum"
+        },
+        {
+          "title": "Chaguzi za uchapishaji na mjengo",
+          "body": "Uchapishaji wa Flexo, uchapishaji wa laminated, na usaidizi wa mjengo unaweza kuongezwa inapohitajika."
+        }
+      ],
+      "intro": "Mifuko ya Kinywa wazi ni mojawapo ya mitindo ya kawaida ya mifuko ya PP kwa ufungashaji wa wingi wa kavu. VIVIDPOLY husafirisha nje mifuko ya PP ya mdomo wazi kwa wanunuzi wanaohitaji kujazwa kwa urahisi, kufungwa kwa urahisi, na kubinafsisha matumizi ya kilimo, chakula, mbolea, malisho, kemikali, madini, chumvi, sukari na matumizi ya viwandani.",
+      "cta": "Gundua Mifuko ya Kinywa wazi",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kilo 5 hadi 75 kg"
+        },
+        {
+          "key": "Juu",
+          "value": "Fungua mdomo, kata joto, kata baridi, zig-zag, hemmed"
+        },
+        {
+          "key": "Chini",
+          "value": "Mkunjo mmoja umeunganishwa, umeunganishwa mara mbili, umaliziaji maalum"
+        },
+        {
+          "key": "Uchapishaji",
+          "value": "Wazi, flexo, laminated iliyochapishwa"
+        },
+        {
+          "key": "Viongezi",
+          "value": "Gusset, mjengo, utoboaji, shika ikiwa inahitajika"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Bale, kifungu, godoro, katoni, upakiaji wa kuuza nje"
+        }
+      ],
+      "benefits": "Mifuko ya PP ya mdomo wazi inapendekezwa kwa urahisi, kubadilika, na utunzaji wa gharama nafuu. Wao ni bora kwa wanunuzi wanaohitaji mfuko wenye nguvu wa kusokotwa ambao unaweza kufungwa baada ya kujaza kwa kuunganisha, kuifunga, kukunja, au kuunganisha.",
+      "details": "Mifuko hii inaweza kutolewa kama mifuko ya PP iliyofumwa, mifuko iliyochapishwa ya flexo, au mifuko ya PP iliyochapwa na iliyofumwa. Wanunuzi wanaweza kuchagua ukubwa, kitambaa, uwezo, gusset, mjengo, uchapishaji, kushona, kukata na kufunga.",
+      "speciality": "Utaalam wa mifuko ya mdomo wazi ni kubadilika kwao kwa bidhaa tofauti na njia za kujaza.",
+      "material": "Kitambaa cha PP kilichofumwa, wino wa kuchapisha, uzi wa kushona, lamination ya hiari, mjengo wa hiari, na mahitaji ya rangi/ziada mahususi kwa mnunuzi.",
+      "mfg": "Mchakato huo unajumuisha ufumaji wa kitambaa, uchapishaji wa hiari au lamination, kukata, kushona chini, ukaguzi, na kufunga."
+    },
+    "stitched": {
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Salama kushona juu na chini, uimara wa kitambaa maalum, mjengo wa hiari, uchapishaji wa flexo au laminate, upakiaji maalum."
+        },
+        {
+          "title": "Faida",
+          "body": "Usalama bora wa kufungwa, utunzaji wa vitendo, utendakazi mzuri wa kuweka mrundikano, na ufaafu kwa bidhaa nyingi kavu kwa wingi."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Wanunuzi wanaweza kubainisha aina ya kushona, aina ya uzi, mtindo wa kukunjwa, saizi, uwezo, uchapishaji, mjengo, gusset na upakiaji."
+        }
+      ],
+      "name": "Mifuko Iliyounganishwa Juu na Chini",
+      "cta": "Gundua Mifuko Iliyounganishwa",
+      "intro": "Mifuko Iliyounganishwa Juu na Chini imeundwa kwa ajili ya wanunuzi wanaohitaji kufungwa kwa usalama na utunzaji unaotegemewa wakati wa kuhifadhi na usafiri. VIVIDPOLY mauzo ya nje yalishona mifuko ya PP kwa ajili ya kilimo, chakula, mbolea, chakula cha mifugo, kemikali, madini na ufungaji wa viwandani.",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kilo 5 hadi 75 kg"
+        },
+        {
+          "key": "Kushona",
+          "value": "Mkunjo mmoja, kukunjwa mara mbili, uzi mmoja, uzi mara mbili, juu na chini zimeunganishwa"
+        },
+        {
+          "key": "Uchapishaji",
+          "value": "Plain, flexo, iliyochapishwa laminated"
+        },
+        {
+          "key": "Mjengo",
+          "value": "Mjengo uliolegea au uliounganishwa kwa hiari"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Bale, kifungu, godoro, upakiaji wa usafirishaji uliobanwa"
+        }
+      ],
+      "short": "Salama mifuko ya PP iliyoshonwa kwa usafiri, kuhifadhi, na kufungasha nje ya nchi za mazao ya kilimo na viwandani.",
+      "benefits": "Usalama bora wa kufungwa, utunzaji wa vitendo, utendakazi mzuri wa kuweka mrundikano, na ufaafu kwa bidhaa nyingi kavu kwa wingi.",
+      "speciality": "Umaalumu wa aina hii ya mfuko ni kufungwa kwa kushona kwa kutegemewa.",
+      "details": "Wanunuzi wanaweza kubainisha aina ya kushona, aina ya uzi, mtindo wa kukunjwa, saizi, uwezo, uchapishaji, mjengo, gusset na upakiaji.",
+      "material": "Mchanganyiko wa nyenzo ni pamoja na kitambaa cha PP kilichofumwa, uzi wa kushona, lamination ya hiari, mjengo wa hiari na wino wa kuchapisha.",
+      "mfg": "Mchakato wa utengenezaji ni pamoja na kusuka, uchapishaji wa hiari / lamination, kukata, kushona juu na chini, ukaguzi, na kufunga."
+    },
+    "d-cut": {
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Ncha ya kukata D, saizi maalum, uchapishaji wa flexo au laminated, gusset ya hiari, kumaliza kwa urahisi wa rejareja."
+        },
+        {
+          "title": "Faida",
+          "body": "Ubebaji rahisi, muundo thabiti uliofumwa, mwonekano wa chapa, na thamani muhimu ya utangazaji."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inafaa kwa programu za kubeba mizigo nyepesi hadi ya kati, bidhaa za rejareja, maonyesho ya biashara na kampeni za matangazo."
+        }
+      ],
+      "intro": "Mifuko ya Kufumwa ya D-Cut PP inajumuisha kata iliyounganishwa ambayo hurahisisha kubeba. VIVIDPOLY husafirisha nje mifuko iliyokatwa kwa D kwa rejareja, ununuzi, matangazo, maonyesho na mahitaji ya ufungashaji wa mtindo unaoweza kutumika tena.",
+      "cta": "Gundua Mifuko ya D-Cut",
+      "name": "D-Cut PP Mifuko ya Kufumwa",
+      "short": "Mifuko iliyofumwa ya PP ya mtindo wa kubeba iliyokatwa vishikizo vilivyounganishwa kwa rejareja, ukuzaji na ufungashaji wa mtindo unaoweza kutumika tena.",
+      "spec": [
+        {
+          "key": "Kushughulikia",
+          "value": "D-kata au kraftigare D-kata kushughulikia"
+        },
+        {
+          "key": "Nyenzo",
+          "value": "PP kusuka au laminated nyenzo PP"
+        },
+        {
+          "key": "Uchapishaji",
+          "value": "Uchapishaji maalum"
+        },
+        {
+          "key": "Kushona",
+          "value": "Kushona kwa upande/chini"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Ufungaji wa katoni au kifungu"
+        }
+      ],
+      "benefits": "Ubebaji rahisi, muundo thabiti uliofumwa, mwonekano wa chapa, na thamani muhimu ya utangazaji.",
+      "details": "Inafaa kwa utumaji wa kubeba nyepesi hadi wa kati, bidhaa za rejareja, maonyesho ya biashara na kampeni za matangazo.",
+      "mfg": "Weaving, uchapishaji au lamination, kukata, D-kata malezi ya kushughulikia, kushona, ukaguzi, kufunga.",
+      "speciality": "Mchanganyiko hubeba urahisi na nguvu iliyosokotwa na uwasilishaji wa chapa.",
+      "material": "Kitambaa kilichofumwa cha PP, filamu ya laminated ikihitajika, wino wa kuchapisha, uzi wa kushona, shikilia uimarishaji ikihitajika."
+    },
+    "valve": {
+      "name": "Mifuko ya Valve",
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Muundo wa kujaza valves, mjengo wa hiari, utoboaji, uchapishaji wa laminated, utangamano wa chini wa kuzuia."
+        },
+        {
+          "title": "Faida",
+          "body": "Ujazaji unaodhibitiwa kwa kasi, umbizo lililopakiwa safi zaidi, linalofaa kwa bidhaa za poda na punjepunje."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Ukubwa wa valve, aina ya valve, utoboaji, mjengo, uwezo, na ujenzi unapaswa kuchaguliwa kulingana na bidhaa na mfumo wa kujaza."
+        }
+      ],
+      "short": "Mifuko ya PP inayojaza vali kwa ajili ya bidhaa za mtindo wa saruji, kemikali, madini, poda na vifaa vya ujenzi.",
+      "cta": "Chunguza Mifuko ya Valve",
+      "intro": "Mifuko ya Valve hutengenezwa kwa bidhaa zinazohitaji kujaza kupitia ufunguzi wa valve. VIVIDPOLY inasafirisha nje mifuko ya vali kwa ajili ya bidhaa za mtindo wa saruji, kemikali, madini, poda, vifaa vya ujenzi na bidhaa za viwandani.",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kawaida kutoka kilo 20 hadi 75"
+        },
+        {
+          "key": "Valve",
+          "value": "Valve rahisi au iliyopanuliwa"
+        },
+        {
+          "key": "Ujenzi",
+          "value": "Ujenzi wa kawaida au wa kuzuia chini"
+        },
+        {
+          "key": "Viongezi",
+          "value": "Mjengo wa hiari na utoboaji"
+        }
+      ],
+      "benefits": "Ujazaji unaodhibitiwa kwa kasi, umbizo lililopakiwa safi zaidi, linalofaa kwa bidhaa za poda na punjepunje.",
+      "details": "Ukubwa wa valve, aina ya valve, utoboaji, mjengo, uwezo, na ujenzi unapaswa kuchaguliwa kulingana na bidhaa na mfumo wa kujaza.",
+      "speciality": "Inafaa kwa kujaza viwandani na usambazaji wa kuuza nje.",
+      "mfg": "Maandalizi ya kitambaa, uchapishaji/lamination, kukata, kutengeneza valves, kutoboa ikiwa inahitajika, ukaguzi, kufunga.",
+      "material": "PP kusuka kitambaa, valve nyenzo, mjengo, laminated safu, kuunganisha thread, uchapishaji wino."
+    },
+    "carry": {
+      "name": "Beba Mifuko",
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "D-kata, kitanzi, kuunganishwa, kupigwa, chaguzi za kushughulikia upande au juu; kuchapishwa au kumaliza laminated; gusset ya hiari."
+        },
+        {
+          "title": "Faida",
+          "body": "Inaboresha mwonekano wa chapa na hutoa nguvu ya vitendo ya kubeba."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Wanunuzi wanaweza kubinafsisha saizi ya begi, mtindo wa kushughulikia, muundo wa kuchapisha, lamination, gusset, kushona na kufunga."
+        }
+      ],
+      "intro": "Beba Mifuko iliyotengenezwa kwa nyenzo ya kusuka PP inafaa kwa wanunuzi wanaohitaji mifuko yenye nguvu, chapa, na ya vitendo. Usafirishaji wa VIVIDPOLY hubeba mifuko ya rejareja, biashara, ununuzi, hafla, na ufungaji wa matangazo.",
+      "short": "Mifuko ya kubebea iliyofumwa yenye nguvu na chapa kwa matumizi ya rejareja, biashara na matangazo.",
+      "cta": "Gundua Mifuko ya Kubeba",
+      "spec": [
+        {
+          "key": "Nyenzo",
+          "value": "PP kusuka au laminated nyenzo PP"
+        },
+        {
+          "key": "Uchapishaji",
+          "value": "Flexo au uchapishaji wa laminated"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset ya upande/chini"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Ufungaji wa katoni/kifungu/bale"
+        }
+      ],
+      "benefits": "Inaboresha mwonekano wa chapa na hutoa nguvu ya vitendo ya kubeba.",
+      "details": "Wanunuzi wanaweza kubinafsisha saizi ya begi, mtindo wa kushughulikia, muundo wa kuchapisha, lamination, gusset, kushona na kufunga.",
+      "speciality": "Ufungaji thabiti wa kubeba na mawasiliano ya chapa.",
+      "mfg": "Weaving, uchapishaji/lamination, kukata, uundaji kushughulikia au attachment, kushona, ukaguzi, kufunga.",
+      "material": "Kitambaa cha PP kilichofumwa, filamu ya laminated, wino wa kuchapisha, nyuzi za kuunganisha, nyenzo za kushughulikia ikiwa inahitajika."
+    },
+    "laminated": {
+      "group": "Mfuko wa kusuka",
+      "name": "Mifuko ya PP Iliyochapishwa na Laminated",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Uso uliochapishwa wa laminated, msingi wa PP uliosokotwa, chaguzi za safu, gusset, mjengo, dirisha, utoboaji, vipini."
+        },
+        {
+          "title": "Faida",
+          "body": "Uwekaji chapa ulioboreshwa, mvuto bora wa rafu, utambulisho wa bidhaa, na muundo thabiti wa ufungashaji."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inafaa kwa kilo 5 hadi 75 kulingana na ujenzi na wiani wa bidhaa."
+        }
+      ],
+      "short": "Vifungashio vya ubora vilivyochapishwa vya mchele, unga, malisho, chakula cha mifugo, mbolea, mbegu na bidhaa za rejareja.",
+      "cta": "Gundua Mifuko ya PP yenye Laminated",
+      "spec": [
+        {
+          "key": "Msingi",
+          "value": "PP iliyosokotwa + iliyochapishwa safu ya laminated"
+        },
+        {
+          "key": "Mjengo",
+          "value": "Mjengo wa hiari"
+        },
+        {
+          "key": "Maliza",
+          "value": "Kumaliza kwa mtindo wa kung'aa/matt ikiwa inapatikana"
+        },
+        {
+          "key": "Desturi",
+          "value": "Saizi maalum na mchoro"
+        }
+      ],
+      "intro": "Mifuko ya PP Iliyochapwa na Iliyotiwa Lam inachanganya nguvu iliyofumwa na uwasilishaji wa chapa ya kuvutia. VIVIDPOLY husafirisha mifuko hii kwa wanunuzi wanaohitaji vifungashio vilivyochapishwa kwa bei ya juu kwa bidhaa za chakula, mbolea, malisho, chakula cha wanyama kipenzi, mbegu, chumvi, sukari na bidhaa za rejareja.",
+      "details": "Inafaa kwa kilo 5 hadi 75 kulingana na ujenzi na wiani wa bidhaa.",
+      "benefits": "Uwekaji chapa ulioboreshwa, mvuto bora wa rafu, utambulisho wa bidhaa, na muundo thabiti wa ufungashaji.",
+      "speciality": "Ufungaji wa mauzo ya nje unaolipishwa na mwonekano unaolenga chapa.",
+      "mfg": "Ufumaji wa kitambaa, utayarishaji wa kazi ya sanaa, uchapishaji, lamination, kukata, kushona/kugeuza, ukaguzi, kufunga.",
+      "material": "Kitambaa cha PP kilichofumwa, filamu iliyochapishwa au safu ya uchapishaji, safu ya lamination, thread ya kushona, mjengo wa hiari/dirisha, wino wa kuchapisha."
+    },
+    "pinch-bottom": {
+      "name": "Bana Mifuko ya Chini",
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Bana ujenzi wa chini, uso uliochapishwa wa laminated, kipengele cha hiari cha kufungua kwa urahisi, dirisha, gusset, mjengo."
+        },
+        {
+          "title": "Faida",
+          "body": "Mwonekano wa hali ya juu, umbo lililojaa kupangwa, uwasilishaji wa rafu thabiti, mawasiliano bora ya chapa."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inafaa zaidi kwa bidhaa zilizo tayari kwa rejareja na vifurushi vya bidhaa zenye chapa."
+        }
+      ],
+      "cta": "Gundua Mifuko ya Bana ya Chini",
+      "short": "Mifuko ya PP iliyochapishwa ya hali ya juu iliyo na wasilisho safi la kufungwa kwa vifungashio vilivyo tayari kwa reja reja.",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kawaida kutoka kilo 5 hadi 50, juu kwa ukaguzi wa muundo"
+        },
+        {
+          "key": "Ujenzi",
+          "value": "Kuchapishwa laminated kusuka PP"
+        },
+        {
+          "key": "Viongezi",
+          "value": "Dirisha/mjengo/gusset ya hiari"
+        }
+      ],
+      "intro": "Mifuko ya PP Iliyochapishwa na Kufumwa ya Laminated Bana ya Chini imeundwa kwa ajili ya ufungashaji bora ambapo uwasilishaji safi wa kufungwa na mwonekano wa chapa ni muhimu. VIVIDPOLY inauza nje mifuko ya chini ya nafaka za chakula, chakula cha mifugo, chakula cha mifugo, mbegu na bidhaa za rejareja.",
+      "benefits": "Mwonekano wa hali ya juu, umbo lililojaa kupangwa, uwasilishaji wa rafu thabiti, mawasiliano bora ya chapa.",
+      "details": "Inafaa zaidi kwa bidhaa zilizo tayari kwa rejareja na vifurushi vya bidhaa zenye chapa.",
+      "speciality": "Wasilisho la hali ya juu la kufungwa kwa vifungashio vyenye chapa.",
+      "material": "PP kusuka kitambaa, kuchapishwa laminated filamu, safu lamination, mjengo, filamu dirisha, uchapishaji wino.",
+      "mfg": "Utayarishaji wa kitambaa, uchapishaji / lamination, kukata, uundaji wa chini wa chini, dirisha la hiari / utoboaji, ukaguzi, kufunga."
+    },
+    "block-bottom": {
+      "name": "Zuia Mifuko ya Chini",
+      "group": "Mfuko wa kusuka",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Muundo wa chini wa kuzuia, kumaliza laminated iliyochapishwa, mdomo wazi au juu ya valve, mjengo, utoboaji."
+        },
+        {
+          "title": "Faida",
+          "body": "Umbo bora la kusimama, uwasilishaji wa godoro ulioboreshwa, uso dhabiti wa chapa, na ushughulikiaji kwa urahisi."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inafaa kwa bidhaa ambapo uwasilishaji wa kuona na utendakazi wa kuweka mrundikano ni muhimu."
+        }
+      ],
+      "cta": "Gundua Mifuko ya Block Bottom",
+      "details": "Inafaa kwa bidhaa ambapo uwasilishaji wa kuona na utendakazi wa kuweka mrundikano ni muhimu.",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kilo 5 hadi kilo 75 kulingana na ujenzi"
+        },
+        {
+          "key": "Umbizo",
+          "value": "Zuia umbizo la chini"
+        },
+        {
+          "key": "Juu",
+          "value": "Valve ya hiari"
+        },
+        {
+          "key": "Viongezi",
+          "value": "Mjengo, utoboaji, uchapishaji wa laminated"
+        }
+      ],
+      "short": "Mifuko ya PP iliyochapwa yenye umbo dhabiti kwa kuweka mrundikano bora zaidi, onyesho na uwasilishaji wa kuuza nje.",
+      "intro": "Mifuko ya PP Iliyochapishwa na Kufumwa ya Lam Kuzuia Mifuko ya Chini ya Chini hutoa umbo thabiti zaidi uliojaa na mwonekano ulioboreshwa wa kutundika. Usafirishaji wa VIVIDPOLY huzuia mifuko ya chini kwa ajili ya mbolea, chakula cha mifugo, chakula cha mifugo, nafaka, madini, kemikali, na vifungashio vya rejareja.",
+      "speciality": "Wasilisho lililo tayari kusafirisha nje lenye umbo dhabiti wa mfuko uliojazwa.",
+      "benefits": "Umbo bora la kusimama, uwasilishaji wa godoro ulioboreshwa, uso dhabiti wa chapa, na ushughulikiaji kwa urahisi.",
+      "mfg": "Uzalishaji wa kitambaa, uchapishaji / lamination, kukata, kutengeneza chini ya kuzuia, kumaliza juu / valve, ukaguzi, kufunga.",
+      "material": "PP kusuka kitambaa, laminated filamu, uchapishaji wino, mjengo, valve nyenzo, kutengeneza / kushona vifaa."
+    },
+    "gusset": {
+      "name": "Zuia Mifuko ya Gusset ya Chini",
+      "group": "Mfuko wa kusuka",
+      "cta": "Gundua Mifuko ya Gusset",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Zuia chini kwa gusset, nje iliyochapishwa ya laminated, kina cha gusset maalum, dirisha, mjengo, utoboaji."
+        },
+        {
+          "title": "Faida",
+          "body": "Sauti ya juu inayoweza kutumika, umbo thabiti uliojaa, eneo la chapa iliyoboreshwa, na uwasilishaji bora wa kuona."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inatumika pale ambapo wanunuzi wanahitaji mifuko iliyochapishwa ya ubora wa juu iliyo na kiasi cha ziada na umbo thabiti."
+        }
+      ],
+      "intro": "Iliyochapishwa na Laminated Woven PP Block Chini Gusset Mifuko kuchanganya imara block chini ya ujenzi na kiasi cha mkono gusset. VIVIDPOLY inasafirisha mifuko hii nje ya nchi kwa ajili ya chakula cha mifugo, chakula cha mifugo, mbolea, nafaka, mbegu na bidhaa za rejareja au za viwandani za kiwango cha juu.",
+      "short": "Mifuko ya PP iliyochapishwa yenye kiasi cha juu yenye usaidizi wa gusset na eneo lenye nguvu la chapa.",
+      "spec": [
+        {
+          "key": "Uwezo",
+          "value": "Kilo 5 hadi 75 kwa wiani wa bidhaa na muundo"
+        },
+        {
+          "key": "Gusset",
+          "value": "Upande/chini/kuzuia gusset ya chini"
+        },
+        {
+          "key": "Viongezi",
+          "value": "Valve ya hiari, mjengo, dirisha"
+        }
+      ],
+      "benefits": "Sauti ya juu inayoweza kutumika, umbo thabiti uliojaa, eneo la chapa iliyoboreshwa, na uwasilishaji bora wa kuona.",
+      "speciality": "Inachanganya ujazo, uwasilishaji na utendakazi wa vifungashio vya kuuza nje.",
+      "details": "Inatumika pale ambapo wanunuzi wanahitaji mifuko iliyochapishwa ya ubora wa juu iliyo na kiasi cha ziada na umbo thabiti.",
+      "mfg": "Weaving, uchapishaji / lamination, kukata, gusset malezi, kuzuia malezi ya chini, kuongeza kipengele, ukaguzi, kufunga.",
+      "material": "Kitambaa cha PP kilichofumwa, filamu iliyochapishwa ya laminated, mjengo, filamu ya dirisha, ujenzi wa gusset, wino wa kuchapisha, kushona/kutengeneza vifaa."
+    },
+    "shopping": {
+      "group": "Mfuko wa kusuka",
+      "short": "Mifuko ya ununuzi iliyosokotwa kwa minyororo ya rejareja, maduka makubwa, maonyesho na kampeni za matangazo.",
+      "features": [
+        {
+          "title": "Vipengele",
+          "body": "Muundo uliofumwa unaoweza kutumika tena, vipini maalum, uchapishaji wa flexo au laminate, gusset, ukamilifu wa rejareja."
+        },
+        {
+          "title": "Faida",
+          "body": "Nguvu ya vitendo ya kubeba, ukuzaji wa chapa, uwasilishaji wa kitaalamu wa rejareja, na mwonekano wa kurudia."
+        },
+        {
+          "title": "Maelezo",
+          "body": "Inafaa kwa wauzaji reja reja, maduka makubwa, maonyesho, matangazo ya kampuni na kampeni za ununuzi."
+        }
+      ],
+      "intro": "Mifuko ya Ununuzi iliyofumwa ni mifuko ya kubebea iliyofumwa ya PP inayotumika kwa rejareja, maduka makubwa, hafla, maonyesho ya biashara, na ufungaji wa matangazo. VIVIDPOLY husafirisha nje mifuko ya ununuzi iliyosokotwa kwa wanunuzi wanaohitaji vifungashio imara, vinavyoweza kutumika tena na vinavyotambulika.",
+      "name": "Mifuko ya Ununuzi (Kufumwa)",
+      "cta": "Gundua Mifuko ya Ununuzi",
+      "spec": [
+        {
+          "key": "Ukubwa",
+          "value": "Ukubwa maalum"
+        },
+        {
+          "key": "Hushughulikia",
+          "value": "D-kata / kitanzi / kushonwa / ngumi Hushughulikia"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset ya upande au chini"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Ufungaji wa katoni/kifungu/bale"
+        }
+      ],
+      "benefits": "Nguvu ya vitendo ya kubeba, ukuzaji wa chapa, uwasilishaji wa kitaalamu wa rejareja, na mwonekano wa kurudia.",
+      "details": "Inafaa kwa wauzaji reja reja, maduka makubwa, maonyesho, matangazo ya kampuni na kampeni za ununuzi.",
+      "speciality": "Uwasilishaji wa chapa maalum kwa wanunuzi wa kuuza nje rejareja na matangazo.",
+      "material": "PP kusuka kitambaa, laminated kuchapishwa filamu, kuunganisha thread, kushughulikia nyenzo, uchapishaji inks.",
+      "mfg": "Maandalizi ya kitambaa, uchapishaji / lamination, kukata, kushughulikia kutengeneza / attachment, kushona, ukaguzi, kufunga."
+    },
+    "fabric": {
+      "name": "Kitambaa cha PP",
+      "group": "Kitambaa",
+      "features": [
+        {
+          "title": "Hamisha tayari",
+          "body": "Imetolewa kwa wanunuzi wa kimataifa na chaguzi maalum za ukubwa na upakiaji."
+        },
+        {
+          "body": "Upana, GSM, rangi, na urefu wa roll au kukata unaweza kupangwa ili kuagiza.",
+          "title": "Vipimo maalum"
+        },
+        {
+          "title": "Kuzingatia ubora",
+          "body": "Kufuma na kumaliza thabiti kwa matumizi ya viwandani na kilimo."
+        }
+      ],
+      "cta": "Chunguza Kitambaa cha Kufumwa cha PP",
+      "short": "Vitambaa vilivyosokotwa vya PP na urefu uliokatwa kwa matumizi ya viwandani, kilimo, na ubadilishaji.",
+      "benefits": "Vitambaa vilivyosokotwa vya PP na urefu uliokatwa kwa matumizi ya viwandani, kilimo, na ubadilishaji.",
+      "intro": "Vitambaa vilivyosokotwa vya PP na urefu uliokatwa kwa matumizi ya viwandani, kilimo, na ubadilishaji.",
+      "spec": [
+        {
+          "key": "Umbizo",
+          "value": "Desturi kwa uchunguzi"
+        },
+        {
+          "key": "Nyenzo",
+          "value": "PP kusuka"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Ufungashaji wa kuuza nje"
+        }
+      ],
+      "speciality": "Kitambaa cha PP kilichofumwa kutoka kwa VIVIDPOLY kwa wanunuzi wa kimataifa.",
+      "details": "Shiriki upana unaohitajika, GSM, rangi, wingi na unakoenda kwa nukuu.",
+      "mfg": "Kusuka, kumaliza, ukaguzi, na kufunga nje ya nchi.",
+      "material": "Nyenzo iliyofumwa ya PP na viungio maalum vya mnunuzi inapohitajika."
+    },
+    "weed-barrier": {
+      "name": "Kizuizi cha Magugu",
+      "group": "Kizuizi cha Magugu",
+      "features": [
+        {
+          "title": "Hamisha tayari",
+          "body": "Imetolewa kwa wanunuzi wa kimataifa na chaguzi maalum za ukubwa na upakiaji."
+        },
+        {
+          "title": "Vipimo maalum",
+          "body": "Upana, GSM, rangi, na urefu wa roll au kukata unaweza kupangwa ili kuagiza."
+        },
+        {
+          "title": "Kuzingatia ubora",
+          "body": "Kufuma na kumaliza thabiti kwa matumizi ya viwandani na kilimo."
+        }
+      ],
+      "details": "Shiriki upana unaohitajika, GSM, rangi, wingi na unakoenda kwa nukuu.",
+      "spec": [
+        {
+          "key": "Umbizo",
+          "value": "Desturi kwa uchunguzi"
+        },
+        {
+          "key": "Nyenzo",
+          "value": "PP kusuka"
+        },
+        {
+          "key": "Ufungashaji",
+          "value": "Ufungashaji wa kuuza nje"
+        }
+      ],
+      "short": "PP iliyofumwa kitambaa cha kuzuia magugu kwa ajili ya kuweka mazingira, kilimo, na matumizi ya kifuniko cha ardhini.",
+      "mfg": "Kusuka, kumaliza, ukaguzi, na kufunga nje ya nchi.",
+      "benefits": "PP iliyofumwa kitambaa cha kuzuia magugu kwa ajili ya kuweka mazingira, kilimo, na matumizi ya kifuniko cha ardhini.",
+      "intro": "PP iliyofumwa kitambaa cha kuzuia magugu kwa ajili ya kuweka mazingira, kilimo, na matumizi ya kifuniko cha ardhini.",
+      "material": "Nyenzo iliyofumwa ya PP na viungio maalum vya mnunuzi inapohitajika.",
+      "cta": "Chunguza Kizuizi cha Magugu",
+      "speciality": "Kizuizi cha Magugu kutoka kwa VIVIDPOLY kwa wanunuzi wa kimataifa."
+    }
+  },
+  "markets": [
+    "Marekani",
+    "Kanada",
+    "Australia",
+    "Ulaya",
+    "Uingereza",
+    "Afrika",
+    "Thailand",
+    "Saudi Arabia",
+    "Amerika ya Kusini",
+    "New Zealand"
+  ],
+  "packedProductOptions": [
+    "Mchele",
+    "Mbolea",
+    "Chakula cha wanyama",
+    "Saruji",
+    "Bidhaa za rejareja"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Desturi"
+    ],
+    "printing": [
+      "Wazi",
+      "Flexo iliyochapishwa",
+      "Iliyochapishwa laminated",
+      "Rangi nyingi"
+    ],
+    "addons": [
+      "Mjengo",
+      "Gusset",
+      "Kushughulikia",
+      "Dirisha",
+      "Utoboaji",
+      "Valve",
+      "Bana",
+      "Zuia chini"
+    ],
+    "packing": [
+      "Bale",
+      "Katoni",
+      "Godoro",
+      "Ufungashaji wa kuuza nje"
+    ]
+  }
+}
