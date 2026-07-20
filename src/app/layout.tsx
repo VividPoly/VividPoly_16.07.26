@@ -10,9 +10,30 @@ import '../styles/radius-system.css';
 import '../styles/knack-tokens.css';
 import '../styles/knack-components.css';
 
+const SITE_URL = 'https://vivid-poly-16-07-26.vercel.app';
+
 export const metadata: Metadata = {
-  title: 'VIVIDPOLY: PP Bags Exporter from India',
-  description: 'VIVIDPOLY exports PP bags from India for global buyers.',
+  metadataBase: new URL(SITE_URL),
+  title: 'PP Bags & Woven Bags Exporter from India | VIVIDPOLY',
+  description:
+    'VIVIDPOLY exports PP woven bags, valve, laminated and custom packaging from India to global buyers. Request samples and bulk export quotes today.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'VIVIDPOLY',
+    url: SITE_URL,
+    title: 'PP Bags & Woven Bags Exporter from India | VIVIDPOLY',
+    description:
+      'VIVIDPOLY exports PP woven bags, valve, laminated and custom packaging from India to global buyers. Request samples and bulk export quotes today.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PP Bags & Woven Bags Exporter from India | VIVIDPOLY',
+    description:
+      'VIVIDPOLY exports PP woven bags, valve, laminated and custom packaging from India to global buyers. Request samples and bulk export quotes today.',
+  },
 };
 
 export const viewport = {

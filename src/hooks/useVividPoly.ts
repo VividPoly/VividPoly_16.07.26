@@ -31,6 +31,7 @@ import {
   requestSkipNextScrollToTop,
 } from '@/lib/vividpoly-navigation';
 import { getPageTransitionKey } from '@/lib/vp-page-transition';
+import { getSeoMeta } from '@/lib/seo-meta';
 
 export type Screen =
   | 'home' | 'catalogue' | 'pdp' | 'faqs'
@@ -174,6 +175,34 @@ export function useVividPoly() {
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
+
+  // Keep the browser tab title + meta description in sync with the current
+  // SPA screen. The root URL is server-rendered from layout.tsx; every other
+  // screen lives behind a #hash, so its SEO meta is applied here at runtime.
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const { title, description } = getSeoMeta(s);
+    if (document.title !== title) document.title = title;
+
+    const setMeta = (selector: string, attr: string, name: string) => {
+      let el = document.head.querySelector<HTMLMetaElement>(selector);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, name);
+        document.head.appendChild(el);
+      }
+      if (el.getAttribute('content') !== description) {
+        el.setAttribute('content', description);
+      }
+    };
+    setMeta('meta[name="description"]', 'name', 'description');
+    setMeta('meta[property="og:description"]', 'property', 'og:description');
+
+    const ogTitle = document.head.querySelector<HTMLMetaElement>('meta[property="og:title"]');
+    if (ogTitle && ogTitle.getAttribute('content') !== title) {
+      ogTitle.setAttribute('content', title);
+    }
+  }, [s.screen, s.pid, s.cat]);
 
   const go = useCallback((screen: Screen) => {
     navigate((st) => ({ ...st, screen, menu: null, searchOpen: false, catGuide: null }));
