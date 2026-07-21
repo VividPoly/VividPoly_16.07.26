@@ -2,11 +2,12 @@ import type { VividPolyState } from '@/hooks/useVividPoly';
 
 /**
  * SEO meta titles + descriptions, sourced from the marketing team's sheet.
- * The public site is a hash-based SPA, so only the root URL (`/`) is
- * server-rendered and crawlable — its metadata lives in `src/app/layout.tsx`
- * (kept in sync with the `home` entry below). Every other "page" is a client
- * screen reached via a `#hash`, so its title/description is applied at runtime
- * as the visitor navigates (see the SEO effect in `useVividPoly`).
+ * The public site is a single-page app: only the root URL (`/`) is
+ * server-rendered, and its metadata lives in `src/app/layout.tsx` (kept in sync
+ * with the `home` entry below). Every other "page" is a client screen reached
+ * via a clean path (e.g. `/blog`, `/product/open-mouth`) that a rewrite serves
+ * from the root page, so its title/description is applied at runtime as the
+ * visitor navigates (see the SEO effect in `useVividPoly`).
  */
 export interface SeoMeta {
   title: string;

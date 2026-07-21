@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useVividPoly } from '@/hooks/useVividPoly';
 import { bindAllHovers } from '@/lib/vividpoly-style';
 import VpQuoteSuccess from '@/components/vividpoly/VpQuoteSuccess';
@@ -28,10 +28,11 @@ import VpKnackStatsBar from '@/components/vividpoly/VpKnackStatsBar';
 import VpKnackProductUseSection from '@/components/vividpoly/VpKnackProductUseSection';
 import VpKnackBuyerSection from '@/components/vividpoly/VpKnackBuyerSection';
 import VpKnackAboutSection from '@/components/vividpoly/VpKnackAboutSection';
+import VpKnackImageBand from '@/components/vividpoly/VpKnackImageBand';
 import VpAboutPage from '@/components/vividpoly/VpAboutPage';
 import VpPhotoSlot from '@/components/vividpoly/VpPhotoSlot';
 import VpRouteOutlet from '@/components/vividpoly/VpRouteOutlet';
-import { WhatsAppIcon, ChevronRightIcon, ChevronLeftIcon, CloseIcon, CheckIcon } from '@/components/vividpoly/VividPolyIcons';
+import { WhatsAppIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon, CheckIcon } from '@/components/vividpoly/VividPolyIcons';
 import { useEnquiryPopup } from '@/hooks/useEnquiryPopup';
 import { markEnquiryDismissed, markEnquirySubmitted } from '@/lib/enquiry-popup-session';
 import VpCatalogueFilters from '@/components/vividpoly/VpCatalogueFilters';
@@ -52,6 +53,10 @@ import {
   VP_PAGE_ENTER_MS,
 } from '@/lib/vp-page-transition';
 
+// Run before paint on the client so a silent slide-track snap never flashes;
+// falls back to useEffect during SSR (where there is nothing to lay out).
+const useIsoLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+
 export default function VividPolyView() {
   const v = useVividPoly() as Record<string, any>;
   const rootRef = useRef<HTMLDivElement>(null);
@@ -71,6 +76,103 @@ export default function VividPolyView() {
   const lastScrollYRef = useRef(0);
   const headerHiddenRef = useRef(false);
   const headerBlendRef = useRef(false);
+
+  // --- Home hero rotating slider: image, headline, and lead advance together
+  // every 5s. Every slide shows a background-removed bag cut-out over the shared
+  // dark studio backdrop (see .vp-hero-panel--visual), so only the bag changes.
+  // Slide 0 keeps the brand headline over the iconic open-mouth sack; the rest
+  // are flagship products, fully localized (name + short line from the locale).
+  const heroSlides = useMemo(() => {
+    const sc = v.siteCopy || {};
+    const byId = new Map((v.products || []).map((p: any) => [p.id, p]));
+    const brand = {
+      key: 'brand',
+      img: '/images/hero/open-mouth.webp',
+      line1: sc.heroHeadlineLine1 || 'PP Bags for',
+      line2: sc.heroHeadlineLine2 || 'Global Buyers',
+      lead: sc.heroLead || '',
+    };
+    const productSlides = ['laminated', 'valve', 'carry', 'd-cut']
+      .map((id) => byId.get(id))
+      .filter(Boolean)
+      .map((p: any) => ({
+        key: p.id as string,
+        img: `/images/hero/${p.id}.webp`,
+        line1: p.name as string,
+        line2: '',
+        lead: (p.short as string) || '',
+      }));
+    return [brand, ...productSlides];
+  }, [v.siteCopy, v.products]);
+
+  // Seamless infinite loop: the track carries a clone of the last slide at the
+  // head and a clone of the first at the tail. Real slides sit at display index
+  // 1..N; when the track slides onto a clone it snaps back (no animation) to the
+  // matching real slide, so the loop never rewinds.
+  const N = heroSlides.length;
+  const displaySlides = useMemo(
+    () => (N <= 1 ? heroSlides : [heroSlides[N - 1], ...heroSlides, heroSlides[0]]),
+    [heroSlides, N],
+  );
+  const heroTrackRef = useRef<HTMLDivElement>(null);
+  const [displayIndex, setDisplayIndex] = useState(1);
+  const [slideAnim, setSlideAnim] = useState(true);
+  // True while a slide is mid-animation. Guards against advancing again before
+  // the current move finishes, which would push displayIndex past the last
+  // clone cell and land the track on an empty (image-less) position.
+  const isAnimatingRef = useRef(false);
+
+  const activeHeroIndex = N <= 1 ? 0 : ((displayIndex - 1) % N + N) % N;
+  const heroSlide = heroSlides[activeHeroIndex] || heroSlides[0];
+
+  const goHeroSlide = useCallback((dir: number) => {
+    if (N <= 1 || isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+    setSlideAnim(true);
+    setDisplayIndex((i) => i + dir);
+  }, [N]);
+
+  // When the slide finishes moving onto a clone, snap (animation off) to the
+  // matching real slide. Acting on the real transitionend — not a timer — keeps
+  // the snap exactly in sync with the animation so the loop never rewinds.
+  const onHeroTrackTransitionEnd = useCallback((e: React.TransitionEvent<HTMLDivElement>) => {
+    if (N <= 1) return;
+    if (e.target !== e.currentTarget || e.propertyName !== 'transform') return;
+    if (displayIndex === N + 1) {
+      setSlideAnim(false);
+      setDisplayIndex(1);
+    } else if (displayIndex === 0) {
+      setSlideAnim(false);
+      setDisplayIndex(N);
+    } else {
+      // Normal move onto a real slide — free to advance again.
+      isAnimatingRef.current = false;
+    }
+  }, [N, displayIndex]);
+
+  // After a silent snap, force the browser to commit the jumped position (with
+  // the transition still off) before re-enabling it, so re-enabling can't
+  // animate the jump backwards.
+  useIsoLayoutEffect(() => {
+    if (slideAnim) return;
+    void heroTrackRef.current?.offsetWidth; // force reflow
+    setSlideAnim(true);
+    isAnimatingRef.current = false; // snap complete — free to advance again
+  }, [slideAnim, displayIndex]);
+
+  // Auto-advance every 5s; the interval resets whenever the slide changes.
+  useEffect(() => {
+    if (!v.showHome || N <= 1) return;
+    if (typeof window === 'undefined') return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const timer = window.setInterval(() => {
+      if (isAnimatingRef.current) return;
+      isAnimatingRef.current = true;
+      setSlideAnim(true);
+      setDisplayIndex((i) => i + 1);
+    }, 5000);
+    return () => window.clearInterval(timer);
+  }, [v.showHome, N, displayIndex]);
 
   const canHoverNav = () =>
     typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -559,17 +661,17 @@ export default function VividPolyView() {
             >
               {nav.career}
             </button>
-            <button
-              onClick={v.goContact}
-              type="button"
-              className={`vp-header-nav-btn${v.showContact ? ' vp-header-nav-btn--active' : ''}`}
-            >
-              {nav.contact}
-            </button>
           </nav>
         </div>
 
         <div className="vp-header-end">
+          <button
+            onClick={v.goContact}
+            type="button"
+            className={`vp-header-nav-btn${v.showContact ? ' vp-header-nav-btn--active' : ''}`}
+          >
+            {nav.contact}
+          </button>
           <button
             type="button"
             className={`vp-header-menu-btn${mobileNavOpen ? ' vp-header-menu-btn--open' : ''}`}
@@ -598,18 +700,21 @@ export default function VividPolyView() {
         >
           <div className="vp-nav-dropdown-inner">
             <div className="vp-nav-dropdown-grid vp-nav-dropdown-grid--products-4">
-              {v.megaTypeGroups.map((g, i_g) => (
-                <div key={i_g} className="vp-nav-dropdown-card">
-                  <div className="vp-nav-dropdown-card-title">{g.title}</div>
-                  <ul className="vp-nav-dropdown-links">
-                    {g.items.map((it, i_it) => (
-                      <li key={i_it}>
-                        <button type="button" onClick={it.open} className="vp-nav-dropdown-link">{it.label}</button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              {v.megaTypeGroups.map((g, i_g) => {
+                const wide = g.items.length > 6;
+                return (
+                  <div key={i_g} className={`vp-nav-dropdown-card${wide ? ' vp-nav-dropdown-card--wide' : ''}`}>
+                    <div className="vp-nav-dropdown-card-title">{g.title}</div>
+                    <ul className={`vp-nav-dropdown-links${wide ? ' vp-nav-dropdown-links--cols' : ''}`}>
+                      {g.items.map((it, i_it) => (
+                        <li key={i_it}>
+                          <button type="button" onClick={it.open} className="vp-nav-dropdown-link">{it.label}</button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
             <div className="vp-nav-dropdown-footer">
               <button type="button" onClick={v.megaTypeFooterAction} className="vp-nav-dropdown-footer-btn vp-with-chevron">{nav.viewAllByType}<ChevronRightIcon size={14} /></button>
@@ -629,18 +734,21 @@ export default function VividPolyView() {
         >
           <div className="vp-nav-dropdown-inner">
             <div className="vp-nav-dropdown-grid vp-nav-dropdown-grid--products-4">
-              {v.megaUseGroups.map((g, i_g) => (
-                <div key={i_g} className="vp-nav-dropdown-card">
-                  <div className="vp-nav-dropdown-card-title">{g.title}</div>
-                  <ul className="vp-nav-dropdown-links">
-                    {g.items.map((it, i_it) => (
-                      <li key={i_it}>
-                        <button type="button" onClick={it.open} className="vp-nav-dropdown-link">{it.label}</button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              {v.megaUseGroups.map((g, i_g) => {
+                const wide = g.items.length > 6;
+                return (
+                  <div key={i_g} className={`vp-nav-dropdown-card${wide ? ' vp-nav-dropdown-card--wide' : ''}`}>
+                    <div className="vp-nav-dropdown-card-title">{g.title}</div>
+                    <ul className={`vp-nav-dropdown-links${wide ? ' vp-nav-dropdown-links--cols' : ''}`}>
+                      {g.items.map((it, i_it) => (
+                        <li key={i_it}>
+                          <button type="button" onClick={it.open} className="vp-nav-dropdown-link">{it.label}</button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
             <div className="vp-nav-dropdown-footer">
               <button type="button" onClick={v.megaUseFooterAction} className="vp-nav-dropdown-footer-btn vp-with-chevron">{nav.viewAllByIndustry}<ChevronRightIcon size={14} /></button>
@@ -890,46 +998,46 @@ export default function VividPolyView() {
               {/* Layer 1: full-bleed hero photo (placement first). */}
               <div className="vp-hero-panel vp-hero-panel--visual" aria-hidden="true">
                 <div className="vp-hero-visual-ph">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    className="vp-hero-visual-img"
-                    src="/images/home-hero.jpg?v=bags-22"
-                    alt=""
-                    decoding="async"
-                    fetchPriority="high"
-                  />
+                  <div
+                    ref={heroTrackRef}
+                    className="vp-hero-visual-track"
+                    style={{
+                      transform: `translate3d(-${displayIndex * 100}%, 0, 0)`,
+                      transition: slideAnim ? undefined : 'none',
+                    }}
+                    onTransitionEnd={onHeroTrackTransitionEnd}
+                  >
+                    {displaySlides.map((s, i) => (
+                      <div className="vp-hero-visual-cell" key={`cell-${i}`}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          className="vp-hero-visual-img"
+                          src={s.img}
+                          alt=""
+                          decoding="async"
+                          fetchPriority={i <= 1 ? 'high' : 'auto'}
+                          loading={i <= 1 ? undefined : 'lazy'}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              {/* Layer 2: red diagonal shape on top of the photo. */}
-              <div className="vp-hero-panel vp-hero-panel--red" aria-hidden="true" />
+              {/* Layer 2: dark scrim so the copy stays legible over the photo. */}
+              <div className="vp-hero-scrim" aria-hidden="true" />
               <div className="vp-hero-inner">
                 <div className="vp-hero-copy">
-                  <div className="vp-hero-brand vp-hero-rise">
-                    <VpLogo variant="inverse" className="vp-wordmark--hero" />
-                  </div>
-                  <h1 className="vp-hero-title vp-hero-rise">
+                  <h1 className="vp-hero-title vp-hero-copy-slide" key={`hero-title-${heroSlide.key}`}>
                     <span className="vp-hero-title-line">
-                      {v.siteCopy.heroHeadlineLine1 || 'PP Bags for Global Buyers'}
+                      {heroSlide.line1 || 'PP Bags for Global Buyers'}
                     </span>
-                    {v.siteCopy.heroHeadlineLine2 ? (
+                    {heroSlide.line2 ? (
                       <span className="vp-hero-title-line">
-                        {v.siteCopy.heroHeadlineLine2}
+                        {heroSlide.line2}
                       </span>
                     ) : null}
                   </h1>
-                  <p className="vp-hero-lead vp-hero-rise">{v.siteCopy.heroLead}</p>
-                  <div className="vp-hero-trust vp-hero-trust--certs-only vp-hero-rise" aria-label="Credentials">
-                    <ul className="vp-hero-trust-col vp-hero-trust-col--certs">
-                      <li>
-                        <span className="vp-hero-cert-dot" aria-hidden="true" />
-                        <span className="vp-hero-trust-label">{v.siteCopy.heroIsoLabel || 'ISO certified'}</span>
-                      </li>
-                      <li>
-                        <span className="vp-hero-cert-dot" aria-hidden="true" />
-                        <span className="vp-hero-trust-label">{v.siteCopy.heroIecLabel || 'IEC certified'}</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <p className="vp-hero-lead vp-hero-copy-slide" key={`hero-lead-${heroSlide.key}`}>{heroSlide.lead}</p>
                   <div className="vp-hero-rise vp-hero-ctas">
                     <a
                       href={v.siteCopy.heroWhatsAppHref || topBar.whatsappHref}
@@ -949,6 +1057,32 @@ export default function VividPolyView() {
                   </div>
                 </div>
               </div>
+              <VpKnackStatsBar
+                stats={v.siteCopy.homeStats || []}
+                className="vp-knack-stats-bar--hero"
+              />
+              {heroSlides.length > 1 && (
+                <div className="vp-hero-nav" role="group" aria-label="Change product">
+                  <button
+                    type="button"
+                    className="vp-hero-nav-btn vp-hero-nav-btn--prev"
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => goHeroSlide(-1)}
+                    aria-label="Previous product"
+                  >
+                    <ChevronLeftIcon />
+                  </button>
+                  <button
+                    type="button"
+                    className="vp-hero-nav-btn vp-hero-nav-btn--next"
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => goHeroSlide(1)}
+                    aria-label="Next product"
+                  >
+                    <ChevronRightIcon />
+                  </button>
+                </div>
+              )}
             </section>
 
             <div className="vp-hero-markets" aria-label="Product range">
@@ -995,8 +1129,6 @@ export default function VividPolyView() {
               </div>
             </section>
 
-            <VpKnackStatsBar stats={v.siteCopy.homeStats || []} />
-
             <section className="vp-home-intro" aria-labelledby="vp-home-intro-title">
               <div className="vp-home-intro-inner">
                 <div className="vp-home-intro-top">
@@ -1005,6 +1137,15 @@ export default function VividPolyView() {
                     <h2 id="vp-home-intro-title" className="vp-home-intro-title">
                       {v.siteCopy.introTitle || 'PP bags for global buyers'}
                     </h2>
+                    <img
+                      className="vp-home-intro-image"
+                      src={v.siteCopy.introImage || '/images/home-intro-bags.webp'}
+                      alt={v.siteCopy.introTitle || 'A range of PP bags for global buyers'}
+                      width={1200}
+                      height={1200}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div className="vp-home-intro-story">
                     <p className="vp-home-intro-lead">{v.siteCopy.intro1}</p>
@@ -1025,15 +1166,23 @@ export default function VividPolyView() {
             </section>
 
             <VpKnackAboutSection
-              eyebrow={v.siteCopy.homeAboutEyebrow}
               title={v.siteCopy.homeAboutTitle}
               subtitle={v.siteCopy.homeAboutSubtitle}
               paragraphs={v.siteCopy.homeAboutParagraphs || []}
               imageSrc={v.siteCopy.homeAboutImage || '/images/shop-product-type.jpg'}
-              primaryCtaLabel={v.siteCopy.homeAboutCtaType || home.shopByProductType}
-              secondaryCtaLabel={v.siteCopy.homeAboutCtaIndustry || home.shopByIndustry}
+              primaryCtaLabel={v.siteCopy.homeAboutCtaType || 'View Products'}
+              secondaryCtaLabel={v.siteCopy.homeAboutCtaIndustry || 'Learn About Us'}
               onPrimaryCta={v.goCatalogueType}
-              onSecondaryCta={v.goCatalogueUse}
+              onSecondaryCta={v.goAbout}
+            />
+
+            <VpKnackImageBand
+              imageSrc={v.siteCopy.homeBandImage || '/images/pp-fabric-rolls.png'}
+              eyebrow={v.siteCopy.homeBandEyebrow}
+              title={v.siteCopy.homeBandTitle}
+              body={v.siteCopy.homeBandBody}
+              ctaLabel={v.siteCopy.homeBandCta}
+              onCta={v.goContact}
             />
 
             <VpKnackBuyerSection
@@ -1341,10 +1490,12 @@ export default function VividPolyView() {
           {v.showContact && (<>
           <div data-screen-label="Contact" className="vp-page-shell">
             <VpSubpageTop breadcrumbs={v.breadcrumbsFor(breadcrumbs.contact)} className="vp-subpage-top--page">
-              <h1 className="vp-h1 vp-subpage-title">{contact.title}</h1>
+              <h1 className="vp-h1 vp-subpage-title vp-subpage-title--accent">{contact.title}</h1>
               <p className="vp-subpage-intro">{v.siteCopy.contactIntro}</p>
             </VpSubpageTop>
             <div className="vp-contact-layout">
+              <VpContactEnquiryForm {...enquiryFormProps} />
+              <div className="vp-contact-side">
               <aside className="vp-contact-details" aria-label={contact.title}>
                 <div className="vp-contact-details-head">{contact.reachUs}</div>
                 <div className="vp-contact-quick">
@@ -1364,12 +1515,21 @@ export default function VividPolyView() {
                   ))}
                 </div>
               </aside>
-              <VpContactEnquiryForm {...enquiryFormProps} />
+              <div className="vp-contact-map">
+                <iframe
+                  title={contact.reachUs}
+                  src="https://maps.google.com/maps?q=Sankalp%20Square%2C%20Sindhu%20Bhavan%20Marg%2C%20Bopal%2C%20Ahmedabad%2C%20Gujarat%20380058&z=15&output=embed"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+              </div>
             </div>
           </div>
           </>)}
-      
-          
+
+
           {v.showSample && (<>
           <div data-screen-label="Sample order" className="vp-checkout-page">
             <VpSampleCheckout v={v} />

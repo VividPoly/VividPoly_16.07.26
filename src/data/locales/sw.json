@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY ni msafirishaji wa mifuko ya PP yenye makao yake India inayohudumia waagizaji wa kimataifa wanaohitaji mawasiliano ya kitaalamu, vipimo vya wazi vya bidhaa, na usaidizi wa kutegemewa wa kuuza nje. Tunasambaza mdomo wazi, kushonwa, kukata kwa D, valvu, kubeba, laminated, Bana chini, chini ya block, gusset, na mifuko ya ununuzi kutoka kilo 5 hadi 75 kg, na flexo au chaguzi laminated magazeti kwa ajili ya kuwasilisha brand. Aina ya bidhaa, saizi, uwezo, chapa, lamination, mjengo, gusset, mpini na maelezo ya upakiaji yote yananaswa mbele kabla ya nukuu yoyote kutolewa."
-    ]
+    ],
+    "homeBandCta": "Omba Nukuu",
+    "buyerSectionCta": "Fahamu Zaidi",
+    "homeBandTitle": "Inaaminiwa na wanunuzi katika nchi 70+",
+    "homeBandBody": "Kitambaa cha PP kilichofumwa ndani ya nyumba, uchapishaji, na kushona humaanisha kuwa vipimo vyako vinadhibitiwa kutoka kwa begi hadi begi iliyokamilika, kisha bale, godoro au katoni inayopakiwa kwa usafirishaji salama wa kimataifa.",
+    "homeBandEyebrow": "Hamisha tayari"
   },
   "footer": {
     "company": "Kampuni",
@@ -558,7 +563,23 @@
     "loading": "Inapakia makala...",
     "emptyTitle": "Bado hakuna makala",
     "emptyBody": "Miongozo mpya ya wanunuzi na maarifa yako njiani - angalia tena hivi karibuni.",
-    "backToArticles": "Rudi kwenye makala yote"
+    "backToArticles": "Rudi kwenye makala yote",
+    "searchSubmit": "Tafuta",
+    "dateLabel": "Tarehe",
+    "dateAll": "Wakati wote",
+    "searchLabel": "Tafuta",
+    "dateYear": "Mwaka huu",
+    "searchPlaceholder": "Tafuta makala...",
+    "date7": "Siku 7 zilizopita",
+    "topicsLabel": "Mada",
+    "date30": "Siku 30 zilizopita",
+    "date90": "Siku 90 zilizopita",
+    "noResultsBody": "Jaribu neno tofauti la utafutaji, mada, au kipindi tofauti.",
+    "articlesOne": "1 makala",
+    "articlesMany": "{count} makala",
+    "clearFilters": "Futa vichujio",
+    "noResultsTitle": "Hakuna makala yanayolingana",
+    "topicsAll": "Mada zote"
   },
   "careers": {
     "lead": "Tunatafuta watu wanaojali ubora, mawasiliano ya wazi na uwasilishaji unaotegemewa. Majukumu yanahusu shughuli za ofisi, kiwanda, na usafirishaji kote katika Ahmedabad na Vadodara.",

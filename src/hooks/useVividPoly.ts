@@ -16,7 +16,7 @@ import {
   isNavTransition,
   navPayload,
   navUrl,
-  parseHash,
+  parsePath,
   readNavState,
   scrollPageToTop,
   enableManualScrollRestoration,
@@ -142,15 +142,15 @@ export function useVividPoly() {
     if (typeof window === 'undefined') return;
     enableManualScrollRestoration();
 
-    // Restore the screen from the URL hash so a refresh keeps the current page
-    // instead of resetting to home.
-    const hashRaw = window.location.hash.replace(/^#/, '').trim();
-    const parsed = parseHash(window.location.hash);
+    // Restore the screen from the URL pathname so a refresh keeps the current
+    // page instead of resetting to home.
+    const firstSegment = window.location.pathname.replace(/^\/+/, '').split('/')[0]?.trim();
+    const parsed = parsePath(window.location.pathname);
     const restored: VividPolyState = parsed ? { ...initialState, ...parsed } : initialState;
     if (parsed) setState(restored);
     window.history.replaceState(navPayload(restored), '', navUrl(restored));
 
-    if (hashRaw === 'faqs') {
+    if (firstSegment === 'faqs') {
       requestAnimationFrame(() => scrollToHomeFaqWhenReady('auto', 12, 60, 50));
     } else {
       scrollPageToTop('auto');

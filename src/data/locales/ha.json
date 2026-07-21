@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VVIDPOLY mai fitar da jakar PP ce ta Indiya wacce ke ba da masu shigo da kayayyaki na duniya waɗanda ke buƙatar sadarwar ƙwararru, bayyanannun ƙayyadaddun samfur, da ingantaccen tallafin fitarwa. Muna ba da buɗaɗɗen baki, ɗinki, D-yanke, bawul, ɗaukar hoto, laminated, tsunkule ƙasa, toshe ƙasa, gusset, da jakunkuna na siyayya daga 5 kg zuwa 75 kg, tare da zaɓuɓɓukan flexo ko laminated bugu don gabatarwar alama. Nau'in samfur, girman, iya aiki, bugu, lamination, liner, gusset, rike, da cikakkun bayanai ana ɗaukar su gaba kafin a ba da kowane zance."
-    ]
+    ],
+    "homeBandCta": "Nemi Magana",
+    "buyerSectionCta": "Kara sani",
+    "homeBandTitle": "Amintattun masu siye a cikin ƙasashe 70+",
+    "homeBandBody": "Filayen PP ɗin da aka saka a cikin gida, bugu, da ɗinki yana nufin ana sarrafa ƙayyadaddun ku daga nadi zuwa jakar da ta gama, sannan bale, pallet, ko kwali da aka cika don jigilar kaya ta duniya lafiya.",
+    "homeBandEyebrow": "Ana shirya fitarwa"
   },
   "footer": {
     "company": "Kamfani",
@@ -608,7 +613,23 @@
     "emptyTitle": "Babu labarai tukuna",
     "loading": "Ana loda labarai…",
     "emptyBody": "Sabbin jagororin saye da fahimta suna kan hanya - duba nan ba da jimawa ba.",
-    "backToArticles": "Komawa ga duk labarai"
+    "backToArticles": "Komawa ga duk labarai",
+    "searchSubmit": "Bincika",
+    "dateLabel": "Kwanan wata",
+    "searchLabel": "Bincika",
+    "date30": "Kwanaki 30 na ƙarshe",
+    "date7": "Kwanaki 7 na ƙarshe",
+    "dateAll": "Duk lokaci",
+    "date90": "Kwanaki 90 na ƙarshe",
+    "searchPlaceholder": "Bincika labarai…",
+    "dateYear": "Wannan shekara",
+    "topicsLabel": "Batutuwa",
+    "articlesMany": "0 labarai",
+    "topicsAll": "Duk batutuwa",
+    "noResultsTitle": "Babu labaran da suka dace",
+    "articlesOne": "1 labarin",
+    "noResultsBody": "Gwada wani kalmar bincike daban, jigo, ko kewayon kwanan wata.",
+    "clearFilters": "Share masu tacewa"
   },
   "search": {
     "recentHeading": "Bincike na baya-bayan nan",

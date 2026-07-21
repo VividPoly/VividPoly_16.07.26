@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY ist ein in Indien ansässiger Exporteur von PP-Beuteln, der globale Importeure bedient, die professionelle Kommunikation, klare Produktspezifikationen und zuverlässige Exportunterstützung benötigen. Wir liefern offene, genähte, D-Schnitt-, Ventil-, Trage-, laminierte, Quetschboden-, Blockboden-, Seitenfalten- und Einkaufstaschen von 5 kg bis 75 kg, mit Flexo- oder laminierten Druckoptionen für die Markenpräsentation. Produkttyp, Größe, Kapazität, Druck, Laminierung, Trägermaterial, Zwickel, Griff und Verpackungsdetails werden alle im Voraus erfasst, bevor ein Angebot erstellt wird."
-    ]
+    ],
+    "homeBandEyebrow": "Exportbereit",
+    "homeBandCta": "Fordern Sie ein Angebot an",
+    "buyerSectionCta": "Erfahren Sie mehr",
+    "homeBandBody": "Eigens gewebtes PP-Gewebe, Druck und Nähen bedeuten, dass Ihre Spezifikation von der Rolle bis zum fertigen Beutel kontrolliert und dann für den sicheren internationalen Versand in Ballen, Paletten oder Kartons verpackt wird.",
+    "homeBandTitle": "Käufer in über 70 Ländern vertrauen darauf"
   },
   "footer": {
     "company": "Unternehmen",
@@ -558,7 +563,23 @@
     "emptyTitle": "Noch keine Artikel",
     "emptyBody": "Neue Einkaufsführer und Einblicke sind in Vorbereitung – schauen Sie bald wieder vorbei.",
     "loading": "Artikel werden geladen…",
-    "backToArticles": "Zurück zu allen Artikeln"
+    "backToArticles": "Zurück zu allen Artikeln",
+    "searchSubmit": "Suchen",
+    "dateLabel": "Datum",
+    "searchLabel": "Suchen",
+    "date7": "Letzte 7 Tage",
+    "date30": "Letzte 30 Tage",
+    "dateYear": "Dieses Jahr",
+    "topicsLabel": "Themen",
+    "topicsAll": "Alle Themen",
+    "searchPlaceholder": "Artikel durchsuchen…",
+    "articlesOne": "1 Artikel",
+    "date90": "Letzte 90 Tage",
+    "dateAll": "Alle Zeiten",
+    "clearFilters": "Filter löschen",
+    "noResultsBody": "Probieren Sie einen anderen Suchbegriff, ein anderes Thema oder einen anderen Datumsbereich aus.",
+    "noResultsTitle": "Keine passenden Artikel",
+    "articlesMany": "{count} Artikel"
   },
   "careers": {
     "applyNow": "Bewerben Sie sich jetzt",

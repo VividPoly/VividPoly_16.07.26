@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY è un esportatore di sacchetti in PP con sede in India al servizio di importatori globali che necessitano di comunicazione professionale, specifiche di prodotto chiare e supporto affidabile all'esportazione. Forniamo borse a bocca aperta, cucite, con taglio a D, con valvola, da trasporto, laminate, con fondo a pinza, con fondo a blocco, a soffietto e borse per la spesa da 5 kg a 75 kg, con opzioni di stampa flessografica o laminata per la presentazione del marchio. I dettagli su tipo di prodotto, dimensioni, capacità, stampa, laminazione, rivestimento, tassello, maniglia e imballaggio vengono tutti acquisiti in anticipo prima dell'emissione di qualsiasi preventivo."
-    ]
+    ],
+    "homeBandEyebrow": "Esportazione pronta",
+    "homeBandCta": "Richiedi un preventivo",
+    "buyerSectionCta": "Scopri di più",
+    "homeBandBody": "Il tessuto in PP, la stampa e le cuciture realizzate internamente fanno sì che le vostre specifiche siano controllate dal rotolo al sacco finito, quindi alla balla, al pallet o al cartone imballato per una spedizione internazionale sicura.",
+    "homeBandTitle": "Scelto dagli acquirenti in oltre 70 paesi"
   },
   "footer": {
     "company": "Azienda",
@@ -558,7 +563,23 @@
     "emptyBody": "Sono in arrivo nuove guide e approfondimenti per gli acquirenti: torna presto a trovarci.",
     "loading": "Caricamento articoli…",
     "emptyTitle": "Nessun articolo ancora",
-    "backToArticles": "Torna a tutti gli articoli"
+    "backToArticles": "Torna a tutti gli articoli",
+    "dateAll": "Tutto il tempo",
+    "dateLabel": "Data",
+    "searchLabel": "Ricerca",
+    "searchSubmit": "Ricerca",
+    "dateYear": "Quest'anno",
+    "date90": "Ultimi 90 giorni",
+    "date30": "Ultimi 30 giorni",
+    "date7": "Ultimi 7 giorni",
+    "articlesOne": "1 articolo",
+    "topicsAll": "Tutti gli argomenti",
+    "searchPlaceholder": "Cerca articoli...",
+    "topicsLabel": "Argomenti",
+    "articlesMany": "{count} articoli",
+    "noResultsBody": "Prova un termine di ricerca, un argomento o un intervallo di date diverso.",
+    "clearFilters": "Cancella filtri",
+    "noResultsTitle": "Nessun articolo corrispondente"
   },
   "careers": {
     "eyebrow": "Carriere presso VividPoly",

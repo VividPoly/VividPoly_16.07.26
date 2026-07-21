@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY es un exportador de bolsas de PP con sede en la India que atiende a importadores globales que necesitan comunicación profesional, especificaciones de producto claras y soporte de exportación confiable. Suministramos bolsas de boca abierta, cosidas, con corte en D, con válvula, de transporte, laminadas, con fondo pellizco, con fondo de bloque, con fuelle y para compras desde 5 kg hasta 75 kg, con opciones de impresión flexográfica o laminada para presentación de marca. El tipo de producto, el tamaño, la capacidad, la impresión, la laminación, el revestimiento, el refuerzo, el mango y los detalles del embalaje se capturan por adelantado antes de emitir cualquier cotización."
-    ]
+    ],
+    "homeBandEyebrow": "Listo para exportar",
+    "homeBandCta": "Solicitar una cotización",
+    "buyerSectionCta": "Saber más",
+    "homeBandTitle": "Con la confianza de compradores en más de 70 países",
+    "homeBandBody": "El tejido, la impresión y las costuras de PP tejido internamente significan que sus especificaciones se controlan desde el rollo hasta la bolsa terminada, luego se empaquetan en fardos, paletas o cajas para un envío internacional seguro."
   },
   "footer": {
     "company": "Empresa",
@@ -558,7 +563,23 @@
     "emptyBody": "Nuevas guías e información para compradores están en camino; vuelva a consultar pronto.",
     "loading": "Cargando artículos…",
     "emptyTitle": "Aún no hay artículos",
-    "backToArticles": "Volver a todos los artículos"
+    "backToArticles": "Volver a todos los artículos",
+    "searchSubmit": "Buscar",
+    "searchLabel": "Buscar",
+    "dateLabel": "Fecha",
+    "date90": "últimos 90 días",
+    "date30": "últimos 30 días",
+    "date7": "últimos 7 días",
+    "searchPlaceholder": "Buscar artículos…",
+    "topicsLabel": "Temas",
+    "dateAll": "Todo el tiempo",
+    "dateYear": "este año",
+    "clearFilters": "Limpiar filtros",
+    "noResultsBody": "Pruebe con un término de búsqueda, tema o rango de fechas diferente.",
+    "articlesMany": "{count} artículos",
+    "noResultsTitle": "No hay artículos coincidentes",
+    "articlesOne": "1 artículo",
+    "topicsAll": "Todos los temas"
   },
   "careers": {
     "eyebrow": "Carreras en VividPoly",

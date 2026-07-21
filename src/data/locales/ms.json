@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY ialah pengeksport beg PP yang berpangkalan di India yang menyediakan perkhidmatan pengimport global yang memerlukan komunikasi profesional, spesifikasi produk yang jelas dan sokongan eksport yang boleh dipercayai. Kami membekalkan mulut terbuka, berjahit, D-cut, injap, bawa, berlamina, bahagian bawah picit, bahagian bawah blok, gusset dan beg beli-belah daripada 5 kg hingga 75 kg, dengan pilihan cetakan flexo atau berlamina untuk persembahan jenama. Jenis produk, saiz, kapasiti, cetakan, laminasi, pelapik, gusset, pemegang dan butiran pembungkusan semuanya ditangkap terlebih dahulu sebelum sebarang sebut harga dikeluarkan."
-    ]
+    ],
+    "homeBandCta": "Minta Sebut Harga",
+    "buyerSectionCta": "Ketahui Lebih Lanjut",
+    "homeBandEyebrow": "Eksport sedia",
+    "homeBandTitle": "Dipercayai oleh pembeli di 70+ negara",
+    "homeBandBody": "Fabrik PP tenunan dalaman, percetakan dan jahitan bermakna spesifikasi anda dikawal dari gulungan ke beg siap, kemudian bale, palet atau karton dibungkus untuk penghantaran antarabangsa yang selamat."
   },
   "footer": {
     "company": "Syarikat",
@@ -558,7 +563,23 @@
     "loading": "Memuatkan artikel…",
     "emptyTitle": "Tiada artikel lagi",
     "emptyBody": "Panduan dan cerapan pembeli baharu sedang dalam perjalanan — semak kembali tidak lama lagi.",
-    "backToArticles": "Kembali kepada semua artikel"
+    "backToArticles": "Kembali kepada semua artikel",
+    "dateLabel": "tarikh",
+    "searchLabel": "Cari",
+    "searchSubmit": "Cari",
+    "dateAll": "Sepanjang masa",
+    "dateYear": "tahun ini",
+    "topicsLabel": "Topik",
+    "topicsAll": "Semua topik",
+    "articlesOne": "1 artikel",
+    "date30": "30 hari lepas",
+    "date90": "90 hari lepas",
+    "searchPlaceholder": "Cari artikel…",
+    "date7": "7 hari lepas",
+    "articlesMany": "{count} artikel",
+    "clearFilters": "Kosongkan penapis",
+    "noResultsTitle": "Tiada artikel yang sepadan",
+    "noResultsBody": "Cuba istilah carian, topik atau julat tarikh yang berbeza."
   },
   "careers": {
     "eyebrow": "Kerjaya di VividPoly",

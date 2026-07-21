@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY é um exportador de sacolas PP com sede na Índia que atende importadores globais que precisam de comunicação profissional, especificações claras de produtos e suporte confiável à exportação. Fornecemos boca aberta, costurada, corte D, válvula, carry, laminada, fundo pitada, fundo bloco, reforço e sacolas de compras de 5 kg a 75 kg, com opções de impressão flexográfica ou laminada para apresentação da marca. Tipo de produto, tamanho, capacidade, impressão, laminação, forro, reforço, alça e detalhes de embalagem são todos capturados antecipadamente, antes que qualquer cotação seja emitida."
-    ]
+    ],
+    "homeBandCta": "Solicite um orçamento",
+    "buyerSectionCta": "Saiba mais",
+    "homeBandBody": "Tecido PP tecido interno, impressão e costura significam que sua especificação é controlada desde o rolo até o saco acabado e, em seguida, fardo, palete ou caixa embalada para remessa internacional segura.",
+    "homeBandEyebrow": "Pronto para exportação",
+    "homeBandTitle": "Aprovado por compradores em mais de 70 países"
   },
   "footer": {
     "company": "Empresa",
@@ -558,7 +563,23 @@
     "emptyTitle": "Nenhum artigo ainda",
     "loading": "Carregando artigos…",
     "emptyBody": "Novos guias e insights do comprador estão a caminho. Volte em breve.",
-    "backToArticles": "Voltar para todos os artigos"
+    "backToArticles": "Voltar para todos os artigos",
+    "searchSubmit": "Procurar",
+    "searchLabel": "Procurar",
+    "dateLabel": "Data",
+    "dateAll": "Todo o tempo",
+    "date7": "Últimos 7 dias",
+    "dateYear": "Este ano",
+    "date30": "Últimos 30 dias",
+    "topicsLabel": "Tópicos",
+    "topicsAll": "Todos os tópicos",
+    "date90": "Últimos 90 dias",
+    "searchPlaceholder": "Pesquisar artigos…",
+    "noResultsTitle": "Nenhum artigo correspondente",
+    "articlesMany": "{count} artigos",
+    "articlesOne": "1 artigo",
+    "noResultsBody": "Experimente um termo de pesquisa, tópico ou intervalo de datas diferente.",
+    "clearFilters": "Limpar filtros"
   },
   "careers": {
     "applyNow": "Inscreva-se agora",

@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY, profesyonel iletişime, net ürün özelliklerine ve güvenilir ihracat desteğine ihtiyaç duyan küresel ithalatçılara hizmet veren Hindistan merkezli bir PP torba ihracatçısıdır. Marka tanıtımı için 5 kg'dan 75 kg'a kadar açık ağızlı, dikişli, D-kesimli, valfli, taşımalı, lamineli, tutam dipli, blok dipli, köşebentli ve alışveriş poşetlerini flekso veya laminant baskı seçenekleriyle tedarik etmekteyiz. Ürün tipi, boyutu, kapasitesi, baskı, laminasyon, astar, köşebent, kulp ve paketleme ayrıntılarının tümü, herhangi bir teklif verilmeden önce önceden yakalanır."
-    ]
+    ],
+    "homeBandEyebrow": "Dışa aktarıma hazır",
+    "homeBandCta": "Fiyat Teklifi İste",
+    "buyerSectionCta": "Daha Fazla Bilgi Edinin",
+    "homeBandTitle": "70'ten fazla ülkedeki alıcıların güvendiği",
+    "homeBandBody": "Şirket içi dokuma PP kumaş, baskı ve dikiş, spesifikasyonlarınızın rulodan bitmiş torbaya kadar kontrol edildiği, ardından güvenli uluslararası nakliye için balya, palet veya karton paketlendiği anlamına gelir."
   },
   "footer": {
     "company": "Şirket",
@@ -558,7 +563,23 @@
     "emptyTitle": "Henüz makale yok",
     "loading": "Makaleler yükleniyor…",
     "emptyBody": "Yeni alıcı kılavuzları ve bilgiler yolda; kısa süre sonra tekrar kontrol edin.",
-    "backToArticles": "Tüm makalelere geri dön"
+    "backToArticles": "Tüm makalelere geri dön",
+    "dateLabel": "Tarih",
+    "searchSubmit": "Aramak",
+    "searchLabel": "Aramak",
+    "date7": "Son 7 gün",
+    "dateAll": "Tüm zamanlar",
+    "topicsLabel": "Konular",
+    "dateYear": "Bu yıl",
+    "date90": "Son 90 gün",
+    "searchPlaceholder": "Makalelerde ara…",
+    "date30": "Son 30 gün",
+    "clearFilters": "Filtreleri temizle",
+    "noResultsTitle": "Eşleşen makale yok",
+    "articlesOne": "1 makale",
+    "articlesMany": "{count} makaleler",
+    "topicsAll": "Tüm konular",
+    "noResultsBody": "Farklı bir arama terimi, konu veya tarih aralığı deneyin."
   },
   "careers": {
     "applyNow": "Şimdi Başvurun",

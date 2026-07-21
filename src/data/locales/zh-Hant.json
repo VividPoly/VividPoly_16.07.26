@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY 是一家總部位於印度的 PP 袋出口商，為需要專業溝通、清晰的產品規格和可靠的出口支援的全球進口商提供服務。我們提供 5 公斤至 75 公斤的敞口袋、縫合袋、D 型切割袋、閥門袋、手提袋、層壓袋、夾底袋、塊底袋、角撐板袋和購物袋，並提供用於品牌展示的柔印或層壓印刷選項。產品類型、尺寸、容量、印刷、層壓、襯裡、角撐板、手柄和包裝細節均在發出報價之前預先取得。"
-    ]
+    ],
+    "homeBandCta": "索取報價",
+    "homeBandTitle": "深受 70 多個國家買家的信賴",
+    "buyerSectionCta": "了解更多",
+    "homeBandBody": "內部編織 PP 織物、印刷和縫合意味著您的規格從捲筒到成品袋，然後是捆包、托盤或紙箱包裝，以便安全地國際運輸。",
+    "homeBandEyebrow": "出口準備就緒"
   },
   "footer": {
     "company": "公司",
@@ -558,7 +563,23 @@
     "loading": "正在加載文章...",
     "emptyTitle": "還沒有文章",
     "emptyBody": "新的買家指南和見解即將推出 - 請稍後回來查看。",
-    "backToArticles": "回傳所有文章"
+    "backToArticles": "回傳所有文章",
+    "searchPlaceholder": "搜尋文章...",
+    "searchSubmit": "搜尋",
+    "searchLabel": "搜尋",
+    "dateLabel": "日期",
+    "dateAll": "所有時間",
+    "topicsLabel": "主題",
+    "topicsAll": "所有主題",
+    "date90": "過去 90 天",
+    "dateYear": "今年",
+    "date7": "過去 7 天",
+    "date30": "過去 30 天",
+    "articlesOne": "1 篇文章",
+    "clearFilters": "清除過濾器",
+    "noResultsBody": "嘗試不同的搜尋字詞、主題或日期範圍。",
+    "articlesMany": "0文章",
+    "noResultsTitle": "沒有符合的文章"
   },
   "careers": {
     "applyNow": "立即申請",

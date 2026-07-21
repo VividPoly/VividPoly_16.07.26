@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY adalah eksportir tas PP yang berbasis di India yang melayani importir global yang membutuhkan komunikasi profesional, spesifikasi produk yang jelas, dan dukungan ekspor yang andal. Kami menyediakan tas mulut terbuka, jahitan, potongan D, katup, carry, laminasi, pinch bottom, block bottom, gusset, dan tas belanja mulai dari 5 kg hingga 75 kg, dengan opsi cetak flexo atau laminasi untuk presentasi merek. Jenis produk, ukuran, kapasitas, cetakan, laminasi, liner, buhul, pegangan, dan detail pengepakan semuanya diambil terlebih dahulu sebelum penawaran apa pun dikeluarkan."
-    ]
+    ],
+    "buyerSectionCta": "Tahu Lebih Banyak",
+    "homeBandCta": "Permintaan Penawaran",
+    "homeBandTitle": "Dipercaya oleh pembeli di 70+ negara",
+    "homeBandEyebrow": "Ekspor siap",
+    "homeBandBody": "Kain PP tenun, pencetakan, dan jahitan buatan sendiri berarti spesifikasi Anda dikontrol mulai dari gulungan hingga tas jadi, kemudian bale, palet, atau karton dikemas untuk pengiriman internasional yang aman."
   },
   "footer": {
     "company": "Perusahaan",
@@ -558,7 +563,23 @@
     "emptyBody": "Panduan dan wawasan pembeli baru akan segera hadir — periksa kembali nanti.",
     "loading": "Memuat artikel…",
     "emptyTitle": "Belum ada artikel",
-    "backToArticles": "Kembali ke semua artikel"
+    "backToArticles": "Kembali ke semua artikel",
+    "dateLabel": "Tanggal",
+    "searchLabel": "Mencari",
+    "dateAll": "Sepanjang waktu",
+    "searchSubmit": "Mencari",
+    "date7": "7 hari terakhir",
+    "date30": "30 hari terakhir",
+    "date90": "90 hari terakhir",
+    "dateYear": "tahun ini",
+    "topicsLabel": "Topik",
+    "topicsAll": "Semua topik",
+    "articlesOne": "1 artikel",
+    "clearFilters": "Hapus filter",
+    "searchPlaceholder": "Cari artikel…",
+    "noResultsTitle": "Tidak ada artikel yang cocok",
+    "articlesMany": "0 artikel",
+    "noResultsBody": "Coba istilah penelusuran, topik, atau rentang tanggal yang berbeda."
   },
   "careers": {
     "applyNow": "Lamar Sekarang",

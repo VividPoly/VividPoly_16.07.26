@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY est un exportateur de sacs PP basé en Inde au service des importateurs mondiaux qui ont besoin d'une communication professionnelle, de spécifications de produits claires et d'un support d'exportation fiable. Nous fournissons des sacs à bouche ouverte, cousus, coupés en D, à valve, de transport, laminés, à fond pincé, à fond bloc, à soufflet et à provisions de 5 kg à 75 kg, avec des options d'impression flexo ou laminée pour la présentation de la marque. Le type de produit, la taille, la capacité, l'impression, le laminage, la doublure, le gousset, la poignée et les détails de l'emballage sont tous capturés à l'avance avant l'émission d'un devis."
-    ]
+    ],
+    "homeBandEyebrow": "Prêt à exporter",
+    "buyerSectionCta": "En savoir plus",
+    "homeBandCta": "Demander un devis",
+    "homeBandBody": "Le tissu PP tissé en interne, l'impression et la couture signifient que vos spécifications sont contrôlées du rouleau au sac fini, puis emballées en balle, en palette ou en carton pour une expédition internationale en toute sécurité.",
+    "homeBandTitle": "Approuvé par les acheteurs dans plus de 70 pays"
   },
   "footer": {
     "company": "Entreprise",
@@ -558,7 +563,23 @@
     "emptyBody": "De nouveaux guides d’achat et informations sont en route – revenez bientôt.",
     "emptyTitle": "Pas encore d'articles",
     "loading": "Chargement des articles…",
-    "backToArticles": "Retour à tous les articles"
+    "backToArticles": "Retour à tous les articles",
+    "dateAll": "Tout le temps",
+    "dateLabel": "Date",
+    "searchLabel": "Recherche",
+    "searchSubmit": "Recherche",
+    "date90": "90 derniers jours",
+    "date7": "7 derniers jours",
+    "dateYear": "Cette année",
+    "topicsLabel": "Sujets",
+    "topicsAll": "Tous les sujets",
+    "date30": "30 derniers jours",
+    "searchPlaceholder": "Rechercher des articles…",
+    "articlesOne": "1 article",
+    "articlesMany": "{count} articles",
+    "clearFilters": "Effacer les filtres",
+    "noResultsBody": "Essayez un autre terme de recherche, un autre sujet ou une autre plage de dates.",
+    "noResultsTitle": "Aucun article correspondant"
   },
   "careers": {
     "eyebrow": "Carrières chez VividPoly",

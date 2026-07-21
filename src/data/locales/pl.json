@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY to indyjski eksporter worków PP obsługujący globalnych importerów, którzy potrzebują profesjonalnej komunikacji, jasnych specyfikacji produktów i niezawodnego wsparcia eksportowego. Dostarczamy torby otwarte, szyte, z wycięciem w kształcie litery D, z zaworem, do przenoszenia, laminowane, z dnem zaciskanym, z dnem blokowym, z klinem i torby na zakupy od 5 kg do 75 kg, z opcjami druku fleksograficznego lub laminowanego do prezentacji marki. Rodzaj produktu, rozmiar, pojemność, druk, laminowanie, wyściółka, klin, uchwyt i szczegóły opakowania są rejestrowane z góry przed wystawieniem jakiejkolwiek oferty."
-    ]
+    ],
+    "homeBandCta": "Poproś o wycenę",
+    "homeBandEyebrow": "Eksport gotowy",
+    "homeBandTitle": "Zaufali kupujący w ponad 70 krajach",
+    "buyerSectionCta": "Dowiedz się więcej",
+    "homeBandBody": "Własna tkanina PP, drukowanie i szycie oznaczają, że specyfikacja jest kontrolowana od rolki do gotowego worka, a następnie pakowana w belę, paletę lub karton w celu bezpiecznej wysyłki międzynarodowej."
   },
   "footer": {
     "company": "Firma",
@@ -558,7 +563,23 @@
     "emptyBody": "Nowe przewodniki dla kupujących i statystyki są już w drodze — sprawdź ponownie wkrótce.",
     "loading": "Ładowanie artykułów…",
     "emptyTitle": "Nie ma jeszcze artykułów",
-    "backToArticles": "Powrót do wszystkich artykułów"
+    "backToArticles": "Powrót do wszystkich artykułów",
+    "dateLabel": "Data",
+    "searchLabel": "Szukaj",
+    "searchSubmit": "Szukaj",
+    "dateAll": "Cały czas",
+    "dateYear": "W tym roku",
+    "topicsLabel": "Tematy",
+    "date7": "Ostatnie 7 dni",
+    "searchPlaceholder": "Wyszukaj artykuły…",
+    "date90": "Ostatnie 90 dni",
+    "topicsAll": "Wszystkie tematy",
+    "date30": "Ostatnie 30 dni",
+    "noResultsBody": "Wypróbuj inne wyszukiwane hasło, temat lub zakres dat.",
+    "articlesMany": "{count} artykułów",
+    "clearFilters": "Wyczyść filtry",
+    "articlesOne": "1 artykuł",
+    "noResultsTitle": "Brak pasujących artykułów"
   },
   "careers": {
     "eyebrow": "Kariera w VividPoly",

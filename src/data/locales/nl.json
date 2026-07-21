@@ -204,7 +204,12 @@
     ],
     "buyerSectionParagraphs": [
       "VIVIDPOLY is een in India gevestigde exporteur van PP-zakken die wereldwijde importeurs bedient die professionele communicatie, duidelijke productspecificaties en betrouwbare exportondersteuning nodig hebben. Wij leveren open mond-, gestikte, D-cut-, klep-, draag-, gelamineerde, knijpbodem-, blokbodem-, kruisje- en boodschappentassen van 5 kg tot 75 kg, met flexo- of gelamineerde printopties voor merkpresentatie. Producttype, maat, capaciteit, bedrukking, laminering, voering, kruisje, handvat en verpakkingsdetails worden allemaal vooraf vastgelegd voordat er een offerte wordt uitgebracht."
-    ]
+    ],
+    "homeBandCta": "Vraag een offerte aan",
+    "buyerSectionCta": "Weet meer",
+    "homeBandEyebrow": "Klaar voor exporteren",
+    "homeBandBody": "Door de eigen geweven PP-stof, bedrukking en stiksels wordt uw specificatie gecontroleerd van de rol tot de afgewerkte zak, waarna de balen, pallets of dozen worden verpakt voor veilige internationale verzending.",
+    "homeBandTitle": "Vertrouwd door kopers in meer dan 70 landen"
   },
   "footer": {
     "company": "Bedrijf",
@@ -558,7 +563,23 @@
     "loading": "Artikelen laden…",
     "emptyTitle": "Nog geen artikelen",
     "emptyBody": "Er komen nieuwe kopersgidsen en inzichten aan. Kom binnenkort nog eens terug.",
-    "backToArticles": "Terug naar alle artikelen"
+    "backToArticles": "Terug naar alle artikelen",
+    "dateLabel": "Datum",
+    "searchSubmit": "Zoekopdracht",
+    "dateAll": "Altijd",
+    "date30": "Laatste 30 dagen",
+    "searchLabel": "Zoekopdracht",
+    "date90": "Laatste 90 dagen",
+    "searchPlaceholder": "Artikelen zoeken…",
+    "dateYear": "Dit jaar",
+    "date7": "Laatste 7 dagen",
+    "topicsLabel": "Onderwerpen",
+    "noResultsBody": "Probeer een andere zoekterm, onderwerp of datumbereik.",
+    "topicsAll": "Alle onderwerpen",
+    "articlesMany": "{count} artikelen",
+    "clearFilters": "Wis filters",
+    "noResultsTitle": "Geen overeenkomende artikelen",
+    "articlesOne": "1 artikel"
   },
   "careers": {
     "applyNow": "Solliciteer nu",
