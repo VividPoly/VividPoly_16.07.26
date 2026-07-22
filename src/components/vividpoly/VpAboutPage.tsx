@@ -35,6 +35,7 @@ type AboutCopy = {
   whyBody?: string;
   whyMoreLabel?: string;
   contactTeam: string;
+  ctaBandEyebrow?: string;
   ctaBandTitle?: string;
   ctaBandBody?: string;
   ctaBandButton?: string;
@@ -68,12 +69,11 @@ export default function VpAboutPage({
     <div data-screen-label="About" className="vp-about-page">
       <div className="vp-about-page-top">
         <VpSubpageTop breadcrumbs={breadcrumbs} onHomeClick={onHomeClick} className="vp-subpage-top--page">
-          <h1 className="vp-h1 vp-subpage-h1">{about.title}</h1>
+          <h1 className="vp-h1 vp-subpage-h1 vp-subpage-title--accent">{about.title}</h1>
         </VpSubpageTop>
       </div>
 
       <VpKnackAboutSection
-        eyebrow={about.pageEyebrow || 'ABOUT US'}
         title={about.pageTitle || about.title}
         subtitle=""
         paragraphs={[about.p1, about.p2]}
@@ -85,7 +85,6 @@ export default function VpAboutPage({
       <section className="vp-about-legacy" aria-labelledby="vp-about-legacy-title">
         <div className="vp-about-legacy-inner">
           <div className="vp-about-legacy-head">
-            <p className="vp-about-legacy-eyebrow">{about.pillarsEyebrow || 'STRENGTHS'}</p>
             <h2 id="vp-about-legacy-title" className="vp-about-legacy-title">
               {about.pillarsHeading}
             </h2>
@@ -177,7 +176,7 @@ export default function VpAboutPage({
 
       <section className="vp-about-enquire" aria-labelledby="vp-about-enquire-title">
         <div className="vp-about-enquire-inner">
-          <p className="vp-about-enquire-eyebrow">Get in touch</p>
+          <p className="vp-about-enquire-eyebrow">{about.ctaBandEyebrow}</p>
           <h2 id="vp-about-enquire-title" className="vp-about-enquire-title">
             {about.ctaBandTitle || about.contactTeam}
           </h2>

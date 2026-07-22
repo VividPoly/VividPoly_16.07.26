@@ -1,0 +1,1747 @@
+{
+  "topBar": {
+    "selectLanguage": "Seleziona lingua",
+    "career": "Carriera"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Prodotto",
+    "about": "Chi siamo",
+    "industryServed": "Settori serviti",
+    "resources": "Novità",
+    "career": "Lavora con noi",
+    "contact": "Contatti",
+    "byProductType": "Per tipo di prodotto",
+    "byIndustryUse": "Per settore/utilizzo",
+    "buyerResourcesEyebrow": "Novità e aggiornamenti",
+    "buyerResourcesLead": "Guide per l'acquisto, domande frequenti e le ultime novità da VIVIDPOLY.",
+    "blogTitle": "Blog",
+    "viewAllByIndustry": "Visualizza tutti i prodotti per settore",
+    "viewAllByType": "Visualizza tutti i prodotti per tipologia",
+    "faqsTitle": "Domande frequenti",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi menù",
+    "themeLight": "Passa alla modalità luce",
+    "getQuoteShort": "Ottieni un preventivo",
+    "themeDark": "Passa alla modalità oscura",
+    "mainNav": "Navigazione principale",
+    "blogDesc": "Guide per l'acquirente su tipi di sacchetti in PP, dimensioni e richieste di esportazione.",
+    "faqsDesc": "Risposte su capacità, stampa, supporti e dettagli del preventivo.",
+    "mobileNav": "Navigazione mobile",
+    "logoHome": "VIVIDPOLY, vai alla homepage",
+    "mobileByIndustry": "Per settore/uso",
+    "resourcesMenu": "Menù Novità e Aggiornamenti",
+    "productsMenu": "Menù prodotti",
+    "industryMenu": "Menù servito dall'industria",
+    "mobileByProductType": "Per tipo di prodotto"
+  },
+  "fab": {
+    "label": "Richiesta",
+    "mobileLabel": "Informarsi",
+    "ariaLabel": "Apri il modulo di richiesta"
+  },
+  "common": {
+    "getQuote": "Richiedi preventivo",
+    "submitEnquiry": "Invia richiesta",
+    "viewAll": "Vedi tutto",
+    "backToHome": "Torna alla home",
+    "back": "Indietro",
+    "next": "Prossimo",
+    "previous": "Precedente",
+    "selectCountry": "Seleziona il paese",
+    "select": "Selezionare",
+    "optional": "opzionale",
+    "custom": "Costume",
+    "none": "Nessuno",
+    "viewDetails": "Visualizza dettagli",
+    "filters": "Filtri",
+    "selectEnquiryType": "Seleziona il tipo di richiesta",
+    "selectBagType": "Seleziona il tipo di borsa",
+    "recommended": "Raccomandato",
+    "clearAllFilters": "Cancella tutti i filtri",
+    "clearFilters": "Cancella filtri",
+    "chatExportTeam": "Chatta con il team di esportazione",
+    "specification": "Specifica",
+    "of": "Di",
+    "relatedProducts": "Prodotti correlati",
+    "close": "Vicino",
+    "filtered": "(filtrato)",
+    "productsCount": "{count} prodotti",
+    "noProductsMatch": "Nessun prodotto corrisponde ai tuoi filtri."
+  },
+  "siteCopy": {
+    "heroHeadline": "Sacchi PP per acquirenti globali",
+    "heroLead": "Sacchi PP, sacchi tessuti, sacchi con valvola e imballaggi da esportazione personalizzati dall'India, pensati per importatori, distributori e acquirenti industriali di tutto il mondo.",
+    "heroIsoLabel": "Certificato ISO",
+    "heroIecLabel": "Certificato IEC",
+    "heroCtaSecondary": "Vedi tipi di prodotto",
+    "heroIecLabelShort": "CEI",
+    "searchPlaceholder": "Cerca tipo di sacco, prodotto o settore (ad es. sacchi di riso, sacchi di cemento)",
+    "heroHeadlineLine2": "Acquirenti globali",
+    "heroHeadlineLine1": "Sacchetti in PP per",
+    "heroCtaSecondaryShort": "Prodotti",
+    "heroHeadlinePrefix": "Sacchetti in PP per",
+    "heroHeadlineAccent": "Acquirenti globali",
+    "heroCtaEnquiry": "Inchiesta",
+    "heroCtaPrimary": "Whatsapp",
+    "heroCtaWhatsApp": "Whatsapp",
+    "heroLeadShort": "Imballaggi per l'esportazione realizzati per acquirenti globali.",
+    "headerQuoteLabel": "Citazione",
+    "heroIsoLabelShort": "ISO",
+    "marketsStrip": "Mercati di esportazione primari: America/USA, Canada, Australia, Europa, Regno Unito, Africa, Tailandia, Arabia Saudita, America Latina, Nuova Zelanda e altri mercati di importazione globali.",
+    "intro1": "VIVIDPOLY esporta borse in PP, borse tessute in PP, borse in PP tessute stampate e laminate, borse con fondo a pizzico, borse con fondo bloccato, borse a soffietto, borse con valvola, borse per il trasporto, borse con taglio a D e borse per la spesa in tessuto dall'India ai mercati globali. Le nostre soluzioni di imballaggio sono progettate per importatori, distributori, trasformatori di cereali alimentari, aziende produttrici di fertilizzanti, marchi di mangimi per animali, fornitori di prodotti chimici, aziende di materiali da costruzione, catene di vendita al dettaglio e acquirenti di imballaggi promozionali.",
+    "introHighlights": [
+      {
+        "label": "Capacità",
+        "value": "da 5 a 75kg"
+      },
+      {
+        "label": "Origine",
+        "value": "Esportazione dell'India"
+      },
+      {
+        "label": "Messa a fuoco",
+        "value": "Stampa e imballaggio personalizzati"
+      }
+    ],
+    "introEyebrow": "Cosa esportiamo",
+    "heroRail": "INDIA · ESPORTAZIONE GLOBALE",
+    "homeAboutEyebrow": "Chi siamo",
+    "homeAboutTitle": "Partner globale di imballaggi per l'esportazione",
+    "homeAboutCtaType": "Acquista per tipo di prodotto",
+    "homeAboutCtaIndustry": "Acquista per settore",
+    "introTitle": "Borse in PP per acquirenti globali",
+    "homeProductsEyebrow": "I nostri prodotti",
+    "brandTagline": "Soluzioni di imballaggio di qualità",
+    "intro2": "Dalle confezioni al dettaglio da 5 kg ai sacchi industriali per carichi pesanti da 75 kg, VIVIDPOLY aiuta gli acquirenti a selezionare la struttura del sacco, il metodo di stampa, il rivestimento, la maniglia, il tassello, la cucitura, lo stile di taglio e il formato di imballaggio per l'esportazione corretti in base all'uso del prodotto e al mercato di destinazione.",
+    "homeProductsTitle": "Cosa offriamo",
+    "homeValueProps": [
+      {
+        "title": "Specifica personalizzabile",
+        "description": "Capacità, costruzione, stampa e imballaggio su misura per il vostro prodotto e mercato di destinazione."
+      },
+      {
+        "title": "Campione prima dell'ordine all'ingrosso",
+        "description": "Controlla la qualità, le dimensioni e la finitura dei sacchetti prima di confermare le quantità complete di esportazione."
+      },
+      {
+        "title": "Imballaggio per l'esportazione incluso",
+        "description": "Imballaggio di balle, pallet e cartoni pianificato per spedizioni internazionali sicure."
+      }
+    ],
+    "homeValuePropsEyebrow": "Perché gli acquirenti scelgono VIVIDPOLY",
+    "homeBrowseHeading": "Sfoglia le borse in PP per categoria",
+    "homeProductsLead": "Sacchi in PP tessuto stampati e laminati, sacchi con valvola, sacchi a bocca aperta e imballaggi personalizzati per l'esportazione dall'India per acquirenti agricoli, industriali e al dettaglio in tutto il mondo.",
+    "buyerRequirementLabel": "Requisito dell'acquirente",
+    "productUsesLearnMore": "Invia una richiesta",
+    "productUseCol": "Utilizzo del prodotto",
+    "trustMessage": "VIVIDPOLY è progettato per gli acquirenti di importazione globali che necessitano di comunicazione professionale, specifiche di prodotto chiare, opzioni di imballaggio personalizzate e supporto reattivo per le esportazioni dall'India. Il contenuto dei nostri sacchetti in PP è strutturato per aiutare gli acquirenti a confrontare i tipi di sacchetti, comprendere gli usi dei prodotti, esaminare le funzionalità aggiuntive e inviare requisiti di preventivo completi.",
+    "buyerSectionTitle": "Imballaggi per l'esportazione, realizzati per acquirenti globali",
+    "finalCtaBody": "Condividi il tipo di bagaglio, la capacità, le esigenze di stampa, la quantità e la destinazione. VIVIDPOLY esaminerà la tua richiesta e ti darà seguito con opzioni pratiche.",
+    "finalCtaButton": "Invia una richiesta",
+    "finalCtaTitle": "Pronti a discutere le vostre esigenze di imballaggio?",
+    "buyerResponseLabel": "Risposta VIVIDPOLY",
+    "recommendedBagsCol": "Tipi di borse consigliate",
+    "productUsesEmptyHint": "Passa il mouse o seleziona l'utilizzo di un prodotto per visualizzare i tipi di borse consigliati.",
+    "faqSectionTitle": "Domande frequenti",
+    "productUsesIntro": "I sacchetti VIVIDPOLY PP sono adatti per un'ampia gamma di categorie di prodotti. La borsa giusta deve essere selezionata in base al peso del prodotto, alla densità, al processo di riempimento, alla sensibilità all'umidità, ai requisiti di branding, alle condizioni di movimentazione e allo standard di imballaggio per l'esportazione.",
+    "catalogueGuideProductType": "Scegli da qui",
+    "catalogueGuideUseSort": "Ordina qui per settore",
+    "contactIntro": "Utilizza questa pagina per inviare una richiesta sul prodotto o una domanda generale. Seleziona il tipo di bagaglio che ti interessa o scegli Query generale se stai ancora esplorando le opzioni.",
+    "catalogueTypeSub": "VIVIDPOLY esporta borse in PP dall'India per aziende che necessitano di imballaggi resistenti, personalizzabili e pronti per l'esportazione. I nostri sacchi in PP possono essere sviluppati per capacità da 5 kg a 75 kg a seconda della densità del prodotto, delle dimensioni del sacco, della costruzione, della resistenza del tessuto, della laminazione, del rivestimento, delle cuciture, del tassello e dei requisiti di riempimento.",
+    "shopByUseLabel": "Sto facendo le valigie...",
+    "quoteContactStepTitle": "I tuoi dati di contatto",
+    "catalogueUseSub": "I sacchetti VIVIDPOLY in PP sono adatti per un'ampia gamma di categorie di prodotti. La borsa giusta deve essere selezionata in base al peso del prodotto, alla densità, al processo di riempimento, alla sensibilità all'umidità, ai requisiti di branding, alle condizioni di movimentazione e allo standard di imballaggio per l'esportazione.",
+    "quoteIntro1": "Condividi i requisiti del tuo sacchetto in PP in modo che il team di esportazione di VIVIDPOLY possa consigliare il tipo di prodotto, la struttura, le dimensioni, la capacità, la stampa, le funzionalità aggiuntive e il formato di imballaggio per l'esportazione corretti.",
+    "quoteIntro2": "Rispondi ad alcune domande alla volta. Ti guideremo attraverso il tipo di borsa, le dimensioni, la stampa e i dettagli di spedizione.",
+    "quotePageTitle": "Condividi i requisiti del tuo bagaglio",
+    "quoteLeadCapturedTitle": "Richiesta registrata",
+    "quotePageEyebrow": "Richiesta di esportazione",
+    "quoteContactSubmitLabel": "Registra la mia richiesta",
+    "quoteLeadCapturedLead": "Uno specialista dell'esportazione VIVIDPOLY ti contatterà su WhatsApp presto, solitamente entro poche ore.",
+    "quoteContactStepLead": "Condividi come possiamo raggiungerti. Registriamo subito la tua richiesta e la seguiamo su WhatsApp.",
+    "quoteLeadCapturedOptionalTitle": "Desideri un preventivo più rapido e accurato?",
+    "quoteSubmitNote": "Quando sei soddisfatto dei dettagli sopra, invia. Il nostro team di esportazione esaminerà tutto e ti contatterà su WhatsApp.",
+    "quoteLeadCapturedSkipCta": "Per ora ho finito",
+    "sampleBillTitle": "Esempio di fattura dell'ordine",
+    "quoteLeadCapturedContinueCta": "Aggiungi le specifiche della borsa",
+    "samplePaymentTitle": "Dettagli del bonifico bancario",
+    "quoteLeadCapturedOptionalBody": "Se hai un minuto, aggiungi ora le specifiche della tua borsa. Ci aiuta a consigliare il tipo, la dimensione e la stampa del sacchetto in PP corretti prima di chiamare, quindi la tua prima conversazione è già utile.",
+    "quoteLeadOnlySuccessBody": "Ti contatteremo presto su WhatsApp. Puoi condividere i dettagli del bagaglio quando ti contattiamo o tornare in qualsiasi momento per completare le tue specifiche.",
+    "quoteSuccessTitle": "Richiesta ricevuta",
+    "samplePaymentConfirmCta": "Conferma bonifico bancario",
+    "sampleSuccessTitle": "Ordine del campione ricevuto",
+    "sampleBillIntro": "Esamina le specifiche del campione e le tariffe riportate di seguito. I campioni vengono spediti dopo la conferma del pagamento.",
+    "sampleSuccessBody": "Grazie. Verificheremo il pagamento e confermeremo la produzione del campione e le tempistiche di spedizione via e-mail.",
+    "blogLeadCta": "Invia una richiesta",
+    "blogReadArticle": "Leggi l'articolo",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Mercati di esportazione"
+      },
+      {
+        "label": "Paesi serviti",
+        "value": "9+"
+      },
+      {
+        "label": "Capacità mensile",
+        "value": "750 MT"
+      },
+      {
+        "label": "Grado di esportazione"
+      }
+    ],
+    "quoteSuccessBody": "Ti risponderemo telefonicamente o tramite WhatsApp entro 12 ore.",
+    "samplePaymentIntro": "Trasferisci l'importo del campione utilizzando i dettagli riportati di seguito. Utilizza il riferimento in modo che possiamo abbinare il tuo pagamento.",
+    "blogIntro": "Scritto per acquirenti internazionali che confrontano i fornitori di sacchetti in PP, imparano i tipi di sacchetti, controllano le specifiche e preparano richieste di esportazione.",
+    "blogLeadTitle": "Hai una domanda sull'imballaggio?",
+    "homeCertsHeading": "Certificazioni",
+    "blogLeadBody": "Invia una richiesta di prodotto o una domanda generale sulla nostra pagina dei contatti. Il nostro team esaminerà le tue esigenze e ti fornirà indicazioni pratiche.",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY serve gli acquirenti di importazione globali con comunicazione professionale, specifiche di prodotto chiare, opzioni di imballaggio personalizzate e supporto reattivo per l'esportazione. Capacità, struttura, stampa e imballaggio sono personalizzati in base al prodotto e al mercato di destinazione, in modo che ogni ordine corrisponda al processo di riempimento, alle esigenze di branding e alle condizioni di spedizione.",
+      "Richiedi campioni prima di impegnarti per quantità complete. L'imballaggio di balle, pallet e cartoni è previsto per spedizioni internazionali sicure in dieci strutture in PP intrecciato, dai formati a bocca aperta ai formati laminati premium, abbinati a riso, fertilizzanti, cemento, mangimi e usi al dettaglio."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY è un esportatore di sacchetti in PP con sede in India al servizio di importatori globali che necessitano di comunicazione professionale, specifiche di prodotto chiare e supporto affidabile all'esportazione. Forniamo borse a bocca aperta, cucite, con taglio a D, con valvola, da trasporto, laminate, con fondo a pinza, con fondo a blocco, a soffietto e borse per la spesa da 5 kg a 75 kg, con opzioni di stampa flessografica o laminata per la presentazione del marchio. I dettagli su tipo di prodotto, dimensioni, capacità, stampa, laminazione, rivestimento, tassello, maniglia e imballaggio vengono tutti acquisiti in anticipo prima dell'emissione di qualsiasi preventivo."
+    ],
+    "homeBandEyebrow": "Esportazione pronta",
+    "homeBandCta": "Richiedi un preventivo",
+    "buyerSectionCta": "Scopri di più",
+    "homeBandBody": "Il tessuto in PP, la stampa e le cuciture realizzate internamente fanno sì che le vostre specifiche siano controllate dal rotolo al sacco finito, quindi alla balla, al pallet o al cartone imballato per una spedizione internazionale sicura.",
+    "homeBandTitle": "Scelto dagli acquirenti in oltre 70 paesi"
+  },
+  "footer": {
+    "company": "Azienda",
+    "productTypes": "Tipi di prodotto",
+    "buyerHelp": "Assistenza acquirenti",
+    "contact": "Contatti",
+    "links": {
+      "home": "Casa",
+      "about": "Di",
+      "contact": "Contattaci",
+      "productUses": "Usi del prodotto",
+      "getQuote": "Ottieni un preventivo"
+    },
+    "backToTopAria": "Torna all'inizio della pagina",
+    "backToTop": "Torna all'inizio",
+    "aboutBlurb": "VIVIDPOLY esporta borse in PP dall'India per acquirenti globali che necessitano di capacità, stampa, fodere e imballaggi pronti per l'esportazione personalizzabili."
+  },
+  "meta": {
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Esportatore di borse in PP dall'India",
+    "description": "VIVIDPOLY esporta sacchi in PP dall'India per acquirenti globali.",
+    "loading": "Caricamento VIVIDPOLY...",
+    "title": "VIVIDPOLY: esportatore di borse in PP dall'India"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Domanda generale"
+    },
+    {
+      "label": "Buste a Bocca Aperta - OMB"
+    },
+    {
+      "label": "Borse cucite sopra e sotto - TBS"
+    },
+    {
+      "label": "Borse in tessuto PP con taglio a D - DCB"
+    },
+    {
+      "label": "Sacchetti con valvola - VB"
+    },
+    {
+      "label": "Borse per il trasporto - CB"
+    },
+    {
+      "label": "Borse in PP tessuto laminato stampato - LWB"
+    },
+    {
+      "label": "Borse con fondo a pizzico - PBB"
+    },
+    {
+      "label": "Borse con fondo a blocchi - BBB"
+    },
+    {
+      "label": "Borse a soffietto con fondo a blocchi - BGB"
+    },
+    {
+      "label": "Borse per la spesa in tessuto - WSB"
+    },
+    {
+      "label": "Tessuto in PP"
+    },
+    {
+      "label": "Barriera contro le erbacce"
+    }
+  ],
+  "enquiryModal": {
+    "title": "Modulo di richiesta",
+    "close": "Chiudi il modulo di richiesta"
+  },
+  "emailCompose": {
+    "toLabel": "A",
+    "fromLabel": "La tua email",
+    "nameLabel": "Il tuo nome",
+    "subjectLabel": "Soggetto",
+    "messageLabel": "Messaggio",
+    "title": "Invia un'e-mail a VIVIDPOLY",
+    "send": "Invia messaggio",
+    "sending": "Invio…",
+    "emailInvalid": "Inserisci un indirizzo email valido.",
+    "defaultSubject": "Esporta richiesta da vividpoly.com",
+    "close": "Chiudi il pannello di composizione",
+    "sendSuccess": "Messaggio inviato. Il nostro team ti contatterà presto.",
+    "sendError": "Non è stato possibile inviare il tuo messaggio. Per favore riprova o chiamaci direttamente.",
+    "messageRequired": "Aggiungi un breve messaggio prima dell'invio.",
+    "hint": "Il tuo messaggio viene inviato direttamente al nostro team di esportazione. Ti risponderemo all'indirizzo email che hai inserito sopra.",
+    "sendUnavailable": "L'invio di email non è ancora configurato. Utilizza il telefono o WhatsApp per contattarci."
+  },
+  "home": {
+    "shopByProductType": "Acquista per tipo di prodotto",
+    "shopByIndustry": "Acquista per settore",
+    "shopByProductTypeDesc": "Dieci costruzioni in PP intrecciato, dalla bocca aperta ai formati laminati premium.",
+    "faqsEyebrow": "Domande frequenti",
+    "swipeCards": "Scorri le carte",
+    "buyerNeed": "L'acquirente ha bisogno di {index}",
+    "howWeHelpBuyers": "Come aiutiamo gli acquirenti",
+    "productTypes": "Tipi di prodotto",
+    "shopByIndustryDesc": "Abbina i tipi di sacchetti a riso, fertilizzanti, cemento, mangimi e usi al dettaglio.",
+    "swipeIndustries": "Scorri per sfogliare i settori",
+    "valuePropsSlides": "Perché gli acquirenti scelgono le diapositive VIVIDPOLY",
+    "buyerCarousel": "Carosello dei requisiti dell'acquirente",
+    "productUses": "Usi del prodotto",
+    "previousProducts": "Prodotti precedenti",
+    "buyerPagination": "L'acquirente ha bisogno dell'impaginazione",
+    "slideOf": "{current} di {total}",
+    "buyerRequirements": "Requisiti dell'acquirente",
+    "nextProducts": "I prossimi prodotti"
+  },
+  "catalogue": {
+    "titleByType": "Acquista per tipo di prodotto",
+    "sortAllProducts": "Tutti i prodotti",
+    "productType": "Tipo di prodotto",
+    "capacity": "Capacità",
+    "titleByUse": "Acquista per settore/uso",
+    "breadcrumbType": "Prodotti/Per tipo di prodotto",
+    "breadcrumbUse": "Prodotti / Per settore e utilizzo"
+  },
+  "pdp": {
+    "keyFeatures": "Caratteristiche principali",
+    "benefits": "Vantaggi",
+    "getQuoteFor": "Richiedi un preventivo per {productName}",
+    "customization": "Dettagli di personalizzazione",
+    "speciality": "Specialità",
+    "manufacturingProcess": "Processo di produzione",
+    "whyBuyersChoose": "Perché gli acquirenti scelgono questa borsa",
+    "materialCombination": "Combinazione di materiali",
+    "productionMaterials": "Produzione e materiali",
+    "trustBadges": [
+      "Specifica personalizzabile",
+      "Campione disponibile prima dell'ordine in serie",
+      "Imballaggio per l'esportazione incluso",
+      "Team di esportazione reattivo"
+    ],
+    "productImage": "Immagine del prodotto {index}"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "pageEyebrow": "CHI SIAMO",
+    "ctaSecondary": "Acquista per tipo di prodotto",
+    "p1": "VIVIDPOLY serve gli acquirenti di importazione globali con comunicazione professionale, specifiche di prodotto chiare, opzioni di imballaggio personalizzate e supporto reattivo per l'esportazione. Capacità, struttura, stampa e imballaggio sono personalizzati in base al prodotto e al mercato di destinazione, in modo che ogni ordine corrisponda al processo di riempimento, alle esigenze di branding e alle condizioni di spedizione.",
+    "pageTitle": "Partner globale di imballaggi per l'esportazione",
+    "exportVisionHeading": "Verso un futuro luminoso",
+    "p2": "Richiedi campioni prima di impegnarti per quantità complete. L'imballaggio di balle, pallet e cartoni è previsto per spedizioni internazionali sicure in dieci strutture in PP intrecciato, dai formati a bocca aperta ai formati laminati premium, abbinati a riso, fertilizzanti, cemento, mangimi e usi al dettaglio.",
+    "ctaPrimary": "Invia una richiesta",
+    "pillarsEyebrow": "PUNTI DI FORZA",
+    "exportVisionEyebrow": "La nostra visione dell’export",
+    "exportVisionBody": "VIVIDPOLY mira a diventare un partner di esportazione indiano di fiducia per le aziende globali che richiedono borse in PP resistenti, personalizzabili e pronte per il marchio. Comprendiamo che gli acquirenti internazionali hanno bisogno di qualcosa di più delle semplici descrizioni generali dei prodotti. Hanno bisogno di specifiche precise, indicazioni sull'uso del prodotto, supporto per grafica e stampa, opzioni di imballaggio adeguate e comunicazione reattiva durante tutto il processo di richiesta.",
+    "pillars": [
+      {
+        "title": "Garantiamo standard di esportazione internazionali",
+        "body": "Le specifiche, l'imballaggio e la comunicazione sono pianificati per i mercati di destinazione e le esigenze di conformità dell'acquirente."
+      },
+      {
+        "title": "Capacità e costruzione pronte per l'esportazione",
+        "body": "Dalle confezioni al dettaglio da 5 kg ai sacchi industriali da 75 kg, con opzioni di laminazione, fodera, tassello, valvola e stampa."
+      },
+      {
+        "body": "Guida reattiva su tipo di prodotto, grafica, formato di imballaggio, quantità e destinazione prima del preventivo.",
+        "title": "Team dedicato di supporto all'esportazione"
+      },
+      {
+        "title": "Esperienza pratica con un processo chiaro",
+        "body": "Gli acquirenti ricevono una guida strutturata all'uso del prodotto e un percorso di richiesta completo invece di una vaga copia del catalogo."
+      }
+    ],
+    "pillarsHeading": "Portare con sé un'eredità di esportazione incentrata sull'acquirente",
+    "pillarsLead": "Dagli standard internazionali al supporto pratico per le richieste, VIVIDPOLY è strutturato in base al modo in cui gli acquirenti di imballaggi globali si approvvigionano effettivamente.",
+    "pillarsBody": "Dagli standard internazionali al supporto pratico per le richieste, VIVIDPOLY è strutturato in base al modo in cui gli acquirenti di imballaggi globali si approvvigionano effettivamente. Le specifiche, l'imballaggio e la comunicazione sono pianificati per i mercati di destinazione e le esigenze di conformità dell'acquirente. La capacità va da confezioni al dettaglio da 5 kg a sacchi industriali da 75 kg, con opzioni di laminazione, fodera, tassello, valvola e stampa. Il supporto dedicato all'esportazione copre il tipo di prodotto, la grafica, il formato di imballaggio, la quantità e la destinazione prima del preventivo, con una guida strutturata all'uso del prodotto e un percorso di richiesta completo.",
+    "whyEyebrow": "SERVIZI",
+    "whyMoreLabel": "MAGGIORI DETTAGLI",
+    "contactTeam": "Invia una richiesta",
+    "requestCustomQuote": "Invia una richiesta",
+    "factsEyebrow": "Dettagli dell'azienda",
+    "factsHeading": "VIVIDPOLY in sintesi",
+    "ctaBandButton": "Invia una richiesta",
+    "whyHeading": "Il miglior supporto per gli imballaggi per l'esportazione",
+    "whyBody": "Dalla varietà di prodotti e pianificazione della capacità alla stampa, ai rivestimenti e all'imballaggio per l'esportazione, VIVIDPOLY è strutturato per supportare decisioni pratiche di approvvigionamento. Gli acquirenti possono acquistare sacchetti in PP dall'India per Stati Uniti, Canada, Australia, Europa, Regno Unito, Africa, Tailandia, Arabia Saudita e altri mercati attraverso una vasta gamma di tipi di sacchetti industriali, agricoli, al dettaglio e promozionali. La pianificazione della capacità copre da 5 kg a 75 kg, con costruzione personalizzata, supporto per la stampa e il branding, guida all'uso del prodotto e un processo di preventivo intuitivo per l'acquirente che acquisisce i dettagli necessari prima del preventivo.",
+    "whyLead": "Dalla varietà di prodotti e pianificazione della capacità alla stampa, ai rivestimenti e all'imballaggio per l'esportazione, VIVIDPOLY è strutturato per supportare decisioni pratiche di approvvigionamento.",
+    "ctaBandTitle": "Cerchi un partner professionale per l'imballaggio per l'esportazione?",
+    "ctaBandBody": "Condividi il tipo di bagaglio, la capacità, le esigenze di stampa, la quantità e la destinazione. VIVIDPOLY esaminerà la tua richiesta e ti darà seguito con opzioni pratiche.",
+    "whyItems": [
+      [
+        "Posizionamento degli esportatori con sede in India",
+        "Gli acquirenti possono acquistare sacchetti in PP dall'India per Stati Uniti, Canada, Australia, Europa, Regno Unito, Africa, Tailandia, Arabia Saudita e altri mercati."
+      ],
+      [
+        "Gamma di prodotti focalizzata sulle borse in PP",
+        "L'offerta di prodotti è chiara e pratica e copre i comuni tipi di borse industriali, agricole, di vendita al dettaglio e promozionali."
+      ],
+      [
+        "Pianificazione della capacità da 5 kg a 75 kg",
+        "Gli acquirenti possono discutere di piccole confezioni al dettaglio, borse per merci di medie dimensioni e borse industriali pesanti."
+      ],
+      [
+        "Opzioni di costruzione personalizzate",
+        "È possibile pianificare le opzioni di strati, laminazione, tassello, rivestimento, perforazione, finestra, maniglia, valvola, fondo di presa e fondo di blocco."
+      ],
+      [
+        "Supporto per la stampa e il branding",
+        "Le opzioni di stampa flessografica e PP tessuto laminato stampato contribuiscono a supportare la visibilità del marchio e la presentazione sul mercato."
+      ],
+      [
+        "Guida all'uso del prodotto",
+        "Gli acquirenti possono selezionare i sacchetti in base all'applicazione, ad esempio riso, fertilizzanti, mangimi per animali, prodotti chimici, cemento, sale, zucchero, vendita al dettaglio e acquisti."
+      ],
+      [
+        "Processo di preventivo intuitivo per l'acquirente",
+        "Il sito Web aiuta gli acquirenti a condividere tipo di prodotto, capacità, dimensioni, stampa, componenti aggiuntivi, imballaggio, quantità e destinazione prima del preventivo."
+      ]
+    ],
+    "ctaBandEyebrow": "Mettiti in contatto"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "sendRequirement": "Modulo di richiesta",
+    "sendRequirementLead": "Dicci di cosa hai bisogno. Scegli un tipo di prodotto o invia una domanda generale e ti risponderemo con una guida pratica.",
+    "reachUs": "Raggiungici direttamente",
+    "formCompany": "Nome dell'azienda",
+    "formMessage": "Messaggio",
+    "formName": "Nome",
+    "sending": "Invio…",
+    "formCountry": "Paese",
+    "formEmail": "E-mail",
+    "submitUnavailable": "La richiesta online non è ancora configurata. Inviaci un'e-mail o chiamaci utilizzando i dettagli in questa pagina.",
+    "emailInvalid": "Inserisci un indirizzo email valido.",
+    "submitSuccess": "Richiesta inviata. Il nostro team ti contatterà presto.",
+    "formEnquiryType": "Tipo di richiesta",
+    "emailLabel": "E-mail",
+    "submitEnquiry": "Invia richiesta",
+    "submitError": "Non è stato possibile inviare la tua richiesta. Per favore riprova o chiamaci direttamente.",
+    "formPhone": "WhatsApp/telefono",
+    "websiteLabel": "Sito web",
+    "messageRequired": "Aggiungi un breve messaggio prima di inviare.",
+    "phoneRequired": "Aggiungi un WhatsApp o un numero di telefono per consentirci di contattarti.",
+    "phoneLabel": "WhatsApp/Telefono",
+    "corporateOffice": "Ufficio aziendale",
+    "companyRows": [
+      [
+        "Azienda/Marchio"
+      ],
+      [
+        "Sito web",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mail"
+      ],
+      [
+        "Telefono"
+      ],
+      [
+        "Indirizzo aziendale",
+        "Piazza Sankalp, A 1601, Sindhu Bhavan Marg, vicino al Taj Hotel, opp. Spara gioco, Colonia PRL, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Piazza Sankalp, A 1601, Sindhu Bhavan Marg, vicino al Taj Hotel, opp. Spara gioco, Colonia PRL, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepLabel": "Passaggio {current} di {total}",
+    "stepBagSpec": "Specifica della borsa",
+    "submitEnquiry": "Invia richiesta",
+    "stepContact": "Dettagli di contatto",
+    "bagSpec": "Specifica della borsa",
+    "fields": {
+      "product": "Prodotto",
+      "capacity": "Capacità",
+      "size": "Misurare",
+      "printing": "Stampa",
+      "addons": "Componenti aggiuntivi",
+      "bagType": "Tipo di borsa",
+      "packing": "Imballaggio",
+      "quantity": "Quantità",
+      "destination": "Paese di destinazione",
+      "review": "Revisione",
+      "packedProduct": "Prodotto imballato"
+    },
+    "savedWithName": "{name}, i tuoi dati di contatto vengono salvati.",
+    "howReachYou": "Come dovremmo raggiungerti?",
+    "reviewLabels": {
+      "capacity": "Capacità",
+      "productType": "Tipo di prodotto",
+      "printing": "Stampa",
+      "addons": "Componenti aggiuntivi",
+      "packing": "Imballaggio",
+      "quantity": "Quantità",
+      "bagSize": "Dimensioni della borsa",
+      "destination": "Destinazione",
+      "empty": "-",
+      "packedProduct": "Prodotto imballato"
+    },
+    "closeForm": "Chiudi il modulo di richiesta",
+    "emailInvalid": "Inserisci un indirizzo email valido.",
+    "reviewSteps": {
+      "product": "Prodotto",
+      "order": "Ordine",
+      "sizePrint": "Dimensioni e stampa"
+    },
+    "saved": "I tuoi dati di contatto vengono salvati.",
+    "registerLead": "Registreremo la tua richiesta e ti risponderemo su WhatsApp."
+  },
+  "sample": {
+    "steps": {
+      "review": "Revisione",
+      "confirmed": "Confermato",
+      "payment": "Pagamento"
+    },
+    "bankTransfer": "Bonifico bancario",
+    "subtotal": "Totale parziale",
+    "yourDetails": "I tuoi dati",
+    "specification": "Specifica del campione",
+    "total": "Totale",
+    "reference": "Riferimento:",
+    "billRows": {
+      "productType": "Tipo di prodotto",
+      "capacity": "Capacità",
+      "printing": "Stampa",
+      "packing": "Imballaggio",
+      "leadTime": "Tempi di consegna",
+      "sampleQuantity": "Quantità di campione",
+      "unitPrice": "Prezzo unitario",
+      "total": "Totale",
+      "exportPacking": "Imballaggio e spedizione per l'esportazione"
+    },
+    "continuePayment": "Continua al pagamento",
+    "bankRows": {
+      "beneficiary": "Beneficiario",
+      "bank": "Banca",
+      "branch": "Ramo",
+      "accountNumber": "Numero di conto",
+      "ifsc": "IFSC",
+      "accountType": "Tipo di conto",
+      "amount": "Quantità",
+      "swift": "VELOCE",
+      "paymentReference": "Riferimento al pagamento"
+    },
+    "searchBanks": "Cerca banche",
+    "selectBranch": "Seleziona filiale",
+    "selectBank": "Seleziona banca",
+    "form": {
+      "name": "Nome",
+      "quantity": "Quantità necessaria per il campione",
+      "address": "Indirizzo di consegna"
+    },
+    "searchBranches": "Cerca filiali",
+    "closePicker": "Chiudi selettore",
+    "noBankMatches": "Nessuna corrispondenza. Prova una ricerca diversa."
+  },
+  "blog": {
+    "fallbackReadTime": "5 minuti di lettura",
+    "pageTitle": "Guide e approfondimenti per gli acquirenti",
+    "fallbackCategory": "Guida all'acquisto",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "emptyBody": "Sono in arrivo nuove guide e approfondimenti per gli acquirenti: torna presto a trovarci.",
+    "loading": "Caricamento articoli…",
+    "emptyTitle": "Nessun articolo ancora",
+    "backToArticles": "Torna a tutti gli articoli",
+    "dateAll": "Tutto il tempo",
+    "dateLabel": "Data",
+    "searchLabel": "Ricerca",
+    "searchSubmit": "Ricerca",
+    "dateYear": "Quest'anno",
+    "date90": "Ultimi 90 giorni",
+    "date30": "Ultimi 30 giorni",
+    "date7": "Ultimi 7 giorni",
+    "articlesOne": "1 articolo",
+    "topicsAll": "Tutti gli argomenti",
+    "searchPlaceholder": "Cerca articoli...",
+    "topicsLabel": "Argomenti",
+    "articlesMany": "{count} articoli",
+    "noResultsBody": "Prova un termine di ricerca, un argomento o un intervallo di date diverso.",
+    "clearFilters": "Cancella filtri",
+    "noResultsTitle": "Nessun articolo corrispondente"
+  },
+  "careers": {
+    "eyebrow": "Carriere presso VividPoly",
+    "title": "Proveniente dall'India. Affidabile in tutto il mondo.",
+    "applyNow": "Candidati ora",
+    "lead": "Cerchiamo persone che abbiano a cuore la qualità, la comunicazione chiara e la consegna affidabile. I ruoli spaziano da uffici, fabbriche e operazioni di esportazione ad Ahmedabad e Vadodara.",
+    "reasons": [
+      {
+        "body": "Lavoro legato agli acquirenti in oltre 70 mercati di esportazione.",
+        "title": "Esposizione globale"
+      },
+      {
+        "title": "Spazio per crescere",
+        "body": "Le nuove responsabilità arrivano rapidamente in un business in crescita."
+      },
+      {
+        "title": "Sicurezza del lavoro",
+        "body": "Supportato da un'operazione di esportazione stabile e consolidata."
+      },
+      {
+        "title": "Imparare sul lavoro",
+        "body": "Esposizione pratica al settore manifatturiero e al commercio globale."
+      }
+    ],
+    "whyHeading": "Perché VividPoly",
+    "seeHowWeWork": "Guarda come lavoriamo",
+    "whyLead": "Un luogo pratico per sviluppare competenze nel settore manifatturiero e nel commercio globale.",
+    "whyBody": "Un luogo pratico per sviluppare competenze nel settore manifatturiero e nel commercio globale. Il lavoro è legato agli acquirenti in oltre 70 mercati di esportazione, le nuove responsabilità arrivano rapidamente in un'azienda in crescita e i ruoli sono supportati da un'operazione di esportazione stabile e consolidata con un'esposizione pratica alla produzione e al commercio globale.",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Aggiornamenti aziendali e ruoli aperti per le carriere nell'export, nelle operazioni e nel confezionamento."
+      },
+      {
+        "label": "Infatti",
+        "blurb": "Cerca elenchi VIVIDPOLY per ruolo, posizione e livello di esperienza."
+      },
+      {
+        "blurb": "Aperture focalizzate sull'India tra i team di produzione, vendita e supporto.",
+        "label": "Naukri"
+      }
+    ],
+    "positionsHeading": "Trovaci dove stai già cercando",
+    "positionsMoreLabel": "VISUALIZZA APERTURE",
+    "positionsNote": "Preferisci un'applicazione diretta? Utilizza Applica ora di seguito.",
+    "positionsEyebrow": "POSIZIONI APERTE",
+    "positionsLead": "Le posizioni attuali vengono pubblicate e aggiornate su queste piattaforme. Sfoglia i ruoli live, quindi fai domanda tramite il modulo sottostante.",
+    "ctaEyebrow": "CANDIDATI ORA",
+    "ctaHeading": "La tua prossima mossa di carriera inizia qui",
+    "ctaLead": "Condividi il tuo interesse per il ruolo, la tua esperienza e la posizione preferita. Il nostro team esaminerà le domande non appena le posizioni saranno disponibili."
+  },
+  "search": {
+    "recentHeading": "Ricerche recenti",
+    "noMatches": "Nessuna corrispondenza. Prova \"riso\" o \"cemento\"",
+    "suggestionsHeading": "Suggerimenti",
+    "recentTerms": [
+      "sacchetti di riso",
+      "sacchi di cemento",
+      "laminato stampato",
+      "25 kg a bocca aperta"
+    ]
+  },
+  "filters": {
+    "capacityMin": "Capacità minima",
+    "customSelectNoMatches": "Nessuna corrispondenza trovata",
+    "customSelectEnter": "Inserisci le tue specifiche...",
+    "capacityCustomNotice": "VIVIDPOLY fornisce imballaggi in sacchi in PP da {min} kg a {max} kg. Inserisci una capacità compresa in questo intervallo.",
+    "capacityMax": "Capacità massima",
+    "capacityOrEnter": "Oppure inserisci la capacità",
+    "customSelectUseAnyway": "Utilizzare comunque questo valore",
+    "capacityExample": "per esempio. 23 chilogrammi",
+    "productUseOptions": "Opzioni di utilizzo del prodotto"
+  },
+  "breadcrumbs": {
+    "home": "Casa",
+    "products": "Prodotti",
+    "getQuote": "Ottieni un preventivo",
+    "blog": "Blog",
+    "faqs": "Domande frequenti",
+    "about": "Di",
+    "careers": "Carriera",
+    "contact": "Contattaci",
+    "requestExportQuote": "Richiedi preventivo per l'esportazione"
+  },
+  "validation": {
+    "emailInvalid": "Inserisci un indirizzo email valido."
+  },
+  "buyerRows": [
+    {
+      "response": "VIVIDPOLY è posizionato come esportatore con sede in India per gli acquirenti globali di sacchetti in PP.",
+      "requirement": "Approvvigionamento per l'esportazione dall'India"
+    },
+    {
+      "requirement": "Varietà di prodotti",
+      "response": "Bocca aperta, cucita, taglio a D, con valvola, carry, laminata, fondo pizzicato, fondo bloccato, tassello e borse per la spesa."
+    },
+    {
+      "response": "Le soluzioni di sacchi in PP possono essere progettate da 5 kg a 75 kg a seconda della densità del prodotto e della struttura del sacco.",
+      "requirement": "Capacità personalizzata"
+    },
+    {
+      "requirement": "Presentazione del marchio",
+      "response": "Le opzioni di stampa flessografica e PP tessuto laminato stampato supportano l'identità del prodotto e l'attrattiva sullo scaffale."
+    },
+    {
+      "response": "È possibile acquisire i dettagli relativi a tipo di prodotto, dimensioni, capacità, stampa, laminazione, rivestimento, tassello, maniglia e imballaggio prima del preventivo.",
+      "requirement": "Flusso di richieste orientato all'acquirente"
+    }
+  ],
+  "buyerMeta": [
+    {
+      "short": "Esportatore con sede in India",
+      "label": "Approvvigionamento indiano"
+    },
+    {
+      "label": "Gamma di prodotti",
+      "short": "10 tipi di borse"
+    },
+    {
+      "label": "Capacità personalizzata",
+      "short": "Da 5 kg a 75 kg"
+    },
+    {
+      "label": "Stampa del marchio",
+      "short": "Stampa e lamina"
+    },
+    {
+      "label": "Flusso di lavoro del preventivo",
+      "short": "Dettagli pronti per il preventivo"
+    }
+  ],
+  "useRows": [
+    {
+      "cardTitle": "Cereali e legumi",
+      "use": "Riso, grano, cereali, legumi, farina",
+      "bags": "Borse a bocca aperta, borse cucite sopra e sotto, borse in PP tessuto laminato stampato, borse con fondo pizzicato",
+      "tips": "Stampa flessografica, stampa laminata, finestre, tasselli, rivestimenti, maniglie, imballaggi per balle per esportazione."
+    },
+    {
+      "tips": "Liner, tassello, stampa flessografica, stampa laminata, perforazione, imballaggio su pallet.",
+      "bags": "Borse cucite, borse in PP tessuto laminato, borse con fondo a blocco, borse a soffietto con fondo a blocco",
+      "use": "Fertilizzante e semi",
+      "cardTitle": "Fertilizzante e semi"
+    },
+    {
+      "tips": "Costruzione multistrato, finestra, tassello, maniglia, stampa premium, perforazione opzionale.",
+      "bags": "Borse in PP tessuto laminato stampato, borse a soffietto con fondo bloccato, borse per il trasporto, borse con fondo pizzicato",
+      "cardTitle": "Mangimi per animali e alimenti per animali domestici",
+      "use": "Mangimi per animali e alimenti per animali domestici"
+    },
+    {
+      "cardTitle": "Cementi e Polveri Industriali",
+      "use": "Cemento, prodotti chimici, minerali, polveri",
+      "bags": "Sacchi con valvola, sacchi a fondo quadro, sacchi cuciti sopra e sotto, sacchi supportati da rivestimento",
+      "tips": "Costruzione della valvola, rivestimento, perforazione, cuciture robuste, guarnizioni per carichi pesanti."
+    },
+    {
+      "use": "Sale, zucchero, beni di consumo",
+      "bags": "Sacchi a bocca aperta, sacchi cuciti, sacchi laminati, sacchi supportati da liner",
+      "tips": "Fodera, superficie laminata, stampa flessografica, cuciture pulite, opzioni di supporto dell'umidità.",
+      "cardTitle": "Sale, zucchero e materie prime"
+    },
+    {
+      "use": "Vendita al dettaglio, acquisti, promozione",
+      "tips": "Opzioni di gestione, stampa laminata, tassello, imballaggio in cartone, grafica del marchio.",
+      "bags": "Borse con taglio a D, borse per il trasporto, borse per la spesa in tessuto, borse in PP tessuto laminato stampato",
+      "cardTitle": "Vendita al dettaglio e promozionale"
+    }
+  ],
+  "useGuidance": [
+    {
+      "bags": "Borse a bocca aperta, borse cucite sopra e sotto, borse in PP tessuto laminato stampato, borse con fondo pizzicato.",
+      "tips": "Stampa flessografica, stampa laminata, finestre, tasselli, rivestimenti, maniglie, imballaggi per balle per esportazione.",
+      "title": "Riso, Frumento, Cereali e Legumi"
+    },
+    {
+      "title": "Farina e prodotti alimentari",
+      "tips": "Fodera, superficie laminata, taglio pulito, cuciture sicure, design adatto alla vendita al dettaglio.",
+      "bags": "Sacchi a bocca aperta, sacchi in PP tessuto stampato e laminato, sacchi a fondo pizzico."
+    },
+    {
+      "tips": "Fodera, superficie laminata, stampa flessografica, cuciture pulite, opzioni di supporto dell'umidità.",
+      "title": "Sale e zucchero",
+      "bags": "Borse a bocca aperta, borse cucite, borse in PP tessuto laminato stampato."
+    },
+    {
+      "tips": "Liner, tassello, stampa flessografica, stampa laminata, perforazione, imballaggio su pallet.",
+      "title": "Fertilizzante e semi",
+      "bags": "Borse cucite, borse in PP tessuto laminato, borse con fondo a blocco, borse a soffietto con fondo a blocco."
+    },
+    {
+      "tips": "Costruzione multistrato, finestra, tassello, maniglia, stampa premium, perforazione opzionale.",
+      "title": "Mangimi per animali e alimenti per animali domestici",
+      "bags": "Borse in PP tessuto laminato stampato, borse con fondo pizzicato, borse con soffietto con fondo bloccato, borse per il trasporto."
+    },
+    {
+      "tips": "Costruzione della valvola, rivestimento, perforazione, cuciture robuste, guarnizioni per carichi pesanti.",
+      "title": "Cemento e materiali da costruzione",
+      "bags": "Sacchi a valvola, sacchi a fondo quadro, sacchi cuciti sopra e sotto."
+    },
+    {
+      "title": "Prodotti chimici e minerali",
+      "bags": "Sacchi a valvola, sacchi cuciti, sacchi a bocca aperta, sacchi supportati da liner.",
+      "tips": "Liner, laminazione, perforazione di disaerazione, cucitura sicura, imballaggio per esportazione."
+    },
+    {
+      "tips": "Opzioni di gestione, stampa laminata, tassello, imballaggio in cartone, grafica del marchio.",
+      "title": "Prodotti al dettaglio e promozionali",
+      "bags": "Borse con taglio a D, borse per il trasporto, borse per la spesa in tessuto, borse in PP tessuto laminato stampato."
+    },
+    {
+      "title": "Shopping e imballaggi in stile riutilizzabile",
+      "tips": "Manici ad anello, manici con taglio a D, tassello laterale, tassello inferiore, stampa multicolore.",
+      "bags": "Borse per la spesa in tessuto, borse per il trasporto, borse in tessuto PP con taglio a D."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Borsa in tessuto"
+    },
+    {
+      "title": "Tessuto"
+    },
+    {
+      "title": "Barriera contro le erbacce"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Agricoltura e materie prime alimentari",
+      "items": [
+        "Riso, Frumento, Cereali e Legumi",
+        "Farina e prodotti alimentari",
+        "Sale e zucchero"
+      ]
+    },
+    {
+      "title": "Input agricoli e cura degli animali",
+      "items": [
+        "Fertilizzante e semi",
+        "Mangimi per animali e alimenti per animali domestici"
+      ]
+    },
+    {
+      "title": "Industriale e edile",
+      "items": [
+        "Cemento e materiali da costruzione",
+        "Prodotti chimici e minerali"
+      ]
+    },
+    {
+      "title": "Vendita al dettaglio e promozionale",
+      "items": [
+        "Prodotti al dettaglio e promozionali",
+        "Shopping e imballaggi in stile riutilizzabile"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Capacità",
+      "title": "Capacità",
+      "options": [
+        {
+          "label": "5 chilogrammi"
+        },
+        {
+          "label": "10 chilogrammi"
+        },
+        {
+          "label": "15 chilogrammi"
+        },
+        {
+          "label": "20 chilogrammi"
+        },
+        {
+          "label": "25 chilogrammi"
+        },
+        {
+          "label": "30 chilogrammi"
+        },
+        {
+          "label": "40 chilogrammi"
+        },
+        {
+          "label": "50 chilogrammi"
+        },
+        {
+          "label": "60 chilogrammi"
+        },
+        {
+          "label": "75 chilogrammi"
+        },
+        {
+          "label": "Costume"
+        }
+      ]
+    },
+    {
+      "key": "Tipo di prodotto",
+      "title": "Tipo di prodotto",
+      "options": [
+        {
+          "label": "Bocca aperta"
+        },
+        {
+          "label": "Cucito"
+        },
+        {
+          "label": "Taglio a D"
+        },
+        {
+          "label": "Valvola"
+        },
+        {
+          "label": "Trasportare"
+        },
+        {
+          "label": "Laminato"
+        },
+        {
+          "label": "Pizzicare il fondo"
+        },
+        {
+          "label": "Blocca il fondo"
+        },
+        {
+          "label": "Tassello inferiore bloccato"
+        },
+        {
+          "label": "Shopping tessuto"
+        },
+        {
+          "label": "Tessuto in PP"
+        },
+        {
+          "label": "Barriera contro le erbe infestanti"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "a": "VIVIDPOLY esporta borse a bocca aperta, borse cucite sopra e sotto, borse tessute in PP con taglio a D, borse con valvola, borse per il trasporto, borse in PP tessute stampate e laminate, borse con fondo a pizzico in PP tessute stampate e laminate, borse con fondo a blocchi in PP tessute stampate e laminate, borse a soffietto con fondo a blocchi in PP tessute stampate e laminate e borse per la spesa in tessuto.",
+      "q": "Quali tipi di sacchetti in PP esporta VIVIDPOLY?"
+    },
+    {
+      "q": "Quale capacità di peso è disponibile per i sacchetti VIVIDPOLY in PP?",
+      "a": "VIVIDPOLY può discutere i requisiti dei sacchi in PP da 5 kg a 75 kg, a seconda della densità del prodotto, delle dimensioni del sacco, della resistenza del tessuto, della costruzione, della laminazione, del rivestimento, del tassello, delle cuciture e dell'applicazione finale."
+    },
+    {
+      "q": "Quali informazioni sono necessarie per un preventivo?",
+      "a": "Gli acquirenti devono fornire il tipo di prodotto, il prodotto imballato, la capacità, le dimensioni del sacchetto, la quantità, i requisiti di stampa, la laminazione, la fodera, il tassello, la maniglia, il taglio, la cucitura, il tipo di imballaggio, il paese di destinazione e la grafica o il riferimento del campione, se disponibile."
+    },
+    {
+      "q": "VIVIDPOLY può fornire sacchetti in PP tessuto stampati e laminati?",
+      "a": "SÌ. VIVIDPOLY è in grado di supportare i requisiti di sacchetti in PP tessuto stampati e laminati per prodotti quali riso, farina, fertilizzanti, mangimi per animali, alimenti per animali domestici, semi, sale, zucchero e prodotti al dettaglio."
+    },
+    {
+      "q": "Qual è la differenza tra sacchi a bocca aperta e sacchi a valvola?",
+      "a": "I sacchi a bocca aperta vengono riempiti attraverso una parte superiore aperta e chiusi dopo il riempimento. I sacchi con valvola vengono riempiti attraverso un'apertura a valvola e sono comunemente utilizzati per polveri, prodotti tipo cemento, prodotti chimici, minerali e materiali da costruzione."
+    },
+    {
+      "a": "Le borse con fondo a pinza vengono utilizzate laddove gli acquirenti necessitano di un imballaggio dall'aspetto premium e una presentazione pulita della chiusura. Sono adatti per alimenti selezionati, alimenti per animali domestici, mangimi per animali, cereali, semi e prodotti al dettaglio.",
+      "q": "A cosa servono i sacchetti con fondo pizzico?"
+    },
+    {
+      "a": "Le borse a soffietto con fondo a blocco sono adatte laddove gli acquirenti necessitano di volume maggiore, forma stabile, area di branding più forte e migliore presentazione impilabile.",
+      "q": "A cosa servono le borse a soffietto con fondo quadro?"
+    },
+    {
+      "q": "I sacchetti in PP possono includere finestre?",
+      "a": "SÌ. I sacchetti selezionati in PP tessuto stampato e laminato possono includere una finestra trasparente per mostrare il prodotto confezionato all'interno."
+    },
+    {
+      "a": "SÌ. I rivestimenti possono essere presi in considerazione laddove è necessaria una protezione aggiuntiva del prodotto, supporto dell'umidità o ritenzione fine del prodotto.",
+      "q": "VIVIDPOLY può fornire rivestimenti all'interno dei sacchetti in PP?"
+    },
+    {
+      "q": "Quali opzioni di stampa sono disponibili?",
+      "a": "VIVIDPOLY può supportare sacchetti semplici, sacchetti stampati in flessografia e formati di sacchetti in PP tessuto stampati e laminati, a seconda delle esigenze di branding, della complessità della grafica, del budget e del mercato del prodotto."
+    }
+  ],
+  "blogList": [
+    {
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "category": "Guida all'acquisto",
+      "purpose": "Spiegare i sacchetti in PP, gli usi comuni e i fattori di selezione dell'acquirente.",
+      "readTime": "6 minuti di lettura",
+      "title": "Cosa sono i sacchetti in PP? Guida completa per gli acquirenti di importazione"
+    },
+    {
+      "readTime": "5 minuti di lettura",
+      "category": "Confezione",
+      "title": "Sacchetti a bocca aperta vs sacchetti con valvola: quale sacchetto in PP è adatto al tuo prodotto?",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "purpose": "Confronta gli stili di riempimento e le applicazioni adatte."
+    },
+    {
+      "category": "Guida all'acquisto",
+      "purpose": "Informa gli acquirenti sui formati delle borse cucite.",
+      "title": "Sacchetti in PP cuciti sopra e sotto: usi, vantaggi e personalizzazione",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "readTime": "7 minuti di lettura"
+    },
+    {
+      "readTime": "5 minuti di lettura",
+      "category": "Marchio",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Sacchetti in PP tessuto stampati e laminati per l'imballaggio di riso, mangimi e fertilizzanti",
+      "purpose": "Promuovere imballaggi di marca premium."
+    },
+    {
+      "category": "Confezione",
+      "readTime": "6 minuti di lettura",
+      "title": "Borse con fondo a pizzico o borse con fondo a blocco: una guida per l'acquirente",
+      "purpose": "Confronta le costruzioni di borse premium.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+    },
+    {
+      "readTime": "8 minuti di lettura",
+      "category": "Dimensionamento",
+      "title": "Guida alle dimensioni dei sacchi in PP: come scegliere la capacità dei sacchi da 5 kg a 75 kg",
+      "purpose": "Aiuta gli acquirenti a definire dimensioni e capacità prima della richiesta.",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Marchio",
+      "readTime": "5 minuti di lettura",
+      "purpose": "Spiegare le scelte di stampa e l'impatto del marchio.",
+      "title": "Stampa flessografica e stampa laminata per borse in PP"
+    },
+    {
+      "category": "Caratteristiche",
+      "readTime": "4 minuti di lettura",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "title": "Perché i rivestimenti, i soffietti e la perforazione sono importanti nei sacchetti in PP",
+      "purpose": "Spiegare le funzionalità aggiuntive per la protezione e la gestione del prodotto."
+    },
+    {
+      "readTime": "6 minuti di lettura",
+      "purpose": "Insegna agli acquirenti quali dettagli inviare per un preventivo.",
+      "title": "Come preparare una richiesta di esportazione di sacchetti in PP",
+      "category": "Suggerimenti per l'esportazione",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Intero nec odio praesent libero sed cursus ante."
+    },
+    {
+      "category": "Vedere al dettaglio",
+      "readTime": "5 minuti di lettura",
+      "title": "Borse per la spesa in tessuto per imballaggi promozionali e di vendita al dettaglio",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet.",
+      "purpose": "Rivolgiti agli acquirenti di borse per lo shopping e promozionali."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "qtyLabel": "5 pz.campione",
+    "currency": "Dollaro statunitense",
+    "leadTime": "7-10 giorni lavorativi dalla conferma del pagamento",
+    "printing": "Semplice (specifica del campione)",
+    "packing": "Imballaggio per l'esportazione in cartone"
+  },
+  "bankDetails": {
+    "bankName": "HDFC Banca Ltd.",
+    "accountType": "Conto corrente",
+    "swift": "HDFCINBB",
+    "ifsc": "HDFC0001234",
+    "branch": "Ahmedabad, Bopal, Gujarat, India",
+    "paymentNote": "Includi il nome della tua azienda e il riferimento del campione nella narrazione del trasferimento."
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Banca Ltd.",
+      "swift": "HDFCINBB",
+      "accountType": "Conto corrente",
+      "branch": "Ahmedabad, Bopal",
+      "ifsc": "HDFC0001234",
+      "location": "Gujarat, India"
+    },
+    {
+      "bankName": "HDFC Banca Ltd.",
+      "swift": "HDFCINBB",
+      "accountType": "Conto corrente",
+      "location": "Gujarat, India",
+      "ifsc": "HDFC0005678",
+      "branch": "Vadodara, Halol Road"
+    },
+    {
+      "location": "Gujarat, India",
+      "accountType": "Conto corrente",
+      "swift": "ICICINBB",
+      "bankName": "ICICI Banca Ltd.",
+      "ifsc": "ICIC0001234",
+      "branch": "Ahmedabad, autostrada SG"
+    },
+    {
+      "bankName": "Asse Banca Ltd.",
+      "location": "Gujarat, India",
+      "accountType": "Conto corrente",
+      "branch": "Ahmedabad, Prahladnagar",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "branch": "Gandhinagar, settore 21",
+      "accountType": "Conto corrente",
+      "bankName": "Banca di Stato dell'India",
+      "swift": "SBININBB",
+      "ifsc": "SBIN0006789"
+    },
+    {
+      "location": "Gujarat, India",
+      "bankName": "Banca Kotak Mahindra",
+      "accountType": "Conto corrente",
+      "branch": "Ahmedabad, Ashram Road",
+      "ifsc": "KKBK0001234",
+      "swift": "KKKBINBB"
+    },
+    {
+      "ifsc": "SÌB0000123",
+      "accountType": "Conto corrente",
+      "location": "Maharashtra, India",
+      "branch": "Mumbai, Andheri Est",
+      "bankName": "Sì Banca Ltd.",
+      "swift": "SIBINBB"
+    },
+    {
+      "location": "Gujarat, India",
+      "branch": "Ahmedabad, Navrangpura",
+      "accountType": "Conto corrente",
+      "ifsc": "INDB0000123",
+      "bankName": "IndusInd Bank Ltd.",
+      "swift": "INDBINBB"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Borse a bocca aperta"
+    },
+    {
+      "label": "Borse cucite"
+    },
+    {
+      "label": "Borse con taglio a D"
+    },
+    {
+      "label": "Borse con valvola"
+    },
+    {
+      "label": "Portare borse"
+    },
+    {
+      "label": "Borse in PP tessuto laminato"
+    },
+    {
+      "label": "Borse con fondo pizzicato"
+    },
+    {
+      "label": "Borse con fondo a blocchi"
+    },
+    {
+      "label": "Borse a soffietto con fondo a blocchi"
+    },
+    {
+      "label": "Borse per la spesa in tessuto"
+    },
+    {
+      "label": "Tessuto in PP"
+    },
+    {
+      "label": "Barriera contro le erbacce"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Borse a bocca aperta",
+      "group": "Borsa in tessuto",
+      "short": "Sacchi in tessuto PP facili da riempire per prodotti sfusi secchi come cereali, farina, mangimi, fertilizzanti, sale, zucchero, semi e minerali.",
+      "cta": "Esplora le borse a bocca aperta",
+      "features": [
+        {
+          "body": "La parte superiore aperta consente il riempimento rapido con metodi manuali, semiautomatici o supportati da macchina.",
+          "title": "Riempimento facile"
+        },
+        {
+          "body": "Adatto per applicazioni da 5 kg a 75 kg a seconda della densità del prodotto e del design del sacco.",
+          "title": "Flessibilità della capacità"
+        },
+        {
+          "title": "Finitura personalizzata",
+          "body": "Il piano può essere tagliato a caldo, tagliato a freddo, orlato o tagliato a zig-zag."
+        },
+        {
+          "body": "Se necessario, è possibile aggiungere la stampa flessografica, la stampa laminata e il supporto liner.",
+          "title": "Opzioni di stampa e rivestimento"
+        }
+      ],
+      "intro": "Le borse a bocca aperta sono uno degli stili di buste in PP più pratiche per l'imballaggio di prodotti sfusi secchi. VIVIDPOLY esporta sacchi in PP a bocca aperta per acquirenti che necessitano di facile riempimento, chiusura flessibile e personalizzazione per applicazioni agricole, alimentari, fertilizzanti, mangimi, chimiche, minerali, sale, zucchero e industriali.",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Da 5 kg a 75 kg"
+        },
+        {
+          "key": "Superiore",
+          "value": "Bocca aperta, taglio caldo, taglio freddo, zig-zag, orlata"
+        },
+        {
+          "key": "Metter il fondo a",
+          "value": "Cucitura a piega singola, cucitura a doppia piega, finitura personalizzata"
+        },
+        {
+          "key": "Stampa",
+          "value": "Stampa semplice, flessografica, laminata"
+        },
+        {
+          "key": "Componenti aggiuntivi",
+          "value": "Tassello, fodera, perforazione, maniglia se richiesta"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Balle, fardelli, pallet, cartoni, imballaggi per esportazione"
+        }
+      ],
+      "details": "Queste borse possono essere fornite come borse in PP tessuto semplice, borse stampate in flessografia o borse in PP tessuto stampato e laminato. Gli acquirenti possono selezionare dimensione, tessuto, capacità, tassello, fodera, stampa, cucitura, taglio e imballaggio.",
+      "benefits": "I sacchetti in PP a bocca aperta sono preferiti per la loro semplicità, adattabilità e maneggevolezza economicamente vantaggiosa. Sono ideali per gli acquirenti che necessitano di una borsa in tessuto resistente che possa essere chiusa dopo il riempimento mediante cucitura, sigillatura, piegatura o legatura.",
+      "mfg": "Il processo comprende la tessitura del tessuto, la stampa o la laminazione opzionale, il taglio, la cucitura del fondo, l'ispezione e l'imballaggio.",
+      "speciality": "La specialità dei sacchetti a bocca aperta è la loro flessibilità per diversi prodotti e metodi di riempimento.",
+      "material": "Tessuto in PP, inchiostro da stampa, filo di cucitura, laminazione opzionale, rivestimento opzionale e requisiti di colore/additivo specifici dell'acquirente."
+    },
+    "stitched": {
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Cuciture superiori e inferiori sicure, resistenza del tessuto personalizzata, rivestimento opzionale, stampa flessografica o laminata, imballaggio personalizzato."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Migliore sicurezza della chiusura, maneggevolezza, buone prestazioni di impilamento e idoneità per molti prodotti sfusi secchi."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Gli acquirenti possono specificare il tipo di cucitura, il tipo di filo, lo stile di piega, le dimensioni, la capacità, la stampa, la fodera, il tassello e l'imballaggio."
+        }
+      ],
+      "intro": "Le borse con cucitura superiore e inferiore sono progettate per gli acquirenti che necessitano di una chiusura sicura e di una gestione affidabile durante lo stoccaggio e il trasporto. VIVIDPOLY esporta borse in PP cucite per imballaggi agricoli, alimentari, fertilizzanti, mangimi per animali, prodotti chimici, minerali e industriali.",
+      "short": "Sacchetti in PP cuciti in modo sicuro per il trasporto, lo stoccaggio e l'imballaggio per l'esportazione di prodotti agricoli e industriali.",
+      "cta": "Esplora le borse cucite",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Da 5 kg a 75 kg"
+        },
+        {
+          "key": "Cucitura",
+          "value": "Piega singola, doppia piega, filo singolo, filo doppio, cucitura superiore e inferiore"
+        },
+        {
+          "key": "Stampa",
+          "value": "Carta semplice, flessografica, stampata laminata"
+        },
+        {
+          "value": "Fodera sciolta o cucita opzionale",
+          "key": "Fodera"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Balle, fardelli, pallet, imballaggi compressi per l'esportazione"
+        }
+      ],
+      "name": "Borse cucite sopra e sotto",
+      "benefits": "Migliore sicurezza della chiusura, maneggevolezza, buone prestazioni di impilamento e idoneità per molti prodotti sfusi secchi.",
+      "details": "Gli acquirenti possono specificare il tipo di cucitura, il tipo di filo, lo stile di piega, le dimensioni, la capacità, la stampa, la fodera, il tassello e l'imballaggio.",
+      "mfg": "Il processo di produzione comprende tessitura, stampa/laminazione opzionale, taglio, cucitura superiore e inferiore, ispezione e imballaggio.",
+      "material": "Le combinazioni di materiali includono tessuto in PP, filo per cuciture, laminazione opzionale, rivestimento opzionale e inchiostro da stampa.",
+      "speciality": "La specialità di questo tipo di borsa è la chiusura cucita affidabile."
+    },
+    "d-cut": {
+      "group": "Borsa in tessuto",
+      "name": "Borse in tessuto PP con taglio a D",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Maniglia con taglio a D, dimensioni personalizzate, stampa flessografica o laminata, tassello opzionale, finitura adatta alla vendita al dettaglio."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Facile da trasportare, struttura intrecciata resistente, visibilità del marchio e utile valore promozionale."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Adatto per applicazioni di trasporto da leggere a medie, prodotti al dettaglio, fiere e campagne promozionali."
+        }
+      ],
+      "cta": "Esplora le borse D-Cut",
+      "benefits": "Facile da trasportare, struttura intrecciata resistente, visibilità del marchio e utile valore promozionale.",
+      "short": "Borse in tessuto PP stile trasporto con maniglia integrata per la vendita al dettaglio, la promozione e l'imballaggio in stile riutilizzabile.",
+      "intro": "Le borse in tessuto PP D-Cut includono un taglio della maniglia integrato che rende la borsa più facile da trasportare. VIVIDPOLY esporta borse con taglio a D per esigenze di imballaggio in stile vendita al dettaglio, shopping, promozionale, espositivo e riutilizzabile.",
+      "spec": [
+        {
+          "key": "Maniglia",
+          "value": "Maniglia con taglio a D o rinforzata con taglio a D"
+        },
+        {
+          "key": "Materiale",
+          "value": "Materiale PP tessuto o laminato"
+        },
+        {
+          "key": "Stampa",
+          "value": "Stampa personalizzata"
+        },
+        {
+          "key": "Cucitura",
+          "value": "Cuciture laterali/inferiori"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Imballaggio in cartone o pacco"
+        }
+      ],
+      "details": "Adatto per applicazioni di trasporto da leggere a medie, prodotti al dettaglio, fiere e campagne promozionali.",
+      "speciality": "Combina la comodità di trasporto con la resistenza del tessuto e la presentazione del marchio.",
+      "mfg": "Tessitura, stampa o laminazione, taglio, formazione di maniglie con taglio a D, cucitura, ispezione, imballaggio.",
+      "material": "Tessuto in PP, pellicola laminata se necessario, inchiostro da stampa, filo per cuciture, rinforzo della maniglia se necessario."
+    },
+    "valve": {
+      "name": "Borse con valvola",
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Design di riempimento della valvola, rivestimento opzionale, perforazione, stampa laminata, compatibilità con il fondo del blocco."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Riempimento controllato più rapido, formato di confezione più pulito, adatto per prodotti in polvere e granulari."
+        },
+        {
+          "title": "Dettagli",
+          "body": "La dimensione della valvola, il tipo di valvola, la perforazione, il rivestimento, la capacità e la costruzione devono essere selezionati in base al prodotto e al sistema di riempimento."
+        }
+      ],
+      "cta": "Esplora le borse con valvola",
+      "short": "Sacchetti in PP con riempimento a valvola per prodotti tipo cemento, prodotti chimici, minerali, polveri e materiali da costruzione.",
+      "intro": "Le borse con valvola sono sviluppate per prodotti che richiedono il riempimento attraverso l'apertura della valvola. VIVIDPOLY esporta sacchi con valvola per prodotti tipo cemento, prodotti chimici, minerali, polveri, materiali da costruzione e prodotti industriali.",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Comunemente da 20 kg a 75 kg"
+        },
+        {
+          "key": "Valvola",
+          "value": "Valvola semplice o estesa"
+        },
+        {
+          "key": "Costruzione",
+          "value": "Costruzione con fondo standard o a blocco"
+        },
+        {
+          "key": "Componenti aggiuntivi",
+          "value": "Liner e perforazione opzionali"
+        }
+      ],
+      "benefits": "Riempimento controllato più rapido, formato di confezione più pulito, adatto per prodotti in polvere e granulari.",
+      "details": "La dimensione della valvola, il tipo di valvola, la perforazione, il rivestimento, la capacità e la costruzione devono essere selezionati in base al prodotto e al sistema di riempimento.",
+      "material": "Tessuto in PP, materiale della valvola, rivestimento, strato laminato, filo per cuciture, inchiostro da stampa.",
+      "speciality": "Adatto al riempimento industriale e alla distribuzione per l'esportazione.",
+      "mfg": "Preparazione tessuto, stampa/laminazione, taglio, formazione valvola, perforazione se richiesta, ispezione, imballaggio."
+    },
+    "carry": {
+      "name": "Portare borse",
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Opzioni con taglio a D, ad anello, cucito, perforato, con maniglia laterale o superiore; finitura stampata o laminata; tassello opzionale."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Migliora la visibilità del marchio e fornisce una pratica resistenza al trasporto."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Gli acquirenti possono personalizzare le dimensioni della borsa, lo stile della maniglia, il design della stampa, la laminazione, il tassello, le cuciture e l'imballaggio."
+        }
+      ],
+      "cta": "Esplora le borse per il trasporto",
+      "intro": "Le borse per il trasporto realizzate con materiale intrecciato in PP sono adatte per gli acquirenti che necessitano di borse per il trasporto resistenti, brandibili e pratiche. Le esportazioni VIVIDPOLY trasportano borse per vendita al dettaglio, commercio, shopping, eventi e imballaggi promozionali.",
+      "spec": [
+        {
+          "key": "Materiale",
+          "value": "Materiale PP tessuto o laminato"
+        },
+        {
+          "key": "Stampa",
+          "value": "Stampa flessografica o laminata"
+        },
+        {
+          "key": "Tassello",
+          "value": "Tassello laterale/inferiore"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Imballaggio in cartone/fascio/balla"
+        }
+      ],
+      "short": "Borse da trasporto in tessuto resistenti e personalizzabili per applicazioni di vendita al dettaglio, commercio e promozionali.",
+      "speciality": "Imballaggio resistente con comunicazione del marchio.",
+      "details": "Gli acquirenti possono personalizzare le dimensioni della borsa, lo stile della maniglia, il design della stampa, la laminazione, il tassello, le cuciture e l'imballaggio.",
+      "benefits": "Migliora la visibilità del marchio e fornisce una pratica resistenza al trasporto.",
+      "mfg": "Tessitura, stampa/laminazione, taglio, creazione o applicazione di maniglie, cucitura, controllo, confezionamento.",
+      "material": "Tessuto in PP, pellicola laminata, inchiostro da stampa, filo per cuciture, materiale per manico se necessario."
+    },
+    "laminated": {
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Superficie laminata stampata, base in PP intrecciato, opzioni di strato, tassello, fodera, finestra, perforazione, maniglie."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Marchio migliorato, migliore attrattiva sullo scaffale, identità del prodotto e forte struttura del packaging."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Adatto per carichi da 5 kg a 75 kg a seconda della struttura e della densità del prodotto."
+        }
+      ],
+      "short": "Imballaggi stampati di alta qualità per riso, farina, mangimi, alimenti per animali domestici, fertilizzanti, semi e prodotti al dettaglio.",
+      "cta": "Esplora le borse in PP laminato",
+      "name": "Borse in PP tessuto stampato e laminato",
+      "intro": "Le borse in PP tessuto stampato e laminato combinano la resistenza del tessuto con una presentazione attraente del marchio. VIVIDPOLY esporta queste borse per acquirenti che necessitano di imballaggi stampati di alta qualità per prodotti alimentari, fertilizzanti, mangimi, alimenti per animali domestici, semi, sale, zucchero e prodotti al dettaglio.",
+      "spec": [
+        {
+          "key": "Base",
+          "value": "PP tessuto + strato laminato stampato"
+        },
+        {
+          "key": "Fodera",
+          "value": "Fodera opzionale"
+        },
+        {
+          "key": "Fine",
+          "value": "Finitura tipo lucido/opaco se disponibile"
+        },
+        {
+          "key": "Costume",
+          "value": "Dimensioni e grafica personalizzate"
+        }
+      ],
+      "benefits": "Marchio migliorato, migliore attrattiva sullo scaffale, identità del prodotto e forte struttura del packaging.",
+      "details": "Adatto per carichi da 5 kg a 75 kg a seconda della struttura e della densità del prodotto.",
+      "speciality": "Imballaggio premium per l'esportazione con aspetto incentrato sul marchio.",
+      "material": "Tessuto in PP, pellicola stampata o strato di stampa, strato di laminazione, filo di cucitura, rivestimento/finestra opzionale, inchiostro da stampa.",
+      "mfg": "Tessitura del tessuto, preparazione grafica, stampa, laminazione, taglio, cucitura/trasformazione, ispezione, imballaggio."
+    },
+    "pinch-bottom": {
+      "name": "Borse con fondo pizzicato",
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Fondo pizzicato, superficie laminata stampata, funzione opzionale di apertura facilitata, finestra, tassello, fodera."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Aspetto premium, forma piena e organizzata, presentazione più forte sugli scaffali, migliore comunicazione del marchio."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Ideale per prodotti pronti per la vendita al dettaglio e confezioni di prodotti di marca."
+        }
+      ],
+      "cta": "Esplora le borse con fondo a pizzico",
+      "short": "Buste in PP laminato stampato di alta qualità con presentazione pulita della chiusura per imballaggi pronti per la vendita al dettaglio.",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Normalmente da 5 kg a 50 kg, superiore in base alla revisione del progetto"
+        },
+        {
+          "key": "Costruzione",
+          "value": "PP tessuto laminato stampato"
+        },
+        {
+          "key": "Componenti aggiuntivi",
+          "value": "Finestra/rivestimento/tassello opzionali"
+        }
+      ],
+      "benefits": "Aspetto premium, forma piena e organizzata, presentazione più forte sugli scaffali, migliore comunicazione del marchio.",
+      "intro": "I sacchetti con fondo pizzico in PP tessuto stampato e laminato sono progettati per imballaggi di alta qualità in cui la presentazione pulita della chiusura e l'aspetto del marchio sono importanti. VIVIDPOLY esporta sacchetti con fondo pizzico per cereali alimentari, alimenti per animali domestici, mangimi per animali, sementi e prodotti al dettaglio.",
+      "details": "Ideale per prodotti pronti per la vendita al dettaglio e confezioni di prodotti di marca.",
+      "mfg": "Preparazione tessuto, stampa/laminazione, taglio, formazione fondo pizzicato, finestratura/perforazione opzionale, ispezione, imballaggio.",
+      "material": "Tessuto in PP, pellicola laminata stampata, strato di laminazione, rivestimento, pellicola per finestre, inchiostro da stampa.",
+      "speciality": "Presentazione di chiusura premium per imballaggi per esportazione con marchio."
+    },
+    "block-bottom": {
+      "name": "Borse con fondo a blocchi",
+      "group": "Borsa in tessuto",
+      "intro": "I sacchetti con fondo a blocchi in PP tessuto stampato e laminato forniscono una forma più stabile e un migliore aspetto impilabile. VIVIDPOLY esporta sacchi a fondo bloccato per fertilizzanti, alimenti per animali domestici, mangimi per animali, cereali, minerali, prodotti chimici e imballaggi per la vendita al dettaglio.",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Struttura del fondo a blocchi, finitura laminata stampata, bocca aperta o parte superiore con valvola, fodera, perforazione."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Migliore forma eretta, migliore presentazione dei pallet, forte superficie di branding e maneggevolezza più semplice."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Adatto per prodotti in cui la presentazione visiva e le prestazioni di impilamento contano."
+        }
+      ],
+      "short": "Buste in PP laminato stampato dalla forma stabile per una migliore impilabilità, esposizione e presentazione per l'esportazione.",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Da 5 kg a 75 kg a seconda della costruzione"
+        },
+        {
+          "key": "Formato",
+          "value": "Blocca il formato inferiore"
+        },
+        {
+          "key": "Superiore",
+          "value": "Valvola opzionale"
+        },
+        {
+          "key": "Componenti aggiuntivi",
+          "value": "Liner, perforazione, stampa laminata"
+        }
+      ],
+      "cta": "Esplora le borse con fondo a blocchi",
+      "benefits": "Migliore forma eretta, migliore presentazione dei pallet, forte superficie di branding e maneggevolezza più semplice.",
+      "details": "Adatto per prodotti in cui la presentazione visiva e le prestazioni di impilamento contano.",
+      "mfg": "Produzione tessuto, stampa/laminazione, taglio, formatura fondo blocco, finitura testa/valvola, ispezione, imballaggio.",
+      "speciality": "Presentazione pronta per l'esportazione con forma stabile di sacchetto pieno.",
+      "material": "Tessuto in PP, pellicola laminata, inchiostro da stampa, rivestimento, materiale per valvole, materiali di formatura/cucitura."
+    },
+    "gusset": {
+      "name": "Borse a soffietto con fondo a blocchi",
+      "group": "Borsa in tessuto",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Fondo a blocchi con tassello, esterno laminato stampato, profondità tassello personalizzata, finestra, fodera, perforazione."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Volume utilizzabile più elevato, forma più forte, area di branding migliorata e migliore presentazione visiva."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Utile quando gli acquirenti necessitano di borse stampate di alta qualità con volume extra e forma stabile."
+        }
+      ],
+      "short": "Buste in PP laminato stampato in grandi volumi con supporto a soffietto e forte area di branding.",
+      "benefits": "Volume utilizzabile più elevato, forma più forte, area di branding migliorata e migliore presentazione visiva.",
+      "spec": [
+        {
+          "key": "Capacità",
+          "value": "Da 5 kg a 75 kg in base alla densità del prodotto e al design"
+        },
+        {
+          "key": "Tassello",
+          "value": "Tassello laterale/fondo/blocco fondo"
+        },
+        {
+          "key": "Componenti aggiuntivi",
+          "value": "Valvola, fodera, finestra opzionali"
+        }
+      ],
+      "cta": "Esplora le borse a soffietto",
+      "intro": "Le borse a soffietto con fondo a blocchi in tessuto PP stampato e laminato combinano una struttura stabile del fondo a blocchi con un volume supportato da tasselli. VIVIDPOLY esporta questi sacchetti per mangimi per animali, alimenti per animali domestici, fertilizzanti, cereali, semi e prodotti industriali o al dettaglio ad alto volume.",
+      "speciality": "Combina volume, presentazione e praticità dell'imballaggio per l'esportazione.",
+      "details": "Utile quando gli acquirenti necessitano di borse stampate di alta qualità con volume extra e forma stabile.",
+      "mfg": "Tessitura, stampa/laminazione, taglio, formazione del tassello, formazione del fondo del blocco, aggiunta di dettagli, ispezione, imballaggio.",
+      "material": "Tessuto in PP, pellicola laminata stampata, fodera, pellicola per finestre, struttura a tassello, inchiostro da stampa, materiali per cucitura/formatura."
+    },
+    "shopping": {
+      "group": "Borsa in tessuto",
+      "name": "Borse per la spesa (tessute)",
+      "features": [
+        {
+          "title": "Caratteristiche",
+          "body": "Struttura tessuta in stile riutilizzabile, maniglie personalizzate, stampa flessografica o laminata, tassello, finitura adatta alla vendita al dettaglio."
+        },
+        {
+          "title": "Vantaggi",
+          "body": "Forza di trasporto pratica, promozione del marchio, presentazione professionale al dettaglio e visibilità ripetuta."
+        },
+        {
+          "title": "Dettagli",
+          "body": "Adatto per rivenditori, supermercati, fiere, promozioni aziendali e campagne commerciali."
+        }
+      ],
+      "cta": "Esplora le borse della spesa",
+      "short": "Borse per la spesa in tessuto per catene di vendita al dettaglio, supermercati, fiere e campagne promozionali.",
+      "intro": "Le borse per la spesa in tessuto sono borse per il trasporto in tessuto PP utilizzate per la vendita al dettaglio, supermercati, eventi, fiere e imballaggi promozionali. VIVIDPOLY esporta borse per la spesa in tessuto per acquirenti che necessitano di imballaggi per il trasporto resistenti, riutilizzabili e brandizzabili.",
+      "spec": [
+        {
+          "key": "Misurare",
+          "value": "Dimensioni personalizzate"
+        },
+        {
+          "key": "Maniglie",
+          "value": "Manici con taglio a D/asola/cuciti/perforati"
+        },
+        {
+          "key": "Tassello",
+          "value": "Tassello laterale o inferiore"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Imballaggio in cartone/fascio/balla"
+        }
+      ],
+      "details": "Adatto per rivenditori, supermercati, fiere, promozioni aziendali e campagne commerciali.",
+      "mfg": "Preparazione tessuto, stampa/laminazione, taglio, formatura/applicazione maniglie, cucitura, ispezione, imballaggio.",
+      "speciality": "Presentazione personalizzata del marchio per acquirenti di esportazioni al dettaglio e promozionali.",
+      "benefits": "Forza di trasporto pratica, promozione del marchio, presentazione professionale al dettaglio e visibilità ripetuta.",
+      "material": "Tessuto in PP, pellicola stampata laminata, filo per cuciture, materiale per manico, inchiostri da stampa."
+    },
+    "fabric": {
+      "name": "Tessuto in PP",
+      "group": "Tessuto",
+      "cta": "Esplora il tessuto in PP",
+      "features": [
+        {
+          "title": "Esportazione pronta",
+          "body": "Fornito per acquirenti internazionali con opzioni di dimensionamento e imballaggio personalizzate."
+        },
+        {
+          "title": "Specifica personalizzata",
+          "body": "Larghezza, GSM, colore e lunghezza del rotolo o del taglio possono essere pianificati su ordinazione."
+        },
+        {
+          "title": "Focus sulla qualità",
+          "body": "Tessitura e finitura coerenti per uso industriale e agricolo."
+        }
+      ],
+      "intro": "Rotoli di tessuto in PP e lunghezze tagliate per uso industriale, agricolo e di conversione.",
+      "short": "Rotoli di tessuto in PP e lunghezze tagliate per uso industriale, agricolo e di conversione.",
+      "spec": [
+        {
+          "key": "Formato",
+          "value": "Personalizzato su richiesta"
+        },
+        {
+          "key": "Materiale",
+          "value": "Tessuto in PP"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Imballaggio per l'esportazione"
+        }
+      ],
+      "benefits": "Rotoli di tessuto in PP e lunghezze tagliate per uso industriale, agricolo e di conversione.",
+      "speciality": "Tessuto in PP di VIVIDPOLY per acquirenti globali.",
+      "material": "Materiale tessuto in PP e additivi specifici dell'acquirente ove richiesto.",
+      "details": "Condividi la larghezza, il GSM, il colore, la quantità e la destinazione richiesti per un preventivo.",
+      "mfg": "Tessitura, finitura, ispezione e imballaggio per l'esportazione."
+    },
+    "weed-barrier": {
+      "name": "Barriera contro le erbacce",
+      "group": "Barriera contro le erbacce",
+      "features": [
+        {
+          "title": "Esportazione pronta",
+          "body": "Fornito per acquirenti internazionali con opzioni di dimensionamento e imballaggio personalizzate."
+        },
+        {
+          "title": "Specifica personalizzata",
+          "body": "Larghezza, GSM, colore e lunghezza del rotolo o del taglio possono essere pianificati su ordinazione."
+        },
+        {
+          "title": "Focus sulla qualità",
+          "body": "Tessitura e finitura coerenti per uso industriale e agricolo."
+        }
+      ],
+      "short": "Tessuto barriera contro le erbacce in PP per applicazioni paesaggistiche, agricole e di copertura del terreno.",
+      "spec": [
+        {
+          "key": "Formato",
+          "value": "Personalizzato su richiesta"
+        },
+        {
+          "key": "Materiale",
+          "value": "Tessuto in PP"
+        },
+        {
+          "key": "Imballaggio",
+          "value": "Imballaggio per l'esportazione"
+        }
+      ],
+      "benefits": "Tessuto barriera contro le erbacce in PP per applicazioni paesaggistiche, agricole e di copertura del terreno.",
+      "details": "Condividi la larghezza, il GSM, il colore, la quantità e la destinazione richiesti per un preventivo.",
+      "material": "Materiale tessuto in PP e additivi specifici dell'acquirente ove richiesto.",
+      "mfg": "Tessitura, finitura, ispezione e imballaggio per l'esportazione.",
+      "cta": "Esplora la barriera contro le infestanti",
+      "intro": "Tessuto barriera contro le erbacce in PP per applicazioni paesaggistiche, agricole e di copertura del terreno.",
+      "speciality": "Barriera anti-erbacce di VIVIDPOLY per acquirenti globali."
+    }
+  },
+  "markets": [
+    "U.S.A.",
+    "Canada",
+    "Australia",
+    "Europa",
+    "Regno Unito",
+    "Africa",
+    "Tailandia",
+    "Arabia Saudita",
+    "America Latina",
+    "Nuova Zelanda"
+  ],
+  "packedProductOptions": [
+    "Riso",
+    "Fertilizzante",
+    "Alimentazione animale",
+    "Cemento",
+    "Merci al dettaglio"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 chilogrammi",
+      "10 chilogrammi",
+      "15 chilogrammi",
+      "20 chilogrammi",
+      "25 chilogrammi",
+      "30 chilogrammi",
+      "40 chilogrammi",
+      "50 chilogrammi",
+      "60 chilogrammi",
+      "75 chilogrammi",
+      "Costume"
+    ],
+    "printing": [
+      "Pianura",
+      "Stampa flessografica",
+      "Laminato stampato",
+      "Multicolore"
+    ],
+    "addons": [
+      "Fodera",
+      "Tassello",
+      "Maniglia",
+      "Finestra",
+      "Perforazione",
+      "Valvola",
+      "Pizzico",
+      "Blocca il fondo"
+    ],
+    "packing": [
+      "Balla",
+      "Cartone",
+      "Pallet",
+      "Imballaggio per l'esportazione"
+    ]
+  }
+}

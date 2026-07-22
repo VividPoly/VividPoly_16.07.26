@@ -3,7 +3,7 @@
 import VpPhotoSlot from '@/components/vividpoly/VpPhotoSlot';
 
 type VpKnackAboutSectionProps = {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   subtitle: string;
   paragraphs: string[];
@@ -41,7 +41,7 @@ export default function VpKnackAboutSection({
           />
         </div>
         <div className="vp-about-section-copy">
-          <p className="vp-about-section-eyebrow">{eyebrow}</p>
+          {eyebrow ? <p className="vp-about-section-eyebrow">{eyebrow}</p> : null}
           <h2 id="vp-about-section-title" className="vp-about-section-title">
             {title}
           </h2>

@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import VividPolyResponsiveShell from "@/components/vividpoly/VividPolyResponsiveShell";
+import { LocaleProvider } from "@/lib/i18n/LocaleProvider";
 
 const VividPolyView = dynamic(
   () => import("@/components/vividpoly/VividPolyView"),
@@ -19,8 +20,10 @@ const VividPolyView = dynamic(
 
 export default function VividPolyClient() {
   return (
-    <VividPolyResponsiveShell>
-      <VividPolyView />
-    </VividPolyResponsiveShell>
+    <LocaleProvider>
+      <VividPolyResponsiveShell>
+        <VividPolyView />
+      </VividPolyResponsiveShell>
+    </LocaleProvider>
   );
 }

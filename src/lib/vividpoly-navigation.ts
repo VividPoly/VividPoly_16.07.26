@@ -21,16 +21,15 @@ export function navPayload(state: VividPolyState): NavHistoryPayload {
 }
 
 export function navUrl(state: VividPolyState): string {
-  const base = typeof window !== 'undefined' ? window.location.pathname : '/';
-  return `${base}${buildHash(state)}`;
+  return buildPath(state);
 }
 
-/** Reconstruct the screen state from a URL hash so a refresh keeps the current
-    page instead of resetting to home. Returns null for the home hash so callers
-    fall back to the default initial state. */
-export function parseHash(hash: string): Partial<VividPolyState> | null {
-  if (typeof hash !== 'string') return null;
-  const raw = hash.replace(/^#/, '').trim();
+/** Reconstruct the screen state from the URL pathname so a refresh keeps the
+    current page instead of resetting to home. Returns null for the root path so
+    callers fall back to the default initial state. */
+export function parsePath(pathname: string): Partial<VividPolyState> | null {
+  if (typeof pathname !== 'string') return null;
+  const raw = pathname.replace(/^\/+/, '').replace(/\/+$/, '').trim();
   if (!raw) return null;
 
   const parts = raw.split('/').filter(Boolean);
@@ -68,28 +67,28 @@ export function parseHash(hash: string): Partial<VividPolyState> | null {
   }
 }
 
-function buildHash(state: VividPolyState): string {
+function buildPath(state: VividPolyState): string {
   switch (state.screen) {
     case 'home':
-      return '#';
+      return '/';
     case 'catalogue':
-      return `#catalogue/${state.cat}`;
+      return `/catalogue/${state.cat}`;
     case 'pdp':
-      return `#product/${state.pid}`;
+      return `/product/${state.pid}`;
     case 'sample':
-      return `#sample/${state.samplePid}/${state.sampleStep}`;
+      return `/sample/${state.samplePid}/${state.sampleStep}`;
     case 'quote':
-      return '#quote';
+      return '/quote';
     case 'about':
-      return '#about';
+      return '/about';
     case 'careers':
-      return '#careers';
+      return '/careers';
     case 'contact':
-      return '#contact';
+      return '/contact';
     case 'blog':
-      return '#blog';
+      return '/blog';
     default:
-      return '#';
+      return '/';
   }
 }
 

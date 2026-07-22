@@ -1,0 +1,1747 @@
+{
+  "topBar": {
+    "selectLanguage": "Pilih bahasa",
+    "career": "Kerjaya"
+  },
+  "nav": {
+    "home": "Laman Utama",
+    "products": "Produk",
+    "about": "Tentang Kami",
+    "industryServed": "Industri Dilayani",
+    "resources": "Berita dan Kemas Kini",
+    "career": "Kerjaya",
+    "contact": "Hubungi Kami",
+    "byIndustryUse": "Mengikut Industri / Penggunaan",
+    "viewAllByIndustry": "Lihat semua produk mengikut industri",
+    "buyerResourcesLead": "Panduan pembeli, Soalan Lazim dan terkini daripada VIVIDPOLY.",
+    "byProductType": "Mengikut Jenis Produk",
+    "blogTitle": "Blog",
+    "themeLight": "Tukar kepada mod cahaya",
+    "themeDark": "Tukar kepada mod gelap",
+    "buyerResourcesEyebrow": "Berita dan kemas kini",
+    "viewAllByType": "Lihat semua produk mengikut jenis",
+    "openMenu": "Buka menu",
+    "faqsTitle": "Soalan Lazim",
+    "closeMenu": "Tutup menu",
+    "mainNav": "Navigasi utama",
+    "blogDesc": "Panduan pembeli tentang jenis beg PP, saiz, dan pertanyaan eksport.",
+    "getQuoteShort": "Dapatkan sebut harga",
+    "logoHome": "VIVIDPOLY, pergi ke laman utama",
+    "faqsDesc": "Jawapan tentang kapasiti, percetakan, pelapik, dan butiran petikan.",
+    "resourcesMenu": "Menu Berita dan Kemas Kini",
+    "mobileNav": "Navigasi mudah alih",
+    "industryMenu": "Menu Perkhidmatan Industri",
+    "productsMenu": "Menu produk",
+    "mobileByProductType": "Mengikut jenis produk",
+    "mobileByIndustry": "Mengikut industri / kegunaan"
+  },
+  "fab": {
+    "label": "Pertanyaan",
+    "mobileLabel": "Tanya",
+    "ariaLabel": "Buka borang pertanyaan"
+  },
+  "common": {
+    "getQuote": "Dapatkan Sebut Harga",
+    "submitEnquiry": "Hantar Pertanyaan",
+    "viewAll": "Lihat Semua",
+    "backToHome": "Kembali ke Laman Utama",
+    "back": "belakang",
+    "previous": "Sebelumnya",
+    "next": "Seterusnya",
+    "select": "Pilih",
+    "selectCountry": "Pilih negara",
+    "optional": "pilihan",
+    "custom": "Adat",
+    "none": "tiada",
+    "clearAllFilters": "Kosongkan semua penapis",
+    "viewDetails": "Lihat Butiran",
+    "filters": "Penapis",
+    "recommended": "Disyorkan",
+    "specification": "Spesifikasi",
+    "relatedProducts": "Produk berkaitan",
+    "selectEnquiryType": "Pilih jenis pertanyaan",
+    "clearFilters": "Kosongkan penapis",
+    "of": "daripada",
+    "close": "tutup",
+    "filtered": "(ditapis)",
+    "chatExportTeam": "Sembang dengan Pasukan Eksport",
+    "selectBagType": "Pilih jenis beg",
+    "productsCount": "{count} produk",
+    "noProductsMatch": "Tiada produk yang sepadan dengan penapis anda."
+  },
+  "siteCopy": {
+    "heroHeadline": "Beg PP untuk Pembeli Global",
+    "heroLead": "Beg PP, beg tenunan, beg injap dan pembungkusan eksport tersuai dari India, dibina untuk pengimport, pengedar dan pembeli industri di seluruh dunia.",
+    "heroIsoLabel": "Diperakui ISO",
+    "heroIecLabel": "Diperakui IEC",
+    "heroCtaSecondary": "Lihat Jenis Produk",
+    "heroHeadlineLine2": "Pembeli Global",
+    "heroHeadlineLine1": "Beg PP untuk",
+    "heroHeadlineAccent": "Pembeli Global",
+    "heroHeadlinePrefix": "Beg PP untuk",
+    "heroCtaSecondaryShort": "Produk",
+    "searchPlaceholder": "Cari jenis beg, produk atau industri (cth. beg beras, beg simen)",
+    "heroCtaPrimary": "WhatsApp",
+    "heroCtaEnquiry": "Siasatan",
+    "heroCtaWhatsApp": "WhatsApp",
+    "headerQuoteLabel": "petikan",
+    "heroIsoLabelShort": "ISO",
+    "brandTagline": "Penyelesaian Pembungkusan Berkualiti",
+    "heroLeadShort": "Pembungkusan eksport dibina untuk pembeli global.",
+    "heroIecLabelShort": "IEC",
+    "introEyebrow": "Apa yang kita eksport",
+    "introHighlights": [
+      {
+        "label": "Kapasiti",
+        "value": "5 hingga 75 kg"
+      },
+      {
+        "label": "asal usul",
+        "value": "eksport India"
+      },
+      {
+        "label": "Fokus",
+        "value": "Cetak & pembungkusan tersuai"
+      }
+    ],
+    "heroRail": "INDIA · EKSPORT GLOBAL",
+    "marketsStrip": "Pasaran Eksport Utama: Amerika/AS, Kanada, Australia, Eropah, United Kingdom, Afrika, Thailand, Arab Saudi, Amerika Latin, New Zealand dan pasaran import global yang lain.",
+    "intro1": "VIVIDPOLY mengeksport Beg PP, beg tenunan PP, beg PP tenunan bercetak dan berlamina, beg bawah picit, beg bawah blok, beg gusset, beg injap, beg pembawa, beg potong D dan beg beli-belah tenunan dari India ke pasaran global. Penyelesaian pembungkusan kami direka untuk pengimport, pengedar, pemproses bijirin makanan, syarikat baja, jenama makanan haiwan, pembekal kimia, perniagaan bahan binaan, rantai runcit dan pembeli pembungkusan promosi.",
+    "homeAboutEyebrow": "Tentang kami",
+    "homeAboutTitle": "Rakan Kongsi Pembungkusan Eksport Global",
+    "homeAboutCtaType": "Beli-belah mengikut Jenis Produk",
+    "homeAboutCtaIndustry": "Beli mengikut Industri",
+    "homeProductsEyebrow": "Produk Kami",
+    "introTitle": "Beg PP untuk pembeli global",
+    "homeProductsTitle": "Apa yang Kami Tawarkan",
+    "homeValueProps": [
+      {
+        "description": "Kapasiti, pembinaan, percetakan dan pembungkusan disesuaikan dengan produk dan pasaran destinasi anda.",
+        "title": "Spesifikasi Boleh Disesuaikan"
+      },
+      {
+        "title": "Sampel Sebelum Pesanan Pukal",
+        "description": "Semak kualiti, saiz dan kemasan beg sebelum mengesahkan kuantiti eksport penuh."
+      },
+      {
+        "description": "Bale, palet, dan pembungkusan kadbod dirancang untuk penghantaran antarabangsa yang selamat.",
+        "title": "Pembungkusan Eksport Termasuk"
+      }
+    ],
+    "intro2": "Daripada pek runcit 5 kg kepada beg industri tugas berat 75 kg, VIVIDPOLY membantu pembeli memilih pembinaan beg yang betul, kaedah percetakan, pelapik, pemegang, gusset, jahitan, gaya pemotongan dan format pembungkusan eksport mengikut penggunaan produk dan pasaran destinasi.",
+    "homeValuePropsEyebrow": "Mengapa pembeli memilih VIVIDPOLY",
+    "homeBrowseHeading": "Semak imbas beg PP mengikut kategori",
+    "homeProductsLead": "Beg PP tenunan bercetak dan berlamina, beg injap, beg mulut terbuka, dan pembungkusan eksport tersuai dari India untuk pembeli pertanian, perindustrian dan runcit di seluruh dunia.",
+    "buyerRequirementLabel": "Keperluan Pembeli",
+    "buyerResponseLabel": "Respon VIVIDPOLY",
+    "productUsesLearnMore": "Hantar pertanyaan",
+    "productUseCol": "Penggunaan Produk",
+    "buyerSectionTitle": "Pembungkusan Eksport, Dibina untuk Pembeli Global",
+    "finalCtaBody": "Kongsi jenis beg anda, kapasiti, keperluan percetakan, kuantiti dan destinasi. VIVIDPOLY akan menyemak pertanyaan anda dan membuat susulan dengan pilihan praktikal.",
+    "finalCtaButton": "Hantar pertanyaan",
+    "faqSectionTitle": "Soalan lazim",
+    "productUsesEmptyHint": "Tuding atau pilih penggunaan produk untuk melihat jenis beg yang disyorkan.",
+    "finalCtaTitle": "Bersedia untuk membincangkan keperluan pembungkusan anda?",
+    "productUsesIntro": "Beg PP VIVIDPOLY sesuai untuk pelbagai kategori produk. Beg yang betul harus dipilih berdasarkan berat produk, ketumpatan, proses pengisian, kepekaan kelembapan, keperluan penjenamaan, keadaan pengendalian dan standard pembungkusan eksport.",
+    "trustMessage": "VIVIDPOLY dibina untuk pembeli import global yang memerlukan komunikasi profesional, spesifikasi produk yang jelas, pilihan pembungkusan tersuai dan sokongan eksport responsif dari India. Kandungan beg PP kami berstruktur untuk membantu pembeli membandingkan jenis beg, memahami kegunaan produk, menyemak ciri tambahan dan menyerahkan keperluan sebut harga yang lengkap.",
+    "catalogueTypeSub": "VIVIDPOLY mengeksport beg PP dari India untuk perniagaan yang memerlukan pembungkusan yang kukuh, boleh disesuaikan dan sedia eksport. Beg PP kami boleh dibangunkan untuk kapasiti 5 kg hingga 75 kg bergantung pada ketumpatan produk, saiz beg, pembinaan, kekuatan fabrik, laminasi, pelapik, jahitan, gusset dan keperluan pengisian.",
+    "recommendedBagsCol": "Jenis Beg yang Disyorkan",
+    "catalogueGuideProductType": "Pilih dari sini",
+    "catalogueGuideUseSort": "Isih mengikut industri di sini",
+    "shopByUseLabel": "saya sedang mengemas…",
+    "contactIntro": "Gunakan halaman ini untuk menghantar pertanyaan produk atau soalan umum. Pilih jenis beg yang anda minati, atau pilih Pertanyaan Umum jika anda masih meneroka pilihan.",
+    "quoteContactStepTitle": "Butiran hubungan anda",
+    "quotePageTitle": "Kongsi keperluan beg anda",
+    "quoteIntro2": "Jawab beberapa soalan pada satu masa. Kami akan membimbing anda melalui butiran jenis beg, saiz, percetakan dan penghantaran.",
+    "quoteIntro1": "Sila kongsi keperluan beg PP anda supaya pasukan eksport VIVIDPOLY boleh mengesyorkan jenis produk, pembinaan, saiz, kapasiti, cetakan, ciri tambahan dan format pembungkusan eksport yang betul.",
+    "catalogueUseSub": "Beg PP VIVIDPOLY sesuai untuk pelbagai kategori produk. Beg yang betul harus dipilih berdasarkan berat produk, ketumpatan, proses pengisian, kepekaan kelembapan, keperluan penjenamaan, keadaan pengendalian dan standard pembungkusan eksport.",
+    "quoteLeadCapturedTitle": "Pertanyaan didaftarkan",
+    "quoteContactSubmitLabel": "Daftar pertanyaan saya",
+    "quotePageEyebrow": "Siasatan eksport",
+    "quoteContactStepLead": "Kongsi bagaimana kami boleh menghubungi anda. Kami mendaftarkan pertanyaan anda dengan segera dan membuat susulan di WhatsApp.",
+    "quoteLeadCapturedOptionalTitle": "Inginkan petikan yang lebih pantas dan tepat?",
+    "quoteSubmitNote": "Apabila anda berpuas hati dengan butiran di atas, serahkan. Pasukan eksport kami akan menyemak segala-galanya dan membuat susulan di WhatsApp.",
+    "quoteLeadCapturedLead": "Pakar eksport VIVIDPOLY akan menghubungi anda melalui WhatsApp tidak lama lagi, biasanya dalam masa beberapa jam.",
+    "quoteLeadCapturedOptionalBody": "Jika anda mempunyai sedikit masa, tambahkan spesifikasi beg anda sekarang. Ini membantu kami mengesyorkan jenis, saiz dan cetakan beg PP yang betul sebelum kami membuat panggilan, jadi perbualan pertama anda sudah berguna.",
+    "quoteLeadCapturedSkipCta": "Saya sudah selesai buat masa ini",
+    "quoteLeadCapturedContinueCta": "Tambah spesifikasi beg",
+    "quoteLeadOnlySuccessBody": "Kami akan menghubungi anda melalui WhatsApp tidak lama lagi. Anda boleh berkongsi butiran beg apabila kami menghubungi anda, atau kembali pada bila-bila masa untuk melengkapkan spesifikasi anda.",
+    "sampleBillIntro": "Semak spesifikasi sampel dan caj di bawah. Sampel dihantar selepas pengesahan pembayaran.",
+    "samplePaymentIntro": "Pindahkan jumlah sampel menggunakan butiran di bawah. Gunakan rujukan supaya kami boleh memadankan pembayaran anda.",
+    "samplePaymentTitle": "Butiran pindahan bank",
+    "samplePaymentConfirmCta": "Sahkan pindahan wang melalui bank",
+    "sampleSuccessTitle": "Contoh pesanan diterima",
+    "sampleBillTitle": "Contoh bil pesanan",
+    "blogLeadBody": "Hantar pertanyaan produk atau pertanyaan umum pada halaman hubungan kami. Pasukan kami akan menyemak keperluan anda dan membuat susulan dengan bimbingan praktikal.",
+    "blogLeadCta": "Hantar pertanyaan",
+    "quoteSuccessBody": "Kami akan menghubungi anda semula melalui telefon atau WhatsApp dalam masa 12 jam.",
+    "quoteSuccessTitle": "Pertanyaan diterima",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Pasaran Eksport"
+      },
+      {
+        "label": "Negara yang Dilayani",
+        "value": "9+"
+      },
+      {
+        "label": "Kapasiti Bulanan",
+        "value": "750 MT"
+      },
+      {
+        "label": "Gred Eksport"
+      }
+    ],
+    "sampleSuccessBody": "terima kasih. Kami akan mengesahkan pembayaran anda dan mengesahkan pengeluaran sampel dan garis masa penghantaran melalui e-mel.",
+    "blogIntro": "Ditulis untuk pembeli antarabangsa yang membandingkan pembekal beg PP, mempelajari tentang jenis beg, menyemak spesifikasi dan menyediakan pertanyaan eksport.",
+    "blogLeadTitle": "Ada soalan pembungkusan?",
+    "homeCertsHeading": "Pensijilan",
+    "blogReadArticle": "Baca artikel",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY memberi perkhidmatan kepada pembeli import global dengan komunikasi profesional, spesifikasi produk yang jelas, pilihan pembungkusan tersuai dan sokongan eksport yang responsif. Kapasiti, pembinaan, percetakan dan pembungkusan disesuaikan dengan pasaran produk dan destinasi anda supaya setiap pesanan sepadan dengan proses pengisian, keperluan penjenamaan dan keadaan penghantaran anda.",
+      "Minta sampel sebelum membuat kuantiti penuh. Bale, palet dan pembungkusan karton dirancang untuk penghantaran antarabangsa yang selamat merentas sepuluh binaan PP tenunan, daripada mulut terbuka kepada format berlamina premium, dipadankan dengan beras, baja, simen, makanan dan kegunaan runcit."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY ialah pengeksport beg PP yang berpangkalan di India yang menyediakan perkhidmatan pengimport global yang memerlukan komunikasi profesional, spesifikasi produk yang jelas dan sokongan eksport yang boleh dipercayai. Kami membekalkan mulut terbuka, berjahit, D-cut, injap, bawa, berlamina, bahagian bawah picit, bahagian bawah blok, gusset dan beg beli-belah daripada 5 kg hingga 75 kg, dengan pilihan cetakan flexo atau berlamina untuk persembahan jenama. Jenis produk, saiz, kapasiti, cetakan, laminasi, pelapik, gusset, pemegang dan butiran pembungkusan semuanya ditangkap terlebih dahulu sebelum sebarang sebut harga dikeluarkan."
+    ],
+    "homeBandCta": "Minta Sebut Harga",
+    "buyerSectionCta": "Ketahui Lebih Lanjut",
+    "homeBandEyebrow": "Eksport sedia",
+    "homeBandTitle": "Dipercayai oleh pembeli di 70+ negara",
+    "homeBandBody": "Fabrik PP tenunan dalaman, percetakan dan jahitan bermakna spesifikasi anda dikawal dari gulungan ke beg siap, kemudian bale, palet atau karton dibungkus untuk penghantaran antarabangsa yang selamat."
+  },
+  "footer": {
+    "company": "Syarikat",
+    "productTypes": "Jenis Produk",
+    "buyerHelp": "Bantuan Pembeli",
+    "contact": "Hubungi",
+    "backToTop": "Kembali ke atas",
+    "links": {
+      "home": "Rumah",
+      "contact": "Hubungi Kami",
+      "about": "Tentang",
+      "productUses": "Kegunaan Produk",
+      "getQuote": "Dapatkan Sebut Harga"
+    },
+    "backToTopAria": "Kembali ke bahagian atas halaman",
+    "aboutBlurb": "VIVIDPOLY mengeksport beg PP dari India untuk pembeli global yang memerlukan kapasiti disesuaikan, percetakan, pelapik dan pembungkusan sedia eksport."
+  },
+  "meta": {
+    "description": "VIVIDPOLY mengeksport beg PP dari India untuk pembeli global.",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Pengeksport Beg PP dari India",
+    "loading": "Memuatkan VIVIDPOLY…",
+    "title": "VIVIDPOLY: Pengeksport Beg PP dari India"
+  },
+  "enquiryModal": {
+    "close": "Tutup borang pertanyaan",
+    "title": "Borang Pertanyaan"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Pertanyaan Umum"
+    },
+    {
+      "label": "Beg Mulut Terbuka - OMB"
+    },
+    {
+      "label": "Beg Berjahit Atas & Bawah - TBS"
+    },
+    {
+      "label": "Beg Tenun PP D-Cut - DCB"
+    },
+    {
+      "label": "Beg Injap - VB"
+    },
+    {
+      "label": "Membawa Beg - CB"
+    },
+    {
+      "label": "Beg PP Tenunan Berlapis Bercetak - LWB"
+    },
+    {
+      "label": "Beg Bawah Cubit - PBB"
+    },
+    {
+      "label": "Beg Bawah Blok - BBB"
+    },
+    {
+      "label": "Beg Gusset Bawah Blok - BGB"
+    },
+    {
+      "label": "Beg Beli-belah Tenunan - WSB"
+    },
+    {
+      "label": "Kain Tenun PP"
+    },
+    {
+      "label": "Penghalang Rumpai"
+    }
+  ],
+  "emailCompose": {
+    "toLabel": "Kepada",
+    "fromLabel": "e-mel anda",
+    "nameLabel": "nama awak",
+    "subjectLabel": "Subjek",
+    "messageLabel": "Mesej",
+    "send": "Hantar mesej",
+    "sending": "Menghantar…",
+    "title": "E-mel VIVIDPOLY",
+    "emailInvalid": "Masukkan alamat e-mel yang sah.",
+    "defaultSubject": "Eksport pertanyaan daripada vividpoly.com",
+    "messageRequired": "Tambah mesej ringkas sebelum menghantar.",
+    "close": "Tutup panel karang",
+    "sendSuccess": "Mesej dihantar. Pasukan kami akan menghubungi anda tidak lama lagi.",
+    "hint": "Mesej anda dihantar terus kepada pasukan eksport kami. Kami akan membalas alamat e-mel yang anda masukkan di atas.",
+    "sendError": "Kami tidak dapat menghantar mesej anda. Sila cuba lagi atau hubungi kami terus.",
+    "sendUnavailable": "Penghantaran e-mel belum dikonfigurasikan lagi. Sila gunakan telefon atau WhatsApp untuk menghubungi kami."
+  },
+  "home": {
+    "shopByProductType": "Beli-belah mengikut Jenis Produk",
+    "shopByIndustry": "Beli mengikut Industri",
+    "productTypes": "Jenis produk",
+    "shopByIndustryDesc": "Padankan jenis beg dengan beras, baja, simen, makanan dan kegunaan runcit.",
+    "faqsEyebrow": "Soalan Lazim",
+    "shopByProductTypeDesc": "Sepuluh binaan PP tenunan dari mulut terbuka kepada format berlamina premium.",
+    "swipeIndustries": "Leret untuk menyemak imbas industri",
+    "valuePropsSlides": "Mengapa pembeli memilih slaid VIVIDPOLY",
+    "buyerNeed": "Pembeli memerlukan {index}",
+    "howWeHelpBuyers": "Bagaimana kami membantu pembeli",
+    "productUses": "Kegunaan produk",
+    "swipeCards": "Leret kad",
+    "slideOf": "{current} daripada {total}",
+    "previousProducts": "Produk terdahulu",
+    "nextProducts": "Produk seterusnya",
+    "buyerPagination": "Pembeli memerlukan penomboran",
+    "buyerRequirements": "Keperluan pembeli",
+    "buyerCarousel": "Karusel keperluan pembeli"
+  },
+  "catalogue": {
+    "titleByType": "Beli-belah mengikut Jenis Produk",
+    "capacity": "Kapasiti",
+    "titleByUse": "Beli mengikut Industri / Penggunaan",
+    "productType": "Jenis Produk",
+    "sortAllProducts": "Semua produk",
+    "breadcrumbType": "Produk / Mengikut Jenis Produk",
+    "breadcrumbUse": "Produk / Mengikut Industri & Penggunaan"
+  },
+  "pdp": {
+    "keyFeatures": "Ciri-ciri utama",
+    "benefits": "Faedah",
+    "getQuoteFor": "Dapatkan Sebut Harga untuk {productName}",
+    "productionMaterials": "Pengeluaran & bahan",
+    "customization": "Butiran penyesuaian",
+    "whyBuyersChoose": "Mengapa pembeli memilih beg ini",
+    "manufacturingProcess": "Proses pembuatan",
+    "materialCombination": "Gabungan bahan",
+    "speciality": "keistimewaan",
+    "trustBadges": [
+      "Spesifikasi Boleh Disesuaikan",
+      "Sampel Tersedia Sebelum Pesanan Pukal",
+      "Pembungkusan Eksport Termasuk",
+      "Pasukan Eksport Responsif"
+    ],
+    "productImage": "Imej produk {index}"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "pageEyebrow": "TENTANG KAMI",
+    "ctaSecondary": "Beli-belah mengikut Jenis Produk",
+    "pageTitle": "Rakan Kongsi Pembungkusan Eksport Global",
+    "p1": "VIVIDPOLY memberi perkhidmatan kepada pembeli import global dengan komunikasi profesional, spesifikasi produk yang jelas, pilihan pembungkusan tersuai dan sokongan eksport yang responsif. Kapasiti, pembinaan, percetakan dan pembungkusan disesuaikan dengan pasaran produk dan destinasi anda supaya setiap pesanan sepadan dengan proses pengisian, keperluan penjenamaan dan keadaan penghantaran anda.",
+    "p2": "Minta sampel sebelum membuat kuantiti penuh. Bale, palet dan pembungkusan karton dirancang untuk penghantaran antarabangsa yang selamat merentas sepuluh binaan PP tenunan, daripada mulut terbuka kepada format berlamina premium, dipadankan dengan beras, baja, simen, makanan dan kegunaan runcit.",
+    "pillarsEyebrow": "KEKUATAN",
+    "exportVisionEyebrow": "Visi Eksport Kami",
+    "exportVisionHeading": "Memimpin ke arah masa depan yang cerah",
+    "exportVisionBody": "VIVIDPOLY menyasar untuk menjadi rakan kongsi eksport India yang dipercayai untuk perniagaan global yang memerlukan beg PP yang kukuh, boleh disesuaikan dan sedia jenama. Kami faham bahawa pembeli antarabangsa memerlukan lebih daripada penerangan produk umum. Mereka memerlukan spesifikasi yang tepat, panduan penggunaan produk, karya seni dan sokongan percetakan, pilihan pembungkusan yang sesuai dan komunikasi responsif sepanjang proses pertanyaan.",
+    "pillarsHeading": "Membawa warisan eksport pembeli pertama",
+    "ctaPrimary": "Hantar pertanyaan",
+    "pillars": [
+      {
+        "title": "Kami memastikan piawaian eksport antarabangsa",
+        "body": "Spesifikasi, pembungkusan dan komunikasi dirancang untuk pasaran destinasi dan keperluan pematuhan pembeli."
+      },
+      {
+        "title": "Kapasiti dan pembinaan sedia eksport",
+        "body": "Daripada pek runcit 5 kg kepada beg industri 75 kg, dengan pilihan laminasi, pelapik, gusset, injap dan cetakan."
+      },
+      {
+        "title": "Pasukan sokongan eksport yang berdedikasi",
+        "body": "Panduan responsif tentang jenis produk, karya seni, format pembungkusan, kuantiti dan destinasi sebelum sebut harga."
+      },
+      {
+        "title": "Pengalaman praktikal dengan proses yang jelas",
+        "body": "Pembeli mendapat panduan penggunaan produk berstruktur dan laluan pertanyaan yang lengkap dan bukannya salinan katalog yang tidak jelas."
+      }
+    ],
+    "pillarsBody": "Daripada piawaian antarabangsa kepada sokongan pertanyaan praktikal, VIVIDPOLY disusun berdasarkan cara pembeli pembungkusan global sebenarnya mendapatkan sumber. Spesifikasi, pembungkusan dan komunikasi dirancang untuk pasaran destinasi dan keperluan pematuhan pembeli. Kapasiti bermula daripada pek runcit 5 kg hingga 75 kg beg industri, dengan pilihan laminasi, pelapik, gusset, injap dan cetakan. Sokongan eksport khusus meliputi jenis produk, karya seni, format pembungkusan, kuantiti dan destinasi sebelum sebut harga, dengan panduan penggunaan produk berstruktur dan laluan pertanyaan yang lengkap.",
+    "pillarsLead": "Daripada piawaian antarabangsa kepada sokongan pertanyaan praktikal, VIVIDPOLY disusun berdasarkan cara pembeli pembungkusan global sebenarnya mendapatkan sumber.",
+    "factsEyebrow": "Butiran syarikat",
+    "whyEyebrow": "PERKHIDMATAN",
+    "whyMoreLabel": "LEBIH DETAIL",
+    "contactTeam": "Hantar pertanyaan",
+    "requestCustomQuote": "Hantar pertanyaan",
+    "factsHeading": "VIVIDPOLY sekilas pandang",
+    "ctaBandButton": "Hantar pertanyaan",
+    "ctaBandTitle": "Mencari rakan kongsi pembungkusan eksport profesional?",
+    "ctaBandBody": "Kongsi jenis beg anda, kapasiti, keperluan percetakan, kuantiti dan destinasi. VIVIDPOLY akan menyemak pertanyaan anda dan membuat susulan dengan pilihan praktikal.",
+    "whyBody": "Daripada kepelbagaian produk dan perancangan kapasiti kepada percetakan, pelapik, dan pembungkusan eksport, VIVIDPOLY distrukturkan untuk menyokong keputusan penyumberan praktikal. Pembeli boleh mendapatkan beg PP dari India untuk Amerika Syarikat, Kanada, Australia, Eropah, UK, Afrika, Thailand, Arab Saudi dan pasaran lain merentasi rangkaian jelas jenis beg perindustrian, pertanian, runcit dan promosi. Perancangan kapasiti meliputi 5 kg hingga 75 kg, dengan pembinaan tersuai, percetakan dan sokongan penjenamaan, panduan penggunaan produk dan proses sebut harga mesra pembeli yang menangkap butiran yang diperlukan sebelum sebut harga.",
+    "whyLead": "Daripada kepelbagaian produk dan perancangan kapasiti kepada percetakan, pelapik, dan pembungkusan eksport, VIVIDPOLY distrukturkan untuk menyokong keputusan penyumberan praktikal.",
+    "whyHeading": "Eksport sokongan pembungkusan pada tahap terbaik",
+    "whyItems": [
+      [
+        "Kedudukan pengeksport yang berpangkalan di India",
+        "Pembeli boleh mendapatkan beg PP dari India untuk Amerika Syarikat, Kanada, Australia, Eropah, UK, Afrika, Thailand, Arab Saudi dan pasaran lain."
+      ],
+      [
+        "Rangkaian produk Beg PP Berfokus",
+        "Tawaran produk adalah jelas dan praktikal, meliputi jenis beg industri, pertanian, runcit dan promosi biasa."
+      ],
+      [
+        "Perancangan kapasiti 5 kg hingga 75 kg",
+        "Pembeli boleh membincangkan pek runcit kecil, beg komoditi bersaiz sederhana dan beg industri tugas berat."
+      ],
+      [
+        "Pilihan pembinaan tersuai",
+        "Lapisan, laminasi, gusset, pelapik, tebuk, tingkap, pemegang, injap, bahagian bawah picit, dan pilihan bawah blok boleh dirancang."
+      ],
+      [
+        "Sokongan percetakan dan penjenamaan",
+        "Percetakan Flexo dan pilihan PP tenunan berlapis berlapis membantu menyokong keterlihatan jenama dan persembahan pasaran."
+      ],
+      [
+        "Panduan penggunaan produk",
+        "Pembeli boleh memilih beg mengikut aplikasi, seperti beras, baja, makanan haiwan, bahan kimia, simen, garam, gula, runcit dan membeli-belah."
+      ],
+      [
+        "Proses sebut harga mesra pembeli",
+        "Tapak web membantu pembeli berkongsi jenis produk, kapasiti, saiz, percetakan, alat tambah, pembungkusan, kuantiti dan destinasi sebelum sebut harga."
+      ]
+    ],
+    "ctaBandEyebrow": "Hubungi"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "reachUs": "Hubungi kami terus",
+    "sendRequirement": "Borang Pertanyaan",
+    "sendRequirementLead": "Beritahu kami apa yang anda perlukan. Pilih jenis produk atau hantar pertanyaan umum dan kami akan membalas dengan panduan praktikal.",
+    "formName": "Nama",
+    "formEmail": "E-mel",
+    "formMessage": "Mesej",
+    "formCompany": "Nama syarikat",
+    "sending": "Menghantar…",
+    "formCountry": "Negara",
+    "formPhone": "WhatsApp / telefon",
+    "emailInvalid": "Masukkan alamat e-mel yang sah.",
+    "submitUnavailable": "Pertanyaan dalam talian belum dikonfigurasikan lagi. Sila e-mel atau hubungi kami menggunakan butiran di halaman ini.",
+    "formEnquiryType": "Jenis pertanyaan",
+    "emailLabel": "E-mel",
+    "submitSuccess": "Pertanyaan dihantar. Pasukan kami akan menghubungi anda tidak lama lagi.",
+    "submitEnquiry": "Hantar pertanyaan",
+    "websiteLabel": "laman web",
+    "corporateOffice": "Pejabat korporat",
+    "submitError": "Kami tidak dapat menghantar pertanyaan anda. Sila cuba lagi atau hubungi kami terus.",
+    "phoneRequired": "Tambah WhatsApp atau nombor telefon supaya kami boleh menghubungi anda.",
+    "messageRequired": "Tambah mesej ringkas sebelum menyerahkan.",
+    "phoneLabel": "WhatsApp / Telefon",
+    "companyRows": [
+      [
+        "Syarikat / Jenama"
+      ],
+      [
+        "laman web",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mel"
+      ],
+      [
+        "telefon"
+      ],
+      [
+        "Alamat Korporat",
+        "Dataran Sankalp, A 1601, Sindhu Bhavan Marg, berhampiran Hotel Taj, opp. Permainan Tembak, PRL Colony, Bopal, Ahmedabad, Gujerat 380058"
+      ]
+    ],
+    "corporateAddress": "Dataran Sankalp, A 1601, Sindhu Bhavan Marg, berhampiran Hotel Taj, opp. Permainan Tembak, PRL Colony, Bopal, Ahmedabad, Gujerat 380058"
+  },
+  "quote": {
+    "stepContact": "Butiran hubungan",
+    "howReachYou": "Bagaimana kami harus menghubungi anda?",
+    "submitEnquiry": "Hantar pertanyaan",
+    "bagSpec": "Spesifikasi beg",
+    "stepBagSpec": "Spesifikasi beg",
+    "stepLabel": "Langkah {current} daripada {total}",
+    "fields": {
+      "capacity": "Kapasiti",
+      "product": "produk",
+      "size": "Saiz",
+      "printing": "Mencetak",
+      "addons": "Alat tambah",
+      "packing": "Pembungkusan",
+      "quantity": "Kuantiti",
+      "destination": "Negara destinasi",
+      "review": "Semakan",
+      "bagType": "Jenis beg",
+      "packedProduct": "Produk yang dibungkus"
+    },
+    "registerLead": "Kami akan mendaftarkan pertanyaan anda dan membuat susulan di WhatsApp.",
+    "reviewLabels": {
+      "productType": "Jenis produk",
+      "capacity": "Kapasiti",
+      "bagSize": "Saiz beg",
+      "printing": "Mencetak",
+      "addons": "Alat tambah",
+      "packing": "Pembungkusan",
+      "quantity": "Kuantiti",
+      "destination": "Destinasi",
+      "empty": "-",
+      "packedProduct": "Produk yang dibungkus"
+    },
+    "closeForm": "Tutup borang pertanyaan",
+    "emailInvalid": "Masukkan alamat e-mel yang sah.",
+    "reviewSteps": {
+      "product": "produk",
+      "sizePrint": "Saiz & cetakan",
+      "order": "Pesanan"
+    },
+    "saved": "Butiran hubungan anda disimpan.",
+    "savedWithName": "{name}, butiran hubungan anda disimpan."
+  },
+  "sample": {
+    "steps": {
+      "review": "Semakan",
+      "confirmed": "Disahkan",
+      "payment": "Bayaran"
+    },
+    "yourDetails": "Butiran anda",
+    "subtotal": "Jumlah kecil",
+    "reference": "Rujukan:",
+    "total": "Jumlah",
+    "selectBranch": "Pilih cawangan",
+    "bankTransfer": "Pindahan bank",
+    "billRows": {
+      "productType": "Jenis produk",
+      "capacity": "Kapasiti",
+      "printing": "Mencetak",
+      "packing": "Pembungkusan",
+      "leadTime": "Masa utama",
+      "unitPrice": "Harga seunit",
+      "total": "Jumlah",
+      "exportPacking": "Eksport pembungkusan & penghantaran",
+      "sampleQuantity": "Kuantiti sampel"
+    },
+    "selectBank": "Pilih bank",
+    "specification": "Spesifikasi sampel",
+    "bankRows": {
+      "beneficiary": "benefisiari",
+      "bank": "Bank",
+      "branch": "Cawangan",
+      "ifsc": "IFSC",
+      "swift": "SWIFT",
+      "accountType": "Jenis akaun",
+      "amount": "Jumlah",
+      "accountNumber": "Nombor akaun",
+      "paymentReference": "Rujukan pembayaran"
+    },
+    "continuePayment": "Teruskan ke Pembayaran",
+    "form": {
+      "name": "Nama",
+      "quantity": "Kuantiti yang diperlukan untuk sampel",
+      "address": "Alamat penghantaran"
+    },
+    "searchBranches": "Cari cawangan",
+    "searchBanks": "Cari bank",
+    "noBankMatches": "Tiada padanan. Cuba carian lain.",
+    "closePicker": "Pemilih dekat"
+  },
+  "blog": {
+    "fallbackCategory": "Panduan pembeli",
+    "fallbackReadTime": "5 min dibaca",
+    "pageTitle": "Panduan & cerapan pembeli",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "loading": "Memuatkan artikel…",
+    "emptyTitle": "Tiada artikel lagi",
+    "emptyBody": "Panduan dan cerapan pembeli baharu sedang dalam perjalanan — semak kembali tidak lama lagi.",
+    "backToArticles": "Kembali kepada semua artikel",
+    "dateLabel": "tarikh",
+    "searchLabel": "Cari",
+    "searchSubmit": "Cari",
+    "dateAll": "Sepanjang masa",
+    "dateYear": "tahun ini",
+    "topicsLabel": "Topik",
+    "topicsAll": "Semua topik",
+    "articlesOne": "1 artikel",
+    "date30": "30 hari lepas",
+    "date90": "90 hari lepas",
+    "searchPlaceholder": "Cari artikel…",
+    "date7": "7 hari lepas",
+    "articlesMany": "{count} artikel",
+    "clearFilters": "Kosongkan penapis",
+    "noResultsTitle": "Tiada artikel yang sepadan",
+    "noResultsBody": "Cuba istilah carian, topik atau julat tarikh yang berbeza."
+  },
+  "careers": {
+    "eyebrow": "Kerjaya di VividPoly",
+    "title": "Bersumber dari India. Dipercayai Seluruh Dunia.",
+    "applyNow": "Mohon Sekarang",
+    "lead": "Kami mencari orang yang mementingkan kualiti, komunikasi yang jelas dan penghantaran yang boleh dipercayai. Peranan merangkumi operasi pejabat, kilang dan eksport di seluruh Ahmedabad dan Vadodara.",
+    "whyHeading": "Mengapa VividPoly",
+    "seeHowWeWork": "Lihat bagaimana kami bekerja",
+    "reasons": [
+      {
+        "title": "Pendedahan Global",
+        "body": "Kerja terikat kepada pembeli merentasi 70+ pasaran eksport."
+      },
+      {
+        "title": "Bilik untuk Berkembang",
+        "body": "Tanggungjawab baharu datang dengan pantas dalam perniagaan yang sedang berkembang."
+      },
+      {
+        "title": "Keselamatan Kerja",
+        "body": "Disokong oleh operasi eksport yang stabil dan mantap."
+      },
+      {
+        "title": "Belajar sambil Kerja",
+        "body": "Pendedahan secara langsung kepada pembuatan dan perdagangan global."
+      }
+    ],
+    "whyLead": "Tempat praktikal untuk membina kemahiran dalam pembuatan dan perdagangan global.",
+    "whyBody": "Tempat praktikal untuk membina kemahiran dalam pembuatan dan perdagangan global. Kerja terikat kepada pembeli merentasi 70+ pasaran eksport, tanggungjawab baharu datang pantas dalam perniagaan yang semakin berkembang, dan peranan disokong oleh operasi eksport yang stabil dan mantap dengan pendedahan langsung kepada pembuatan dan perdagangan global.",
+    "positionsEyebrow": "JAWATAN TERBUKA",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Kemas kini syarikat dan peranan terbuka untuk eksport, operasi dan kerjaya pembungkusan."
+      },
+      {
+        "label": "Sesungguhnya",
+        "blurb": "Cari penyenaraian VIVIDPOLY mengikut peranan, lokasi dan tahap pengalaman."
+      },
+      {
+        "blurb": "Pembukaan tertumpu kepada India merentas pasukan pembuatan, jualan dan sokongan.",
+        "label": "Naukri"
+      }
+    ],
+    "positionsHeading": "Cari kami di mana anda sudah mencari",
+    "positionsLead": "Pembukaan semasa disiarkan dan dikemas kini pada platform ini. Semak imbas peranan langsung, kemudian mohon melalui borang di bawah.",
+    "positionsMoreLabel": "LIHAT PEMBUKAAN",
+    "ctaEyebrow": "MOHON SEKARANG",
+    "positionsNote": "Lebih suka permohonan terus? Gunakan Apply Now di bawah.",
+    "ctaLead": "Kongsi minat peranan anda, pengalaman dan lokasi pilihan. Pasukan kami akan menyemak permohonan apabila pembukaan tersedia.",
+    "ctaHeading": "Langkah kerjaya anda yang seterusnya bermula di sini"
+  },
+  "search": {
+    "suggestionsHeading": "Cadangan",
+    "noMatches": "Tiada padanan. Cuba \"nasi\" atau \"simen\"",
+    "recentHeading": "Carian terkini",
+    "recentTerms": [
+      "beg nasi",
+      "beg simen",
+      "dicetak berlamina",
+      "25 kg mulut terbuka"
+    ]
+  },
+  "filters": {
+    "capacityExample": "cth. 23 kg",
+    "capacityOrEnter": "Atau masukkan kapasiti",
+    "capacityCustomNotice": "VIVIDPOLY menyediakan pembungkusan beg PP antara {min} kg dan {max} kg. Sila masukkan kapasiti dalam julat ini.",
+    "customSelectEnter": "Masukkan spesifikasi anda…",
+    "capacityMax": "Kapasiti maksimum",
+    "productUseOptions": "Pilihan penggunaan produk",
+    "capacityMin": "Kapasiti minimum",
+    "customSelectUseAnyway": "Gunakan nilai ini juga",
+    "customSelectNoMatches": "Tiada padanan ditemui"
+  },
+  "breadcrumbs": {
+    "home": "Rumah",
+    "blog": "Blog",
+    "faqs": "Soalan Lazim",
+    "about": "Tentang",
+    "careers": "Kerjaya",
+    "contact": "Hubungi Kami",
+    "products": "Produk",
+    "getQuote": "Dapatkan Sebut Harga",
+    "requestExportQuote": "Minta Sebut Harga Eksport"
+  },
+  "validation": {
+    "emailInvalid": "Masukkan alamat e-mel yang sah."
+  },
+  "buyerRows": [
+    {
+      "response": "VIVIDPOLY diletakkan sebagai pengeksport yang berpangkalan di India untuk pembeli beg PP global.",
+      "requirement": "Eksport sumber dari India"
+    },
+    {
+      "requirement": "Pelbagai produk",
+      "response": "Buka mulut, dijahit, D-cut, injap, bawa, berlamina, bawah picit, bawah blok, gusset dan beg beli-belah."
+    },
+    {
+      "response": "Penyelesaian beg PP boleh dirancang dari 5 kg hingga 75 kg bergantung pada ketumpatan produk dan struktur beg.",
+      "requirement": "Kapasiti tersuai"
+    },
+    {
+      "response": "Percetakan Flexo dan pilihan PP anyaman berlapis berlapis menyokong identiti produk dan daya tarikan rak.",
+      "requirement": "Persembahan jenama"
+    },
+    {
+      "requirement": "Aliran pertanyaan mesra pembeli",
+      "response": "Jenis produk, saiz, kapasiti, percetakan, laminasi, pelapik, gusset, pemegang dan butiran pembungkusan boleh ditangkap sebelum sebut harga."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "sumber India",
+      "short": "Pengeksport yang berpangkalan di India"
+    },
+    {
+      "label": "Rangkaian produk",
+      "short": "10 jenis beg"
+    },
+    {
+      "label": "Kapasiti tersuai",
+      "short": "5 kg hingga 75 kg"
+    },
+    {
+      "label": "Percetakan jenama",
+      "short": "Cetak & lamina"
+    },
+    {
+      "short": "Butiran sedia sebut harga",
+      "label": "Petikan aliran kerja"
+    }
+  ],
+  "useRows": [
+    {
+      "tips": "Percetakan Flexo, cetakan berlamina, tingkap, gusset, pelapik, pemegang, pembungkusan bale eksport.",
+      "use": "Beras, gandum, bijirin, kekacang, tepung",
+      "bags": "Beg mulut terbuka, beg berjahit atas dan bawah, beg PP anyaman berlamina bercetak, beg bawah picit",
+      "cardTitle": "Bijirin & Denyutan"
+    },
+    {
+      "cardTitle": "Baja & Benih",
+      "tips": "Pelapik, gusset, percetakan flexo, cetakan berlamina, tebuk, pembungkusan palet.",
+      "bags": "Beg berjahit, beg PP tenunan berlamina, beg bawah blok, beg gusset bawah blok",
+      "use": "Baja dan biji benih"
+    },
+    {
+      "cardTitle": "Makanan Haiwan & Makanan Haiwan",
+      "bags": "Beg PP tenunan berlamina bercetak, beg gusset bawah blok, beg bawa, beg bawah picit",
+      "tips": "Pembinaan berbilang lapisan, tingkap, gusset, pemegang, percetakan premium, tebukan pilihan.",
+      "use": "Makanan haiwan dan makanan haiwan peliharaan"
+    },
+    {
+      "use": "Simen, bahan kimia, mineral, serbuk",
+      "cardTitle": "Simen & Serbuk Industri",
+      "tips": "Pembinaan injap, pelapik, tebuk, jahitan kuat, pembungkusan tugas berat.",
+      "bags": "Beg injap, beg bawah blok, beg berjahit atas dan bawah, beg yang disokong pelapik"
+    },
+    {
+      "use": "Garam, gula, komoditi pengguna",
+      "cardTitle": "Garam, Gula & Komoditi",
+      "bags": "Beg mulut terbuka, beg berjahit, beg berlamina, beg disokong pelapik",
+      "tips": "Pelapik, permukaan berlamina, cetakan flexo, jahitan bersih, pilihan sokongan kelembapan."
+    },
+    {
+      "cardTitle": "Peruncitan & Promosi",
+      "use": "Peruncitan, membeli-belah, promosi",
+      "bags": "Beg potong D, beg bawa, beg membeli-belah tenunan, beg PP tenunan berlamina bercetak",
+      "tips": "Pilihan pemegang, percetakan berlamina, gusset, pembungkusan karton, karya seni jenama."
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Percetakan Flexo, cetakan berlamina, tingkap, gusset, pelapik, pemegang, pembungkusan bale eksport.",
+      "title": "Beras, Gandum, Bijirin dan Pulse",
+      "bags": "Beg mulut terbuka, beg berjahit atas dan bawah, beg PP anyaman berlamina bercetak, beg bawah picit."
+    },
+    {
+      "title": "Tepung dan Komoditi Makanan",
+      "tips": "Pelapik, permukaan berlamina, pemotongan bersih, jahitan selamat, reka bentuk mesra runcit.",
+      "bags": "Beg mulut terbuka, beg PP tenunan bercetak dan berlamina, beg bawah picit."
+    },
+    {
+      "tips": "Pelapik, permukaan berlamina, cetakan flexo, jahitan bersih, pilihan sokongan kelembapan.",
+      "title": "Garam dan Gula",
+      "bags": "Beg mulut terbuka, beg berjahit, beg PP tenunan berlamina bercetak."
+    },
+    {
+      "title": "Baja dan Benih",
+      "tips": "Pelapik, gusset, percetakan flexo, cetakan berlamina, tebuk, pembungkusan palet.",
+      "bags": "Beg berjahit, beg PP tenunan berlamina, beg bawah blok, beg gusset bawah blok."
+    },
+    {
+      "tips": "Pembinaan berbilang lapisan, tingkap, gusset, pemegang, percetakan premium, tebukan pilihan.",
+      "title": "Makanan Haiwan dan Makanan Haiwan",
+      "bags": "Beg PP tenunan berlamina bercetak, beg bawah picit, beg gusset bawah blok, beg bawa."
+    },
+    {
+      "tips": "Pembinaan injap, pelapik, tebuk, jahitan kuat, pembungkusan tugas berat.",
+      "bags": "Beg injap, beg bawah blok, beg berjahit atas dan bawah.",
+      "title": "Simen dan Bahan Binaan"
+    },
+    {
+      "title": "Bahan Kimia dan Mineral",
+      "tips": "Pelapik, laminasi, penembusan penyahudaraan, jahitan selamat, pembungkusan eksport.",
+      "bags": "Beg injap, beg berjahit, beg mulut terbuka, beg disokong pelapik."
+    },
+    {
+      "tips": "Pilihan pemegang, percetakan berlamina, gusset, pembungkusan karton, karya seni jenama.",
+      "title": "Produk Runcit dan Promosi",
+      "bags": "Beg D-cut, beg bawa, beg membeli-belah tenunan, beg PP tenunan berlamina bercetak."
+    },
+    {
+      "bags": "Beg beli-belah tenunan, beg bawa, beg tenunan PP D-cut.",
+      "tips": "Pemegang gelung, pemegang D-cut, guset sisi, guset bawah, percetakan berbilang warna.",
+      "title": "Beli-belah dan Pembungkusan Gaya Boleh Digunakan Semula"
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Beg Anyaman"
+    },
+    {
+      "title": "Fabrik"
+    },
+    {
+      "title": "Penghalang Rumpai"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Komoditi Pertanian & Makanan",
+      "items": [
+        "Beras, Gandum, Bijirin dan Pulse",
+        "Tepung dan Komoditi Makanan",
+        "Garam dan Gula"
+      ]
+    },
+    {
+      "title": "Agri-Input & Penjagaan Haiwan",
+      "items": [
+        "Baja dan Benih",
+        "Makanan Haiwan dan Makanan Haiwan"
+      ]
+    },
+    {
+      "title": "Perindustrian & Pembinaan",
+      "items": [
+        "Simen dan Bahan Binaan",
+        "Bahan Kimia dan Mineral"
+      ]
+    },
+    {
+      "title": "Peruncitan & Promosi",
+      "items": [
+        "Produk Runcit dan Promosi",
+        "Beli-belah dan Pembungkusan Gaya Boleh Digunakan Semula"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Kapasiti",
+      "title": "Kapasiti",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Adat"
+        }
+      ]
+    },
+    {
+      "key": "Jenis Produk",
+      "title": "Jenis Produk",
+      "options": [
+        {
+          "label": "Buka mulut"
+        },
+        {
+          "label": "dijahit"
+        },
+        {
+          "label": "D-potong"
+        },
+        {
+          "label": "Injap"
+        },
+        {
+          "label": "bawa"
+        },
+        {
+          "label": "Berlapis"
+        },
+        {
+          "label": "Cubit bawah"
+        },
+        {
+          "label": "Sekat bahagian bawah"
+        },
+        {
+          "label": "Sekat gusset bawah"
+        },
+        {
+          "label": "Membeli-belah anyaman"
+        },
+        {
+          "label": "Kain tenunan PP"
+        },
+        {
+          "label": "Penghalang rumpai"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "a": "VIVIDPOLY mengeksport beg mulut terbuka, beg jahitan atas dan bawah, beg tenunan PP D-cut, beg injap, beg bawa, beg PP tenunan bercetak dan berlamina, beg bawah secubit PP tenunan bercetak dan berlapis, beg bawah blok PP tenunan bercetak dan berlamina, beg beli-belah tenunan dan berlapis PP blok dan gusset bawah tenunan",
+      "q": "Apakah jenis beg PP yang dieksport oleh VIVIDPOLY?"
+    },
+    {
+      "q": "Apakah kapasiti berat yang tersedia untuk beg VIVIDPOLY PP?",
+      "a": "VIVIDPOLY boleh membincangkan keperluan beg PP dari 5 kg hingga 75 kg, bergantung pada ketumpatan produk, saiz beg, kekuatan fabrik, pembinaan, laminasi, pelapik, gusset, jahitan dan penggunaan akhir."
+    },
+    {
+      "q": "Apakah maklumat yang diperlukan untuk sebut harga?",
+      "a": "Pembeli hendaklah menyediakan jenis produk, produk yang dibungkus, kapasiti, saiz beg, kuantiti, keperluan cetakan, pelapis, pelapik, gusset, pemegang, pemotongan, jahitan, jenis pembungkusan, negara destinasi dan karya seni atau rujukan sampel jika ada."
+    },
+    {
+      "a": "ya. VIVIDPOLY boleh menyokong keperluan beg PP tenunan bercetak dan berlamina untuk produk seperti beras, tepung, baja, makanan haiwan, makanan haiwan, benih, garam, gula dan komoditi runcit.",
+      "q": "Bolehkah VIVIDPOLY membekalkan beg PP tenunan bercetak dan berlamina?"
+    },
+    {
+      "q": "Apakah perbezaan antara beg mulut terbuka dan beg injap?",
+      "a": "Beg mulut terbuka diisi melalui bahagian atas terbuka dan ditutup selepas diisi. Beg injap diisi melalui bukaan injap dan biasanya digunakan untuk serbuk, produk gaya simen, bahan kimia, mineral dan bahan binaan."
+    },
+    {
+      "q": "Untuk apa beg pinch bottom digunakan?",
+      "a": "Beg picit bawah digunakan di mana pembeli memerlukan penampilan pembungkusan premium dan persembahan penutupan yang bersih. Ia sesuai untuk makanan terpilih, makanan haiwan peliharaan, makanan haiwan, bijirin, biji benih dan produk runcit."
+    },
+    {
+      "q": "Untuk apa beg gusset bawah blok digunakan?",
+      "a": "Beg gusset bawah blok sesuai di mana pembeli memerlukan volum yang dipertingkatkan, bentuk isi yang stabil, kawasan penjenamaan yang lebih kukuh dan persembahan susunan yang lebih baik."
+    },
+    {
+      "q": "Bolehkah beg PP termasuk tingkap?",
+      "a": "ya. Beg PP tenunan bercetak dan berlamina terpilih boleh termasuk tetingkap lutsinar untuk menunjukkan produk yang dibungkus di dalamnya."
+    },
+    {
+      "a": "ya. Pelapik boleh dipertimbangkan apabila perlindungan produk tambahan, sokongan kelembapan atau pengekalan produk halus diperlukan.",
+      "q": "Bolehkah VIVIDPOLY menyediakan pelapik di dalam beg PP?"
+    },
+    {
+      "q": "Apakah pilihan percetakan yang tersedia?",
+      "a": "VIVIDPOLY boleh menyokong beg biasa, beg bercetak flexo, dan format beg PP tenunan bercetak dan berlamina, bergantung pada keperluan penjenamaan, kerumitan karya seni, bajet dan pasaran produk."
+    }
+  ],
+  "blogList": [
+    {
+      "category": "Panduan pembeli",
+      "readTime": "6 minit membaca",
+      "title": "Apakah Beg PP? Panduan Lengkap untuk Pembeli Import",
+      "purpose": "Terangkan beg PP, kegunaan biasa dan faktor pemilihan pembeli.",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "excerpt": "Untuk meminimumkan veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "readTime": "5 min dibaca",
+      "title": "Beg Mulut Terbuka lwn Beg Injap: Beg PP Mana Yang Sesuai untuk Produk Anda?",
+      "category": "Pembungkusan",
+      "purpose": "Bandingkan gaya pengisian dan aplikasi yang sesuai."
+    },
+    {
+      "category": "Panduan pembeli",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "title": "Beg PP Berjahit Atas dan Bawah: Kegunaan, Faedah dan Penyesuaian",
+      "readTime": "7 minit membaca",
+      "purpose": "Didik pembeli tentang format beg berjahit."
+    },
+    {
+      "category": "Penjenamaan",
+      "readTime": "5 min dibaca",
+      "title": "Beg PP Tenun Bercetak dan Berlapis untuk Pembungkusan Beras, Makanan dan Baja",
+      "purpose": "Mempromosikan pembungkusan berjenama premium.",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "category": "Pembungkusan",
+      "readTime": "6 minit membaca",
+      "title": "Pinch Bottom Bags vs Block Bottom Bags: Panduan Pembeli",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "purpose": "Bandingkan pembinaan beg premium."
+    },
+    {
+      "purpose": "Bantu pembeli menentukan saiz dan kapasiti sebelum pertanyaan.",
+      "title": "Panduan Saiz Beg PP: Cara Memilih Kapasiti Beg 5 kg hingga 75 kg",
+      "category": "Saiz",
+      "readTime": "8 min dibaca",
+      "excerpt": "Untuk meminimumkan veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Penjenamaan",
+      "readTime": "5 min dibaca",
+      "title": "Percetakan Flexo lwn Percetakan Berlapis untuk Beg PP",
+      "purpose": "Terangkan pilihan percetakan dan kesan penjenamaan."
+    },
+    {
+      "category": "Ciri-ciri",
+      "title": "Mengapa Pelapik, Gusset dan Tebuk Penting dalam Beg PP",
+      "purpose": "Terangkan ciri tambahan untuk perlindungan dan pengendalian produk.",
+      "readTime": "4 minit membaca",
+      "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    },
+    {
+      "readTime": "6 minit membaca",
+      "category": "Petua eksport",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante.",
+      "title": "Cara Menyediakan Siasatan Eksport Beg PP",
+      "purpose": "Ajar pembeli butiran apa yang perlu dihantar untuk sebut harga."
+    },
+    {
+      "readTime": "5 min dibaca",
+      "purpose": "Sasarkan pembeli beg beli-belah dan promosi.",
+      "category": "Runcit",
+      "title": "Beg Beli-belah Tenunan untuk Pembungkusan Runcit dan Promosi",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi nulla quis sem dan nibh elementum imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "currency": "USD",
+    "printing": "Biasa (spesifikasi sampel)",
+    "qtyLabel": "5 keping sampel",
+    "packing": "Pembungkusan eksport kadbod",
+    "leadTime": "7–10 hari bekerja selepas pengesahan pembayaran"
+  },
+  "bankDetails": {
+    "bankName": "HDFC Bank Ltd.",
+    "accountType": "Akaun Semasa",
+    "ifsc": "HDFC0001234",
+    "branch": "Ahmedabad, Bopal, Gujerat, India",
+    "paymentNote": "Sertakan nama syarikat anda dan rujukan sampel dalam narasi pemindahan.",
+    "swift": "HDFCINBB"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "ifsc": "HDFC0001234",
+      "accountType": "Akaun Semasa",
+      "swift": "HDFCINBB",
+      "location": "Gujerat, India",
+      "branch": "Ahmedabad, Bopal"
+    },
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "swift": "HDFCINBB",
+      "accountType": "Akaun Semasa",
+      "branch": "Vadodara, Jalan Halol",
+      "location": "Gujerat, India",
+      "ifsc": "HDFC0005678"
+    },
+    {
+      "location": "Gujerat, India",
+      "ifsc": "ICIC0001234",
+      "accountType": "Akaun Semasa",
+      "bankName": "ICICI Bank Ltd.",
+      "branch": "Ahmedabad, Lebuhraya SG",
+      "swift": "ICICINBB"
+    },
+    {
+      "location": "Gujerat, India",
+      "ifsc": "UTIB0000123",
+      "accountType": "Akaun Semasa",
+      "branch": "Ahmedabad, Prahladnagar",
+      "bankName": "Axis Bank Ltd.",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujerat, India",
+      "accountType": "Akaun Semasa",
+      "bankName": "Bank Negara India",
+      "swift": "SBIINBB",
+      "branch": "Gandhinagar, Sektor 21",
+      "ifsc": "SBIN0006789"
+    },
+    {
+      "location": "Gujerat, India",
+      "bankName": "Bank Kotak Mahindra",
+      "accountType": "Akaun Semasa",
+      "ifsc": "KKBK0001234",
+      "branch": "Ahmedabad, Jalan Ashram",
+      "swift": "KKBKINBB"
+    },
+    {
+      "branch": "Mumbai, Andheri Timur",
+      "accountType": "Akaun Semasa",
+      "bankName": "Ya Bank Ltd.",
+      "swift": "YESBINBB",
+      "ifsc": "YESB0000123",
+      "location": "Maharashtra, India"
+    },
+    {
+      "bankName": "IndusInd Bank Ltd.",
+      "location": "Gujerat, India",
+      "branch": "Ahmedabad, Navrangpura",
+      "accountType": "Akaun Semasa",
+      "ifsc": "INDB0000123",
+      "swift": "INDBINBB"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Beg Mulut Terbuka"
+    },
+    {
+      "label": "Beg Berjahit"
+    },
+    {
+      "label": "Beg D-Cut"
+    },
+    {
+      "label": "Beg Injap"
+    },
+    {
+      "label": "Bawa Beg"
+    },
+    {
+      "label": "Beg PP Tenunan Berlapis"
+    },
+    {
+      "label": "Beg Bawah Cubit"
+    },
+    {
+      "label": "Beg Bawah Sekat"
+    },
+    {
+      "label": "Beg Gusset Bawah Blok"
+    },
+    {
+      "label": "Beg Beli-belah Anyaman"
+    },
+    {
+      "label": "Kain Tenun PP"
+    },
+    {
+      "label": "Penghalang Rumpai"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Beg Mulut Terbuka",
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Pengisian mudah",
+          "body": "Bahagian atas terbuka membolehkan pengisian cepat dengan kaedah manual, separa automatik atau yang disokong mesin."
+        },
+        {
+          "title": "Fleksibiliti kapasiti",
+          "body": "Sesuai untuk aplikasi 5 kg hingga 75 kg bergantung pada ketumpatan produk dan reka bentuk beg."
+        },
+        {
+          "title": "Kemasan tersuai",
+          "body": "Bahagian atas boleh dipotong haba, potongan sejuk, kelim atau potongan zig-zag."
+        },
+        {
+          "title": "Pilihan percetakan dan pelapik",
+          "body": "Percetakan Flexo, percetakan berlamina dan sokongan pelapik boleh ditambah jika perlu."
+        }
+      ],
+      "short": "Beg tenunan PP yang mudah diisi untuk produk pukal kering seperti bijirin, tepung, makanan, baja, garam, gula, biji benih dan mineral.",
+      "intro": "Beg Mulut Terbuka adalah salah satu gaya beg PP yang paling praktikal untuk pembungkusan pukal kering. VIVIDPOLY mengeksport beg PP mulut terbuka untuk pembeli yang memerlukan pengisian mudah, penutupan fleksibel dan penyesuaian untuk aplikasi pertanian, makanan, baja, makanan, kimia, mineral, garam, gula dan perindustrian.",
+      "cta": "Terokai Beg Mulut Terbuka",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "5 kg hingga 75 kg"
+        },
+        {
+          "key": "Atas",
+          "value": "Buka mulut, potong haba, potong sejuk, zig-zag, terkurung"
+        },
+        {
+          "key": "Bawah",
+          "value": "Lipatan tunggal dijahit, lipatan dua dijahit, kemasan tersuai"
+        },
+        {
+          "key": "Mencetak",
+          "value": "Bercetak biasa, flexo, berlamina"
+        },
+        {
+          "key": "Alat tambah",
+          "value": "Gusset, pelapik, tebuk, pemegang jika diperlukan"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Bale, bundle, pallet, karton, pembungkusan eksport"
+        }
+      ],
+      "benefits": "Beg PP mulut terbuka lebih disukai kerana kesederhanaan, kebolehsuaian dan pengendaliannya yang menjimatkan. Ia sesuai untuk pembeli yang memerlukan beg tenunan yang kuat yang boleh ditutup selepas diisi dengan menjahit, mengedap, melipat atau mengikat.",
+      "details": "Beg ini boleh dibekalkan sebagai beg PP tenunan biasa, beg bercetak flexo, atau beg PP tenunan bercetak dan berlamina. Pembeli boleh memilih saiz, fabrik, kapasiti, gusset, pelapik, percetakan, jahitan, pemotongan dan pembungkusan.",
+      "mfg": "Proses ini termasuk tenunan fabrik, pencetakan atau laminasi pilihan, pemotongan, jahitan bawah, pemeriksaan dan pembungkusan.",
+      "material": "Fabrik tenunan PP, dakwat percetakan, benang jahitan, laminasi pilihan, pelapik pilihan, dan keperluan warna/tambahan khusus pembeli.",
+      "speciality": "Keistimewaan beg mulut terbuka ialah fleksibilitinya untuk produk dan kaedah pengisian yang berbeza."
+    },
+    "stitched": {
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Jahitan atas dan bawah selamat, kekuatan fabrik tersuai, pelapik pilihan, cetakan flexo atau berlamina, pembungkusan tersuai."
+        },
+        {
+          "title": "Faedah",
+          "body": "Keselamatan penutupan yang lebih baik, pengendalian praktikal, prestasi susun yang baik dan kesesuaian untuk banyak produk pukal kering."
+        },
+        {
+          "title": "Butiran",
+          "body": "Pembeli boleh menentukan jenis jahitan, jenis benang, gaya lipatan, saiz, kapasiti, cetakan, pelapik, gusset dan pembungkusan."
+        }
+      ],
+      "cta": "Terokai Beg Berjahit",
+      "short": "Beg PP berjahit selamat untuk pengangkutan, penyimpanan dan pembungkusan eksport produk pertanian dan perindustrian.",
+      "name": "Beg Berjahit Atas dan Bawah",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "5 kg hingga 75 kg"
+        },
+        {
+          "key": "menjahit",
+          "value": "Lipatan tunggal, lipatan dua, benang tunggal, benang dua, jahitan atas dan bawah"
+        },
+        {
+          "key": "Mencetak",
+          "value": "Biasa, flexo, berlapis bercetak"
+        },
+        {
+          "key": "Pelapik",
+          "value": "Pelapik longgar atau berjahit pilihan"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Bale, bundle, pallet, pembungkusan eksport termampat"
+        }
+      ],
+      "intro": "Beg Berjahit Atas dan Bawah direka untuk pembeli yang memerlukan penutupan yang selamat dan pengendalian yang boleh dipercayai semasa penyimpanan dan pengangkutan. VIVIDPOLY mengeksport beg PP berjahit untuk pembungkusan pertanian, makanan, baja, makanan haiwan, kimia, mineral dan industri.",
+      "benefits": "Keselamatan penutupan yang lebih baik, pengendalian praktikal, prestasi susun yang baik dan kesesuaian untuk banyak produk pukal kering.",
+      "details": "Pembeli boleh menentukan jenis jahitan, jenis benang, gaya lipatan, saiz, kapasiti, cetakan, pelapik, gusset dan pembungkusan.",
+      "material": "Kombinasi bahan termasuk fabrik tenunan PP, benang jahitan, laminasi pilihan, pelapik pilihan dan dakwat percetakan.",
+      "mfg": "Proses pembuatan termasuk tenunan, percetakan/laminasi pilihan, pemotongan, jahitan atas dan bawah, pemeriksaan dan pembungkusan.",
+      "speciality": "Keistimewaan jenis beg ini ialah penutupan jahitan yang boleh dipercayai."
+    },
+    "d-cut": {
+      "name": "Beg Tenun PP D-Cut",
+      "group": "Beg Anyaman",
+      "cta": "Terokai Beg D-Cut",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Pemegang D-cut, saiz tersuai, percetakan flexo atau berlamina, gusset pilihan, kemasan mesra runcit."
+        },
+        {
+          "title": "Faedah",
+          "body": "Mudah dibawa, struktur tenunan yang kukuh, keterlihatan jenama dan nilai promosi yang berguna."
+        },
+        {
+          "title": "Butiran",
+          "body": "Sesuai untuk aplikasi bawaan ringan hingga sederhana, barangan runcit, pameran perdagangan dan kempen promosi."
+        }
+      ],
+      "benefits": "Mudah dibawa, struktur tenunan yang kukuh, keterlihatan jenama dan nilai promosi yang berguna.",
+      "spec": [
+        {
+          "key": "pegang",
+          "value": "Pemegang D-cut atau bertetulang D-cut"
+        },
+        {
+          "key": "bahan",
+          "value": "PP tenunan atau bahan PP berlamina"
+        },
+        {
+          "key": "Mencetak",
+          "value": "Percetakan tersuai"
+        },
+        {
+          "key": "menjahit",
+          "value": "Jahitan tepi/bawah"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Pembungkusan kadbod atau berkas"
+        }
+      ],
+      "short": "Beg tenunan PP gaya bawa dengan potongan pemegang bersepadu untuk pembungkusan runcit, promosi dan gaya boleh guna semula.",
+      "intro": "Beg Tenun PP D-Cut termasuk potongan pemegang bersepadu yang menjadikan beg lebih mudah dibawa. VIVIDPOLY mengeksport beg potongan D untuk keperluan pembungkusan runcit, membeli-belah, promosi, pameran dan gaya boleh guna semula.",
+      "details": "Sesuai untuk aplikasi bawaan ringan hingga sederhana, barangan runcit, pameran perdagangan dan kempen promosi.",
+      "speciality": "Menggabungkan kemudahan bawa dengan kekuatan tenunan dan persembahan jenama.",
+      "mfg": "Menenun, mencetak atau laminasi, pemotongan, pembentukan pemegang D-cut, jahitan, pemeriksaan, pembungkusan.",
+      "material": "Kain tenunan PP, filem berlamina jika diperlukan, dakwat cetakan, benang jahitan, tetulang pemegang jika diperlukan."
+    },
+    "valve": {
+      "name": "Beg Injap",
+      "group": "Beg Anyaman",
+      "cta": "Terokai Beg Injap",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Reka bentuk pengisian injap, pelapik pilihan, tebuk, percetakan berlamina, keserasian bahagian bawah blok."
+        },
+        {
+          "title": "Faedah",
+          "body": "Pengisian terkawal yang lebih pantas, format pembungkusan yang lebih bersih, sesuai untuk produk serbuk dan berbutir."
+        },
+        {
+          "title": "Butiran",
+          "body": "Saiz injap, jenis injap, tebuk, pelapik, kapasiti, dan pembinaan hendaklah dipilih mengikut produk dan sistem pengisian."
+        }
+      ],
+      "intro": "Beg Injap dibangunkan untuk produk yang memerlukan pengisian melalui bukaan injap. VIVIDPOLY mengeksport beg injap untuk produk gaya simen, bahan kimia, mineral, serbuk, bahan binaan dan barangan industri.",
+      "short": "Beg PP pengisi injap untuk produk gaya simen, bahan kimia, mineral, serbuk dan bahan binaan.",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "Biasanya 20 kg hingga 75 kg"
+        },
+        {
+          "key": "Injap",
+          "value": "Injap ringkas atau dilanjutkan"
+        },
+        {
+          "key": "Pembinaan",
+          "value": "Pembinaan bawah standard atau blok"
+        },
+        {
+          "key": "Alat tambah",
+          "value": "Pelapik dan penebuk pilihan"
+        }
+      ],
+      "benefits": "Pengisian terkawal yang lebih pantas, format pembungkusan yang lebih bersih, sesuai untuk produk serbuk dan berbutir.",
+      "details": "Saiz injap, jenis injap, tebuk, pelapik, kapasiti, dan pembinaan hendaklah dipilih mengikut produk dan sistem pengisian.",
+      "material": "Kain tenunan PP, bahan injap, pelapik, lapisan berlamina, benang jahitan, dakwat percetakan.",
+      "mfg": "Penyediaan fabrik, percetakan/laminasi, pemotongan, pembentukan injap, penembusan jika diperlukan, pemeriksaan, pembungkusan.",
+      "speciality": "Sesuai untuk pengisian industri dan pengedaran eksport."
+    },
+    "carry": {
+      "name": "Bawa Beg",
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Pilihan D-cut, gelung, dijahit, ditebuk, sisi atau pemegang atas; kemasan bercetak atau berlamina; gusset pilihan."
+        },
+        {
+          "title": "Faedah",
+          "body": "Meningkatkan keterlihatan jenama dan memberikan kekuatan bawaan yang praktikal."
+        },
+        {
+          "title": "Butiran",
+          "body": "Pembeli boleh menyesuaikan saiz beg, gaya pemegang, reka bentuk cetakan, laminasi, gusset, jahitan dan pembungkusan."
+        }
+      ],
+      "cta": "Terokai Beg Bawa",
+      "intro": "Beg Bawa yang dibuat dengan bahan tenunan PP sesuai untuk pembeli yang memerlukan beg pembawa yang kuat, berjenama dan praktikal. Eksport VIVIDPOLY membawa beg untuk runcit, perdagangan, membeli-belah, acara dan pembungkusan promosi.",
+      "spec": [
+        {
+          "key": "bahan",
+          "value": "PP tenunan atau bahan PP berlamina"
+        },
+        {
+          "key": "Mencetak",
+          "value": "Cetakan flexo atau berlamina"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset sisi/bawah"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Pembungkusan kadbod/berikat/bale"
+        }
+      ],
+      "short": "Beg pembawa tenunan yang kukuh dan berjenama untuk aplikasi runcit, perdagangan dan promosi.",
+      "details": "Pembeli boleh menyesuaikan saiz beg, gaya pemegang, reka bentuk cetakan, laminasi, gusset, jahitan dan pembungkusan.",
+      "benefits": "Meningkatkan keterlihatan jenama dan memberikan kekuatan bawaan yang praktikal.",
+      "speciality": "Pembungkusan bawa yang kuat dengan komunikasi jenama.",
+      "mfg": "Anyaman, pencetakan/laminasi, pemotongan, penciptaan pemegang atau lampiran, jahitan, pemeriksaan, pembungkusan.",
+      "material": "Kain tenunan PP, filem berlamina, dakwat percetakan, benang jahitan, bahan pemegang jika diperlukan."
+    },
+    "laminated": {
+      "group": "Beg Anyaman",
+      "name": "Beg PP Tenun Bercetak & Berlapis",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Permukaan berlapis bercetak, asas PP tenunan, pilihan lapisan, gusset, pelapik, tingkap, tebuk, pemegang."
+        },
+        {
+          "title": "Faedah",
+          "body": "Penjenamaan yang dipertingkatkan, daya tarikan rak yang lebih baik, identiti produk dan struktur pembungkusan yang kukuh."
+        },
+        {
+          "title": "Butiran",
+          "body": "Sesuai untuk 5 kg hingga 75 kg bergantung kepada pembinaan dan kepadatan produk."
+        }
+      ],
+      "cta": "Terokai Beg PP Berlapis",
+      "intro": "Beg PP Tenun Bercetak dan Berlapis menggabungkan kekuatan tenunan dengan persembahan jenama yang menarik. VIVIDPOLY mengeksport beg ini untuk pembeli yang memerlukan pembungkusan bercetak premium untuk komoditi makanan, baja, makanan, makanan haiwan peliharaan, benih, garam, gula dan produk runcit.",
+      "details": "Sesuai untuk 5 kg hingga 75 kg bergantung kepada pembinaan dan kepadatan produk.",
+      "short": "Pembungkusan bercetak premium untuk beras, tepung, makanan, makanan haiwan peliharaan, baja, benih dan komoditi runcit.",
+      "spec": [
+        {
+          "key": "Pangkalan",
+          "value": "Tenunan PP + lapisan berlapis bercetak"
+        },
+        {
+          "key": "Pelapik",
+          "value": "Pelapik pilihan"
+        },
+        {
+          "key": "Selesai",
+          "value": "Kemasan gaya gloss/matt jika ada"
+        },
+        {
+          "key": "Adat",
+          "value": "Saiz dan karya seni tersuai"
+        }
+      ],
+      "benefits": "Penjenamaan yang dipertingkatkan, daya tarikan rak yang lebih baik, identiti produk dan struktur pembungkusan yang kukuh.",
+      "mfg": "Tenunan fabrik, penyediaan karya seni, percetakan, laminasi, pemotongan, jahitan/penukaran, pemeriksaan, pembungkusan.",
+      "material": "Kain tenunan PP, filem bercetak atau lapisan cetakan, lapisan laminasi, benang jahitan, pelapik/tingkap pilihan, dakwat percetakan.",
+      "speciality": "Pembungkusan eksport premium dengan penampilan berfokuskan jenama."
+    },
+    "pinch-bottom": {
+      "name": "Beg Bawah Cubit",
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Pembinaan bawah picit, permukaan berlamina bercetak, ciri mudah buka pilihan, tingkap, gusset, pelapik."
+        },
+        {
+          "title": "Faedah",
+          "body": "Penampilan premium, bentuk terisi yang teratur, persembahan rak yang lebih kukuh, komunikasi jenama yang lebih baik."
+        },
+        {
+          "title": "Butiran",
+          "body": "Paling sesuai untuk produk sedia runcit dan pek komoditi berjenama."
+        }
+      ],
+      "cta": "Terokai Beg Bawah Pinch",
+      "benefits": "Penampilan premium, bentuk terisi yang teratur, persembahan rak yang lebih kukuh, komunikasi jenama yang lebih baik.",
+      "short": "Beg PP berlamina bercetak premium dengan persembahan penutup yang bersih untuk pembungkusan sedia runcit.",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "Biasanya 5 kg hingga 50 kg, lebih tinggi mengikut semakan reka bentuk"
+        },
+        {
+          "key": "Pembinaan",
+          "value": "PP tenunan berlamina bercetak"
+        },
+        {
+          "key": "Alat tambah",
+          "value": "Tingkap/pelapis/gusset pilihan"
+        }
+      ],
+      "intro": "Beg Bawah Pinch PP Tenun Bercetak dan Berlapis direka untuk pembungkusan premium di mana persembahan penutupan bersih dan penampilan jenama adalah penting. VIVIDPOLY mengeksport beg bawah picit untuk bijirin makanan, makanan haiwan peliharaan, makanan haiwan, biji benih dan produk runcit.",
+      "details": "Paling sesuai untuk produk sedia runcit dan pek komoditi berjenama.",
+      "speciality": "Persembahan penutupan premium untuk pembungkusan eksport berjenama.",
+      "material": "Kain tenunan PP, filem berlapis bercetak, lapisan laminasi, pelapik, filem tingkap, dakwat percetakan.",
+      "mfg": "Penyediaan fabrik, percetakan/laminasi, pemotongan, pembentukan bahagian bawah picit, tingkap/perforasi pilihan, pemeriksaan, pembungkusan."
+    },
+    "block-bottom": {
+      "name": "Beg Bawah Sekat",
+      "group": "Beg Anyaman",
+      "short": "Beg PP berlamina bercetak bentuk stabil untuk pembentangan susun, paparan dan eksport yang lebih baik.",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Struktur bawah blok, kemasan berlamina bercetak, mulut terbuka atau bahagian atas injap, pelapik, tebuk."
+        },
+        {
+          "title": "Faedah",
+          "body": "Bentuk berdiri yang lebih baik, persembahan palet yang lebih baik, permukaan penjenamaan yang kukuh dan pengendalian yang lebih mudah."
+        },
+        {
+          "title": "Butiran",
+          "body": "Sesuai untuk produk di mana persembahan visual dan prestasi susun penting."
+        }
+      ],
+      "cta": "Terokai Beg Bawah Blok",
+      "intro": "Beg Bawah Blok PP Bercetak dan Berlamina memberikan bentuk isi yang lebih stabil dan penampilan susunan yang lebih baik. VIVIDPOLY mengeksport beg bawah blok untuk baja, makanan haiwan, makanan haiwan, bijirin, mineral, bahan kimia dan pembungkusan runcit.",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "5 kg hingga 75 kg bergantung pada pembinaan"
+        },
+        {
+          "key": "Format",
+          "value": "Sekat format bawah"
+        },
+        {
+          "key": "Atas",
+          "value": "Injap pilihan"
+        },
+        {
+          "key": "Alat tambah",
+          "value": "Pelapik, tebuk, cetakan berlamina"
+        }
+      ],
+      "details": "Sesuai untuk produk di mana persembahan visual dan prestasi susun penting.",
+      "benefits": "Bentuk berdiri yang lebih baik, persembahan palet yang lebih baik, permukaan penjenamaan yang kukuh dan pengendalian yang lebih mudah.",
+      "speciality": "Persembahan sedia eksport dengan bentuk beg berisi yang stabil.",
+      "mfg": "Pengeluaran fabrik, percetakan/laminasi, pemotongan, pembentukan bawah blok, kemasan atas/injap, pemeriksaan, pembungkusan.",
+      "material": "Kain tenunan PP, filem berlamina, dakwat percetakan, pelapik, bahan injap, bahan membentuk/mencantum."
+    },
+    "gusset": {
+      "name": "Beg Gusset Bawah Blok",
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Sekat bahagian bawah dengan gusset, bahagian luar berlamina bercetak, kedalaman guset tersuai, tingkap, pelapik, tebuk."
+        },
+        {
+          "title": "Faedah",
+          "body": "Kelantangan boleh guna yang lebih tinggi, bentuk isi yang lebih kukuh, kawasan penjenamaan yang dipertingkatkan dan persembahan visual yang lebih baik."
+        },
+        {
+          "title": "Butiran",
+          "body": "Berguna di mana pembeli memerlukan beg bercetak premium dengan volum tambahan dan bentuk yang stabil."
+        }
+      ],
+      "cta": "Terokai Beg Gusset",
+      "details": "Berguna di mana pembeli memerlukan beg bercetak premium dengan volum tambahan dan bentuk yang stabil.",
+      "spec": [
+        {
+          "key": "Kapasiti",
+          "value": "5 kg hingga 75 kg mengikut kepadatan produk dan reka bentuk"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset bahagian bawah/bawah blok"
+        },
+        {
+          "key": "Alat tambah",
+          "value": "Injap pilihan, pelapik, tingkap"
+        }
+      ],
+      "intro": "Beg Gusset Bawah Blok PP Bercetak dan Berlapis menggabungkan pembinaan bahagian bawah blok yang stabil dengan volum yang disokong gusset. VIVIDPOLY mengeksport beg ini untuk makanan haiwan, makanan haiwan peliharaan, baja, bijirin, biji benih, dan produk runcit atau perindustrian volum tinggi.",
+      "short": "Beg PP berlamina bercetak volum tinggi dengan sokongan gusset dan kawasan penjenamaan yang kukuh.",
+      "speciality": "Menggabungkan kelantangan, persembahan dan kepraktisan pembungkusan eksport.",
+      "benefits": "Kelantangan boleh guna yang lebih tinggi, bentuk isi yang lebih kukuh, kawasan penjenamaan yang dipertingkatkan dan persembahan visual yang lebih baik.",
+      "mfg": "Anyaman, percetakan/laminasi, pemotongan, pembentukan gusset, pembentukan bawah blok, penambahan ciri, pemeriksaan, pembungkusan.",
+      "material": "Fabrik tenunan PP, filem berlapis bercetak, pelapik, filem tingkap, pembinaan gusset, dakwat percetakan, bahan jahitan/pembentuk."
+    },
+    "shopping": {
+      "group": "Beg Anyaman",
+      "features": [
+        {
+          "title": "Ciri-ciri",
+          "body": "Struktur tenunan gaya boleh guna semula, pemegang tersuai, cetakan flexo atau berlamina, gusset, kemasan mesra runcit."
+        },
+        {
+          "title": "Faedah",
+          "body": "Kekuatan bawaan yang praktikal, promosi jenama, persembahan runcit profesional dan keterlihatan berulang."
+        },
+        {
+          "title": "Butiran",
+          "body": "Sesuai untuk peruncit, pasar raya, pameran, promosi korporat, dan kempen membeli-belah."
+        }
+      ],
+      "cta": "Terokai Beg Beli-belah",
+      "name": "Beg Beli-belah (Tenun)",
+      "intro": "Beg Beli-belah Tenunan ialah beg pembawa tenunan PP yang digunakan untuk runcit, pasar raya, acara, pameran perdagangan dan pembungkusan promosi. VIVIDPOLY mengeksport beg beli-belah tenunan untuk pembeli yang memerlukan pembungkusan pembawa yang kukuh, gaya boleh guna semula dan berjenama.",
+      "short": "Beg beli-belah tenunan untuk rangkaian runcit, pasar raya, pameran dan kempen promosi.",
+      "spec": [
+        {
+          "key": "Saiz",
+          "value": "Saiz tersuai"
+        },
+        {
+          "key": "Mengendalikan",
+          "value": "Pemegang D-cut/gelung/dijahit/ditebuk"
+        },
+        {
+          "key": "Gusset",
+          "value": "Gusset sisi atau bawah"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Pembungkusan kadbod/berikat/bale"
+        }
+      ],
+      "benefits": "Kekuatan bawaan yang praktikal, promosi jenama, persembahan runcit profesional dan keterlihatan berulang.",
+      "speciality": "Persembahan jenama tersuai untuk pembeli eksport runcit dan promosi.",
+      "details": "Sesuai untuk peruncit, pasar raya, pameran, promosi korporat dan kempen membeli-belah.",
+      "mfg": "Penyediaan fabrik, pencetakan/laminasi, pemotongan, pembentukan/pemasangan pemegang, jahitan, pemeriksaan, pembungkusan.",
+      "material": "Kain tenunan PP, filem bercetak berlapis, benang jahitan, bahan pemegang, dakwat percetakan."
+    },
+    "fabric": {
+      "name": "Kain Tenun PP",
+      "group": "Fabrik",
+      "short": "Gulungan fabrik tenunan PP dan panjang potong untuk kegunaan industri, pertanian dan penukaran.",
+      "intro": "Gulungan fabrik tenunan PP dan panjang potong untuk kegunaan industri, pertanian dan penukaran.",
+      "cta": "Terokai Fabrik Tenunan PP",
+      "features": [
+        {
+          "title": "Eksport sedia",
+          "body": "Dibekalkan untuk pembeli antarabangsa dengan pilihan saiz dan pembungkusan tersuai."
+        },
+        {
+          "title": "Spesifikasi tersuai",
+          "body": "Lebar, GSM, warna, dan panjang gulung atau potong boleh dirancang untuk dipesan."
+        },
+        {
+          "title": "Fokus kualiti",
+          "body": "Tenunan dan kemasan yang konsisten untuk kegunaan industri dan pertanian."
+        }
+      ],
+      "benefits": "Gulungan fabrik tenunan PP dan panjang potong untuk kegunaan industri, pertanian dan penukaran.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Adat untuk siasatan"
+        },
+        {
+          "key": "bahan",
+          "value": "PP tenunan"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Eksport pembungkusan"
+        }
+      ],
+      "details": "Kongsi lebar, GSM, warna, kuantiti dan destinasi yang diperlukan untuk sebut harga.",
+      "material": "Bahan tenunan PP dan bahan tambahan khusus pembeli jika diperlukan.",
+      "speciality": "Kain Tenun PP dari VIVIDPOLY untuk pembeli global.",
+      "mfg": "Tenunan, kemasan, pemeriksaan dan pembungkusan eksport."
+    },
+    "weed-barrier": {
+      "name": "Penghalang Rumpai",
+      "group": "Penghalang Rumpai",
+      "cta": "Terokai Penghalang Rumpai",
+      "features": [
+        {
+          "title": "Eksport sedia",
+          "body": "Dibekalkan untuk pembeli antarabangsa dengan pilihan saiz dan pembungkusan tersuai."
+        },
+        {
+          "title": "Spesifikasi tersuai",
+          "body": "Lebar, GSM, warna, dan panjang gulung atau potong boleh dirancang untuk dipesan."
+        },
+        {
+          "title": "Fokus kualiti",
+          "body": "Tenunan dan kemasan yang konsisten untuk kegunaan industri dan pertanian."
+        }
+      ],
+      "details": "Kongsi lebar, GSM, warna, kuantiti dan destinasi yang diperlukan untuk sebut harga.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Adat untuk siasatan"
+        },
+        {
+          "key": "bahan",
+          "value": "PP tenunan"
+        },
+        {
+          "key": "Pembungkusan",
+          "value": "Eksport pembungkusan"
+        }
+      ],
+      "short": "Kain penghalang rumpai tenunan PP untuk aplikasi landskap, pertanian dan penutup tanah.",
+      "material": "Bahan tenunan PP dan bahan tambahan khusus pembeli jika diperlukan.",
+      "benefits": "Kain penghalang rumpai tenunan PP untuk aplikasi landskap, pertanian dan penutup tanah.",
+      "intro": "Kain penghalang rumpai tenunan PP untuk aplikasi landskap, pertanian dan penutup tanah.",
+      "mfg": "Anyaman, kemasan, pemeriksaan dan pembungkusan eksport.",
+      "speciality": "Weed Barrier daripada VIVIDPOLY untuk pembeli global."
+    }
+  },
+  "markets": [
+    "USA",
+    "Kanada",
+    "Australia",
+    "Eropah",
+    "UK",
+    "Afrika",
+    "Thailand",
+    "Arab Saudi",
+    "Amerika Latin",
+    "New Zealand"
+  ],
+  "packedProductOptions": [
+    "nasi",
+    "Baja",
+    "Makanan haiwan",
+    "simen",
+    "Barang runcit"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Adat"
+    ],
+    "printing": [
+      "Biasa",
+      "Flexo dicetak",
+      "Dicetak berlamina",
+      "Pelbagai warna"
+    ],
+    "addons": [
+      "Pelapik",
+      "Gusset",
+      "pegang",
+      "Tingkap",
+      "Tebuk",
+      "Injap",
+      "Cubit",
+      "Sekat bahagian bawah"
+    ],
+    "packing": [
+      "Bale",
+      "kadbod",
+      "Pallet",
+      "Eksport pembungkusan"
+    ]
+  }
+}

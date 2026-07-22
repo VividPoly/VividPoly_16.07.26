@@ -1,0 +1,1747 @@
+{
+  "topBar": {
+    "selectLanguage": "Wybierz język",
+    "career": "Kariera"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "products": "Produkt",
+    "about": "O nas",
+    "industryServed": "Obsługiwane branże",
+    "resources": "Aktualności",
+    "career": "Kariera",
+    "contact": "Kontakt",
+    "byIndustryUse": "Według branży/zastosowania",
+    "byProductType": "Według rodzaju produktu",
+    "buyerResourcesLead": "Przewodniki dla kupujących, często zadawane pytania i najnowsze informacje od VIVIDPOLY.",
+    "viewAllByIndustry": "Wyświetl wszystkie produkty według branży",
+    "viewAllByType": "Wyświetl wszystkie produkty według typu",
+    "blogTitle": "Blog",
+    "faqsTitle": "Często zadawane pytania",
+    "getQuoteShort": "Uzyskaj wycenę",
+    "buyerResourcesEyebrow": "Nowości i aktualizacje",
+    "closeMenu": "Zamknij menu",
+    "themeLight": "Przełącz na tryb oświetlenia",
+    "mainNav": "Główna nawigacja",
+    "blogDesc": "Poradniki dla kupujących dotyczące typów toreb PP, ich rozmiarów i zapytań eksportowych.",
+    "faqsDesc": "Odpowiedzi na temat wydajności, druku, wkładek i szczegółów oferty.",
+    "themeDark": "Przełącz na tryb ciemny",
+    "openMenu": "Otwórz menu",
+    "mobileNav": "Nawigacja mobilna",
+    "logoHome": "VIVIDPOLY, przejdź do strony głównej",
+    "mobileByIndustry": "Według branży/zastosowania",
+    "industryMenu": "Menu serwowane w branży",
+    "productsMenu": "Menu produktów",
+    "mobileByProductType": "Według rodzaju produktu",
+    "resourcesMenu": "Menu nowości i aktualizacji"
+  },
+  "fab": {
+    "label": "Zapytanie",
+    "mobileLabel": "Pytać się",
+    "ariaLabel": "Otwórz formularz zapytania"
+  },
+  "common": {
+    "getQuote": "Poproś o wycenę",
+    "submitEnquiry": "Wyślij zapytanie",
+    "viewAll": "Zobacz wszystko",
+    "backToHome": "Powrót do strony głównej",
+    "back": "Z powrotem",
+    "select": "Wybierać",
+    "previous": "Poprzedni",
+    "next": "Następny",
+    "optional": "fakultatywny",
+    "custom": "Zwyczaj",
+    "none": "Nic",
+    "selectEnquiryType": "Wybierz typ zapytania",
+    "selectBagType": "Wybierz rodzaj torby",
+    "viewDetails": "Zobacz szczegóły",
+    "recommended": "Zalecony",
+    "specification": "Specyfikacja",
+    "relatedProducts": "Powiązane produkty",
+    "of": "z",
+    "chatExportTeam": "Porozmawiaj z zespołem ds. eksportu",
+    "selectCountry": "Wybierz kraj",
+    "clearFilters": "Wyczyść filtry",
+    "filters": "Filtry",
+    "productsCount": "{count} produktów",
+    "clearAllFilters": "Wyczyść wszystkie filtry",
+    "close": "Zamknąć",
+    "filtered": "(przefiltrowany)",
+    "noProductsMatch": "Żadne produkty nie pasują do wybranych filtrów."
+  },
+  "siteCopy": {
+    "heroHeadline": "Worki PP dla nabywców na całym świecie",
+    "heroLead": "Worki PP, worki tkane, worki z zaworem i niestandardowe opakowania eksportowe z Indii, stworzone dla importerów, dystrybutorów i nabywców przemysłowych na całym świecie.",
+    "heroIsoLabel": "Certyfikat ISO",
+    "heroIecLabel": "Certyfikat IEC",
+    "heroCtaSecondary": "Zobacz typy produktów",
+    "heroIecLabelShort": "IEC",
+    "searchPlaceholder": "Wyszukaj rodzaj worka, produkt lub branżę (np. worki na ryż, worki na cement)",
+    "heroHeadlinePrefix": "Worki PP na",
+    "heroRail": "INDIE · GLOBALNY EKSPORT",
+    "heroCtaSecondaryShort": "Produkty",
+    "heroHeadlineLine1": "Worki PP na",
+    "heroCtaEnquiry": "Zapytanie",
+    "heroCtaWhatsApp": "WhatsApp",
+    "heroHeadlineLine2": "Globalni nabywcy",
+    "heroHeadlineAccent": "Globalni nabywcy",
+    "heroCtaPrimary": "WhatsApp",
+    "headerQuoteLabel": "Cytat",
+    "heroIsoLabelShort": "ISO",
+    "heroLeadShort": "Opakowania eksportowe zbudowane dla odbiorców na całym świecie.",
+    "brandTagline": "Wysokiej jakości rozwiązania w zakresie opakowań",
+    "introHighlights": [
+      {
+        "label": "Pojemność",
+        "value": "5 do 75 kg"
+      },
+      {
+        "label": "Pochodzenie",
+        "value": "Eksport Indii"
+      },
+      {
+        "label": "Centrum",
+        "value": "Niestandardowy nadruk i opakowanie"
+      }
+    ],
+    "introTitle": "Worki PP dla odbiorców na całym świecie",
+    "intro1": "VIVIDPOLY eksportuje torby PP, torby tkane PP, drukowane i laminowane torby tkane PP, torby z dnem ściskanym, torby z blokowym dnem, torby z fałdą, torby z zaworem, torby transportowe, torby z wycięciem w kształcie litery D i tkane torby na zakupy z Indii na rynki światowe. Nasze rozwiązania w zakresie opakowań są przeznaczone dla importerów, dystrybutorów, przetwórców zbóż spożywczych, firm nawozowych, marek pasz dla zwierząt, dostawców środków chemicznych, przedsiębiorstw zajmujących się materiałami budowlanymi, sieci handlowych i nabywców opakowań promocyjnych.",
+    "introEyebrow": "Co eksportujemy",
+    "intro2": "Od opakowań detalicznych o wadze 5 kg po wytrzymałe torby przemysłowe o wadze 75 kg, VIVIDPOLY pomaga kupującym wybrać odpowiednią konstrukcję torby, metodę drukowania, wyściółkę, uchwyt, klin, szwy, styl kroju i format opakowania eksportowego w zależności od zastosowania produktu i rynku docelowego.",
+    "marketsStrip": "Główne rynki eksportowe: Ameryka/USA, Kanada, Australia, Europa, Wielka Brytania, Afryka, Tajlandia, Arabia Saudyjska, Ameryka Łacińska, Nowa Zelandia i inne światowe rynki importowe.",
+    "homeAboutTitle": "Globalny partner w zakresie opakowań eksportowych",
+    "homeAboutCtaType": "Kupuj według rodzaju produktu",
+    "homeAboutCtaIndustry": "Kupuj według branży",
+    "homeAboutEyebrow": "O nas",
+    "homeProductsTitle": "Co oferujemy",
+    "homeProductsEyebrow": "Nasze produkty",
+    "homeValueProps": [
+      {
+        "title": "Konfigurowalna specyfikacja",
+        "description": "Pojemność, konstrukcja, druk i opakowanie dostosowane do Twojego produktu i rynku docelowego."
+      },
+      {
+        "title": "Próbka przed zamówieniem zbiorczym",
+        "description": "Przed potwierdzeniem pełnych ilości eksportowych sprawdź jakość, rozmiar i wykończenie toreb."
+      },
+      {
+        "title": "Opakowanie eksportowe w zestawie",
+        "description": "Pakowanie bel, palet i kartonów zaplanowane w celu bezpiecznej wysyłki międzynarodowej."
+      }
+    ],
+    "homeBrowseHeading": "Przeglądaj torby PP według kategorii",
+    "homeValuePropsEyebrow": "Dlaczego kupujący wybierają VIVIDPOLY",
+    "homeProductsLead": "Drukowane i laminowane tkane torby PP, torby z zaworem, torby z otwartymi ustami i niestandardowe opakowania eksportowe z Indii dla odbiorców rolnych, przemysłowych i detalicznych na całym świecie.",
+    "trustMessage": "VIVIDPOLY jest przeznaczony dla odbiorców importujących z całego świata, którzy potrzebują profesjonalnej komunikacji, jasnych specyfikacji produktu, niestandardowych opcji pakowania i szybkiego wsparcia eksportu z Indii. Zawartość naszych toreb PP jest skonstruowana tak, aby pomóc kupującym porównać rodzaje toreb, zrozumieć zastosowania produktów, przejrzeć funkcje dodatkowe i przesłać pełne wymagania ofertowe.",
+    "productUsesLearnMore": "Wyślij zapytanie",
+    "productUseCol": "Zastosowanie produktu",
+    "buyerSectionTitle": "Opakowania eksportowe, stworzone dla nabywców z całego świata",
+    "buyerResponseLabel": "Odpowiedź VIVIDPOLY",
+    "finalCtaBody": "Udostępnij typ torby, pojemność, potrzeby drukowania, ilość i miejsce docelowe. VIVIDPOLY zapozna się z Twoim zapytaniem i przedstawi praktyczne opcje.",
+    "finalCtaButton": "Wyślij zapytanie",
+    "faqSectionTitle": "Często zadawane pytania",
+    "productUsesIntro": "Worki VIVIDPOLY PP nadają się do szerokiej gamy kategorii produktów. Właściwą torbę należy wybrać na podstawie masy produktu, gęstości, procesu napełniania, wrażliwości na wilgoć, wymagań dotyczących oznakowania marki, warunków obsługi i standardu pakowania eksportowego.",
+    "catalogueUseSub": "Worki VIVIDPOLY PP nadają się do szerokiej gamy kategorii produktów. Właściwą torbę należy wybrać na podstawie masy produktu, gęstości, procesu napełniania, wrażliwości na wilgoć, wymagań dotyczących oznakowania marki, warunków obsługi i standardu pakowania eksportowego.",
+    "productUsesEmptyHint": "Najedź kursorem lub wybierz zastosowanie produktu, aby zobaczyć zalecane typy toreb.",
+    "buyerRequirementLabel": "Wymaganie kupującego",
+    "recommendedBagsCol": "Zalecane typy toreb",
+    "finalCtaTitle": "Chcesz omówić swoje wymagania dotyczące opakowania?",
+    "catalogueGuideProductType": "Wybierz stąd",
+    "catalogueGuideUseSort": "Tutaj sortuj według branży",
+    "shopByUseLabel": "Pakuję się…",
+    "catalogueTypeSub": "VIVIDPOLY eksportuje torby PP z Indii dla firm, które potrzebują mocnego, konfigurowalnego i gotowego do eksportu opakowania. Nasze worki PP mogą być zaprojektowane dla pojemności od 5 kg do 75 kg, w zależności od gęstości produktu, rozmiaru worka, konstrukcji, wytrzymałości tkaniny, laminowania, wyściółki, szwów, klinu i wymagań dotyczących wypełnienia.",
+    "contactIntro": "Skorzystaj z tej strony, aby wysłać zapytanie dotyczące produktu lub pytanie ogólne. Wybierz rodzaj torby, który Cię interesuje lub wybierz Zapytanie ogólne, jeśli nadal przeglądasz opcje.",
+    "quoteIntro1": "Podaj wymagania dotyczące worków PP, aby zespół ds. eksportu VIVIDPOLY mógł polecić odpowiedni typ produktu, konstrukcję, rozmiar, pojemność, druk, funkcje dodatkowe i format opakowania eksportowego.",
+    "quotePageTitle": "Podziel się wymaganiami dotyczącymi toreb",
+    "quoteContactSubmitLabel": "Zarejestruj moje zapytanie",
+    "quotePageEyebrow": "Zapytanie eksportowe",
+    "quoteIntro2": "Odpowiedz na kilka pytań na raz. Poprowadzimy Cię przez rodzaj torby, jej rozmiar, nadruk i szczegóły wysyłki.",
+    "quoteContactStepLead": "Podziel się tym, jak możemy się z Tobą skontaktować. Natychmiast zarejestrujemy Twoje zapytanie i skontaktujemy się z Tobą na WhatsApp.",
+    "quoteContactStepTitle": "Twoje dane kontaktowe",
+    "quoteLeadCapturedOptionalBody": "Jeśli masz chwilę, dodaj już teraz specyfikację swojej torby. Pomaga nam to zalecić odpowiedni typ, rozmiar i nadruk worka PP, zanim zadzwonimy, dzięki czemu Twoja pierwsza rozmowa będzie już przydatna.",
+    "quoteLeadCapturedOptionalTitle": "Chcesz otrzymać szybszą i dokładniejszą wycenę?",
+    "quoteLeadCapturedContinueCta": "Dodaj specyfikację torby",
+    "quoteLeadCapturedTitle": "Zapytanie zarejestrowane",
+    "quoteLeadCapturedLead": "Specjalista ds. eksportu VIVIDPOLY wkrótce skontaktuje się z Tobą na WhatsApp, zwykle w ciągu kilku godzin.",
+    "quoteLeadCapturedSkipCta": "Na razie skończyłem",
+    "sampleBillIntro": "Zapoznaj się z przykładową specyfikacją i opłatami poniżej. Próbki wysyłamy po potwierdzeniu płatności.",
+    "quoteLeadOnlySuccessBody": "Wkrótce skontaktujemy się z Tobą na WhatsApp. Możesz udostępnić szczegóły dotyczące torby, gdy się z Tobą skontaktujemy, lub wrócić w dowolnym momencie, aby uzupełnić specyfikację.",
+    "samplePaymentIntro": "Prześlij próbkę, korzystając z poniższych danych. Użyj numeru referencyjnego, abyśmy mogli dopasować Twoją płatność.",
+    "quoteSubmitNote": "Gdy będziesz zadowolony z powyższych szczegółów, prześlij. Nasz zespół ds. eksportu sprawdzi wszystko i skontaktuje się z WhatsApp.",
+    "samplePaymentTitle": "Dane do przelewu bankowego",
+    "sampleBillTitle": "Przykładowy rachunek zamówienia",
+    "samplePaymentConfirmCta": "Potwierdź przelew bankowy",
+    "sampleSuccessBody": "Dziękuję. Zweryfikujemy Twoją płatność i potwierdzimy harmonogram produkcji i wysyłki próbek pocztą elektroniczną.",
+    "quoteSuccessBody": "Odezwiemy się do Ciebie telefonicznie lub przez WhatsApp w ciągu 12 godzin.",
+    "blogLeadCta": "Wyślij zapytanie",
+    "blogReadArticle": "Przeczytaj artykuł",
+    "sampleSuccessTitle": "Otrzymano przykładowe zamówienie",
+    "quoteSuccessTitle": "Otrzymano zapytanie",
+    "blogIntro": "Napisane dla międzynarodowych nabywców porównujących dostawców toreb PP, zdobywających wiedzę o rodzajach toreb, sprawdzających specyfikacje i przygotowujących zapytania eksportowe.",
+    "homeStats": [
+      {
+        "value": "70+",
+        "label": "Rynki Eksportowe"
+      },
+      {
+        "value": "9+",
+        "label": "Obsługiwane kraje"
+      },
+      {
+        "label": "Miesięczna pojemność",
+        "value": "750 ton"
+      },
+      {
+        "label": "Stopień eksportu"
+      }
+    ],
+    "homeCertsHeading": "Certyfikaty",
+    "blogLeadTitle": "Masz pytanie dotyczące opakowania?",
+    "blogLeadBody": "Wyślij zapytanie dotyczące produktu lub zapytanie ogólne na naszej stronie kontaktowej. Nasz zespół sprawdzi Twoje wymagania i przekaże praktyczne wskazówki.",
+    "homeAboutParagraphs": [
+      "VIVIDPOLY zapewnia globalnym nabywcom importowym profesjonalną komunikację, jasne specyfikacje produktów, niestandardowe opcje pakowania i elastyczne wsparcie eksportu. Pojemność, konstrukcja, druk i opakowanie są dostosowane do Twojego produktu i rynku docelowego, więc każde zamówienie pasuje do Twojego procesu napełniania, potrzeb związanych z brandingiem i warunkami wysyłki.",
+      "Poproś o próbki przed zatwierdzeniem pełnych ilości. Planuje się, że opakowania w belach, paletach i kartonach zostaną zabezpieczone w celu bezpiecznej wysyłki międzynarodowej w dziesięciu tkanych konstrukcjach PP, od otwartych po formaty laminowane premium, dopasowane do zastosowań związanych z ryżem, nawozami, cementem, paszą i sprzedażą detaliczną."
+    ],
+    "buyerSectionParagraphs": [
+      "VIVIDPOLY to indyjski eksporter worków PP obsługujący globalnych importerów, którzy potrzebują profesjonalnej komunikacji, jasnych specyfikacji produktów i niezawodnego wsparcia eksportowego. Dostarczamy torby otwarte, szyte, z wycięciem w kształcie litery D, z zaworem, do przenoszenia, laminowane, z dnem zaciskanym, z dnem blokowym, z klinem i torby na zakupy od 5 kg do 75 kg, z opcjami druku fleksograficznego lub laminowanego do prezentacji marki. Rodzaj produktu, rozmiar, pojemność, druk, laminowanie, wyściółka, klin, uchwyt i szczegóły opakowania są rejestrowane z góry przed wystawieniem jakiejkolwiek oferty."
+    ],
+    "homeBandCta": "Poproś o wycenę",
+    "homeBandEyebrow": "Eksport gotowy",
+    "homeBandTitle": "Zaufali kupujący w ponad 70 krajach",
+    "buyerSectionCta": "Dowiedz się więcej",
+    "homeBandBody": "Własna tkanina PP, drukowanie i szycie oznaczają, że specyfikacja jest kontrolowana od rolki do gotowego worka, a następnie pakowana w belę, paletę lub karton w celu bezpiecznej wysyłki międzynarodowej."
+  },
+  "footer": {
+    "company": "Firma",
+    "productTypes": "Typy produktów",
+    "buyerHelp": "Pomoc dla nabywców",
+    "contact": "Kontakt",
+    "links": {
+      "home": "Dom",
+      "about": "O",
+      "contact": "Skontaktuj się z nami",
+      "productUses": "Zastosowania produktu",
+      "getQuote": "Uzyskaj wycenę"
+    },
+    "aboutBlurb": "VIVIDPOLY eksportuje torby PP z Indii dla odbiorców na całym świecie, którzy potrzebują dostosowywanej pojemności, nadruku, wkładek i opakowań gotowych do eksportu.",
+    "backToTop": "Powrót do góry",
+    "backToTopAria": "Powrót na górę strony"
+  },
+  "meta": {
+    "loading": "Ładowanie VIVIDPOLY…",
+    "description": "VIVIDPOLY eksportuje torby PP z Indii dla odbiorców na całym świecie.",
+    "copyright": "© 2026 VIVIDPOLY · WWW.VIVIDPOLY.COM · Eksporter toreb PP z Indii",
+    "title": "VIVIDPOLY: Eksporter toreb PP z Indii"
+  },
+  "enquiryProductTypes": [
+    {
+      "label": "Zapytanie ogólne"
+    },
+    {
+      "label": "Torby z otwartymi ustami - OMB"
+    },
+    {
+      "label": "Torby szyte od góry i od dołu - TBS"
+    },
+    {
+      "label": "Torby tkane PP typu D-Cut - DCB"
+    },
+    {
+      "label": "Torby na zawory - VB"
+    },
+    {
+      "label": "Torby transportowe - CB"
+    },
+    {
+      "label": "Drukowane, laminowane, tkane torby PP - LWB"
+    },
+    {
+      "label": "Torby typu Pinch Bottom - PBB"
+    },
+    {
+      "label": "Torby blokowe z dnem - BBB"
+    },
+    {
+      "label": "Torby z blokowym dolnym klinem - BGB"
+    },
+    {
+      "label": "Tkane Torby Na Zakupy - WSB"
+    },
+    {
+      "label": "Tkanina PP"
+    },
+    {
+      "label": "Bariera chwastów"
+    }
+  ],
+  "enquiryModal": {
+    "close": "Zamknij formularz zapytania",
+    "title": "Formularz zapytania"
+  },
+  "emailCompose": {
+    "toLabel": "Do",
+    "fromLabel": "Twój e-mail",
+    "nameLabel": "Twoje imię",
+    "subjectLabel": "Temat",
+    "messageLabel": "Wiadomość",
+    "send": "Wyślij wiadomość",
+    "sending": "Przesyłka…",
+    "title": "Wyślij e-mail do VIVIDPOLY",
+    "close": "Zamknij panel tworzenia",
+    "emailInvalid": "Wpisz prawidłowy adres e-mail.",
+    "sendUnavailable": "Wysyłanie wiadomości e-mail nie jest jeszcze skonfigurowane. Aby się z nami skontaktować, użyj telefonu lub WhatsApp.",
+    "sendError": "Nie mogliśmy wysłać Twojej wiadomości. Spróbuj ponownie lub zadzwoń do nas bezpośrednio.",
+    "defaultSubject": "Eksportuj zapytanie z Livingpoly.com",
+    "messageRequired": "Dodaj krótką wiadomość przed wysłaniem.",
+    "hint": "Twoja wiadomość zostanie wysłana bezpośrednio do naszego zespołu ds. eksportu. Odpowiemy na adres e-mail podany powyżej.",
+    "sendSuccess": "Wiadomość wysłana. Nasz zespół wkrótce się z Tobą skontaktuje."
+  },
+  "home": {
+    "shopByIndustry": "Kupuj według branży",
+    "shopByProductTypeDesc": "Dziesięć tkanych konstrukcji PP, od otwartych po formaty laminowane premium.",
+    "howWeHelpBuyers": "Jak pomagamy kupującym",
+    "faqsEyebrow": "Często zadawane pytania",
+    "shopByProductType": "Kupuj według rodzaju produktu",
+    "shopByIndustryDesc": "Dopasuj rodzaje toreb do zastosowań związanych z ryżem, nawozami, cementem, paszą i sprzedażą detaliczną.",
+    "swipeIndustries": "Przesuń, aby przeglądać branże",
+    "valuePropsSlides": "Dlaczego kupujący wybierają slajdy VIVIDPOLY",
+    "buyerNeed": "Kupujący potrzebuje {index}",
+    "slideOf": "{current} z {total}",
+    "productTypes": "Typy produktów",
+    "swipeCards": "Przesuń karty",
+    "buyerCarousel": "Karuzela wymagań kupującego",
+    "buyerPagination": "Kupujący potrzebuje paginacji",
+    "previousProducts": "Poprzednie produkty",
+    "productUses": "Zastosowanie produktu",
+    "buyerRequirements": "Wymagania kupującego",
+    "nextProducts": "Następne produkty"
+  },
+  "catalogue": {
+    "titleByType": "Kupuj według rodzaju produktu",
+    "capacity": "Pojemność",
+    "productType": "Typ produktu",
+    "sortAllProducts": "Wszystkie produkty",
+    "titleByUse": "Kupuj według branży/zastosowania",
+    "breadcrumbUse": "Produkty / Według branży i zastosowania",
+    "breadcrumbType": "Produkty / Według typu produktu"
+  },
+  "pdp": {
+    "keyFeatures": "Kluczowe funkcje",
+    "benefits": "Korzyści",
+    "whyBuyersChoose": "Dlaczego kupujący wybierają tę torbę",
+    "speciality": "Specjalność",
+    "customization": "Szczegóły dostosowywania",
+    "productionMaterials": "Produkcja i materiały",
+    "getQuoteFor": "Uzyskaj wycenę za {productName}",
+    "manufacturingProcess": "Proces produkcyjny",
+    "materialCombination": "Kombinacja materiałów",
+    "trustBadges": [
+      "Konfigurowalna specyfikacja",
+      "Próbka dostępna przed zamówieniem zbiorczym",
+      "Opakowanie eksportowe w zestawie",
+      "Responsywny zespół ds. eksportu"
+    ],
+    "productImage": "Zdjęcie produktu {index}"
+  },
+  "about": {
+    "pageEyebrow": "O NAS",
+    "title": "O nas",
+    "pageTitle": "Globalny partner w zakresie opakowań eksportowych",
+    "ctaSecondary": "Kupuj według rodzaju produktu",
+    "p1": "VIVIDPOLY zapewnia globalnym nabywcom importowym profesjonalną komunikację, jasne specyfikacje produktów, niestandardowe opcje pakowania i elastyczne wsparcie eksportu. Pojemność, konstrukcja, druk i opakowanie są dostosowane do Twojego produktu i rynku docelowego, więc każde zamówienie pasuje do Twojego procesu napełniania, potrzeb związanych z brandingiem i warunkami wysyłki.",
+    "p2": "Poproś o próbki przed zatwierdzeniem pełnych ilości. Planuje się, że opakowania w belach, paletach i kartonach zostaną zabezpieczone w celu bezpiecznej wysyłki międzynarodowej w dziesięciu tkanych konstrukcjach PP, od otwartych po formaty laminowane premium, dopasowane do zastosowań związanych z ryżem, nawozami, cementem, paszą i sprzedażą detaliczną.",
+    "exportVisionHeading": "Prowadzi ku świetlanej przyszłości",
+    "pillarsHeading": "Kontynuowanie dziedzictwa eksportowego opartego na zasadzie kupującego",
+    "exportVisionEyebrow": "Nasza wizja eksportu",
+    "ctaPrimary": "Wyślij zapytanie",
+    "exportVisionBody": "VIVIDPOLY pragnie zostać zaufanym indyjskim partnerem eksportowym dla globalnych przedsiębiorstw, które potrzebują mocnych, konfigurowalnych i gotowych do marki toreb PP. Rozumiemy, że międzynarodowi nabywcy potrzebują czegoś więcej niż ogólnych opisów produktów. Potrzebują dokładnych specyfikacji, wskazówek dotyczących użytkowania produktu, wsparcia w zakresie grafiki i drukowania, odpowiednich opcji pakowania oraz szybkiej komunikacji w całym procesie zapytania.",
+    "pillarsEyebrow": "MOCNE STRONY",
+    "pillarsBody": "Od międzynarodowych standardów po praktyczne wsparcie w zakresie zapytań, VIVIDPOLY opiera się na tym, w jaki sposób faktycznie pozyskują globalni nabywcy opakowań. Specyfikacje, opakowanie i komunikacja są zaplanowane z myślą o rynkach docelowych i potrzebach kupującego. Pojemność waha się od opakowań detalicznych o masie 5 kg do worków przemysłowych o masie 75 kg, z możliwością laminowania, wkładką, klinem, zaworem i opcjami nadruku. Dedykowane wsparcie eksportowe obejmuje typ produktu, grafikę, format opakowania, ilość i miejsce docelowe przed wyceną, z ustrukturyzowanymi wskazówkami dotyczącymi użytkowania produktu i pełną ścieżką zapytań.",
+    "pillarsLead": "Od międzynarodowych standardów po praktyczne wsparcie w zakresie zapytań, VIVIDPOLY opiera się na tym, w jaki sposób faktycznie pozyskują globalni nabywcy opakowań.",
+    "pillars": [
+      {
+        "body": "Specyfikacje, opakowanie i komunikacja są zaplanowane z myślą o rynkach docelowych i potrzebach kupującego.",
+        "title": "Zapewniamy międzynarodowe standardy eksportu"
+      },
+      {
+        "title": "Gotowość do eksportu i konstrukcja",
+        "body": "Od opakowań detalicznych o masie 5 kg po torby przemysłowe o masie 75 kg, z laminacją, wkładką, klinem, zaworem i opcjami nadruku."
+      },
+      {
+        "body": "Elastyczne wskazówki dotyczące rodzaju produktu, grafiki, formatu opakowania, ilości i miejsca docelowego przed wyceną.",
+        "title": "Dedykowany zespół wsparcia eksportu"
+      },
+      {
+        "title": "Praktyczne doświadczenie z przejrzystym procesem",
+        "body": "Kupujący otrzymują uporządkowane wskazówki dotyczące użytkowania produktu i pełną ścieżkę zapytania zamiast niejasnego egzemplarza katalogu."
+      }
+    ],
+    "whyEyebrow": "USŁUGI",
+    "whyHeading": "Wsparcie w zakresie opakowań eksportowych w najlepszym wydaniu",
+    "whyMoreLabel": "WIĘCEJ SZCZEGÓŁÓW",
+    "contactTeam": "Wyślij zapytanie",
+    "requestCustomQuote": "Wyślij zapytanie",
+    "factsEyebrow": "Dane firmy",
+    "ctaBandButton": "Wyślij zapytanie",
+    "factsHeading": "VIVIDPOLY w skrócie",
+    "ctaBandBody": "Udostępnij typ torby, pojemność, potrzeby drukowania, ilość i miejsce docelowe. VIVIDPOLY zapozna się z Twoim zapytaniem i przedstawi praktyczne opcje.",
+    "ctaBandTitle": "Szukasz profesjonalnego partnera w zakresie opakowań eksportowych?",
+    "whyLead": "Od różnorodności produktów i planowania wydajności po drukowanie, podkładki i opakowania eksportowe, VIVIDPOLY ma strukturę wspierającą praktyczne decyzje dotyczące zaopatrzenia.",
+    "whyBody": "Od różnorodności produktów i planowania wydajności po drukowanie, podkładki i opakowania eksportowe, VIVIDPOLY ma strukturę wspierającą praktyczne decyzje dotyczące zaopatrzenia. Kupujący mogą zaopatrywać się w torby PP z Indii dla USA, Kanady, Australii, Europy, Wielkiej Brytanii, Afryki, Tajlandii, Arabii Saudyjskiej i innych rynków w szerokiej gamie toreb przemysłowych, rolniczych, detalicznych i promocyjnych. Planowanie wydajności obejmuje obciążenia od 5 kg do 75 kg, z niestandardową konstrukcją, drukiem i wsparciem w zakresie brandingu, wskazówkami dotyczącymi użytkowania produktu oraz przyjaznym dla kupującego procesem wyceny, który uwzględnia szczegóły potrzebne przed wyceną.",
+    "whyItems": [
+      [
+        "Pozycjonowanie eksportera z siedzibą w Indiach",
+        "Kupujący mogą zaopatrywać się w torby PP z Indii na rynki USA, Kanady, Australii, Europy, Wielkiej Brytanii, Afryki, Tajlandii, Arabii Saudyjskiej i innych rynków."
+      ],
+      [
+        "Skoncentrowany asortyment produktów w postaci toreb PP",
+        "Oferta produktów jest przejrzysta i praktyczna i obejmuje popularne typy toreb przemysłowych, rolniczych, detalicznych i promocyjnych."
+      ],
+      [
+        "Planowanie udźwigu od 5 kg do 75 kg",
+        "Kupujący mogą omawiać małe opakowania detaliczne, torby towarowe średniej wielkości i wytrzymałe torby przemysłowe."
+      ],
+      [
+        "Niestandardowe opcje konstrukcyjne",
+        "Można zaplanować warstwy, laminowanie, klin, podszewkę, perforację, okienko, uchwyt, zawór, dno ściskane i dno blokowe."
+      ],
+      [
+        "Wsparcie w zakresie druku i brandingu",
+        "Opcje druku fleksograficznego i drukowanej laminowanej tkaniny PP pomagają zwiększyć widoczność marki i prezentację na rynku."
+      ],
+      [
+        "Wskazówki dotyczące użytkowania produktu",
+        "Kupujący mogą wybierać torby według zastosowania, takiego jak ryż, nawozy, pasza dla zwierząt, chemikalia, cement, sól, cukier, sprzedaż detaliczna i zakupy."
+      ],
+      [
+        "Proces wyceny przyjazny dla kupującego",
+        "Witryna internetowa pomaga kupującym udostępniać przed wyceną typ produktu, pojemność, rozmiar, druk, dodatki, opakowanie, ilość i miejsce docelowe."
+      ]
+    ],
+    "ctaBandEyebrow": "Skontaktuj się"
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "sendRequirement": "Formularz zapytania",
+    "formName": "Nazwa",
+    "formCompany": "Nazwa firmy",
+    "formEmail": "E-mail",
+    "formMessage": "Wiadomość",
+    "formCountry": "Kraj",
+    "sending": "Przesyłka…",
+    "sendRequirementLead": "Powiedz nam, czego potrzebujesz. Wybierz rodzaj produktu lub wyślij ogólne zapytanie, a my odpowiemy praktycznymi wskazówkami.",
+    "formEnquiryType": "Typ zapytania",
+    "reachUs": "Skontaktuj się z nami bezpośrednio",
+    "emailInvalid": "Wpisz prawidłowy adres e-mail.",
+    "formPhone": "WhatsApp/telefon",
+    "submitSuccess": "Zapytanie wysłane. Nasz zespół wkrótce się z Tobą skontaktuje.",
+    "emailLabel": "E-mail",
+    "submitEnquiry": "Wyślij zapytanie",
+    "websiteLabel": "Strona internetowa",
+    "messageRequired": "Dodaj krótką wiadomość przed przesłaniem.",
+    "submitError": "Nie mogliśmy wysłać Twojego zapytania. Spróbuj ponownie lub zadzwoń do nas bezpośrednio.",
+    "phoneRequired": "Dodaj WhatsApp lub numer telefonu, abyśmy mogli się z Tobą skontaktować.",
+    "submitUnavailable": "Zapytanie online nie jest jeszcze skonfigurowane. Napisz do nas lub zadzwoń, korzystając z danych znajdujących się na tej stronie.",
+    "phoneLabel": "WhatsApp / telefon",
+    "corporateOffice": "Biuro korporacyjne",
+    "companyRows": [
+      [
+        "Firma/marka"
+      ],
+      [
+        "Strona internetowa",
+        "WWW.VIVIDPOLY.COM"
+      ],
+      [
+        "E-mail"
+      ],
+      [
+        "Telefon"
+      ],
+      [
+        "Adres korporacyjny",
+        "Plac Sankalp, A 1601, Sindhu Bhavan Marg, w pobliżu hotelu Taj, naprzeciw. Strzelanka, Kolonia PRL, Bopal, Ahmedabad, Gujarat 380058"
+      ]
+    ],
+    "corporateAddress": "Plac Sankalp, A 1601, Sindhu Bhavan Marg, w pobliżu hotelu Taj, naprzeciw. Strzelanka, Kolonia PRL, Bopal, Ahmedabad, Gujarat 380058"
+  },
+  "quote": {
+    "stepContact": "Dane kontaktowe",
+    "stepBagSpec": "Specyfikacja torby",
+    "submitEnquiry": "Wyślij zapytanie",
+    "bagSpec": "Specyfikacja torby",
+    "stepLabel": "Krok {current} z {total}",
+    "howReachYou": "Jak mamy się z Tobą skontaktować?",
+    "fields": {
+      "capacity": "Pojemność",
+      "product": "Produkt",
+      "size": "Rozmiar",
+      "printing": "Druk",
+      "addons": "Dodatki",
+      "packing": "Uszczelka",
+      "quantity": "Ilość",
+      "destination": "Kraj docelowy",
+      "review": "Recenzja",
+      "bagType": "Typ torby",
+      "packedProduct": "Produkt zapakowany"
+    },
+    "reviewLabels": {
+      "productType": "Typ produktu",
+      "capacity": "Pojemność",
+      "printing": "Druk",
+      "addons": "Dodatki",
+      "packing": "Uszczelka",
+      "quantity": "Ilość",
+      "destination": "Miejsce docelowe",
+      "empty": "-",
+      "bagSize": "Rozmiar torby",
+      "packedProduct": "Produkt zapakowany"
+    },
+    "saved": "Twoje dane kontaktowe zostały zapisane.",
+    "savedWithName": "{name}, Twoje dane kontaktowe zostaną zapisane.",
+    "closeForm": "Zamknij formularz zapytania",
+    "emailInvalid": "Wpisz prawidłowy adres e-mail.",
+    "reviewSteps": {
+      "product": "Produkt",
+      "order": "Zamówienie",
+      "sizePrint": "Rozmiar i nadruk"
+    },
+    "registerLead": "Zarejestrujemy Twoje zapytanie i skontaktujemy się z Tobą w WhatsApp."
+  },
+  "sample": {
+    "steps": {
+      "review": "Recenzja",
+      "payment": "Zapłata",
+      "confirmed": "Potwierdzony"
+    },
+    "total": "Całkowity",
+    "continuePayment": "Przejdź do płatności",
+    "reference": "Odniesienie:",
+    "specification": "Przykładowa specyfikacja",
+    "yourDetails": "Twoje dane",
+    "subtotal": "Suma częściowa",
+    "bankTransfer": "Przelew bankowy",
+    "billRows": {
+      "productType": "Typ produktu",
+      "capacity": "Pojemność",
+      "printing": "Druk",
+      "packing": "Uszczelka",
+      "leadTime": "Czas realizacji",
+      "total": "Całkowity",
+      "unitPrice": "Cena jednostkowa",
+      "sampleQuantity": "Ilość próbek",
+      "exportPacking": "Pakowanie i wysyłka eksportowa"
+    },
+    "selectBank": "Wybierz bank",
+    "searchBanks": "Szukaj banków",
+    "bankRows": {
+      "beneficiary": "Beneficjant",
+      "bank": "Bank",
+      "swift": "SZYBKI",
+      "branch": "Oddział",
+      "accountNumber": "Numer konta",
+      "amount": "Kwota",
+      "paymentReference": "Numer referencyjny płatności",
+      "ifsc": "IFSC",
+      "accountType": "Typ konta"
+    },
+    "selectBranch": "Wybierz oddział",
+    "searchBranches": "Szukaj oddziałów",
+    "form": {
+      "name": "Nazwa",
+      "address": "Adres dostawy",
+      "quantity": "Ilość potrzebna na próbkę"
+    },
+    "noBankMatches": "Brak dopasowań. Spróbuj innego wyszukiwania.",
+    "closePicker": "Zamknij selektor"
+  },
+  "blog": {
+    "fallbackReadTime": "5 minut czytania",
+    "fallbackCategory": "Przewodnik kupującego",
+    "pageTitle": "Przewodniki i spostrzeżenia dla kupujących",
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "emptyBody": "Nowe przewodniki dla kupujących i statystyki są już w drodze — sprawdź ponownie wkrótce.",
+    "loading": "Ładowanie artykułów…",
+    "emptyTitle": "Nie ma jeszcze artykułów",
+    "backToArticles": "Powrót do wszystkich artykułów",
+    "dateLabel": "Data",
+    "searchLabel": "Szukaj",
+    "searchSubmit": "Szukaj",
+    "dateAll": "Cały czas",
+    "dateYear": "W tym roku",
+    "topicsLabel": "Tematy",
+    "date7": "Ostatnie 7 dni",
+    "searchPlaceholder": "Wyszukaj artykuły…",
+    "date90": "Ostatnie 90 dni",
+    "topicsAll": "Wszystkie tematy",
+    "date30": "Ostatnie 30 dni",
+    "noResultsBody": "Wypróbuj inne wyszukiwane hasło, temat lub zakres dat.",
+    "articlesMany": "{count} artykułów",
+    "clearFilters": "Wyczyść filtry",
+    "articlesOne": "1 artykuł",
+    "noResultsTitle": "Brak pasujących artykułów"
+  },
+  "careers": {
+    "eyebrow": "Kariera w VividPoly",
+    "title": "Pochodzi z Indii. Zaufany na całym świecie.",
+    "lead": "Poszukujemy osób, którym zależy na jakości, jasnej komunikacji i rzetelnej dostawie. Role obejmują operacje biurowe, fabryczne i eksportowe w Ahmadabadzie i Vadodara.",
+    "applyNow": "Złóż wniosek teraz",
+    "reasons": [
+      {
+        "title": "Globalna ekspozycja",
+        "body": "Praca związana z nabywcami na ponad 70 rynkach eksportowych."
+      },
+      {
+        "title": "Pokój do wzrostu",
+        "body": "W rozwijającej się firmie nowa odpowiedzialność pojawia się szybko."
+      },
+      {
+        "title": "Bezpieczeństwo pracy",
+        "body": "Wspierane przez stabilną, ugruntowaną działalność eksportową."
+      },
+      {
+        "title": "Nauka w pracy",
+        "body": "Praktyczny kontakt z produkcją i handlem światowym."
+      }
+    ],
+    "seeHowWeWork": "Zobacz jak pracujemy",
+    "whyHeading": "Dlaczego VividPoly",
+    "whyLead": "Praktyczne miejsce do budowania umiejętności w produkcji i handlu światowym.",
+    "whyBody": "Praktyczne miejsce do budowania umiejętności w produkcji i handlu światowym. Praca jest powiązana z nabywcami na ponad 70 rynkach eksportowych, w rozwijającej się firmie szybko pojawia się nowa odpowiedzialność, a role są wspierane przez stabilną, ugruntowaną działalność eksportową z praktycznym kontaktem z produkcją i handlem światowym.",
+    "positionsHeading": "Znajdź nas tam, gdzie już szukasz",
+    "positionsLead": "Aktualne oferty pracy są publikowane i aktualizowane na tych platformach. Przeglądaj role na żywo, a następnie aplikuj za pomocą poniższego formularza.",
+    "platforms": [
+      {
+        "label": "LinkedIn",
+        "blurb": "Aktualizacje firmy i otwarte role w karierze związanej z eksportem, operacjami i pakowaniem."
+      },
+      {
+        "label": "Rzeczywiście",
+        "blurb": "Przeszukuj oferty VIVIDPOLY według roli, lokalizacji i poziomu doświadczenia."
+      },
+      {
+        "label": "Naukri",
+        "blurb": "Otwarte stanowiska w Indiach w zespołach produkcyjnych, sprzedażowych i wsparcia."
+      }
+    ],
+    "positionsMoreLabel": "ZOBACZ OTWORY",
+    "positionsNote": "Wolisz bezpośrednią aplikację? Skorzystaj z opcji Zastosuj teraz poniżej.",
+    "positionsEyebrow": "OTWARTE POZYCJE",
+    "ctaEyebrow": "APLIKUJ TERAZ",
+    "ctaHeading": "Twój kolejny krok w karierze zaczyna się tutaj",
+    "ctaLead": "Podziel się swoimi zainteresowaniami, doświadczeniem i preferowaną lokalizacją. Nasz zespół dokona przeglądu aplikacji, gdy tylko pojawią się wakaty."
+  },
+  "search": {
+    "suggestionsHeading": "Sugestie",
+    "recentHeading": "Ostatnie wyszukiwania",
+    "noMatches": "Brak dopasowań. Spróbuj „ryż” lub „cement”",
+    "recentTerms": [
+      "torby ryżowe",
+      "worki z cementem",
+      "drukowane laminowane",
+      "25 kg z otwartymi ustami"
+    ]
+  },
+  "filters": {
+    "capacityMax": "Maksymalna pojemność",
+    "capacityOrEnter": "Lub wprowadź pojemność",
+    "capacityExample": "np. 23 kg",
+    "capacityMin": "Minimalna pojemność",
+    "capacityCustomNotice": "VIVIDPOLY zapewnia opakowania w workach PP o masie od {min} kg do {max} kg. Wprowadź pojemność mieszczącą się w tym zakresie.",
+    "customSelectUseAnyway": "Mimo to użyj tej wartości",
+    "customSelectNoMatches": "Nie znaleziono żadnych dopasowań",
+    "productUseOptions": "Opcje użycia produktu",
+    "customSelectEnter": "Podaj swoją specyfikację…"
+  },
+  "breadcrumbs": {
+    "home": "Dom",
+    "products": "Produkty",
+    "blog": "Blog",
+    "faqs": "Często zadawane pytania",
+    "about": "O",
+    "careers": "Kariera",
+    "contact": "Skontaktuj się z nami",
+    "getQuote": "Uzyskaj wycenę",
+    "requestExportQuote": "Poproś o wycenę eksportu"
+  },
+  "validation": {
+    "emailInvalid": "Wpisz prawidłowy adres e-mail."
+  },
+  "buyerRows": [
+    {
+      "requirement": "Pozyskiwanie produktów eksportowych z Indii",
+      "response": "VIVIDPOLY zajmuje pozycję indyjskiego eksportera obsługującego globalnych odbiorców worków PP."
+    },
+    {
+      "requirement": "Różnorodność produktów",
+      "response": "Otwarte, szyte, z wycięciem w kształcie litery D, z zaworem, do przenoszenia, laminowane, z dnem ściskanym, dnem blokowym, klinem i torby na zakupy."
+    },
+    {
+      "requirement": "Niestandardowa pojemność",
+      "response": "Rozwiązania w zakresie worków PP można zaplanować w zakresie od 5 kg do 75 kg w zależności od gęstości produktu i konstrukcji worka."
+    },
+    {
+      "requirement": "Prezentacja marki",
+      "response": "Opcje druku fleksograficznego i drukowanej laminowanej tkaniny PP zwiększają tożsamość produktu i atrakcyjność na półce."
+    },
+    {
+      "requirement": "Przyjazny dla kupującego przepływ zapytań",
+      "response": "Rodzaj produktu, rozmiar, pojemność, druk, laminowanie, wyściółka, klin, uchwyt i szczegóły opakowania można uwzględnić przed wyceną."
+    }
+  ],
+  "buyerMeta": [
+    {
+      "label": "Pozyskiwanie z Indii",
+      "short": "Eksporter z siedzibą w Indiach"
+    },
+    {
+      "label": "Asortyment produktów",
+      "short": "10 typów toreb"
+    },
+    {
+      "label": "Niestandardowa pojemność",
+      "short": "5 kg do 75 kg"
+    },
+    {
+      "label": "Druk markowy",
+      "short": "Drukuj i laminuj"
+    },
+    {
+      "short": "Szczegóły gotowe do wyceny",
+      "label": "Przepływ pracy z wyceną"
+    }
+  ],
+  "useRows": [
+    {
+      "use": "Ryż, pszenica, zboża, rośliny strączkowe, mąka",
+      "cardTitle": "Ziarna i rośliny strączkowe",
+      "bags": "Torby z otwartymi ustami, torby ze szwem górnym i dolnym, torby tkane PP z nadrukiem laminowanym, torby z dolnym dnem",
+      "tips": "Druk fleksograficzny, druk laminowany, okienko, klin, wkładka, uchwyt, opakowanie do bel eksportowych."
+    },
+    {
+      "tips": "Podszewka, klin, druk fleksograficzny, druk laminowany, perforacja, pakowanie paletowe.",
+      "use": "Nawóz i nasiona",
+      "bags": "Worki szyte, worki tkane laminowane PP, worki z dnem blokowym, worki z klinowym dnem blokowym",
+      "cardTitle": "Nawozy i nasiona"
+    },
+    {
+      "cardTitle": "Pasza dla zwierząt i karma dla zwierząt domowych",
+      "use": "Pasza dla zwierząt i karma dla zwierząt domowych",
+      "bags": "Drukowane, laminowane torby tkane PP, torby z blokową dolną fałdą, torby transportowe, torby z dolnym dnem",
+      "tips": "Konstrukcja wielowarstwowa, okienko, klin, uchwyt, nadruk premium, opcjonalna perforacja."
+    },
+    {
+      "bags": "Worki z zaworem, torby z dnem blokowym, torby ze szwem górnym i dolnym, torby z wkładką",
+      "cardTitle": "Cement i proszki przemysłowe",
+      "use": "Cement, chemikalia, minerały, proszki",
+      "tips": "Konstrukcja zaworu, wkładka, perforacja, mocne szwy, wytrzymałe uszczelnienie."
+    },
+    {
+      "bags": "Torby otwarte, torby szyte, torby laminowane, torby z wkładką",
+      "cardTitle": "Sól, cukier i towary",
+      "use": "Sól, cukier, towary konsumpcyjne",
+      "tips": "Podszewka, powierzchnia laminowana, druk fleksograficzny, czyste szwy, opcje odprowadzania wilgoci."
+    },
+    {
+      "tips": "Opcje uchwytów, druk laminowany, klin, opakowanie kartonowe, grafika marki.",
+      "bags": "Torby wycinane w kształcie litery D, torby transportowe, tkane torby na zakupy, drukowane laminowane torby tkane PP",
+      "cardTitle": "Handel detaliczny i promocyjny",
+      "use": "Handel detaliczny, zakupy, promocja"
+    }
+  ],
+  "useGuidance": [
+    {
+      "tips": "Druk fleksograficzny, druk laminowany, okienko, klin, wkładka, uchwyt, opakowanie do bel eksportowych.",
+      "title": "Ryż, pszenica, zboża i rośliny strączkowe",
+      "bags": "Torby z otwartymi ustami, torby ze szwem górnym i dolnym, torby tkane PP z nadrukiem laminowanym, torby z dolnym dnem."
+    },
+    {
+      "title": "Mąka i artykuły spożywcze",
+      "bags": "Torby z otwartymi ustami, drukowane i laminowane torby tkane PP, torby z dnem ściąganym.",
+      "tips": "Wyściółka, powierzchnia laminowana, czyste cięcie, bezpieczne szwy, konstrukcja przyjazna dla handlu detalicznego."
+    },
+    {
+      "tips": "Podszewka, powierzchnia laminowana, druk fleksograficzny, czyste szwy, opcje odprowadzania wilgoci.",
+      "bags": "Torby z otwartymi ustami, torby szyte, drukowane, laminowane torby tkane PP.",
+      "title": "Sól i cukier"
+    },
+    {
+      "tips": "Podszewka, klin, druk fleksograficzny, druk laminowany, perforacja, pakowanie paletowe.",
+      "bags": "Worki szyte, worki tkane laminowane PP, worki z dnem blokowym, worki z klinowym dnem blokowym.",
+      "title": "Nawozy i nasiona"
+    },
+    {
+      "tips": "Konstrukcja wielowarstwowa, okienko, klin, uchwyt, nadruk premium, opcjonalna perforacja.",
+      "title": "Pasza dla zwierząt i karma dla zwierząt domowych",
+      "bags": "Drukowane, laminowane torby tkane PP, torby z dnem ściętym, torby z klinowym dnem, torby transportowe."
+    },
+    {
+      "tips": "Konstrukcja zaworu, wkładka, perforacja, mocne szwy, wytrzymałe uszczelnienie.",
+      "bags": "Worki wentylowe, worki z dnem blokowym, worki ze szwem górnym i dolnym.",
+      "title": "Cement i materiały budowlane"
+    },
+    {
+      "tips": "Podszewka, laminowanie, perforacja odpowietrzająca, bezpieczne szycie, opakowanie eksportowe.",
+      "bags": "Worki z zaworem, torby szyte, torby z otwartymi ustami, torby z wkładką.",
+      "title": "Chemikalia i minerały"
+    },
+    {
+      "tips": "Opcje uchwytów, druk laminowany, klin, opakowanie kartonowe, grafika marki.",
+      "title": "Produkty detaliczne i promocyjne",
+      "bags": "Torby wycinane w kształcie litery D, torby transportowe, tkane torby na zakupy, drukowane laminowane torby tkane PP."
+    },
+    {
+      "bags": "Tkane torby na zakupy, torby transportowe, torby tkane z PP w kształcie litery D.",
+      "title": "Opakowania zakupowe i wielokrotnego użytku",
+      "tips": "Uchwyty pętelkowe, uchwyty w kształcie litery D, klin boczny, klin dolny, nadruk wielokolorowy."
+    }
+  ],
+  "typeGroups": [
+    {
+      "title": "Tkana torba"
+    },
+    {
+      "title": "Tkanina"
+    },
+    {
+      "title": "Bariera chwastów"
+    }
+  ],
+  "useGroups": [
+    {
+      "title": "Artykuły rolne i spożywcze",
+      "items": [
+        "Ryż, pszenica, zboża i rośliny strączkowe",
+        "Mąka i artykuły spożywcze",
+        "Sól i cukier"
+      ]
+    },
+    {
+      "title": "Nakłady rolne i opieka nad zwierzętami",
+      "items": [
+        "Nawozy i nasiona",
+        "Pasza dla zwierząt i karma dla zwierząt domowych"
+      ]
+    },
+    {
+      "title": "Przemysłowe i budowlane",
+      "items": [
+        "Cement i materiały budowlane",
+        "Chemikalia i minerały"
+      ]
+    },
+    {
+      "title": "Handel detaliczny i promocyjny",
+      "items": [
+        "Produkty detaliczne i promocyjne",
+        "Opakowania zakupowe i wielokrotnego użytku"
+      ]
+    }
+  ],
+  "filterSections": [
+    {
+      "key": "Pojemność",
+      "title": "Pojemność",
+      "options": [
+        {
+          "label": "5 kg"
+        },
+        {
+          "label": "10 kg"
+        },
+        {
+          "label": "15 kg"
+        },
+        {
+          "label": "20 kg"
+        },
+        {
+          "label": "25 kg"
+        },
+        {
+          "label": "30 kg"
+        },
+        {
+          "label": "40 kg"
+        },
+        {
+          "label": "50 kg"
+        },
+        {
+          "label": "60 kg"
+        },
+        {
+          "label": "75 kg"
+        },
+        {
+          "label": "Zwyczaj"
+        }
+      ]
+    },
+    {
+      "key": "Typ produktu",
+      "title": "Typ produktu",
+      "options": [
+        {
+          "label": "Otwórz usta"
+        },
+        {
+          "label": "Zszyte"
+        },
+        {
+          "label": "Cięcie w kształcie litery D"
+        },
+        {
+          "label": "Zawór"
+        },
+        {
+          "label": "Nosić"
+        },
+        {
+          "label": "Płytkowy"
+        },
+        {
+          "label": "Uszczypnij dół"
+        },
+        {
+          "label": "Zablokuj dół"
+        },
+        {
+          "label": "Zablokuj dolny klin"
+        },
+        {
+          "label": "Tkane zakupy"
+        },
+        {
+          "label": "Tkanina PP"
+        },
+        {
+          "label": "Bariera chwastów"
+        }
+      ]
+    }
+  ],
+  "faqList": [
+    {
+      "q": "Jakie rodzaje worków PP eksportuje VIVIDPOLY?",
+      "a": "VIVIDPOLY eksportuje torby z otwartymi ustami, torby ze szwem u góry i na dole, torby tkane z PP z wycięciem w kształcie litery D, torby z zaworem, torby transportowe, torby tkane z PP z nadrukiem i laminowaniem, torby tkane z PP z nadrukiem i laminowaniem, torby z dnem ściskanym z PP, drukowane i laminowane torby z dnem blokowym z PP, drukowane i laminowane torby z klinem dolnym z bloku PP oraz tkane torby na zakupy."
+    },
+    {
+      "q": "Jaka pojemność wagowa jest dostępna dla worków VIVIDPOLY PP?",
+      "a": "VIVIDPOLY może omówić wymagania dotyczące worków PP od 5 kg do 75 kg, w zależności od gęstości produktu, rozmiaru worka, wytrzymałości tkaniny, konstrukcji, laminowania, wyściółki, klinu, szwów i zastosowania końcowego."
+    },
+    {
+      "q": "Jakie informacje są potrzebne do wyceny?",
+      "a": "Kupujący powinni podać rodzaj produktu, zapakowany produkt, pojemność, rozmiar worka, ilość, wymagania dotyczące drukowania, laminowanie, wyściółkę, klin, uchwyt, cięcie, szycie, rodzaj opakowania, kraj docelowy oraz grafikę lub próbkę, jeśli jest dostępna."
+    },
+    {
+      "q": "Czy VIVIDPOLY może dostarczać drukowane i laminowane torby tkane PP?",
+      "a": "Tak. VIVIDPOLY może spełniać wymagania dotyczące drukowanych i laminowanych toreb tkanych PP dla produktów takich jak ryż, mąka, nawozy, pasza dla zwierząt, karma dla zwierząt domowych, nasiona, sól, cukier i towary detaliczne."
+    },
+    {
+      "q": "Jaka jest różnica między workami z otwartymi ustami a workami z zaworem?",
+      "a": "Worki z otwartymi ustami są napełniane przez otwartą górę i zamykane po napełnieniu. Worki z zaworami są napełniane przez otwór zaworu i są powszechnie stosowane do proszków, produktów cementowych, chemikaliów, minerałów i materiałów budowlanych."
+    },
+    {
+      "a": "Torebki z dnem ściąganym stosuje się tam, gdzie kupujący potrzebują doskonałego wyglądu opakowania i czystego zamknięcia. Nadają się do wybranej żywności, karmy dla zwierząt domowych, pasz dla zwierząt, zbóż, nasion i produktów detalicznych.",
+      "q": "Do czego służą torby ze ściągaczem?"
+    },
+    {
+      "a": "Worki z blokowym dolnym klinem są odpowiednie tam, gdzie kupujący potrzebują większej objętości, stabilnego kształtu wypełnienia, mocniejszego obszaru oznakowania i lepszej prezentacji przy układaniu w stosy.",
+      "q": "Do czego służą worki z fałdą blokową?"
+    },
+    {
+      "a": "Tak. Wybrane drukowane i laminowane torby tkane PP mogą zawierać przezroczyste okienko pokazujące zapakowany produkt w środku.",
+      "q": "Czy torby PP mogą zawierać okienka?"
+    },
+    {
+      "a": "Tak. Wkładki można rozważyć tam, gdzie wymagana jest dodatkowa ochrona produktu, utrzymanie wilgoci lub dobre utrzymanie produktu.",
+      "q": "Czy VIVIDPOLY może zapewnić wkładki wewnątrz worków PP?"
+    },
+    {
+      "q": "Jakie opcje drukowania są dostępne?",
+      "a": "VIVIDPOLY może obsługiwać torby zwykłe, torby z nadrukiem fleksograficznym oraz drukowane i laminowane formaty toreb tkanych PP, w zależności od potrzeb marki, złożoności grafiki, budżetu i rynku produktowego."
+    }
+  ],
+  "blogList": [
+    {
+      "purpose": "Wyjaśnij torby PP, typowe zastosowania i czynniki wyboru kupującego.",
+      "category": "Przewodnik kupującego",
+      "title": "Czym są torby PP? Kompletny przewodnik dla nabywców importowych",
+      "readTime": "6 minut czytania",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elita. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "category": "Opakowanie",
+      "readTime": "5 minut czytania",
+      "title": "Torby z otwartymi ustami a torby z zaworem: która torba PP jest odpowiednia dla Twojego produktu?",
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "purpose": "Porównaj style napełniania i odpowiednie zastosowania."
+    },
+    {
+      "title": "Torby PP szyte od góry i od dołu: zastosowania, zalety i dostosowywanie",
+      "category": "Przewodnik kupującego",
+      "readTime": "7 minut czytania",
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "purpose": "Edukuj kupujących na temat formatów toreb szytych."
+    },
+    {
+      "readTime": "5 minut czytania",
+      "excerpt": "Z wyjątkiem sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "category": "Marka",
+      "purpose": "Promuj opakowania marki premium.",
+      "title": "Drukowane i laminowane tkane torby PP do pakowania ryżu, pasz i nawozów"
+    },
+    {
+      "category": "Opakowanie",
+      "readTime": "6 minut czytania",
+      "title": "Torby ze ściętym dnem a torby z blokowanym dnem: Przewodnik dla kupujących",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "purpose": "Porównaj konstrukcje toreb premium."
+    },
+    {
+      "excerpt": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+      "title": "Przewodnik po rozmiarach worków PP: Jak wybrać pojemność worka od 5 kg do 75 kg",
+      "readTime": "8 minut czytania",
+      "category": "Rozmiar",
+      "purpose": "Pomóż kupującym określić rozmiar i pojemność przed zapytaniem."
+    },
+    {
+      "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Marka",
+      "readTime": "5 minut czytania",
+      "purpose": "Wyjaśnij wybór drukowania i wpływ na markę.",
+      "title": "Druk fleksograficzny a druk laminowany na workach PP"
+    },
+    {
+      "category": "Cechy",
+      "title": "Dlaczego wkładki, fałdy i perforacja mają znaczenie w workach PP",
+      "excerpt": "Z wyjątkiem sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "purpose": "Wyjaśnij dodatkowe funkcje ochrony produktu i obsługi.",
+      "readTime": "4 minuty czytania"
+    },
+    {
+      "readTime": "6 minut czytania",
+      "category": "Eksportuj wskazówki",
+      "purpose": "Naucz kupujących, jakie szczegóły przesłać do wyceny.",
+      "title": "Jak przygotować zapytanie dotyczące eksportu worków PP",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elita. Liczba całkowita nec odio praesent libero sed cursus ante."
+    },
+    {
+      "readTime": "5 minut czytania",
+      "purpose": "Kieruj reklamy do nabywców toreb na zakupy i torby promocyjne.",
+      "category": "Sprzedaż detaliczna",
+      "title": "Tkane torby na zakupy do opakowań detalicznych i promocyjnych",
+      "excerpt": "Sed cursus ante dapibus śr. Sed nisi nulla quis sem at nibh elementm imperdiet."
+    }
+  ],
+  "sampleOrderDefaults": {
+    "qtyLabel": "5 przykładowych szt",
+    "currency": "USD",
+    "printing": "Zwykły (przykładowa specyfikacja)",
+    "leadTime": "7–10 dni roboczych po potwierdzeniu płatności",
+    "packing": "Opakowanie eksportowe kartonu"
+  },
+  "bankDetails": {
+    "accountType": "Rachunek bieżący",
+    "bankName": "HDFC Bank Ltd.",
+    "paymentNote": "W opisie przeniesienia umieść nazwę swojej firmy i przykładowe odniesienie.",
+    "swift": "HDFCINBB",
+    "branch": "Ahmedabad, Bopal, Gujarat, Indie",
+    "ifsc": "HDFC0001234"
+  },
+  "paymentBankAccounts": [
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, Indie",
+      "swift": "HDFCINBB",
+      "accountType": "Rachunek bieżący",
+      "branch": "Ahmadabad, Bopal",
+      "ifsc": "HDFC0001234"
+    },
+    {
+      "bankName": "HDFC Bank Ltd.",
+      "location": "Gujarat, Indie",
+      "swift": "HDFCINBB",
+      "accountType": "Rachunek bieżący",
+      "ifsc": "HDFC0005678",
+      "branch": "Vadodara, Halol Road"
+    },
+    {
+      "location": "Gujarat, Indie",
+      "bankName": "ICICI Bank Ltd.",
+      "accountType": "Rachunek bieżący",
+      "branch": "Ahmedabad, autostrada SG",
+      "swift": "ICICINBB",
+      "ifsc": "ICIC0001234"
+    },
+    {
+      "location": "Gujarat, Indie",
+      "branch": "Ahmedabad, Prahladnagar",
+      "accountType": "Rachunek bieżący",
+      "bankName": "Axisbank spółka z ograniczoną odpowiedzialnością",
+      "ifsc": "UTIB0000123",
+      "swift": "AXISINBB"
+    },
+    {
+      "location": "Gujarat, Indie",
+      "branch": "Gandhinagar, sektor 21",
+      "accountType": "Rachunek bieżący",
+      "ifsc": "SBIN0006789",
+      "bankName": "Bank Stanowy Indii",
+      "swift": "SBININBB"
+    },
+    {
+      "location": "Gujarat, Indie",
+      "swift": "KKBKINBB",
+      "accountType": "Rachunek bieżący",
+      "bankName": "Banku Kotak Mahindra",
+      "branch": "Ahmedabad, Droga do Aszramu",
+      "ifsc": "KKBK0001234"
+    },
+    {
+      "branch": "Bombaj, Andheri Wschód",
+      "accountType": "Rachunek bieżący",
+      "location": "Maharasztra, Indie",
+      "ifsc": "TAKB0000123",
+      "bankName": "Tak Bank Spółka z ograniczoną odpowiedzialnością",
+      "swift": "TAKBINBB"
+    },
+    {
+      "location": "Gujarat, Indie",
+      "accountType": "Rachunek bieżący",
+      "swift": "INDBINBB",
+      "bankName": "IndusInd Bank Ltd.",
+      "ifsc": "INDB0000123",
+      "branch": "Ahmadabad, Navrangpura"
+    }
+  ],
+  "footerProductLinks": [
+    {
+      "label": "Torby z otwartymi ustami"
+    },
+    {
+      "label": "Szyte torby"
+    },
+    {
+      "label": "Torby z wycięciem w kształcie litery D"
+    },
+    {
+      "label": "Torby na zawory"
+    },
+    {
+      "label": "Torby do noszenia"
+    },
+    {
+      "label": "Laminowane tkane torby PP"
+    },
+    {
+      "label": "Ściśnij dolne torby"
+    },
+    {
+      "label": "Zablokuj dolne torby"
+    },
+    {
+      "label": "Blokowe dolne torby z klinem"
+    },
+    {
+      "label": "Tkane torby na zakupy"
+    },
+    {
+      "label": "Tkanina PP"
+    },
+    {
+      "label": "Bariera chwastów"
+    }
+  ],
+  "products": {
+    "open-mouth": {
+      "name": "Torby z otwartymi ustami",
+      "group": "Tkana torba",
+      "short": "Łatwe do napełniania worki tkane PP do suchych produktów sypkich, takich jak zboża, mąka, pasza, nawozy, sól, cukier, nasiona i minerały.",
+      "features": [
+        {
+          "title": "Łatwe napełnianie",
+          "body": "Otwarta góra umożliwia szybkie napełnianie metodami ręcznymi, półautomatycznymi lub maszynowymi."
+        },
+        {
+          "body": "Nadaje się do zastosowań od 5 kg do 75 kg, w zależności od gęstości produktu i konstrukcji worka.",
+          "title": "Elastyczność wydajności"
+        },
+        {
+          "title": "Niestandardowe wykończenie",
+          "body": "Top może być cięty na gorąco, na zimno, obszyty lub zygzakowaty."
+        },
+        {
+          "title": "Opcje drukowania i podkładu",
+          "body": "W razie potrzeby można dodać druk fleksograficzny, druk laminowany i podkładkę."
+        }
+      ],
+      "cta": "Poznaj torby z otwartymi ustami",
+      "intro": "Torby z otwartymi ustami to jeden z najbardziej praktycznych rodzajów worków PP do suchych opakowań zbiorczych. VIVIDPOLY eksportuje otwarte worki PP dla nabywców, którzy potrzebują łatwego napełniania, elastycznego zamykania i dostosowywania do zastosowań w rolnictwie, żywności, nawozach, paszach, chemikaliach, minerałach, soli, cukrze i zastosowaniach przemysłowych.",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "5 kg do 75 kg"
+        },
+        {
+          "key": "Szczyt",
+          "value": "Otwarte usta, cięcie na gorąco, cięcie na zimno, zygzakowate, obszyte"
+        },
+        {
+          "key": "Spód",
+          "value": "Pojedyncze szycie, podwójne szycie, niestandardowe wykończenie"
+        },
+        {
+          "key": "Druk",
+          "value": "Zwykły, fleksograficzny, laminowany z nadrukiem"
+        },
+        {
+          "key": "Dodatki",
+          "value": "Klin, wyściółka, perforacja, uchwyt w razie potrzeby"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Bela, wiązka, paleta, karton, opakowanie eksportowe"
+        }
+      ],
+      "benefits": "Worki PP z otwartymi ustami są preferowane ze względu na ich prostotę, możliwość dostosowania i opłacalną obsługę. Są idealne dla kupujących, którzy potrzebują mocnej tkanej torby, którą po napełnieniu można zamknąć poprzez zszycie, zgrzanie, złożenie lub związanie.",
+      "details": "Worki te mogą być dostarczane jako zwykłe tkane torby PP, torby z nadrukiem fleksograficznym lub drukowane i laminowane tkane torby PP. Kupujący mogą wybrać rozmiar, materiał, pojemność, klin, podszewkę, nadruk, szycie, cięcie i pakowanie.",
+      "material": "Tkanina PP, farba drukarska, nić do szycia, opcjonalne laminowanie, opcjonalna podszewka i specyficzne dla kupującego wymagania dotyczące koloru/dodatków.",
+      "mfg": "Proces obejmuje tkanie tkaniny, opcjonalny druk lub laminowanie, cięcie, zszywanie dolne, kontrolę i pakowanie.",
+      "speciality": "Specjalnością torebek z otwartymi ustami jest ich elastyczność w przypadku różnych produktów i metod napełniania."
+    },
+    "stitched": {
+      "group": "Tkana torba",
+      "short": "Bezpieczne, szyte torby PP do transportu, przechowywania i pakowania eksportowego produktów rolnych i przemysłowych.",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Bezpieczne szwy u góry i u dołu, niestandardowa wytrzymałość tkaniny, opcjonalna podszewka, druk fleksograficzny lub laminowany, niestandardowe opakowanie."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Lepsze bezpieczeństwo zamknięcia, praktyczna obsługa, dobre właściwości układania w stosy i przydatność do wielu suchych produktów luzem."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Kupujący mogą określić rodzaj ściegu, rodzaj nici, styl składania, rozmiar, pojemność, nadruk, wkładkę, klin i opakowanie."
+        }
+      ],
+      "name": "Torby szyte na górze i na dole",
+      "cta": "Poznaj szyte torby",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "5 kg do 75 kg"
+        },
+        {
+          "key": "Szycie",
+          "value": "Pojedyncze złożenie, podwójne złożenie, pojedyncza nić, podwójna nić, szycie górne i dolne"
+        },
+        {
+          "key": "Druk",
+          "value": "Zwykły, fleksograficzny, laminowany z nadrukiem"
+        },
+        {
+          "key": "Liniowiec",
+          "value": "Opcjonalnie luźna lub szyta podszewka"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Bela, wiązka, paleta, skompresowane opakowanie eksportowe"
+        }
+      ],
+      "benefits": "Lepsze bezpieczeństwo zamknięcia, praktyczna obsługa, dobre właściwości układania w stosy i przydatność do wielu suchych produktów luzem.",
+      "details": "Kupujący mogą określić rodzaj ściegu, rodzaj nici, styl składania, rozmiar, pojemność, nadruk, wkładkę, klin i opakowanie.",
+      "intro": "Torby szyte od góry i od dołu są przeznaczone dla kupujących, którzy potrzebują bezpiecznego zamknięcia i niezawodnego trzymania podczas przechowywania i transportu. VIVIDPOLY eksportuje szyte torby PP do opakowań rolniczych, spożywczych, nawozów, pasz dla zwierząt, opakowań chemicznych, mineralnych i przemysłowych.",
+      "speciality": "Specjalnością tego typu torebek jest niezawodne, szyte zapięcie.",
+      "mfg": "Proces produkcyjny obejmuje tkanie, opcjonalny druk/laminowanie, cięcie, szycie górne i dolne, kontrolę i pakowanie.",
+      "material": "Kombinacje materiałów obejmują tkaninę PP, nici do szycia, opcjonalne laminowanie, opcjonalną podszewkę i farbę drukarską."
+    },
+    "d-cut": {
+      "group": "Tkana torba",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Uchwyt w kształcie litery D, rozmiar niestandardowy, druk fleksograficzny lub laminowany, opcjonalny klin, wykończenie przyjazne dla handlu detalicznego."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Łatwe w przenoszeniu, mocna tkana struktura, widoczność marki i użyteczna wartość promocyjna."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Nadaje się do lekkich i średnich zastosowań transportowych, towarów detalicznych, targów i kampanii promocyjnych."
+        }
+      ],
+      "name": "Torby tkane z PP w kształcie litery D",
+      "cta": "Poznaj torby typu D-Cut",
+      "intro": "Torby tkane PP typu D-Cut mają zintegrowany uchwyt, który ułatwia przenoszenie. VIVIDPOLY eksportuje torby z wycięciem w kształcie litery D do celów sprzedaży detalicznej, zakupów, promocji, wystaw i opakowań wielokrotnego użytku.",
+      "short": "Torby tkane PP do przenoszenia, ze zintegrowanym wycięciem na uchwyt, do sprzedaży detalicznej, promocji i opakowań wielokrotnego użytku.",
+      "spec": [
+        {
+          "key": "Uchwyt",
+          "value": "Uchwyt w kształcie litery D lub wzmocniony uchwyt w kształcie litery D"
+        },
+        {
+          "key": "Tworzywo",
+          "value": "PP tkany lub laminowany materiał PP"
+        },
+        {
+          "key": "Druk",
+          "value": "Druk niestandardowy"
+        },
+        {
+          "key": "Szycie",
+          "value": "Szwy boczne/dolne"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Opakowanie kartonowe lub pakietowe"
+        }
+      ],
+      "details": "Nadaje się do lekkich i średnich zastosowań transportowych, towarów detalicznych, targów i kampanii promocyjnych.",
+      "benefits": "Łatwe w przenoszeniu, mocna tkana struktura, widoczność marki i użyteczna wartość promocyjna.",
+      "speciality": "Łączy wygodę noszenia z wytrzymałością tkaniny i prezentacją marki.",
+      "material": "Tkanina PP, w razie potrzeby folia laminowana, farba drukarska, nić do szycia, w razie potrzeby wzmocnienie uchwytu.",
+      "mfg": "Tkanie, drukowanie lub laminowanie, cięcie, formowanie uchwytów w kształcie litery D, szycie, kontrola, pakowanie."
+    },
+    "valve": {
+      "name": "Torby na zawory",
+      "group": "Tkana torba",
+      "cta": "Poznaj torby Valve",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Konstrukcja wypełnienia zaworu, opcjonalna wkładka, perforacja, druk laminowany, kompatybilność z dnem blokowym."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Szybsze kontrolowane napełnianie, czystszy format opakowania, odpowiedni do produktów proszkowych i granulowanych."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Rozmiar zaworu, typ zaworu, perforację, wkładkę, pojemność i konstrukcję należy dobrać w zależności od produktu i systemu napełniania."
+        }
+      ],
+      "short": "Worki PP z zaworem do produktów cementowych, chemikaliów, minerałów, proszków i materiałów budowlanych.",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "Zwykle od 20 kg do 75 kg"
+        },
+        {
+          "key": "Zawór",
+          "value": "Zawór prosty lub rozbudowany"
+        },
+        {
+          "key": "Budowa",
+          "value": "Konstrukcja dna standardowego lub blokowego"
+        },
+        {
+          "key": "Dodatki",
+          "value": "Opcjonalna podszewka i perforacja"
+        }
+      ],
+      "intro": "Worki z zaworem zostały opracowane dla produktów wymagających napełniania przez otwór zaworu. VIVIDPOLY eksportuje worki zaworowe do produktów cementowych, chemikaliów, minerałów, proszków, materiałów budowlanych i towarów przemysłowych.",
+      "details": "Rozmiar zaworu, typ zaworu, perforację, wkładkę, pojemność i konstrukcję należy dobrać w zależności od produktu i systemu napełniania.",
+      "benefits": "Szybsze kontrolowane napełnianie, czystszy format opakowania, odpowiedni do produktów proszkowych i granulowanych.",
+      "speciality": "Nadaje się do napełniania przemysłowego i dystrybucji eksportowej.",
+      "mfg": "Przygotowanie tkaniny, drukowanie/laminowanie, cięcie, formowanie zaworów, perforacja w razie potrzeby, kontrola, pakowanie.",
+      "material": "Tkanina PP, materiał zaworu, wyściółka, warstwa laminowana, nić do szycia, farba drukarska."
+    },
+    "carry": {
+      "name": "Torby do noszenia",
+      "group": "Tkana torba",
+      "cta": "Poznaj torby transportowe",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Możliwość wycinania w kształcie litery D, pętelki, szycia, dziurkowania, uchwytu bocznego lub górnego; wykończenie drukowane lub laminowane; opcjonalny klin."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Poprawia widoczność marki i zapewnia praktyczną wytrzymałość nośną."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Kupujący mogą dostosować rozmiar torby, styl uchwytów, projekt nadruku, laminowanie, klin, szwy i opakowanie."
+        }
+      ],
+      "benefits": "Poprawia widoczność marki i zapewnia praktyczną wytrzymałość nośną.",
+      "short": "Mocne i markowe tkane torby do zastosowań detalicznych, handlowych i promocyjnych.",
+      "spec": [
+        {
+          "key": "Tworzywo",
+          "value": "PP tkany lub laminowany materiał PP"
+        },
+        {
+          "key": "Druk",
+          "value": "Druk fleksograficzny lub laminowany"
+        },
+        {
+          "key": "Klin",
+          "value": "Klin boczny/dolny"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Opakowanie kartonowe/wiązkowe/beli"
+        }
+      ],
+      "details": "Kupujący mogą dostosować rozmiar torby, styl uchwytów, projekt nadruku, laminowanie, klin, szwy i opakowanie.",
+      "intro": "Torby transportowe wykonane z materiału PP są odpowiednie dla kupujących, którzy potrzebują mocnych, markowych i praktycznych toreb do przenoszenia. VIVIDPOLY eksportuje torby transportowe do sprzedaży detalicznej, handlu, zakupów, wydarzeń i opakowań promocyjnych.",
+      "material": "Tkanina PP, folia laminowana, farba drukarska, nić do szycia, w razie potrzeby materiał uchwytu.",
+      "mfg": "Tkanie, drukowanie/laminowanie, cięcie, tworzenie lub mocowanie uchwytów, szycie, kontrola, pakowanie.",
+      "speciality": "Mocne opakowanie transportowe z komunikacją marki."
+    },
+    "laminated": {
+      "group": "Tkana torba",
+      "name": "Drukowane i laminowane tkane torby PP",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Drukowana powierzchnia laminowana, tkany spód PP, opcje warstw, klin, wkładka, okienko, perforacja, uchwyty."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Lepszy branding, lepsza atrakcyjność na półce, tożsamość produktu i solidna struktura opakowania."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Nadaje się do ładunków od 5 kg do 75 kg w zależności od konstrukcji i gęstości produktu."
+        }
+      ],
+      "cta": "Poznaj laminowane torby PP",
+      "benefits": "Lepszy branding, lepsza atrakcyjność na półce, tożsamość produktu i solidna struktura opakowania.",
+      "short": "Wysokiej jakości opakowania z nadrukiem na ryż, mąkę, paszę, karmę dla zwierząt domowych, nawozy, nasiona i towary detaliczne.",
+      "spec": [
+        {
+          "key": "Opierać",
+          "value": "Tkany PP + drukowana warstwa laminowana"
+        },
+        {
+          "key": "Liniowiec",
+          "value": "Opcjonalna wkładka"
+        },
+        {
+          "key": "Skończyć",
+          "value": "Wykończenie błyszczące/matowe, jeśli jest dostępne"
+        },
+        {
+          "key": "Zwyczaj",
+          "value": "Niestandardowy rozmiar i grafika"
+        }
+      ],
+      "intro": "Drukowane i laminowane tkane torby PP łączą wytrzymałość tkaniny z atrakcyjną prezentacją marki. VIVIDPOLY eksportuje te torby dla nabywców, którzy potrzebują najwyższej jakości opakowań z nadrukiem do artykułów spożywczych, nawozów, paszy, karmy dla zwierząt domowych, nasion, soli, cukru i produktów detalicznych.",
+      "details": "Nadaje się do ładunków od 5 kg do 75 kg w zależności od konstrukcji i gęstości produktu.",
+      "speciality": "Wysokiej jakości opakowanie eksportowe o wyglądzie skupiającym się na marce.",
+      "mfg": "Tkanie tkanin, przygotowanie grafiki, drukowanie, laminowanie, cięcie, szycie/konwersja, kontrola, pakowanie.",
+      "material": "Tkanina PP, folia zadrukowana lub warstwa nadruku, warstwa laminacji, nić do szycia, opcjonalnie wkładka/okno, farba drukarska."
+    },
+    "pinch-bottom": {
+      "name": "Ściśnij dolne torby",
+      "group": "Tkana torba",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Dolna konstrukcja typu Pinch, laminowana powierzchnia z nadrukiem, opcjonalna funkcja łatwego otwierania, okienko, klin, podszewka."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Wygląd premium, uporządkowany, wypełniony kształt, silniejsza prezentacja na półce, lepsza komunikacja marki."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Najlepiej nadaje się do produktów gotowych do sprzedaży detalicznej i markowych opakowań towarowych."
+        }
+      ],
+      "intro": "Torby tkane z PP z nadrukiem i laminowaniem są przeznaczone do opakowań premium, w których ważna jest czysta prezentacja zamknięcia i wygląd marki. VIVIDPOLY eksportuje worki z dnem ściskanym na zboża, karmę dla zwierząt domowych, paszę dla zwierząt, nasiona i produkty detaliczne.",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "Zwykle od 5 kg do 50 kg, więcej w wyniku przeglądu projektu"
+        },
+        {
+          "key": "Budowa",
+          "value": "Drukowana, laminowana tkanina PP"
+        },
+        {
+          "key": "Dodatki",
+          "value": "Opcjonalne okno/wkładka/klin"
+        }
+      ],
+      "short": "Wysokiej jakości laminowane torby PP z nadrukiem i czystym zamknięciem do opakowań gotowych do sprzedaży detalicznej.",
+      "cta": "Poznaj torby typu Pinch Bottom",
+      "benefits": "Wygląd premium, uporządkowany, wypełniony kształt, silniejsza prezentacja na półce, lepsza komunikacja marki.",
+      "details": "Najlepiej nadaje się do produktów gotowych do sprzedaży detalicznej i markowych opakowań towarowych.",
+      "speciality": "Prezentacja zamknięć premium do markowych opakowań eksportowych.",
+      "material": "Tkanina PP, drukowana folia laminowana, warstwa laminująca, podkład, folia okienna, farba drukarska.",
+      "mfg": "Przygotowanie tkaniny, drukowanie/laminowanie, cięcie, formowanie dna ściskającego, opcjonalne okienko/perforacja, kontrola, pakowanie."
+    },
+    "block-bottom": {
+      "name": "Zablokuj dolne torby",
+      "group": "Tkana torba",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Blokowa struktura dna, drukowane laminowane wykończenie, otwarta szyja lub górna część zaworu, wkładka, perforacja."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Lepszy kształt stojący, lepsza prezentacja palety, mocna powierzchnia brandingowa i łatwiejsza obsługa."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Nadaje się do produktów, dla których liczy się prezentacja wizualna i wydajność układania w stosy."
+        }
+      ],
+      "cta": "Poznaj torby z blokowym dnem",
+      "intro": "Drukowane i laminowane tkane worki blokowe z PP zapewniają bardziej stabilny kształt wypełnienia i lepszy wygląd przy układaniu w stosy. VIVIDPOLY eksportuje worki z dnem blokowym na nawozy, karmę dla zwierząt domowych, paszę dla zwierząt, zboża, minerały, chemikalia i opakowania detaliczne.",
+      "short": "Worki laminowane PP z nadrukiem o stabilnym kształcie, umożliwiające lepsze układanie w stosy, ekspozycję i prezentację eksportową.",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "5 kg do 75 kg w zależności od konstrukcji"
+        },
+        {
+          "key": "Format",
+          "value": "Zablokuj dolny format"
+        },
+        {
+          "key": "Szczyt",
+          "value": "Opcjonalny zawór"
+        },
+        {
+          "key": "Dodatki",
+          "value": "Podszewka, perforacja, nadruk laminowany"
+        }
+      ],
+      "benefits": "Lepszy kształt stojący, lepsza prezentacja palety, mocna powierzchnia brandingowa i łatwiejsza obsługa.",
+      "details": "Nadaje się do produktów, dla których liczy się prezentacja wizualna i wydajność układania w stosy.",
+      "material": "Tkanina PP, folia laminowana, farba drukarska, wkładka, materiał zaworu, materiały do ​​formowania/zszywania.",
+      "speciality": "Prezentacja gotowa do eksportu o stabilnym kształcie wypełnionej torby.",
+      "mfg": "Produkcja tkanin, drukowanie/laminowanie, cięcie, formowanie dna bloku, wykańczanie góry/zaworu, kontrola, pakowanie."
+    },
+    "gusset": {
+      "name": "Blokowe dolne torby z klinem",
+      "group": "Tkana torba",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Dno blokowe z klinem, laminowana strona zewnętrzna z nadrukiem, niestandardowa głębokość klinu, okienko, podszewka, perforacja."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Większa objętość użytkowa, mocniejszy kształt wypełnienia, ulepszona powierzchnia brandingowa i lepsza prezentacja wizualna."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Przydatne, gdy kupujący potrzebują wysokiej jakości toreb z nadrukiem o dodatkowej objętości i stabilnym kształcie."
+        }
+      ],
+      "short": "Worki laminowane PP z nadrukiem w dużych nakładach, z fałdą i mocną powierzchnią na branding.",
+      "intro": "Drukowane i laminowane tkane worki z dolnym klinem PP łączą w sobie stabilną konstrukcję z blokowym dnem z objętością wspieraną przez klin. VIVIDPOLY eksportuje te torby na paszę dla zwierząt, karmę dla zwierząt domowych, nawozy, zboża, nasiona oraz produkty detaliczne i przemysłowe na dużą skalę.",
+      "cta": "Poznaj torby klinowe",
+      "spec": [
+        {
+          "key": "Pojemność",
+          "value": "5 kg do 75 kg według gęstości i konstrukcji produktu"
+        },
+        {
+          "key": "Klin",
+          "value": "Klin boczny/dolny/blokowy"
+        },
+        {
+          "key": "Dodatki",
+          "value": "Opcjonalny zawór, wkładka, okno"
+        }
+      ],
+      "details": "Przydatne, gdy kupujący potrzebują wysokiej jakości toreb z nadrukiem o dodatkowej objętości i stabilnym kształcie.",
+      "benefits": "Większa objętość użytkowa, mocniejszy kształt wypełnienia, ulepszona powierzchnia brandingowa i lepsza prezentacja wizualna.",
+      "mfg": "Tkanie, drukowanie/laminowanie, cięcie, formowanie fałd, formowanie dna blokowego, dodawanie funkcji, kontrola, pakowanie.",
+      "material": "Tkanina PP, drukowana folia laminowana, podszewka, folia okienna, konstrukcja klina, farba drukarska, materiały do ​​szycia/formowania.",
+      "speciality": "Łączy w sobie objętość, prezentację i praktyczność opakowania eksportowego."
+    },
+    "shopping": {
+      "group": "Tkana torba",
+      "short": "Tkane torby na zakupy dla sieci handlowych, supermarketów, wystaw i akcji promocyjnych.",
+      "features": [
+        {
+          "title": "Cechy",
+          "body": "Tkana struktura wielokrotnego użytku, niestandardowe uchwyty, druk fleksograficzny lub laminowany, klin, wykończenie przyjazne dla handlu detalicznego."
+        },
+        {
+          "title": "Korzyści",
+          "body": "Praktyczna wytrzymałość, promocja marki, profesjonalna prezentacja w handlu detalicznym i powtarzalna widoczność."
+        },
+        {
+          "title": "Bliższe dane",
+          "body": "Odpowiednie dla sprzedawców detalicznych, supermarketów, wystaw, promocji korporacyjnych i kampanii zakupowych."
+        }
+      ],
+      "cta": "Przeglądaj torby na zakupy",
+      "name": "Torby na zakupy (tkane)",
+      "details": "Odpowiednie dla sprzedawców detalicznych, supermarketów, wystaw, promocji korporacyjnych i kampanii zakupowych.",
+      "spec": [
+        {
+          "key": "Rozmiar",
+          "value": "Rozmiar niestandardowy"
+        },
+        {
+          "key": "Uchwyty",
+          "value": "Uchwyty w kształcie litery D/pętelki/szyte/dziurkowane"
+        },
+        {
+          "key": "Klin",
+          "value": "Klin boczny lub dolny"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Opakowanie kartonowe/wiązkowe/beli"
+        }
+      ],
+      "benefits": "Praktyczna wytrzymałość, promocja marki, profesjonalna prezentacja w handlu detalicznym i powtarzalna widoczność.",
+      "intro": "Tkane torby na zakupy to tkane torby transportowe z PP stosowane w opakowaniach detalicznych, supermarketach, imprezach, targach i opakowaniach promocyjnych. VIVIDPOLY eksportuje tkane torby na zakupy dla nabywców, którzy potrzebują mocnego, nadającego się do wielokrotnego użytku i markowego opakowania.",
+      "mfg": "Przygotowanie tkaniny, drukowanie/laminowanie, cięcie, formowanie/mocowanie uchwytów, szycie, kontrola, pakowanie.",
+      "speciality": "Niestandardowa prezentacja marki dla odbiorców detalicznych i promocyjnych na eksport.",
+      "material": "Tkanina PP, laminowana folia z nadrukiem, nić do szycia, materiał uchwytu, farby drukarskie."
+    },
+    "fabric": {
+      "name": "Tkanina PP",
+      "group": "Tkanina",
+      "cta": "Poznaj tkaninę PP",
+      "features": [
+        {
+          "title": "Eksport gotowy",
+          "body": "Dostarczane dla odbiorców międzynarodowych z niestandardowymi opcjami rozmiaru i pakowania."
+        },
+        {
+          "body": "Szerokość, gramatura, kolor i długość rolki lub cięcia można zaplanować na zamówienie.",
+          "title": "Specyfikacja niestandardowa"
+        },
+        {
+          "title": "Koncentracja na jakości",
+          "body": "Spójny splot i wykończenie do zastosowań przemysłowych i rolniczych."
+        }
+      ],
+      "short": "Tkanina PP w rolkach i odcinkach do zastosowań przemysłowych, rolniczych i związanych z konwersją.",
+      "intro": "Tkanina PP w rolkach i odcinkach do zastosowań przemysłowych, rolniczych i związanych z konwersją.",
+      "benefits": "Tkanina PP w rolkach i odcinkach do zastosowań przemysłowych, rolniczych i związanych z konwersją.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Niestandardowe na zapytanie"
+        },
+        {
+          "key": "Tworzywo",
+          "value": "Tkane PP"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Opakowanie eksportowe"
+        }
+      ],
+      "details": "Udostępnij wymaganą szerokość, GSM, kolor, ilość i miejsce docelowe, aby uzyskać wycenę.",
+      "speciality": "Tkanina PP firmy VIVIDPOLY dla odbiorców na całym świecie.",
+      "mfg": "Tkanie, wykańczanie, kontrola i pakowanie eksportowe.",
+      "material": "W razie potrzeby materiał tkany PP i dodatki specyficzne dla kupującego."
+    },
+    "weed-barrier": {
+      "name": "Bariera chwastów",
+      "group": "Bariera chwastów",
+      "features": [
+        {
+          "title": "Eksport gotowy",
+          "body": "Dostarczane dla odbiorców międzynarodowych z niestandardowymi opcjami rozmiaru i pakowania."
+        },
+        {
+          "title": "Specyfikacja niestandardowa",
+          "body": "Szerokość, gramatura, kolor i długość rolki lub cięcia można zaplanować na zamówienie."
+        },
+        {
+          "title": "Koncentracja na jakości",
+          "body": "Spójny splot i wykończenie do zastosowań przemysłowych i rolniczych."
+        }
+      ],
+      "details": "Udostępnij wymaganą szerokość, GSM, kolor, ilość i miejsce docelowe, aby uzyskać wycenę.",
+      "spec": [
+        {
+          "key": "Format",
+          "value": "Niestandardowe na zapytanie"
+        },
+        {
+          "key": "Tworzywo",
+          "value": "Tkane PP"
+        },
+        {
+          "key": "Uszczelka",
+          "value": "Opakowanie eksportowe"
+        }
+      ],
+      "speciality": "Bariera dla chwastów firmy VIVIDPOLY dla odbiorców na całym świecie.",
+      "mfg": "Tkanie, wykańczanie, kontrola i pakowanie eksportowe.",
+      "cta": "Poznaj barierę chwastów",
+      "benefits": "Tkanina PP chroniąca przed chwastami do zastosowań w kształtowaniu krajobrazu, rolnictwie i roślinach okrywowych.",
+      "short": "Tkanina PP chroniąca przed chwastami do zastosowań w kształtowaniu krajobrazu, rolnictwie i roślinach okrywowych.",
+      "intro": "Tkanina PP chroniąca przed chwastami do zastosowań w kształtowaniu krajobrazu, rolnictwie i roślinach okrywowych.",
+      "material": "W razie potrzeby materiał tkany PP i dodatki specyficzne dla kupującego."
+    }
+  },
+  "markets": [
+    "USA",
+    "Kanada",
+    "Australia",
+    "Europa",
+    "Wielka Brytania",
+    "Afryka",
+    "Tajlandia",
+    "Arabia Saudyjska",
+    "Ameryka Łacińska",
+    "Nowa Zelandia"
+  ],
+  "packedProductOptions": [
+    "Ryż",
+    "Nawóz",
+    "Pasza dla zwierząt",
+    "Cement",
+    "Towary detaliczne"
+  ],
+  "quoteOptions": {
+    "capacity": [
+      "5 kg",
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg",
+      "30 kg",
+      "40 kg",
+      "50 kg",
+      "60 kg",
+      "75 kg",
+      "Zwyczaj"
+    ],
+    "printing": [
+      "Zwykły",
+      "Druk fleksograficzny",
+      "Drukowane laminowane",
+      "Wielobarwność"
+    ],
+    "addons": [
+      "Liniowiec",
+      "Klin",
+      "Uchwyt",
+      "Okno",
+      "Perforacja",
+      "Zawór",
+      "Szczypta",
+      "Zablokuj dół"
+    ],
+    "packing": [
+      "Bela",
+      "Karton",
+      "Paleta",
+      "Opakowanie eksportowe"
+    ]
+  }
+}

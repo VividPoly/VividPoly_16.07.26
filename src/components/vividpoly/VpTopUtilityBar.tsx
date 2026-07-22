@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
 import VpCustomSelect from '@/components/vividpoly/VpCustomSelect';
+import { useLocale } from '@/lib/i18n/LocaleProvider';
 
 type TopBarCopy = {
   selectLanguage: string;
@@ -33,9 +33,11 @@ function WhatsAppIconSmall() {
 }
 
 export default function VpTopUtilityBar({ topBar }: { topBar: TopBarCopy }) {
-  const defaultLang = topBar.languages[0]?.code ?? 'en';
-  const [lang, setLang] = useState(defaultLang);
-  const langOptions = topBar.languages.map((item) => ({ value: item.code, label: item.label }));
+  // Language list, current selection and switching all come from the locale
+  // context (single source of truth), so the switcher always reflects the
+  // active language and persists the user's choice.
+  const { locale, setLocale, languages } = useLocale();
+  const langOptions = languages.map((item) => ({ value: item.code, label: item.nativeLabel }));
 
   return (
     <div className="vp-top-utility-bar">
@@ -43,11 +45,12 @@ export default function VpTopUtilityBar({ topBar }: { topBar: TopBarCopy }) {
         <label className="vp-top-utility-lang">
           <span className="vp-top-utility-lang-icon" aria-hidden="true">G</span>
           <VpCustomSelect
-            value={lang}
-            onChange={setLang}
+            value={locale}
+            onChange={setLocale}
             options={langOptions}
             placeholder={topBar.selectLanguage}
             ariaLabel={topBar.selectLanguage}
+            searchable
             className="vp-sort--inline vp-top-utility-lang-sort"
           />
         </label>

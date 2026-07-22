@@ -3,8 +3,8 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import uiCopy from '@/data/ui-copy.json';
 import { getVividPolyData, type VividPolyMessages } from '@/lib/get-vividpoly-data';
+import { useLocaleMessages } from '@/lib/i18n/LocaleProvider';
 import { enquiryQuoteSelectionForProductId, resolveContactEnquiryType } from '@/lib/enquiry-product';
 import { readVpTokens, VP as VP_FALLBACK } from '@/lib/vividpoly-tokens';
 import { filterProducts, sortProducts, productRecommendedForSort, buildCatSortOptions, catSortFromUseTitle, filtersForUseSort, filterProductsByUseSort, CAPACITY_STOPS, filterProductsByCapacity, isCapacityFilterActive, getCapacityCustomNotice, type CatSort } from '@/lib/vividpoly-product-filters';
@@ -16,7 +16,7 @@ import {
   isNavTransition,
   navPayload,
   navUrl,
-  parseHash,
+  parsePath,
   readNavState,
   scrollPageToTop,
   enableManualScrollRestoration,
@@ -31,6 +31,7 @@ import {
   requestSkipNextScrollToTop,
 } from '@/lib/vividpoly-navigation';
 import { getPageTransitionKey } from '@/lib/vp-page-transition';
+import { getSeoMeta } from '@/lib/seo-meta';
 
 export type Screen =
   | 'home' | 'catalogue' | 'pdp' | 'faqs'
@@ -84,9 +85,11 @@ const initialState: VividPolyState = {
 
 
 export function useVividPoly() {
-  const ui = uiCopy as VividPolyMessages;
+  // Copy for the active language (English base deep-merged with the locale's
+  // overrides). Changes when the user switches language, re-deriving all data.
+  const ui = useLocaleMessages();
   const generalEnquiryType = ui.enquiryProductTypes[0]?.label ?? 'General Query';
-  const vividPolyData = useMemo(() => getVividPolyData(ui), []);
+  const vividPolyData = useMemo(() => getVividPolyData(ui), [ui]);
   const [s, setState] = useState<VividPolyState>(initialState);
   const [vpTokens, setVpTokens] = useState(VP_FALLBACK);
 
@@ -139,15 +142,15 @@ export function useVividPoly() {
     if (typeof window === 'undefined') return;
     enableManualScrollRestoration();
 
-    // Restore the screen from the URL hash so a refresh keeps the current page
-    // instead of resetting to home.
-    const hashRaw = window.location.hash.replace(/^#/, '').trim();
-    const parsed = parseHash(window.location.hash);
+    // Restore the screen from the URL pathname so a refresh keeps the current
+    // page instead of resetting to home.
+    const firstSegment = window.location.pathname.replace(/^\/+/, '').split('/')[0]?.trim();
+    const parsed = parsePath(window.location.pathname);
     const restored: VividPolyState = parsed ? { ...initialState, ...parsed } : initialState;
     if (parsed) setState(restored);
     window.history.replaceState(navPayload(restored), '', navUrl(restored));
 
-    if (hashRaw === 'faqs') {
+    if (firstSegment === 'faqs') {
       requestAnimationFrame(() => scrollToHomeFaqWhenReady('auto', 12, 60, 50));
     } else {
       scrollPageToTop('auto');
@@ -172,6 +175,34 @@ export function useVividPoly() {
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
+
+  // Keep the browser tab title + meta description in sync with the current
+  // SPA screen. The root URL is server-rendered from layout.tsx; every other
+  // screen lives behind a #hash, so its SEO meta is applied here at runtime.
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const { title, description } = getSeoMeta(s);
+    if (document.title !== title) document.title = title;
+
+    const setMeta = (selector: string, attr: string, name: string) => {
+      let el = document.head.querySelector<HTMLMetaElement>(selector);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, name);
+        document.head.appendChild(el);
+      }
+      if (el.getAttribute('content') !== description) {
+        el.setAttribute('content', description);
+      }
+    };
+    setMeta('meta[name="description"]', 'name', 'description');
+    setMeta('meta[property="og:description"]', 'property', 'og:description');
+
+    const ogTitle = document.head.querySelector<HTMLMetaElement>('meta[property="og:title"]');
+    if (ogTitle && ogTitle.getAttribute('content') !== title) {
+      ogTitle.setAttribute('content', title);
+    }
+  }, [s.screen, s.pid, s.cat]);
 
   const go = useCallback((screen: Screen) => {
     navigate((st) => ({ ...st, screen, menu: null, searchOpen: false, catGuide: null }));
@@ -589,7 +620,7 @@ export function useVividPoly() {
     const contactAddresses = [
       {
         label: ui.contact.corporateOffice,
-        value: 'Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058',
+        value: ui.contact.corporateAddress,
       },
     ];
 
@@ -1357,7 +1388,7 @@ export function useVividPoly() {
       openContactEnquiry,
       resetEnquiryDefaults,
     };
-  }, [s, vividPolyData, vpTokens, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openContactWithProduct, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
+  }, [ui, s, vividPolyData, vpTokens, go, goHome, goHomeFaqs, goBack, navigate, toggleMenu, prodScrollBy, openContactEnquiry, openContactWithProduct, openCatalogueForUse, openSampleOrder, openPdp, clearCatGuide, resetEnquiryDefaults]);
 
   return v;
 }

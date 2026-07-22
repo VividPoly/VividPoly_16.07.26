@@ -3,8 +3,6 @@
 /* ── Body prose alignment ──
    Standalone paragraph bands are centered.
    Copy beside media, in cards, tables, nav, or forms stays left. */
-.vp-root .vp-buyer-section-body,
-.vp-root .vp-buyer-section-copy,
 .vp-root .vp-use-section-lead,
 .vp-root .vp-product-use-intro,
 .vp-root .vp-product-use-bridge,
@@ -28,6 +26,8 @@
 }
 
 /* Split / side-by-side / card / chrome: keep side alignment */
+.vp-root .vp-buyer-section-body,
+.vp-root .vp-buyer-section-copy,
 .vp-root .vp-home-intro-inner,
 .vp-root .vp-home-intro-lead,
 .vp-root .vp-home-intro-support,
@@ -104,9 +104,9 @@
   text-align: center;
 }
 
-/* Buyer section is a centered notice card: force body copy center */
+/* Buyer section is a side-by-side map + copy block: keep body copy left */
 .vp-root .vp-buyer-section--knack .vp-buyer-section-body {
-  text-align: center;
+  text-align: left;
 }
 
 /* About page vision / leads are full-width bands */
@@ -365,7 +365,8 @@
 
 .vp-nav-link,
 .vp-header-nav-link,
-.vp-header-nav-btn {
+.vp-header-nav-btn,
+.vp-header-contact-btn {
   color: var(--knack-nav-muted);
   font-size: 13px;
   font-weight: 600;
@@ -383,7 +384,10 @@
 .vp-header-nav-btn:hover,
 .vp-header-nav-btn:focus-visible,
 .vp-header-nav-btn--active,
-.vp-header-nav-btn[aria-expanded='true'] {
+.vp-header-nav-btn[aria-expanded='true'],
+.vp-header-contact-btn:hover,
+.vp-header-contact-btn:focus-visible,
+.vp-header-contact-btn--active {
   color: var(--knack-brand);
   border-bottom-color: var(--knack-brand);
 }
@@ -462,6 +466,8 @@
   padding-top: 0;
   background: #8f8f8f;
   color: var(--knack-white);
+  /* Reserved foot of the hero for the stats band; the bag cut-out stands on it. */
+  --vp-hero-statband-h: clamp(86px, 12vh, 116px);
 }
 
 .vp-home > .vp-hero:not(.vp-careers-hero) .vp-hero-aurora {
@@ -474,7 +480,11 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-color: #8f8f8f;
+  /* Shared dark studio backdrop; the bag cut-outs float on top of it. */
+  background-color: #4a4a4c;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   clip-path: none;
   overflow: hidden;
 }
@@ -482,6 +492,9 @@
 .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-ph {
   position: absolute;
   inset: 0;
+  /* Lift the sliding bags clear of the stats band; the studio backdrop stays
+     full-bleed because it lives on the --visual panel behind this layer. */
+  bottom: var(--vp-hero-statband-h, 0px);
   display: block;
   padding: 0;
   /* Defeat globals .vp-hero-visual-ph square frame (aspect-ratio 1/1) that clips the fold. */
@@ -498,29 +511,131 @@
   overflow: hidden;
 }
 
+/* Horizontal sliding track: the bag cut-outs slide across the fixed studio
+   backdrop; only the bag changes, the dark background never moves. */
+.vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-cell {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
 .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
-  /* Scale 1.46; stronger upward shift so the bag base clears the fold. */
-  --vp-hero-img-scale: 1.46;
-  --vp-hero-img-shift-y: -16%;
+  /* Bag (with baked contact shadow) stands on the fold floor, sized to clear
+     the header. Cut-outs are trimmed tight, so a small scale reads large. */
+  --vp-hero-img-scale: 0.92;
+  --vp-hero-img-shift-y: 0%;
+  /* Pull the bag off the right edge so it sits nearer the centre of the photo. */
+  --vp-hero-img-shift-x: -6%;
   object-fit: contain;
-  object-position: right top;
-  transform-origin: right top;
-  transform: scale(var(--vp-hero-img-scale)) translateY(var(--vp-hero-img-shift-y));
+  object-position: right bottom;
+  transform-origin: right bottom;
+  transform: scale(var(--vp-hero-img-scale))
+    translate(var(--vp-hero-img-shift-x), var(--vp-hero-img-shift-y));
 }
 
-/* Red diagonal covers the empty left of the studio photo. */
+/* Prev / next arrows to change the bag manually. Anchored to the right edge of
+   the hero, vertically centered. */
+/* Arrows straddle the hero: prev pinned to the left edge, next to the right.
+   The bar itself is click-through so it never blocks the copy underneath. */
+.vp-hero-nav {
+  position: absolute;
+  z-index: 3;
+  left: clamp(2px, 0.5vw, 8px);
+  right: clamp(2px, 0.5vw, 8px);
+  /* Just below centre. The nav layer sits above the copy (z-index 3 vs 2), so
+     anything it overlaps loses its clicks — this band has no interactive
+     targets, and it stays clear of the CTA row that sits at ~61-64% of the hero
+     height. Don't push this much past 55% or the arrows reach the CTAs. */
+  top: 55%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.vp-hero-nav-btn {
+  pointer-events: auto;
+}
+
+.vp-hero-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.55));
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.vp-hero-nav-btn:hover {
+  transform: translateX(2px);
+  opacity: 0.85;
+}
+
+/* Prev nudges the other way so the pair reads as left/right. */
+.vp-hero-nav-btn--prev:hover {
+  transform: translateX(-2px);
+}
+
+.vp-hero-nav-btn:active,
+.vp-hero-nav-btn--prev:active {
+  transform: translateX(0);
+}
+
+.vp-hero-nav-btn svg {
+  width: 34px;
+  height: 34px;
+}
+
+/* Legacy red diagonal is retired in favour of the full-bleed photo + scrim. */
 .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
-  display: block;
+  display: none !important;
+}
+
+/* Dark scrim: heavy on the left where the copy sits, clearing to the right so
+   the bag cut-out keeps its studio lighting. A bottom wash seats the stats band. */
+.vp-home > .vp-hero.vp-hero--fold .vp-hero-scrim {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: var(--knack-brand, #d21e2b);
-  clip-path: polygon(0 0, 52% 0, 62% 100%, 0 100%);
+  background:
+    linear-gradient(
+      to top,
+      rgba(12, 12, 14, 0.62) 0%,
+      rgba(12, 12, 14, 0) 34%
+    ),
+    linear-gradient(
+      100deg,
+      rgba(12, 12, 14, 0.9) 0%,
+      rgba(12, 12, 14, 0.78) 30%,
+      rgba(12, 12, 14, 0.42) 52%,
+      rgba(12, 12, 14, 0.06) 72%,
+      rgba(12, 12, 14, 0) 88%
+    );
 }
+
 
 .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
   position: relative;
@@ -533,12 +648,13 @@
   max-width: none;
   margin: 0;
   padding-top: calc(var(--vp-header-offset) + clamp(12px, 2.4vh, 28px));
-  padding-bottom: clamp(28px, 5vh, 56px);
+  /* Stats band now occupies the foot of the hero, so the copy needs less below. */
+  padding-bottom: clamp(16px, 2.6vh, 32px);
   padding-left: max(
     var(--vp-pad-x-start),
     calc((100vw - var(--vp-container-max, 1140px)) / 2 + var(--vp-pad-x-start))
   );
-  padding-right: clamp(20px, 42vw, 46vw);
+  padding-right: clamp(20px, 40vw, 44vw);
   box-sizing: border-box;
   flex: 1 1 auto;
   min-height: 0;
@@ -592,6 +708,9 @@
 .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-title-line {
   display: block;
   white-space: normal;
+  /* Let long product names split into balanced multi-line wraps (e.g. two even
+     lines) while short names like "Valve Bags" stay on a single line. */
+  text-wrap: balance;
 }
 
 .vp-hero-lead,
@@ -667,19 +786,19 @@
   padding: 14px 22px;
 }
 
-/* Solid white primary so WhatsApp stays clear on brand red */
+/* Solid brand-red primary carries the brand now the red panel is gone. */
 .vp-home > .vp-hero.vp-hero--fold .vp-cta-whatsapp {
-  background: var(--knack-white) !important;
-  border: 2px solid var(--knack-white) !important;
-  color: var(--knack-brand) !important;
+  background: var(--knack-brand) !important;
+  border: 2px solid var(--knack-brand) !important;
+  color: var(--knack-white) !important;
 }
 
 .vp-home > .vp-hero.vp-hero--fold .vp-cta-whatsapp:hover {
-  background: var(--knack-white) !important;
-  border-color: var(--knack-white) !important;
-  color: var(--knack-brand) !important;
+  background: var(--knack-brand) !important;
+  border-color: var(--knack-brand) !important;
+  color: var(--knack-white) !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32) !important;
 }
 
 /* Outlined white secondary */
@@ -718,9 +837,11 @@
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
+    display: none !important;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-scrim {
     display: block !important;
-    z-index: 1;
-    clip-path: polygon(0 0, 52% 0, 62% 100%, 0 100%);
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
@@ -739,7 +860,7 @@
     inset: 0 !important;
     top: 0 !important;
     right: 0 !important;
-    bottom: 0 !important;
+    bottom: var(--vp-hero-statband-h, 0px) !important;
     left: 0 !important;
     display: block !important;
     padding: 0 !important;
@@ -766,22 +887,25 @@
     min-width: 0 !important;
     min-height: 0 !important;
     object-fit: contain !important;
-    object-position: right top !important;
-    transform-origin: right top !important;
-    transform: scale(var(--vp-hero-img-scale, 1.46))
-      translateY(var(--vp-hero-img-shift-y, -16%)) !important;
+    object-position: right bottom !important;
+    transform-origin: right bottom !important;
+    transform: scale(var(--vp-hero-img-scale, 0.82))
+      translate(
+        var(--vp-hero-img-shift-x, 0%),
+        var(--vp-hero-img-shift-y, -3%)
+      ) !important;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner,
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-inner {
     z-index: 2;
     padding-top: calc(var(--vp-header-offset) + clamp(12px, 2.4vh, 28px)) !important;
-    padding-bottom: clamp(28px, 5vh, 56px);
+    padding-bottom: clamp(16px, 2.6vh, 32px);
     padding-left: max(
       var(--vp-pad-x-start),
       calc((100vw - var(--vp-container-max, 1140px)) / 2 + var(--vp-pad-x-start))
     );
-    padding-right: clamp(20px, 42vw, 46vw);
+    padding-right: clamp(20px, 40vw, 44vw);
   }
 
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-brand {
@@ -795,8 +919,17 @@
     margin-bottom: clamp(18px, 2.6vh, 28px);
   }
 
+  /* The shared @media (max-width: 991px) block orders the copy children
+     (title:1, lead:2, ctas:5). Clearing only some of them left the rest at the
+     initial order:0, which floated the CTAs above the headline between 768 and
+     991px. Reset the whole group so tablet follows DOM order. */
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-title,
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-lead,
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
-    order: unset;
+    order: 0;
+  }
+
+  .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -811,6 +944,60 @@
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-primary--lg,
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-ctas .vp-cta-secondary--lg {
     width: auto;
+  }
+}
+
+/* Reserve a lane for the centred prev arrow. Above ~1150px the 1140px container
+   leaves wide side margins and the arrow sits clear of the copy on its own, but
+   once the viewport drops to the container width the gutter collapses to
+   --vp-container-x (6px) and the headline runs straight under the chevron.
+   56px clears the arrow box (42px wide at left: clamp(2px, 0.5vw, 8px)). */
+@media (min-width: 768px) {
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner {
+    padding-left: max(
+      56px,
+      calc((100vw - var(--vp-container-max, 1140px)) / 2 + var(--vp-pad-x-start))
+    );
+  }
+}
+
+/* Tablet portrait: the hero box is tall and narrow, so `contain` sizes the bag
+   by width and it swallows the copy column. Shrink it and pin it to the lower
+   right, then deepen the scrim so the headline keeps its contrast. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-visual-img {
+    --vp-hero-img-scale: 0.58;
+    --vp-hero-img-shift-x: -1%;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-scrim {
+    background:
+      linear-gradient(
+        to top,
+        rgba(12, 12, 14, 0.68) 0%,
+        rgba(12, 12, 14, 0) 30%
+      ),
+      linear-gradient(
+        100deg,
+        rgba(12, 12, 14, 0.92) 0%,
+        rgba(12, 12, 14, 0.86) 42%,
+        rgba(12, 12, 14, 0.52) 66%,
+        rgba(12, 12, 14, 0.12) 86%,
+        rgba(12, 12, 14, 0) 100%
+      );
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-inner {
+    padding-right: clamp(20px, 26vw, 30vw) !important;
+  }
+
+  /* A full 100svh fold on a portrait tablet leaves a large empty band above the
+     copy, so trim the hero rather than stretch the content to fill it. */
+  .vp-home > .vp-hero:not(.vp-careers-hero),
+  .vp-home > .vp-hero.vp-hero--fold {
+    height: 84svh !important;
+    min-height: 84svh !important;
+    max-height: 84svh !important;
   }
 }
 
@@ -834,8 +1021,18 @@
     display: none !important;
   }
 
-  .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red {
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--red,
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-scrim {
     display: none !important;
+  }
+
+  /* Phone: the hero stacks (copy → photo → stats), so 62% would drop the arrows
+     onto the full-width CTAs. Sit them on the photo instead: the stats band
+     height plus half the 1024/682 photo measured up from the hero foot. */
+  .vp-home > .vp-hero.vp-hero--fold .vp-hero-nav {
+    top: auto;
+    bottom: calc(72px + 33vw);
+    transform: none;
   }
 
   .vp-home > .vp-hero.vp-hero--fold .vp-hero-panel--visual {
@@ -966,6 +1163,15 @@
     gap: 8px;
     width: 100%;
     margin: 0;
+  }
+
+  /* The phone copy band is itself brand red, so the red-filled WhatsApp CTA
+     used on the desktop scrim would vanish. Flip it back to white-on-red. */
+  .vp-home > .vp-hero.vp-hero--fold .vp-cta-whatsapp,
+  .vp-home > .vp-hero.vp-hero--fold .vp-cta-whatsapp:hover {
+    background: var(--knack-white) !important;
+    border-color: var(--knack-white) !important;
+    color: var(--knack-brand) !important;
   }
 
   .vp-home .vp-hero:not(.vp-careers-hero) .vp-hero-trust-col--certs {
@@ -1592,7 +1798,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0;
-  max-width: min(100%, 22rem);
 }
 
 .vp-home-intro-eyebrow {
@@ -1619,10 +1824,44 @@ a:hover {
   max-width: none;
 }
 
+/* Intro heading: keep "PP bags for global buyers" on a single line */
+.vp-root .vp-home-intro-head {
+  max-width: none;
+}
+
+.vp-root .vp-home-intro-title {
+  font-size: clamp(20px, 2.4vw, 30px);
+  line-height: 1.2;
+  white-space: nowrap;
+  max-width: none;
+}
+
+/* Single image (showing a range of bags) below the heading, filling the
+   empty left-column area. Left edge aligns with the eyebrow/title, since
+   all three are full-width children of the head's content box. */
+.vp-home-intro-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: clamp(20px, 3vw, 32px);
+  margin-left: 0;
+  aspect-ratio: 1 / 1;
+  /* contain, not cover: the square box keeps the layout stable no matter what
+     siteCopy.introImage supplies, while a non-square image letterboxes on the
+     white background instead of having product bags cropped off. */
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--knack-border-light);
+  background: #fff;
+}
+
 .vp-home-intro-story {
   display: grid;
   gap: var(--knack-stack-title-to-lead, 16px);
   padding-top: 4px;
+  /* Start the body text lower, further down alongside the image
+     instead of up at the eyebrow. */
+  margin-top: clamp(96px, 12vw, 160px);
 }
 
 .vp-home-intro-lead,
@@ -1688,6 +1927,10 @@ a:hover {
 
   .vp-home-intro-head {
     max-width: none;
+  }
+
+  .vp-home-intro-story {
+    margin-top: 0;
   }
 
   .vp-home-intro-highlights {
@@ -1934,62 +2177,266 @@ a:hover {
   }
 }
 
-/* ── Buyer help (Knack hot-stamping style notice card) ── */
+/* ── Full-bleed image band (breather between about and supply-chain) ──
+   Photo + scrim always read as a dark surface, so copy stays white in both
+   themes; only the section inner takes the shared page gutter. */
+.vp-image-band--knack {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 0;
+  min-height: clamp(280px, 34vw, 400px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--knack-black);
+  box-sizing: border-box;
+}
+
+.vp-image-band-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+  border-radius: 0;
+}
+
+.vp-image-band-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 17, 17, 0.86) 0%,
+    rgba(17, 17, 17, 0.72) 45%,
+    rgba(17, 17, 17, 0.42) 100%
+  );
+}
+
+.vp-image-band-inner {
+  width: 100%;
+  max-width: var(--vp-container-max);
+  margin-inline: auto;
+  padding-inline: var(--vp-container-x);
+  padding-block: clamp(48px, 6vw, 72px);
+  box-sizing: border-box;
+}
+
+.vp-image-band-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: min(100%, 40rem);
+}
+
+.vp-image-band-eyebrow {
+  margin: 0 0 var(--knack-stack-eyebrow-to-title, 8px);
+  font-family: var(--knack-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--knack-white) !important;
+  opacity: 0.85;
+}
+
+.vp-image-band-title {
+  margin: 0;
+  font-family: var(--knack-font);
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--knack-white) !important;
+  text-wrap: balance;
+}
+
+.vp-image-band-body {
+  margin: var(--knack-stack-title-to-lead, 16px) 0 0;
+  font-family: var(--knack-font);
+  font-size: 15px;
+  line-height: 1.75;
+  font-weight: 400 !important;
+  color: var(--knack-white) !important;
+  opacity: 0.88;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.vp-image-band-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: var(--knack-stack-lead-to-content, 32px);
+  padding: 0 24px;
+  border: 0;
+  border-radius: var(--knack-radius-pill);
+  background: var(--knack-brand);
+  color: var(--knack-white) !important;
+  font-family: var(--knack-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.vp-image-band-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--knack-cta-shadow-gold);
+}
+
+@media (max-width: 991px) {
+  .vp-image-band--knack {
+    min-height: 0;
+  }
+
+  .vp-image-band-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.74) 0%,
+      rgba(17, 17, 17, 0.86) 100%
+    );
+  }
+
+  .vp-image-band-copy {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .vp-image-band-inner {
+    padding-block: 36px;
+  }
+
+  .vp-image-band-cta {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* ── Global supply chains (dotted world map + copy) ── */
 .vp-buyer-section--knack {
   background: var(--knack-surface-section);
   padding-block: var(--knack-section-y);
   padding-inline: 0;
 }
 
-.vp-buyer-section-card {
-  max-width: none;
+.vp-buyer-section-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 32px 56px;
+}
+
+.vp-buyer-section-media {
+  min-width: 0;
+}
+
+.vp-buyer-section-map {
+  display: block;
   width: 100%;
+  height: auto;
+}
+
+.vp-buyer-section-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
   margin-inline: 0;
-  padding: 36px 24px;
-  text-align: center;
-  background: var(--knack-white);
-  border: 1px solid var(--knack-border-light);
-  border-radius: var(--knack-radius-card);
-  box-shadow: var(--knack-shadow-card);
-  box-sizing: border-box;
+  margin-top: 0;
+  max-width: none;
 }
 
 .vp-buyer-section-title {
-  margin: 0 0 var(--knack-stack-title-to-lead, 16px);
+  margin: 0 0 16px;
   max-width: var(--knack-measure-title, min(100%, 40rem));
-  margin-inline: auto;
+  margin-inline: 0;
   font-family: var(--knack-font);
-  font-size: clamp(28px, 3.2vw, 42px);
-  font-weight: 600;
-  line-height: 1.3;
+  font-size: clamp(26px, 2.8vw, 34px);
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
   color: var(--knack-heading) !important;
   text-wrap: pretty;
 }
 
+.vp-buyer-section-rule {
+  display: block;
+  width: 88px;
+  height: 3px;
+  margin: 0 0 24px;
+  border-radius: 2px;
+  background: var(--knack-brand);
+}
+
 .vp-buyer-section-line {
   display: none;
 }
 
-.vp-buyer-section-copy {
+.vp-buyer-section-body-wrap {
   display: flex;
   flex-direction: column;
-  gap: var(--knack-stack-title-to-lead, 16px);
-  max-width: var(--knack-measure-lead, min(100%, 52rem));
-  margin-inline: auto;
-  margin-top: 0;
+  gap: 16px;
 }
 
 .vp-buyer-section-body {
   margin: 0;
   max-width: none;
   font-family: var(--knack-font);
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
   color: var(--knack-heading) !important;
-  text-align: center;
+  text-align: left;
   text-wrap: pretty;
+}
+
+.vp-buyer-section-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  margin-top: 28px;
+  padding: 0 30px;
+  border: 0;
+  border-radius: var(--knack-radius-pill);
+  background: var(--knack-brand);
+  color: var(--knack-white) !important;
+  font-family: var(--knack-font);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vp-buyer-section-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--knack-cta-shadow-gold);
+}
+
+@media (max-width: 991px) {
+  .vp-buyer-section-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .vp-buyer-section-copy {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1997,17 +2444,15 @@ a:hover {
     padding-block: 44px;
   }
 
-  .vp-buyer-section-card {
-    padding: 28px 20px;
-  }
-
   .vp-buyer-section-title {
     letter-spacing: -0.01em;
-    margin-bottom: var(--knack-stack-title-to-lead, 16px);
+    margin-bottom: 14px;
   }
 
-  .vp-buyer-section-copy {
-    gap: var(--knack-stack-title-to-lead, 16px);
+  .vp-buyer-section-cta {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 24px;
   }
 }
 
@@ -2122,6 +2567,85 @@ a:hover {
   }
 }
 
+/* ── Hero variant: stats band pinned to the foot of the home hero ── */
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  /* Tinted rather than clear: the bag's lit base sits directly behind this band
+     and washed out the stat labels when it was fully transparent. */
+  background: rgba(12, 12, 14, 0.55) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(3px);
+}
+
+/* Inner keeps the shared container gutter, so stat 1 lines up under the headline. */
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-inner {
+  padding-block: clamp(12px, 2.2vh, 26px);
+  column-gap: clamp(12px, 2vw, 32px);
+}
+
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-item {
+  align-items: flex-start;
+  gap: 2px;
+  padding: 0;
+  text-align: left;
+}
+
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-item::after {
+  height: clamp(24px, 4vh, 40px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-value {
+  font-size: clamp(22px, 2.4vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+.vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-label {
+  font-size: clamp(10px, 0.9vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78) !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 767px) {
+  /* Phone: band follows the photo and sits on the red copy band colour. */
+  .vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero {
+    order: 4;
+    /* Phone band sits on the solid red hero, not on the photo — no tint needed. */
+    background: transparent !important;
+    border-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: none;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-inner {
+    padding-block: 18px;
+    column-gap: 4px;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-value {
+    font-size: clamp(18px, 5.2vw, 24px);
+    text-shadow: none;
+  }
+
+  .vp-home > .vp-hero.vp-hero--fold .vp-knack-stats-bar--hero .vp-knack-stats-bar-label {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+    text-shadow: none;
+  }
+}
+
 /* ── Home product uses (Knack-inspired industry cards) ── */
 .vp-use-section--knack {
   background: var(--knack-white);
@@ -2149,6 +2673,17 @@ a:hover {
   line-height: 1.3;
   color: var(--knack-heading);
   text-wrap: pretty;
+}
+
+/* Same rule as .vp-buyer-section-rule, anchored to the centered heading's start. */
+.vp-use-section-title::after {
+  content: "";
+  display: block;
+  width: 88px;
+  height: 3px;
+  margin: 16px 0 8px;
+  border-radius: 2px;
+  background: var(--knack-brand);
 }
 
 .vp-use-section-line {
@@ -2556,6 +3091,9 @@ a:hover {
   flex: none;
   aspect-ratio: 1 / 1;
   width: 100%;
+  /* Soft studio-grey backdrop so the letterboxed gutters on portrait
+     product photos read as intentional rather than empty bands. */
+  background: #ececee;
 }
 
 .vp-prod-card--knack .vp-prod-card-img,
@@ -2566,7 +3104,9 @@ a:hover {
   height: 100%;
   min-height: 100%;
   aspect-ratio: auto;
-  object-fit: cover;
+  /* Show the whole bag (badge + full height) instead of zooming in and
+     cropping it. Square photos still fill the frame edge-to-edge. */
+  object-fit: contain;
   object-position: center;
   border: 0;
   border-radius: 0 !important;

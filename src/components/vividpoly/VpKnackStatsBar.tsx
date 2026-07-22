@@ -11,6 +11,7 @@ export type KnackStatItem = {
 type VpKnackStatsBarProps = {
   stats: KnackStatItem[];
   ariaLabel?: string;
+  className?: string;
 };
 
 type ParsedStat = {
@@ -76,6 +77,7 @@ function KnackStatValue({ value, start }: { value: string; start: boolean }) {
 export default function VpKnackStatsBar({
   stats,
   ariaLabel = 'Company highlights',
+  className,
 }: VpKnackStatsBarProps) {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(false);
@@ -101,7 +103,11 @@ export default function VpKnackStatsBar({
   if (!stats.length) return null;
 
   return (
-    <section ref={ref} className="vp-knack-stats-bar" aria-label={ariaLabel}>
+    <section
+      ref={ref}
+      className={className ? `vp-knack-stats-bar ${className}` : 'vp-knack-stats-bar'}
+      aria-label={ariaLabel}
+    >
       <div className="vp-knack-stats-bar-inner">
         {stats.map((stat) => (
           <div

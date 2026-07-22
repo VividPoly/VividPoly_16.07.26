@@ -246,7 +246,7 @@
       }
     ],
     "factsEyebrow": "Company details",
-    "factsHeading": "VIVIDPOLY at a glance",
+    "factsHeading": "VIVIDPOLY LLP at a glance",
     "whyEyebrow": "SERVICES",
     "whyHeading": "Export packaging support at its best",
     "whyLead": "From product variety and capacity planning to printing, liners, and export packing, VIVIDPOLY is structured to support practical sourcing decisions.",
@@ -284,6 +284,7 @@
     ],
     "contactTeam": "Send an enquiry",
     "requestCustomQuote": "Send an enquiry",
+    "ctaBandEyebrow": "Get in touch",
     "ctaBandTitle": "Looking for a professional export packaging partner?",
     "ctaBandBody": "Share your bag type, capacity, printing needs, quantity, and destination. VIVIDPOLY will review your enquiry and follow up with practical options.",
     "ctaBandButton": "Send an enquiry"
@@ -312,18 +313,19 @@
     "websiteLabel": "Website",
     "phoneLabel": "WhatsApp / Phone",
     "corporateOffice": "Corporate office",
+    "corporateAddress": "Sankalp Square, A 1601, Sindhu Bhavan Marg, near Taj Hotel, opp. Shoot Game, PRL Colony, Bopal, Ahmedabad, Gujarat 380058",
     "companyRows": [
       [
         "Company / Brand",
-        "VIVIDPOLY"
+        "VIVIDPOLY LLP"
       ],
       [
         "Website",
-        "WWW.VIVIDPOLY.COM"
+        "www.vividpoly.com"
       ],
       [
         "Email",
-        "INFO@VIVIDPOLY.COM"
+        "info@vividpoly.com"
       ],
       [
         "Phone",
@@ -429,9 +431,29 @@
   },
   "blog": {
     "pageTitle": "Buyer guides & insights",
+    "backToArticles": "Back to all articles",
+    "loading": "Loading articles…",
+    "emptyTitle": "No articles yet",
+    "emptyBody": "New buyer guides and insights are on the way — check back soon.",
     "fallbackCategory": "Buyer guide",
     "fallbackReadTime": "5 min read",
-    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor."
+    "fallbackExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search articles…",
+    "searchSubmit": "Search",
+    "dateLabel": "Date",
+    "dateAll": "All time",
+    "date7": "Last 7 days",
+    "date30": "Last 30 days",
+    "date90": "Last 90 days",
+    "dateYear": "This year",
+    "topicsLabel": "Topics",
+    "topicsAll": "All topics",
+    "articlesOne": "1 article",
+    "articlesMany": "{count} articles",
+    "noResultsTitle": "No matching articles",
+    "noResultsBody": "Try a different search term, topic, or date range.",
+    "clearFilters": "Clear filters"
   },
   "careers": {
     "eyebrow": "Careers at VividPoly",
@@ -581,8 +603,13 @@
       "Request samples before committing to full quantities. Bale, pallet, and carton packing are planned for safe international shipment across ten woven PP constructions, from open mouth to premium laminated formats, matched to rice, fertilizer, cement, feed, and retail uses."
     ],
     "homeAboutImage": "/images/home-about.jpg",
-    "homeAboutCtaType": "Shop by Product Type",
-    "homeAboutCtaIndustry": "Shop by Industry",
+    "homeAboutCtaType": "View Products",
+    "homeAboutCtaIndustry": "Learn About Us",
+    "homeBandImage": "/images/pp-fabric-rolls.png",
+    "homeBandEyebrow": "Export ready",
+    "homeBandTitle": "Trusted by buyers in 70+ countries",
+    "homeBandBody": "In-house woven PP fabric, printing, and stitching mean your specification is controlled from roll to finished bag, then bale, pallet, or carton packed for safe international shipment.",
+    "homeBandCta": "Request a Quote",
     "homeValuePropsEyebrow": "Why buyers choose VIVIDPOLY",
     "homeProductsEyebrow": "Our Products",
     "homeProductsTitle": "What We Offer",
@@ -608,9 +635,10 @@
     "trustMessage": "VIVIDPOLY is built for global import buyers who need professional communication, clear product specifications, custom packaging options, and responsive export support from India. Our PP bag content is structured to help buyers compare bag types, understand product uses, review add-on features, and submit complete quotation requirements.",
     "buyerRequirementLabel": "Buyer Requirement",
     "buyerResponseLabel": "VIVIDPOLY Response",
-    "buyerSectionTitle": "Export Packaging, Built for Global Buyers",
+    "buyerSectionTitle": "Global Supply Chains",
+    "buyerSectionCta": "Know More",
     "buyerSectionParagraphs": [
-      "VIVIDPOLY is an India-based PP bag exporter serving global importers who need professional communication, clear product specifications, and reliable export support. We supply open mouth, stitched, D-cut, valve, carry, laminated, pinch bottom, block bottom, gusset, and shopping bags from 5 kg to 75 kg, with flexo or laminated print options for brand presentation. Product type, size, capacity, print, lamination, liner, gusset, handle, and packing details are all captured upfront before any quotation is issued."
+      "VIVIDPOLY exports PP woven bags to buyers across 70+ countries, pairing professional communication and clear product specifications with reliable, cost-efficient export support. From open mouth and stitched to D-cut, valve, laminated, and shopping bags, every order is matched to your product and destination, with most of our clients based in the USA, Europe, Latin America, and MEA markets."
     ],
     "productUsesIntro": "VIVIDPOLY PP bags are suitable for a wide range of product categories. The right bag should be selected based on product weight, density, filling process, moisture sensitivity, branding requirement, handling condition, and export packing standard.",
     "productUsesEmptyHint": "Hover or select a product use to see recommended bag types.",
