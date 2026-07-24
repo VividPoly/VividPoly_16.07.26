@@ -71,30 +71,17 @@ export default function ProductCategoryPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Image Gallery */}
             <div>
-              <div className="relative aspect-square bg-gray-100 rounded-xl overflow-hidden mb-4">
-                <img 
-                  src={product.images[activeImageIndex]} 
+              <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden">
+                <img
+                  src={product.images[activeImageIndex]}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-red-600 text-white text-sm font-semibold px-4 py-2 rounded-full">
                     {product.shortName}
                   </span>
                 </div>
-              </div>
-              <div className="flex gap-3 flex-wrap">
-                {product.images.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveImageIndex(idx)}
-                    className={`w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
-                      idx === activeImageIndex ? 'border-red-600' : 'border-gray-200 hover:border-gray-300'
-                    }`}
-                  >
-                    <img src={img} alt="" className="w-full h-full object-cover" />
-                  </button>
-                ))}
               </div>
             </div>
 
@@ -137,6 +124,23 @@ export default function ProductCategoryPage() {
                   </Button>
                 </Link>
               </div>
+
+              {/* Thumbnail Gallery (kept beside the info so the column stays balanced) */}
+              {product.images.length > 1 && (
+                <div className="flex gap-3 flex-wrap mt-8">
+                  {product.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImageIndex(idx)}
+                      className={`w-20 h-20 rounded-lg overflow-hidden border-2 transition-all bg-gray-50 ${
+                        idx === activeImageIndex ? 'border-red-600' : 'border-gray-200 hover:border-gray-300'
+                      }`}
+                    >
+                      <img src={img} alt="" className="w-full h-full object-contain p-1" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -398,7 +402,7 @@ export default function ProductCategoryPage() {
               <div className="space-y-3">
                 <input type="text" placeholder="Your Name" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
                 <input type="email" placeholder="Email Address" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
-                <input type="text" placeholder="Quantity Required" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
+                <input type="tel" placeholder="Phone Number" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
                 <textarea placeholder="Your Requirements..." rows={3} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 resize-none" />
                 <Link href="/inquiries">
                   <Button className="w-full bg-red-600 hover:bg-red-700 text-white">

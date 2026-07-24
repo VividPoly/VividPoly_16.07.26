@@ -37,6 +37,7 @@ import InquiryPopup from "./components/InquiryPopup";
 import { LanguageBanner } from "./components/LanguageBanner";
 import { CookieConsent } from "./components/CookieConsent";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import AutoTranslate from "./components/AutoTranslate";
 
 function LoadingFallback() {
   return (
@@ -87,6 +88,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
+          <AutoTranslate />
           <Router />
           <InquireButton />
           <InquiryPopup />

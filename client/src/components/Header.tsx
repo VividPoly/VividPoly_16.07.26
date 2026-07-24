@@ -142,7 +142,7 @@ export default function Header() {
               </div>
             ))}
             {/* Language Switcher */}
-            <div className="relative ml-3">
+            <div className="relative ml-3 notranslate" translate="no">
               <button 
                 onClick={() => setShowLangMenu(!showLangMenu)}
                 className="flex items-center gap-1 text-white/70 hover:text-white text-xs transition-colors"

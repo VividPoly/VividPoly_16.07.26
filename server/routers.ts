@@ -9,6 +9,9 @@ import { invokeLLM } from "./_core/llm";
 import { notifyOwner } from "./_core/notification";
 import { CHATBOT_SYSTEM_PROMPT } from "./chatbot-knowledge";
 import { createOdooLead, isOdooConfigured } from "./odoo";
+import { translateBatch } from "./translate";
+import { getSupabase } from "./supabase";
+import { createHash } from "crypto";
 
 // Admin-only procedure
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -580,6 +583,84 @@ Reply directly to: ${input.email}
             message: "I'm having trouble connecting right now. Please try again later or contact us directly at info@vividpoly.com",
           };
         }
+      }),
+  }),
+
+  // Site-wide UI translation (drives the client auto-translator). Returns a
+  // { source -> translated } map; falls back to the English source for any
+  // string it can't translate, so the page never breaks.
+  i18n: router({
+    translate: publicProcedure
+      .input(
+        z.object({
+          texts: z.array(z.string()).max(500),
+          target: z.string(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const target = (input.target || "en").trim();
+        const result: Record<string, string> = {};
+        if (!target || target === "en") {
+          for (const t of input.texts) result[t] = t;
+          return result;
+        }
+
+        const keyOf = (s: string) => createHash("md5").update(s).digest("hex");
+        const uniques = Array.from(
+          new Set(input.texts.filter((t) => t && /\S/.test(t)))
+        );
+
+        // 1) Look up the shared Supabase cache.
+        const supabase = getSupabase();
+        const misses: string[] = [];
+        if (supabase && uniques.length > 0) {
+          try {
+            const keys = uniques.map(keyOf);
+            const { data } = await supabase
+              .from("ui_translations")
+              .select("source_key, translated")
+              .eq("lang", target)
+              .in("source_key", keys);
+            const byKey = new Map(
+              (data || []).map((r: any) => [r.source_key, r.translated as string])
+            );
+            for (const s of uniques) {
+              const hit = byKey.get(keyOf(s));
+              if (hit !== undefined) result[s] = hit;
+              else misses.push(s);
+            }
+          } catch {
+            misses.push(...uniques);
+          }
+        } else {
+          misses.push(...uniques);
+        }
+
+        // 2) Translate whatever wasn't cached.
+        if (misses.length > 0) {
+          const translated = await translateBatch(misses, target);
+          const rows: Array<Record<string, string>> = [];
+          misses.forEach((s, i) => {
+            result[s] = translated[i];
+            if (translated[i] && translated[i] !== s) {
+              rows.push({ lang: target, source_key: keyOf(s), source: s, translated: translated[i] });
+            }
+          });
+          // 3) Best-effort write-back (needs the service role key; ignored otherwise).
+          if (supabase && rows.length > 0) {
+            supabase
+              .from("ui_translations")
+              .upsert(rows, { onConflict: "lang,source_key" })
+              .then(
+                () => {},
+                () => {}
+              );
+          }
+        }
+
+        // Guarantee an entry for every requested string.
+        for (const t of input.texts) if (result[t] === undefined) result[t] = t;
+        return result;
       }),
   }),
 });
