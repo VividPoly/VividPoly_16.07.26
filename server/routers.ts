@@ -315,11 +315,18 @@ Reply directly to: ${input.email}
           `.trim();
         }
 
-        // Send notification (this will notify the owner)
-        await notifyOwner({
-          title: `🆕 ${formType}: ${input.name}${input.country ? ` from ${input.country}` : ''}`,
-          content: emailContent,
-        });
+        // Send notification (this will notify the owner). Best-effort: the lead
+        // is already saved to Supabase above and pushed to Odoo below, so an
+        // unconfigured or unreachable notification service must not fail the
+        // visitor's submission with a 500.
+        try {
+          await notifyOwner({
+            title: `🆕 ${formType}: ${input.name}${input.country ? ` from ${input.country}` : ''}`,
+            content: emailContent,
+          });
+        } catch (error) {
+          console.error("[Notification] Failed to notify owner:", error);
+        }
 
         // Push the enquiry to Odoo CRM as a crm.lead (best-effort: a CRM
         // outage must never block the visitor's submission — the lead is
