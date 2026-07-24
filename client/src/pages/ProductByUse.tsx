@@ -15,7 +15,7 @@ export default function ProductByUse() {
     },
     {
       name: "Rice & Food Grains",
-      slug: "rice",
+      slug: "food-grains",
       image: "/industries/rice-product.jpg",
       description: "High-quality woven sacks designed for rice, pulses, and lentils. UV-stabilized fabric with breathable design prevents moisture buildup during storage and transport.",
       features: ["UV stabilized", "Breathable design", "High tensile strength"]
@@ -50,14 +50,14 @@ export default function ProductByUse() {
     },
     {
       name: "Seeds & Agriculture",
-      slug: "seeds",
+      slug: "fertilizers",
       image: "/media/front_d62a94b3.webp",
       description: "Specialized packaging for agricultural seeds, ensuring optimal germination rates. Breathable yet protective design maintains seed viability during storage.",
       features: ["Seed-safe", "Breathable", "Tamper-evident options"]
     },
     {
       name: "Wheat & Grains",
-      slug: "wheat",
+      slug: "flour",
       image: "/industries/wheat-grains.jpg",
       description: "Bulk packaging solutions for wheat and grain traders. High-capacity bags with reinforced stitching for safe handling and transport.",
       features: ["Bulk capacity", "Reinforced stitching", "Easy handling"]
@@ -78,28 +78,28 @@ export default function ProductByUse() {
     },
     {
       name: "Construction Materials",
-      slug: "construction",
+      slug: "cement",
       image: "/industries/construction-mining.jpg",
       description: "Industrial PP woven bags for sand, gravel, and construction aggregates. Reinforced design handles rough handling on construction sites.",
       features: ["Reinforced design", "Rough handling", "Weather resistant"]
     },
     {
       name: "Coal & Charcoal",
-      slug: "coal",
+      slug: "coal-charcoal",
       image: "/industries/coal.jpg",
       description: "Specialized bags for coal, charcoal, and solid fuels. Black-colored options available to mask product residue and maintain clean appearance.",
       features: ["Color options", "Dust containment", "High capacity"]
     },
     {
       name: "Powder & Granules",
-      slug: "powder",
+      slug: "minerals",
       image: "/industries/flour.jpg",
       description: "Fine-mesh PP woven bags for powdered products and granules. Inner liner prevents product leakage while maintaining breathability.",
       features: ["Fine mesh", "Leak-proof liner", "Powder-safe"]
     },
     {
       name: "Shopping & Retail",
-      slug: "shopping",
+      slug: "courier-bags",
       image: "/media/red_f3abe28e.webp",
       description: "Eco-friendly PP woven shopping bags as sustainable alternatives to plastic. Reusable, washable, and customizable with brand logos.",
       features: ["Eco-friendly", "Reusable", "Custom branding"]
@@ -113,7 +113,7 @@ export default function ProductByUse() {
     },
     {
       name: "Fruits & Vegetables",
-      slug: "fruits",
+      slug: "fruits-vegetables",
       image: "/industries/fruits-vegetables.jpg",
       description: "Ventilated PP woven bags for fresh produce. Mesh design allows air circulation while protecting fruits and vegetables during transport.",
       features: ["Ventilated mesh", "Fresh produce safe", "Gentle handling"]
@@ -242,17 +242,19 @@ export default function ProductByUse() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {productApplications.map((product, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <h3 className="absolute bottom-4 left-4 text-white font-bold text-lg">{product.name}</h3>
-                  </div>
-                  <div className="p-4">
+                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 flex flex-col">
+                  <Link href={`/industry/${product.slug}`}>
+                    <div className="relative h-48 overflow-hidden cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <h3 className="absolute bottom-4 left-4 text-white font-bold text-lg">{product.name}</h3>
+                    </div>
+                  </Link>
+                  <div className="p-4 flex flex-col flex-1">
                     <p className="text-gray-600 text-sm mb-3 line-clamp-3">{product.description}</p>
                     <div className="flex flex-wrap gap-1 mb-3">
                       {product.features.map((feature, idx) => (
@@ -261,11 +263,18 @@ export default function ProductByUse() {
                         </span>
                       ))}
                     </div>
-                    <Link href="/inquiries">
-                      <button className="w-full bg-[#DC2626] text-white py-2 rounded-lg hover:bg-[#1A1A1A] transition-colors text-sm font-semibold">
-                        Request Quote
-                      </button>
-                    </Link>
+                    <div className="mt-auto flex gap-2">
+                      <Link href={`/industry/${product.slug}`} className="flex-1">
+                        <button className="w-full border border-[#DC2626] text-[#DC2626] py-2 rounded-lg hover:bg-[#DC2626]/5 transition-colors text-sm font-semibold">
+                          Learn More
+                        </button>
+                      </Link>
+                      <Link href="/inquiries" className="flex-1">
+                        <button className="w-full bg-[#DC2626] text-white py-2 rounded-lg hover:bg-[#1A1A1A] transition-colors text-sm font-semibold">
+                          Request Quote
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}

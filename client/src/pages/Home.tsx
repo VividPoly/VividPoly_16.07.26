@@ -6,13 +6,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ShowcaseSlider from "@/components/ShowcaseSlider";
 import { SEOHead, pageSEO } from "@/components/SEOHead";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const { data: featuredProducts, isLoading: productsLoading } = trpc.products.featured.useQuery();
   const { data: testimonials, isLoading: testimonialsLoading } = trpc.testimonials.featured.useQuery();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [carouselIndex, setCarouselIndex] = useState(0);
+  const industryRef = useRef<HTMLDivElement>(null);
+  const scrollIndustries = (dir: 1 | -1) => {
+    const el = industryRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * Math.min(el.clientWidth * 0.8, 420), behavior: "smooth" });
+  };
 
   // Hero slideshow images
   const heroSlides = [
@@ -253,7 +259,8 @@ export default function Home() {
                 Packaging solutions for agriculture, construction, food processing, and more
               </p>
             </div>
-            <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div className="relative">
+            <div ref={industryRef} className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {[
                 { name: "Animal Feed", image: "/media/animal-feed-product_dbdf3256.jpg", slug: "animal-feed" },
                 { name: "Cement", image: "/industries/cement-product.jpg", slug: "cement" },
@@ -278,6 +285,23 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
+            </div>
+              <button
+                type="button"
+                onClick={() => scrollIndustries(-1)}
+                aria-label="Previous"
+                className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 hidden h-11 w-11 place-items-center rounded-full bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C] md:grid"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollIndustries(1)}
+                aria-label="Next"
+                className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 hidden h-11 w-11 place-items-center rounded-full bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C] md:grid"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
             </div>
             <div className="text-center mt-8">
               <Link href="/industries" className="inline-flex items-center gap-1 text-sm font-bold text-white hover:text-[#DC2626] transition-colors">
