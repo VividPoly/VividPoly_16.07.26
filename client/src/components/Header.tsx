@@ -23,6 +23,7 @@ const languages = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
@@ -66,6 +67,7 @@ export default function Header() {
             { name: "PP Woven Fabrics", href: "/products/pp-woven-fabric" },
             { name: "PP Woven Bags", href: "/products/pp-woven-bags" },
             { name: "BOPP Laminated Bags", href: "/products/bopp-laminated-bags" },
+            { name: "Weed Barrier & Ground Cover", href: "/products/weed-barrier" },
           ]
         },
         {
@@ -177,10 +179,10 @@ export default function Header() {
         <div className="container mx-auto flex items-center justify-between py-0">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img 
-              src="/media/vividpoly-red-logo_8b59cad5.png" 
-              alt="VividPoly - Quality Packaging Solutions" 
-              className="h-14 md:h-16 lg:h-18 w-auto py-2"
+            <img
+              src="/media/vividpoly-red-logo_8b59cad5.png"
+              alt="VividPoly - Quality Packaging Solutions"
+              className="h-[68px] md:h-[76px] lg:h-20 w-auto py-1.5"
             />
           </Link>
 
@@ -337,39 +339,73 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-white border-b border-gray-100 shadow-lg">
+        <div className="xl:hidden bg-white border-b border-gray-100 shadow-lg max-h-[calc(100vh-64px)] overflow-y-auto overscroll-contain">
           <div className="container py-4 space-y-1">
-            {navigation.map((item) => (
-              <div key={item.name}>
-                <Link 
-                  href={item.href}
-                  className="flex items-center justify-between py-3 text-[#1A1A1A] hover:text-[#DC2626] transition-colors font-medium text-sm"
-                  onClick={() => !item.dropdown && setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                  {item.dropdown && <ChevronDown className="h-4 w-4 text-gray-400" />}
-                </Link>
-                {item.dropdown && (
-                  <div className="pl-4 space-y-0.5 border-l-2 border-gray-200 ml-2">
-                    {item.dropdown.map((subItem) => (
+            {navigation.map((item) => {
+              // Sub-items come from either a regular dropdown or the products mega-menu.
+              const subItems = item.dropdown
+                ? item.dropdown
+                : item.megaMenu && item.columns
+                  ? item.columns.flatMap((c) => c.items)
+                  : null;
+              const hasSub = !!subItems && subItems.length > 0;
+
+              // Simple links (no children) navigate and close the menu.
+              if (!hasSub) {
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block py-3 text-[#1A1A1A] hover:text-[#DC2626] transition-colors font-medium text-sm"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              }
+
+              // Items with children collapse by default and toggle open on tap.
+              const open = mobileExpanded === item.name;
+              return (
+                <div key={item.name} className="border-b border-gray-50 last:border-0">
+                  <button
+                    type="button"
+                    aria-expanded={open}
+                    onClick={() => setMobileExpanded(open ? null : item.name)}
+                    className="w-full flex items-center justify-between py-3 text-[#1A1A1A] hover:text-[#DC2626] transition-colors font-medium text-sm"
+                  >
+                    {item.name}
+                    <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${open ? 'rotate-180' : ''}`} />
+                  </button>
+                  {open && (
+                    <div className="pl-4 pb-2 space-y-0.5 border-l-2 border-gray-200 ml-2">
                       <Link
-                        key={subItem.name}
-                        href={subItem.href}
-                        className="block py-2 text-gray-600 hover:text-[#DC2626] text-sm transition-colors"
+                        href={item.href}
+                        className="block py-2 text-[#DC2626] font-medium text-sm"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        {subItem.name}
+                        All {item.name}
                       </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            
+                      {subItems!.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="block py-2 text-gray-600 hover:text-[#DC2626] text-sm transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
             <div className="border-t border-gray-100 pt-3 mt-3 space-y-1">
               {topLinks.map((item) => (
-                <Link 
-                  key={item.name} 
+                <Link
+                  key={item.name}
                   href={item.href}
                   className="block py-2 text-gray-600 hover:text-[#DC2626] text-sm transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
@@ -378,7 +414,7 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            
+
             <div className="pt-3 border-t border-gray-100">
               <Link href={ctaButton.href} onClick={() => setMobileMenuOpen(false)}>
                 <button className="btn-primary w-full text-sm py-3">

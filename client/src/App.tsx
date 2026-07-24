@@ -32,6 +32,7 @@ const OrderHistory = lazy(() => import("./pages/OrderHistory"));
 const PriceCalculator = lazy(() => import("./pages/PriceCalculator"));
 const ProductByUse = lazy(() => import("./pages/ProductByUse"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const ThankYou = lazy(() => import("./pages/ThankYou"));
 import InquireButton from "./components/InquireButton";
 import InquiryPopup from "./components/InquiryPopup";
 import { LanguageBanner } from "./components/LanguageBanner";
@@ -75,6 +76,7 @@ function Router() {
         <Route path="/price-calculator" component={PriceCalculator} />
         <Route path="/product-by-use" component={ProductByUse} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/thank-you" component={ThankYou} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

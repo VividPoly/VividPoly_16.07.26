@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useState, useRef } from "react";
 import { 
   ArrowRight, 
@@ -235,6 +235,7 @@ function formatFileSize(bytes: number): string {
 }
 
 export default function Inquiries() {
+  const [, setLocation] = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -310,26 +311,9 @@ export default function Inquiries() {
 
   const submitInquiry = trpc.contact.submit.useMutation({
     onSuccess: () => {
-      toast.success("Thank you for your inquiry! Our team will contact you within 24 hours.");
-      setFormData({
-        name: "",
-        company: "",
-        email: "",
-        countryCode: "+91",
-        phone: "",
-        country: "",
-        productCategory: "",
-        productSubcategory: "",
-        quantity: "",
-        bagWidth: "",
-        bagHeight: "",
-        bagGusset: "",
-        gsmWeight: "",
-        printingColors: "",
-        message: ""
-      });
       setFiles([]);
       setUploadProgress(0);
+      setLocation("/thank-you");
     },
     onError: (error) => {
       toast.error(error.message || "Failed to submit inquiry. Please try again.");
@@ -378,6 +362,7 @@ export default function Inquiries() {
         quantity: formData.quantity || undefined,
         message: formData.message,
         attachments: uploadedUrls.length > 0 ? uploadedUrls : undefined,
+        source: "Quote Request (Inquiries page)",
       });
       
     } catch (error) {

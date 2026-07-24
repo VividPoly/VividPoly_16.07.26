@@ -238,6 +238,7 @@ export const appRouter = router({
           quantity: z.string().optional(),
           message: z.string().min(10, "Message must be at least 10 characters"),
           attachments: z.array(z.string()).optional(),
+          source: z.string().optional(),
         })
       )
       .mutation(async ({ input }) => {
@@ -339,6 +340,7 @@ Reply directly to: ${input.email}
             const details = [
               input.country ? { label: "Country", value: input.country } : null,
               { label: "Enquiry Type", value: formType },
+              input.source ? { label: "Source Page", value: input.source } : null,
               input.productInterest || input.subject
                 ? { label: "Product Interest", value: input.productInterest || input.subject! }
                 : null,

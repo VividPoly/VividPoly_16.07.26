@@ -1,4 +1,4 @@
-import { Link, useParams } from "wouter";
+import { Link, useParams, useLocation } from "wouter";
 import { useState } from "react";
 import { ArrowRight, ArrowLeft, Check, ChevronRight, Factory, Layers, Package, Ruler, Star, Cog, Award } from "lucide-react";
 import { productCategories, findProductBySlug, getParentCategory, type ProductCategory, type SubCategory } from "@/data/productCategories";
@@ -6,10 +6,33 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 export default function ProductCategoryPage() {
   const { slug } = useParams<{ slug: string }>();
+  const [, setLocation] = useLocation();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [quickForm, setQuickForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const quickInquiry = trpc.contact.submit.useMutation({
+    onSuccess: () => setLocation("/thank-you"),
+    onError: (err) => toast.error(err.message || "Could not submit. Please try again."),
+  });
+  const submitQuickInquiry = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!quickForm.name || !quickForm.email) {
+      toast.error("Please enter your name and email.");
+      return;
+    }
+    quickInquiry.mutate({
+      name: quickForm.name,
+      email: quickForm.email,
+      phone: quickForm.phone || undefined,
+      productInterest: product?.name,
+      message: quickForm.message || `Quick inquiry about ${product?.name || "a product"}.`,
+      source: `Product page: ${product?.name || slug}`,
+    });
+  };
   
   // Find the product (could be main category or subcategory)
   const product = findProductBySlug(slug || "");
@@ -399,18 +422,15 @@ export default function ProductCategoryPage() {
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Inquiry</h3>
-              <div className="space-y-3">
-                <input type="text" placeholder="Your Name" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
-                <input type="email" placeholder="Email Address" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
-                <input type="tel" placeholder="Phone Number" className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
-                <textarea placeholder="Your Requirements..." rows={3} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 resize-none" />
-                <Link href="/inquiries">
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                    Submit Inquiry
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </div>
+              <form onSubmit={submitQuickInquiry} className="space-y-3">
+                <input type="text" required placeholder="Your Name" value={quickForm.name} onChange={(e) => setQuickForm({ ...quickForm, name: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
+                <input type="email" required placeholder="Email Address" value={quickForm.email} onChange={(e) => setQuickForm({ ...quickForm, email: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
+                <input type="tel" placeholder="Phone Number" value={quickForm.phone} onChange={(e) => setQuickForm({ ...quickForm, phone: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500" />
+                <textarea placeholder="Your Requirements..." rows={3} value={quickForm.message} onChange={(e) => setQuickForm({ ...quickForm, message: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 resize-none" />
+                <Button type="submit" disabled={quickInquiry.isPending} className="w-full bg-red-600 hover:bg-red-700 text-white">
+                  {quickInquiry.isPending ? "Submitting..." : (<>Submit Inquiry<ArrowRight className="w-4 h-4 ml-2" /></>)}
+                </Button>
+              </form>
             </div>
           </div>
         </div>

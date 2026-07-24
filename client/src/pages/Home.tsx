@@ -12,13 +12,15 @@ export default function Home() {
   const { data: featuredProducts, isLoading: productsLoading } = trpc.products.featured.useQuery();
   const { data: testimonials, isLoading: testimonialsLoading } = trpc.testimonials.featured.useQuery();
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [carouselIndex, setCarouselIndex] = useState(0);
   const industryRef = useRef<HTMLDivElement>(null);
-  const scrollIndustries = (dir: 1 | -1) => {
-    const el = industryRef.current;
+  const productsRef = useRef<HTMLDivElement>(null);
+  const scrollBy = (ref: React.RefObject<HTMLDivElement>, dir: 1 | -1) => {
+    const el = ref.current;
     if (!el) return;
     el.scrollBy({ left: dir * Math.min(el.clientWidth * 0.8, 420), behavior: "smooth" });
   };
+  const scrollIndustries = (dir: 1 | -1) => scrollBy(industryRef, dir);
+  const scrollProducts = (dir: 1 | -1) => scrollBy(productsRef, dir);
 
   // Hero slideshow images
   const heroSlides = [
@@ -39,17 +41,14 @@ export default function Home() {
 
   // Static products for carousel
   const staticProducts = [
-    { id: "pp-woven-bags", name: "PP Woven Bags", image: "/media/pp-woven-bags-printed_784661e4.jpg", description: "Durable & Lightweight Packaging" },
-    { id: "bopp-laminated-bags", name: "BOPP Laminated Bags", image: "/media/carry-bag-yellow_0b49ab2a.webp", description: "Premium Food-Grade Packaging" },
+    { id: "pp-woven-bags", name: "PP Woven Bags", image: "/products/photos/open-mouth-1.webp", description: "Durable & Lightweight Packaging" },
+    { id: "bopp-laminated-bags", name: "BOPP Laminated Bags", image: "/products/photos/bopp-front.webp", description: "Premium Food-Grade Packaging" },
     { id: "pp-woven-fabric", name: "PP Woven Fabrics", image: "/media/fabric-rolls_faa8de4c.jpg", description: "The Heart of Woven Industry" },
-    { id: "carry-bags", name: "PP Carry Bags", image: "/media/carry-bag-red_4605cc40.png", description: "Eco-Friendly Shopping Bags" },
-    { id: "valve-bags", name: "Valve Bags", image: "/media/wildlife-feed-bag_98693fb6.jpg", description: "Special Purpose Bags" },
-    { id: "weed-barrier", name: "Weed Barrier", image: "/media/weedbarrier_vividpoly_Usage_export_d4e2e2b1.jpg", description: "Agricultural Ground Cover" },
+    { id: "carry-bags", name: "PP Carry Bags", image: "/products/photos/carry-multi.webp", description: "Eco-Friendly Shopping Bags" },
+    { id: "d-cut-pp-bags", name: "D-Cut PP Bags", image: "/products/photos/d-cut-green.webp", description: "Retail-Ready Woven Bags" },
+    { id: "block-bottom-bags", name: "Block Bottom Bags", image: "/products/photos/block-bottom-red.webp", description: "Flat-Base Stacking Bags" },
+    { id: "weed-barrier", name: "Weed Barrier", image: "/products/photos/weed-barrier-1.jpg", description: "Agricultural Ground Cover" },
   ];
-
-  const maxIndex = Math.max(0, staticProducts.length - 4);
-  const nextSlide = () => setCarouselIndex(prev => Math.min(prev + 1, maxIndex));
-  const prevSlide = () => setCarouselIndex(prev => Math.max(prev - 1, 0));
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -151,47 +150,50 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Product Carousel */}
+            {/* Product Carousel — responsive scroll-snap */}
             <div className="relative max-w-6xl mx-auto">
-              <button 
-                onClick={prevSlide} 
-                disabled={carouselIndex === 0}
-                className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center shadow-lg hover:bg-[#B91C1C] transition-colors ${carouselIndex === 0 ? 'opacity-30 cursor-not-allowed' : ''}`}
+              <div
+                ref={productsRef}
+                className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
               >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-
-              <div className="overflow-hidden mx-4">
-                <div 
-                  className="flex gap-5 transition-transform duration-500"
-                  style={{ transform: `translateX(-${carouselIndex * 280}px)` }}
-                >
-                  {staticProducts.map((product) => (
-                    <Link key={product.id} href={`/products/${product.id}`}>
-                      <div className="w-[260px] flex-shrink-0 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group border border-gray-100">
-                        <div className="h-52 overflow-hidden bg-gray-50">
-                          <img 
-                            src={product.image} 
-                            alt={product.name}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                        <div className="p-4 text-center">
-                          <h3 className="font-bold text-[#1A1A1A] text-base mb-1">{product.name}</h3>
-                          <p className="text-gray-400 text-sm">{product.description}</p>
-                        </div>
+                {staticProducts.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={`/products/${product.id}`}
+                    className="snap-start shrink-0 w-[62%] sm:w-[45%] lg:w-[30%] xl:w-[23%]"
+                  >
+                    <div className="h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group border border-gray-100">
+                      <div className="h-44 md:h-52 overflow-hidden bg-gray-50">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
-                    </Link>
-                  ))}
-                </div>
+                      <div className="p-4 text-center">
+                        <h3 className="font-bold text-[#1A1A1A] text-base mb-1">{product.name}</h3>
+                        <p className="text-gray-400 text-sm">{product.description}</p>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
 
-              <button 
-                onClick={nextSlide} 
-                disabled={carouselIndex >= maxIndex}
-                className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center shadow-lg hover:bg-[#B91C1C] transition-colors ${carouselIndex >= maxIndex ? 'opacity-30 cursor-not-allowed' : ''}`}
+              <button
+                type="button"
+                onClick={() => scrollProducts(-1)}
+                aria-label="Previous"
+                className="absolute left-1 md:-left-4 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 md:h-11 md:w-11 place-items-center rounded-full bg-[#DC2626]/90 md:bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C]"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollProducts(1)}
+                aria-label="Next"
+                className="absolute right-1 md:-right-4 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 md:h-11 md:w-11 place-items-center rounded-full bg-[#DC2626]/90 md:bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C]"
+              >
+                <ChevronRight className="h-5 w-5" />
               </button>
             </div>
 
@@ -271,12 +273,12 @@ export default function Home() {
                 { name: "Minerals", image: "/industries/cement-product.jpg", slug: "minerals" },
                 { name: "Courier Bags", image: "/industries/courier.jpg", slug: "courier-bags" },
               ].map((industry, index) => (
-                <Link key={index} href={`/industry/${industry.slug}`} className="snap-start shrink-0 w-[75%] sm:w-[45%] lg:w-[30%] xl:w-[23%]">
+                <Link key={index} href={`/industry/${industry.slug}`} className="snap-start shrink-0 w-[58%] sm:w-[42%] lg:w-[30%] xl:w-[23%]">
                   <div className="group cursor-pointer relative overflow-hidden rounded-lg">
                     <img
                       src={industry.image}
                       alt={industry.name}
-                      className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-44 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -290,7 +292,7 @@ export default function Home() {
                 type="button"
                 onClick={() => scrollIndustries(-1)}
                 aria-label="Previous"
-                className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 hidden h-11 w-11 place-items-center rounded-full bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C] md:grid"
+                className="absolute left-1 md:-left-4 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 md:h-11 md:w-11 place-items-center rounded-full bg-[#DC2626]/90 md:bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C]"
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
@@ -298,7 +300,7 @@ export default function Home() {
                 type="button"
                 onClick={() => scrollIndustries(1)}
                 aria-label="Next"
-                className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 hidden h-11 w-11 place-items-center rounded-full bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C] md:grid"
+                className="absolute right-1 md:-right-4 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 md:h-11 md:w-11 place-items-center rounded-full bg-[#DC2626]/90 md:bg-[#DC2626] text-white shadow-lg transition hover:bg-[#B91C1C]"
               >
                 <ChevronRight className="h-5 w-5" />
               </button>

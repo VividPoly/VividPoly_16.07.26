@@ -24,7 +24,7 @@ const productTypes: Record<string, {
     id: "woven-fabric",
     name: "PP Woven Fabrics (Coated/Uncoated)",
     code: "WF",
-    image: "/products/pp-fabric-roll-factory.jpg",
+    image: "/media/pp-woven-fabric-rolls_6c53c692.jpg",
     description: "Industrial-grade PP woven fabric rolls available in coated and uncoated variants. Perfect for manufacturing bags, tarpaulins, and ground covers. Custom GSM (40-200), width, and weave patterns available. UV stabilized options for outdoor applications.",
     keywords: ["PP woven fabric", "polypropylene fabric", "woven fabric rolls", "coated fabric"]
   },
@@ -67,7 +67,7 @@ const productTypes: Record<string, {
     id: "bopp-laminated",
     name: "BOPP Laminated Bags",
     code: "PLWPP",
-    image: "/products/bopp-laminated-bag.jpg",
+    image: "/products/photos/bopp-front.webp",
     description: "Premium BOPP laminated PP woven bags with high-definition printing. Biaxially oriented polypropylene film provides superior clarity, moisture barrier, and vibrant graphics for brand visibility. Ideal for retail packaging.",
     keywords: ["BOPP laminated bags", "printed woven bags", "laminated PP bags", "branded packaging"]
   },

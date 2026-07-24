@@ -134,7 +134,6 @@ export default function Blog() {
             <img src="/factory/factory-floor.jpg" alt="Background" className="w-full h-full object-cover" />
           </div>
           <div className="container relative z-10">
-            <h2 className="text-3xl md:text-4xl font-normal text-white mb-2">SUSTAINABILITY</h2>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">BLOG</h1>
             <p className="text-xl text-white/80 max-w-3xl">
               Insights, news, and updates from the PP woven packaging industry

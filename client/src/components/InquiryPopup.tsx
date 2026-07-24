@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { X, Send, Upload, FileText, Image, File, ArrowRight } from "lucide-react";
 import { trpc } from "@/lib/trpc";
@@ -8,6 +9,7 @@ const POPUP_DELAY_MS = 60000; // 1 minute
 const POPUP_SESSION_KEY = "vividpoly_inquiry_popup_shown";
 
 export default function InquiryPopup() {
+  const [, setLocation] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -84,10 +86,10 @@ export default function InquiryPopup() {
 
   const submitInquiry = trpc.contact.submit.useMutation({
     onSuccess: () => {
-      toast.success("Thank you! Our team will contact you within 24 hours.");
       setIsOpen(false);
       setFormData({ name: "", email: "", phone: "", company: "", country: "", productInterest: "", message: "" });
       setFiles([]);
+      setLocation("/thank-you");
     },
     onError: (error) => {
       toast.error(error.message || "Failed to submit. Please try again.");
@@ -126,6 +128,7 @@ export default function InquiryPopup() {
         productInterest: formData.productInterest || undefined,
         message: formData.message,
         attachments: uploadedUrls.length > 0 ? uploadedUrls : undefined,
+        source: "Inquiry popup",
       });
     } catch {
       toast.error("Failed to submit. Please try again.");

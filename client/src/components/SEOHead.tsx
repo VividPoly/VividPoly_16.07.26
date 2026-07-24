@@ -5,16 +5,26 @@ interface SEOHeadProps {
   description: string;
   keywords?: string;
   canonicalPath?: string;
+  noindex?: boolean;
 }
 
 /**
  * SEO component that dynamically updates document head meta tags per page.
  * Helps search engines and AI crawlers understand page-specific content.
  */
-export function SEOHead({ title, description, keywords, canonicalPath }: SEOHeadProps) {
+export function SEOHead({ title, description, keywords, canonicalPath, noindex }: SEOHeadProps) {
   useEffect(() => {
     // Update title
     document.title = title;
+
+    // Robots: allow pages (e.g. /thank-you) to opt out of indexing.
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    if (metaRobots) {
+      metaRobots.setAttribute(
+        'content',
+        noindex ? 'noindex, nofollow' : 'index, follow, max-snippet:-1, max-image-preview:large'
+      );
+    }
 
     // Update meta description
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -41,7 +51,7 @@ export function SEOHead({ title, description, keywords, canonicalPath }: SEOHead
       let canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) canonical.setAttribute('href', `https://www.vividpoly.com${canonicalPath}`);
     }
-  }, [title, description, keywords, canonicalPath]);
+  }, [title, description, keywords, canonicalPath, noindex]);
 
   return null;
 }

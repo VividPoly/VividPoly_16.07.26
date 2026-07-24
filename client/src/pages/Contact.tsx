@@ -7,19 +7,21 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { toast } from "sonner";
 import { Mail, Phone, MapPin, Clock, Send, ArrowRight } from "lucide-react";
 import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 export default function Contact() {
+  const [, setLocation] = useLocation();
   const [formData, setFormData] = useState({
     name: "", email: "", phone: "", company: "", subject: "", message: ""
   });
 
   const submitContact = trpc.contact.submit.useMutation({
     onSuccess: () => {
-      toast.success("Message sent successfully! We'll get back to you soon.");
       setFormData({ name: "", email: "", phone: "", company: "", subject: "", message: "" });
+      setLocation("/thank-you");
     },
     onError: () => toast.error("Failed to send message. Please try again."),
   });
@@ -33,6 +35,7 @@ export default function Contact() {
       company: formData.company || undefined,
       subject: formData.subject || undefined,
       message: formData.message,
+      source: "Contact Us page",
     });
   };
 
