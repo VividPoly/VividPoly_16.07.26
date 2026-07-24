@@ -8,6 +8,7 @@ import * as db from "./db";
 import { invokeLLM } from "./_core/llm";
 import { notifyOwner } from "./_core/notification";
 import { CHATBOT_SYSTEM_PROMPT } from "./chatbot-knowledge";
+import { createOdooLead, isOdooConfigured } from "./odoo";
 
 // Admin-only procedure
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -319,6 +320,38 @@ Reply directly to: ${input.email}
           title: `🆕 ${formType}: ${input.name}${input.country ? ` from ${input.country}` : ''}`,
           content: emailContent,
         });
+
+        // Push the enquiry to Odoo CRM as a crm.lead (best-effort: a CRM
+        // outage must never block the visitor's submission — the lead is
+        // already saved to Supabase and emailed).
+        if (isOdooConfigured()) {
+          try {
+            const details = [
+              input.country ? { label: "Country", value: input.country } : null,
+              { label: "Enquiry Type", value: formType },
+              input.productInterest || input.subject
+                ? { label: "Product Interest", value: input.productInterest || input.subject! }
+                : null,
+              input.quantity ? { label: "Quantity", value: input.quantity } : null,
+              input.attachments && input.attachments.length > 0
+                ? { label: "Attachments", value: input.attachments.join(", ") }
+                : null,
+            ].filter((d): d is { label: string; value: string } => d !== null);
+
+            await createOdooLead({
+              name: `${formType} — ${input.name}${input.company ? ` (${input.company})` : ""}`,
+              contactName: input.name,
+              emailFrom: input.email,
+              phone: input.phone || undefined,
+              company: input.company || undefined,
+              country: input.country || undefined,
+              message: input.message,
+              details,
+            });
+          } catch (error) {
+            console.error("[Odoo] Failed to create lead:", error);
+          }
+        }
 
         return { success: true };
       }),

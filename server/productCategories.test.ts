@@ -5,7 +5,8 @@ import { productCategories, findProductBySlug } from '../client/src/data/product
 const mainCategorySlugs = [
   'pp-woven-fabric',
   'pp-woven-bags',
-  'bopp-laminated-bags'
+  'bopp-laminated-bags',
+  'weed-barrier'
 ];
 
 const ppWovenBagsSubcategorySlugs = [
@@ -31,8 +32,8 @@ const boppLaminatedSubcategorySlugs = [
 ];
 
 describe('Product Categories Data', () => {
-  it('should have 3 main product categories', () => {
-    expect(productCategories.length).toBe(3);
+  it('should have 4 main product categories', () => {
+    expect(productCategories.length).toBe(4);
   });
 
   it('should find all main category slugs', () => {
