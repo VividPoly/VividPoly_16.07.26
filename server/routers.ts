@@ -108,6 +108,9 @@ export const appRouter = router({
         author: z.string().optional(),
         category: z.string().optional(),
         tags: z.string().optional(),
+        seoTitle: z.string().optional(),
+        seoDescription: z.string().optional(),
+        readTime: z.string().optional(),
         language: z.string().optional(),
         parentId: z.number().optional(),
         published: z.boolean().optional(),
@@ -190,6 +193,9 @@ export const appRouter = router({
         author: z.string().optional(),
         category: z.string().optional(),
         tags: z.string().optional(),
+        seoTitle: z.string().optional(),
+        seoDescription: z.string().optional(),
+        readTime: z.string().optional(),
         published: z.boolean().optional(),
       }))
       .mutation(async ({ input }) => {

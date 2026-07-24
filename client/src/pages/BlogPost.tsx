@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { trpc } from "@/lib/trpc";
 import { useParams, Link } from "wouter";
@@ -137,6 +138,11 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={(post as any).seoTitle || `${post.title} | VividPoly`}
+        description={(post as any).seoDescription || post.excerpt || post.title}
+        canonicalPath={`/blog/${slug}`}
+      />
       <Header />
       <main className="flex-1">
         <div className="container py-8">

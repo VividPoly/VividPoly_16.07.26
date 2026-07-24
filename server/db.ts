@@ -203,6 +203,9 @@ export async function createBlogPost(data: {
   author?: string;
   category?: string;
   tags?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  readTime?: string;
   language?: string;
   parentId?: number;
   published?: boolean;
@@ -229,6 +232,9 @@ export async function updateBlogPost(id: number, data: Partial<{
   author: string;
   category: string;
   tags: string;
+  seoTitle: string;
+  seoDescription: string;
+  readTime: string;
   language: string;
   parentId: number;
   published: boolean;

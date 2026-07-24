@@ -74,6 +74,10 @@ export const blogPosts = mysqlTable("blog_posts", {
   author: varchar("author", { length: 255 }).default("VividPoly Team").notNull(),
   category: varchar("category", { length: 100 }),
   tags: text("tags"), // JSON string array
+  // SEO metadata (published from the admin so posts render search-ready).
+  seoTitle: varchar("seoTitle", { length: 500 }),
+  seoDescription: varchar("seoDescription", { length: 500 }),
+  readTime: varchar("readTime", { length: 50 }),
   language: varchar("language", { length: 10 }).default("en").notNull(),
   parentId: int("parentId"), // references the original English post id for translations
   published: boolean("published").default(false).notNull(),
