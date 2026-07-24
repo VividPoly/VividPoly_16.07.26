@@ -1,72 +1,59 @@
-# VividPoly Website (Next.js)
+# VividPoly — Website
 
-Production Next.js port of the VividPoly marketing site and product catalogue.
+The VividPoly marketing site: the exact client-approved design (Vite + React +
+Express + tRPC), with the requested tweaks applied.
 
-## Run locally
+## Stack
 
-```bash
-npm install
-npm run dev
-```
+- **Vite + React 19** client (`client/`), **wouter** routing
+- **Express + tRPC** server (`server/`), **Drizzle ORM** on **MySQL**
+- **Tailwind CSS v4**, product content in `client/src/content` + `client/src/data`
+- Live chat via **Tawk.to**
 
-Open [http://localhost:3000](http://localhost:3000)
-
-On Windows, `START-PREVIEW.bat` installs dependencies (if needed), starts the dev server, and opens the browser.
-
-## Production build
+## Local development
 
 ```bash
-npm run build
-npm start
+pnpm install
+pnpm dev        # http://localhost:3000  (Vite + Express together)
+pnpm build      # client -> dist/public, server -> dist/index.js
+pnpm start      # run the production build
 ```
 
-## Deploy on Vercel
+The site renders fully without a database (product/marketing content is static).
+A `DATABASE_URL` (MySQL) is only needed for admin-published blogs and for storing
+inquiry submissions.
 
-1. Import this repository in [Vercel](https://vercel.com).
-2. Framework preset: **Next.js** (auto-detected).
-3. No environment variables are required for the static marketing site. See `.env.example` for optional local overrides.
-4. Deploy. Vercel runs `npm run build` by default.
+## Environment variables
 
-No `vercel.json` or middleware is required for this App Router project.
+| Variable | Needed for |
+| --- | --- |
+| `JWT_SECRET` | Signing session cookies (any strong random string) |
+| `DATABASE_URL` | MySQL connection — blog posts + saved inquiries |
+| `BUILT_IN_FORGE_API_URL`, `BUILT_IN_FORGE_API_KEY` | Optional file-storage backend for inquiry attachments |
+| `OAUTH_SERVER_URL`, `VITE_OAUTH_PORTAL_URL`, `VITE_APP_ID` | Optional owner/admin login (off by default) |
 
-## Re-sync from design HTML
+## Deploy to Vercel
 
-When the source `VividPoly.dc.html` prototype changes:
+`vercel.json` + `api/[...path].ts` are included:
 
-```bash
-npm run convert
-```
+1. Vercel → **Add New → Project → Import** `VividPoly/Website-New`.
+2. Build command `pnpm build`, output `dist/public` (already set in `vercel.json`).
+3. Add the environment variables above (at minimum `JWT_SECRET`; add `DATABASE_URL`
+   for blogs/inquiries).
+4. Deploy. The client is served statically; every `/api/*` request is handled by
+   the serverless function, which reuses the same tRPC router as the local server.
 
-This regenerates:
+> This is an Express + MySQL app, so if a Vercel serverless nuance needs a tweak,
+> it can also run unchanged on any Node host (Render, Railway, Fly) with
+> `pnpm build && pnpm start` and the same env vars — the most direct fit for this
+> stack.
 
-- `src/components/vividpoly/VividPolyView.tsx` (UI)
-- `src/hooks/useVividPoly.ts` (state and interactions)
-- `src/data/vividpoly-data.ts` (static content)
+## Applied tweaks
 
-## Architecture
-
-| Path | Purpose |
-|------|---------|
-| `src/components/vividpoly/` | Page UI, forms, icons |
-| `src/hooks/useVividPoly.ts` | SPA state and hash routing |
-| `src/data/vividpoly-data.ts` | Products, FAQs, blog content |
-| `src/data/ui-copy.json` | Nav, footer, and UI chrome strings |
-| `src/app/globals.css` | Design tokens, layout, responsive CSS |
-| `scripts/convert-vividpoly.mjs` | HTML to Next.js converter |
-| `scripts/snap-to-4px-grid.mjs` | Spacing audit helper (4px grid) |
-
-Design fidelity is preserved by keeping original inline styles and a dedicated stylesheet rather than rewriting to Tailwind.
-
-## Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Development server |
-| `npm run build` | Production build |
-| `npm run lint` | ESLint |
-| `npm run convert` | Regenerate from HTML prototype |
-| `npm run audit:responsive` | Playwright responsive audit (dev server required) |
-
-## Environment
-
-Copy `.env.example` to `.env.local` for optional overrides. Never commit real secrets.
+- Tawk.to live chat (old AI chatbot removed)
+- Home: "Watch Video" button + intro video removed
+- Home: static "Product by Use" grid replaced with the "Packaging in Action" slider
+- Removed the duplicated footer export-CTA banner (each page keeps its own CTA)
+- Staff-login button removed; all Manus references/traces removed
+- All `/manus-storage` images localized to `/media` (supplied product photos,
+  real logo, team/conference-room hero photo)
