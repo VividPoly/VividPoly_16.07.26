@@ -31,10 +31,11 @@ const AdminInquiries = lazy(() => import("./pages/AdminInquiries"));
 const OrderHistory = lazy(() => import("./pages/OrderHistory"));
 const PriceCalculator = lazy(() => import("./pages/PriceCalculator"));
 const ProductByUse = lazy(() => import("./pages/ProductByUse"));
-import WhatsAppButton from "./components/WhatsAppButton";
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 import InquireButton from "./components/InquireButton";
 import InquiryPopup from "./components/InquiryPopup";
 import { LanguageBanner } from "./components/LanguageBanner";
+import { CookieConsent } from "./components/CookieConsent";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function LoadingFallback() {
@@ -72,6 +73,7 @@ function Router() {
         <Route path="/order-history" component={OrderHistory} />
         <Route path="/price-calculator" component={PriceCalculator} />
         <Route path="/product-by-use" component={ProductByUse} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
@@ -89,7 +91,7 @@ function App() {
           <InquireButton />
           <InquiryPopup />
           <LanguageBanner />
-          <WhatsAppButton />
+          <CookieConsent />
           <ThemeSwitcher />
         </TooltipProvider>
       </ThemeProvider>

@@ -77,7 +77,7 @@ export default function Home() {
                 <span className="text-[#DC2626]">Manufacturer & Exporter</span>
               </h1>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
-                Leading polypropylene woven sacks supplier serving 50+ export markets. 
+                Leading polypropylene woven sacks supplier serving 70+ export markets. 
                 Premium quality PP woven bags, BOPP laminated bags, and custom printed packaging with competitive FOB pricing.
               </p>
               
@@ -119,7 +119,7 @@ export default function Home() {
                 <div className="text-sm text-gray-500 mt-1">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#DC2626]">50+</div>
+                <div className="text-3xl font-bold text-[#DC2626]">70+</div>
                 <div className="text-sm text-gray-500 mt-1">Export Countries</div>
               </div>
               <div>
@@ -216,7 +216,7 @@ export default function Home() {
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
                   With 95% manufacturing waste recycled back into production, we deliver durable polypropylene 
-                  sacks that serve agriculture, construction, and retail industries sustainably across 50+ countries.
+                  sacks that serve agriculture, construction, and retail industries sustainably across 70+ countries.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link href="/about">
@@ -243,7 +243,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Industries Served */}
+        {/* Industries Served - peek slider (swipe to see more), View All link, no arrows */}
         <section className="py-20 bg-[#1A1A1A]">
           <div className="container">
             <div className="text-center mb-12">
@@ -253,17 +253,21 @@ export default function Home() {
                 Packaging solutions for agriculture, construction, food processing, and more
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-5xl mx-auto">
+            <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {[
-                { name: "Animal Feed", image: "/media/animal-feed-industry-clean_a5634285.png", slug: "animal-feed" },
-                { name: "Cement & Chemical", image: "/media/cement-chemical_851cfe59.jpg", slug: "cement" },
-                { name: "Fertilizers & Grains", image: "/industries/fertilizers-grains.jpg", slug: "fertilizers" },
-                { name: "Construction", image: "/industries/construction-mining.jpg", slug: "construction" },
+                { name: "Animal Feed", image: "/media/animal-feed-product_dbdf3256.jpg", slug: "animal-feed" },
+                { name: "Cement", image: "/industries/cement-product.jpg", slug: "cement" },
+                { name: "Fertilizers", image: "/industries/fertilizers-grains.jpg", slug: "fertilizers" },
+                { name: "Food Grains", image: "/industries/rice-product.jpg", slug: "food-grains" },
+                { name: "Flour", image: "/industries/flour-product.jpg", slug: "flour" },
+                { name: "Sugar", image: "/industries/sugar-product.jpg", slug: "sugar" },
+                { name: "Minerals", image: "/industries/cement-product.jpg", slug: "minerals" },
+                { name: "Courier Bags", image: "/industries/courier.jpg", slug: "courier-bags" },
               ].map((industry, index) => (
-                <Link key={index} href={`/industry/${industry.slug}`}>
+                <Link key={index} href={`/industry/${industry.slug}`} className="snap-start shrink-0 w-[75%] sm:w-[45%] lg:w-[30%] xl:w-[23%]">
                   <div className="group cursor-pointer relative overflow-hidden rounded-lg">
-                    <img 
-                      src={industry.image} 
+                    <img
+                      src={industry.image}
                       alt={industry.name}
                       className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -274,6 +278,12 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/industries" className="inline-flex items-center gap-1 text-sm font-bold text-white hover:text-[#DC2626] transition-colors">
+                View All Industries
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -288,7 +298,7 @@ export default function Home() {
               <span className="text-[#DC2626] text-xs font-bold uppercase tracking-widest">Global Reach</span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mt-3">Export Markets</h2>
               <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-                Trusted by importers and distributors across 50+ countries
+                Trusted by importers and distributors across 70+ countries
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
@@ -306,14 +316,6 @@ export default function Home() {
                   <p className="text-xs text-gray-400">{market.countries}</p>
                 </div>
               ))}
-            </div>
-            <div className="text-center mt-10">
-              <Link href="/contact">
-                <button className="btn-primary text-sm px-8 py-3 inline-flex items-center">
-                  Request Export Quote
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
-              </Link>
             </div>
           </div>
         </section>

@@ -5,53 +5,30 @@ import { ArrowRight, Users, GraduationCap, Heart, Briefcase, MapPin, Clock, Buil
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Direct application form (Google Form).
+const APPLY_HREF =
+  "https://docs.google.com/forms/d/e/1FAIpQLScdHClo1CkNedEHXsUrl5LNPqRc0xG50r-OCxIuQsVnmbZnoA/viewform";
+
 export default function Careers() {
-  // Job listings
-  const jobs = [
+  // Live openings are posted on these platforms (no fake in-house listings).
+  const platforms = [
     {
-      id: 1,
-      title: "Production Manager",
-      department: "Manufacturing",
-      location: "Ahmedabad, Gujarat",
-      type: "Full-time",
-      experience: "5-8 years",
-      description: "Lead and manage production operations for PP woven bag manufacturing."
+      name: "LinkedIn",
+      logo: "/images/platforms/linkedin.svg",
+      href: "https://www.linkedin.com/company/vividpoly/jobs/",
+      blurb: "Company updates and open roles for export, operations, and packaging careers.",
     },
     {
-      id: 2,
-      title: "Quality Control Engineer",
-      department: "Quality Assurance",
-      location: "Ahmedabad, Gujarat",
-      type: "Full-time",
-      experience: "3-5 years",
-      description: "Ensure product quality standards and implement quality control processes."
+      name: "Indeed",
+      logo: "/images/platforms/indeed.svg",
+      href: "https://in.indeed.com/cmp/Vividpoly",
+      blurb: "Search VIVIDPOLY listings by role, location, and experience level.",
     },
     {
-      id: 3,
-      title: "Export Sales Executive",
-      department: "Sales & Marketing",
-      location: "Ahmedabad, Gujarat",
-      type: "Full-time",
-      experience: "2-4 years",
-      description: "Handle international client relationships and export documentation."
-    },
-    {
-      id: 4,
-      title: "Maintenance Technician",
-      department: "Engineering",
-      location: "Ahmedabad, Gujarat",
-      type: "Full-time",
-      experience: "2-3 years",
-      description: "Maintain and repair circular looms and lamination machinery."
-    },
-    {
-      id: 5,
-      title: "HR Executive",
-      department: "Human Resources",
-      location: "Ahmedabad, Gujarat",
-      type: "Full-time",
-      experience: "1-3 years",
-      description: "Support recruitment, employee engagement, and HR operations."
+      name: "Naukri",
+      logo: "/images/platforms/naukri.png",
+      href: "https://www.naukri.com/",
+      blurb: "India-focused openings across manufacturing, sales, and support teams.",
     },
   ];
 
@@ -164,72 +141,71 @@ export default function Careers() {
           </div>
         </section>
 
-        {/* Job Openings Section */}
+        {/* Open Positions - live roles on job platforms (no fake listings) */}
         <section id="openings" className="py-20 bg-white">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-normal text-[#DC2626] mb-2">CURRENT</h2>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4">OPENINGS</h2>
+              <span className="text-[#DC2626] text-xs font-bold uppercase tracking-widest">Open Positions</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mt-3 mb-4">
+                Find us where you&apos;re already looking
+              </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Join our growing team and be part of India's leading PP woven packaging manufacturer.
+                Current openings are posted and updated on these platforms. Browse live roles, then
+                apply through the form below.
               </p>
             </div>
 
-            <div className="space-y-4">
-              {jobs.map((job) => (
-                <Card key={job.id} className="border border-gray-200 hover:border-[#DC2626] hover:shadow-lg transition-all">
-                  <CardContent className="p-6">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">{job.title}</h3>
-                        <p className="text-gray-600 mb-3">{job.description}</p>
-                        <div className="flex flex-wrap gap-4 text-sm text-gray-500">
-                          <span className="flex items-center gap-1">
-                            <Briefcase className="h-4 w-4" />
-                            {job.department}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <MapPin className="h-4 w-4" />
-                            {job.location}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <Clock className="h-4 w-4" />
-                            {job.type}
-                          </span>
-                          <span className="bg-[#F8F8F8] text-[#DC2626] px-3 py-1 rounded">
-                            {job.experience}
-                          </span>
-                        </div>
-                      </div>
-                      <Link href="/contact">
-                        <Button className="bg-[#DC2626] hover:bg-[#005A5F] text-white">
-                          Apply Now
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </CardContent>
-                </Card>
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {platforms.map((p) => (
+                <a
+                  key={p.name}
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition-all hover:-translate-y-1 hover:border-[#DC2626] hover:shadow-lg"
+                >
+                  <img src={p.logo} alt={p.name} className="h-8 w-auto self-start object-contain" />
+                  <h3 className="mt-5 text-lg font-bold text-[#1A1A1A]">{p.name}</h3>
+                  <ul className="mt-2 flex-1">
+                    <li className="flex items-start gap-2 text-sm text-gray-600">
+                      <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#DC2626]" />
+                      {p.blurb}
+                    </li>
+                  </ul>
+                  <span className="mt-5 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wide text-[#DC2626]">
+                    View Openings
+                    <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                </a>
               ))}
             </div>
+
+            <p className="mt-8 text-center text-gray-500">
+              Prefer a direct application? Use{" "}
+              <a href={APPLY_HREF} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#DC2626] underline">
+                Apply Now
+              </a>{" "}
+              below.
+            </p>
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section - direct application via the form */}
         <section className="py-16 bg-[#DC2626]">
           <div className="container text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Don't see a suitable position?
+              Your next career move starts here
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-              We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+              Share your role interest, experience, and preferred location. Our team reviews
+              applications as openings become available.
             </p>
-            <Link href="/contact">
-              <button className="btn-primary inline-flex items-center">
-                Send Your Resume
+            <a href={APPLY_HREF} target="_blank" rel="noopener noreferrer">
+              <button className="bg-white text-[#DC2626] px-8 py-3 font-bold text-sm rounded hover:bg-gray-100 transition-all inline-flex items-center">
+                Apply Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-            </Link>
+            </a>
           </div>
         </section>
       </main>

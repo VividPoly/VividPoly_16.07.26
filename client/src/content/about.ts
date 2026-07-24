@@ -68,7 +68,7 @@ export const aboutContent = {
     items: [
       { value: "4", label: "Countries of Founder Expertise" },
       { value: "15+", label: "Years Global Export Experience" },
-      { value: "50+", label: "Export Markets Worldwide" },
+      { value: "70+", label: "Export Markets Worldwide" },
       { value: "500+", label: "Satisfied Global Clients" }
     ]
   }

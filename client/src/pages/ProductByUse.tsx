@@ -195,7 +195,7 @@ export default function ProductByUse() {
               Product by Use
             </h1>
             <p className="text-xl text-white/80 max-w-3xl">
-              Discover how VividPoly's PP woven packaging solutions serve diverse industries across 50+ countries worldwide.
+              Discover how VividPoly's PP woven packaging solutions serve diverse industries across 70+ countries worldwide.
             </p>
           </div>
         </section>
@@ -206,7 +206,7 @@ export default function ProductByUse() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <Globe className="w-8 h-8 text-[#DC2626] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">50+</div>
+                <div className="text-2xl font-bold text-white">70+</div>
                 <div className="text-white/70 text-sm">Countries Served</div>
               </div>
               <div>

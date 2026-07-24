@@ -7,7 +7,7 @@ export const homeContent = {
   // Hero Section
   hero: {
     title: "India's Premier Global Export Packaging Company",
-    subtitle: "VividPoly exports PP woven bags, BOPP laminated sacks, and polypropylene fabric rolls worldwide. Founded by multinational engineers from Australia, Canada, USA & India. Competitive FOB pricing with reliable container shipments to 50+ countries.",
+    subtitle: "VividPoly exports PP woven bags, BOPP laminated sacks, and polypropylene fabric rolls worldwide. Founded by multinational engineers from Australia, Canada, USA & India. Competitive FOB pricing with reliable container shipments to 70+ countries.",
     primaryButton: "Explore Products",
     secondaryButton: "Get Quote"
   },
@@ -16,7 +16,7 @@ export const homeContent = {
   statistics: [
     { value: "4", label: "Countries of Founder Expertise" },
     { value: "15+", label: "Years Global Export Experience" },
-    { value: "50+", label: "Export Markets Worldwide" },
+    { value: "70+", label: "Export Markets Worldwide" },
     { value: "500+", label: "Global Clients" }
   ],
 
@@ -44,7 +44,7 @@ export const homeContent = {
         description: "All PP woven bags and BOPP laminated sacks are fully recyclable. Sustainable packaging that meets global environmental standards."
       },
       {
-        title: "50+ Export Markets",
+        title: "70+ Export Markets",
         description: "Dedicated export division serving importers across Australia, New Zealand, Africa, Latin America, Japan, Sri Lanka, and Southeast Asia."
       },
       {

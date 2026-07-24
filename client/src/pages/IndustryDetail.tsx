@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle, Package, Truck, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 // Industry data with details
 const industryData: Record<string, {
@@ -340,8 +341,13 @@ export default function IndustryDetail() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead
+        title={`${industry.name} Packaging - PP Woven Bags & Sacks | VividPoly`}
+        description={industry.description}
+        canonicalPath={`/industry/${slug}`}
+      />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <img 

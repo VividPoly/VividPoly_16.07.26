@@ -1,60 +1,40 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
-// Premium auto-rotating showcase that replaces the old static "Product by Use"
-// card grid on the home page. Full-width cinematic slides give the site the
-// industrial, high-end feel while still routing to the product-by-use page.
+// "Packaging in Action" — a peek carousel of application scenes that auto-scrolls
+// horizontally (a different, lighter presentation than a full-bleed slideshow).
+// Cards link to the product-by-use page; no button beneath the strip.
 type Slide = {
   image: string;
   eyebrow: string;
   title: string;
-  copy: string;
 };
 
 const SLIDES: Slide[] = [
-  {
-    image: "/media/3_weedbarrier_vividpoly_Usage_export_cc1ca5bb.webp",
-    eyebrow: "Agriculture",
-    title: "Weed Barrier & Ground Cover",
-    copy: "UV-stabilised woven fabric for horticulture, nurseries and landscaping, engineered for years of outdoor service.",
-  },
-  {
-    image: "/industries/rice-product.jpg",
-    eyebrow: "Food & Grains",
-    title: "Rice, Sugar & Flour Packing",
-    copy: "Food-grade BOPP and laminated woven sacks that keep grains fresh and shelf-ready for export markets.",
-  },
-  {
-    image: "/media/cement-chemical_851cfe59.jpg",
-    eyebrow: "Construction",
-    title: "Cement, Minerals & Chemicals",
-    copy: "Sift-proof valve and block-bottom sacks built for automated filling of powders and building materials.",
-  },
-  {
-    image: "/media/carry-bag-black_58a9284f.webp",
-    eyebrow: "Retail",
-    title: "Custom Printed Carry Bags",
-    copy: "Durable, vividly printed woven shopping bags that carry your brand across every touchpoint.",
-  },
-  {
-    image: "/media/fabric-rolls_faa8de4c.jpg",
-    eyebrow: "Industry",
-    title: "PP Woven Fabric Rolls",
-    copy: "Coated and uncoated fabric on rolls in custom width and GSM for converters and bag makers worldwide.",
-  },
+  { image: "/media/3_weedbarrier_vividpoly_Usage_export_cc1ca5bb.webp", eyebrow: "Agriculture", title: "Weed Barrier & Ground Cover" },
+  { image: "/industries/rice-product.jpg", eyebrow: "Food & Grains", title: "Rice, Sugar & Flour Packing" },
+  { image: "/media/cement-chemical_851cfe59.jpg", eyebrow: "Construction", title: "Cement, Minerals & Chemicals" },
+  { image: "/media/carry-bag-black_58a9284f.webp", eyebrow: "Retail", title: "Custom Printed Carry Bags" },
+  { image: "/media/fabric-rolls_faa8de4c.jpg", eyebrow: "Industry", title: "PP Woven Fabric Rolls" },
+  { image: "/media/animal-feed-product_dbdf3256.jpg", eyebrow: "Feed", title: "Poultry, Cattle & Pet Feed" },
 ];
 
 export default function ShowcaseSlider() {
-  const [index, setIndex] = useState(0);
+  const track = useRef<HTMLDivElement>(null);
 
+  // Gentle auto-scroll; loops back to the start when it reaches the end.
   useEffect(() => {
-    const t = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), 5000);
-    return () => clearInterval(t);
+    const el = track.current;
+    if (!el) return;
+    const timer = setInterval(() => {
+      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 8) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: el.clientWidth * 0.5, behavior: "smooth" });
+      }
+    }, 3500);
+    return () => clearInterval(timer);
   }, []);
-
-  const go = (dir: 1 | -1) =>
-    setIndex((i) => (i + dir + SLIDES.length) % SLIDES.length);
 
   return (
     <section className="py-20 bg-white">
@@ -67,58 +47,26 @@ export default function ShowcaseSlider() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-2xl">
-          <div className="relative h-[360px] md:h-[460px]">
-            {SLIDES.map((s, i) => (
-              <div
-                key={i}
-                className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-              >
-                <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-center max-w-xl p-8 md:p-14 text-white">
+        <div
+          ref={track}
+          className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {SLIDES.map((s, i) => (
+            <Link
+              key={i}
+              href="/product-by-use"
+              className="group relative snap-start shrink-0 w-[82%] sm:w-[48%] lg:w-[38%] overflow-hidden rounded-2xl"
+            >
+              <div className="relative h-72 md:h-80">
+                <img src={s.image} alt={s.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                   <span className="text-[#EF4444] text-xs font-bold uppercase tracking-widest">{s.eyebrow}</span>
-                  <h3 className="text-2xl md:text-4xl font-bold mt-2">{s.title}</h3>
-                  <p className="mt-3 text-white/85 text-sm md:text-base">{s.copy}</p>
+                  <h3 className="mt-1 text-xl font-bold">{s.title}</h3>
                 </div>
               </div>
-            ))}
-          </div>
-
-          <button
-            onClick={() => go(-1)}
-            aria-label="Previous"
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 text-[#1A1A1A] flex items-center justify-center shadow-lg hover:bg-white transition-colors"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            onClick={() => go(1)}
-            aria-label="Next"
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 text-[#1A1A1A] flex items-center justify-center shadow-lg hover:bg-white transition-colors"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
-
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-            {SLIDES.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setIndex(i)}
-                aria-label={`Go to slide ${i + 1}`}
-                className={`h-2.5 rounded-full transition-all ${i === index ? "bg-[#DC2626] w-8" : "bg-white/60 w-2.5"}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="text-center mt-10">
-          <Link href="/product-by-use">
-            <button className="btn-primary text-sm px-8 py-3 inline-flex items-center">
-              View All Applications
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
-          </Link>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

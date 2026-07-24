@@ -389,7 +389,7 @@ export default function ProductCategoryPage() {
               <ul className="space-y-2 text-red-100">
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-red-300" /> Free samples available for qualified buyers</li>
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-red-300" /> Custom sizes, printing, and specifications</li>
-                <li className="flex items-center gap-2"><Check className="w-4 h-4 text-red-300" /> Export to 50+ countries worldwide</li>
+                <li className="flex items-center gap-2"><Check className="w-4 h-4 text-red-300" /> Export to 70+ countries worldwide</li>
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-red-300" /> Competitive FOB/CIF/CFR pricing</li>
               </ul>
             </div>

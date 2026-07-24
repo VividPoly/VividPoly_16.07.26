@@ -26,7 +26,7 @@ export default function Footer() {
               </p>
               <div className="flex items-center gap-2 mb-3">
                 <Globe className="h-4 w-4 text-[#DC2626]" />
-                <span className="text-[#DC2626] text-sm font-medium">Exporting to 50+ Countries Worldwide</span>
+                <span className="text-[#DC2626] text-sm font-medium">Exporting to 70+ Countries Worldwide</span>
               </div>
               
               {/* Social Links */}

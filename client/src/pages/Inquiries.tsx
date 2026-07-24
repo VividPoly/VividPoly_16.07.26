@@ -204,7 +204,7 @@ const whyChooseUs = [
   {
     icon: Truck,
     title: "Global Export Experience",
-    description: "Exporting to 50+ countries across 6 continents with reliable logistics partnerships"
+    description: "Exporting to 70+ countries across 6 continents with reliable logistics partnerships"
   },
   {
     icon: Shield,

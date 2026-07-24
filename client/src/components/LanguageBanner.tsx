@@ -27,7 +27,7 @@ export function LanguageBanner() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 max-w-sm bg-white border border-gray-200 rounded-xl shadow-2xl p-4 animate-in slide-in-from-bottom-4">
+    <div className="fixed bottom-4 left-4 z-40 max-w-xs bg-white border border-gray-200 rounded-xl shadow-2xl p-4 animate-in slide-in-from-bottom-4">
       <button
         onClick={handleStayEnglish}
         className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
@@ -51,7 +51,7 @@ export function LanguageBanner() {
             <button
               onClick={handleTranslate}
               disabled={translating}
-              className="px-3 py-1.5 text-xs font-medium text-white bg-[#DC2626] rounded-lg hover:bg-[#005a63] transition-colors disabled:opacity-50"
+              className="px-3 py-1.5 text-xs font-medium text-white bg-[#DC2626] rounded-lg hover:bg-[#B91C1C] transition-colors disabled:opacity-50"
             >
               {translating ? "Translating..." : `Switch to ${languageName}`}
             </button>

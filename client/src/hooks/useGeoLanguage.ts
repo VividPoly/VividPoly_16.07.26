@@ -7,64 +7,29 @@ interface GeoLanguageInfo {
   shouldOfferTranslation: boolean;
 }
 
-// Map countries to their primary languages
-const COUNTRY_LANGUAGE_MAP: Record<string, { code: string; name: string }> = {
-  // Latin America - Spanish
-  AR: { code: "es", name: "Español" },
-  CL: { code: "es", name: "Español" },
-  CO: { code: "es", name: "Español" },
-  PE: { code: "es", name: "Español" },
-  MX: { code: "es", name: "Español" },
-  EC: { code: "es", name: "Español" },
-  VE: { code: "es", name: "Español" },
-  UY: { code: "es", name: "Español" },
-  PY: { code: "es", name: "Español" },
-  BO: { code: "es", name: "Español" },
-  // Brazil - Portuguese
-  BR: { code: "pt", name: "Português" },
-  // West Africa - French
-  CI: { code: "fr", name: "Français" },
-  SN: { code: "fr", name: "Français" },
-  CM: { code: "fr", name: "Français" },
-  ML: { code: "fr", name: "Français" },
-  BF: { code: "fr", name: "Français" },
-  NE: { code: "fr", name: "Français" },
-  GN: { code: "fr", name: "Français" },
-  TG: { code: "fr", name: "Français" },
-  BJ: { code: "fr", name: "Français" },
-  CD: { code: "fr", name: "Français" },
-  CG: { code: "fr", name: "Français" },
-  GA: { code: "fr", name: "Français" },
-  // Japan
-  JP: { code: "ja", name: "日本語" },
-  // Arabic-speaking
-  AE: { code: "ar", name: "العربية" },
-  SA: { code: "ar", name: "العربية" },
-  QA: { code: "ar", name: "العربية" },
-  KW: { code: "ar", name: "العربية" },
-  OM: { code: "ar", name: "العربية" },
-  BH: { code: "ar", name: "العربية" },
-  EG: { code: "ar", name: "العربية" },
-  // Hindi
-  IN: { code: "hi", name: "हिन्दी" },
-  // Thai
-  TH: { code: "th", name: "ไทย" },
-  // Vietnamese
-  VN: { code: "vi", name: "Tiếng Việt" },
-  // Indonesian
-  ID: { code: "id", name: "Bahasa Indonesia" },
-  // Korean
-  KR: { code: "ko", name: "한국어" },
-  // Swahili (East Africa)
-  KE: { code: "sw", name: "Kiswahili" },
-  TZ: { code: "sw", name: "Kiswahili" },
-  UG: { code: "sw", name: "Kiswahili" },
+// Supported non-English languages, keyed by the primary browser language code.
+// If the browser's language is English (or not one of these), we never show the
+// translation banner.
+const SUPPORTED_LANGUAGES: Record<string, string> = {
+  es: "Español",
+  pt: "Português",
+  fr: "Français",
+  de: "Deutsch",
+  it: "Italiano",
+  nl: "Nederlands",
+  pl: "Polski",
+  ru: "Русский",
+  tr: "Türkçe",
+  ar: "العربية",
+  ja: "日本語",
+  ko: "한국어",
+  zh: "中文",
+  hi: "हिन्दी",
+  th: "ไทย",
+  vi: "Tiếng Việt",
+  id: "Bahasa Indonesia",
+  sw: "Kiswahili",
 };
-
-// Countries where English is primary (no translation needed)
-const ENGLISH_COUNTRIES = new Set([
-  "US", "GB", "AU", "NZ", "CA", "IE", "ZA", "NG", "GH", "PH", "SG", "MY",
-]);
 
 export function useGeoLanguage(): GeoLanguageInfo & { dismissTranslation: () => void } {
   const [info, setInfo] = useState<GeoLanguageInfo>({
@@ -76,97 +41,62 @@ export function useGeoLanguage(): GeoLanguageInfo & { dismissTranslation: () => 
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    // Check if user already dismissed or chose a language
+    // Respect a saved choice (dismissed or already picked a language).
     const saved = localStorage.getItem("vividpoly_lang_preference");
     if (saved) {
-      const parsed = JSON.parse(saved);
-      setInfo(prev => ({ ...prev, ...parsed, shouldOfferTranslation: false }));
+      try {
+        const parsed = JSON.parse(saved);
+        setInfo((prev) => ({ ...prev, ...parsed, shouldOfferTranslation: false }));
+      } catch {
+        /* ignore */
+      }
       return;
     }
 
-    // Use timezone-based detection as a fallback (no API needed)
-    detectCountryFromTimezone();
+    detectFromBrowser();
   }, []);
 
-  const detectCountryFromTimezone = () => {
-    try {
-      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-      const countryCode = timezoneToCountry(timezone);
-      
-      if (countryCode && !ENGLISH_COUNTRIES.has(countryCode)) {
-        const langInfo = COUNTRY_LANGUAGE_MAP[countryCode];
-        if (langInfo) {
-          setInfo({
-            detectedCountry: countryCode,
-            detectedLanguage: langInfo.code,
-            languageName: langInfo.name,
-            shouldOfferTranslation: true,
-          });
-        }
+  // Detect from the visitor's own browser language preferences. The banner only
+  // appears when the browser's preferred language is a supported NON-English
+  // language; an English (or unsupported) browser sees nothing.
+  const detectFromBrowser = () => {
+    if (typeof navigator === "undefined") return;
+    const langs =
+      navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : navigator.language
+          ? [navigator.language]
+          : [];
+
+    for (const raw of langs) {
+      const primary = raw.toLowerCase().split("-")[0];
+      if (primary === "en") return; // English browser -> no banner
+      const name = SUPPORTED_LANGUAGES[primary];
+      if (name) {
+        setInfo({
+          detectedCountry: "",
+          detectedLanguage: primary,
+          languageName: name,
+          shouldOfferTranslation: true,
+        });
+        return;
       }
-    } catch {
-      // Silently fail - default to English
     }
+    // No supported non-English preference -> stay silent.
   };
 
   const dismissTranslation = () => {
     setDismissed(true);
-    setInfo(prev => ({ ...prev, shouldOfferTranslation: false }));
-    localStorage.setItem("vividpoly_lang_preference", JSON.stringify({ 
-      detectedLanguage: "en", 
-      languageName: "English" 
-    }));
+    setInfo((prev) => ({ ...prev, shouldOfferTranslation: false }));
+    localStorage.setItem(
+      "vividpoly_lang_preference",
+      JSON.stringify({ detectedLanguage: "en", languageName: "English" }),
+    );
   };
 
-  return { ...info, shouldOfferTranslation: info.shouldOfferTranslation && !dismissed, dismissTranslation };
-}
-
-// Map common timezones to country codes
-function timezoneToCountry(timezone: string): string {
-  const tzMap: Record<string, string> = {
-    "America/Argentina/Buenos_Aires": "AR",
-    "America/Santiago": "CL",
-    "America/Bogota": "CO",
-    "America/Lima": "PE",
-    "America/Mexico_City": "MX",
-    "America/Sao_Paulo": "BR",
-    "America/Caracas": "VE",
-    "America/Guayaquil": "EC",
-    "Africa/Abidjan": "CI",
-    "Africa/Dakar": "SN",
-    "Africa/Douala": "CM",
-    "Africa/Bamako": "ML",
-    "Africa/Ouagadougou": "BF",
-    "Africa/Niamey": "NE",
-    "Africa/Nairobi": "KE",
-    "Africa/Dar_es_Salaam": "TZ",
-    "Africa/Kampala": "UG",
-    "Africa/Lagos": "NG",
-    "Africa/Accra": "GH",
-    "Africa/Cairo": "EG",
-    "Asia/Tokyo": "JP",
-    "Asia/Dubai": "AE",
-    "Asia/Riyadh": "SA",
-    "Asia/Qatar": "QA",
-    "Asia/Kolkata": "IN",
-    "Asia/Calcutta": "IN",
-    "Asia/Bangkok": "TH",
-    "Asia/Ho_Chi_Minh": "VN",
-    "Asia/Jakarta": "ID",
-    "Asia/Seoul": "KR",
-    "Australia/Sydney": "AU",
-    "Australia/Melbourne": "AU",
-    "Pacific/Auckland": "NZ",
-    "America/New_York": "US",
-    "America/Chicago": "US",
-    "America/Los_Angeles": "US",
-    "America/Denver": "US",
-    "Europe/London": "GB",
-    "America/Toronto": "CA",
-    "Asia/Singapore": "SG",
-    "Asia/Kuala_Lumpur": "MY",
-    "Asia/Manila": "PH",
-    "Africa/Johannesburg": "ZA",
+  return {
+    ...info,
+    shouldOfferTranslation: info.shouldOfferTranslation && !dismissed,
+    dismissTranslation,
   };
-  return tzMap[timezone] || "";
 }
