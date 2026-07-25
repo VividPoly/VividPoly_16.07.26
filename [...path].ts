@@ -6,11 +6,11 @@
 import express, { type Request, type Response } from "express";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import multer from "multer";
-import { appRouter } from "../server/routers";
-import { createContext } from "../server/_core/context";
-import { registerOAuthRoutes } from "../server/_core/oauth";
-import { registerStorageProxy } from "../server/_core/storageProxy";
-import { storagePut } from "../server/storage";
+import { appRouter } from "./server/routers";
+import { createContext } from "./server/_core/context";
+import { registerOAuthRoutes } from "./server/_core/oauth";
+import { registerStorageProxy } from "./server/_core/storageProxy";
+import { storagePut } from "./server/storage";
 
 const app = express();
 app.use(express.json({ limit: "50mb" }));
