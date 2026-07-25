@@ -43,11 +43,11 @@ export default function Home() {
   const staticProducts = [
     { id: "pp-woven-bags", name: "PP Woven Bags", image: "/products/photos/open-mouth-1.webp", description: "Durable & Lightweight Packaging" },
     { id: "bopp-laminated-bags", name: "BOPP Laminated Bags", image: "/products/photos/bopp-front.webp", description: "Premium Food-Grade Packaging" },
-    { id: "pp-woven-fabric", name: "PP Woven Fabrics", image: "/products/photos/fabric-roll-red.png", description: "The Heart of Woven Industry" },
+    { id: "pp-woven-fabric", name: "PP Woven Fabrics", image: "/products/photos/fabric-roll-red.webp", description: "The Heart of Woven Industry" },
     { id: "carry-bags", name: "PP Carry Bags", image: "/products/photos/carry-multi.webp", description: "Eco-Friendly Shopping Bags" },
     { id: "d-cut-pp-bags", name: "D-Cut PP Bags", image: "/products/photos/d-cut-green.webp", description: "Retail-Ready Woven Bags" },
-    { id: "block-bottom-bags", name: "Block Bottom Bags", image: "/products/photos/block-c-blk.png", description: "Flat-Base Stacking Bags" },
-    { id: "weed-barrier", name: "Weed Barrier", image: "/products/photos/weed-barrier-1.jpg", description: "Agricultural Ground Cover" },
+    { id: "block-bottom-bags", name: "Block Bottom Bags", image: "/products/photos/block-c-blk.webp", description: "Flat-Base Stacking Bags" },
+    { id: "weed-barrier", name: "Weed Barrier", image: "/products/photos/weed-barrier-1.webp", description: "Agricultural Ground Cover" },
   ];
 
   return (

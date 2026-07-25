@@ -1,5 +1,5 @@
 import { Link, useParams, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { ArrowRight, ArrowLeft, Check, ChevronRight, Factory, Layers, Package, Ruler, Star, Cog, Award } from "lucide-react";
 import { productCategories, findProductBySlug, getParentCategory, type ProductCategory, type SubCategory } from "@/data/productCategories";
 import Header from "@/components/Header";
@@ -39,24 +39,25 @@ export default function ProductCategoryPage() {
   const parentCategory = getParentCategory(slug || "");
   const isSubCategory = !!parentCategory;
 
-  // Build a relevance-ordered pool (siblings first, then main categories, then
-  // any other product) so the Related Products grid always fills its 4 slots.
-  const relatedItems = (() => {
+  // Build a shuffled set of 4 related products (always full, always varied) so
+  // it doesn't just look like the same list re-ordered. Recomputed per mount
+  // (i.e. per product view) via useMemo.
+  const relatedItems = useMemo(() => {
     if (!product) return [] as Array<ProductCategory | SubCategory>;
     const allSubs = productCategories.flatMap((c) => c.subCategories || []);
-    const siblings =
-      isSubCategory && parentCategory ? (parentCategory.subCategories || []) : [];
-    const pool = [...siblings, ...productCategories, ...allSubs];
-    const seen = new Set<string>([product.id]);
-    const out: Array<ProductCategory | SubCategory> = [];
-    for (const p of pool) {
-      if (seen.has(p.id)) continue;
-      seen.add(p.id);
-      out.push(p);
-      if (out.length === 4) break;
+    const dedup = new Map<string, ProductCategory | SubCategory>();
+    for (const p of [...productCategories, ...allSubs]) {
+      if (p.id !== product.id && !dedup.has(p.id)) dedup.set(p.id, p);
     }
-    return out;
-  })();
+    // Fisher–Yates shuffle of the whole candidate pool, then take 4.
+    const pool = Array.from(dedup.values());
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    return pool.slice(0, 4);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]);
 
   // Type guard to check if product has subcategories (main category)
   const hasSubCategories = (p: ProductCategory | SubCategory): p is ProductCategory => {
