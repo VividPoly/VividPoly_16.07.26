@@ -1,4 +1,4 @@
-import ws from "ws";
+import "./ws-polyfill";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let client: SupabaseClient | null = null;
@@ -19,8 +19,6 @@ export function isSupabaseConfigured(): boolean {
   return Boolean(url() && key());
 }
 
-// Names the deployment is missing, for diagnostics and startup logging. Only
-// variable NAMES are ever reported — never their values.
 export function supabaseMissingVars(): string[] {
   const missing: string[] = [];
   if (!url()) missing.push("SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL)");
@@ -44,9 +42,6 @@ export function getSupabase(): SupabaseClient | null {
     }
     return null;
   }
-  client = createClient(u, k, {
-    auth: { persistSession: false },
-    realtime: { transport: ws as any },
-  });
+  client = createClient(u, k, { auth: { persistSession: false } });
   return client;
 }
