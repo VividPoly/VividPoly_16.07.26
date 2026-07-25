@@ -680,3 +680,10 @@
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
   }
 }
+
+/* Balance headings so a single word never orphans onto its own line
+   (e.g. "…PP Woven Bags" instead of "…PP Woven" / "Bags"). Ignored by
+   browsers that don't support it, so it degrades gracefully. */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}

@@ -38,7 +38,26 @@ export default function ProductCategoryPage() {
   const product = findProductBySlug(slug || "");
   const parentCategory = getParentCategory(slug || "");
   const isSubCategory = !!parentCategory;
-  
+
+  // Build a relevance-ordered pool (siblings first, then main categories, then
+  // any other product) so the Related Products grid always fills its 4 slots.
+  const relatedItems = (() => {
+    if (!product) return [] as Array<ProductCategory | SubCategory>;
+    const allSubs = productCategories.flatMap((c) => c.subCategories || []);
+    const siblings =
+      isSubCategory && parentCategory ? (parentCategory.subCategories || []) : [];
+    const pool = [...siblings, ...productCategories, ...allSubs];
+    const seen = new Set<string>([product.id]);
+    const out: Array<ProductCategory | SubCategory> = [];
+    for (const p of pool) {
+      if (seen.has(p.id)) continue;
+      seen.add(p.id);
+      out.push(p);
+      if (out.length === 4) break;
+    }
+    return out;
+  })();
+
   // Type guard to check if product has subcategories (main category)
   const hasSubCategories = (p: ProductCategory | SubCategory): p is ProductCategory => {
     return 'subCategories' in p && !!p.subCategories;
@@ -441,10 +460,8 @@ export default function ProductCategoryPage() {
         <div className="container">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Products</h2>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {productCategories
-              .filter(c => c.id !== product.id && (!isSubCategory || c.id !== parentCategory?.id))
-              .slice(0, 4)
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {relatedItems
               .map((relatedCategory) => (
                 <Link 
                   key={relatedCategory.id} 

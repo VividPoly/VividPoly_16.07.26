@@ -113,7 +113,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Double-stitched construction ensures maximum durability. Our bags exceed industry standards for drop test performance.",
     applications: ["Cement", "Chemicals", "Minerals", "Industrial products", "Construction materials"],
-    images: ["/media/TopandBottomStitchedppbags_96d06c16.png", "/products/photos/pinch-stacked.jpg"]
+    images: ["/media/TopandBottomStitchedppbags_96d06c16.png", "/products/photos/block-tasmania.jpg", "/products/photos/openmouth-real.jpg"]
   },
   {
     id: "d-cut-pp-bags",
@@ -183,7 +183,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our valve bags are tested for filling speed compatibility and valve seal integrity, ensuring optimal performance on high-speed filling lines.",
     applications: ["Cement", "Chemicals", "Minerals", "Flour", "Plaster", "Dry mortar"],
-    images: ["/media/ppvalvebag_570857af.png", "/products/categories/cement-valve-bag.jpg"]
+    images: ["/media/ppvalvebag_570857af.png", "/products/photos/block-tasmania.jpg", "/products/photos/block-fertilizer.jpg"]
   },
   {
     id: "carry-bags",
@@ -218,7 +218,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our carry bags are designed for maximum reusability while providing excellent branding opportunities for retailers.",
     applications: ["Supermarkets", "Retail stores", "Trade shows", "Promotional events", "Corporate gifting"],
-    images: ["/products/photos/carry-red.png", "/products/photos/carry-blk.png", "/products/photos/carry-green.png", "/products/photos/carry-white.png", "/products/photos/carry-yellow.png", "/products/photos/carry-yellow-real.jpg"]
+    images: ["/products/photos/carry-red.png", "/products/photos/carry-green.png", "/products/photos/carry-white.png", "/products/photos/carry-yellow.png", "/products/photos/carry-blk.png"]
   },
   {
     id: "pinch-bottom-bags",
@@ -288,7 +288,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our block bottom bags combine functionality with aesthetics, making them ideal for premium product packaging.",
     applications: ["Pet food", "Rice", "Flour", "Specialty foods", "Retail products", "Premium packaging"],
-    images: ["/products/photos/block-c-red.png", "/products/photos/block-c-blk.png", "/products/photos/block-c-green.png", "/products/photos/block-c-yellow.png", "/products/photos/block-tasmania.jpg", "/products/photos/block-fertilizer.jpg"]
+    images: ["/products/photos/block-c-blk.png", "/products/photos/block-c-green.png", "/products/photos/block-c-white.png", "/products/photos/block-bottom-black.webp", "/products/photos/block-bottom-green.webp", "/products/photos/block-fertilizer.jpg"]
   },
   {
     id: "bottom-gusset-bags",
@@ -323,7 +323,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our bottom gusset bags are designed for optimal capacity utilization while maintaining ease of handling and storage.",
     applications: ["Agricultural products", "Chemicals", "Minerals", "Food products", "Industrial goods"],
-    images: ["/products/photos/gusset-black.webp", "/products/photos/gusset-white.webp", "/products/photos/gusset-yellow.png"]
+    images: ["/products/photos/gusset-red.png", "/products/photos/gusset-green.png", "/products/photos/gusset-blk.png", "/products/photos/gusset-wht.png", "/products/photos/gusset-yellow.png"]
   }
 ];
 
@@ -362,7 +362,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP laminated bags offer unmatched print quality and visual appeal, making them perfect for premium product packaging.",
     applications: ["Rice", "Flour", "Pet food", "Fertilizers", "Seeds", "Premium products"],
-    images: ["/products/photos/open-mouth-1.webp", "/products/photos/open-mouth-2.webp", "/products/photos/bopp-white.png"]
+    images: ["/products/photos/open-mouth-1.webp", "/products/photos/open-mouth-2.webp", "/products/photos/openmouth-real.jpg"]
   },
   {
     id: "bopp-top-bottom-stitched",
@@ -397,7 +397,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Combining premium aesthetics with industrial strength, our BOPP stitched bags are perfect for demanding applications.",
     applications: ["Cement", "Chemicals", "Premium agricultural products", "Industrial goods"],
-    images: ["/products/photos/bopp-white.png", "/products/photos/bopp-red.png", "/products/photos/pinch-stacked.jpg"]
+    images: ["/products/photos/bopp-black.png", "/products/photos/block-tasmania.jpg", "/media/TopandBottomStitchedppbags_96d06c16.png"]
   },
   {
     id: "bopp-d-cut",
@@ -432,7 +432,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP D-cut bags offer the perfect combination of functionality and premium aesthetics for retail applications.",
     applications: ["Retail shopping", "Promotional bags", "Trade shows", "Corporate events", "Gift packaging"],
-    images: ["/products/photos/dcut-red.png", "/products/photos/dcut-blk.png", "/products/photos/dcut-green.png", "/products/photos/bopp-yellow2.png"]
+    images: ["/products/photos/dcut-red.png", "/products/photos/dcut-green.png", "/products/photos/dcut-yellow.png"]
   },
   {
     id: "bopp-valve-bags",
@@ -467,7 +467,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP valve bags deliver premium aesthetics without compromising filling efficiency.",
     applications: ["Premium cement", "Specialty chemicals", "Food ingredients", "Minerals"],
-    images: ["/products/photos/bopp-black.png", "/products/photos/bopp-yellow2.png", "/products/photos/block-tasmania.jpg"]
+    images: ["/products/photos/bopp-black.png", "/products/photos/block-tasmania.jpg", "/products/photos/block-fertilizer.jpg"]
   },
   {
     id: "bopp-carry-bags",
@@ -502,7 +502,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP carry bags are designed to make a lasting impression while providing practical functionality.",
     applications: ["Premium retail", "Fashion stores", "Corporate events", "Trade shows", "Luxury brands"],
-    images: ["/products/photos/carry-red.png", "/products/photos/carry-green.png", "/products/photos/carry-white.png", "/products/photos/bopp-white.png"]
+    images: ["/products/photos/bopp-green.png", "/products/photos/bopp-white.png", "/products/photos/carry-red.png"]
   },
   {
     id: "bopp-pinch-bottom",
@@ -537,7 +537,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP pinch bottom bags combine automated filling efficiency with premium brand presentation.",
     applications: ["Premium pet food", "Specialty foods", "Agricultural products", "Industrial products"],
-    images: ["/products/photos/pinch-red.png", "/products/photos/pinch-blk.png", "/products/photos/bopp-white.png"]
+    images: ["/products/photos/bopp-front.webp", "/products/photos/pinch-blk.png", "/products/photos/pinch-yellow.png"]
   },
   {
     id: "bopp-block-bottom",
@@ -572,7 +572,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP block bottom bags deliver the ultimate combination of functionality and premium aesthetics.",
     applications: ["Premium rice", "Specialty foods", "Pet food", "Retail products", "Luxury packaging"],
-    images: ["/products/photos/block-c-red.png", "/products/photos/block-c-blk.png", "/products/photos/bopp-yellow2.png"]
+    images: ["/products/photos/block-c-blk.png", "/products/photos/block-c-green.png", "/products/photos/bopp-black.png"]
   },
   {
     id: "bopp-bottom-gusset",
@@ -607,7 +607,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP bottom gusset bags maximize capacity while maintaining premium visual appeal.",
     applications: ["Premium agricultural products", "Food products", "Industrial goods", "Retail products"],
-    images: ["/products/photos/gusset-black.webp", "/products/photos/gusset-white.webp", "/products/photos/gusset-yellow.png"]
+    images: ["/products/photos/gusset-red.png", "/products/photos/gusset-green.png", "/products/photos/gusset-yellow.png"]
   }
 ];
 
@@ -651,7 +651,7 @@ export const productCategories: ProductCategory[] = [
     productionCapacity: "Our weaving facility operates multiple high-speed looms with a combined capacity of producing over 5,000 MT of woven fabric monthly.",
     whyChooseUs: "With decades of experience in fabric production, VividPoly delivers consistent quality that packaging converters trust.",
     applications: ["Packaging bags for agriculture", "Industrial packaging", "Flood control barriers", "Ground cover and landscaping", "Construction applications", "Furniture and mattress backing"],
-    images: ["/products/photos/fabric-roll-red.png", "/products/photos/fabric-roll-black.png", "/products/photos/fabric-roll-green.png", "/products/photos/fabric-factory-red.jpg", "/products/photos/fabric-factory-green.jpg", "/products/photos/fabric-factory-yellow.jpg"]
+    images: ["/products/photos/fabric-roll-red.png", "/products/photos/fabric-roll-black.png", "/products/photos/fabric-roll-green.png", "/products/photos/fabric-roll-white.png", "/products/photos/fabric-roll-yellow.png", "/products/photos/fabric-factory-green.jpg"]
   },
   {
     id: "pp-woven-bags",
@@ -691,7 +691,7 @@ export const productCategories: ProductCategory[] = [
     productionCapacity: "Our automated production lines deliver consistent quality and reliable supply for global export orders of any volume.",
     whyChooseUs: "Quality, consistency, and competitive pricing make VividPoly the preferred choice for bulk packaging needs.",
     applications: ["Rice and grain packaging", "Flour and sugar bags", "Fertilizer and seed packaging", "Chemical and mineral packaging", "Animal feed bags", "Construction materials"],
-    images: ["/products/photos/open-mouth-1.webp", "/products/photos/dcut-red.png", "/products/photos/block-c-red.png", "/products/photos/pinch-red.png", "/products/photos/openmouth-real.jpg"],
+    images: ["/products/photos/open-mouth-1.webp", "/products/photos/openmouth-real.jpg", "/products/photos/pinch-white.png", "/products/photos/block-c-green.png"],
     subCategories: ppWovenBagsSubCategories
   },
   {
@@ -732,7 +732,7 @@ export const productCategories: ProductCategory[] = [
     productionCapacity: "Our lamination and printing facility can produce over 100,000 premium bags daily.",
     whyChooseUs: "For products that demand premium presentation, VividPoly's BOPP laminated bags deliver exceptional quality.",
     applications: ["Premium rice packaging", "Pet food bags", "Fertilizer bags", "Seed packaging", "Food products", "Retail products"],
-    images: ["/products/photos/bopp-red.png", "/products/photos/bopp-black.png", "/products/photos/bopp-white.png", "/products/photos/bopp-green.png", "/products/photos/bopp-yellow2.png", "/products/photos/bopp-printed-1.jpg", "/products/photos/bopp-rice-green.jpg"],
+    images: ["/products/photos/bopp-printed-1.jpg", "/products/photos/bopp-red.png", "/products/photos/bopp-front.webp", "/products/photos/bopp-rice-green.jpg", "/products/photos/bopp-yellow2.png", "/products/photos/bopp-white.png"],
     subCategories: boppLaminatedSubCategories
   },
   {

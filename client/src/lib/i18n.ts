@@ -80,7 +80,11 @@ function collect(root: Node): Recorded[] {
 
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
-      const text = node.nodeValue || "";
+      // Judge by the stored English original when we have one — otherwise a
+      // node already showing a non-Latin language (e.g. Hindi) would be
+      // rejected and couldn't be switched to another language.
+      const known = originalText.get(node as Text);
+      const text = known !== undefined ? known : node.nodeValue || "";
       if (!translatable(text)) return NodeFilter.FILTER_REJECT;
       if (skip((node as Text).parentElement)) return NodeFilter.FILTER_REJECT;
       return NodeFilter.FILTER_ACCEPT;
@@ -154,15 +158,49 @@ function restoreEnglish(root: Node) {
   });
 }
 
+// Pre-generated dictionaries (public/i18n/<lang>.json) give instant, offline
+// translation of the static UI on any deployment. Loaded once per language.
+const dictLoaded = new Set<string>();
+async function loadDict(lang: string) {
+  if (dictLoaded.has(lang)) return;
+  dictLoaded.add(lang);
+  try {
+    const res = await fetch(`/i18n/${lang}.json`, { cache: "force-cache" });
+    if (res.ok) {
+      const dict = await res.json();
+      if (dict && typeof dict === "object") mergeCache(lang, dict);
+    }
+  } catch {
+    /* dictionary is optional — runtime endpoint fills the gaps */
+  }
+}
+
+function setTranslating(active: boolean, lang: string) {
+  try {
+    window.dispatchEvent(new CustomEvent("vividpoly-translating", { detail: { active, lang } }));
+  } catch {
+    /* ignore */
+  }
+}
+
 async function translate(root: Node, lang: string) {
   const items = collect(root);
   if (items.length === 0) return;
 
+  await loadDict(lang);
   const cache = getCache(lang);
   const sources = Array.from(new Set(items.map((i) => i.source)));
   const missing = sources.filter((s) => cache[s] === undefined);
 
+  // Apply everything we already know immediately (from the dictionary / cache)
+  // so the page changes right away, then fetch only what's still missing.
+  for (const item of collect(root)) {
+    const v = cache[item.source];
+    if (v) item.apply(v);
+  }
+
   if (missing.length > 0) {
+    setTranslating(true, lang);
     const fetched = await requestTranslations(missing, lang);
     // Only cache genuine translations; leave English strings uncached so a
     // transient failure can be retried later.
@@ -173,6 +211,7 @@ async function translate(root: Node, lang: string) {
     }
     mergeCache(lang, good);
     Object.assign(cache, good);
+    setTranslating(false, lang);
   }
 
   // Re-collect in case the DOM changed while awaiting, then apply.

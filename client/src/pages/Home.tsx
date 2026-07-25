@@ -43,10 +43,10 @@ export default function Home() {
   const staticProducts = [
     { id: "pp-woven-bags", name: "PP Woven Bags", image: "/products/photos/open-mouth-1.webp", description: "Durable & Lightweight Packaging" },
     { id: "bopp-laminated-bags", name: "BOPP Laminated Bags", image: "/products/photos/bopp-front.webp", description: "Premium Food-Grade Packaging" },
-    { id: "pp-woven-fabric", name: "PP Woven Fabrics", image: "/media/fabric-rolls_faa8de4c.jpg", description: "The Heart of Woven Industry" },
+    { id: "pp-woven-fabric", name: "PP Woven Fabrics", image: "/products/photos/fabric-roll-red.png", description: "The Heart of Woven Industry" },
     { id: "carry-bags", name: "PP Carry Bags", image: "/products/photos/carry-multi.webp", description: "Eco-Friendly Shopping Bags" },
     { id: "d-cut-pp-bags", name: "D-Cut PP Bags", image: "/products/photos/d-cut-green.webp", description: "Retail-Ready Woven Bags" },
-    { id: "block-bottom-bags", name: "Block Bottom Bags", image: "/products/photos/block-bottom-red.webp", description: "Flat-Base Stacking Bags" },
+    { id: "block-bottom-bags", name: "Block Bottom Bags", image: "/products/photos/block-c-blk.png", description: "Flat-Base Stacking Bags" },
     { id: "weed-barrier", name: "Weed Barrier", image: "/products/photos/weed-barrier-1.jpg", description: "Agricultural Ground Cover" },
   ];
 
@@ -86,15 +86,15 @@ export default function Home() {
                 Premium quality PP woven bags, BOPP laminated bags, and custom printed packaging with competitive FOB pricing.
               </p>
               
-              <div className="flex flex-wrap gap-4">
-                <Link href="/products">
-                  <button className="btn-primary text-sm px-8 py-3.5 inline-flex items-center">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/products" className="w-full sm:w-auto">
+                  <button className="btn-primary text-sm px-8 py-3.5 inline-flex items-center justify-center w-full sm:w-auto">
                     Explore Products
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </button>
                 </Link>
-                <Link href="/inquiries">
-                  <button className="border-2 border-white text-white px-8 py-3.5 text-sm font-bold hover:bg-white hover:text-[#1A1A1A] transition-all inline-flex items-center">
+                <Link href="/inquiries" className="w-full sm:w-auto">
+                  <button className="border-2 border-white text-white px-8 py-3.5 text-sm font-bold hover:bg-white hover:text-[#1A1A1A] transition-all inline-flex items-center justify-center w-full sm:w-auto">
                     Get a Quote
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </button>
