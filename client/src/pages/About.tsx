@@ -28,8 +28,7 @@ export default function About() {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="text-[#DC2626] text-xs font-bold uppercase tracking-widest">Our Story</span>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6">Story</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-[#DC2626] mb-6">Our Story</h2>
                 <p className="text-lg text-gray-600 mb-4">
                   VividPoly was founded by a team of experienced engineers with multinational expertise spanning Australia, Canada, USA, and India. Each founder brings deep specialization in their respective fields — from polymer science and manufacturing engineering to global supply chain management and international trade.
                 </p>

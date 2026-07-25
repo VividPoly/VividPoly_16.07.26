@@ -113,7 +113,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Double-stitched construction ensures maximum durability. Our bags exceed industry standards for drop test performance.",
     applications: ["Cement", "Chemicals", "Minerals", "Industrial products", "Construction materials"],
-    images: ["/products/photos/sack-white-25kg.webp", "/products/photos/sacks-white-filled.webp", "/products/photos/sack-sugar.webp"]
+    images: ["/products/photos/tbs-double-stitch.webp", "/products/photos/sack-white-25kg.webp", "/products/photos/sacks-white-filled.webp"]
   },
   {
     id: "d-cut-pp-bags",
@@ -183,7 +183,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our valve bags are tested for filling speed compatibility and valve seal integrity, ensuring optimal performance on high-speed filling lines.",
     applications: ["Cement", "Chemicals", "Minerals", "Flour", "Plaster", "Dry mortar"],
-    images: ["/products/photos/valve-sacks-1.webp", "/products/photos/valve-cement.webp", "/products/photos/valve-cement-cn.webp"]
+    images: ["/products/photos/valve-gusset.webp", "/products/photos/valve-sacks-1.webp", "/products/photos/valve-sacks-2.webp"]
   },
   {
     id: "carry-bags",
@@ -397,7 +397,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Combining premium aesthetics with industrial strength, our BOPP stitched bags are perfect for demanding applications.",
     applications: ["Cement", "Chemicals", "Premium agricultural products", "Industrial goods"],
-    images: ["/products/photos/sack-white-25kg.webp", "/products/photos/sacks-white-filled.webp", "/products/photos/sack-sugar.webp"]
+    images: ["/products/photos/tbs-double-stitch.webp", "/products/photos/yellow-rice.webp", "/products/photos/sack-white-25kg.webp"]
   },
   {
     id: "bopp-d-cut",
@@ -467,7 +467,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP valve bags deliver premium aesthetics without compromising filling efficiency.",
     applications: ["Premium cement", "Specialty chemicals", "Food ingredients", "Minerals"],
-    images: ["/products/photos/valve-sacks-1.webp", "/products/photos/valve-cement.webp", "/products/photos/bopp-black.webp"]
+    images: ["/products/photos/valve-gusset.webp", "/products/photos/valve-sacks-1.webp", "/products/photos/bopp-black.webp"]
   },
   {
     id: "bopp-carry-bags",
