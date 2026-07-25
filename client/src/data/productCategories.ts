@@ -113,7 +113,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Double-stitched construction ensures maximum durability. Our bags exceed industry standards for drop test performance.",
     applications: ["Cement", "Chemicals", "Minerals", "Industrial products", "Construction materials"],
-    images: ["/products/photos/tbs-double-stitch.webp", "/products/photos/sack-white-25kg.webp", "/products/photos/sacks-white-filled.webp"]
+    images: ["/products/photos/tbs-branded-stitch.webp", "/products/photos/tbs-stack-yellow.webp", "/products/photos/tbs-yellow-branded.webp"]
   },
   {
     id: "d-cut-pp-bags",
@@ -183,7 +183,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our valve bags are tested for filling speed compatibility and valve seal integrity, ensuring optimal performance on high-speed filling lines.",
     applications: ["Cement", "Chemicals", "Minerals", "Flour", "Plaster", "Dry mortar"],
-    images: ["/products/photos/valve-gusset.webp", "/products/photos/valve-sacks-1.webp", "/products/photos/valve-sacks-2.webp"]
+    images: ["/products/photos/valve-bag-branded.webp", "/products/photos/valve-bag-pp.webp", "/products/photos/valve-bag-bopp-laminated.webp"]
   },
   {
     id: "carry-bags",
@@ -253,7 +253,7 @@ const ppWovenBagsSubCategories: SubCategory[] = [
     ],
     speciality: "Our pinch bottom bags are optimized for automated filling lines, ensuring consistent performance and minimal downtime.",
     applications: ["Pet food", "Animal feed", "Fertilizers", "Seeds", "Chemicals", "Food products"],
-    images: ["/products/photos/pinch-red.webp", "/products/photos/pinch-blk.webp", "/products/photos/pinch-green.webp", "/products/photos/pinch-white.webp", "/products/photos/pinch-yellow.webp", "/products/photos/pinch-stacked.webp"]
+    images: ["/products/photos/pinch-red.webp", "/products/photos/pinch-blk.webp", "/products/photos/pinch-green.webp", "/products/photos/pinch-white.webp", "/products/photos/pinch-yellow.webp"]
   },
   {
     id: "block-bottom-bags",
@@ -397,7 +397,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Combining premium aesthetics with industrial strength, our BOPP stitched bags are perfect for demanding applications.",
     applications: ["Cement", "Chemicals", "Premium agricultural products", "Industrial goods"],
-    images: ["/products/photos/tbs-double-stitch.webp", "/products/photos/yellow-rice.webp", "/products/photos/sack-white-25kg.webp"]
+    images: ["/products/photos/tbs-branded-stitch.webp", "/products/photos/tbs-stack-yellow.webp", "/products/photos/tbs-yellow-branded.webp"]
   },
   {
     id: "bopp-d-cut",
@@ -467,7 +467,7 @@ const boppLaminatedSubCategories: SubCategory[] = [
     ],
     speciality: "Our BOPP valve bags deliver premium aesthetics without compromising filling efficiency.",
     applications: ["Premium cement", "Specialty chemicals", "Food ingredients", "Minerals"],
-    images: ["/products/photos/valve-gusset.webp", "/products/photos/valve-sacks-1.webp", "/products/photos/bopp-black.webp"]
+    images: ["/products/photos/valve-bag-branded.webp", "/products/photos/valve-bag-pp.webp", "/products/photos/valve-bag-bopp-laminated.webp"]
   },
   {
     id: "bopp-carry-bags",
