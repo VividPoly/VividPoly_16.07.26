@@ -48,7 +48,7 @@ export default function Careers() {
         {/* Hero Section */}
         <section className="relative py-20 bg-[#1A1A1A]">
           <div className="absolute inset-0 opacity-20">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/factory/factory-floor.jpg" 
               alt="VividPoly Careers" 
               className="w-full h-full object-cover"
@@ -164,7 +164,7 @@ export default function Careers() {
                   rel="noopener noreferrer"
                   className="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition-all hover:-translate-y-1 hover:border-[#DC2626] hover:shadow-lg"
                 >
-                  <img src={p.logo} alt={p.name} className="h-8 w-auto self-start object-contain" />
+                  <img loading="lazy" decoding="async" src={p.logo} alt={p.name} className="h-8 w-auto self-start object-contain" />
                   <h3 className="mt-5 text-lg font-bold text-[#1A1A1A]">{p.name}</h3>
                   <ul className="mt-2 flex-1">
                     <li className="flex items-start gap-2 text-sm text-gray-600">

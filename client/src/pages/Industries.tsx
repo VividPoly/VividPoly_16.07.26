@@ -120,7 +120,7 @@ export default function Industries() {
             {industries.map((industry, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex">
                 <div className="w-2/5 overflow-hidden">
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={industry.image} 
                     alt={`PP woven bags for ${industry.name}`}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

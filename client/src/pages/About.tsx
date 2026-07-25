@@ -37,7 +37,7 @@ export default function About() {
                 </p>
               </div>
               <div className="rounded-xl h-96 overflow-hidden shadow-xl">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src="/factory/factory-floor.jpg" 
                   alt="VividPoly Manufacturing Facility" 
                   className="w-full h-full object-cover"
@@ -131,7 +131,7 @@ export default function About() {
               ].map((item, index) => (
                 <div key={index} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                   <div className="aspect-video">
-                    <img 
+                    <img loading="lazy" decoding="async" 
                       src={item.image} 
                       alt={item.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

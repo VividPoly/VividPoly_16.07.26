@@ -186,7 +186,7 @@ export async function getPublishedBlogPosts(language?: string): Promise<BlogPost
   return (data || []).map((row) => mapBlog(row, lang));
 }
 
-export async function getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+export async function getBlogPostBySlug(slug: string, lang?: string): Promise<BlogPost | undefined> {
   const supabase = getSupabase();
   if (!supabase) return undefined;
   const { data, error } = await supabase.from("blogs").select("*").eq("slug", slug).limit(1).maybeSingle();
@@ -194,7 +194,10 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | undefi
     console.warn("[Supabase] getBlogPostBySlug failed:", error.message);
     return undefined;
   }
-  return data ? mapBlog(data) : undefined;
+  // Serve the admin's pre-translated copy when one exists for this language;
+  // anything without one falls back to English and is handled by the DOM
+  // auto-translator, so a post is never stuck in English either way.
+  return data ? mapBlog(data, lang) : undefined;
 }
 
 export async function getBlogPostTranslation(parentId: number, language: string): Promise<BlogPost | undefined> {

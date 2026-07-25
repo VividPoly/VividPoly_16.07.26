@@ -53,7 +53,7 @@ export default function Products() {
                 <Link href={`/products/${category.slug}`} className="group block">
                   <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/3 h-64 md:h-auto overflow-hidden bg-gray-50">
-                      <img 
+                      <img loading="lazy" decoding="async" 
                         src={category.images[0]} 
                         alt={category.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

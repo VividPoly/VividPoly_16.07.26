@@ -61,7 +61,7 @@ export default function Home() {
           {/* Background Slideshow */}
           <div className="absolute inset-0">
             {heroSlides.map((img, index) => (
-              <img 
+              <img decoding="async" 
                 key={index}
                 src={img.src} 
                 alt={img.alt} 
@@ -164,7 +164,7 @@ export default function Home() {
                   >
                     <div className="h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group border border-gray-100">
                       <div className="h-44 md:h-52 overflow-hidden bg-gray-50">
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={product.image}
                           alt={product.name}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -237,7 +237,7 @@ export default function Home() {
               </div>
               
               <div className="relative">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src="/factory/circular-loom-main.jpg" 
                   alt="Sustainable Manufacturing" 
                   className="rounded-lg shadow-xl w-full"
@@ -275,7 +275,7 @@ export default function Home() {
               ].map((industry, index) => (
                 <Link key={index} href={`/industry/${industry.slug}`} className="snap-start shrink-0 w-[58%] sm:w-[42%] lg:w-[30%] xl:w-[23%]">
                   <div className="group cursor-pointer relative overflow-hidden rounded-lg">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={industry.image}
                       alt={industry.name}
                       className="w-full h-44 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"

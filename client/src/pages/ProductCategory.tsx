@@ -115,7 +115,7 @@ export default function ProductCategoryPage() {
             {/* Image Gallery */}
             <div>
               <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden">
-                <img
+                <img decoding="async"
                   src={product.images[activeImageIndex]}
                   alt={product.name}
                   className="w-full h-full object-contain p-4"
@@ -179,7 +179,7 @@ export default function ProductCategoryPage() {
                         idx === activeImageIndex ? 'border-red-600' : 'border-gray-200 hover:border-gray-300'
                       }`}
                     >
-                      <img src={img} alt="" className="w-full h-full object-contain p-1" />
+                      <img loading="lazy" decoding="async" src={img} alt="" className="w-full h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
@@ -203,7 +203,7 @@ export default function ProductCategoryPage() {
                 >
                   <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                     <div className="aspect-video overflow-hidden bg-gray-100">
-                      <img 
+                      <img loading="lazy" decoding="async" 
                         src={sub.images[0]} 
                         alt={sub.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -471,7 +471,7 @@ export default function ProductCategoryPage() {
                 >
                   <div className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
                     <div className="aspect-square overflow-hidden">
-                      <img 
+                      <img loading="lazy" decoding="async" 
                         src={relatedCategory.images[0]} 
                         alt={relatedCategory.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
