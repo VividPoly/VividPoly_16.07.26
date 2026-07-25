@@ -129,6 +129,7 @@ export default function InquiryPopup() {
         message: formData.message,
         attachments: uploadedUrls.length > 0 ? uploadedUrls : undefined,
         source: "Inquiry popup",
+        pageUrl: window.location.href,
       });
     } catch {
       toast.error("Failed to submit. Please try again.");

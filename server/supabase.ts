@@ -1,6 +1,5 @@
-// Supabase client for the website server. Reads use the anon key (RLS limits it
-// to published blogs); if a service key is provided it is used instead.
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import ws from "ws";
 
 let client: SupabaseClient | null = null;
 
@@ -36,8 +35,6 @@ export function getSupabase(): SupabaseClient | null {
   const u = url();
   const k = key();
   if (!u || !k) {
-    // Without this the site silently serves zero blogs and drops every lead,
-    // which looks like a code bug rather than a deployment setting.
     if (!warned) {
       warned = true;
       console.error(
@@ -47,6 +44,9 @@ export function getSupabase(): SupabaseClient | null {
     }
     return null;
   }
-  client = createClient(u, k, { auth: { persistSession: false } });
+  client = createClient(u, k, {
+    auth: { persistSession: false },
+    realtime: { transport: ws as any },
+  });
   return client;
 }
