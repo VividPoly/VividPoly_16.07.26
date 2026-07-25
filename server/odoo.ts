@@ -145,7 +145,7 @@ function buildLeadDescription(payload: OdooLeadPayload): string {
   const text = [
     ...lines,
     '',
-    payload.message?.trim() || '(no message)',
+    payload.message?.trim() ? `Message:\n${payload.message.trim()}` : '(no message)',
     '',
     '—',
     'Submitted via vividpoly.com',
