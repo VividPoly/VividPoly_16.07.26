@@ -81,7 +81,7 @@ const funcDir = path.join(out, "functions/api/[...path].func");
 mkdirp(funcDir);
 
 execSync(
-  `npx esbuild server/api-entry.ts --platform=node --bundle --format=esm --outfile="${funcDir}/index.js"`,
+  `npx esbuild server/api-entry.ts --platform=node --bundle --format=cjs --outfile="${funcDir}/index.js"`,
   { cwd: root, stdio: "inherit" }
 );
 
