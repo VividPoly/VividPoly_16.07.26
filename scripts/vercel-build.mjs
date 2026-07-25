@@ -52,10 +52,15 @@ mkdirp(out);
 const config = {
   version: 3,
   routes: [
-    // API requests → serverless function (no rewrite needed, Vercel handles it)
+    // Route all /api/* requests to the serverless function FIRST
+    {
+      src: "/api/(.*)",
+      dest: "/api/[...path]",
+    },
+    // Then handle static files from the filesystem
     { handle: "filesystem" },
     // SPA fallback for all other routes
-    { src: "/((?!api/).*)", dest: "/index.html" },
+    { src: "/(.*)", dest: "/index.html" },
   ],
 };
 fs.writeFileSync(
