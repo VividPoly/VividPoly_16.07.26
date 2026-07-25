@@ -183,14 +183,29 @@ function setTranslating(active: boolean, lang: string) {
   }
 }
 
+// Strings that come back identical to English (brand names, "BOPP", "PP", …)
+// have no translation. Remember them per language so the MutationObserver
+// doesn't re-request them on every DOM change — which was what made the
+// loading indicator flicker.
+const noTranslate = new Map<string, Set<string>>();
+function getNoSet(lang: string): Set<string> {
+  let s = noTranslate.get(lang);
+  if (!s) {
+    s = new Set();
+    noTranslate.set(lang, s);
+  }
+  return s;
+}
+
 async function translate(root: Node, lang: string) {
   const items = collect(root);
   if (items.length === 0) return;
 
   await loadDict(lang);
   const cache = getCache(lang);
+  const noSet = getNoSet(lang);
   const sources = Array.from(new Set(items.map((i) => i.source)));
-  const missing = sources.filter((s) => cache[s] === undefined);
+  const missing = sources.filter((s) => cache[s] === undefined && !noSet.has(s));
 
   // Apply everything we already know immediately (from the dictionary / cache)
   // so the page changes right away, then fetch only what's still missing.
@@ -202,22 +217,21 @@ async function translate(root: Node, lang: string) {
   if (missing.length > 0) {
     setTranslating(true, lang);
     const fetched = await requestTranslations(missing, lang);
-    // Only cache genuine translations; leave English strings uncached so a
-    // transient failure can be retried later.
     const good: Record<string, string> = {};
     for (const s of missing) {
       const v = fetched[s];
       if (v && v !== s) good[s] = v;
+      else noSet.add(s); // no translation available — don't ask again
     }
     mergeCache(lang, good);
     Object.assign(cache, good);
     setTranslating(false, lang);
-  }
 
-  // Re-collect in case the DOM changed while awaiting, then apply.
-  for (const item of collect(root)) {
-    const v = cache[item.source];
-    if (v) item.apply(v);
+    // Apply the newly fetched translations.
+    for (const item of collect(root)) {
+      const v = cache[item.source];
+      if (v) item.apply(v);
+    }
   }
 }
 
@@ -259,23 +273,14 @@ function startObserver() {
   observer.observe(document.body, { childList: true, subtree: true });
 }
 
-// Decide the initial language: an explicit saved choice wins; otherwise the
-// browser's primary language, if it's a supported non-English one, auto-applies.
+// The site always opens in English; a language only takes effect once the
+// visitor picks one from the switcher (their choice is then remembered). We do
+// NOT auto-translate from the browser's language, which was opening the site in
+// random languages for people with multiple languages configured.
 export function initialLanguage(): string {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return saved;
-    const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
-    for (const raw of langs) {
-      const primary = (raw || "").toLowerCase().split("-")[0];
-      if (primary === "en") return "en";
-      if (SUPPORTED_LANGS.includes(primary)) {
-        // Persist so the choice sticks and the geo banner stays quiet.
-        localStorage.setItem(STORAGE_KEY, primary);
-        localStorage.setItem(PREF_KEY, JSON.stringify({ detectedLanguage: primary }));
-        return primary;
-      }
-    }
+    if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
   } catch {
     /* ignore */
   }
