@@ -348,9 +348,9 @@ export default function ProductDetail() {
             <div>
               <div className="bg-white rounded-xl h-96 flex items-center justify-center overflow-hidden shadow-xl border border-gray-100">
                 {productGallery && productGallery.length > 0 ? (
-                  <img src={productGallery[selectedImageIndex]} alt={productName} className="w-full h-full object-contain p-4" />
+                  <img decoding="async" src={productGallery[selectedImageIndex]} alt={productName} className="w-full h-full object-contain p-4" />
                 ) : productImage ? (
-                  <img src={productImage} alt={productName} className="w-full h-full object-cover" />
+                  <img decoding="async" src={productImage} alt={productName} className="w-full h-full object-cover" />
                 ) : (
                   <Package className="h-32 w-32 text-gray-300" />
                 )}
@@ -366,7 +366,7 @@ export default function ProductDetail() {
                         idx === selectedImageIndex ? 'border-[#DC2626] shadow-md' : 'border-gray-200 hover:border-gray-400'
                       }`}
                     >
-                      <img src={img} alt={`${productName} view ${idx + 1}`} className="w-full h-full object-cover" />
+                      <img loading="lazy" decoding="async" src={img} alt={`${productName} view ${idx + 1}`} className="w-full h-full object-cover" />
                     </button>
                   ))}
                 </div>

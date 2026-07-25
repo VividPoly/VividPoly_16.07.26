@@ -4,7 +4,12 @@
   "outputDirectory": "dist/public",
   "framework": null,
   "installCommand": "pnpm install --no-frozen-lockfile",
+  "functions": {
+    "api/[...path].ts": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

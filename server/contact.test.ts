@@ -7,9 +7,10 @@ vi.mock("./_core/notification", () => ({
   notifyOwner: vi.fn().mockResolvedValue(true),
 }));
 
-// Mock the database module
+// Mock the database module. createContactInquiry resolves to { success } —
+// the router relies on that flag to know the lead was actually stored.
 vi.mock("./db", () => ({
-  createContactInquiry: vi.fn().mockResolvedValue({ insertId: 1 }),
+  createContactInquiry: vi.fn().mockResolvedValue({ success: true }),
   getAllContactInquiries: vi.fn().mockResolvedValue([]),
   updateContactInquiryStatus: vi.fn().mockResolvedValue({}),
 }));
@@ -47,7 +48,7 @@ describe("contact.submit", () => {
       message: "I need a quote for PP woven bags for agricultural use.",
     });
 
-    expect(result).toEqual({ success: true });
+    expect(result).toMatchObject({ success: true, stored: true });
   });
 
   it("submits contact form successfully (Contact Us)", async () => {
@@ -63,7 +64,7 @@ describe("contact.submit", () => {
       message: "I would like to know more about your company and products.",
     });
 
-    expect(result).toEqual({ success: true });
+    expect(result).toMatchObject({ success: true, stored: true });
   });
 
   it("submits inquiry with attachments", async () => {
@@ -80,7 +81,7 @@ describe("contact.submit", () => {
       ],
     });
 
-    expect(result).toEqual({ success: true });
+    expect(result).toMatchObject({ success: true, stored: true });
   });
 
   it("rejects submission with invalid email", async () => {
@@ -120,5 +121,24 @@ describe("contact.submit", () => {
         message: "This message has a valid length for testing.",
       })
     ).rejects.toThrow();
+  });
+
+  // Regression: with neither Supabase nor Odoo configured the enquiry reaches
+  // nobody. It used to return success anyway, so the visitor saw a thank-you
+  // page for a lead that had silently vanished.
+  it("fails loudly when the lead cannot be stored or sent to the CRM", async () => {
+    const dbModule = await import("./db");
+    vi.mocked(dbModule.createContactInquiry).mockResolvedValueOnce({ skipped: true } as never);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    await expect(
+      caller.contact.submit({
+        name: "Lost Lead",
+        email: "lost@example.com",
+        message: "This enquiry must not be reported as delivered.",
+      })
+    ).rejects.toThrow(/could not record your enquiry/i);
   });
 });

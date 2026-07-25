@@ -10,7 +10,7 @@ import { notifyOwner } from "./_core/notification";
 import { CHATBOT_SYSTEM_PROMPT } from "./chatbot-knowledge";
 import { createOdooLead, isOdooConfigured } from "./odoo";
 import { translateBatch } from "./translate";
-import { getSupabase } from "./supabase";
+import { getSupabase, isSupabaseConfigured, supabaseMissingVars } from "./supabase";
 import { createHash } from "crypto";
 
 // Admin-only procedure
@@ -90,9 +90,9 @@ export const appRouter = router({
         return await db.getPublishedBlogPosts(input?.language);
       }),
     getBySlug: publicProcedure
-      .input(z.object({ slug: z.string() }))
+      .input(z.object({ slug: z.string(), language: z.string().optional() }))
       .query(async ({ input }) => {
-        return await db.getBlogPostBySlug(input.slug);
+        return await db.getBlogPostBySlug(input.slug, input.language);
       }),
     getTranslation: publicProcedure
       .input(z.object({ parentId: z.number(), language: z.string() }))
@@ -246,20 +246,31 @@ export const appRouter = router({
         const isContactForm = !!input.subject;
         const formType = isContactForm ? 'Contact Us' : 'Quote Request';
         
-        // Save to database
-        await db.createContactInquiry({
-          name: input.name,
-          email: input.email,
-          phone: input.phone || null,
-          company: input.company || null,
-          country: input.country || null,
-          productInterest: input.productInterest || input.subject || null,
-          quantity: input.quantity || null,
-          message: input.message,
-          attachments: input.attachments ? JSON.stringify(input.attachments) : null,
-          status: "new",
-          notes: null,
-        });
+        // Save to database. `skipped` means Supabase is not configured, so the
+        // lead is NOT recoverable from here — tracked so we can tell whether
+        // the enquiry landed anywhere at all.
+        let storedOk = false;
+        try {
+          const stored = await db.createContactInquiry({
+            name: input.name,
+            email: input.email,
+            phone: input.phone || null,
+            company: input.company || null,
+            country: input.country || null,
+            productInterest: input.productInterest || input.subject || null,
+            quantity: input.quantity || null,
+            message: input.message,
+            attachments: input.attachments ? JSON.stringify(input.attachments) : null,
+            status: "new",
+            notes: null,
+            // Which page the enquiry came from, so the CRM and the admin table
+            // agree on attribution.
+            source: input.source || "website",
+          });
+          storedOk = (stored as { success?: boolean }).success === true;
+        } catch (error) {
+          console.error("[Supabase] createContactInquiry threw:", error);
+        }
 
         // Send email notification to info@vividpoly.com
         const attachmentLinks = input.attachments && input.attachments.length > 0
@@ -332,40 +343,73 @@ Reply directly to: ${input.email}
           console.error("[Notification] Failed to notify owner:", error);
         }
 
-        // Push the enquiry to Odoo CRM as a crm.lead (best-effort: a CRM
-        // outage must never block the visitor's submission — the lead is
-        // already saved to Supabase and emailed).
-        if (isOdooConfigured()) {
-          try {
-            const details = [
-              input.country ? { label: "Country", value: input.country } : null,
-              { label: "Enquiry Type", value: formType },
-              input.source ? { label: "Source Page", value: input.source } : null,
-              input.productInterest || input.subject
-                ? { label: "Product Interest", value: input.productInterest || input.subject! }
-                : null,
-              input.quantity ? { label: "Quantity", value: input.quantity } : null,
-              input.attachments && input.attachments.length > 0
-                ? { label: "Attachments", value: input.attachments.join(", ") }
-                : null,
-            ].filter((d): d is { label: string; value: string } => d !== null);
+        // Push the enquiry to Odoo CRM as a crm.lead. A CRM outage must not
+        // block the visitor when the lead is safely stored elsewhere, but if
+        // NOTHING accepted the lead we have to say so rather than show a
+        // thank-you page for an enquiry that reached nobody.
+        let odooOk = false;
+        if (!isOdooConfigured()) {
+          console.error(
+            "[Odoo] NOT CONFIGURED — lead not sent to CRM. Missing one or more of: " +
+              "ODOO_URL, ODOO_DATABASE, ODOO_USERNAME, ODOO_API_KEY"
+          );
+        } else {
+          const details = [
+            input.country ? { label: "Country", value: input.country } : null,
+            { label: "Enquiry Type", value: formType },
+            input.source ? { label: "Source Page", value: input.source } : null,
+            input.productInterest || input.subject
+              ? { label: "Product Interest", value: input.productInterest || input.subject! }
+              : null,
+            input.quantity ? { label: "Quantity", value: input.quantity } : null,
+            input.attachments && input.attachments.length > 0
+              ? { label: "Attachments", value: input.attachments.join(", ") }
+              : null,
+          ].filter((d): d is { label: string; value: string } => d !== null);
 
-            await createOdooLead({
-              name: `${formType} — ${input.name}${input.company ? ` (${input.company})` : ""}`,
-              contactName: input.name,
-              emailFrom: input.email,
-              phone: input.phone || undefined,
-              company: input.company || undefined,
-              country: input.country || undefined,
-              message: input.message,
-              details,
-            });
+          const lead = {
+            name: `${formType} — ${input.name}${input.company ? ` (${input.company})` : ""}`,
+            contactName: input.name,
+            emailFrom: input.email,
+            phone: input.phone || undefined,
+            company: input.company || undefined,
+            country: input.country || undefined,
+            message: input.message,
+            details,
+          };
+
+          try {
+            await createOdooLead(lead);
+            odooOk = true;
           } catch (error) {
-            console.error("[Odoo] Failed to create lead:", error);
+            // One retry: most Odoo failures here are transient (session expiry,
+            // brief network blip) and a lost lead is expensive.
+            console.error("[Odoo] Failed to create lead, retrying once:", error);
+            try {
+              await createOdooLead(lead);
+              odooOk = true;
+            } catch (retryError) {
+              console.error("[Odoo] Retry failed, lead NOT in CRM:", retryError);
+            }
           }
         }
 
-        return { success: true };
+        // The lead is safe if the CRM took it or it is queryable in Supabase.
+        // If neither happened it exists nowhere, so surface a real error rather
+        // than sending the visitor to /thank-you for a submission that vanished.
+        if (!odooOk && !storedOk) {
+          console.error(
+            "[Contact] LEAD LOST — neither Odoo nor Supabase accepted it. " +
+              "Check ODOO_* and SUPABASE_* environment variables on this deployment."
+          );
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message:
+              "We could not record your enquiry right now. Please email info@vividpoly.com or message us on WhatsApp at +91 99980-14994.",
+          });
+        }
+
+        return { success: true, crm: odooOk, stored: storedOk };
       }),
     list: adminProcedure.query(async () => {
       return await db.getAllContactInquiries();
@@ -588,9 +632,17 @@ Reply directly to: ${input.email}
       }),
   }),
 
-  // Site-wide UI translation (drives the client auto-translator). Returns a
-  // { source -> translated } map; falls back to the English source for any
-  // string it can't translate, so the page never breaks.
+  // Site-wide UI translation (drives the client auto-translator).
+  //
+  // Returns { translations, untranslatable }:
+  //   translations  - source -> translated, for strings we actually rendered in
+  //                   the target language. Safe for the client to cache forever.
+  //   untranslatable - strings the provider deliberately left unchanged (brand
+  //                   names, "PP", "BOPP"). The client remembers these so it
+  //                   stops asking for them.
+  // A string in NEITHER list failed in transit. The client must leave it alone
+  // and retry later — never freeze it as English, which is what used to strand
+  // whole paragraphs after a single rate-limited request.
   i18n: router({
     translate: publicProcedure
       .input(
@@ -602,9 +654,9 @@ Reply directly to: ${input.email}
       .mutation(async ({ input }) => {
         const target = (input.target || "en").trim();
         const result: Record<string, string> = {};
+        const untranslatable: string[] = [];
         if (!target || target === "en") {
-          for (const t of input.texts) result[t] = t;
-          return result;
+          return { translations: {}, untranslatable: [] };
         }
 
         const keyOf = (s: string) => createHash("md5").update(s).digest("hex");
@@ -643,9 +695,13 @@ Reply directly to: ${input.email}
           const translated = await translateBatch(misses, target);
           const rows: Array<Record<string, string>> = [];
           misses.forEach((s, i) => {
-            result[s] = translated[i];
-            if (translated[i] && translated[i] !== s) {
-              rows.push({ lang: target, source_key: keyOf(s), source: s, translated: translated[i] });
+            const { text, ok } = translated[i];
+            if (!ok) return; // transient failure — omit so the client retries
+            if (text && text !== s) {
+              result[s] = text;
+              rows.push({ lang: target, source_key: keyOf(s), source: s, translated: text });
+            } else {
+              untranslatable.push(s);
             }
           });
           // 3) Best-effort write-back (needs the service role key; ignored otherwise).
@@ -660,10 +716,57 @@ Reply directly to: ${input.email}
           }
         }
 
-        // Guarantee an entry for every requested string.
-        for (const t of input.texts) if (result[t] === undefined) result[t] = t;
-        return result;
+        return { translations: result, untranslatable };
       }),
+  }),
+
+  // Deployment diagnostics. Reports ONLY booleans, counts and missing variable
+  // NAMES — never a secret value — so it is safe to call on the live site to
+  // answer "why are there no blogs / where did my lead go?".
+  diagnostics: router({
+    check: publicProcedure.query(async () => {
+      const supabaseConfigured = isSupabaseConfigured();
+      let blogsReadable = false;
+      let publishedBlogs = 0;
+      let blogError: string | null = null;
+
+      if (supabaseConfigured) {
+        try {
+          const supabase = getSupabase()!;
+          const { count, error } = await supabase
+            .from("blogs")
+            .select("id", { count: "exact", head: true })
+            .eq("published", true);
+          if (error) blogError = error.message;
+          else {
+            blogsReadable = true;
+            publishedBlogs = count ?? 0;
+          }
+        } catch (error) {
+          blogError = error instanceof Error ? error.message : String(error);
+        }
+      }
+
+      return {
+        supabase: {
+          configured: supabaseConfigured,
+          missing: supabaseMissingVars(),
+          blogsReadable,
+          publishedBlogs,
+          blogError,
+        },
+        odoo: {
+          configured: isOdooConfigured(),
+          missing: isOdooConfigured()
+            ? []
+            : ["ODOO_URL", "ODOO_DATABASE", "ODOO_USERNAME", "ODOO_API_KEY"].filter(
+                (v) => !process.env[v]
+              ),
+        },
+        // A lead is only guaranteed to survive if at least one of these works.
+        leadCaptureWorking: supabaseConfigured || isOdooConfigured(),
+      };
+    }),
   }),
 });
 

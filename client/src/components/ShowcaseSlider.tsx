@@ -66,7 +66,7 @@ export default function ShowcaseSlider() {
                 className="group relative snap-start shrink-0 w-[82%] sm:w-[48%] lg:w-[38%] overflow-hidden rounded-2xl"
               >
                 <div className="relative h-72 md:h-80">
-                  <img src={s.image} alt={s.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <img loading="lazy" decoding="async" src={s.image} alt={s.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                     <span className="text-[#EF4444] text-xs font-bold uppercase tracking-widest">{s.eyebrow}</span>

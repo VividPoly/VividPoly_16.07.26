@@ -350,7 +350,7 @@ export default function IndustryDetail() {
 
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
-        <img 
+        <img loading="lazy" decoding="async" 
           src={industry.image} 
           alt={industry.name}
           className="w-full h-full object-cover"

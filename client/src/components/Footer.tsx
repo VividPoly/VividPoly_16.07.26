@@ -15,7 +15,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <Link href="/">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src="/media/vividpoly-logo-white_3fb81a9d.png" 
                   alt="VividPoly - Global Export Packaging Company" 
                   className="h-16 w-auto mb-4"

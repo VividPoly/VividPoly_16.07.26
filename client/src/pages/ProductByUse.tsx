@@ -245,7 +245,7 @@ export default function ProductByUse() {
                 <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 flex flex-col">
                   <Link href={`/industry/${product.slug}`}>
                     <div className="relative h-48 overflow-hidden cursor-pointer">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={product.image}
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

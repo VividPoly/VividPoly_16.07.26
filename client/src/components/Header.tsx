@@ -179,7 +179,7 @@ export default function Header() {
         <div className="container mx-auto flex items-center justify-between py-0">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img
+            <img decoding="async"
               src="/media/vividpoly-red-logo_8b59cad5.png"
               alt="VividPoly - Quality Packaging Solutions"
               className="h-[68px] md:h-[76px] lg:h-20 w-auto py-1.5"

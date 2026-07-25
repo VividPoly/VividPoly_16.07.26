@@ -4,6 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { trpc } from "@/lib/trpc";
 import { useParams, Link } from "wouter";
+import { useCurrentLanguage } from "@/hooks/useCurrentLanguage";
 import { ArrowLeft, Calendar, User, Leaf, Share2 } from "lucide-react";
 
 function SocialShareButtons({ title, slug }: { title: string; slug: string }) {
@@ -64,7 +65,7 @@ function SocialShareButtons({ title, slug }: { title: string; slug: string }) {
 }
 
 function RelatedArticles({ currentSlug }: { currentSlug: string }) {
-  const language = typeof window !== "undefined" ? (localStorage.getItem("vividpoly-lang") || "en") : "en";
+  const language = useCurrentLanguage();
   const { data: posts } = trpc.blog.list.useQuery({ language });
   const related = posts?.filter((p: any) => p.slug !== currentSlug).slice(0, 3);
 
@@ -79,7 +80,7 @@ function RelatedArticles({ currentSlug }: { currentSlug: string }) {
             <div className="group cursor-pointer border rounded-lg overflow-hidden hover:shadow-lg transition">
               {article.coverImage && (
                 <div className="h-40 overflow-hidden">
-                  <img src={article.coverImage} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <img loading="lazy" decoding="async" src={article.coverImage} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                 </div>
               )}
               <div className="p-4">
@@ -98,7 +99,8 @@ function RelatedArticles({ currentSlug }: { currentSlug: string }) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const { data: post, isLoading } = trpc.blog.getBySlug.useQuery({ slug: slug || "" });
+  const language = useCurrentLanguage();
+  const { data: post, isLoading } = trpc.blog.getBySlug.useQuery({ slug: slug || "", language });
 
   if (isLoading) {
     return (

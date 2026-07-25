@@ -7,29 +7,7 @@ import { Calendar, ArrowRight, Leaf, Search, X, Tag as TagIcon } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { SEOHead, pageSEO } from "@/components/SEOHead";
 import { useState, useEffect, useMemo } from "react";
-
-function useCurrentLanguage() {
-  const [lang, setLang] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("vividpoly-lang") || "en";
-    }
-    return "en";
-  });
-
-  useEffect(() => {
-    const handleStorage = () => {
-      setLang(localStorage.getItem("vividpoly-lang") || "en");
-    };
-    window.addEventListener("storage", handleStorage);
-    window.addEventListener("vividpoly-lang-change", handleStorage);
-    return () => {
-      window.removeEventListener("storage", handleStorage);
-      window.removeEventListener("vividpoly-lang-change", handleStorage);
-    };
-  }, []);
-
-  return lang;
-}
+import { useCurrentLanguage } from "@/hooks/useCurrentLanguage";
 
 type SortOption = "newest" | "oldest" | "az";
 const PAGE_SIZE = 9;
@@ -131,7 +109,7 @@ export default function Blog() {
         {/* Hero Section - L&T Style */}
         <section className="relative py-20 bg-[#1A1A1A] overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <img src="/factory/factory-floor.jpg" alt="Background" className="w-full h-full object-cover" />
+            <img loading="lazy" decoding="async" src="/factory/factory-floor.jpg" alt="Background" className="w-full h-full object-cover" />
           </div>
           <div className="container relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">BLOG</h1>
@@ -225,7 +203,7 @@ export default function Blog() {
                       <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-full group overflow-hidden">
                         <div className="h-48 bg-gradient-to-br from-[#DC2626] to-[#1A1A1A] flex items-center justify-center overflow-hidden">
                           {post.coverImage ? (
-                            <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img loading="lazy" decoding="async" src={post.coverImage} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                           ) : (
                             <Leaf className="h-16 w-16 text-[#DC2626]" />
                           )}
