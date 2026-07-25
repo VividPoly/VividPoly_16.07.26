@@ -5,9 +5,8 @@
   "framework": null,
   "installCommand": "pnpm install --no-frozen-lockfile",
   "functions": {
-    "api/[...path].ts": {
-      "maxDuration": 30,
-      "includeFiles": "server/**,shared/**,drizzle/**"
+    "api/[...path].js": {
+      "maxDuration": 30
     }
   },
   "rewrites": [
