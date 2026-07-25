@@ -7,6 +7,8 @@ dist/
 build/
 *.dist
 api/[...path].js
+.vercel/output/
+
 
 # Environment variables
 .env
@@ -107,3 +109,5 @@ temp/
 *.sqlite
 *.sqlite3
 .project-config.json
+.vercel
+.env*
