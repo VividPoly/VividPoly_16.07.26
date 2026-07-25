@@ -360,9 +360,15 @@ export default function Inquiries() {
         country: formData.country || undefined,
         productInterest: formData.productSubcategory ? `${formData.productCategory} - ${formData.productSubcategory}` : formData.productCategory || undefined,
         quantity: formData.quantity || undefined,
+        bagWidth: formData.bagWidth || undefined,
+        bagHeight: formData.bagHeight || undefined,
+        bagGusset: formData.bagGusset || undefined,
+        gsmWeight: formData.gsmWeight || undefined,
+        printingColors: formData.printingColors || undefined,
         message: formData.message,
         attachments: uploadedUrls.length > 0 ? uploadedUrls : undefined,
         source: "Quote Request (Inquiries page)",
+        pageUrl: window.location.href,
       });
       
     } catch (error) {

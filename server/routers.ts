@@ -236,9 +236,15 @@ export const appRouter = router({
           subject: z.string().optional(),
           productInterest: z.string().optional(),
           quantity: z.string().optional(),
+          bagWidth: z.string().optional(),
+          bagHeight: z.string().optional(),
+          bagGusset: z.string().optional(),
+          gsmWeight: z.string().optional(),
+          printingColors: z.string().optional(),
           message: z.string().min(10, "Message must be at least 10 characters"),
           attachments: z.array(z.string()).optional(),
           source: z.string().optional(),
+          pageUrl: z.string().optional(),
         })
       )
       .mutation(async ({ input }) => {
@@ -246,9 +252,7 @@ export const appRouter = router({
         const isContactForm = !!input.subject;
         const formType = isContactForm ? 'Contact Us' : 'Quote Request';
         
-        // Save to database. `skipped` means Supabase is not configured, so the
-        // lead is NOT recoverable from here — tracked so we can tell whether
-        // the enquiry landed anywhere at all.
+        // Save to database
         let storedOk = false;
         try {
           const stored = await db.createContactInquiry({
@@ -263,9 +267,7 @@ export const appRouter = router({
             attachments: input.attachments ? JSON.stringify(input.attachments) : null,
             status: "new",
             notes: null,
-            // Which page the enquiry came from, so the CRM and the admin table
-            // agree on attribution.
-            source: input.source || "website",
+            source: input.source || (isContactForm ? "Contact Us page" : "website"),
           });
           storedOk = (stored as { success?: boolean }).success === true;
         } catch (error) {
@@ -319,6 +321,13 @@ Reply directly to: ${input.email}
 📦 Product Interest:
 • Product: ${input.productInterest || 'Not specified'}
 • Quantity: ${input.quantity || 'Not specified'}
+${input.bagWidth || input.bagHeight || input.bagGusset || input.gsmWeight || input.printingColors ? `
+📐 Bag Specifications:
+${input.bagWidth ? `• Width: ${input.bagWidth}` : ''}
+${input.bagHeight ? `• Height: ${input.bagHeight}` : ''}
+${input.bagGusset ? `• Gusset: ${input.bagGusset}` : ''}
+${input.gsmWeight ? `• GSM/Weight: ${input.gsmWeight}` : ''}
+${input.printingColors ? `• Printing Colors: ${input.printingColors}` : ''}` : ''}
 
 💬 Requirements:
 ${input.message}${attachmentLinks}
@@ -358,10 +367,16 @@ Reply directly to: ${input.email}
             input.country ? { label: "Country", value: input.country } : null,
             { label: "Enquiry Type", value: formType },
             input.source ? { label: "Source Page", value: input.source } : null,
+            input.pageUrl ? { label: "Page URL", value: input.pageUrl } : null,
             input.productInterest || input.subject
               ? { label: "Product Interest", value: input.productInterest || input.subject! }
               : null,
             input.quantity ? { label: "Quantity", value: input.quantity } : null,
+            input.bagWidth ? { label: "Bag Width", value: input.bagWidth } : null,
+            input.bagHeight ? { label: "Bag Height", value: input.bagHeight } : null,
+            input.bagGusset ? { label: "Bag Gusset", value: input.bagGusset } : null,
+            input.gsmWeight ? { label: "GSM/Weight", value: input.gsmWeight } : null,
+            input.printingColors ? { label: "Printing Colors", value: input.printingColors } : null,
             input.attachments && input.attachments.length > 0
               ? { label: "Attachments", value: input.attachments.join(", ") }
               : null,

@@ -100,7 +100,49 @@ function applyTranslation(bp: BlogPost, row: any, language?: string): BlogPost {
       seoDescription: tr.seo_description ?? tr.seoDescription ?? bp.seoDescription,
     };
   }
+  // No translation found — trigger lazy translation in background
+  lazyTranslateBlog(row, language);
   return bp;
+}
+
+// Background lazy translation: translates title, excerpt, and body using Google
+// Translate and stores in the translations JSONB for future requests.
+const pendingTranslations = new Set<string>();
+
+function lazyTranslateBlog(row: any, language: string) {
+  const key = `${row.id}:${language}`;
+  if (pendingTranslations.has(key)) return;
+  pendingTranslations.add(key);
+
+  (async () => {
+    try {
+      const { translateBatch } = await import("./translate");
+      const texts = [row.title || "", row.excerpt || "", row.body || ""];
+      const translated = await translateBatch(texts, language);
+
+      const translationData: Record<string, string> = {};
+      if (translated[0] && translated[0] !== texts[0]) translationData.title = translated[0];
+      if (translated[1] && translated[1] !== texts[1]) translationData.excerpt = translated[1];
+      if (translated[2] && translated[2] !== texts[2]) translationData.body = translated[2];
+
+      if (Object.keys(translationData).length === 0) return;
+
+      const supabase = getSupabase();
+      if (!supabase) return;
+
+      const existing = row.translations || {};
+      const updated = { ...existing, [language]: translationData };
+
+      await supabase
+        .from("blogs")
+        .update({ translations: updated })
+        .eq("id", row.id);
+    } catch (e) {
+      console.warn("[LazyTranslate] failed for", row.slug, language, e);
+    } finally {
+      pendingTranslations.delete(key);
+    }
+  })();
 }
 
 function mapInquiry(row: any): ContactInquiry {
@@ -186,7 +228,7 @@ export async function getPublishedBlogPosts(language?: string): Promise<BlogPost
   return (data || []).map((row) => mapBlog(row, lang));
 }
 
-export async function getBlogPostBySlug(slug: string, lang?: string): Promise<BlogPost | undefined> {
+export async function getBlogPostBySlug(slug: string, language?: string): Promise<BlogPost | undefined> {
   const supabase = getSupabase();
   if (!supabase) return undefined;
   const { data, error } = await supabase.from("blogs").select("*").eq("slug", slug).limit(1).maybeSingle();
@@ -194,10 +236,7 @@ export async function getBlogPostBySlug(slug: string, lang?: string): Promise<Bl
     console.warn("[Supabase] getBlogPostBySlug failed:", error.message);
     return undefined;
   }
-  // Serve the admin's pre-translated copy when one exists for this language;
-  // anything without one falls back to English and is handled by the DOM
-  // auto-translator, so a post is never stuck in English either way.
-  return data ? mapBlog(data, lang) : undefined;
+  return data ? mapBlog(data, language || "en") : undefined;
 }
 
 export async function getBlogPostTranslation(parentId: number, language: string): Promise<BlogPost | undefined> {

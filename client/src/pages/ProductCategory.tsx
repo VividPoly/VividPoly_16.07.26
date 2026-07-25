@@ -31,6 +31,7 @@ export default function ProductCategoryPage() {
       productInterest: product?.name,
       message: quickForm.message || `Quick inquiry about ${product?.name || "a product"}.`,
       source: `Product page: ${product?.name || slug}`,
+      pageUrl: window.location.href,
     });
   };
   
