@@ -1,5 +1,4 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import ws from "ws";
 
 let client: SupabaseClient | null = null;
 
@@ -44,9 +43,6 @@ export function getSupabase(): SupabaseClient | null {
     }
     return null;
   }
-  client = createClient(u, k, {
-    auth: { persistSession: false },
-    realtime: { transport: ws as any },
-  });
+  client = createClient(u, k, { auth: { persistSession: false } });
   return client;
 }
