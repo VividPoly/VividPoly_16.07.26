@@ -121,9 +121,9 @@ function lazyTranslateBlog(row: any, language: string) {
       const translated = await translateBatch(texts, language);
 
       const translationData: Record<string, string> = {};
-      if (translated[0] && translated[0] !== texts[0]) translationData.title = translated[0];
-      if (translated[1] && translated[1] !== texts[1]) translationData.excerpt = translated[1];
-      if (translated[2] && translated[2] !== texts[2]) translationData.body = translated[2];
+      if (translated[0]?.ok && translated[0].text !== texts[0]) translationData.title = translated[0].text;
+      if (translated[1]?.ok && translated[1].text !== texts[1]) translationData.excerpt = translated[1].text;
+      if (translated[2]?.ok && translated[2].text !== texts[2]) translationData.body = translated[2].text;
 
       if (Object.keys(translationData).length === 0) return;
 
