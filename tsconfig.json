@@ -1,23 +1,23 @@
 {
-  "//": "The root tsconfig targets the Vite client (noEmit, bundler resolution, allowImportingTsExtensions) and does not include api/. Vercel's Node builder compiles this function against the nearest tsconfig, so give it settings that can actually emit a serverless function. Without this the function fails to build and every /api route 404s.",
+  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
+  "exclude": ["node_modules", "build", "dist", "api", "**/*.test.ts"],
   "compilerOptions": {
-    "target": "ES2022",
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+    "noEmit": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    "lib": ["ES2022"],
-    "types": ["node"],
+    "strict": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "jsx": "preserve",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": false,
-    "noImplicitAny": false,
-    "noEmit": false,
-    "baseUrl": "..",
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "types": ["node", "vite/client"],
     "paths": {
+      "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"]
     }
-  },
-  "include": ["./**/*.ts", "../server/**/*.ts", "../shared/**/*.ts"],
-  "exclude": ["../node_modules", "../**/*.test.ts"]
+  }
 }
