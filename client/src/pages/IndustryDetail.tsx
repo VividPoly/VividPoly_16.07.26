@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle, Package, Truck, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { pageSEO } from "@/data/seo.generated";
 
 // Industry data with details
 const industryData: Record<string, {
@@ -358,7 +359,11 @@ export default function IndustryDetail() {
                 Back to Industries
               </Button>
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{industry.name}</h1>
+            {/* Descriptive H1 from the SEO sheet; falls back to the industry
+                name for any slug the sheet does not cover. Styling unchanged. */}
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              {pageSEO[`/industry/${slug}`]?.h1 ?? industry.name}
+            </h1>
             <p className="text-xl text-white/90 max-w-2xl">Packaging Solutions</p>
           </div>
         </div>

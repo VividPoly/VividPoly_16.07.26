@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { pageSEO } from "@/data/seo.generated";
 
 export default function ProductCategoryPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -131,8 +132,10 @@ export default function ProductCategoryPage() {
 
             {/* Product Info */}
             <div>
+              {/* Descriptive H1 from the SEO sheet; falls back to the product
+                  name for any slug the sheet does not cover. Styling unchanged. */}
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                {product.name}
+                {pageSEO[`/products/${slug}`]?.h1 ?? product.name}
               </h1>
               <p className="text-xl text-red-600 font-medium mb-6">
                 {product.tagline}
