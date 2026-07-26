@@ -3,12 +3,10 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Factory, Award, Globe, Leaf, Users, Target, ArrowRight, GraduationCap, Heart } from "lucide-react";
 import { Link } from "wouter";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead {...pageSEO.about} canonicalPath="/about" />
       <Header />
       
       <main className="flex-1">

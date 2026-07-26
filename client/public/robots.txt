@@ -1,13 +1,21 @@
 # Robots.txt for Vivid Poly - PP Woven Bags Manufacturer & Global Exporter
-# https://www.vividpoly.com
+# https://vividpoly.com
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /admin
+# Transactional and account routes: no index value, and they would otherwise
+# be crawled as thin/soft-404 pages.
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /order-history
+Disallow: /thank-you
 
 # Sitemap location
-Sitemap: https://www.vividpoly.com/sitemap.xml
+Sitemap: https://vividpoly.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 User-agent: Googlebot

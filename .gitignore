@@ -111,3 +111,6 @@ temp/
 .project-config.json
 .vercel
 .env*
+
+# Cached CSV exports of the SEO Google Sheet (build-seo-data.mjs --offline)
+scripts/.seo-cache/

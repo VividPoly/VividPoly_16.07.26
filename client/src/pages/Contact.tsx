@@ -10,7 +10,6 @@ import { useState } from "react";
 import { useLocation } from "wouter";
 import { toast } from "sonner";
 import { Mail, Phone, MapPin, Clock, Send, ArrowRight, MessageSquare, Globe, CheckCircle } from "lucide-react";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 export default function Contact() {
   const [, setLocation] = useLocation();
@@ -64,7 +63,6 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead {...pageSEO.contact} canonicalPath="/contact" />
       <Header />
       <main className="flex-1">
         {/* Hero Section */}

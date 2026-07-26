@@ -4,7 +4,6 @@ import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { Calendar, ArrowRight, Leaf, Search, X, Tag as TagIcon, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 import { useState, useEffect, useMemo } from "react";
 import { useCurrentLanguage } from "@/hooks/useCurrentLanguage";
 
@@ -96,7 +95,6 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead {...pageSEO.blog} canonicalPath="/blog" />
       <Header />
       <main className="flex-1">
         {/* Hero Section */}

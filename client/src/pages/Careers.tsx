@@ -56,11 +56,12 @@ export default function Careers() {
           </div>
           <div className="container relative z-10">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-normal text-white mb-2">
-                LIFE AT
-              </h1>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                VIVIDPOLY
+              {/* One h1 per page: the two lines were separate <h1> elements,
+                  which splits the page's primary heading signal. Same classes,
+                  same rendering. */}
+              <h1 className="text-4xl md:text-5xl text-white mb-6">
+                <span className="block font-normal mb-2">LIFE AT</span>
+                <span className="block font-bold">VIVIDPOLY</span>
               </h1>
               <p className="text-lg text-white/80 mb-8 leading-relaxed">
                 VividPoly is a team of dedicated professionals spread across our state-of-the-art facility. 

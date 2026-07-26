@@ -1,15 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SEOHead } from "@/components/SEOHead";
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead
-        title="Privacy Policy | VividPoly"
-        description="How VividPoly collects, uses and protects your information, including our use of cookies for a better browsing experience."
-        canonicalPath="/privacy-policy"
-      />
       <Header />
       <main className="flex-1">
         <section className="bg-[#1A1A1A] text-white py-16">

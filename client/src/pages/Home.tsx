@@ -5,7 +5,6 @@ import { ArrowRight, Globe, ChevronLeft, ChevronRight, Play } from "lucide-react
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ShowcaseSlider from "@/components/ShowcaseSlider";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
@@ -52,7 +51,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <SEOHead {...pageSEO.home} canonicalPath="/" />
       <Header />
       
       <main className="flex-1">
