@@ -4,14 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 import { Award, CheckCircle, Shield, FileCheck, Microscope, ClipboardCheck, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 export default function QualityAssurance() {
   const { data: certificates, isLoading } = trpc.certificates.list.useQuery();
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead {...pageSEO.quality} canonicalPath="/quality" />
       <Header />
       
       <main className="flex-1">

@@ -3,7 +3,6 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { productCategories } from "@/data/productCategories";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 // Add-on features data
 const addOnFeatures = [
@@ -20,7 +19,6 @@ const addOnFeatures = [
 export default function Products() {
   return (
     <div className="min-h-screen bg-white">
-      <SEOHead {...pageSEO.products} canonicalPath="/products" />
       <Header />
       
       {/* Hero Banner */}

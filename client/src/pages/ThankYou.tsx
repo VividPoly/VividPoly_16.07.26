@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { SEOHead } from "@/components/SEOHead";
 import { CheckCircle2, ArrowRight, Home as HomeIcon } from "lucide-react";
 import { useEffect } from "react";
 
@@ -20,12 +19,6 @@ export default function ThankYou() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead
-        title="Thank You | VividPoly"
-        description="Thank you for contacting VividPoly. Our export team will get back to you within 24 hours."
-        canonicalPath="/thank-you"
-        noindex
-      />
       <Header />
       <main className="flex-1 flex items-center justify-center bg-gray-50 py-20">
         <div className="container max-w-2xl text-center">

@@ -39,6 +39,7 @@ import { LanguageBanner } from "./components/LanguageBanner";
 import { CookieConsent } from "./components/CookieConsent";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import AutoTranslate from "./components/AutoTranslate";
+import RouteSEO from "./components/RouteSEO";
 
 function LoadingFallback() {
   return (
@@ -90,6 +91,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
+          <RouteSEO />
           <AutoTranslate />
           <Router />
           <InquireButton />

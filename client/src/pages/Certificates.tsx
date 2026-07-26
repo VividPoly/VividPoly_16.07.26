@@ -4,14 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 import { Award, Shield, FileCheck, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { SEOHead, pageSEO } from "@/components/SEOHead";
 
 export default function Certificates() {
   const { data: certificates, isLoading } = trpc.certificates.list.useQuery();
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead {...pageSEO.certificates} canonicalPath="/certificates" />
       <Header />
       <main className="flex-1">
         {/* Hero Section - L&T Style */}
