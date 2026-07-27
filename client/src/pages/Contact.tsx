@@ -85,8 +85,8 @@ export default function Contact() {
         </section>
 
         {/* Contact Info Strip */}
-        <section className="bg-white border-b">
-          <div className="container px-4 sm:px-6">
+        <section className="relative z-20 bg-white border-b">
+          <div className="container flow-root px-4 sm:px-6">
             <div className="grid grid-cols-2 lg:grid-cols-4 -mt-8 gap-px bg-gray-100 rounded-xl overflow-hidden shadow-lg">
               <div className="bg-white p-4 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#DC2626]/10 flex items-center justify-center flex-shrink-0">
