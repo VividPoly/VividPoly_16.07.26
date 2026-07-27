@@ -9,14 +9,24 @@ import { trpc } from "@/lib/trpc";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Clock, Send, ArrowRight, MessageSquare, Globe, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Globe, User, Building2, Tag, Loader2 } from "lucide-react";
+
+/** Shared styling for the contact form controls. `peer` lets the leading icon react to focus. */
+const fieldClass =
+  "peer h-12 rounded-xl border-gray-200 bg-gray-50/60 pl-11 text-sm shadow-none transition-colors placeholder:text-gray-400 hover:border-gray-300 focus-visible:border-[#DC2626] focus-visible:bg-white focus-visible:ring-[3px] focus-visible:ring-[#DC2626]/15";
+
+const fieldIconClass =
+  "pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400 transition-colors peer-focus:text-[#DC2626]";
+
+const optionalHint = <span className="text-xs font-normal text-gray-400">(optional)</span>;
+
+const requiredMark = <span className="text-[#DC2626]">*</span>;
 
 export default function Contact() {
   const [, setLocation] = useLocation();
   const [formData, setFormData] = useState({
     name: "", email: "", phone: "", company: "", subject: "", message: ""
   });
-  const [quickInquirySubmitted, setQuickInquirySubmitted] = useState(false);
 
   const submitContact = trpc.contact.submit.useMutation({
     onSuccess: () => {
@@ -24,14 +34,6 @@ export default function Contact() {
       setLocation("/thank-you");
     },
     onError: () => toast.error("Failed to send message. Please try again."),
-  });
-
-  const submitQuickInquiry = trpc.contact.submit.useMutation({
-    onSuccess: () => {
-      setQuickInquirySubmitted(true);
-      toast.success("Inquiry submitted successfully!");
-    },
-    onError: () => toast.error("Failed to send inquiry. Please try again."),
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -44,19 +46,6 @@ export default function Contact() {
       subject: formData.subject || undefined,
       message: formData.message,
       source: "Contact Us page",
-      pageUrl: window.location.href,
-    });
-  };
-
-  const handleQuickInquiry = (e: React.FormEvent) => {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget as HTMLFormElement);
-    submitQuickInquiry.mutate({
-      name: fd.get("qi_name") as string,
-      email: fd.get("qi_email") as string,
-      phone: (fd.get("qi_phone") as string) || undefined,
-      message: fd.get("qi_message") as string,
-      source: "Quick Inquiry - Contact page",
       pageUrl: window.location.href,
     });
   };
@@ -128,83 +117,117 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Main Content: Form + Quick Inquiry */}
+        {/* Main Content: Form + Contact Details */}
         <section className="py-10 sm:py-16 bg-[#F9FAFB]">
           <div className="container px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 items-start">
               {/* Left: Main Contact Form */}
               <div>
-                <Card className="border-0 shadow-xl rounded-2xl overflow-hidden">
+                <Card className="border-0 rounded-2xl overflow-hidden ring-1 ring-gray-100 shadow-[0_1px_2px_rgba(16,24,40,0.04),0_16px_40px_-20px_rgba(16,24,40,0.18)]">
                   <CardContent className="p-5 sm:p-8 md:p-10">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 rounded-lg bg-[#DC2626]/10 flex items-center justify-center">
+                    <div className="flex items-start gap-4 mb-8">
+                      <div className="w-11 h-11 shrink-0 rounded-xl bg-[#DC2626]/10 flex items-center justify-center">
                         <MessageSquare className="h-5 w-5 text-[#DC2626]" />
                       </div>
-                      <h2 className="text-2xl font-bold text-[#1A1A1A]">Send us a Message</h2>
+                      <div>
+                        <h2 className="text-xl sm:text-2xl font-bold text-[#1A1A1A]">Send us a Message</h2>
+                        <p className="mt-1 text-sm text-gray-500">Fill out the form and we'll get back to you within 24 hours.</p>
+                      </div>
                     </div>
-                    <p className="text-gray-500 mb-8 ml-[52px]">Fill out the form and we'll get back to you within 24 hours.</p>
 
                     <form onSubmit={handleSubmit} className="space-y-5">
                       <div className="grid md:grid-cols-2 gap-5">
-                        <div>
-                          <Label htmlFor="name" className="text-sm font-medium text-[#1A1A1A]">Full Name *</Label>
-                          <Input
-                            id="name"
-                            value={formData.name}
-                            onChange={(e) => setFormData({...formData, name: e.target.value})}
-                            required
-                            placeholder="John Doe"
-                            className="mt-1.5 h-11 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
+                        <div className="space-y-2">
+                          <Label htmlFor="name" className="text-[13px] font-semibold text-[#1A1A1A]">
+                            <span>Full Name {requiredMark}</span>
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="name"
+                              value={formData.name}
+                              onChange={(e) => setFormData({...formData, name: e.target.value})}
+                              required
+                              autoComplete="name"
+                              placeholder="John Doe"
+                              className={fieldClass}
+                            />
+                            <User className={fieldIconClass} />
+                          </div>
                         </div>
-                        <div>
-                          <Label htmlFor="email" className="text-sm font-medium text-[#1A1A1A]">Email Address *</Label>
-                          <Input
-                            id="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={(e) => setFormData({...formData, email: e.target.value})}
-                            required
-                            placeholder="john@company.com"
-                            className="mt-1.5 h-11 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
+                        <div className="space-y-2">
+                          <Label htmlFor="email" className="text-[13px] font-semibold text-[#1A1A1A]">
+                            <span>Email Address {requiredMark}</span>
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="email"
+                              type="email"
+                              value={formData.email}
+                              onChange={(e) => setFormData({...formData, email: e.target.value})}
+                              required
+                              autoComplete="email"
+                              placeholder="john@company.com"
+                              className={fieldClass}
+                            />
+                            <Mail className={fieldIconClass} />
+                          </div>
                         </div>
                       </div>
                       <div className="grid md:grid-cols-2 gap-5">
-                        <div>
-                          <Label htmlFor="phone" className="text-sm font-medium text-[#1A1A1A]">Phone Number</Label>
-                          <Input
-                            id="phone"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                            placeholder="+91 XXXXX XXXXX"
-                            className="mt-1.5 h-11 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
+                        <div className="space-y-2">
+                          <Label htmlFor="phone" className="text-[13px] font-semibold text-[#1A1A1A]">
+                            <span>Phone Number {optionalHint}</span>
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="phone"
+                              type="tel"
+                              value={formData.phone}
+                              onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                              autoComplete="tel"
+                              placeholder="+91 XXXXX XXXXX"
+                              className={fieldClass}
+                            />
+                            <Phone className={fieldIconClass} />
+                          </div>
                         </div>
-                        <div>
-                          <Label htmlFor="company" className="text-sm font-medium text-[#1A1A1A]">Company Name</Label>
-                          <Input
-                            id="company"
-                            value={formData.company}
-                            onChange={(e) => setFormData({...formData, company: e.target.value})}
-                            placeholder="Your company"
-                            className="mt-1.5 h-11 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
+                        <div className="space-y-2">
+                          <Label htmlFor="company" className="text-[13px] font-semibold text-[#1A1A1A]">
+                            <span>Company Name {optionalHint}</span>
+                          </Label>
+                          <div className="relative">
+                            <Input
+                              id="company"
+                              value={formData.company}
+                              onChange={(e) => setFormData({...formData, company: e.target.value})}
+                              autoComplete="organization"
+                              placeholder="Your company"
+                              className={fieldClass}
+                            />
+                            <Building2 className={fieldIconClass} />
+                          </div>
                         </div>
                       </div>
-                      <div>
-                        <Label htmlFor="subject" className="text-sm font-medium text-[#1A1A1A]">Subject *</Label>
-                        <Input
-                          id="subject"
-                          value={formData.subject}
-                          onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                          required
-                          placeholder="What is this regarding?"
-                          className="mt-1.5 h-11 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                        />
+                      <div className="space-y-2">
+                        <Label htmlFor="subject" className="text-[13px] font-semibold text-[#1A1A1A]">
+                          <span>Subject {requiredMark}</span>
+                        </Label>
+                        <div className="relative">
+                          <Input
+                            id="subject"
+                            value={formData.subject}
+                            onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                            required
+                            placeholder="What is this regarding?"
+                            className={fieldClass}
+                          />
+                          <Tag className={fieldIconClass} />
+                        </div>
                       </div>
-                      <div>
-                        <Label htmlFor="message" className="text-sm font-medium text-[#1A1A1A]">Message *</Label>
+                      <div className="space-y-2">
+                        <Label htmlFor="message" className="text-[13px] font-semibold text-[#1A1A1A]">
+                          <span>Message {requiredMark}</span>
+                        </Label>
                         <Textarea
                           id="message"
                           rows={5}
@@ -212,110 +235,34 @@ export default function Contact() {
                           onChange={(e) => setFormData({...formData, message: e.target.value})}
                           required
                           placeholder="Tell us about your requirements, quantities needed, or any specific questions..."
-                          className="mt-1.5 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
+                          className="rounded-xl border-gray-200 bg-gray-50/60 px-4 py-3 text-sm shadow-none transition-colors placeholder:text-gray-400 hover:border-gray-300 focus-visible:border-[#DC2626] focus-visible:bg-white focus-visible:ring-[3px] focus-visible:ring-[#DC2626]/15"
                         />
                       </div>
-                      <Button
-                        type="submit"
-                        size="lg"
-                        className="bg-[#DC2626] hover:bg-[#B91C1C] text-white rounded-lg px-8 h-12 text-base shadow-lg shadow-[#DC2626]/20 hover:shadow-xl hover:shadow-[#DC2626]/30 transition-all"
-                        disabled={submitContact.isPending}
-                      >
-                        <Send className="mr-2 h-4 w-4" />
-                        {submitContact.isPending ? "Sending..." : "Send Message"}
-                      </Button>
+                      <div className="border-t border-gray-100 pt-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                        <Button
+                          type="submit"
+                          size="lg"
+                          className="w-full sm:w-auto bg-[#DC2626] hover:bg-[#B91C1C] text-white rounded-xl px-8 h-12 text-base font-semibold shadow-lg shadow-[#DC2626]/20 hover:shadow-xl hover:shadow-[#DC2626]/30 transition-all disabled:opacity-70"
+                          disabled={submitContact.isPending}
+                        >
+                          {submitContact.isPending ? (
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          ) : (
+                            <Send className="mr-2 h-4 w-4" />
+                          )}
+                          {submitContact.isPending ? "Sending..." : "Send Message"}
+                        </Button>
+                        <p className="text-xs text-gray-400 text-center sm:text-left">
+                          {requiredMark} Required fields
+                        </p>
+                      </div>
                     </form>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* Right: Quick Inquiry */}
+              {/* Right: Contact Details */}
               <div className="lg:sticky lg:top-8 space-y-6">
-                {/* Quick Inquiry Form */}
-                <Card className="border-0 shadow-xl rounded-2xl overflow-hidden">
-                  <div className="bg-gradient-to-br from-[#DC2626] to-[#991B1B] p-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                        <ArrowRight className="h-5 w-5 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-bold text-white">Quick Inquiry</h3>
-                        <p className="text-white/70 text-xs">Fast-track your request</p>
-                      </div>
-                    </div>
-                  </div>
-                  <CardContent className="p-6">
-                    {quickInquirySubmitted ? (
-                      <div className="text-center py-6">
-                        <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <CheckCircle className="h-7 w-7 text-green-600" />
-                        </div>
-                        <h4 className="font-bold text-[#1A1A1A] mb-1">Thank You!</h4>
-                        <p className="text-sm text-gray-500">We'll respond within 24 hours.</p>
-                        <Button
-                          variant="outline"
-                          className="mt-4 text-sm"
-                          onClick={() => setQuickInquirySubmitted(false)}
-                        >
-                          Send Another
-                        </Button>
-                      </div>
-                    ) : (
-                      <form onSubmit={handleQuickInquiry} className="space-y-4">
-                        <div>
-                          <Label htmlFor="qi_name" className="text-xs font-medium text-gray-700">Name *</Label>
-                          <Input
-                            id="qi_name"
-                            name="qi_name"
-                            required
-                            placeholder="Your name"
-                            className="mt-1 h-10 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="qi_email" className="text-xs font-medium text-gray-700">Email *</Label>
-                          <Input
-                            id="qi_email"
-                            name="qi_email"
-                            type="email"
-                            required
-                            placeholder="your@email.com"
-                            className="mt-1 h-10 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="qi_phone" className="text-xs font-medium text-gray-700">Phone</Label>
-                          <Input
-                            id="qi_phone"
-                            name="qi_phone"
-                            placeholder="+91 XXXXX XXXXX"
-                            className="mt-1 h-10 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="qi_message" className="text-xs font-medium text-gray-700">Message *</Label>
-                          <Textarea
-                            id="qi_message"
-                            name="qi_message"
-                            rows={3}
-                            required
-                            placeholder="Briefly describe your requirements..."
-                            className="mt-1 border-gray-200 focus:border-[#DC2626] focus:ring-[#DC2626]/20"
-                          />
-                        </div>
-                        <Button
-                          type="submit"
-                          className="w-full bg-[#DC2626] hover:bg-[#B91C1C] text-white h-11 shadow-md"
-                          disabled={submitQuickInquiry.isPending}
-                        >
-                          <Send className="mr-2 h-4 w-4" />
-                          {submitQuickInquiry.isPending ? "Sending..." : "Submit Inquiry"}
-                        </Button>
-                      </form>
-                    )}
-                  </CardContent>
-                </Card>
-
                 {/* Direct Contact Card */}
                 <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
                   <h4 className="font-bold text-[#1A1A1A] mb-4 text-sm">Direct Contact</h4>
